@@ -4,7 +4,7 @@ require 'rubygems'
 require 'dm-core'
 require 'dm-migrations'
 
-DataMapper.setup :default, 'sqlite:///home/mickey/10001/data.db'
+DataMapper.setup :default, "sqlite:///#{Dir.pwd}/data.db"
 
 class Business
   include DataMapper::Resource
