@@ -42,3 +42,6 @@ div#content {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
+.sub {
+    display: none;
+}
