@@ -1,9 +1,10 @@
 #!/usr/bin/ruby
 require 'rubygems'
 require 'sinatra'
+require 'erb'
 
 get '/' do
-   "Hello world!"
+   erb :outer
 end
 
 
