@@ -10,8 +10,10 @@ div#container {
 div#header h1, div#header h2 {
     text-align: center;
 }
-div#main {
-    position: relative;
+
+div#search-bar-outer {
+    margin: 0 auto 1.5em;
+    text-align: center;
 }
 
 /*** Sidebar ***/
