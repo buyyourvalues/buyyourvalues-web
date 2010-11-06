@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div#container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+div#header h1, div#header h2 {
+    text-align: center;
+}
+div#main {
+    position: relative;
+}
+
+/*** Sidebar ***/
+div#sidebar {
+    width: 250px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    min-height: 600px;
+}
+
+div#sidebar h3 {
+    margin: 0.25em;
+    text-align: center;
+}
+
+/*** Content ***/
+div#content {
+    width: 740px;
+    float: right;
+    min-height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
