@@ -7,7 +7,7 @@ div#container {
     width: 1000px;
 }
 
-div#header h1, div#header h2 {
+div#header {
     text-align: center;
 }
 
