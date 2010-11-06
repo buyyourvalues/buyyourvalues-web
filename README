@@ -1,3 +1,5 @@
 This is the web interface for the data.
 
-Requires Sinatra and ERB.
+You'll need to do this:
+
+gem install sinatra dm-core dm-migrations dm-sqlite-adapter erb transparency-data --no-rdoc --no-ri

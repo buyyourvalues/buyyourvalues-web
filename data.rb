@@ -1,10 +1,13 @@
 #!/usr/bin/ruby
 
+# Gems
 require 'rubygems'
 require 'sinatra'
 require 'erb'
-require 'model'
 require 'transparency_data'
+
+# Local files
+require 'model'
 
 get '/' do
   erb :outer
