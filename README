@@ -10,6 +10,7 @@ gem install --no-rdoc --no-ri \
         dm-postgres-adapter \
         dm-mysql-adapter \
         dm-sqlite-adapter \
+        fastercsv \
         json \
         shotgun \
         sinatra \
