@@ -28,7 +28,7 @@ end
 class Contribution
   include DataMapper::Resource
   belongs_to :contributor
-  belongs_to :recipient
+  has 1, :recipient
 
   property :id, Serial
   property :amount, Float
