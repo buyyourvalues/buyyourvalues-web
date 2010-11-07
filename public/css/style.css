@@ -102,7 +102,7 @@ div#content {
     list-style-type:none;
 }
 
-div#sidebar a.close_all
+a.close_all
 {
     display:inline-block;
     right:15px;
@@ -143,8 +143,9 @@ div#chart
 
 div#map
 {
-    height: 400px;
+    height: 415px;
     padding-top: 10px;
+    position: relative;
 }
 
 div#map-canvas
@@ -152,4 +153,9 @@ div#map-canvas
     border: #aaa 1px solid;
     height: 390px;
     margin: 0 10px;
+}
+
+div#table
+{
+    overflow-y: scroll;
 }
