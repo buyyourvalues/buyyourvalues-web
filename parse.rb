@@ -3,7 +3,7 @@ require 'rubygems'
 require 'fastercsv'
 require 'model'
 
-FasterCSV.foreach("catcodes.csv", :headers => true) do |row|
+FasterCSV.foreach("data/catcodes.csv", :headers => true) do |row|
   BusinessCategory.create(
     :id => row['code'],
     :source => row['source'],
@@ -13,7 +13,7 @@ FasterCSV.foreach("catcodes.csv", :headers => true) do |row|
   )
 end
 
-FasterCSV.foreach("contributions.csv", :headers => true) do |row|
+FasterCSV.foreach("data/contributions.csv", :headers => true) do |row|
   business = Business.first_or_create(
     :name => row["organization_name"] || row["contributor_employer"],
     :business_category_id => row["contributor_category"] || ''

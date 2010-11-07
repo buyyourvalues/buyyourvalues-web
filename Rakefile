@@ -14,6 +14,14 @@ task :clean do
   sh "sudo -u postgres createdb buyyourvalues"
 end
 
+task :backup_db do
+  sh "pg_dump -Ubuyyourvalues > data/data.sql"
+end
+
+task :restore_db => [:clean] do
+  sh "psql -Ubuyyourvalues < data/data.sql"
+end
+
 desc "DB console"
 task :console do
   sh 'psql -Ubuyyourvalues'
