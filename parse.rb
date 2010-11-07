@@ -47,4 +47,14 @@ FasterCSV.foreach("data/contributions.csv", :headers => true) do |row|
   )
 end
 
+# NONEXISTANT PARTIES WILL BE DELETED
 Recipient.all(:party => nil).destroy
+Contribution.all.each do |c|
+  c.destroy if c.recipient.nil?
+end
+Contributor.all.each do |c|
+  c.destroy if c.contributions.empty?
+end
+Business.all.each do |b|
+  b.destroy if b.contributors.empty?
+end

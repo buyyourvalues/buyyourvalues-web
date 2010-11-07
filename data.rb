@@ -31,10 +31,7 @@ get '/businesses' do
 
     b.contributors.each do |contrib|
       contrib.contributions.each do |c|
-        r = c.recipient
-        if r.party
-          new_data[:contributions] << {:amount => c.amount, :party => r.party}
-        end
+        new_data[:contributions] << {:amount => c.amount, :party => c.recipient.party}
       end
     end
  
