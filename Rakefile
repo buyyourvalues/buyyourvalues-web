@@ -11,6 +11,9 @@ end
 desc "Clean DB data"
 task :clean do
   if File.exists? 'data.db'
+    sh "sudo -u postgres dropdb buyyourvalues"
+    sh "sudo -u postgres createdb buyyourvalues"
+
     FileUtils.rm 'data.db'
   end
 end
