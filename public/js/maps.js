@@ -121,22 +121,16 @@ var processBusinesses = function (response)
 
     var range = max_contr - min_contr;
 
-    console.log('max=', max_contr, 'min=', min_contr, 'range=', range);
-
     // There is a problem with this next block:
     // We need to accumulate all the contributions by a particular location. This only graphs one
     // of the contributions.
     $.each(points, function () {
-        console.log(this.total);
         var t = this.total[0] + this.total[1] + this.total[2];
 
         var w = t - min_contr;
         var weighed = w / range * 100 + 100;
 
-        console.log('t=', t, 'w=', w, 'weighed=', weighed);
-
         this.point.setRadius(Math.floor(weighed));
-        console.log('Setting ', this.point, 'to', Math.floor(weighed));
     });
 
     map.fitBounds(boundaries);
@@ -147,6 +141,20 @@ var reset_boundaries = function ()
     map.fitBounds(boundaries);
 }
 
+var showInfoWindow = function (business_id)
+{
+    $.each(points, function() {
+        this.point.infoWindow.close();
+    });
+
+    pointsById[business_id].infoWindow.open(map);
+
+    $('.highlight').removeClass('highlight');
+    $('tr#' + business_id).each(function () {
+        $(this).find('td').addClass('highlight');
+    });
+}
+
 var processBusiness = function (business)
 {
     var parties = new Array();
@@ -154,7 +162,7 @@ var processBusiness = function (business)
     var total = 0;
 
     $('table#contributions').append(
-        '<tr id="' + business.business_id + '"><td onclick="pointsById[' + business.business_id + '].infoWindow(show(map))">' + business.business_name + '</td></tr>'
+        '<tr id="' + business.business_id + '"><td onclick="showInfoWindow(' + business.business_id +');">' + business.business_name + '</td></tr>'
     );
 
     $.each(business.contributions, function () {
@@ -231,18 +239,16 @@ var processBusiness = function (business)
         //});
 
         google.maps.event.addListener(point, 'click', function() {
-            console.log(this);
-
             $.each(points, function () {
                 if (this.point)
                     this.point.infoWindow.close();
             });
             point.infoWindow.open(map);
 
-            //$('.highlight').removeClass('highlight');
-            //$('tr#' + business.business_id).each(function () {
-                //$(this).find('td').addClass('highlight');
-            //});
+            $('.highlight').removeClass('highlight');
+            $('tr#' + business.business_id).each(function () {
+                $(this).find('td').addClass('highlight');
+            });
         });
 
         points.push(
