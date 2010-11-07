@@ -18,9 +18,9 @@ div#search-bar-outer {
     text-align: center;
 }
 
-li
-{
-    list-style-image: url("/images/plus.png");
+.category_picker{
+  background-color: #f9f9f9;
+  list-style-image: url("/images/plus.png");
 }
 
 ul li
@@ -36,7 +36,7 @@ ul li ul li
 
 li.shown
 {
-    list-style-image: url("/images/minus.png");
+  list-style-type:none;
     /*background-color: #cff;*/
 }
 
@@ -47,7 +47,7 @@ li.shown li
 
 li ul li
 {
-    list-style-image: url("/images/tree_line.gif");
+  list-style-type:none;
 }
 
 div,
@@ -62,10 +62,13 @@ h3
 div#sidebar {
     width: 250px;
     float: left;
+    position:relative;
     /*
     border: 1px solid black;
     */
     min-height: 600px;
+    background-color: #fff;
+    border-right:1px solid #eee;
 }
     div#sidebar li
     {
@@ -76,8 +79,6 @@ div#sidebar h3 {
     margin: 0em;
     padding: 10px 0;
     text-align: center;
-    background-color: #dfdfd7;
-    font-weight: normal;
     cursor: default;
 }
 
@@ -94,22 +95,29 @@ div#content {
 
 .sub {
     display: none;
+    list-style-image:none;
+    list-style-type:none;
 }
 
 div#sidebar a.close_all
 {
-    margin-left: 15px;
+    display:inline-block;
+    right:15px;
+    position:absolute;
+    text-decoration:none;
+    font-size:10px;
+    text-transform:uppercase;
+    color:#aaa;
 }
 
-div#sidebar,
 div#map,
 div#chart,
 div#table
 {
-    background-color: #f9f9f9;
-    shadow:1px 1px 1px #aaa;
-    -webkit-box-shadow:1px 1px 1px #aaa;
-    -moz-box-shadow:1px 1px 1px #aaa;
+    background-color: #eee;
+    shadow:2px 2px 2px #ddd;
+    -moz-box-shadow:2px 2px 2px #ddd;
+    -webkit-box-shadow:2px 2px 2px #ddd;
 }
 
 div#map,
