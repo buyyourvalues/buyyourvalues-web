@@ -1,16 +1,30 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 require 'rubygems'
 require 'fastercsv'
-require 'model.rb'
+require 'model'
 
-FasterCSV.foreach("contributions.csv",{:headers => true}) do |row|
+FasterCSV.foreach("data/catcodes.csv", :headers => true) do |row|
+  BusinessCategory.create(
+    :id => row['code'],
+    :source => row['source'],
+    :name => row['name'],
+    :industry => row['industry'],
+    :order => row['order']
+  )
+end
+
+FasterCSV.foreach("data/contributions.csv", :headers => true) do |row|
   business = Business.first_or_create(
-    :name => row["organization_name"] || row["contributor_employer"]
+    :name => row["organization_name"] || row["contributor_employer"],
+    :business_category_id => row["contributor_category"] || ''
   )
 
   contributor = Contributor.first_or_create(
     :name => row["contributor_name"],
     :type => row["contributor_type"],
+    :address => row["contributor_address"],
+    :city => row["contributor_city"],
+    :state => row["contributor_state"],
     :zipcode => row["contributor_zipcode"],
     :occupation => row["contributor_occupation"] || '',
     :business => business
@@ -31,4 +45,16 @@ FasterCSV.foreach("contributions.csv",{:headers => true}) do |row|
     :contributor => contributor,
     :recipient => recipient
   )
+end
+
+# NONEXISTANT PARTIES WILL BE DELETED
+Recipient.all(:party => nil).destroy
+Contribution.all.each do |c|
+  c.destroy if c.recipient.nil?
+end
+Contributor.all.each do |c|
+  c.destroy if c.contributions.empty?
+end
+Business.all.each do |b|
+  b.destroy if b.contributors.empty?
 end

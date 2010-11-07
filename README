@@ -7,10 +7,18 @@ gem install --no-rdoc --no-ri \
         curb \
         dm-core \
         dm-migrations \
+        dm-postgres-adapter \
+        dm-mysql-adapter \
         dm-sqlite-adapter \
+        fastercsv \
         json \
         shotgun \
         sinatra \
         thin \
         transparency_data \
+
+Install postgresql, start the server and then:
+    sudo -u postgres createuser -P -d -l -s buyyourvalues
+    # Password is buyyourvalues
+    sudo -u postgres createdb buyyourvalues
 
