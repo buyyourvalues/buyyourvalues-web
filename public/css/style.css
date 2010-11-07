@@ -159,3 +159,40 @@ div#table
 {
     overflow-y: scroll;
 }
+
+#byv_tooltip{
+  position:absolute;
+  width:100px;
+  height:75px;
+  background-color:#eee;
+  box-shadow:2px 2px 2px #cecece;
+  -moz-boz-shadow:2px 2px 2px #cecece;
+  -webkit-box-shadow:2px 2px 2px #cecece;
+}
+
+#tooltip_title{
+  color:#666;
+  font-weight:bold;
+  font-size:14px;
+  font-family:helvetica,arial,sans-serif;
+}
+
+#tooltip_contributions{
+  list-style-type:none;
+  padding:5px;
+}
+
+li.tooltip_item{
+  font-size:12px;
+  text-transform:uppercase;
+  font-family:helvtica,arial,sans-serif;
+  color:#666;
+}
+
+li.even{
+  background-color:#cecece;
+}
+
+li.odd{
+  background-color:#dfdfdf;
+}
