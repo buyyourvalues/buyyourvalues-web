@@ -4,9 +4,15 @@ task :migrate do
 end
 
 desc "Read and import from CSV"
-task :import => [:clean, :migrate] do 
+task :parse => [:clean, :migrate] do
   require 'parse'
 end
+
+task :yelp => [:parse] do
+  require 'yelp'
+end
+
+task :import => [:yelp]
 
 desc "Clean DB data"
 task :clean do
