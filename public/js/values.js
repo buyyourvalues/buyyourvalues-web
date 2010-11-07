@@ -9,16 +9,17 @@ var update_chart = function(data) {
     var total = 0;
     $.each(data, function(i, obj) {
         total += obj.amount;
-    }
+    });
 
     var values = [];
     var labels = [];
     var colors = [];
+
     $.each(data, function(i, obj) {
         values.push((obj.amount / total) * 100);
         labels.push(obj.party);
         colors.push(obj.color);
-    }
+    });
 
     var url =
         "http://chart.apis.google.com/chart?cht=p&chs=300x160&chd=t:" +
@@ -55,5 +56,4 @@ $(function() {
     });
 
     initialize_map();
-    drawTable();
 });
