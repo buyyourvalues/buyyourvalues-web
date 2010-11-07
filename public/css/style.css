@@ -7,7 +7,7 @@ div#container {
     width: 1000px;
 }
 
-div#header h1, div#header h2 {
+div#header {
     text-align: center;
 }
 
@@ -41,4 +41,7 @@ div#content {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+}
+.sub {
+    display: none;
 }
