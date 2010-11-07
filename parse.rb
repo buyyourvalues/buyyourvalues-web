@@ -2,7 +2,6 @@
 require 'rubygems'
 require 'fastercsv'
 require 'model'
-require 'yelp'
 
 FasterCSV.foreach("catcodes.csv", :headers => true) do |row|
   BusinessCategory.create(
@@ -48,3 +47,4 @@ FasterCSV.foreach("contributions.csv", :headers => true) do |row|
   )
 end
 
+Recipient.all(:party => nil).destroy
