@@ -10,12 +10,14 @@ div#container {
 }
 
 div#header {
-    text-align: center;
+  position:relative;
 }
 
 div#search-bar-outer {
     margin: 0 auto 1.5em;
-    text-align: center;
+    position:absolute;
+    right:60px;
+    top:80px;
 }
 
 .category_picker{
