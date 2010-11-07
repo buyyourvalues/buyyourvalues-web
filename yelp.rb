@@ -4,6 +4,7 @@ require "curb"
 require "yaml"
 require "cgi"
 require "crack"
+require 'model'
 
 class Yelp
 
@@ -18,7 +19,7 @@ class Yelp
   end
 
   def build_url
-    @url = "http://api.yelp.com/business_review_search?term=#{CGI::escape(@name)}&location=#{CGI::escape("Manhattan New York")}&ywsid=#{@yelp_key}"
+    @url = "http://api.yelp.com/business_review_search?limit=1&term=#{CGI::escape(@name)}&location=#{CGI::escape("Manhattan New York")}&ywsid=#{@yelp_key}"
   end
 
   def request_url
@@ -26,5 +27,15 @@ class Yelp
     c.perform
     @businesses = Crack::JSON.parse(c.body_str)["businesses"]
     puts @businesses
+  end
+end
+
+Business.all(:id => (1..10)).each do |b|
+  y = Yelp.new(b.name)
+  if not y.businesses.empty?
+    puts "Adding lat/long to #{b.name}"
+    b.latitude = y.businesses[0]['latitude']
+    b.longitude = y.businesses[0]['longitude']
+    b.save
   end
 end

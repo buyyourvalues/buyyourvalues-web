@@ -13,11 +13,13 @@ class Business
 
   property :id, Serial
   property :name, String, :length => 100
-  property :address, Text
+  property :latitude, String
+  property :longitude, String
 end
 
 class Contributor
   include DataMapper::Resource
+  has n, :contributions
   belongs_to :business
 
   property :id, Serial
