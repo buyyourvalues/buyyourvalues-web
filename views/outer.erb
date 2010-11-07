@@ -71,12 +71,19 @@
                         <div id="map-canvas">
                             <img src="http://maps.google.com/maps/api/staticmap?center=New+York,NY&zoom=14&size=400x380&maptype=roadmap&markers=color:blue|label:S|40.702147,-74.015794&markers=color:green|label:G|40.711614,-74.012318&markers=color:red|color:red|label:C|40.718217,-73.998284&sensor=false" alt="Some map" />
                         </div>
+                        <a class="close_all" href="javascript:reset_boundaries()">Center</a>
                     </div>
                     <div id="chart">
                         <img id="chart-img" src="http://chart.apis.google.com/chart?cht=p&chs=300x160&chd=t:60,40&chl=Democrat|Republican&chf=bg,s,F0F0F000&chco=0000FF,FF0000" alt="Some chart" />
                     </div>
                     <div id="table">
-                        <div id="table_div"></div>
+                        <table id="contributions">
+                            <tr>
+                                <th>Name</th>
+                                <th>Party</th>
+                                <th>Contribution</th>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
