@@ -16,7 +16,7 @@ end
 
 desc "DB console"
 task :console do
-  sh 'sqlite3 data.db'
+  sh 'psql -Ubuyyourvalues'
 end
 
 task :db_empty => [:clean, :migrate]

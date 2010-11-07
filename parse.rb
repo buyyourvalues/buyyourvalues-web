@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'fastercsv'
-require 'model.rb'
+require 'model'
+require 'yelp'
 
 FasterCSV.foreach("catcodes.csv", :headers => true) do |row|
   BusinessCategory.create(
@@ -46,3 +47,4 @@ FasterCSV.foreach("contributions.csv", :headers => true) do |row|
     :recipient => recipient
   )
 end
+
