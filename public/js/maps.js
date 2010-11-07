@@ -9,7 +9,7 @@ var initialize_map = function ()
     var mapDiv = document.getElementById('map-canvas');
 
     map = new google.maps.Map(mapDiv, {
-        center: new google.maps.LatLng(37.4419, -122.1419),
+        center: new google.maps.LatLng(40.7483282, -73.9962255),
         zoom: 13,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
