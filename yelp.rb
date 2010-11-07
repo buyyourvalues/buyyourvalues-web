@@ -31,7 +31,7 @@ class Yelp
   end
 end
 
-Business.all(:id => (91..191)).each do |b|
+Business.all(:id => (192..285)).each do |b|
   y = Yelp.new(b.name)
   if not y.businesses.empty?
     puts "Adding lat/long to #{b.name}"
