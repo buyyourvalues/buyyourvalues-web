@@ -1,10 +1,11 @@
 #!/usr/bin/env ruby
 
+require "rubygems"
 require "curb"
 require "yaml"
 require "cgi"
 require "crack"
-require 'model'
+require "model"
 
 class Yelp
 
@@ -30,7 +31,7 @@ class Yelp
   end
 end
 
-Business.all(:id => (1..10)).each do |b|
+Business.all(:id => (1..15)).each do |b|
   y = Yelp.new(b.name)
   if not y.businesses.empty?
     puts "Adding lat/long to #{b.name}"
