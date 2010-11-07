@@ -23,6 +23,7 @@ class Contributor
   property :name, String
   property :type, String
   property :zipcode, String
+  property :occupation, String
 end
 
 class Contribution
@@ -46,6 +47,7 @@ class Recipient
   property :party, String
   property :election_type, String
   property :seat, String
+  property :district, String
 end
 
 DataMapper.finalize
