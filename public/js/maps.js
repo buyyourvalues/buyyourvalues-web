@@ -5,6 +5,7 @@
 var map;
 var boundaries;
 var points = new Array();
+var pointsById = new Array();
 var max_contr = 0;
 var min_contr = 9999999;
 
@@ -183,12 +184,6 @@ var processBusiness = function (business)
             parties[party] = 0;
 
         parties[party] += this.amount;
-
-        $('table#contributions').append(
-            '<tr class="' + business.business_id + '"><td>' + business.business_name + '</td>' +
-            '<td>' + party + '</td>' +
-            '<td>' + this.amount + '</td></tr>'
-        );
     });
 
     var p_d = Math.floor(255 * (parties['D'] || 0) / total);
@@ -266,6 +261,8 @@ var processBusiness = function (business)
                 ]
             }
         );
+
+        pointsById[business.business_id] = point;
     }
 
     return [p_d, p_r, p_i];
