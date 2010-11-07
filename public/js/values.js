@@ -31,5 +31,4 @@ $(function() {
     });
 
     initialize_map();
-    drawTable();
 });
