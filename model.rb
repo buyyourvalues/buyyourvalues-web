@@ -44,6 +44,8 @@ class Recipient
   property :address, Text
   property :state, String
   property :party, String
+  property :election_type, String
+  property :seat, String
 end
 
 DataMapper.finalize
