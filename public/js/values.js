@@ -29,4 +29,7 @@ $(function() {
             e.stopPropagation();
         });
     });
+
+    initialize_map();
+    drawTable();
 });
