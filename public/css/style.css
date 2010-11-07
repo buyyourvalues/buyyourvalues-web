@@ -18,6 +18,38 @@ div#search-bar-outer {
     text-align: center;
 }
 
+li
+{
+    list-style-image: url("/images/plus.png");
+}
+
+ul li
+{
+    padding-left: 6px;
+}
+
+ul li ul,
+ul li ul li
+{
+    padding-left: 0;
+}
+
+li.shown
+{
+    list-style-image: url("/images/minus.png");
+    /*background-color: #cff;*/
+}
+
+li.shown li
+{
+    background-color: #f9f9f9;
+}
+
+li ul li
+{
+    list-style-image: url("/images/tree_line.gif");
+}
+
 div,
 h3
 {
@@ -35,6 +67,10 @@ div#sidebar {
     */
     min-height: 600px;
 }
+    div#sidebar li
+    {
+        cursor: pointer;
+    }
 
 div#sidebar h3 {
     margin: 0em;
@@ -42,6 +78,7 @@ div#sidebar h3 {
     text-align: center;
     background-color: #dfdfd7;
     font-weight: normal;
+    cursor: default;
 }
 
 /*** Content ***/
@@ -57,6 +94,11 @@ div#content {
 
 .sub {
     display: none;
+}
+
+div#sidebar a.close_all
+{
+    margin-left: 15px;
 }
 
 div#sidebar,
@@ -91,9 +133,12 @@ div#chart
 div#map
 {
     height: 400px;
+    padding-top: 10px;
 }
 
-div#map img
+div#map-canvas
 {
     border: #aaa 1px solid;
+    height: 390px;
+    margin: 0 10px;
 }

@@ -2,4 +2,22 @@ This is the web interface for the data.
 
 You'll need to do this:
 
-gem install sinatra dm-core dm-migrations dm-sqlite-adapter transparency_data shotgun thin json --no-rdoc --no-ri
+gem install --no-rdoc --no-ri \
+        crack \
+        curb \
+        dm-core \
+        dm-migrations \
+        dm-postgres-adapter \
+        dm-mysql-adapter \
+        dm-sqlite-adapter \
+        json \
+        shotgun \
+        sinatra \
+        thin \
+        transparency_data \
+
+Install postgresql, start the server and then:
+    sudo -u postgres createuser -P -d -l -s buyyourvalues
+    # Password is buyyourvalues
+    sudo -u postgres createdb buyyourvalues
+
