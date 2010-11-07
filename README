@@ -7,6 +7,8 @@ gem install --no-rdoc --no-ri \
         curb \
         dm-core \
         dm-migrations \
+        dm-postgres-adapter \
+        dm-mysql-adapter \
         dm-sqlite-adapter \
         json \
         shotgun \
