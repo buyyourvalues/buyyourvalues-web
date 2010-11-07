@@ -37,7 +37,7 @@ ul li ul li
 li.shown
 {
     list-style-image: url("/images/minus.png");
-    background-color: #cff;
+    /*background-color: #cff;*/
 }
 
 li.shown li
@@ -96,6 +96,11 @@ div#content {
     display: none;
 }
 
+div#sidebar a.close_all
+{
+    margin-left: 15px;
+}
+
 div#sidebar,
 div#map,
 div#chart,
@@ -128,9 +133,11 @@ div#chart
 div#map
 {
     height: 400px;
+    padding-top: 10px;
 }
 
 div#map img
 {
     border: #aaa 1px solid;
+    
 }
