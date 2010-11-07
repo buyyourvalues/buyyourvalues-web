@@ -183,6 +183,12 @@ div#table
   padding:5px;
 }
 
+table#contributions td
+{
+    text-align: left;
+    cursor: pointer;
+}
+
 li.tooltip_item{
   font-size:12px;
   text-transform:uppercase;
