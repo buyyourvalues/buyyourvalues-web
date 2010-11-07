@@ -39,5 +39,7 @@ get '/businesses' do
     data << new_data
   end
 
-  data.to_json
+  data.sort {
+    |a, b| a[:business_name] <=> b[:business_name]
+  }.to_json
 end
