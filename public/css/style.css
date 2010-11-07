@@ -36,7 +36,7 @@ ul li ul li
 
 li.shown
 {
-    list-style-image: url("/images/minus.png");
+  list-style-type:none;
     /*background-color: #cff;*/
 }
 
@@ -48,9 +48,6 @@ li.shown li
 li ul li
 {
   list-style-type:none;
-  /*
-    list-style-image: url("/images/tree_line.gif");
-    */
 }
 
 div,
@@ -87,6 +84,7 @@ div#sidebar h3 {
 
 /*** Content ***/
 div#content {
+    position:relative;
     margin-left: 10px;
     width: 450px;
     float: left;
