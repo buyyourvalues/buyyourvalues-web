@@ -136,8 +136,9 @@ div#map
     padding-top: 10px;
 }
 
-div#map img
+div#map-canvas
 {
     border: #aaa 1px solid;
-    
+    height: 390px;
+    margin: 0 10px;
 }
