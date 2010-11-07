@@ -1,3 +1,9 @@
+var closeTree = function () {
+    $('.shown').each(function () {
+        $(this).find('ul').slideUp();
+        $(this).removeClass('shown');
+    });
+}
 $(function() {
     $('#search-bar').submit(function() {
         $.get('/data-load', $(this).serialize(), function(resp) {
