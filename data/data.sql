@@ -81,8 +81,8 @@ CREATE TABLE contributions (
     id integer NOT NULL,
     amount double precision,
     date timestamp without time zone,
-    recipient_id integer NOT NULL,
-    contributor_id integer NOT NULL
+    contributor_id integer NOT NULL,
+    recipient_id integer NOT NULL
 );
 
 
@@ -714,16 +714,14 @@ Z9999	CRP	INTERNAL TRANSFER AND OTHER NON-CONTRIBUTIONS	NON-CONTRIBUTION	Z09
 
 COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin;
 2	Triarc Companies	\N	\N	G2900
-3	OSI RESTAURANT PARTNERS, INC	\N	\N	G2900
-4	WENDYS FRANCHISEE	\N	\N	G2900
-8	WENDBING CORP.	\N	\N	G2900
+6	Fast Food Systems	\N	\N	G2900
+7	McDonald's	\N	\N	G2900
+9	Ilili Restaurant	\N	\N	G2900
 10	Alicart Restaurant Group	\N	\N	G2900
 11	A La Carte Restaurant Group	\N	\N	G2900
 12	SELF	\N	\N	G2900
 13	NEW YORK STATE RESTAURANT ASSOCIATION	\N	\N	G2900
 14	ROSA MEAXICANO	\N	\N	G2900
-15	PepsiCo Foodservice	\N	\N	G2900
-16	FRANCHISEE	\N	\N	G2900
 17	Delmonicos Restaurant	\N	\N	G2900
 18	Wendy's International	\N	\N	G2900
 19	Self	\N	\N	G2900
@@ -762,9 +760,7 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 52	KING DAVID RESTAURANT	\N	\N	G2900
 53	Nino's Restaurant	\N	\N	G2900
 54	Vintage Bar & Restaurant	\N	\N	G2900
-55	South Shore Restrurant Managment	\N	\N	G2900
 56	Wendy's Restaurants of Rochester	\N	\N	G2900
-57	WENDYS OF ROCHESTER, INC.	\N	\N	G2900
 58	Restaurant	\N	\N	G2900
 59	Endeavor Restaurant Group	\N	\N	G2900
 60	Sams Place Restaurant	\N	\N	G2900
@@ -775,7 +771,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 65	Ciro's Pizza Cafe	\N	\N	G2900
 66	Kundip Restaurant	\N	\N	G2900
 67	Blue Plate Restaurant	\N	\N	G2900
-68	Framboise Catering	\N	\N	G2900
 69	Self-employed	\N	\N	G2900
 70	Pasta Only Cobblestone Restaurant	\N	\N	G2900
 71	Roberto's Restaurant	\N	\N	G2900
@@ -785,10 +780,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 75	Suarez Restaurants	\N	\N	G2900
 76	Ninos Pizza	\N	\N	G2900
 77	Ciros Pizza Cafe	\N	\N	G2900
-78	McDonalds	\N	\N	G2900
 79	Time Cafe	\N	\N	G2900
 80	Planet Hollywood	\N	\N	G2900
-81	Bower Pauline Ent Inc	\N	\N	G2900
 82	ENDEAVOR RESTAURANT GROUP INC	\N	\N	G2900
 83	FOOD CONSULTANTS	\N	\N	G2900
 84	KONSTANTINOU RESTAURANT INC	\N	\N	G2900
@@ -798,88 +791,43 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 88	Enors Restaurant Ventures	\N	\N	G2900
 89	Avra Restaurant	\N	\N	G2900
 90	Holbrook Diner	\N	\N	G2900
-91	HOSPITALITY SYRACUSE	\N	\N	G2900
-92	Legends Bar & Grille	\N	\N	G2900
-93	LAVO	\N	\N	G2900
-94	WENDYS INTERNATIONAL, INC.	\N	\N	G2900
 95	COLANDREA NEW CORNER RESTAURANT	\N	\N	G2900
-96	WENDYS	\N	\N	G2900
-97	Raspberries Cafe & Creamery	\N	\N	G2900
-98	Self Employed	\N	\N	G2900
-99	Ciro Pizza Cafe	\N	\N	G2900
 100	Gargoiulos Restaurant	\N	\N	G2900
-101	Dinosaur Bar-B-Que	\N	\N	G2900
-102	PALAZZO GRILL & BAR	\N	\N	G2900
 103	AUNT BUTCHIES CAKES INC	\N	\N	G2900
 104	RIBS NYC LLC	\N	\N	G2900
-105	NEW YORK STATE RESTAURANT ASSOCIATION INDUSTRY -PAC	\N	\N	G2900
-106	Restaurant Group	\N	\N	G2900
-107	NINAS RESTAURANT	\N	\N	G2900
-108	NEW YORK RESTAURANT ASSOCIATION	\N	\N	G2900
-109	WENDPARK LLLC	\N	\N	G2900
-110	Labor & Monitoring Consultants	\N	\N	G2900
-111	MCDONALD'S	\N	\N	G2900
-112	MCDONALD'S RESTAURANT	\N	\N	G2900
 113	Davenport Press Restaurant	\N	\N	G2900
-114	Restaurant Group LLC	\N	\N	G2900
-115	Blue Ribbon Diner	\N	\N	G2900
-116	Palm Restaurant	\N	\N	G2900
-117	Chef	\N	\N	G2900
-118	WHITE CASTLE	\N	\N	G2900
-119	UNITED RESTAURANT HOTEL & TAVERN ASSOCIATION	\N	\N	G2900
-120	Hook, Line and Sinker Pub, Inc	\N	\N	G2900
-121	Manganaro's Hero-Boy Restaurant	\N	\N	G2900
-122	Palm Restaurant Group	\N	\N	G2900
 123	Pcr Restaurant	\N	\N	G2900
-124	The Restaurant Group Rio Associates	\N	\N	G2900
-125	C&B Restaurant Corp	\N	\N	G2900
 126	Staaten Restaurant	\N	\N	G2900
 127	Restaurant Business	\N	\N	G2900
-128	Beth Carrie's Restaurant	\N	\N	G2900
 129	Symeon Restaurant	\N	\N	G2900
-130	VESELKA RESTAURANT	\N	\N	G2900
-131	COVER 3, INC.	\N	\N	G2900
-132	NEW YORK RESTAURANT ASSOCIATION-INDUSTRY PAC	\N	\N	G2900
-133	Delmonico's Restaurant	\N	\N	G2900
-134	McDonald's Corp	\N	\N	G2900
-135	Bocelli's Restaurant	\N	\N	G2900
-5	FAST FOOD SYSTEMS, INC.	40.7408604	-73.9879652	G2900
-7	McDonald's	40.744974	-73.979084	G2900
-9	Ilili Restaurant	40.744407	-73.987929	G2900
-136	Joe & Pats Pizza	\N	\N	G2900
-137	Piggy Pats Bbq	\N	\N	G2900
-138	WENCORP EAST, INC.	\N	\N	G2900
-139	Bella Cucina Restaurant	\N	\N	G2900
+92	Legends Bar & Grille	40.727976	-73.985744	G2900
+93	LAVO	40.7628542	-73.9715414	G2900
+96	WENDYS	40.718603	-73.988511	G2900
+97	Raspberries Cafe & Creamery	40.778326	-73.980944	G2900
+98	Self Employed	40.7848014831543	-73.9789962768555	G2900
+99	Ciro Pizza Cafe	40.7272425062979	-73.9922654628754	G2900
+101	Dinosaur Bar-B-Que	40.8181186	-73.9605176	G2900
+102	PALAZZO GRILL & BAR	40.7431983947754	-74.0075988769531	G2900
+105	NEW YORK STATE RESTAURANT ASSOCIATION INDUSTRY -PAC	40.723326	-73.997853	G2900
+106	Restaurant Group	40.708227	-74.014391	G2900
+107	NINAS RESTAURANT	40.781111	-73.949	G2900
+108	NEW YORK RESTAURANT ASSOCIATION	40.7124182817304	-74.005880355835	G2900
+114	Restaurant Group LLC	40.708227	-74.014391	G2900
+115	Blue Ribbon Diner	40.7254534	-74.0029779	G2900
+116	Palm Restaurant	40.7517013549805	-73.9710006713867	G2900
+117	Chef	40.7614179013078	-73.9820623397827	G2900
+119	UNITED RESTAURANT HOTEL & TAVERN ASSOCIATION	40.7342501	-73.9935801	G2900
+122	Palm Restaurant Group	40.7517013549805	-73.9710006713867	G2900
+128	Beth Carrie's Restaurant	40.7669108	-73.9676509	G2900
+130	VESELKA RESTAURANT	40.729144	-73.987279	G2900
 140	Declemente's Deli Nine	\N	\N	G2900
-141	Restaurant Publicist	\N	\N	G2900
 142	Villa Barone Hilltop Restaurant	\N	\N	G2900
-143	Cortese Restaurant	\N	\N	G2900
-144	Cici's Restaurant	\N	\N	G2900
-145	North Bowl Restaurant	\N	\N	G2900
-146	Michael Lomonaco	\N	\N	G2900
 147	Sentrista Grille	\N	\N	G2900
-148	Varick Restaurant	\N	\N	G2900
-149	Tavern Owner	\N	\N	G2900
-150	Park Cafe	\N	\N	G2900
 151	Ciros Pizza Caf	\N	\N	G2900
 152	CERRONES RESTAURANT INC	\N	\N	G2900
 153	DAVAL RESTAURANT CORP	\N	\N	G2900
-154	LAMOTTAS RESTAURANT	\N	\N	G2900
-155	BARTOLIS PIZZERIA & RESTAURANT	\N	\N	G2900
-156	Docs Pizza	\N	\N	G2900
-157	Jonathan's Restaurant	\N	\N	G2900
-158	DP Mgmt Inc	\N	\N	G2900
-159	Bar Owner	\N	\N	G2900
-160	C&B Restaurant	\N	\N	G2900
 161	Athos Restaurant	\N	\N	G2900
-162	TSC FOOD SERVICE, INC.	\N	\N	G2900
-163	WENDYS RESTAURANTS OF ROCHEST	\N	\N	G2900
-164	SUNSHINE VALLEY	\N	\N	G2900
-165	DINOSAUR RESTAURANTS	\N	\N	G2900
 166	CORTESE RESTAURANT INC	\N	\N	G2900
-167	ANTONIOS RESTAURANT	\N	\N	G2900
-168	WENDCENTRAL CORP.	\N	\N	G2900
-169	CARMINES RESTAURANT	\N	\N	G2900
 170	EJP RESTAURANT CORP	\N	\N	G2900
 171	JSC RESTAURANT CORP	\N	\N	G2900
 172	LIGRECIS STAATEN RESTAURANT INC	\N	\N	G2900
@@ -887,21 +835,13 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 174	DUTCHESS-PUTNAM RESTAURANT & TAVERN ASSC	\N	\N	G2900
 175	BOTTIERI RESTAURANT INC	\N	\N	G2900
 176	GRINNELL RESTAURANT	\N	\N	G2900
-177	ELMOS RESTAURANT	\N	\N	G2900
 178	BENSONHURST RESTAURANT CORP	\N	\N	G2900
 179	SERGIS ITALIAN RESTAURANT	\N	\N	G2900
 180	CANLONS RESTAURANT	\N	\N	G2900
-181	19TH HOLE RESTAURANT	\N	\N	G2900
-182	MATTIES RESTAURANT	\N	\N	G2900
 183	VEIPAS FOOD CORP	\N	\N	G2900
 184	SIRENA RESTAURANT	\N	\N	G2900
-185	BINGS RESTAURANT	\N	\N	G2900
-186	2 VINE RESTAURANT	\N	\N	G2900
-187	ALTONS RESTAURANT INC	\N	\N	G2900
-188	SHANGHAI REDS RESTAURANT	\N	\N	G2900
 189	BONGIORNOS RESTAURANT	\N	\N	G2900
 190	RED OSIER LANDMARK RESTAURANT	\N	\N	G2900
-191	MCDONALDS RESTAURANT	\N	\N	G2900
 192	THAI VENTURES INC	\N	\N	G2900
 193	BOMBERS BURRITO BAR	\N	\N	G2900
 194	LOMBARDIS PIZZERIA	\N	\N	G2900
@@ -913,13 +853,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 200	ARK TAMPA LLC	\N	\N	G2900
 201	ARK HOLLYWOOD LLC	\N	\N	G2900
 202	OSI Restaurant Partners	\N	\N	G2900
-203	Wendbing Corp.	\N	\N	G2900
-204	Wendys Resturants Of Rocheste	\N	\N	G2900
-205	Wendys Franchisee	\N	\N	G2900
-206	Fast Food Systems, Inc.	\N	\N	G2900
 207	Self employed	\N	\N	G2900
 208	QUAKER BONNET	\N	\N	G2900
-209	OSRS Outback Field Mgmt	\N	\N	G2900
 210	Gold Coast Restaurant Corp	\N	\N	G2900
 211	Dinex Group	\N	\N	G2900
 212	Bobby Vans	\N	\N	G2900
@@ -928,7 +863,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 215	WENDYS RESTAURANTS OF ROCHESTER	\N	\N	G2900
 216	Elmo Restaurant	\N	\N	G2900
 217	Famiglia-DeBartolo LLC	\N	\N	G2900
-218	Franchisee	\N	\N	G2900
 219	Wendbing Corp	\N	\N	G2900
 220	Famiglia Departolo	\N	\N	G2900
 221	Bombay Palace Restaurant	\N	\N	G2900
@@ -968,14 +902,41 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 255	Sitar Restaurant	\N	\N	G2900
 256	Smith & Wollensky Restaurant Group	\N	\N	G2900
 257	Wok & Grill	\N	\N	G2900
-258	LPS ENT.	\N	\N	G2900
-259	Burger King Corporation	\N	\N	G2900
 260	Caterer/Restaurateur	\N	\N	G2900
 261	Mortons Restaurant Group	\N	\N	G2900
 262	Samsoo 6 Absam Restaurant	\N	\N	G2900
 263	Joy Garden Restaurant	\N	\N	G2900
 264	Tio Pepe Restaurant	\N	\N	G2900
-265	Jack's Oyster House	\N	\N	G2900
+132	NEW YORK RESTAURANT ASSOCIATION-INDUSTRY PAC	40.728805	-73.984405	G2900
+133	Delmonico's Restaurant	40.7050211	-74.0102363	G2900
+134	McDonald's Corp	40.804311	-73.966728	G2900
+135	Bocelli's Restaurant	40.719031	-73.985092	G2900
+136	Joe & Pats Pizza	40.72167	-73.995584	G2900
+137	Piggy Pats Bbq	40.744201	-73.995883	G2900
+139	Bella Cucina Restaurant	40.7568664550781	-73.9868545532227	G2900
+141	Restaurant Publicist	40.742000579834	-74.0034027099609	G2900
+143	Cortese Restaurant	40.729136	-74.003534	G2900
+144	Cici's Restaurant	40.708153	-74.010572	G2900
+145	North Bowl Restaurant	40.73108	-73.990324	G2900
+146	Michael Lomonaco	40.733862	-74.002279	G2900
+148	Varick Restaurant	40.728268	-74.004744	G2900
+149	Tavern Owner	40.7385773	-73.9884591	G2900
+150	Park Cafe	40.7644819	-73.9807836	G2900
+154	LAMOTTAS RESTAURANT	40.731588	-73.983921	G2900
+155	BARTOLIS PIZZERIA & RESTAURANT	40.7431983947754	-74.0075988769531	G2900
+156	Docs Pizza	40.730446	-73.9832596	G2900
+157	Jonathan's Restaurant	40.7378005981445	-74.0080032348633	G2900
+159	Bar Owner	40.7377014160156	-74.0017013549805	G2900
+160	C&B Restaurant	40.7385773	-73.9884591	G2900
+165	DINOSAUR RESTAURANTS	40.7820286	-73.9717052	G2900
+167	ANTONIOS RESTAURANT	40.7375578	-73.9895188	G2900
+169	CARMINES RESTAURANT	40.7573655	-73.9860683	G2900
+177	ELMOS RESTAURANT	40.741997	-73.997555	G2900
+181	19TH HOLE RESTAURANT	40.759623	-73.9758892	G2900
+182	MATTIES RESTAURANT	40.7229699	-73.98519	G2900
+186	2 VINE RESTAURANT	40.784457	-73.977743	G2900
+187	ALTONS RESTAURANT INC	40.7140209	-73.9965848	G2900
+191	MCDONALDS RESTAURANT	40.7658119	-73.983123	G2900
 266	Famous Famiglia	\N	\N	G2900
 267	Old Town Bar & Restaurant	\N	\N	G2900
 268	Huey Enterprises	\N	\N	G2900
@@ -984,7 +945,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 271	Oystergirl Inc	\N	\N	G2900
 272	FOOD PARADE	\N	\N	G2900
 273	Fresco's Restaurant	\N	\N	G2900
-274	Nation's Restaurant News	\N	\N	G2900
 275	Fa Shing Restaurant	\N	\N	G2900
 276	Sunshine Restaurant	\N	\N	G2900
 277	Mario'S Restaurant	\N	\N	G2900
@@ -1001,7 +961,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 288	Sundou Dumpling Restaurant	\N	\N	G2900
 289	Market Restaurant	\N	\N	G2900
 290	Tomo Cafe	\N	\N	G2900
-291	Enovo Restaurant Ventures, LLC	\N	\N	G2900
 292	China King Restaurant	\N	\N	G2900
 293	University Club	\N	\N	G2900
 294	JR Restaurant At Jamaica	\N	\N	G2900
@@ -1029,37 +988,22 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 316	Apple-Metro Inc	\N	\N	G2900
 317	Restaurant Executive	\N	\N	G2900
 318	INFORMATION REQUESTED PER BEST EFFORTS	\N	\N	G2900
-319	Spring House Inc	\N	\N	G2900
 320	East Market Restaurant	\N	\N	G2900
 321	Peter Luger Restaurants	\N	\N	G2900
 322	Meyers Restaurants	\N	\N	G2900
 323	Palle Restaurant Group	\N	\N	G2900
-324	Spring House Inc.	\N	\N	G2900
 325	STONE COLD CREAMERY	\N	\N	G2900
 326	CAFE RUBIO RESTAURANT	\N	\N	G2900
 327	DNC TRAVEL HOSPITALITY SERVICES	\N	\N	G2900
 328	Brother Jimmy's Restaurant	\N	\N	G2900
-329	ADF Companies	\N	\N	G2900
-330	C/O MCDONALD'S RESTAURANT	\N	\N	G2900
 331	Endeavor Restaurant	\N	\N	G2900
 332	Tempo Restaurant	\N	\N	G2900
-333	Rackson Corp	\N	\N	G2900
 334	Bourbon Street	\N	\N	G2900
-335	MCDONALD'S OFFICE	\N	\N	G2900
-336	McDonalds Corp	\N	\N	G2900
-337	The Restaurant Group/Rio Associates	\N	\N	G2900
 338	GOLDEN HOUSE CHINESE RESTAURANT	\N	\N	G2900
 339	Mercurio Restaurant	\N	\N	G2900
-340	Rackson	\N	\N	G2900
 341	NATIVES RESTAURANT	\N	\N	G2900
-342	Wendys International, Inc.	\N	\N	G2900
-343	Wendys International, Inc	\N	\N	G2900
-344	Windram Enterprises Inc	\N	\N	G2900
 345	Restaurant Business M	\N	\N	G2900
-346	The Water Club	\N	\N	G2900
-347	The Good Steer	\N	\N	G2900
 348	Self Employed Restaurant Opera	\N	\N	G2900
-349	Pensabene's Park West Restaurant	\N	\N	G2900
 350	La Serre Restaurant	\N	\N	G2900
 351	Franchisee Pizza	\N	\N	G2900
 352	EAST SIDE PHARMACY INC	\N	\N	G2900
@@ -1076,10 +1020,7 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 363	Forge Diner	\N	\N	G2900
 364	Trufoods LLC	\N	\N	G2900
 365	LDM Restaurant Corp	\N	\N	G2900
-366	SHAREL VENTURES, LLC.	\N	\N	G2900
-367	CA Curtze, Co	\N	\N	G2900
 368	Irving Mill Restaurant	\N	\N	G2900
-369	Wendgate Corp	\N	\N	G2900
 370	Irving Mill Restaurant/Hostess	\N	\N	G2900
 371	Anas Restaurant	\N	\N	G2900
 372	Brick Cafe	\N	\N	G2900
@@ -1096,8 +1037,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 383	Mana Juana Caf	\N	\N	G2900
 384	Local Six Hotel, Restaurant & Club	\N	\N	G2900
 385	Uncle Jacks Steakhouse	\N	\N	G2900
-386	Power Communications	\N	\N	G2900
-387	HUB International Northeast	\N	\N	G2900
 388	Bistro Grill	\N	\N	G2900
 389	Restaurant Consultant	\N	\N	G2900
 390	Central Park Boat House Cafe	\N	\N	G2900
@@ -1105,19 +1044,14 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 392	Brasserie Restaurant/Patina Restaurant	\N	\N	G2900
 393	Tremblay & Tremblay Restaurant Group	\N	\N	G2900
 394	Fresco By Scotto Restaurant	\N	\N	G2900
-395	Rosa Mexicano Hospitality	\N	\N	G2900
 396	Carle Place Diner	\N	\N	G2900
 397	Lemon Cafe	\N	\N	G2900
 398	Sanford Restaurant	\N	\N	G2900
 399	Lupa Restaurant	\N	\N	G2900
-400	Cover 3, Inc	\N	\N	G2900
-401	Golden Corral	\N	\N	G2900
-402	Pond Hill Ventures, LLC	\N	\N	G2900
 403	Vinny's Cafe	\N	\N	G2900
 404	Bernstein, Lipiwitz & Burger	\N	\N	G2900
 405	TPL RESTAURANT CORP	\N	\N	G2900
 406	Ed's Deli	\N	\N	G2900
-407	New York State Restaurant Association	\N	\N	G2900
 408	GOLDEN KEY FOOD STORES	\N	\N	G2900
 409	ANTIQUITY TAVERN CORP	\N	\N	G2900
 410	Johnny Rockets	\N	\N	G2900
@@ -1126,11 +1060,7 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 413	Lareira Restaurant	\N	\N	G2900
 414	Dominique's Chesterfield Restaurant	\N	\N	G2900
 415	Good Restaurant	\N	\N	G2900
-416	The Good Service Company	\N	\N	G2900
-417	Steamer's Landing	\N	\N	G2900
 418	Outback Steakhouse	\N	\N	G2900
-419	Tony May Group/San Domenico	\N	\N	G2900
-420	Fireman Hospitality Group	\N	\N	G2900
 421	Upper West Rest Corp Fred's Restaurant	\N	\N	G2900
 422	Starbucks Corp	\N	\N	G2900
 423	Antionette's Ice Cream	\N	\N	G2900
@@ -1143,7 +1073,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 430	Waiter	\N	\N	G2900
 431	46-11 BROADWAY RESTAURANT	\N	\N	G2900
 432	Firebird Restaurant	\N	\N	G2900
-433	A & B Accounting Service	\N	\N	G2900
 434	Morgans Restaurant	\N	\N	G2900
 435	Bar	\N	\N	G2900
 436	Carneigie Hill Cafe	\N	\N	G2900
@@ -1166,7 +1095,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 453	DLA Restaurants	\N	\N	G2900
 454	RH Tugs Restaurant	\N	\N	G2900
 455	Peekskill Donuts	\N	\N	G2900
-456	Compass Group	\N	\N	G2900
 457	Colandrea New Corner Restaurant	\N	\N	G2900
 458	CONTES BURGER HAVEN	\N	\N	G2900
 459	Chick-Fil-A	\N	\N	G2900
@@ -1213,7 +1141,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 500	CREEKVIEW RESTAURANT	\N	\N	G2900
 501	TRIARC COMPANIES	\N	\N	G2900
 502	VIENTE-SIETE/CHARLIES WINGS	\N	\N	G2900
-503	OSRS OUTBACK FIELD MGMT	\N	\N	G2900
 504	STARR & CO	\N	\N	G2900
 505	Tavern on the Green	\N	\N	G2900
 506	30TH AVENUE PALACE FOOD CORP	\N	\N	G2900
@@ -1223,7 +1150,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 510	CHURRASQUIERA BAIRRADA RESTAURANT	\N	\N	G2900
 511	BREANDAN & CARRS RESTAURANT	\N	\N	G2900
 512	Domenico's Restaurant	\N	\N	G2900
-513	Jack	\N	\N	G2900
 514	Tally Ho Entertainment	\N	\N	G2900
 515	Palm Restaurant/Regional Director	\N	\N	G2900
 516	Solo Restaurant	\N	\N	G2900
@@ -1272,12 +1198,7 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 559	ENEDEAVOR RESTAURANT GROUP	\N	\N	G2900
 560	SAMMYS FISHBOX RESTAURANT	\N	\N	G2900
 561	Golden Unicorn Restaurant	\N	\N	G2900
-562	Quizno's	\N	\N	G2900
-563	Cooperative Association of Food Enterp	\N	\N	G2900
-564	Zebb	\N	\N	G2900
-565	Wachovia	\N	\N	G2900
 566	Great China Kitchen	\N	\N	G2900
-567	Service Universal Distributors	\N	\N	G2900
 568	Wendys Restaurants	\N	\N	G2900
 569	Croton Colonial Restaurant & Dine	\N	\N	G2900
 570	EMPIRE STATE BAR	\N	\N	G2900
@@ -1297,7 +1218,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 584	LA MARMITE RESTAURANT	\N	\N	G2900
 585	SCHENECTADY SARATOGA & WARREN COUNTY RESTAURANT & TAVERN ASSOCIATION	\N	\N	G2900
 586	GOODFELLOS RESTAURANT	\N	\N	G2900
-587	Zebb's Restaurant, Inc.	\N	\N	G2900
 588	Coco Chinese Restaurant	\N	\N	G2900
 589	Wcj Seafood Restaurant	\N	\N	G2900
 590	Dynasty Buffet	\N	\N	G2900
@@ -1313,7 +1233,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 600	Hua Rong Restaurant	\N	\N	G2900
 601	China Wok Restaurant	\N	\N	G2900
 602	Singas Famous Pizza	\N	\N	G2900
-603	Sugar Foods Corporation	\N	\N	G2900
 604	Marco Pito Restaurant	\N	\N	G2900
 605	EDDIES RESTAURANT	\N	\N	G2900
 606	NINAS RESTAURANT CORP	\N	\N	G2900
@@ -1339,13 +1258,7 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 626	Laurentwin Restaurant	\N	\N	G2900
 627	Court Deli	\N	\N	G2900
 628	Barrymore's Restaurant	\N	\N	G2900
-629	THE COUSINS FISHMARKET	\N	\N	G2900
-630	FLIK INTERNATIONAL CORP.	\N	\N	G2900
-631	MORGAN LINEN SERVICE	\N	\N	G2900
 632	Sanfords Restaurant	\N	\N	G2900
-633	Marsh & Associates PC	\N	\N	G2900
-634	Colony Liquor & Wine Dist., LLC.	\N	\N	G2900
-635	Real Seafood Company	\N	\N	G2900
 636	Vinci Pizza	\N	\N	G2900
 637	Givanni's Brick Oven Pizza	\N	\N	G2900
 638	Santangelo's Resturant	\N	\N	G2900
@@ -1354,14 +1267,10 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 641	O'Neals Restaurant	\N	\N	G2900
 642	Four Corners Diner	\N	\N	G2900
 643	Macgregors Grill	\N	\N	G2900
-644	Windram Enterprises Inc.	\N	\N	G2900
 645	Kennedey Pizza	\N	\N	G2900
 646	Arby's Restaurant	\N	\N	G2900
 647	Tosca Cafes	\N	\N	G2900
-648	Bruno's on the Blvd.	\N	\N	G2900
-649	BP Partners	\N	\N	G2900
 650	Natives Restaurant	\N	\N	G2900
-651	McDonald's Corporation	\N	\N	G2900
 652	Glazier Group	\N	\N	G2900
 653	McDonalds of Albany	\N	\N	G2900
 654	Restaurant Florent	\N	\N	G2900
@@ -1373,12 +1282,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 660	Harbour Lights Restaurant	\N	\N	G2900
 661	Grill West Indian Cuisine	\N	\N	G2900
 662	Boston Jerk City Restaurant	\N	\N	G2900
-663	REAL SEAFOOD COMPANY	\N	\N	G2900
 664	Landmarc Restaurant	\N	\N	G2900
 665	Dynamic Hotel & Restaurant Operation	\N	\N	G2900
-666	Compass Group - Restaurant Associates	\N	\N	G2900
-667	SEYFARTH SHAW LLP	\N	\N	G2900
-668	Seyfarth Shaw LLP	\N	\N	G2900
 669	King's Seafood Restaurant	\N	\N	G2900
 670	ISTANBUL RESTAURANT	\N	\N	G2900
 671	C C RESTAURANT MANAGEMENT	\N	\N	G2900
@@ -1399,7 +1304,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 686	SUFFOLK COUNTY RESTAURANT & TAVERN OWNERS ASSOCIATION	\N	\N	G2900
 687	GORM RESTAURANT	\N	\N	G2900
 688	PALACE DINER & RESTAURANT	\N	\N	G2900
-689	Golden Corral Corporation	\N	\N	G2900
 690	Hildreth Restaurant	\N	\N	G2900
 691	Symeons	\N	\N	G2900
 692	Papa's Fried Chicken & Pizza	\N	\N	G2900
@@ -1409,8 +1313,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 696	Verdiles Restaurant	\N	\N	G2900
 697	LUMI RESTAURANT	\N	\N	G2900
 698	La Pequena Columbia Restaurant	\N	\N	G2900
-699	Wendal Corp.	\N	\N	G2900
-700	Apple Gold Group	\N	\N	G2900
 701	MACDOUGAL RESTAURANT	\N	\N	G2900
 702	Doc's Pizza	\N	\N	G2900
 703	Livanos Restaurant	\N	\N	G2900
@@ -1432,7 +1334,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 719	326 RESTAURANT CORP DBA JOE ALLEN RESTAURANT	\N	\N	G2900
 720	PICCOLA VENEZIA RESTAURANT	\N	\N	G2900
 721	PICCOLLA VENEZIA RESTAURANT	\N	\N	G2900
-722	Fiduciary Management Inc	\N	\N	G2900
 723	Patty's Pub	\N	\N	G2900
 724	LA STELLA PIZZERIA & RESTAURANT	\N	\N	G2900
 725	CERRONES RESTAURANT	\N	\N	G2900
@@ -1441,7 +1342,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 728	LSJC RESTAURANT CORP	\N	\N	G2900
 729	TRAPPERS PIZZA PUB	\N	\N	G2900
 730	SUNLIGHT RESTAURANT	\N	\N	G2900
-731	Wencorp East, Inc.	\N	\N	G2900
 732	SABROSURA RESTAURANT	\N	\N	G2900
 733	LA FAMIGLIA PIZZERIA & RESTAURANT	\N	\N	G2900
 734	1016 W BEECH RESTAURANT CORP	\N	\N	G2900
@@ -1514,13 +1414,9 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 801	SBARRO INC & SUBSIDIARIES	\N	\N	G2900
 802	Riese Restaurant	\N	\N	G2900
 803	NATIONWIDE RESTAURANT RESOURCES	\N	\N	G2900
-804	WENDY'S RESTAURANTS OF ROCHESTER, INC.	\N	\N	G2900
 805	MORTONS RESTAURANT	\N	\N	G2900
-806	WENDY'S INTERNATIONAL INC.	\N	\N	G2900
 807	TRIPIFOODS	\N	\N	G2900
-808	WENDY'S RESTURANTS OF ROCHESTER, INC.	\N	\N	G2900
 809	RIVER WATCH RESTAURANT	\N	\N	G2900
-810	Restaurant Operators Cooperative	\N	\N	G2900
 811	NATIONAL RESTAURANTS MANAGEMENT	\N	\N	G2900
 812	Restaurant 11 Madison Park	\N	\N	G2900
 813	Alba's Restaurante	\N	\N	G2900
@@ -1557,7 +1453,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 844	King Umberto Restaurant	\N	\N	G2900
 845	725 COMMACK MEAT CORP	\N	\N	G2900
 846	Fleischer's Bagels	\N	\N	G2900
-847	BR Guest; Inc.	\N	\N	G2900
 848	ALPS MANAGEMENT DBA MCDONALDS	\N	\N	G2900
 849	INFO REQUESTED	\N	\N	G2900
 850	KAUFMAN ENTERPRISES DBA MCDONALDS	\N	\N	G2900
@@ -1570,15 +1465,12 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 857	Wendy's Restaurants	\N	\N	G2900
 858	Sakura Japanese Restaurant	\N	\N	G2900
 859	Bijou Cafe & Sonoma Grille	\N	\N	G2900
-860	Anton Airfood	\N	\N	G2900
 861	Carnegie Deli	\N	\N	G2900
 862	WARD & OLIVO	\N	\N	G2900
-863	FLIK International Corp.	\N	\N	G2900
 864	Restaurant Depot	\N	\N	G2900
 865	Amy Ruth's Restaurant	\N	\N	G2900
 866	18th Avenue Pizza	\N	\N	G2900
 867	Restaurant/Bar Owner	\N	\N	G2900
-868	Kirby's American Rest; Inc.	\N	\N	G2900
 869	Haywon Loy Restaurant	\N	\N	G2900
 870	WEEDSPORT CENTRAL SCHOOL DISTRICT	\N	\N	G2900
 871	Giovannis Restaurant	\N	\N	G2900
@@ -1610,13 +1502,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 897	ITAL PIZZA CORP	\N	\N	G2900
 898	DAFFODILS RESTAURANT	\N	\N	G2900
 899	KEY FOOD STORES COOPERATIVE	\N	\N	G2900
-900	Eber Brothers	\N	\N	G2900
-901	Maines Paper & Food Services	\N	\N	G2900
-902	Service Liquor	\N	\N	G2900
 903	KRASDALE FOODS	\N	\N	G2900
-904	Sysco Food Services	\N	\N	G2900
 905	86TH STREET MEAT MARKET	\N	\N	G2900
-906	Maines Paper & Food Service	\N	\N	G2900
 907	VERNON VALLEY DELI	\N	\N	G2900
 908	ROCKLAND BAKERY	\N	\N	G2900
 909	MCBART RESTAURANT CORP	\N	\N	G2900
@@ -1635,23 +1522,12 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 922	FOOD SALES CONSULTANTS	\N	\N	G2900
 923	Blvd Tavern	\N	\N	G2900
 924	FOOD CRAFT	\N	\N	G2900
-925	Birch Hill	\N	\N	G2900
-926	Aromi D'Italia	\N	\N	G2900
-927	Kopp's Canteen Restaurant; Inc.	\N	\N	G2900
 928	60 WEST 183RD FOOD CORP	\N	\N	G2900
-929	Fleur De Lis Caterers	\N	\N	G2900
-930	The Desmond	\N	\N	G2900
-931	Mr. Bill's Rest. & Bar	\N	\N	G2900
 932	Playwright's Restaurant	\N	\N	G2900
 933	202 W 49th St Pub	\N	\N	G2900
 934	Restaurant Assoc	\N	\N	G2900
 935	Joshua Tree Restaurant	\N	\N	G2900
-936	Milano Restaurant	\N	\N	G2900
-937	Grandma's Country Pies & Rest.	\N	\N	G2900
-938	Valpak of N.E.N.Y.	\N	\N	G2900
-939	Quiznos Sub	\N	\N	G2900
 940	Great Dane Pub & Brewing Co	\N	\N	G2900
-941	SPRING HOUSE INC.	\N	\N	G2900
 942	Anthony's Restaurant & Catering	\N	\N	G2900
 943	VILLA PARADISO RESTAURANT	\N	\N	G2900
 944	Hand Cafe	\N	\N	G2900
@@ -1662,23 +1538,14 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 949	NATION RESTAURANT	\N	\N	G2900
 950	Tom's Coffee Shop	\N	\N	G2900
 951	Amiel's Subs	\N	\N	G2900
-952	WEJESCO RESTAURANT SYSTEMS	\N	\N	G2900
 953	Oliver's	\N	\N	G2900
-954	Harter; Secrest & Emery LLP	\N	\N	G2900
-955	Dawn Homes	\N	\N	G2900
-956	Framboise	\N	\N	G2900
-957	Inn At The Century	\N	\N	G2900
-958	Glen Sanders Mansion	\N	\N	G2900
-959	Simply Certificates	\N	\N	G2900
 960	Savannah Steak	\N	\N	G2900
 961	D&D Deli & Grocery	\N	\N	G2900
 962	Bernard's Grove Restaurant	\N	\N	G2900
 963	BSALIM RESTAURANT	\N	\N	G2900
 964	Patricia's Pizza & Deli	\N	\N	G2900
 965	Rockland Diner	\N	\N	G2900
-966	Pond Hill Ventures	\N	\N	G2900
 967	Borden Ave Restaurant	\N	\N	G2900
-968	Ginsberg's Foodservice	\N	\N	G2900
 969	JFA FOOD CORP	\N	\N	G2900
 970	SA DRUG CORP	\N	\N	G2900
 971	SALERNO RESTAURANT	\N	\N	G2900
@@ -1695,11 +1562,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 982	Shanlee Restaurant	\N	\N	G2900
 983	Original Pizza People	\N	\N	G2900
 984	STAR NIGHT RESTAURANT SERVICE	\N	\N	G2900
-985	The Greening Group	\N	\N	G2900
-986	Culinary Institute of America	\N	\N	G2900
 987	DONMARK FOODS	\N	\N	G2900
 988	AUSTINS STEAK HOUSE	\N	\N	G2900
-989	The Restaurant Group; LLC	\N	\N	G2900
 990	Pizza Restaurant	\N	\N	G2900
 991	Sally's West Indian Restaurant	\N	\N	G2900
 992	Traders Cafe	\N	\N	G2900
@@ -1708,22 +1572,17 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 995	AROMAR FOOD	\N	\N	G2900
 996	CEMAR MEAT & PRODUCE CORP	\N	\N	G2900
 997	120 N MAIN STREET MEAT CORP	\N	\N	G2900
-998	Antun's of Westchester	\N	\N	G2900
-999	Crystal Bay Restaurant; Inc.	\N	\N	G2900
 1000	Fluffys Cafe & Bakery	\N	\N	G2900
 1001	BAYOU CAFE	\N	\N	G2900
 1002	MICHAELS RESTAURANT	\N	\N	G2900
 1003	FIAHBOX RESTAURANT CORP	\N	\N	G2900
 1004	FINGERLAKES FOODSERVICE	\N	\N	G2900
-1005	Burger King/Mt. Kisco Rest.	\N	\N	G2900
 1006	JAMMER ENTERPRISES DBA MCDONALDS	\N	\N	G2900
 1007	Triple Nickel Coffee House	\N	\N	G2900
 1008	TR MAC LLC DBA MCDONALDS	\N	\N	G2900
 1009	MEYERS RESTAURANTS	\N	\N	G2900
 1010	MARIOS PIZZERIA OF COMMACK CORP	\N	\N	G2900
-1011	ADIRONDACK WENSERVE, INC.	\N	\N	G2900
 1012	FAMILY RESTAURANTS OF MERRICK	\N	\N	G2900
-1013	Kirby's American Rest, Inc.	\N	\N	G2900
 1014	La Conca D'Oro Restaurant	\N	\N	G2900
 1015	Dunkin' Donuts	\N	\N	G2900
 1016	Tollgate Steak House	\N	\N	G2900
@@ -1766,41 +1625,24 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1053	Diner Owner	\N	\N	G2900
 1054	Community Restaurant	\N	\N	G2900
 1055	Lento's Restaurant	\N	\N	G2900
-1056	A & B ACCOUNTING SERVICE	\N	\N	G2900
 1057	Pazzo Restaurant	\N	\N	G2900
 1058	Rancho Resturant	\N	\N	G2900
 1059	Hildreth's Restaurant	\N	\N	G2900
 1060	Jarnac Restaurant	\N	\N	G2900
 1061	Subway	\N	\N	G2900
 1062	Savory Grill	\N	\N	G2900
-1063	Morton's of Chicago National Headquart	\N	\N	G2900
-1064	The Elliot Group	\N	\N	G2900
 1065	New York State Restaurant Assn	\N	\N	G2900
-1066	Sampson Consulting; Inc.	\N	\N	G2900
-1067	Fresco By Scotto	\N	\N	G2900
-1068	Anton Airfood of JFK; Inc.	\N	\N	G2900
-1069	World Yacht; Inc.	\N	\N	G2900
-1070	Rosa Mexicano	\N	\N	G2900
-1071	ANTON AIRFOOD	\N	\N	G2900
-1072	Anton Airfood; Inc.	\N	\N	G2900
-1073	O'Neals	\N	\N	G2900
-1074	Eliot Solutions	\N	\N	G2900
 1075	Personal Chef	\N	\N	G2900
 1076	Guastvino's Restaurant	\N	\N	G2900
 1077	George Martin Restaurant Group	\N	\N	G2900
 1078	Aunt Suzie Italian Restaurant	\N	\N	G2900
 1079	Myriad Restaurant Group	\N	\N	G2900
-1080	International House of Pancakes	\N	\N	G2900
 1081	Restaurants	\N	\N	G2900
 1082	Chefs Restaurant	\N	\N	G2900
 1083	Motel/Hotel/Restaurant Operator	\N	\N	G2900
-1084	Mexican Conection	\N	\N	G2900
-1085	Real Seafood Co	\N	\N	G2900
-1086	Famiglia International; Inc.	\N	\N	G2900
 1087	Daoll Restaurant	\N	\N	G2900
 1088	Yerina Restaurant Corp	\N	\N	G2900
 1089	Bangkok Grand Palace Rstrnt	\N	\N	G2900
-1090	I.H.O.P.	\N	\N	G2900
 1091	Latham 76 Diner	\N	\N	G2900
 1092	P&G Bar & Grill	\N	\N	G2900
 1093	Burger Hesmen Restaurants	\N	\N	G2900
@@ -1827,10 +1669,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1114	M & L FOOD STORES	\N	\N	G2900
 1115	2427 RESTAURANT CORP	\N	\N	G2900
 1116	CARMENS FOODS DBA MCDONALDS STORE 27855	\N	\N	G2900
-1117	Waldron's	\N	\N	G2900
-1118	Entertainment Publications	\N	\N	G2900
-1119	The Parker Inn	\N	\N	G2900
-1120	Holloway House/F.D.&M. Wayne	\N	\N	G2900
 1121	Phobang Restaurant	\N	\N	G2900
 1122	AJD (MCDONALDS 14106)	\N	\N	G2900
 1123	OUTBACK STEAKHOUSE	\N	\N	G2900
@@ -1989,7 +1827,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1276	RIVERVIEW RESTAURANT	\N	\N	G2900
 1277	GOLDEN KRUST CARIBBEAN BAKERY	\N	\N	G2900
 1278	MICHELANGELO RESTAURANT & PIZZERIA	\N	\N	G2900
-1279	SPRING HOUSE RESTAURANT	\N	\N	G2900
 1280	2207 7TH AVE RESTAURANT CORP	\N	\N	G2900
 1281	ARK RESTAURANTS CORP	\N	\N	G2900
 1282	RODA RESTAURANT CORP	\N	\N	G2900
@@ -2017,10 +1854,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1304	Candle Cafe	\N	\N	G2900
 1305	Bombay Palace Resturant	\N	\N	G2900
 1306	Mcdonald's	\N	\N	G2900
-1307	THE GREENING GROUP	\N	\N	G2900
 1308	Gourmet Dining Services	\N	\N	G2900
 1309	Full House Resturant	\N	\N	G2900
-1310	COMPASS GROUP	\N	\N	G2900
 1311	Empire Szechuan	\N	\N	G2900
 1312	Roadblock Bar	\N	\N	G2900
 1313	Bbq	\N	\N	G2900
@@ -2041,19 +1876,13 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1328	Wendys Restaurants of Rochester	\N	\N	G2900
 1329	Blimpie International	\N	\N	G2900
 1330	94 Belleville Restaurant	\N	\N	G2900
-1331	SERVICE LIQUOR	\N	\N	G2900
 1332	CAFE IN LOVE CORP	\N	\N	G2900
-1333	NEW YORK STATE RESTAURANT ASSN	\N	\N	G2900
-1334	SYSCO FOOD SERVICES	\N	\N	G2900
 1335	Tony & Tina's Pizzaria	\N	\N	G2900
-1336	MC DONALDS	\N	\N	G2900
 1337	Haikara Restaurant	\N	\N	G2900
 1338	Quickway Diner	\N	\N	G2900
 1339	JOE & JOES RESTAURANT	\N	\N	G2900
-1340	PENSABENE'S PARK WEST RESTAURANT	\N	\N	G2900
 1341	KINGS STEAK CORP	\N	\N	G2900
 1342	Laroccas Restaraunt	\N	\N	G2900
-1343	BLIMPIE INTERNATIONAL	\N	\N	G2900
 1344	Royel Oak Diner	\N	\N	G2900
 1345	Old Stand	\N	\N	G2900
 1346	999 Restaurant	\N	\N	G2900
@@ -2061,13 +1890,11 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1348	Zebb's Restaurant	\N	\N	G2900
 1349	HBJ INVESTORS	\N	\N	G2900
 1350	Old Red Mill	\N	\N	G2900
-1351	ZEBB'S RESTAURANTS; INC.	\N	\N	G2900
 1352	DANIELS RESTAURANT	\N	\N	G2900
 1353	MARIA LOUISA RESTAURANT CORP	\N	\N	G2900
 1354	RESTAURANT BUS MAGAZINE	\N	\N	G2900
 1355	Kentucky Fried Chicken	\N	\N	G2900
 1356	V & R BETHPAGE PIZZERIA	\N	\N	G2900
-1357	ADF COMPANIES	\N	\N	G2900
 1358	Restaurateur	\N	\N	G2900
 1359	SANDIS FAMILY RESTAURANT	\N	\N	G2900
 1360	XL RESTAURANT	\N	\N	G2900
@@ -2092,10 +1919,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1379	FELIDIA RESTAURANTS	\N	\N	G2900
 1380	Chefs Restaurant of Buffalo	\N	\N	G2900
 1381	NEW YORK STATE TAVERN & RESTAURANT ASSOCIATION	\N	\N	G2900
-1382	ADIRONDACK WENSERVE INC.	\N	\N	G2900
 1383	Morton's Restanrant Group	\N	\N	G2900
 1384	GOLDEN CORRAL	\N	\N	G2900
-1385	FAMIGLIA INTERNATIONAL; INC.	\N	\N	G2900
 1386	ILLINOIS BOSCHETTO FINEST ITALIAN RESTARUANT	\N	\N	G2900
 1387	BILBOA RESTAURANT CORP	\N	\N	G2900
 1388	PORTOFINO RESTAURANT	\N	\N	G2900
@@ -2162,8 +1987,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1449	BELLA CUCINA	\N	\N	G2900
 1450	Durow's & Bridie'S	\N	\N	G2900
 1451	Armondo's Italian Restaurant	\N	\N	G2900
-1452	SUGAR FOODS CORPORATION	\N	\N	G2900
-1453	JACK'S OYSTER HOUSE INC	\N	\N	G2900
 1454	King's Arms Diner	\N	\N	G2900
 1455	Restuaranteur	\N	\N	G2900
 1456	CAFE C III	\N	\N	G2900
@@ -2409,7 +2232,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1696	Akbar Restaurant	\N	\N	G2900
 1697	Xando Inc	\N	\N	G2900
 1698	Howard Johnson's Restaurant	\N	\N	G2900
-1699	TONY MAY GROUP	\N	\N	G2900
 1700	Second Avenue Deli	\N	\N	G2900
 1701	SANYU RESTAURANT	\N	\N	G2900
 1702	ROAD BLOCK BAR/MULCAHYS	\N	\N	G2900
@@ -2506,6 +2328,7 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1793	Alberto Secondo Restaurant	\N	\N	G2900
 1794	Uncle Nick's Greek Cuisine	\N	\N	G2900
 1795	Mallozzi's Restaurant	\N	\N	G2900
+1923	ATLANTIS DINER RESTAURANT	\N	\N	G2900
 1796	Albberto Secondo Restaurant Corp	\N	\N	G2900
 1797	Vincents Restaurant	\N	\N	G2900
 1798	Cafe Forty-One	\N	\N	G2900
@@ -2633,7 +2456,6 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 1920	NY RESTAURANT INDUSTRY PAC	\N	\N	G2900
 1921	SIERRA BRONX SEAFOOD INC	\N	\N	G2900
 1922	APPLE METRO INC	\N	\N	G2900
-1923	ATLANTIS DINER RESTAURANT	\N	\N	G2900
 1924	LINCOLN DINER CORP	\N	\N	G2900
 1925	VICE ROY OF INDIA RESTAURANT	\N	\N	G2900
 1926	OYSTER BAR & RESTAURANT	\N	\N	G2900
@@ -3128,8 +2950,8 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 2415	SBR Restaurant	\N	\N	G2900
 2416	Mauro's Rest	\N	\N	G2900
 2417	ARTUROS	\N	\N	G2900
-1	WENDYS RESTURANTS OF ROCHESTE	40.74415	-73.990481	G2900
-6	Fast Food Systems	40.747356	-73.986569	G2900
+185	BINGS RESTAURANT	40.7225314	-73.9876631	G2900
+188	SHANGHAI REDS RESTAURANT	40.714715	-73.997601	G2900
 \.
 
 
@@ -3137,7689 +2959,7110 @@ COPY businesses (id, name, latitude, longitude, business_category_id) FROM stdin
 -- Data for Name: contributions; Type: TABLE DATA; Schema: public; Owner: buyyourvalues
 --
 
-COPY contributions (id, amount, date, recipient_id, contributor_id) FROM stdin;
-1	5000	2009-12-22 00:00:00	1	1
+COPY contributions (id, amount, date, contributor_id, recipient_id) FROM stdin;
 2	5000	2009-09-23 00:00:00	2	2
-3	5000	2010-02-04 00:00:00	3	3
-4	5000	2009-12-21 00:00:00	3	3
-5	5000	2009-10-20 00:00:00	1	4
-6	5000	2009-11-23 00:00:00	1	5
-7	5000	2009-10-05 00:00:00	4	6
-8	5000	2009-08-11 00:00:00	5	7
-9	5000	2009-10-20 00:00:00	1	8
-10	5000	2009-06-22 00:00:00	2	9
-11	4800	2010-03-24 00:00:00	6	10
-12	4800	2010-03-24 00:00:00	6	11
-13	3500	2010-02-10 00:00:00	7	12
-14	3500	2010-01-04 00:00:00	8	13
-15	3500	2010-02-10 00:00:00	7	14
-16	3500	2009-12-30 00:00:00	9	13
-17	3250	2009-04-28 00:00:00	10	15
-18	3000	2010-04-28 00:00:00	5	16
-19	2500	2009-01-16 00:00:00	4	6
-20	2500	2009-11-18 00:00:00	11	17
-21	2500	2009-08-27 00:00:00	1	18
-22	2500	2010-02-06 00:00:00	12	19
-23	2400	2009-03-25 00:00:00	13	20
-24	2400	2010-03-19 00:00:00	14	21
-25	2400	2009-12-07 00:00:00	15	22
-26	2400	2010-03-31 00:00:00	16	23
-27	2400	2010-03-17 00:00:00	17	24
-28	2400	2010-03-31 00:00:00	18	25
-29	2400	2009-09-17 00:00:00	19	26
-30	2400	2009-03-31 00:00:00	20	27
-31	2400	2009-03-23 00:00:00	19	28
-32	2400	2009-04-30 00:00:00	19	29
-33	2400	2009-03-31 00:00:00	20	27
-34	2400	2009-03-12 00:00:00	21	30
-35	2400	2009-03-23 00:00:00	19	31
-36	2400	2009-03-23 00:00:00	19	31
-37	2400	2009-06-30 00:00:00	22	32
-38	2400	2009-04-03 00:00:00	23	33
-39	2400	2009-04-03 00:00:00	23	34
-40	2400	2009-04-03 00:00:00	23	35
-41	2400	2009-04-02 00:00:00	24	36
-42	2400	2009-06-29 00:00:00	25	37
-43	2400	2009-06-29 00:00:00	25	37
-44	2400	2009-04-03 00:00:00	23	35
-45	2400	2009-03-23 00:00:00	19	28
-46	2400	2009-04-07 00:00:00	19	38
-47	2400	2009-04-30 00:00:00	19	29
-48	2400	2009-06-10 00:00:00	26	39
-49	2400	2009-04-20 00:00:00	19	40
-50	2400	2009-07-03 00:00:00	27	41
-51	2400	2010-06-30 00:00:00	28	42
-52	2400	2009-09-17 00:00:00	19	26
-53	2400	2009-11-12 00:00:00	19	43
-54	2400	2009-07-06 00:00:00	20	44
-55	2400	2009-09-29 00:00:00	29	45
-56	2400	2009-09-14 00:00:00	18	46
-57	2400	2009-07-03 00:00:00	27	41
-58	2400	2009-07-06 00:00:00	20	44
-59	2400	2010-05-17 00:00:00	26	47
-60	2400	2010-06-30 00:00:00	28	42
-61	2400	2010-06-08 00:00:00	30	48
-62	2400	2010-04-21 00:00:00	27	49
-63	2400	2010-04-21 00:00:00	27	50
-64	2400	2010-04-29 00:00:00	27	51
-65	2400	2010-03-31 00:00:00	31	20
-66	2400	2009-11-05 00:00:00	32	40
-67	2400	2009-11-12 00:00:00	19	43
-68	2400	2010-02-17 00:00:00	33	52
-69	2400	2009-12-28 00:00:00	34	53
-70	2400	2009-12-21 00:00:00	35	54
-71	2400	2009-12-08 00:00:00	33	52
-72	2400	2009-12-17 00:00:00	33	55
-73	2400	2009-12-22 00:00:00	27	2
-74	2400	2009-12-22 00:00:00	27	56
-75	2400	2009-03-25 00:00:00	36	57
-76	2400	2010-04-28 00:00:00	37	58
-77	2400	2009-03-25 00:00:00	36	57
-78	2400	2009-12-06 00:00:00	35	59
-79	2400	2009-03-25 00:00:00	36	59
-80	2400	2009-03-25 00:00:00	36	59
-81	2400	2010-03-25 00:00:00	38	60
-82	2400	2010-03-31 00:00:00	38	61
-83	2400	2009-12-17 00:00:00	33	62
-84	2300	2009-01-16 00:00:00	39	63
-85	2200	2009-04-07 00:00:00	19	38
-86	2200	2009-06-16 00:00:00	20	64
-87	2000	2009-12-28 00:00:00	40	20
-88	2000	2010-03-04 00:00:00	33	65
-89	2000	2010-02-17 00:00:00	40	20
-90	2000	2009-10-02 00:00:00	41	66
-91	2000	2010-06-23 00:00:00	42	67
-92	2000	2009-03-13 00:00:00	43	20
-93	2000	2009-03-27 00:00:00	44	68
-94	2000	2009-03-20 00:00:00	45	13
-95	2000	2009-03-16 00:00:00	46	69
-96	2000	2010-02-19 00:00:00	21	70
-97	2000	2010-02-17 00:00:00	47	71
-98	2000	2010-02-04 00:00:00	33	72
-99	2000	2009-10-22 00:00:00	33	73
-100	2000	2009-06-19 00:00:00	37	45
-101	2000	2009-06-30 00:00:00	48	74
-102	2000	2009-05-29 00:00:00	49	75
-103	2000	2010-06-03 00:00:00	19	76
-104	2000	2009-05-12 00:00:00	8	77
-105	2000	2010-03-29 00:00:00	50	78
-106	2000	2010-01-14 00:00:00	51	13
-107	2000	2010-06-16 00:00:00	52	79
-108	2000	2009-09-03 00:00:00	5	80
-109	2000	2010-03-31 00:00:00	53	81
-110	2000	2010-06-19 00:00:00	54	82
-111	2000	2009-12-10 00:00:00	51	83
-112	2000	2009-08-12 00:00:00	19	84
-113	2000	2010-06-30 00:00:00	33	55
-114	2000	2009-09-14 00:00:00	40	74
-115	2000	2010-01-27 00:00:00	5	80
-116	2000	2009-03-18 00:00:00	55	85
-117	1875	2010-05-26 00:00:00	56	86
-118	1770	2010-02-06 00:00:00	12	19
-119	1680	2010-03-26 00:00:00	33	73
-120	1600	2009-03-12 00:00:00	21	30
-121	1600	2010-05-04 00:00:00	57	87
-122	1600	2010-03-31 00:00:00	18	25
-123	1600	2010-07-07 00:00:00	5	88
-124	1500	2009-08-20 00:00:00	58	13
-125	1500	2009-10-02 00:00:00	59	89
-126	1500	2009-12-04 00:00:00	60	90
-127	1500	2009-02-19 00:00:00	61	91
-128	1500	2009-06-22 00:00:00	42	92
-129	1400	2009-11-09 00:00:00	62	93
-130	1400	2009-12-31 00:00:00	63	94
-131	1400	2010-04-28 00:00:00	5	95
-132	1400	2009-08-31 00:00:00	34	53
-133	1400	2010-03-11 00:00:00	64	20
-134	1275	2010-04-29 00:00:00	27	51
-135	1250	2009-03-09 00:00:00	65	13
-136	1250	2009-03-24 00:00:00	12	19
-137	1200	2010-04-26 00:00:00	66	96
-138	1150	2009-10-19 00:00:00	67	97
-139	1000	2010-01-12 00:00:00	68	98
-140	1000	2010-01-26 00:00:00	1	99
-141	1000	2010-07-28 00:00:00	69	100
-142	1000	2010-05-20 00:00:00	20	101
-143	1000	2010-07-09 00:00:00	5	102
-144	1000	2010-08-04 00:00:00	70	103
-145	1000	2010-04-05 00:00:00	38	104
-146	1000	2010-06-17 00:00:00	71	105
-147	1000	2010-06-28 00:00:00	35	106
-148	1000	2010-05-05 00:00:00	72	107
-149	1000	2010-05-27 00:00:00	48	108
-150	1000	2010-05-12 00:00:00	73	109
-151	1000	2010-04-26 00:00:00	57	87
-152	1000	2010-03-23 00:00:00	74	110
-153	1000	2010-04-28 00:00:00	5	111
-154	1000	2009-12-29 00:00:00	75	112
-155	1000	2010-03-31 00:00:00	38	113
-156	1000	2009-03-31 00:00:00	36	114
-157	1000	2010-03-31 00:00:00	64	20
-158	1000	2010-02-18 00:00:00	42	115
-159	1000	2010-02-11 00:00:00	64	20
-160	1000	2010-03-12 00:00:00	76	116
-161	1000	2009-11-17 00:00:00	55	117
-162	1000	2010-01-29 00:00:00	11	118
-163	1000	2009-10-31 00:00:00	77	119
-164	1000	2009-11-15 00:00:00	28	120
-165	1000	2009-10-19 00:00:00	31	121
-166	1000	2009-10-27 00:00:00	40	122
-167	1000	2009-12-04 00:00:00	59	89
-168	1000	2009-08-18 00:00:00	46	123
-169	1000	2009-07-20 00:00:00	34	53
-170	1000	2009-09-28 00:00:00	34	124
-171	1000	2009-09-30 00:00:00	78	29
-172	1000	2009-08-03 00:00:00	63	94
-173	1000	2009-07-21 00:00:00	79	125
-174	1000	2009-07-23 00:00:00	27	126
-175	1000	2009-07-20 00:00:00	79	127
-176	1000	2009-07-13 00:00:00	57	87
-177	1000	2009-09-15 00:00:00	18	128
-178	1000	2009-07-21 00:00:00	80	129
-179	1000	2009-08-11 00:00:00	69	130
-180	1000	2009-08-11 00:00:00	81	131
-181	1000	2009-09-21 00:00:00	71	132
-182	1000	2009-06-29 00:00:00	46	123
-183	1000	2009-05-18 00:00:00	19	133
-184	1000	2009-06-25 00:00:00	82	134
-185	1000	2009-04-15 00:00:00	83	135
-186	1000	2009-06-05 00:00:00	42	136
-187	1000	2009-06-16 00:00:00	84	137
-188	1000	2009-04-30 00:00:00	62	138
-189	1000	2009-06-20 00:00:00	85	139
-190	1000	2009-04-22 00:00:00	28	120
-191	1000	2009-04-28 00:00:00	5	140
-192	1000	2009-03-26 00:00:00	19	141
-193	1000	2009-02-13 00:00:00	86	142
-194	1000	2009-03-17 00:00:00	87	143
-195	1000	2009-02-27 00:00:00	67	144
-196	1000	2010-04-28 00:00:00	88	145
-197	1000	2009-05-07 00:00:00	89	146
-198	1000	2009-09-09 00:00:00	89	147
-199	1000	2009-08-18 00:00:00	90	13
-200	1000	2009-04-24 00:00:00	91	13
-201	1000	2010-01-11 00:00:00	91	13
-202	1000	2010-01-11 00:00:00	91	148
-203	1000	2009-10-20 00:00:00	92	149
-204	1000	2009-03-27 00:00:00	93	13
-205	1000	2009-03-23 00:00:00	94	13
-206	1000	2009-05-11 00:00:00	94	148
-207	1000	2009-06-09 00:00:00	94	150
-208	1000	2010-01-07 00:00:00	94	148
-209	1000	2009-05-14 00:00:00	95	13
-210	1000	2009-11-19 00:00:00	96	151
-211	1000	2009-11-09 00:00:00	1	152
-212	1000	2009-06-11 00:00:00	82	153
-213	1000	2009-10-06 00:00:00	97	154
-214	1000	2010-07-07 00:00:00	98	155
-215	1000	2010-06-18 00:00:00	99	156
-216	1000	2009-08-13 00:00:00	5	16
-217	1000	2010-06-24 00:00:00	100	157
-218	1000	2010-04-28 00:00:00	101	158
-219	1000	2010-03-29 00:00:00	38	113
-220	850	2010-03-25 00:00:00	54	159
-221	833	2010-06-01 00:00:00	35	160
-222	800	2009-09-21 00:00:00	5	102
-223	800	2009-04-22 00:00:00	5	161
-224	800	2010-03-31 00:00:00	102	162
-225	800	2010-02-19 00:00:00	5	163
-226	750	2009-05-18 00:00:00	103	164
-227	750	2009-08-21 00:00:00	104	13
-228	750	2009-05-24 00:00:00	65	13
-229	750	2009-03-30 00:00:00	90	13
-230	700	2010-03-19 00:00:00	5	165
-231	676	2010-03-06 00:00:00	17	166
-232	625	2010-05-26 00:00:00	56	167
-233	600	2009-06-23 00:00:00	1	168
-234	600	2009-06-10 00:00:00	26	39
-235	600	2010-06-29 00:00:00	80	169
-236	600	2009-06-18 00:00:00	105	170
-237	575	2010-03-09 00:00:00	106	171
-238	575	2010-03-24 00:00:00	102	172
-239	500	2009-08-28 00:00:00	12	173
-240	500	2009-12-02 00:00:00	5	174
-241	500	2010-03-30 00:00:00	107	175
-242	500	2010-06-09 00:00:00	28	176
-243	500	2009-11-17 00:00:00	5	177
-244	500	2009-11-02 00:00:00	5	178
-245	500	2009-11-17 00:00:00	5	179
-246	500	2009-10-29 00:00:00	108	180
-247	500	2009-11-17 00:00:00	5	88
-248	500	2010-02-04 00:00:00	27	181
-249	500	2009-06-14 00:00:00	40	122
-250	500	2009-09-30 00:00:00	109	182
-251	500	2009-12-02 00:00:00	5	183
-252	500	2009-08-20 00:00:00	69	184
-253	500	2009-12-15 00:00:00	110	185
-254	500	2009-08-01 00:00:00	88	145
-255	500	2010-01-31 00:00:00	111	186
-256	500	2009-03-31 00:00:00	112	187
-257	500	2009-07-07 00:00:00	113	188
-258	500	2009-05-11 00:00:00	114	13
-259	500	2009-08-25 00:00:00	115	13
-260	500	2009-09-29 00:00:00	116	13
-261	500	2010-01-11 00:00:00	117	189
-262	500	2010-06-23 00:00:00	100	190
-263	500	2010-03-24 00:00:00	118	158
-264	500	2009-04-08 00:00:00	119	164
-265	500	2009-08-28 00:00:00	120	13
-266	500	2009-05-14 00:00:00	120	191
-267	500	2009-03-09 00:00:00	121	13
-268	500	2009-09-08 00:00:00	122	192
-269	500	2009-05-28 00:00:00	123	13
-270	500	2010-08-11 00:00:00	69	193
-271	500	2010-01-14 00:00:00	5	194
-272	500	2009-11-05 00:00:00	1	195
-273	500	2010-01-27 00:00:00	5	196
-274	500	2009-01-14 00:00:00	11	197
-275	500	2009-04-16 00:00:00	15	198
-276	500	2010-03-09 00:00:00	100	190
-277	500	2009-05-18 00:00:00	5	199
-278	500	2009-04-28 00:00:00	5	200
-279	500	2010-03-24 00:00:00	80	129
-280	500	2009-04-28 00:00:00	5	201
-281	500	2010-03-21 00:00:00	28	202
-282	500	2009-12-31 00:00:00	40	122
-283	500	2009-04-28 00:00:00	5	203
-284	500	2010-03-31 00:00:00	19	204
-285	500	2010-06-08 00:00:00	17	205
-286	500	2010-03-31 00:00:00	124	206
-287	500	2010-08-25 00:00:00	27	207
-288	500	2009-12-11 00:00:00	33	73
-289	500	2009-10-18 00:00:00	27	208
-290	500	2009-03-27 00:00:00	27	51
-291	500	2009-01-27 00:00:00	27	209
-292	500	2009-03-30 00:00:00	27	209
-293	500	2009-03-31 00:00:00	27	51
-294	500	2009-02-17 00:00:00	125	210
-295	500	2009-07-09 00:00:00	126	13
-296	500	2009-08-20 00:00:00	42	115
-297	500	2009-05-05 00:00:00	65	211
-298	500	2009-01-14 00:00:00	11	212
-299	500	2009-01-14 00:00:00	11	213
-300	500	2010-06-28 00:00:00	127	214
-301	500	2010-01-27 00:00:00	128	215
-302	500	2010-04-28 00:00:00	5	216
-303	500	2009-08-20 00:00:00	81	217
-304	500	2009-02-17 00:00:00	125	218
-305	500	2010-04-28 00:00:00	5	219
-306	500	2009-10-07 00:00:00	27	181
-307	500	2010-06-04 00:00:00	38	220
-308	500	2009-08-13 00:00:00	5	221
-309	500	2009-07-23 00:00:00	5	222
-310	500	2010-06-08 00:00:00	11	223
-311	500	2010-04-15 00:00:00	125	224
-312	500	2010-07-14 00:00:00	42	115
-313	500	2009-11-30 00:00:00	28	225
-314	500	2009-12-01 00:00:00	42	92
-315	500	2009-10-09 00:00:00	67	226
-316	500	2010-01-26 00:00:00	5	179
-317	500	2009-10-01 00:00:00	5	227
-318	500	2009-06-02 00:00:00	42	228
-319	500	2010-06-15 00:00:00	36	229
-320	500	2009-04-16 00:00:00	5	230
-321	500	2010-01-26 00:00:00	5	222
-322	500	2010-07-30 00:00:00	5	231
-323	500	2009-06-28 00:00:00	79	232
-324	500	2010-01-27 00:00:00	5	233
-325	500	2010-03-08 00:00:00	129	234
-326	410	2009-10-06 00:00:00	130	235
-327	400	2009-03-28 00:00:00	131	13
-328	400	2010-02-17 00:00:00	40	20
-329	400	2009-06-30 00:00:00	132	146
-330	400	2009-05-26 00:00:00	1	236
-331	400	2010-06-29 00:00:00	80	169
-332	400	2009-07-01 00:00:00	116	237
-333	400	2010-05-10 00:00:00	46	74
-334	400	2010-05-10 00:00:00	46	74
-335	400	2009-10-16 00:00:00	133	238
-336	400	2009-09-24 00:00:00	37	45
-337	400	2009-11-19 00:00:00	5	239
-338	400	2010-05-04 00:00:00	57	87
-339	400	2010-06-28 00:00:00	84	137
-340	400	2009-12-28 00:00:00	40	20
-341	400	2010-08-16 00:00:00	12	240
-342	400	2009-04-01 00:00:00	5	241
-343	358	2009-10-22 00:00:00	33	73
-344	350	2010-03-26 00:00:00	42	242
-345	300	2009-05-19 00:00:00	134	13
-346	300	2009-09-29 00:00:00	76	116
-347	300	2009-07-30 00:00:00	12	19
-348	300	2009-05-08 00:00:00	76	243
-349	300	2009-10-27 00:00:00	5	244
-350	300	2009-08-03 00:00:00	76	245
-351	300	2009-06-23 00:00:00	42	246
-352	300	2010-05-18 00:00:00	76	247
-353	300	2010-06-26 00:00:00	129	248
-354	300	2010-07-09 00:00:00	5	249
-355	300	2009-10-02 00:00:00	1	250
-356	250	2009-02-27 00:00:00	135	251
-357	250	2009-10-09 00:00:00	136	252
-358	250	2010-06-10 00:00:00	137	253
-359	250	2009-10-12 00:00:00	128	215
-360	250	2010-05-21 00:00:00	109	254
-361	250	2009-09-23 00:00:00	138	255
-362	250	2009-10-10 00:00:00	76	256
-363	250	2009-09-17 00:00:00	17	257
-364	250	2010-06-03 00:00:00	127	258
-365	250	2009-08-03 00:00:00	29	259
-366	250	2010-06-16 00:00:00	33	260
-367	250	2010-06-24 00:00:00	139	261
-368	250	2009-08-05 00:00:00	140	262
-369	250	2009-08-22 00:00:00	140	263
-370	250	2009-09-28 00:00:00	140	262
-371	250	2009-09-28 00:00:00	80	129
-372	250	2009-09-09 00:00:00	76	264
-373	250	2009-08-14 00:00:00	5	265
-374	250	2009-04-23 00:00:00	29	266
-375	250	2010-08-19 00:00:00	12	267
-376	250	2010-08-19 00:00:00	129	268
-377	250	2009-06-12 00:00:00	141	269
-378	250	2010-08-12 00:00:00	124	270
-379	250	2009-06-12 00:00:00	138	271
-380	250	2009-04-07 00:00:00	5	272
-381	250	2010-06-03 00:00:00	142	273
-382	250	2009-03-18 00:00:00	42	274
-383	250	2009-03-19 00:00:00	143	275
-384	250	2009-10-09 00:00:00	136	276
-385	250	2009-07-14 00:00:00	144	277
-386	250	2009-04-20 00:00:00	51	278
-387	250	2009-07-08 00:00:00	94	279
-388	250	2009-06-29 00:00:00	65	280
-389	250	2009-11-07 00:00:00	105	281
-390	250	2010-03-24 00:00:00	80	129
-391	250	2010-03-11 00:00:00	42	282
-392	250	2010-01-03 00:00:00	124	283
-393	250	2010-02-28 00:00:00	82	284
-394	250	2010-03-02 00:00:00	145	285
-395	250	2009-12-23 00:00:00	42	286
-396	250	2010-03-31 00:00:00	124	287
-397	250	2010-02-15 00:00:00	67	288
-398	250	2009-11-18 00:00:00	35	289
-399	250	2010-01-26 00:00:00	5	290
-400	250	2010-03-31 00:00:00	102	291
-401	250	2010-03-24 00:00:00	20	292
-402	250	2010-04-02 00:00:00	52	293
-403	250	2009-10-25 00:00:00	146	294
-404	250	2009-10-29 00:00:00	55	295
-405	250	2010-06-27 00:00:00	139	296
-406	200	2009-07-16 00:00:00	147	297
-407	200	2009-09-22 00:00:00	1	298
-408	200	2009-09-22 00:00:00	1	299
-409	200	2009-11-30 00:00:00	1	300
-410	200	2010-05-10 00:00:00	46	74
-411	200	2009-05-06 00:00:00	1	301
-412	200	2009-06-16 00:00:00	20	64
-413	200	2010-08-18 00:00:00	69	130
-414	200	2009-04-14 00:00:00	76	243
-415	200	2009-09-11 00:00:00	148	302
-416	200	2009-08-21 00:00:00	149	303
-417	200	2009-04-22 00:00:00	150	304
-418	200	2009-10-30 00:00:00	1	305
-419	175	2009-11-16 00:00:00	151	297
-420	160	2009-07-01 00:00:00	116	306
-421	150	2009-04-28 00:00:00	152	307
-422	150	2009-03-24 00:00:00	153	308
-423	150	2009-05-09 00:00:00	105	281
-424	150	2009-11-11 00:00:00	154	309
-425	150	2009-06-05 00:00:00	105	310
-426	125	2009-07-20 00:00:00	155	311
-427	120	2009-08-07 00:00:00	156	312
-428	100	2009-09-23 00:00:00	116	313
-429	100	2009-06-19 00:00:00	157	314
-430	100	2009-12-30 00:00:00	158	315
-431	100	2009-07-21 00:00:00	159	316
-432	100	2009-04-06 00:00:00	153	317
-433	100	2009-07-10 00:00:00	160	318
-434	100	2009-03-05 00:00:00	161	319
-435	100	2009-08-20 00:00:00	162	320
-436	100	2009-12-16 00:00:00	163	321
-437	100	2009-05-07 00:00:00	164	322
-438	100	2009-09-14 00:00:00	165	323
-439	65	2009-09-28 00:00:00	116	324
-440	50	2009-09-17 00:00:00	166	325
-441	50	2008-10-29 00:00:00	150	304
-442	50	2009-07-28 00:00:00	167	326
-443	50	2009-09-28 00:00:00	116	327
-444	25	2009-07-02 00:00:00	116	328
-445	20	2009-09-28 00:00:00	116	329
-446	20	2009-09-28 00:00:00	116	330
-447	-358	2009-10-22 00:00:00	33	73
-448	-1770	2010-02-06 00:00:00	12	19
-449	500	2009-10-28 00:00:00	168	331
-450	250	2009-10-28 00:00:00	169	331
-451	100	2009-11-02 00:00:00	169	332
-452	100	2009-10-08 00:00:00	169	333
-453	54	2009-10-15 00:00:00	169	334
-454	50	2009-07-29 00:00:00	169	334
-455	25	2009-10-25 00:00:00	169	332
-456	25	2009-10-20 00:00:00	169	332
-457	25	2009-08-21 00:00:00	169	332
-458	25	2009-08-20 00:00:00	169	332
-459	25	2009-09-08 00:00:00	169	332
-460	30800	2008-05-06 00:00:00	170	335
-461	30800	2008-05-06 00:00:00	170	336
-462	28600	2008-07-30 00:00:00	76	337
-463	28600	2008-07-30 00:00:00	171	338
-464	28500	2007-03-27 00:00:00	2	339
-465	28500	2007-03-27 00:00:00	2	340
-466	28500	2007-06-13 00:00:00	2	341
-467	28500	2008-02-19 00:00:00	2	342
-468	28500	2008-02-19 00:00:00	2	340
-469	26200	2008-05-29 00:00:00	4	343
-470	26200	2008-05-29 00:00:00	4	344
-471	25000	2008-04-30 00:00:00	2	345
-472	25000	2008-03-31 00:00:00	2	341
-473	20000	2007-04-11 00:00:00	172	346
-474	15000	2007-09-26 00:00:00	2	347
-475	15000	2007-09-26 00:00:00	2	348
-476	15000	2008-10-03 00:00:00	173	349
-477	12500	2008-09-29 00:00:00	2	348
-478	12500	2008-09-29 00:00:00	2	347
-479	10000	2008-08-31 00:00:00	174	350
-480	10000	2007-03-29 00:00:00	175	351
-481	8000	2008-10-09 00:00:00	176	352
-482	8000	2008-10-09 00:00:00	176	353
-483	5000	2008-10-02 00:00:00	1	354
-484	5000	2007-08-01 00:00:00	177	355
-485	5000	2007-09-17 00:00:00	178	356
-486	5000	2008-10-29 00:00:00	179	357
-487	5000	2008-09-30 00:00:00	4	358
-488	5000	2007-03-27 00:00:00	177	359
-489	5000	2007-06-28 00:00:00	1	360
-490	5000	2008-10-06 00:00:00	1	361
-491	5000	2007-10-09 00:00:00	1	362
-492	5000	2008-11-10 00:00:00	1	5
-493	5000	2008-08-01 00:00:00	170	363
-494	5000	2008-10-29 00:00:00	179	364
-495	5000	2008-09-12 00:00:00	180	365
-496	5000	2007-08-02 00:00:00	1	366
-497	5000	2007-08-20 00:00:00	1	367
-498	5000	2008-10-16 00:00:00	171	368
-499	5000	2008-10-22 00:00:00	4	369
-500	5000	2007-12-31 00:00:00	181	370
-501	5000	2007-06-07 00:00:00	2	371
-502	5000	2008-10-16 00:00:00	180	365
-503	5000	2008-09-19 00:00:00	182	372
-504	5000	2007-02-02 00:00:00	3	373
-505	5000	2008-03-16 00:00:00	6	39
-506	5000	2008-08-18 00:00:00	1	374
-507	4600	2007-06-28 00:00:00	183	375
-508	4600	2007-12-10 00:00:00	184	376
-509	4600	2007-08-21 00:00:00	183	377
-510	4600	2008-02-29 00:00:00	185	378
-511	4000	2007-11-30 00:00:00	175	379
-512	3500	2007-11-30 00:00:00	175	380
-513	3500	2008-03-04 00:00:00	186	381
-514	3000	2008-07-31 00:00:00	76	382
-515	3000	2007-11-30 00:00:00	175	383
-516	3000	2008-10-09 00:00:00	58	384
-517	3000	2008-10-02 00:00:00	58	385
-518	3000	2008-03-04 00:00:00	186	386
-519	3000	2007-11-30 00:00:00	175	387
-520	2957	2007-03-12 00:00:00	187	388
-521	2700	2008-10-16 00:00:00	76	389
-522	2500	2007-11-30 00:00:00	175	390
-523	2500	2008-08-05 00:00:00	2	391
-524	2500	2007-03-30 00:00:00	6	39
-525	2500	2007-11-30 00:00:00	175	392
-526	2500	2008-10-30 00:00:00	180	365
-527	2500	2008-12-10 00:00:00	188	384
-528	2500	2008-09-26 00:00:00	189	393
-529	2500	2008-07-29 00:00:00	1	394
-530	2500	2008-12-31 00:00:00	4	369
-531	2500	2007-12-07 00:00:00	190	395
-532	2500	2007-06-28 00:00:00	1	396
-533	2500	2008-07-01 00:00:00	191	148
-534	2400	2007-06-28 00:00:00	1	397
-535	2400	2008-07-07 00:00:00	1	398
-536	2366.4000000000001	2008-07-14 00:00:00	192	13
-537	2300	2007-11-29 00:00:00	39	399
-538	2300	2007-02-28 00:00:00	39	400
-539	2300	2007-02-28 00:00:00	39	400
-540	2300	2007-03-26 00:00:00	39	401
-541	2300	2007-01-26 00:00:00	39	402
-542	2300	2008-10-15 00:00:00	193	403
-543	2300	2008-10-15 00:00:00	194	404
-544	2300	2008-10-15 00:00:00	193	405
-545	2300	2007-03-20 00:00:00	183	406
-546	2300	2007-02-28 00:00:00	183	407
-547	2300	2007-02-28 00:00:00	39	408
-548	2300	2007-02-09 00:00:00	39	409
-549	2300	2007-03-26 00:00:00	39	401
-550	2300	2007-03-30 00:00:00	39	410
-551	2300	2007-03-31 00:00:00	39	411
-552	2300	2007-03-31 00:00:00	39	411
-553	2300	2007-03-31 00:00:00	195	412
-554	2300	2007-03-31 00:00:00	195	412
-555	2300	2007-03-08 00:00:00	196	405
-556	2300	2007-03-23 00:00:00	12	413
-557	2300	2007-03-31 00:00:00	197	414
-558	2300	2007-05-25 00:00:00	183	415
-559	2300	2007-05-11 00:00:00	183	416
-560	2300	2007-06-30 00:00:00	183	417
-561	2300	2007-06-28 00:00:00	183	375
-562	2300	2007-04-06 00:00:00	183	418
-563	2300	2007-06-26 00:00:00	198	419
-564	2300	2007-06-26 00:00:00	198	420
-565	2300	2007-04-07 00:00:00	195	421
-566	2300	2007-06-26 00:00:00	199	422
-567	2300	2007-06-21 00:00:00	198	423
-568	2300	2007-06-25 00:00:00	200	424
-569	2300	2007-06-30 00:00:00	39	425
-570	2300	2007-06-06 00:00:00	39	426
-571	2300	2007-06-30 00:00:00	39	427
-572	2300	2007-06-30 00:00:00	39	428
-573	2300	2007-06-30 00:00:00	39	429
-574	2300	2007-06-07 00:00:00	39	430
-575	2300	2007-06-30 00:00:00	39	431
-576	2300	2007-06-30 00:00:00	39	431
-577	2300	2007-06-30 00:00:00	39	429
-578	2300	2007-06-30 00:00:00	39	432
-579	2300	2007-05-24 00:00:00	39	433
-580	2300	2007-05-03 00:00:00	39	434
-581	2300	2007-06-30 00:00:00	39	427
-582	2300	2007-06-07 00:00:00	39	430
-583	2300	2007-05-24 00:00:00	39	433
-584	2300	2007-06-30 00:00:00	39	425
-585	2300	2007-06-30 00:00:00	201	435
-586	2300	2007-06-10 00:00:00	136	436
-587	2300	2007-06-08 00:00:00	202	437
-588	2300	2007-08-01 00:00:00	183	438
-589	2300	2007-08-21 00:00:00	183	377
-590	2300	2007-07-31 00:00:00	183	438
-591	2300	2007-09-30 00:00:00	39	439
-592	2300	2007-08-16 00:00:00	39	440
-593	2300	2007-08-31 00:00:00	39	441
-594	2300	2007-09-18 00:00:00	203	442
-595	2300	2007-08-31 00:00:00	39	441
-596	2300	2007-08-20 00:00:00	204	443
-597	2300	2007-09-27 00:00:00	205	444
-598	2300	2007-10-17 00:00:00	39	445
-599	2300	2007-12-28 00:00:00	39	446
-600	2300	2007-10-17 00:00:00	39	447
-601	2300	2007-10-17 00:00:00	39	447
-602	2300	2007-10-17 00:00:00	39	445
-603	2300	2007-11-29 00:00:00	39	399
-604	2300	2007-11-30 00:00:00	39	448
-605	2300	2007-12-28 00:00:00	39	449
-606	2300	2007-12-26 00:00:00	183	450
-607	2300	2007-12-28 00:00:00	39	446
-608	2300	2007-11-08 00:00:00	183	451
-609	2300	2007-12-28 00:00:00	39	452
-610	2300	2007-12-28 00:00:00	39	453
-611	2300	2007-11-08 00:00:00	183	454
-612	2300	2007-10-23 00:00:00	206	437
-613	2300	2007-11-20 00:00:00	207	455
-614	2300	2007-10-18 00:00:00	205	456
-615	2300	2007-10-18 00:00:00	205	456
-616	2300	2008-01-31 00:00:00	39	457
-617	2300	2008-03-31 00:00:00	185	458
-618	2300	2008-03-31 00:00:00	208	459
-619	2300	2008-03-10 00:00:00	186	386
-620	2300	2008-03-10 00:00:00	186	381
-621	2300	2008-05-31 00:00:00	185	460
-622	2300	2008-05-31 00:00:00	185	461
-623	2300	2008-05-31 00:00:00	185	462
-624	2300	2008-05-31 00:00:00	185	462
-625	2300	2008-06-26 00:00:00	193	405
-626	2300	2008-06-12 00:00:00	12	19
-627	2300	2008-06-30 00:00:00	209	463
-628	2300	2008-06-10 00:00:00	206	464
-629	2300	2008-06-02 00:00:00	210	465
-630	2300	2008-08-14 00:00:00	207	455
-631	2300	2008-08-28 00:00:00	39	466
-632	2300	2008-08-28 00:00:00	39	467
-633	2300	2008-08-20 00:00:00	185	468
-634	2300	2008-08-20 00:00:00	185	468
-635	2300	2008-08-31 00:00:00	171	469
-636	2300	2008-08-31 00:00:00	203	470
-637	2300	2008-04-03 00:00:00	185	471
-638	2300	2007-10-18 00:00:00	211	472
-639	2300	2007-10-18 00:00:00	211	472
-640	2300	2008-01-29 00:00:00	196	405
-641	2300	2008-03-31 00:00:00	208	459
-642	2300	2008-01-18 00:00:00	195	473
-643	2300	2008-08-28 00:00:00	39	474
-644	2300	2007-12-10 00:00:00	197	475
-645	2300	2007-12-10 00:00:00	197	475
-646	2300	2008-09-27 00:00:00	212	476
-647	2300	2008-08-28 00:00:00	39	477
-648	2300	2007-08-20 00:00:00	204	443
-649	2300	2007-08-13 00:00:00	39	478
-650	2300	2007-08-13 00:00:00	39	478
-651	2300	2007-05-03 00:00:00	39	434
-652	2300	2007-06-14 00:00:00	39	479
-653	2300	2007-06-28 00:00:00	198	480
-654	2300	2007-03-23 00:00:00	213	356
-655	2200	2007-06-25 00:00:00	200	424
-656	2100	2008-03-31 00:00:00	26	481
-657	2100	2007-02-07 00:00:00	183	482
-658	2100	2007-08-01 00:00:00	183	483
-659	2100	2007-11-24 00:00:00	26	39
-660	2100	2007-03-19 00:00:00	39	409
-661	2000	2007-06-22 00:00:00	214	13
-662	2000	2007-08-01 00:00:00	215	13
-663	2000	2007-06-26 00:00:00	216	13
-664	2000	2008-08-26 00:00:00	171	484
-665	2000	2007-06-11 00:00:00	217	485
-666	2000	2008-07-22 00:00:00	28	486
-667	2000	2007-05-05 00:00:00	218	487
-668	2000	2007-12-20 00:00:00	219	13
-669	2000	2007-05-17 00:00:00	220	488
-670	2000	2007-07-05 00:00:00	221	489
-671	2000	2007-12-11 00:00:00	192	13
-672	2000	2007-04-15 00:00:00	177	490
-673	2000	2008-07-07 00:00:00	191	13
-674	2000	2007-08-16 00:00:00	222	491
-675	2000	2008-03-27 00:00:00	223	492
-676	2000	2007-03-29 00:00:00	183	493
-677	2000	2008-03-17 00:00:00	224	13
-678	2000	2008-10-30 00:00:00	192	13
-679	2000	2008-07-23 00:00:00	225	494
-680	2000	2008-09-22 00:00:00	226	40
-681	2000	2008-01-09 00:00:00	227	495
-682	2000	2008-10-23 00:00:00	37	53
-683	2000	2008-06-30 00:00:00	228	40
-684	2000	2007-07-20 00:00:00	229	13
-685	2000	2007-07-09 00:00:00	230	13
-686	2000	2007-09-17 00:00:00	231	496
-687	2000	2008-03-20 00:00:00	39	497
-688	2000	2008-02-19 00:00:00	221	13
-689	2000	2008-07-03 00:00:00	221	489
-690	2000	2007-03-31 00:00:00	39	498
-691	2000	2007-11-28 00:00:00	39	499
-692	2000	2007-11-28 00:00:00	39	500
-693	2000	2007-10-17 00:00:00	232	74
-694	2000	2007-12-31 00:00:00	39	501
-695	2000	2008-10-31 00:00:00	8	148
-696	2000	2009-01-09 00:00:00	233	148
-697	2000	2008-09-18 00:00:00	234	20
-698	2000	2008-06-13 00:00:00	15	502
-699	2000	2008-08-10 00:00:00	235	40
-700	2000	2008-07-30 00:00:00	236	503
-701	2000	2008-04-18 00:00:00	237	40
-702	2000	2007-09-30 00:00:00	18	504
-703	2000	2006-05-22 00:00:00	200	505
-704	2000	2008-07-29 00:00:00	214	13
-705	2000	2008-07-20 00:00:00	238	13
-706	2000	2008-08-31 00:00:00	203	506
-707	2000	2008-07-30 00:00:00	230	13
-708	2000	2008-08-13 00:00:00	229	13
-709	2000	2007-08-16 00:00:00	39	507
-710	2000	2008-03-27 00:00:00	211	40
-711	2000	2007-03-28 00:00:00	39	508
-712	2000	2008-02-13 00:00:00	186	74
-713	2000	2008-02-19 00:00:00	57	509
-714	1900	2007-01-26 00:00:00	39	402
-715	1800	2008-04-18 00:00:00	239	13
-716	1800	2008-11-03 00:00:00	1	510
-717	1800	2008-09-02 00:00:00	240	511
-718	1750	2007-12-05 00:00:00	241	13
-719	1700	2008-03-09 00:00:00	241	13
-720	1700	2008-03-28 00:00:00	205	512
-721	1642	2007-03-09 00:00:00	187	388
-722	1600	2007-10-30 00:00:00	221	489
-723	1500	2007-04-27 00:00:00	39	513
-724	1500	2008-11-03 00:00:00	18	514
-725	1500	2007-12-29 00:00:00	11	515
-726	1500	2008-03-14 00:00:00	242	516
-727	1500	2007-03-29 00:00:00	39	517
-728	1500	2008-10-29 00:00:00	2	518
-729	1500	2007-03-26 00:00:00	243	519
-730	1500	2007-12-24 00:00:00	244	13
-731	1500	2008-07-22 00:00:00	28	202
-732	1500	2007-12-11 00:00:00	245	13
-733	1500	2007-03-30 00:00:00	246	520
-734	1478	2007-03-12 00:00:00	247	444
-735	1300	2008-10-03 00:00:00	171	521
-736	1300	2008-02-29 00:00:00	39	522
-737	1300	2007-04-19 00:00:00	39	523
-738	1250	2008-09-22 00:00:00	180	524
-739	1250	2008-09-29 00:00:00	4	525
-740	1200	2008-02-11 00:00:00	248	13
-741	1200	2008-03-14 00:00:00	80	526
-742	1200	2007-07-09 00:00:00	8	13
-743	1100	2008-06-25 00:00:00	249	527
-744	1084	2007-12-29 00:00:00	11	528
-745	1000	2007-11-30 00:00:00	183	529
-746	1000	2008-09-05 00:00:00	250	530
-747	1000	2007-10-17 00:00:00	39	531
-748	1000	2007-12-20 00:00:00	183	532
-749	1000	2007-12-21 00:00:00	251	110
-750	1000	2007-10-04 00:00:00	25	533
-751	1000	2007-12-31 00:00:00	186	534
-752	1000	2007-12-03 00:00:00	252	535
-753	1000	2007-06-30 00:00:00	203	536
-754	1000	2007-11-16 00:00:00	2	537
-755	1000	2007-11-07 00:00:00	205	512
-756	1000	2007-12-27 00:00:00	251	110
-757	1000	2007-10-29 00:00:00	138	538
-758	1000	2007-12-12 00:00:00	28	486
-759	1000	2008-01-26 00:00:00	39	539
-760	1000	2008-01-10 00:00:00	39	540
-761	1000	2008-03-19 00:00:00	253	13
-762	1000	2008-05-15 00:00:00	254	541
-763	1000	2007-08-16 00:00:00	177	542
-764	1000	2008-06-02 00:00:00	8	543
-765	1000	2007-12-29 00:00:00	11	528
-766	1000	2007-06-19 00:00:00	39	544
-767	1000	2007-08-19 00:00:00	177	545
-768	1000	2007-07-22 00:00:00	177	546
-769	1000	2007-12-31 00:00:00	255	547
-770	1000	2007-03-14 00:00:00	195	548
-771	1000	2007-03-29 00:00:00	256	549
-772	1000	2007-09-28 00:00:00	205	550
-773	1000	2007-11-06 00:00:00	11	551
-774	1000	2008-03-31 00:00:00	203	552
-775	1000	2007-04-17 00:00:00	39	553
-776	1000	2008-03-27 00:00:00	257	554
-777	1000	2008-02-15 00:00:00	258	555
-778	1000	2007-08-30 00:00:00	249	527
-779	1000	2008-08-15 00:00:00	244	384
-780	1000	2007-09-12 00:00:00	203	556
-781	1000	2007-06-11 00:00:00	39	557
-782	1000	2007-11-01 00:00:00	183	558
-783	1000	2008-09-29 00:00:00	80	559
-784	1000	2007-12-28 00:00:00	39	560
-785	1000	2008-10-03 00:00:00	171	561
-786	1000	2007-10-25 00:00:00	183	562
-787	1000	2007-10-16 00:00:00	183	563
-788	1000	2007-10-22 00:00:00	26	564
-789	1000	2008-09-02 00:00:00	240	565
-790	1000	2007-06-14 00:00:00	39	566
-791	1000	2007-04-13 00:00:00	39	567
-792	1000	2007-04-17 00:00:00	39	568
-793	1000	2007-06-14 00:00:00	39	569
-794	1000	2007-04-13 00:00:00	39	570
-795	1000	2007-06-30 00:00:00	39	571
-796	1000	2008-07-30 00:00:00	129	572
-797	1000	2007-04-11 00:00:00	259	13
-798	1000	2007-06-30 00:00:00	39	573
-799	1000	2007-04-17 00:00:00	39	568
-800	1000	2007-04-13 00:00:00	39	574
-801	1000	2007-04-13 00:00:00	39	575
-802	1000	2007-04-17 00:00:00	39	576
-803	1000	2008-08-07 00:00:00	213	577
-804	1000	2007-04-13 00:00:00	238	13
-805	1000	2007-05-19 00:00:00	39	578
-806	1000	2007-04-13 00:00:00	230	13
-807	1000	2008-06-20 00:00:00	11	579
-808	1000	2007-04-23 00:00:00	39	580
-809	1000	2007-04-12 00:00:00	229	13
-810	1000	2007-06-30 00:00:00	39	581
-811	1000	2007-04-17 00:00:00	39	582
-812	1000	2007-05-08 00:00:00	203	583
-813	1000	2007-04-19 00:00:00	39	584
-814	1000	2007-04-13 00:00:00	39	585
-815	1000	2007-06-07 00:00:00	39	586
-816	1000	2008-06-18 00:00:00	260	587
-817	1000	2007-04-13 00:00:00	39	588
-818	1000	2007-04-17 00:00:00	39	589
-819	1000	2007-04-17 00:00:00	39	590
-820	1000	2007-04-17 00:00:00	39	591
-821	1000	2007-10-17 00:00:00	261	13
-822	1000	2007-06-15 00:00:00	261	592
-823	1000	2007-04-06 00:00:00	261	13
-824	1000	2008-05-27 00:00:00	39	497
-825	1000	2008-06-24 00:00:00	262	593
-826	1000	2007-05-11 00:00:00	39	594
-827	1000	2008-08-11 00:00:00	246	595
-828	1000	2007-04-17 00:00:00	39	596
-829	1000	2007-12-06 00:00:00	39	597
-830	1000	2007-11-12 00:00:00	39	598
-831	1000	2007-12-06 00:00:00	39	599
-832	1000	2008-09-30 00:00:00	203	600
-833	1000	2007-12-28 00:00:00	39	601
-834	1000	2007-03-31 00:00:00	256	602
-835	1000	2008-03-24 00:00:00	186	74
-836	1000	2007-12-06 00:00:00	263	603
-837	1000	2007-04-13 00:00:00	39	604
-838	1000	2008-03-12 00:00:00	264	605
-839	1000	2008-03-12 00:00:00	186	74
-840	1000	2007-03-28 00:00:00	39	523
-841	1000	2007-06-19 00:00:00	15	606
-842	1000	2007-08-09 00:00:00	265	607
-843	1000	2008-03-10 00:00:00	266	608
-844	1000	2007-04-19 00:00:00	39	609
-845	1000	2008-09-04 00:00:00	171	610
-846	1000	2008-05-16 00:00:00	185	611
-847	1000	2008-10-30 00:00:00	15	612
-848	1000	2007-03-16 00:00:00	39	613
-849	1000	2007-09-04 00:00:00	265	607
-850	1000	2008-04-04 00:00:00	39	614
-851	1000	2007-03-26 00:00:00	39	615
-852	1000	2007-08-16 00:00:00	39	616
-853	1000	2008-03-31 00:00:00	267	617
-854	1000	2007-07-05 00:00:00	268	618
-855	1000	2007-09-23 00:00:00	26	619
-856	1000	2008-05-27 00:00:00	39	620
-857	1000	2008-06-16 00:00:00	138	621
-858	1000	2006-12-19 00:00:00	200	622
-859	1000	2007-05-04 00:00:00	183	623
-860	1000	2008-10-20 00:00:00	216	13
-861	1000	2008-10-24 00:00:00	203	624
-862	1000	2008-06-16 00:00:00	203	625
-863	1000	2008-06-19 00:00:00	203	626
-864	1000	2007-08-09 00:00:00	39	627
-865	1000	2008-06-10 00:00:00	206	628
-866	1000	2008-06-12 00:00:00	5	629
-867	1000	2008-06-27 00:00:00	209	630
-868	1000	2008-09-24 00:00:00	84	137
-869	1000	2008-06-02 00:00:00	25	631
-870	1000	2007-07-13 00:00:00	183	632
-871	1000	2008-05-20 00:00:00	269	633
-872	1000	2007-12-10 00:00:00	225	40
-873	1000	2007-09-13 00:00:00	183	634
-874	1000	2008-06-20 00:00:00	11	635
-875	1000	2008-06-27 00:00:00	11	636
-876	1000	2008-12-31 00:00:00	11	528
-877	1000	2008-07-17 00:00:00	185	637
-878	1000	2008-06-03 00:00:00	260	638
-879	1000	2008-05-27 00:00:00	249	527
-880	1000	2008-09-09 00:00:00	186	74
-881	1000	2007-09-12 00:00:00	183	639
-882	1000	2006-08-28 00:00:00	200	640
-883	1000	2006-05-22 00:00:00	200	622
-884	1000	2007-08-31 00:00:00	183	641
-885	1000	2008-06-27 00:00:00	11	642
-886	1000	2007-03-13 00:00:00	183	643
-887	1000	2008-07-30 00:00:00	236	644
-888	1000	2008-11-05 00:00:00	209	136
-889	1000	2008-10-31 00:00:00	203	645
-890	1000	2008-07-03 00:00:00	15	646
-891	1000	2008-04-18 00:00:00	15	647
-892	1000	2008-09-08 00:00:00	270	648
-893	1000	2008-11-02 00:00:00	271	649
-894	1000	2007-08-08 00:00:00	183	529
-895	1000	2007-03-31 00:00:00	183	650
-896	1000	2008-08-11 00:00:00	81	651
-897	1000	2007-08-14 00:00:00	26	564
-898	1000	2007-06-30 00:00:00	272	652
-899	1000	2007-06-29 00:00:00	272	653
-900	1000	2007-04-30 00:00:00	272	654
-901	1000	2008-12-31 00:00:00	11	528
-902	1000	2006-11-29 00:00:00	195	655
-903	1000	2008-11-17 00:00:00	273	656
-904	1000	2008-11-06 00:00:00	219	13
-905	1000	2007-05-07 00:00:00	274	657
-906	1000	2008-09-18 00:00:00	171	658
-907	1000	2007-07-25 00:00:00	11	659
-908	1000	2008-04-16 00:00:00	275	660
-909	1000	2007-10-26 00:00:00	259	661
-910	1000	2008-04-16 00:00:00	275	662
-911	1000	2008-04-15 00:00:00	276	663
-912	1000	2007-12-04 00:00:00	277	664
-913	1000	2008-05-15 00:00:00	278	660
-914	1000	2007-04-13 00:00:00	39	665
-915	1000	2008-03-27 00:00:00	223	666
-916	1000	2008-09-30 00:00:00	279	667
-917	1000	2006-12-29 00:00:00	195	668
-918	1000	2007-03-08 00:00:00	220	669
-919	1000	2007-04-09 00:00:00	280	670
-920	1000	2007-03-28 00:00:00	221	489
-921	1000	2008-09-11 00:00:00	232	74
-922	1000	2007-05-21 00:00:00	183	671
-923	1000	2007-06-22 00:00:00	5	672
-924	1000	2007-03-16 00:00:00	186	673
-925	1000	2007-06-06 00:00:00	281	674
-926	1000	2008-10-24 00:00:00	171	675
-927	1000	2007-06-28 00:00:00	198	676
-928	1000	2008-05-13 00:00:00	86	677
-929	1000	2007-02-12 00:00:00	282	13
-930	1000	2007-03-15 00:00:00	185	678
-931	1000	2008-07-27 00:00:00	203	679
-932	1000	2007-03-02 00:00:00	283	680
-933	1000	2008-10-20 00:00:00	284	260
-934	1000	2007-06-03 00:00:00	246	681
-935	1000	2007-06-30 00:00:00	203	536
-936	950	2007-06-30 00:00:00	39	586
-937	900	2008-05-28 00:00:00	15	682
-938	900	2008-04-09 00:00:00	67	683
-939	900	2008-08-26 00:00:00	197	684
-940	821	2007-03-12 00:00:00	247	685
-941	821	2007-03-30 00:00:00	246	686
-942	800	2008-07-03 00:00:00	15	687
-943	800	2007-06-19 00:00:00	5	688
-944	800	2008-05-13 00:00:00	5	161
-945	800	2008-09-26 00:00:00	171	689
-946	800	2007-03-27 00:00:00	285	13
-947	800	2007-12-28 00:00:00	5	163
-948	800	2008-08-07 00:00:00	5	690
-949	800	2008-06-12 00:00:00	5	691
-950	800	2008-03-31 00:00:00	249	527
-951	750	2007-09-28 00:00:00	286	692
-952	750	2007-03-31 00:00:00	183	693
-953	750	2007-10-17 00:00:00	287	13
-954	750	2007-09-30 00:00:00	18	694
-955	750	2007-07-25 00:00:00	11	695
-956	750	2007-12-11 00:00:00	288	696
-957	750	2007-06-25 00:00:00	183	697
-958	750	2007-06-07 00:00:00	183	697
-959	713	2008-09-04 00:00:00	124	698
-960	700	2007-03-07 00:00:00	67	699
-961	700	2008-02-19 00:00:00	186	74
-962	700	2007-04-13 00:00:00	39	700
-963	700	2008-03-02 00:00:00	39	701
-964	700	2007-11-30 00:00:00	265	702
-965	700	2007-12-12 00:00:00	289	703
-966	600	2008-04-23 00:00:00	5	704
-967	600	2008-09-10 00:00:00	186	74
-968	600	2008-06-27 00:00:00	203	705
-969	600	2007-06-28 00:00:00	1	706
-970	600	2008-07-07 00:00:00	1	707
-971	600	2008-04-10 00:00:00	67	708
-972	600	2008-09-25 00:00:00	203	709
-973	550	2007-07-24 00:00:00	11	710
-974	550	2007-07-24 00:00:00	11	711
-975	550	2008-10-27 00:00:00	4	712
-976	550	2007-07-24 00:00:00	11	713
-977	550	2007-07-25 00:00:00	11	213
-978	530	2008-03-31 00:00:00	290	714
-979	500	2008-10-20 00:00:00	203	715
-980	500	2008-10-29 00:00:00	291	13
-981	500	2008-10-29 00:00:00	253	13
-982	500	2008-10-06 00:00:00	282	13
-983	500	2008-09-10 00:00:00	248	13
-984	500	2008-08-13 00:00:00	283	680
-985	500	2008-09-08 00:00:00	259	13
-986	500	2008-09-02 00:00:00	292	13
-987	500	2008-03-24 00:00:00	116	543
-988	500	2008-04-07 00:00:00	116	13
-989	500	2008-02-04 00:00:00	244	384
-990	500	2008-03-14 00:00:00	219	716
-991	500	2008-04-01 00:00:00	293	188
-992	500	2008-07-09 00:00:00	294	717
-993	500	2007-10-30 00:00:00	295	13
-994	500	2008-01-09 00:00:00	253	13
-995	500	2007-03-20 00:00:00	296	147
-996	500	2007-07-03 00:00:00	192	148
-997	500	2007-06-15 00:00:00	219	718
-998	500	2007-10-17 00:00:00	283	680
-999	500	2007-02-06 00:00:00	293	188
-1000	500	2007-02-12 00:00:00	297	592
-1001	500	2007-12-14 00:00:00	298	719
-1002	500	2007-06-23 00:00:00	299	148
-1003	500	2008-11-04 00:00:00	171	720
-1004	500	2008-10-12 00:00:00	209	721
-1005	500	2008-09-18 00:00:00	193	722
-1006	500	2008-10-07 00:00:00	180	723
-1007	500	2008-09-30 00:00:00	203	724
-1008	500	2008-09-07 00:00:00	180	725
-1009	500	2008-06-25 00:00:00	124	726
-1010	500	2008-06-18 00:00:00	203	727
-1011	500	2008-04-24 00:00:00	269	728
-1012	500	2008-04-30 00:00:00	39	729
-1013	500	2008-04-28 00:00:00	4	730
-1014	500	2007-11-08 00:00:00	59	731
-1015	500	2007-11-01 00:00:00	250	732
-1016	500	2007-12-06 00:00:00	198	733
-1017	500	2007-10-16 00:00:00	222	734
-1018	500	2007-09-17 00:00:00	183	735
-1019	500	2007-09-24 00:00:00	183	736
-1020	500	2007-05-04 00:00:00	300	737
-1021	500	2007-05-17 00:00:00	183	738
-1022	500	2007-05-05 00:00:00	222	739
-1023	500	2008-10-01 00:00:00	5	740
-1024	500	2008-11-03 00:00:00	203	741
-1025	500	2008-12-31 00:00:00	11	742
-1026	500	2008-10-24 00:00:00	203	743
-1027	500	2008-10-16 00:00:00	203	744
-1028	500	2008-10-30 00:00:00	4	745
-1029	500	2008-10-27 00:00:00	12	173
-1030	500	2008-10-20 00:00:00	1	746
-1031	500	2008-10-22 00:00:00	12	747
-1032	500	2008-11-01 00:00:00	213	125
-1033	500	2008-11-02 00:00:00	171	748
-1034	500	2008-10-22 00:00:00	171	749
-1035	500	2008-10-08 00:00:00	207	750
-1036	500	2008-10-06 00:00:00	4	751
-1037	500	2008-09-29 00:00:00	4	752
-1038	500	2008-09-29 00:00:00	4	753
-1039	500	2008-09-29 00:00:00	4	754
-1040	500	2008-10-14 00:00:00	209	282
-1041	500	2008-09-05 00:00:00	213	755
-1042	500	2008-09-28 00:00:00	209	756
-1043	500	2008-09-17 00:00:00	301	757
-1044	500	2008-09-02 00:00:00	269	758
-1045	500	2008-10-01 00:00:00	203	759
-1046	500	2008-10-02 00:00:00	171	760
-1047	500	2008-09-13 00:00:00	203	761
-1048	500	2008-09-24 00:00:00	197	762
-1049	500	2008-09-24 00:00:00	203	763
-1050	500	2008-09-18 00:00:00	171	764
-1051	500	2008-09-23 00:00:00	260	765
-1052	500	2008-09-07 00:00:00	180	766
-1053	500	2008-09-24 00:00:00	170	767
-1054	500	2008-09-09 00:00:00	180	768
-1055	500	2008-08-07 00:00:00	39	769
-1056	500	2008-07-30 00:00:00	236	503
-1057	500	2008-07-24 00:00:00	26	770
-1058	500	2008-07-29 00:00:00	5	230
-1059	500	2008-07-21 00:00:00	290	771
-1060	500	2008-08-17 00:00:00	124	283
-1061	500	2008-07-30 00:00:00	203	759
-1062	500	2008-04-18 00:00:00	290	771
-1063	500	2008-04-30 00:00:00	213	772
-1064	500	2008-06-09 00:00:00	4	45
-1065	500	2008-04-30 00:00:00	213	773
-1066	500	2008-06-25 00:00:00	124	774
-1067	500	2008-04-17 00:00:00	267	775
-1068	500	2008-06-25 00:00:00	209	282
-1069	500	2008-06-22 00:00:00	26	776
-1070	500	2008-05-29 00:00:00	302	777
-1071	500	2008-06-25 00:00:00	124	778
-1072	500	2008-06-23 00:00:00	185	779
-1073	500	2008-06-09 00:00:00	138	780
-1074	500	2008-05-07 00:00:00	203	781
-1075	500	2008-05-13 00:00:00	5	782
-1076	500	2008-04-25 00:00:00	39	783
-1077	500	2008-04-23 00:00:00	5	784
-1078	500	2008-04-22 00:00:00	185	785
-1079	500	2008-04-04 00:00:00	39	540
-1080	500	2008-02-04 00:00:00	240	511
-1081	500	2008-03-03 00:00:00	39	783
-1082	500	2008-03-07 00:00:00	39	786
-1083	500	2008-03-24 00:00:00	303	787
-1084	500	2008-03-31 00:00:00	39	788
-1085	500	2008-03-19 00:00:00	197	762
-1086	500	2008-03-31 00:00:00	39	789
-1087	500	2008-03-18 00:00:00	203	790
-1088	500	2008-03-18 00:00:00	39	620
-1089	500	2008-03-07 00:00:00	1	791
-1090	500	2008-02-13 00:00:00	203	792
-1091	500	2008-02-29 00:00:00	39	769
-1092	500	2007-12-29 00:00:00	11	793
-1093	500	2007-12-29 00:00:00	11	635
-1094	500	2007-12-31 00:00:00	11	794
-1095	500	2007-12-29 00:00:00	11	795
-1096	500	2008-01-31 00:00:00	39	796
-1097	500	2008-01-31 00:00:00	39	796
-1098	500	2007-12-24 00:00:00	12	173
-1099	500	2008-01-31 00:00:00	39	796
-1100	500	2008-01-31 00:00:00	39	796
-1101	500	2007-05-07 00:00:00	270	797
-1102	500	2007-11-21 00:00:00	12	267
-1103	500	2007-11-07 00:00:00	12	413
-1104	500	2007-12-26 00:00:00	183	798
-1105	500	2007-12-03 00:00:00	183	799
-1106	500	2007-10-23 00:00:00	39	800
-1107	500	2007-10-30 00:00:00	303	801
-1108	500	2007-09-09 00:00:00	203	802
-1109	500	2007-09-19 00:00:00	203	803
-1110	500	2007-08-15 00:00:00	39	804
-1111	500	2007-09-30 00:00:00	185	805
-1112	500	2007-09-14 00:00:00	304	806
-1113	500	2007-09-17 00:00:00	183	807
-1114	500	2007-09-24 00:00:00	183	808
-1115	500	2007-04-03 00:00:00	249	809
-1116	500	2007-04-10 00:00:00	274	810
-1117	500	2007-07-24 00:00:00	11	811
-1118	500	2007-04-17 00:00:00	138	812
-1119	500	2007-04-20 00:00:00	255	813
-1120	500	2007-06-19 00:00:00	5	814
-1121	500	2007-06-29 00:00:00	265	815
-1122	500	2007-06-19 00:00:00	305	816
-1123	500	2007-06-29 00:00:00	265	817
-1124	500	2007-04-29 00:00:00	264	153
-1125	500	2007-06-19 00:00:00	197	818
-1126	500	2007-06-15 00:00:00	12	267
-1127	500	2007-06-19 00:00:00	39	819
-1128	500	2007-05-18 00:00:00	39	820
-1129	500	2007-04-20 00:00:00	203	821
-1130	500	2007-06-19 00:00:00	39	822
-1131	500	2007-03-09 00:00:00	67	823
-1132	500	2007-03-27 00:00:00	26	824
-1133	500	2007-03-30 00:00:00	267	775
-1134	500	2007-01-29 00:00:00	306	825
-1135	500	2007-02-09 00:00:00	306	826
-1136	500	2007-03-05 00:00:00	256	827
-1137	500	2007-02-09 00:00:00	39	828
-1138	500	2007-03-19 00:00:00	39	829
-1139	500	2007-03-26 00:00:00	183	830
-1140	500	2007-03-29 00:00:00	183	831
-1141	470	2008-10-22 00:00:00	307	832
-1142	420	2008-08-26 00:00:00	203	833
-1143	400	2008-10-03 00:00:00	203	834
-1144	400	2007-03-08 00:00:00	229	543
-1145	400	2007-07-23 00:00:00	297	592
-1146	400	2007-11-27 00:00:00	308	13
-1147	400	2008-10-22 00:00:00	309	592
-1148	400	2008-06-12 00:00:00	5	835
-1149	400	2008-12-10 00:00:00	116	237
-1150	400	2007-08-15 00:00:00	310	148
-1151	400	2007-02-26 00:00:00	310	543
-1152	400	2008-02-20 00:00:00	1	836
-1153	400	2008-08-12 00:00:00	4	837
-1154	400	2007-08-06 00:00:00	311	838
-1155	400	2008-04-07 00:00:00	203	552
-1156	400	2007-10-18 00:00:00	11	839
-1157	350	2007-06-26 00:00:00	296	148
-1158	350	2008-11-03 00:00:00	296	13
-1159	350	2008-03-22 00:00:00	312	148
-1160	350	2007-03-26 00:00:00	214	840
-1161	350	2007-09-20 00:00:00	11	841
-1162	350	2007-02-26 00:00:00	224	592
-1163	330	2007-06-01 00:00:00	4	842
-1164	325	2008-10-31 00:00:00	313	843
-1165	308	2008-10-23 00:00:00	203	844
-1166	300	2008-05-27 00:00:00	39	497
-1167	300	2008-08-18 00:00:00	124	845
-1168	300	2008-09-10 00:00:00	314	846
-1169	300	2008-03-28 00:00:00	205	512
-1170	300	2007-01-31 00:00:00	222	847
-1171	300	2008-06-12 00:00:00	12	19
-1172	300	2007-03-23 00:00:00	315	13
-1173	300	2007-02-02 00:00:00	248	13
-1174	300	2007-11-30 00:00:00	265	702
-1175	300	2008-11-01 00:00:00	213	848
-1176	300	2007-02-12 00:00:00	248	13
-1177	300	2008-01-31 00:00:00	39	796
-1178	300	2007-03-31 00:00:00	186	849
-1179	300	2007-07-31 00:00:00	267	775
-1180	300	2007-07-24 00:00:00	11	850
-1181	300	2008-01-10 00:00:00	39	851
-1182	300	2008-02-29 00:00:00	5	852
-1183	300	2008-02-06 00:00:00	203	853
-1184	300	2007-04-13 00:00:00	39	700
-1185	300	2008-10-07 00:00:00	234	20
-1186	300	2008-07-29 00:00:00	316	854
-1187	300	2008-03-12 00:00:00	26	481
-1188	300	2007-07-12 00:00:00	287	855
-1189	300	2008-03-25 00:00:00	203	856
-1190	300	2008-10-24 00:00:00	4	857
-1191	300	2008-08-04 00:00:00	203	858
-1192	300	2008-07-09 00:00:00	314	846
-1193	300	2008-02-12 00:00:00	39	544
-1194	300	2008-10-20 00:00:00	302	859
-1195	300	2007-05-11 00:00:00	12	860
-1196	300	2007-03-16 00:00:00	317	861
-1197	300	2008-08-28 00:00:00	203	862
-1198	287	2008-08-29 00:00:00	171	863
-1199	275	2007-07-24 00:00:00	11	864
-1200	275	2007-07-24 00:00:00	11	865
-1201	275	2007-07-24 00:00:00	11	866
-1202	275	2007-07-24 00:00:00	11	528
-1203	275	2008-06-20 00:00:00	11	865
-1204	275	2008-12-08 00:00:00	11	579
-1205	275	2008-06-27 00:00:00	11	867
-1206	275	2008-06-27 00:00:00	11	868
-1207	275	2008-06-11 00:00:00	11	213
-1208	275	2007-07-24 00:00:00	11	869
-1209	275	2007-07-25 00:00:00	11	870
-1210	275	2007-07-24 00:00:00	11	871
-1211	275	2007-07-25 00:00:00	11	872
-1212	260	2008-07-18 00:00:00	4	873
-1213	250	2007-12-04 00:00:00	203	874
-1214	250	2008-08-25 00:00:00	185	611
-1215	250	2008-10-06 00:00:00	248	13
-1216	250	2007-12-12 00:00:00	203	875
-1217	250	2007-03-25 00:00:00	264	876
-1218	250	2007-10-10 00:00:00	183	877
-1219	250	2008-10-21 00:00:00	203	878
-1220	250	2007-10-24 00:00:00	318	879
-1221	250	2008-11-15 00:00:00	209	880
-1222	250	2008-11-02 00:00:00	203	881
-1223	250	2007-06-20 00:00:00	222	882
-1224	250	2008-07-11 00:00:00	319	883
-1225	250	2007-07-18 00:00:00	320	884
-1226	250	2008-10-31 00:00:00	171	885
-1227	250	2008-10-21 00:00:00	180	886
-1228	250	2008-09-05 00:00:00	316	887
-1229	250	2008-10-26 00:00:00	321	559
-1230	250	2008-10-09 00:00:00	4	888
-1231	250	2008-02-14 00:00:00	39	889
-1232	250	2008-10-23 00:00:00	203	763
-1233	250	2008-10-06 00:00:00	180	890
-1234	250	2008-02-11 00:00:00	1	891
-1235	250	2008-10-12 00:00:00	209	892
-1236	250	2007-09-30 00:00:00	199	893
-1237	250	2008-10-09 00:00:00	171	894
-1238	250	2008-08-13 00:00:00	322	895
-1239	250	2007-11-30 00:00:00	306	896
-1240	250	2007-02-01 00:00:00	125	897
-1241	250	2007-12-02 00:00:00	28	898
-1242	250	2007-11-02 00:00:00	2	899
-1243	250	2008-10-15 00:00:00	203	900
-1244	250	2007-10-05 00:00:00	39	901
-1245	250	2007-12-08 00:00:00	274	902
-1246	250	2008-02-08 00:00:00	39	903
-1247	250	2008-02-04 00:00:00	316	13
-1248	250	2008-03-30 00:00:00	318	904
-1249	250	2008-02-05 00:00:00	185	905
-1250	250	2008-08-05 00:00:00	185	905
-1251	250	2007-10-29 00:00:00	138	271
-1252	250	2008-08-11 00:00:00	81	906
-1253	250	2008-11-02 00:00:00	171	907
-1254	250	2008-09-15 00:00:00	171	908
-1255	250	2008-07-31 00:00:00	203	909
-1256	250	2007-11-30 00:00:00	136	910
-1257	250	2008-09-23 00:00:00	299	323
-1258	250	2007-11-20 00:00:00	207	911
-1259	250	2008-01-30 00:00:00	203	912
-1260	250	2008-01-24 00:00:00	203	853
-1261	250	2008-03-07 00:00:00	203	913
-1262	250	2008-11-07 00:00:00	171	914
-1263	250	2008-07-16 00:00:00	171	915
-1264	250	2007-11-06 00:00:00	39	916
-1265	250	2008-01-16 00:00:00	203	917
-1266	250	2007-02-02 00:00:00	316	13
-1267	250	2008-08-29 00:00:00	203	918
-1268	250	2008-06-29 00:00:00	264	153
-1269	250	2008-09-18 00:00:00	203	919
-1270	250	2008-03-03 00:00:00	39	920
-1271	250	2007-09-28 00:00:00	183	921
-1272	250	2008-08-05 00:00:00	39	922
-1273	250	2007-12-30 00:00:00	177	923
-1274	250	2007-04-27 00:00:00	323	924
-1275	250	2007-08-09 00:00:00	39	925
-1276	250	2008-07-14 00:00:00	302	926
-1277	250	2008-03-11 00:00:00	39	927
-1278	250	2008-06-09 00:00:00	185	928
-1279	250	2007-06-19 00:00:00	183	929
-1280	250	2007-03-17 00:00:00	125	930
-1281	250	2008-03-05 00:00:00	185	905
-1282	250	2008-08-13 00:00:00	124	778
-1283	250	2008-07-28 00:00:00	193	931
-1284	250	2008-03-10 00:00:00	203	932
-1285	250	2008-07-31 00:00:00	203	933
-1286	250	2007-03-31 00:00:00	185	934
-1287	250	2008-04-26 00:00:00	299	323
-1288	250	2008-06-27 00:00:00	11	528
-1289	250	2008-04-24 00:00:00	39	935
-1290	250	2007-05-22 00:00:00	4	936
-1291	250	2007-05-21 00:00:00	222	882
-1292	250	2008-06-27 00:00:00	209	937
-1293	250	2007-04-05 00:00:00	222	938
-1294	250	2007-02-23 00:00:00	4	939
-1295	250	2007-03-09 00:00:00	183	940
-1296	250	2007-04-11 00:00:00	11	941
-1297	250	2008-05-10 00:00:00	203	942
-1298	250	2007-12-07 00:00:00	267	943
-1299	250	2008-06-06 00:00:00	324	944
-1300	250	2007-12-26 00:00:00	325	945
-1301	250	2008-07-01 00:00:00	76	946
-1302	250	2007-07-06 00:00:00	326	311
-1303	250	2008-02-17 00:00:00	327	947
-1304	250	2008-06-28 00:00:00	328	948
-1305	250	2007-06-19 00:00:00	324	949
-1306	250	2008-10-18 00:00:00	329	950
-1307	250	2008-10-23 00:00:00	4	951
-1308	250	2008-08-28 00:00:00	185	952
-1309	250	2008-09-26 00:00:00	4	953
-1310	250	2007-11-06 00:00:00	39	954
-1311	250	2008-02-26 00:00:00	39	927
-1312	250	2008-10-13 00:00:00	262	955
-1313	250	2008-09-22 00:00:00	209	956
-1314	250	2007-01-22 00:00:00	330	957
-1315	250	2007-05-03 00:00:00	2	958
-1316	230	2007-12-14 00:00:00	183	959
-1317	225	2008-08-21 00:00:00	301	960
-1318	225	2008-09-09 00:00:00	301	961
-1319	225	2008-05-05 00:00:00	287	962
-1320	218	2008-01-31 00:00:00	76	610
-1321	213	2008-09-30 00:00:00	203	963
-1322	213	2008-09-29 00:00:00	171	964
-1323	210	2008-05-14 00:00:00	203	965
-1324	208	2008-02-29 00:00:00	39	966
-1325	208	2008-07-10 00:00:00	203	967
-1326	201	2008-10-08 00:00:00	4	968
-1327	200	2007-07-18 00:00:00	331	969
-1328	200	2007-06-12 00:00:00	203	970
-1329	200	2007-10-25 00:00:00	332	971
-1330	200	2007-04-12 00:00:00	332	972
-1331	200	2007-02-02 00:00:00	323	973
-1332	200	2007-06-02 00:00:00	333	974
-1333	200	2008-03-06 00:00:00	39	975
-1334	200	2008-09-04 00:00:00	203	976
-1335	200	2008-03-27 00:00:00	197	977
-1336	200	2008-10-23 00:00:00	203	978
-1337	200	2008-05-14 00:00:00	185	979
-1338	200	2008-03-02 00:00:00	39	975
-1339	200	2008-03-31 00:00:00	249	527
-1340	200	2008-10-17 00:00:00	203	978
-1341	200	2008-11-13 00:00:00	315	980
-1342	200	2008-10-27 00:00:00	2	981
-1343	200	2007-02-28 00:00:00	183	482
-1344	200	2007-10-20 00:00:00	199	982
-1345	200	2008-10-08 00:00:00	334	13
-1346	200	2008-10-31 00:00:00	180	983
-1347	200	2008-10-29 00:00:00	180	984
-1348	200	2008-10-23 00:00:00	203	985
-1349	200	2008-10-06 00:00:00	1	986
-1350	200	2008-10-17 00:00:00	171	675
-1351	200	2008-10-13 00:00:00	270	987
-1352	200	2008-12-31 00:00:00	4	988
-1353	200	2008-10-09 00:00:00	4	752
-1354	200	2008-10-27 00:00:00	203	989
-1355	200	2008-10-31 00:00:00	4	990
-1356	200	2008-09-29 00:00:00	4	991
-1357	200	2008-10-24 00:00:00	203	624
-1358	200	2008-09-18 00:00:00	4	992
-1359	200	2008-12-08 00:00:00	4	993
-1360	200	2008-09-30 00:00:00	2	981
-1361	200	2007-09-29 00:00:00	274	902
-1362	200	2008-09-02 00:00:00	240	511
-1363	200	2008-10-15 00:00:00	203	994
-1364	200	2008-07-15 00:00:00	331	995
-1365	200	2008-01-14 00:00:00	183	529
-1366	200	2008-07-18 00:00:00	331	969
-1367	200	2008-08-18 00:00:00	185	984
-1368	200	2008-01-18 00:00:00	203	821
-1369	200	2007-02-09 00:00:00	39	409
-1370	200	2008-10-04 00:00:00	203	996
-1371	200	2008-08-19 00:00:00	335	997
-1372	200	2007-10-22 00:00:00	4	968
-1373	200	2007-11-26 00:00:00	197	998
-1374	200	2007-12-26 00:00:00	4	968
-1375	200	2007-03-23 00:00:00	12	413
-1376	200	2008-05-27 00:00:00	317	592
-1377	200	2007-11-06 00:00:00	183	999
-1378	200	2007-12-21 00:00:00	203	821
-1379	200	2007-09-27 00:00:00	205	444
-1380	200	2007-08-03 00:00:00	199	1000
-1381	200	2007-09-24 00:00:00	4	842
-1382	200	2007-09-21 00:00:00	303	1001
-1383	200	2007-06-14 00:00:00	289	1002
-1384	200	2008-07-02 00:00:00	336	1003
-1385	200	2007-09-24 00:00:00	316	854
-1386	200	2008-03-12 00:00:00	26	481
-1387	200	2008-09-19 00:00:00	4	1004
-1388	200	2007-07-17 00:00:00	331	1005
-1389	200	2007-07-11 00:00:00	4	842
-1390	200	2007-07-20 00:00:00	222	1006
-1391	200	2007-06-30 00:00:00	201	435
-1392	200	2007-01-16 00:00:00	185	934
-1393	200	2008-06-26 00:00:00	12	860
-1394	200	2008-09-30 00:00:00	180	768
-1395	175	2008-05-06 00:00:00	337	1007
-1396	159.62	2007-06-18 00:00:00	192	13
-1397	159.62	2007-07-16 00:00:00	215	13
-1398	159.62	2007-06-18 00:00:00	216	13
-1399	159.62	2007-06-18 00:00:00	214	1008
-1400	159.62	2007-07-20 00:00:00	229	13
-1401	150	2008-02-26 00:00:00	338	1009
-1402	150	2007-06-20 00:00:00	287	1010
-1403	150	2007-07-12 00:00:00	287	1011
-1404	150	2008-04-16 00:00:00	339	323
-1405	150	2008-06-16 00:00:00	287	281
-1406	150	2007-04-21 00:00:00	299	322
-1407	150	2008-06-21 00:00:00	287	310
-1408	150	2008-01-22 00:00:00	244	1012
-1409	150	2008-08-26 00:00:00	317	1013
-1410	150	2008-10-16 00:00:00	291	1014
-1411	140	2008-09-24 00:00:00	317	1013
-1412	130	\N	340	1015
-1413	125	2007-08-23 00:00:00	337	1007
-1414	125	2008-04-25 00:00:00	287	1011
-1415	125	2008-04-17 00:00:00	287	310
-1416	125	2007-07-10 00:00:00	341	1016
-1417	110	2008-01-13 00:00:00	342	1017
-1418	100	2008-06-12 00:00:00	315	980
-1419	100	2008-10-10 00:00:00	343	1018
-1420	100	2008-06-24 00:00:00	333	974
-1421	100	2008-10-01 00:00:00	344	1019
-1422	100	2008-04-26 00:00:00	299	322
-1423	100	2008-08-24 00:00:00	342	1017
-1424	100	2008-03-06 00:00:00	191	1020
-1425	100	2007-10-25 00:00:00	315	980
-1426	100	2007-08-09 00:00:00	315	980
-1427	100	2007-11-23 00:00:00	345	1018
-1428	100	2007-04-06 00:00:00	283	1021
-1429	100	2007-07-27 00:00:00	297	1022
-1430	100	2007-11-26 00:00:00	319	883
-1431	100	2007-08-24 00:00:00	346	1023
-1432	100	2007-12-04 00:00:00	324	949
-1433	100	2008-09-22 00:00:00	299	322
-1434	100	2008-09-04 00:00:00	343	1018
-1435	100	2008-08-24 00:00:00	346	1023
-1436	100	2008-07-14 00:00:00	338	1009
-1437	100	2008-09-18 00:00:00	345	1018
-1438	100	2007-04-21 00:00:00	299	1024
-1439	75	2008-09-17 00:00:00	316	1025
-1440	45	2007-07-25 00:00:00	319	883
-1441	40	2007-08-24 00:00:00	346	1026
-1442	-100	2008-11-21 00:00:00	171	1027
-1443	-200	2008-03-11 00:00:00	183	1028
-1444	-200	2008-01-14 00:00:00	183	529
-1445	-200	2008-08-28 00:00:00	39	1029
-1446	-250	2008-02-12 00:00:00	318	1030
-1447	-300	2007-03-31 00:00:00	186	673
-1448	-400	2007-03-31 00:00:00	186	1031
-1449	-400	2008-10-16 00:00:00	186	69
-1450	-500	2007-10-26 00:00:00	39	1032
-1451	-500	2008-05-16 00:00:00	262	1033
-1452	-600	2008-09-10 00:00:00	186	74
-1453	-700	2008-01-11 00:00:00	265	69
-1454	-700	2008-02-19 00:00:00	186	74
-1455	-760	2008-12-29 00:00:00	3	1034
-1456	-1000	2007-09-14 00:00:00	39	1035
-1457	-1000	2007-06-29 00:00:00	39	1036
-1458	-1000	2007-06-29 00:00:00	39	1037
-1459	-1000	2007-12-05 00:00:00	268	1038
-1460	-1000	2008-03-24 00:00:00	186	74
-1461	-1000	2007-09-14 00:00:00	39	1039
-1462	-1000	2007-05-04 00:00:00	183	418
-1463	-1070	2008-06-19 00:00:00	12	1040
-1464	-2100	2007-08-01 00:00:00	183	483
-1465	-2100	2008-03-06 00:00:00	183	1041
-1466	-2200	2008-03-13 00:00:00	200	1042
-1467	-2300	2008-08-28 00:00:00	39	1043
-1468	-2300	2008-08-28 00:00:00	39	1044
-1469	-2300	2008-08-28 00:00:00	39	1045
-1470	-2300	2008-08-28 00:00:00	39	1046
-1471	-2300	2008-08-28 00:00:00	39	1047
-1472	-2300	2008-09-30 00:00:00	249	1048
-1473	-2300	2007-08-01 00:00:00	183	438
-1474	-2300	2008-08-28 00:00:00	39	1049
-1475	-2300	2008-08-28 00:00:00	39	1050
-1476	-2300	2008-08-28 00:00:00	39	1051
-1477	-2300	2008-08-28 00:00:00	39	1052
-1478	-2300	2008-08-28 00:00:00	39	1053
-1479	-2300	2008-08-28 00:00:00	39	1054
-1480	-2300	2008-06-30 00:00:00	196	1055
-1481	-2300	2008-03-10 00:00:00	186	386
-1482	-2300	2008-08-28 00:00:00	39	1056
-1483	-2300	2008-02-29 00:00:00	198	1057
-1484	-2300	2007-06-28 00:00:00	183	375
-1485	-2300	2007-08-21 00:00:00	183	377
-1486	-2300	2008-03-06 00:00:00	183	1058
-1487	-2300	2008-03-10 00:00:00	186	381
-1488	-2300	2008-04-03 00:00:00	185	1059
-1489	26700	2005-04-20 00:00:00	2	1060
-1490	26700	2006-09-29 00:00:00	2	1061
-1491	25000	2006-08-28 00:00:00	2	1062
-1492	25000	2006-05-23 00:00:00	2	340
-1493	25000	2006-05-23 00:00:00	2	339
+7	5000	2009-10-05 00:00:00	6	4
+10	5000	2009-06-22 00:00:00	9	2
+11	4800	2010-03-24 00:00:00	10	6
+12	4800	2010-03-24 00:00:00	11	6
+13	3500	2010-02-10 00:00:00	12	7
+14	3500	2010-01-04 00:00:00	13	8
+15	3500	2010-02-10 00:00:00	14	7
+16	3500	2009-12-30 00:00:00	13	9
+17	3250	2009-04-28 00:00:00	15	10
+19	2500	2009-01-16 00:00:00	6	4
+22	2500	2010-02-06 00:00:00	19	12
+23	2400	2009-03-25 00:00:00	20	13
+24	2400	2010-03-19 00:00:00	21	14
+25	2400	2009-12-07 00:00:00	22	15
+26	2400	2010-03-31 00:00:00	23	16
+27	2400	2010-03-17 00:00:00	24	17
+28	2400	2010-03-31 00:00:00	25	18
+29	2400	2009-09-17 00:00:00	26	19
+30	2400	2009-03-31 00:00:00	27	20
+31	2400	2009-03-23 00:00:00	28	19
+32	2400	2009-04-30 00:00:00	29	19
+33	2400	2009-03-31 00:00:00	27	20
+34	2400	2009-03-12 00:00:00	30	21
+35	2400	2009-03-23 00:00:00	31	19
+36	2400	2009-03-23 00:00:00	31	19
+37	2400	2009-06-30 00:00:00	32	22
+38	2400	2009-04-03 00:00:00	33	23
+39	2400	2009-04-03 00:00:00	34	23
+40	2400	2009-04-03 00:00:00	35	23
+41	2400	2009-04-02 00:00:00	36	24
+42	2400	2009-06-29 00:00:00	37	25
+43	2400	2009-06-29 00:00:00	37	25
+44	2400	2009-04-03 00:00:00	35	23
+45	2400	2009-03-23 00:00:00	28	19
+46	2400	2009-04-07 00:00:00	38	19
+47	2400	2009-04-30 00:00:00	29	19
+48	2400	2009-06-10 00:00:00	39	26
+49	2400	2009-04-20 00:00:00	40	19
+50	2400	2009-07-03 00:00:00	41	27
+51	2400	2010-06-30 00:00:00	42	28
+52	2400	2009-09-17 00:00:00	26	19
+53	2400	2009-11-12 00:00:00	43	19
+54	2400	2009-07-06 00:00:00	44	20
+55	2400	2009-09-29 00:00:00	45	29
+56	2400	2009-09-14 00:00:00	46	18
+57	2400	2009-07-03 00:00:00	41	27
+58	2400	2009-07-06 00:00:00	44	20
+59	2400	2010-05-17 00:00:00	47	26
+60	2400	2010-06-30 00:00:00	42	28
+61	2400	2010-06-08 00:00:00	48	30
+62	2400	2010-04-21 00:00:00	49	27
+63	2400	2010-04-21 00:00:00	50	27
+64	2400	2010-04-29 00:00:00	51	27
+65	2400	2010-03-31 00:00:00	20	31
+66	2400	2009-11-05 00:00:00	40	32
+67	2400	2009-11-12 00:00:00	43	19
+68	2400	2010-02-17 00:00:00	52	33
+69	2400	2009-12-28 00:00:00	53	34
+70	2400	2009-12-21 00:00:00	54	35
+71	2400	2009-12-08 00:00:00	52	33
+72	2400	2009-12-17 00:00:00	55	33
+73	2400	2009-12-22 00:00:00	2	27
+74	2400	2009-12-22 00:00:00	56	27
+75	2400	2009-03-25 00:00:00	57	36
+76	2400	2010-04-28 00:00:00	58	37
+77	2400	2009-03-25 00:00:00	57	36
+78	2400	2009-12-06 00:00:00	59	35
+79	2400	2009-03-25 00:00:00	59	36
+80	2400	2009-03-25 00:00:00	59	36
+81	2400	2010-03-25 00:00:00	60	38
+82	2400	2010-03-31 00:00:00	61	38
+83	2400	2009-12-17 00:00:00	62	33
+84	2300	2009-01-16 00:00:00	63	39
+85	2200	2009-04-07 00:00:00	38	19
+86	2200	2009-06-16 00:00:00	64	20
+87	2000	2009-12-28 00:00:00	20	40
+88	2000	2010-03-04 00:00:00	65	33
+89	2000	2010-02-17 00:00:00	20	40
+90	2000	2009-10-02 00:00:00	66	41
+91	2000	2010-06-23 00:00:00	67	42
+92	2000	2009-03-13 00:00:00	20	43
+93	2000	2009-03-27 00:00:00	68	44
+94	2000	2009-03-20 00:00:00	13	45
+95	2000	2009-03-16 00:00:00	69	46
+96	2000	2010-02-19 00:00:00	70	21
+97	2000	2010-02-17 00:00:00	71	47
+98	2000	2010-02-04 00:00:00	72	33
+99	2000	2009-10-22 00:00:00	73	33
+100	2000	2009-06-19 00:00:00	45	37
+101	2000	2009-06-30 00:00:00	74	48
+102	2000	2009-05-29 00:00:00	75	49
+103	2000	2010-06-03 00:00:00	76	19
+104	2000	2009-05-12 00:00:00	77	8
+105	2000	2010-03-29 00:00:00	78	50
+106	2000	2010-01-14 00:00:00	13	51
+107	2000	2010-06-16 00:00:00	79	52
+109	2000	2010-03-31 00:00:00	81	53
+110	2000	2010-06-19 00:00:00	82	54
+111	2000	2009-12-10 00:00:00	83	51
+112	2000	2009-08-12 00:00:00	84	19
+113	2000	2010-06-30 00:00:00	55	33
+114	2000	2009-09-14 00:00:00	74	40
+116	2000	2009-03-18 00:00:00	85	55
+117	1875	2010-05-26 00:00:00	86	56
+118	1770	2010-02-06 00:00:00	19	12
+119	1680	2010-03-26 00:00:00	73	33
+120	1600	2009-03-12 00:00:00	30	21
+121	1600	2010-05-04 00:00:00	87	57
+122	1600	2010-03-31 00:00:00	25	18
+124	1500	2009-08-20 00:00:00	13	58
+125	1500	2009-10-02 00:00:00	89	59
+126	1500	2009-12-04 00:00:00	90	60
+127	1500	2009-02-19 00:00:00	91	61
+128	1500	2009-06-22 00:00:00	92	42
+129	1400	2009-11-09 00:00:00	93	62
+130	1400	2009-12-31 00:00:00	94	63
+132	1400	2009-08-31 00:00:00	53	34
+133	1400	2010-03-11 00:00:00	20	64
+134	1275	2010-04-29 00:00:00	51	27
+135	1250	2009-03-09 00:00:00	13	65
+136	1250	2009-03-24 00:00:00	19	12
+137	1200	2010-04-26 00:00:00	96	66
+139	1000	2010-01-12 00:00:00	98	68
+141	1000	2010-07-28 00:00:00	100	69
+142	1000	2010-05-20 00:00:00	101	20
+144	1000	2010-08-04 00:00:00	103	70
+145	1000	2010-04-05 00:00:00	104	38
+146	1000	2010-06-17 00:00:00	105	71
+147	1000	2010-06-28 00:00:00	106	35
+148	1000	2010-05-05 00:00:00	107	72
+149	1000	2010-05-27 00:00:00	108	48
+150	1000	2010-05-12 00:00:00	109	73
+151	1000	2010-04-26 00:00:00	87	57
+152	1000	2010-03-23 00:00:00	110	74
+154	1000	2009-12-29 00:00:00	112	75
+155	1000	2010-03-31 00:00:00	113	38
+156	1000	2009-03-31 00:00:00	114	36
+157	1000	2010-03-31 00:00:00	20	64
+158	1000	2010-02-18 00:00:00	115	42
+159	1000	2010-02-11 00:00:00	20	64
+160	1000	2010-03-12 00:00:00	116	76
+161	1000	2009-11-17 00:00:00	117	55
+163	1000	2009-10-31 00:00:00	119	77
+164	1000	2009-11-15 00:00:00	120	28
+165	1000	2009-10-19 00:00:00	121	31
+166	1000	2009-10-27 00:00:00	122	40
+167	1000	2009-12-04 00:00:00	89	59
+168	1000	2009-08-18 00:00:00	123	46
+169	1000	2009-07-20 00:00:00	53	34
+170	1000	2009-09-28 00:00:00	124	34
+171	1000	2009-09-30 00:00:00	29	78
+172	1000	2009-08-03 00:00:00	94	63
+173	1000	2009-07-21 00:00:00	125	79
+174	1000	2009-07-23 00:00:00	126	27
+175	1000	2009-07-20 00:00:00	127	79
+176	1000	2009-07-13 00:00:00	87	57
+177	1000	2009-09-15 00:00:00	128	18
+178	1000	2009-07-21 00:00:00	129	80
+179	1000	2009-08-11 00:00:00	130	69
+180	1000	2009-08-11 00:00:00	131	81
+181	1000	2009-09-21 00:00:00	132	71
+182	1000	2009-06-29 00:00:00	123	46
+183	1000	2009-05-18 00:00:00	133	19
+184	1000	2009-06-25 00:00:00	134	82
+185	1000	2009-04-15 00:00:00	135	83
+186	1000	2009-06-05 00:00:00	136	42
+187	1000	2009-06-16 00:00:00	137	84
+188	1000	2009-04-30 00:00:00	138	62
+189	1000	2009-06-20 00:00:00	139	85
+190	1000	2009-04-22 00:00:00	120	28
+192	1000	2009-03-26 00:00:00	141	19
+193	1000	2009-02-13 00:00:00	142	86
+194	1000	2009-03-17 00:00:00	143	87
+196	1000	2010-04-28 00:00:00	145	88
+197	1000	2009-05-07 00:00:00	146	89
+198	1000	2009-09-09 00:00:00	147	89
+199	1000	2009-08-18 00:00:00	13	90
+200	1000	2009-04-24 00:00:00	13	91
+201	1000	2010-01-11 00:00:00	13	91
+202	1000	2010-01-11 00:00:00	148	91
+203	1000	2009-10-20 00:00:00	149	92
+204	1000	2009-03-27 00:00:00	13	93
+205	1000	2009-03-23 00:00:00	13	94
+206	1000	2009-05-11 00:00:00	148	94
+207	1000	2009-06-09 00:00:00	150	94
+208	1000	2010-01-07 00:00:00	148	94
+209	1000	2009-05-14 00:00:00	13	95
+210	1000	2009-11-19 00:00:00	151	96
+212	1000	2009-06-11 00:00:00	153	82
+213	1000	2009-10-06 00:00:00	154	97
+214	1000	2010-07-07 00:00:00	155	98
+215	1000	2010-06-18 00:00:00	156	99
+217	1000	2010-06-24 00:00:00	157	100
+218	1000	2010-04-28 00:00:00	158	101
+219	1000	2010-03-29 00:00:00	113	38
+220	850	2010-03-25 00:00:00	159	54
+221	833	2010-06-01 00:00:00	160	35
+226	750	2009-05-18 00:00:00	164	103
+227	750	2009-08-21 00:00:00	13	104
+228	750	2009-05-24 00:00:00	13	65
+229	750	2009-03-30 00:00:00	13	90
+231	676	2010-03-06 00:00:00	166	17
+232	625	2010-05-26 00:00:00	167	56
+234	600	2009-06-10 00:00:00	39	26
+235	600	2010-06-29 00:00:00	169	80
+236	600	2009-06-18 00:00:00	170	105
+237	575	2010-03-09 00:00:00	171	106
+239	500	2009-08-28 00:00:00	173	12
+241	500	2010-03-30 00:00:00	175	107
+242	500	2010-06-09 00:00:00	176	28
+246	500	2009-10-29 00:00:00	180	108
+248	500	2010-02-04 00:00:00	181	27
+249	500	2009-06-14 00:00:00	122	40
+250	500	2009-09-30 00:00:00	182	109
+252	500	2009-08-20 00:00:00	184	69
+253	500	2009-12-15 00:00:00	185	110
+254	500	2009-08-01 00:00:00	145	88
+255	500	2010-01-31 00:00:00	186	111
+256	500	2009-03-31 00:00:00	187	112
+257	500	2009-07-07 00:00:00	188	113
+258	500	2009-05-11 00:00:00	13	114
+259	500	2009-08-25 00:00:00	13	115
+260	500	2009-09-29 00:00:00	13	116
+261	500	2010-01-11 00:00:00	189	117
+262	500	2010-06-23 00:00:00	190	100
+263	500	2010-03-24 00:00:00	158	118
+264	500	2009-04-08 00:00:00	164	119
+265	500	2009-08-28 00:00:00	13	120
+266	500	2009-05-14 00:00:00	191	120
+267	500	2009-03-09 00:00:00	13	121
+268	500	2009-09-08 00:00:00	192	122
+269	500	2009-05-28 00:00:00	13	123
+270	500	2010-08-11 00:00:00	193	69
+275	500	2009-04-16 00:00:00	198	15
+276	500	2010-03-09 00:00:00	190	100
+279	500	2010-03-24 00:00:00	129	80
+281	500	2010-03-21 00:00:00	202	28
+282	500	2009-12-31 00:00:00	122	40
+284	500	2010-03-31 00:00:00	204	19
+285	500	2010-06-08 00:00:00	205	17
+286	500	2010-03-31 00:00:00	206	124
+287	500	2010-08-25 00:00:00	207	27
+288	500	2009-12-11 00:00:00	73	33
+289	500	2009-10-18 00:00:00	208	27
+290	500	2009-03-27 00:00:00	51	27
+291	500	2009-01-27 00:00:00	209	27
+292	500	2009-03-30 00:00:00	209	27
+293	500	2009-03-31 00:00:00	51	27
+295	500	2009-07-09 00:00:00	13	126
+296	500	2009-08-20 00:00:00	115	42
+297	500	2009-05-05 00:00:00	211	65
+300	500	2010-06-28 00:00:00	214	127
+301	500	2010-01-27 00:00:00	215	128
+303	500	2009-08-20 00:00:00	217	81
+306	500	2009-10-07 00:00:00	181	27
+307	500	2010-06-04 00:00:00	220	38
+312	500	2010-07-14 00:00:00	115	42
+313	500	2009-11-30 00:00:00	225	28
+314	500	2009-12-01 00:00:00	92	42
+318	500	2009-06-02 00:00:00	228	42
+319	500	2010-06-15 00:00:00	229	36
+323	500	2009-06-28 00:00:00	232	79
+325	500	2010-03-08 00:00:00	234	129
+326	410	2009-10-06 00:00:00	235	130
+327	400	2009-03-28 00:00:00	13	131
+328	400	2010-02-17 00:00:00	20	40
+329	400	2009-06-30 00:00:00	146	132
+331	400	2010-06-29 00:00:00	169	80
+332	400	2009-07-01 00:00:00	237	116
+333	400	2010-05-10 00:00:00	74	46
+334	400	2010-05-10 00:00:00	74	46
+335	400	2009-10-16 00:00:00	238	133
+336	400	2009-09-24 00:00:00	45	37
+338	400	2010-05-04 00:00:00	87	57
+339	400	2010-06-28 00:00:00	137	84
+340	400	2009-12-28 00:00:00	20	40
+341	400	2010-08-16 00:00:00	240	12
+343	358	2009-10-22 00:00:00	73	33
+344	350	2010-03-26 00:00:00	242	42
+345	300	2009-05-19 00:00:00	13	134
+346	300	2009-09-29 00:00:00	116	76
+347	300	2009-07-30 00:00:00	19	12
+348	300	2009-05-08 00:00:00	243	76
+350	300	2009-08-03 00:00:00	245	76
+351	300	2009-06-23 00:00:00	246	42
+352	300	2010-05-18 00:00:00	247	76
+353	300	2010-06-26 00:00:00	248	129
+356	250	2009-02-27 00:00:00	251	135
+357	250	2009-10-09 00:00:00	252	136
+358	250	2010-06-10 00:00:00	253	137
+359	250	2009-10-12 00:00:00	215	128
+360	250	2010-05-21 00:00:00	254	109
+361	250	2009-09-23 00:00:00	255	138
+362	250	2009-10-10 00:00:00	256	76
+363	250	2009-09-17 00:00:00	257	17
+364	250	2010-06-03 00:00:00	258	127
+365	250	2009-08-03 00:00:00	259	29
+366	250	2010-06-16 00:00:00	260	33
+367	250	2010-06-24 00:00:00	261	139
+368	250	2009-08-05 00:00:00	262	140
+369	250	2009-08-22 00:00:00	263	140
+370	250	2009-09-28 00:00:00	262	140
+371	250	2009-09-28 00:00:00	129	80
+372	250	2009-09-09 00:00:00	264	76
+374	250	2009-04-23 00:00:00	266	29
+375	250	2010-08-19 00:00:00	267	12
+376	250	2010-08-19 00:00:00	268	129
+377	250	2009-06-12 00:00:00	269	141
+378	250	2010-08-12 00:00:00	270	124
+379	250	2009-06-12 00:00:00	271	138
+381	250	2010-06-03 00:00:00	273	142
+382	250	2009-03-18 00:00:00	274	42
+383	250	2009-03-19 00:00:00	275	143
+384	250	2009-10-09 00:00:00	276	136
+385	250	2009-07-14 00:00:00	277	144
+386	250	2009-04-20 00:00:00	278	51
+387	250	2009-07-08 00:00:00	279	94
+388	250	2009-06-29 00:00:00	280	65
+389	250	2009-11-07 00:00:00	281	105
+390	250	2010-03-24 00:00:00	129	80
+391	250	2010-03-11 00:00:00	282	42
+392	250	2010-01-03 00:00:00	283	124
+393	250	2010-02-28 00:00:00	284	82
+394	250	2010-03-02 00:00:00	285	145
+395	250	2009-12-23 00:00:00	286	42
+396	250	2010-03-31 00:00:00	287	124
+398	250	2009-11-18 00:00:00	289	35
+401	250	2010-03-24 00:00:00	292	20
+402	250	2010-04-02 00:00:00	293	52
+403	250	2009-10-25 00:00:00	294	146
+404	250	2009-10-29 00:00:00	295	55
+405	250	2010-06-27 00:00:00	296	139
+406	200	2009-07-16 00:00:00	297	147
+410	200	2010-05-10 00:00:00	74	46
+412	200	2009-06-16 00:00:00	64	20
+413	200	2010-08-18 00:00:00	130	69
+414	200	2009-04-14 00:00:00	243	76
+415	200	2009-09-11 00:00:00	302	148
+416	200	2009-08-21 00:00:00	303	149
+417	200	2009-04-22 00:00:00	304	150
+419	175	2009-11-16 00:00:00	297	151
+420	160	2009-07-01 00:00:00	306	116
+421	150	2009-04-28 00:00:00	307	152
+422	150	2009-03-24 00:00:00	308	153
+423	150	2009-05-09 00:00:00	281	105
+424	150	2009-11-11 00:00:00	309	154
+425	150	2009-06-05 00:00:00	310	105
+426	125	2009-07-20 00:00:00	311	155
+427	120	2009-08-07 00:00:00	312	156
+428	100	2009-09-23 00:00:00	313	116
+429	100	2009-06-19 00:00:00	314	157
+430	100	2009-12-30 00:00:00	315	158
+431	100	2009-07-21 00:00:00	316	159
+432	100	2009-04-06 00:00:00	317	153
+433	100	2009-07-10 00:00:00	318	160
+434	100	2009-03-05 00:00:00	319	161
+435	100	2009-08-20 00:00:00	320	162
+436	100	2009-12-16 00:00:00	321	163
+437	100	2009-05-07 00:00:00	322	164
+438	100	2009-09-14 00:00:00	323	165
+439	65	2009-09-28 00:00:00	324	116
+440	50	2009-09-17 00:00:00	325	166
+441	50	2008-10-29 00:00:00	304	150
+442	50	2009-07-28 00:00:00	326	167
+443	50	2009-09-28 00:00:00	327	116
+444	25	2009-07-02 00:00:00	328	116
+445	20	2009-09-28 00:00:00	329	116
+446	20	2009-09-28 00:00:00	330	116
+447	-358	2009-10-22 00:00:00	73	33
+448	-1770	2010-02-06 00:00:00	19	12
+449	500	2009-10-28 00:00:00	331	168
+450	250	2009-10-28 00:00:00	331	169
+451	100	2009-11-02 00:00:00	332	169
+452	100	2009-10-08 00:00:00	333	169
+453	54	2009-10-15 00:00:00	334	169
+454	50	2009-07-29 00:00:00	334	169
+455	25	2009-10-25 00:00:00	332	169
+456	25	2009-10-20 00:00:00	332	169
+457	25	2009-08-21 00:00:00	332	169
+458	25	2009-08-20 00:00:00	332	169
+459	25	2009-09-08 00:00:00	332	169
+460	30800	2008-05-06 00:00:00	335	170
+461	30800	2008-05-06 00:00:00	336	170
+462	28600	2008-07-30 00:00:00	337	76
+463	28600	2008-07-30 00:00:00	338	171
+464	28500	2007-03-27 00:00:00	339	2
+465	28500	2007-03-27 00:00:00	340	2
+466	28500	2007-06-13 00:00:00	341	2
+467	28500	2008-02-19 00:00:00	342	2
+468	28500	2008-02-19 00:00:00	340	2
+469	26200	2008-05-29 00:00:00	343	4
+470	26200	2008-05-29 00:00:00	344	4
+471	25000	2008-04-30 00:00:00	345	2
+472	25000	2008-03-31 00:00:00	341	2
+473	20000	2007-04-11 00:00:00	346	172
+474	15000	2007-09-26 00:00:00	347	2
+475	15000	2007-09-26 00:00:00	348	2
+476	15000	2008-10-03 00:00:00	349	173
+477	12500	2008-09-29 00:00:00	348	2
+478	12500	2008-09-29 00:00:00	347	2
+479	10000	2008-08-31 00:00:00	350	174
+480	10000	2007-03-29 00:00:00	351	175
+481	8000	2008-10-09 00:00:00	352	176
+482	8000	2008-10-09 00:00:00	353	176
+484	5000	2007-08-01 00:00:00	355	177
+485	5000	2007-09-17 00:00:00	356	178
+486	5000	2008-10-29 00:00:00	357	179
+487	5000	2008-09-30 00:00:00	358	4
+488	5000	2007-03-27 00:00:00	359	177
+493	5000	2008-08-01 00:00:00	363	170
+494	5000	2008-10-29 00:00:00	364	179
+495	5000	2008-09-12 00:00:00	365	180
+498	5000	2008-10-16 00:00:00	368	171
+499	5000	2008-10-22 00:00:00	369	4
+500	5000	2007-12-31 00:00:00	370	181
+501	5000	2007-06-07 00:00:00	371	2
+502	5000	2008-10-16 00:00:00	365	180
+503	5000	2008-09-19 00:00:00	372	182
+505	5000	2008-03-16 00:00:00	39	6
+507	4600	2007-06-28 00:00:00	375	183
+508	4600	2007-12-10 00:00:00	376	184
+509	4600	2007-08-21 00:00:00	377	183
+510	4600	2008-02-29 00:00:00	378	185
+511	4000	2007-11-30 00:00:00	379	175
+512	3500	2007-11-30 00:00:00	380	175
+513	3500	2008-03-04 00:00:00	381	186
+514	3000	2008-07-31 00:00:00	382	76
+515	3000	2007-11-30 00:00:00	383	175
+516	3000	2008-10-09 00:00:00	384	58
+517	3000	2008-10-02 00:00:00	385	58
+518	3000	2008-03-04 00:00:00	386	186
+519	3000	2007-11-30 00:00:00	387	175
+520	2957	2007-03-12 00:00:00	388	187
+521	2700	2008-10-16 00:00:00	389	76
+522	2500	2007-11-30 00:00:00	390	175
+523	2500	2008-08-05 00:00:00	391	2
+524	2500	2007-03-30 00:00:00	39	6
+525	2500	2007-11-30 00:00:00	392	175
+526	2500	2008-10-30 00:00:00	365	180
+527	2500	2008-12-10 00:00:00	384	188
+528	2500	2008-09-26 00:00:00	393	189
+530	2500	2008-12-31 00:00:00	369	4
+531	2500	2007-12-07 00:00:00	395	190
+533	2500	2008-07-01 00:00:00	148	191
+536	2366.4000000000001	2008-07-14 00:00:00	13	192
+537	2300	2007-11-29 00:00:00	399	39
+538	2300	2007-02-28 00:00:00	400	39
+539	2300	2007-02-28 00:00:00	400	39
+540	2300	2007-03-26 00:00:00	401	39
+541	2300	2007-01-26 00:00:00	402	39
+542	2300	2008-10-15 00:00:00	403	193
+543	2300	2008-10-15 00:00:00	404	194
+544	2300	2008-10-15 00:00:00	405	193
+545	2300	2007-03-20 00:00:00	406	183
+546	2300	2007-02-28 00:00:00	407	183
+547	2300	2007-02-28 00:00:00	408	39
+548	2300	2007-02-09 00:00:00	409	39
+549	2300	2007-03-26 00:00:00	401	39
+550	2300	2007-03-30 00:00:00	410	39
+551	2300	2007-03-31 00:00:00	411	39
+552	2300	2007-03-31 00:00:00	411	39
+553	2300	2007-03-31 00:00:00	412	195
+554	2300	2007-03-31 00:00:00	412	195
+555	2300	2007-03-08 00:00:00	405	196
+556	2300	2007-03-23 00:00:00	413	12
+557	2300	2007-03-31 00:00:00	414	197
+558	2300	2007-05-25 00:00:00	415	183
+559	2300	2007-05-11 00:00:00	416	183
+560	2300	2007-06-30 00:00:00	417	183
+561	2300	2007-06-28 00:00:00	375	183
+562	2300	2007-04-06 00:00:00	418	183
+563	2300	2007-06-26 00:00:00	419	198
+564	2300	2007-06-26 00:00:00	420	198
+565	2300	2007-04-07 00:00:00	421	195
+566	2300	2007-06-26 00:00:00	422	199
+567	2300	2007-06-21 00:00:00	423	198
+568	2300	2007-06-25 00:00:00	424	200
+569	2300	2007-06-30 00:00:00	425	39
+570	2300	2007-06-06 00:00:00	426	39
+571	2300	2007-06-30 00:00:00	427	39
+572	2300	2007-06-30 00:00:00	428	39
+573	2300	2007-06-30 00:00:00	429	39
+574	2300	2007-06-07 00:00:00	430	39
+575	2300	2007-06-30 00:00:00	431	39
+576	2300	2007-06-30 00:00:00	431	39
+577	2300	2007-06-30 00:00:00	429	39
+578	2300	2007-06-30 00:00:00	432	39
+579	2300	2007-05-24 00:00:00	433	39
+580	2300	2007-05-03 00:00:00	434	39
+581	2300	2007-06-30 00:00:00	427	39
+582	2300	2007-06-07 00:00:00	430	39
+583	2300	2007-05-24 00:00:00	433	39
+584	2300	2007-06-30 00:00:00	425	39
+585	2300	2007-06-30 00:00:00	435	201
+586	2300	2007-06-10 00:00:00	436	136
+587	2300	2007-06-08 00:00:00	437	202
+588	2300	2007-08-01 00:00:00	438	183
+589	2300	2007-08-21 00:00:00	377	183
+590	2300	2007-07-31 00:00:00	438	183
+591	2300	2007-09-30 00:00:00	439	39
+592	2300	2007-08-16 00:00:00	440	39
+593	2300	2007-08-31 00:00:00	441	39
+594	2300	2007-09-18 00:00:00	442	203
+595	2300	2007-08-31 00:00:00	441	39
+596	2300	2007-08-20 00:00:00	443	204
+597	2300	2007-09-27 00:00:00	444	205
+598	2300	2007-10-17 00:00:00	445	39
+599	2300	2007-12-28 00:00:00	446	39
+600	2300	2007-10-17 00:00:00	447	39
+601	2300	2007-10-17 00:00:00	447	39
+602	2300	2007-10-17 00:00:00	445	39
+603	2300	2007-11-29 00:00:00	399	39
+604	2300	2007-11-30 00:00:00	448	39
+605	2300	2007-12-28 00:00:00	449	39
+606	2300	2007-12-26 00:00:00	450	183
+607	2300	2007-12-28 00:00:00	446	39
+608	2300	2007-11-08 00:00:00	451	183
+609	2300	2007-12-28 00:00:00	452	39
+610	2300	2007-12-28 00:00:00	453	39
+611	2300	2007-11-08 00:00:00	454	183
+612	2300	2007-10-23 00:00:00	437	206
+613	2300	2007-11-20 00:00:00	455	207
+614	2300	2007-10-18 00:00:00	456	205
+615	2300	2007-10-18 00:00:00	456	205
+616	2300	2008-01-31 00:00:00	457	39
+617	2300	2008-03-31 00:00:00	458	185
+618	2300	2008-03-31 00:00:00	459	208
+619	2300	2008-03-10 00:00:00	386	186
+620	2300	2008-03-10 00:00:00	381	186
+621	2300	2008-05-31 00:00:00	460	185
+622	2300	2008-05-31 00:00:00	461	185
+623	2300	2008-05-31 00:00:00	462	185
+624	2300	2008-05-31 00:00:00	462	185
+625	2300	2008-06-26 00:00:00	405	193
+626	2300	2008-06-12 00:00:00	19	12
+627	2300	2008-06-30 00:00:00	463	209
+628	2300	2008-06-10 00:00:00	464	206
+629	2300	2008-06-02 00:00:00	465	210
+630	2300	2008-08-14 00:00:00	455	207
+631	2300	2008-08-28 00:00:00	466	39
+632	2300	2008-08-28 00:00:00	467	39
+633	2300	2008-08-20 00:00:00	468	185
+634	2300	2008-08-20 00:00:00	468	185
+635	2300	2008-08-31 00:00:00	469	171
+636	2300	2008-08-31 00:00:00	470	203
+637	2300	2008-04-03 00:00:00	471	185
+638	2300	2007-10-18 00:00:00	472	211
+639	2300	2007-10-18 00:00:00	472	211
+640	2300	2008-01-29 00:00:00	405	196
+641	2300	2008-03-31 00:00:00	459	208
+642	2300	2008-01-18 00:00:00	473	195
+643	2300	2008-08-28 00:00:00	474	39
+644	2300	2007-12-10 00:00:00	475	197
+645	2300	2007-12-10 00:00:00	475	197
+646	2300	2008-09-27 00:00:00	476	212
+647	2300	2008-08-28 00:00:00	477	39
+648	2300	2007-08-20 00:00:00	443	204
+649	2300	2007-08-13 00:00:00	478	39
+650	2300	2007-08-13 00:00:00	478	39
+651	2300	2007-05-03 00:00:00	434	39
+652	2300	2007-06-14 00:00:00	479	39
+653	2300	2007-06-28 00:00:00	480	198
+654	2300	2007-03-23 00:00:00	356	213
+655	2200	2007-06-25 00:00:00	424	200
+656	2100	2008-03-31 00:00:00	481	26
+657	2100	2007-02-07 00:00:00	482	183
+658	2100	2007-08-01 00:00:00	483	183
+659	2100	2007-11-24 00:00:00	39	26
+660	2100	2007-03-19 00:00:00	409	39
+661	2000	2007-06-22 00:00:00	13	214
+662	2000	2007-08-01 00:00:00	13	215
+663	2000	2007-06-26 00:00:00	13	216
+664	2000	2008-08-26 00:00:00	484	171
+665	2000	2007-06-11 00:00:00	485	217
+666	2000	2008-07-22 00:00:00	486	28
+667	2000	2007-05-05 00:00:00	487	218
+668	2000	2007-12-20 00:00:00	13	219
+669	2000	2007-05-17 00:00:00	488	220
+670	2000	2007-07-05 00:00:00	489	221
+671	2000	2007-12-11 00:00:00	13	192
+672	2000	2007-04-15 00:00:00	490	177
+673	2000	2008-07-07 00:00:00	13	191
+674	2000	2007-08-16 00:00:00	491	222
+675	2000	2008-03-27 00:00:00	492	223
+676	2000	2007-03-29 00:00:00	493	183
+677	2000	2008-03-17 00:00:00	13	224
+678	2000	2008-10-30 00:00:00	13	192
+679	2000	2008-07-23 00:00:00	494	225
+680	2000	2008-09-22 00:00:00	40	226
+681	2000	2008-01-09 00:00:00	495	227
+682	2000	2008-10-23 00:00:00	53	37
+683	2000	2008-06-30 00:00:00	40	228
+684	2000	2007-07-20 00:00:00	13	229
+685	2000	2007-07-09 00:00:00	13	230
+686	2000	2007-09-17 00:00:00	496	231
+687	2000	2008-03-20 00:00:00	497	39
+688	2000	2008-02-19 00:00:00	13	221
+689	2000	2008-07-03 00:00:00	489	221
+690	2000	2007-03-31 00:00:00	498	39
+691	2000	2007-11-28 00:00:00	499	39
+692	2000	2007-11-28 00:00:00	500	39
+693	2000	2007-10-17 00:00:00	74	232
+694	2000	2007-12-31 00:00:00	501	39
+695	2000	2008-10-31 00:00:00	148	8
+696	2000	2009-01-09 00:00:00	148	233
+697	2000	2008-09-18 00:00:00	20	234
+698	2000	2008-06-13 00:00:00	502	15
+699	2000	2008-08-10 00:00:00	40	235
+700	2000	2008-07-30 00:00:00	503	236
+701	2000	2008-04-18 00:00:00	40	237
+702	2000	2007-09-30 00:00:00	504	18
+703	2000	2006-05-22 00:00:00	505	200
+704	2000	2008-07-29 00:00:00	13	214
+705	2000	2008-07-20 00:00:00	13	238
+706	2000	2008-08-31 00:00:00	506	203
+707	2000	2008-07-30 00:00:00	13	230
+708	2000	2008-08-13 00:00:00	13	229
+709	2000	2007-08-16 00:00:00	507	39
+710	2000	2008-03-27 00:00:00	40	211
+711	2000	2007-03-28 00:00:00	508	39
+712	2000	2008-02-13 00:00:00	74	186
+713	2000	2008-02-19 00:00:00	509	57
+714	1900	2007-01-26 00:00:00	402	39
+715	1800	2008-04-18 00:00:00	13	239
+717	1800	2008-09-02 00:00:00	511	240
+718	1750	2007-12-05 00:00:00	13	241
+719	1700	2008-03-09 00:00:00	13	241
+720	1700	2008-03-28 00:00:00	512	205
+721	1642	2007-03-09 00:00:00	388	187
+722	1600	2007-10-30 00:00:00	489	221
+723	1500	2007-04-27 00:00:00	513	39
+724	1500	2008-11-03 00:00:00	514	18
+727	1500	2007-03-29 00:00:00	517	39
+728	1500	2008-10-29 00:00:00	518	2
+729	1500	2007-03-26 00:00:00	519	243
+730	1500	2007-12-24 00:00:00	13	244
+731	1500	2008-07-22 00:00:00	202	28
+732	1500	2007-12-11 00:00:00	13	245
+733	1500	2007-03-30 00:00:00	520	246
+734	1478	2007-03-12 00:00:00	444	247
+735	1300	2008-10-03 00:00:00	521	171
+736	1300	2008-02-29 00:00:00	522	39
+737	1300	2007-04-19 00:00:00	523	39
+738	1250	2008-09-22 00:00:00	524	180
+739	1250	2008-09-29 00:00:00	525	4
+740	1200	2008-02-11 00:00:00	13	248
+741	1200	2008-03-14 00:00:00	526	80
+742	1200	2007-07-09 00:00:00	13	8
+743	1100	2008-06-25 00:00:00	527	249
+745	1000	2007-11-30 00:00:00	529	183
+746	1000	2008-09-05 00:00:00	530	250
+747	1000	2007-10-17 00:00:00	531	39
+748	1000	2007-12-20 00:00:00	532	183
+749	1000	2007-12-21 00:00:00	110	251
+750	1000	2007-10-04 00:00:00	533	25
+751	1000	2007-12-31 00:00:00	534	186
+752	1000	2007-12-03 00:00:00	535	252
+753	1000	2007-06-30 00:00:00	536	203
+754	1000	2007-11-16 00:00:00	537	2
+755	1000	2007-11-07 00:00:00	512	205
+756	1000	2007-12-27 00:00:00	110	251
+757	1000	2007-10-29 00:00:00	538	138
+758	1000	2007-12-12 00:00:00	486	28
+759	1000	2008-01-26 00:00:00	539	39
+760	1000	2008-01-10 00:00:00	540	39
+761	1000	2008-03-19 00:00:00	13	253
+762	1000	2008-05-15 00:00:00	541	254
+763	1000	2007-08-16 00:00:00	542	177
+764	1000	2008-06-02 00:00:00	543	8
+766	1000	2007-06-19 00:00:00	544	39
+767	1000	2007-08-19 00:00:00	545	177
+768	1000	2007-07-22 00:00:00	546	177
+769	1000	2007-12-31 00:00:00	547	255
+770	1000	2007-03-14 00:00:00	548	195
+771	1000	2007-03-29 00:00:00	549	256
+772	1000	2007-09-28 00:00:00	550	205
+774	1000	2008-03-31 00:00:00	552	203
+775	1000	2007-04-17 00:00:00	553	39
+776	1000	2008-03-27 00:00:00	554	257
+777	1000	2008-02-15 00:00:00	555	258
+778	1000	2007-08-30 00:00:00	527	249
+779	1000	2008-08-15 00:00:00	384	244
+780	1000	2007-09-12 00:00:00	556	203
+781	1000	2007-06-11 00:00:00	557	39
+782	1000	2007-11-01 00:00:00	558	183
+783	1000	2008-09-29 00:00:00	559	80
+784	1000	2007-12-28 00:00:00	560	39
+785	1000	2008-10-03 00:00:00	561	171
+786	1000	2007-10-25 00:00:00	562	183
+787	1000	2007-10-16 00:00:00	563	183
+788	1000	2007-10-22 00:00:00	564	26
+789	1000	2008-09-02 00:00:00	565	240
+790	1000	2007-06-14 00:00:00	566	39
+791	1000	2007-04-13 00:00:00	567	39
+792	1000	2007-04-17 00:00:00	568	39
+793	1000	2007-06-14 00:00:00	569	39
+794	1000	2007-04-13 00:00:00	570	39
+795	1000	2007-06-30 00:00:00	571	39
+796	1000	2008-07-30 00:00:00	572	129
+797	1000	2007-04-11 00:00:00	13	259
+798	1000	2007-06-30 00:00:00	573	39
+799	1000	2007-04-17 00:00:00	568	39
+800	1000	2007-04-13 00:00:00	574	39
+801	1000	2007-04-13 00:00:00	575	39
+802	1000	2007-04-17 00:00:00	576	39
+803	1000	2008-08-07 00:00:00	577	213
+804	1000	2007-04-13 00:00:00	13	238
+805	1000	2007-05-19 00:00:00	578	39
+806	1000	2007-04-13 00:00:00	13	230
+808	1000	2007-04-23 00:00:00	580	39
+809	1000	2007-04-12 00:00:00	13	229
+810	1000	2007-06-30 00:00:00	581	39
+811	1000	2007-04-17 00:00:00	582	39
+812	1000	2007-05-08 00:00:00	583	203
+813	1000	2007-04-19 00:00:00	584	39
+814	1000	2007-04-13 00:00:00	585	39
+815	1000	2007-06-07 00:00:00	586	39
+816	1000	2008-06-18 00:00:00	587	260
+817	1000	2007-04-13 00:00:00	588	39
+818	1000	2007-04-17 00:00:00	589	39
+819	1000	2007-04-17 00:00:00	590	39
+820	1000	2007-04-17 00:00:00	591	39
+821	1000	2007-10-17 00:00:00	13	261
+822	1000	2007-06-15 00:00:00	592	261
+823	1000	2007-04-06 00:00:00	13	261
+824	1000	2008-05-27 00:00:00	497	39
+825	1000	2008-06-24 00:00:00	593	262
+826	1000	2007-05-11 00:00:00	594	39
+827	1000	2008-08-11 00:00:00	595	246
+828	1000	2007-04-17 00:00:00	596	39
+829	1000	2007-12-06 00:00:00	597	39
+830	1000	2007-11-12 00:00:00	598	39
+831	1000	2007-12-06 00:00:00	599	39
+832	1000	2008-09-30 00:00:00	600	203
+833	1000	2007-12-28 00:00:00	601	39
+834	1000	2007-03-31 00:00:00	602	256
+835	1000	2008-03-24 00:00:00	74	186
+836	1000	2007-12-06 00:00:00	603	263
+837	1000	2007-04-13 00:00:00	604	39
+838	1000	2008-03-12 00:00:00	605	264
+839	1000	2008-03-12 00:00:00	74	186
+840	1000	2007-03-28 00:00:00	523	39
+841	1000	2007-06-19 00:00:00	606	15
+842	1000	2007-08-09 00:00:00	607	265
+843	1000	2008-03-10 00:00:00	608	266
+844	1000	2007-04-19 00:00:00	609	39
+845	1000	2008-09-04 00:00:00	610	171
+846	1000	2008-05-16 00:00:00	611	185
+847	1000	2008-10-30 00:00:00	612	15
+848	1000	2007-03-16 00:00:00	613	39
+849	1000	2007-09-04 00:00:00	607	265
+850	1000	2008-04-04 00:00:00	614	39
+851	1000	2007-03-26 00:00:00	615	39
+852	1000	2007-08-16 00:00:00	616	39
+853	1000	2008-03-31 00:00:00	617	267
+854	1000	2007-07-05 00:00:00	618	268
+855	1000	2007-09-23 00:00:00	619	26
+856	1000	2008-05-27 00:00:00	620	39
+857	1000	2008-06-16 00:00:00	621	138
+858	1000	2006-12-19 00:00:00	622	200
+859	1000	2007-05-04 00:00:00	623	183
+860	1000	2008-10-20 00:00:00	13	216
+861	1000	2008-10-24 00:00:00	624	203
+862	1000	2008-06-16 00:00:00	625	203
+863	1000	2008-06-19 00:00:00	626	203
+864	1000	2007-08-09 00:00:00	627	39
+865	1000	2008-06-10 00:00:00	628	206
+867	1000	2008-06-27 00:00:00	630	209
+868	1000	2008-09-24 00:00:00	137	84
+869	1000	2008-06-02 00:00:00	631	25
+870	1000	2007-07-13 00:00:00	632	183
+871	1000	2008-05-20 00:00:00	633	269
+872	1000	2007-12-10 00:00:00	40	225
+873	1000	2007-09-13 00:00:00	634	183
+877	1000	2008-07-17 00:00:00	637	185
+878	1000	2008-06-03 00:00:00	638	260
+879	1000	2008-05-27 00:00:00	527	249
+880	1000	2008-09-09 00:00:00	74	186
+881	1000	2007-09-12 00:00:00	639	183
+882	1000	2006-08-28 00:00:00	640	200
+883	1000	2006-05-22 00:00:00	622	200
+884	1000	2007-08-31 00:00:00	641	183
+886	1000	2007-03-13 00:00:00	643	183
+887	1000	2008-07-30 00:00:00	644	236
+888	1000	2008-11-05 00:00:00	136	209
+889	1000	2008-10-31 00:00:00	645	203
+890	1000	2008-07-03 00:00:00	646	15
+891	1000	2008-04-18 00:00:00	647	15
+892	1000	2008-09-08 00:00:00	648	270
+893	1000	2008-11-02 00:00:00	649	271
+894	1000	2007-08-08 00:00:00	529	183
+895	1000	2007-03-31 00:00:00	650	183
+896	1000	2008-08-11 00:00:00	651	81
+897	1000	2007-08-14 00:00:00	564	26
+898	1000	2007-06-30 00:00:00	652	272
+899	1000	2007-06-29 00:00:00	653	272
+900	1000	2007-04-30 00:00:00	654	272
+902	1000	2006-11-29 00:00:00	655	195
+903	1000	2008-11-17 00:00:00	656	273
+904	1000	2008-11-06 00:00:00	13	219
+905	1000	2007-05-07 00:00:00	657	274
+906	1000	2008-09-18 00:00:00	658	171
+908	1000	2008-04-16 00:00:00	660	275
+909	1000	2007-10-26 00:00:00	661	259
+910	1000	2008-04-16 00:00:00	662	275
+911	1000	2008-04-15 00:00:00	663	276
+912	1000	2007-12-04 00:00:00	664	277
+913	1000	2008-05-15 00:00:00	660	278
+914	1000	2007-04-13 00:00:00	665	39
+915	1000	2008-03-27 00:00:00	666	223
+916	1000	2008-09-30 00:00:00	667	279
+917	1000	2006-12-29 00:00:00	668	195
+918	1000	2007-03-08 00:00:00	669	220
+920	1000	2007-03-28 00:00:00	489	221
+921	1000	2008-09-11 00:00:00	74	232
+922	1000	2007-05-21 00:00:00	671	183
+924	1000	2007-03-16 00:00:00	673	186
+925	1000	2007-06-06 00:00:00	674	281
+926	1000	2008-10-24 00:00:00	675	171
+927	1000	2007-06-28 00:00:00	676	198
+928	1000	2008-05-13 00:00:00	677	86
+929	1000	2007-02-12 00:00:00	13	282
+930	1000	2007-03-15 00:00:00	678	185
+931	1000	2008-07-27 00:00:00	679	203
+932	1000	2007-03-02 00:00:00	680	283
+933	1000	2008-10-20 00:00:00	260	284
+934	1000	2007-06-03 00:00:00	681	246
+935	1000	2007-06-30 00:00:00	536	203
+936	950	2007-06-30 00:00:00	586	39
+937	900	2008-05-28 00:00:00	682	15
+939	900	2008-08-26 00:00:00	684	197
+940	821	2007-03-12 00:00:00	685	247
+941	821	2007-03-30 00:00:00	686	246
+942	800	2008-07-03 00:00:00	687	15
+945	800	2008-09-26 00:00:00	689	171
+946	800	2007-03-27 00:00:00	13	285
+950	800	2008-03-31 00:00:00	527	249
+951	750	2007-09-28 00:00:00	692	286
+952	750	2007-03-31 00:00:00	693	183
+953	750	2007-10-17 00:00:00	13	287
+954	750	2007-09-30 00:00:00	694	18
+956	750	2007-12-11 00:00:00	696	288
+957	750	2007-06-25 00:00:00	697	183
+958	750	2007-06-07 00:00:00	697	183
+959	713	2008-09-04 00:00:00	698	124
+961	700	2008-02-19 00:00:00	74	186
+962	700	2007-04-13 00:00:00	700	39
+963	700	2008-03-02 00:00:00	701	39
+964	700	2007-11-30 00:00:00	702	265
+965	700	2007-12-12 00:00:00	703	289
+967	600	2008-09-10 00:00:00	74	186
+968	600	2008-06-27 00:00:00	705	203
+972	600	2008-09-25 00:00:00	709	203
+975	550	2008-10-27 00:00:00	712	4
+978	530	2008-03-31 00:00:00	714	290
+979	500	2008-10-20 00:00:00	715	203
+980	500	2008-10-29 00:00:00	13	291
+981	500	2008-10-29 00:00:00	13	253
+982	500	2008-10-06 00:00:00	13	282
+983	500	2008-09-10 00:00:00	13	248
+984	500	2008-08-13 00:00:00	680	283
+985	500	2008-09-08 00:00:00	13	259
+986	500	2008-09-02 00:00:00	13	292
+987	500	2008-03-24 00:00:00	543	116
+988	500	2008-04-07 00:00:00	13	116
+989	500	2008-02-04 00:00:00	384	244
+990	500	2008-03-14 00:00:00	716	219
+991	500	2008-04-01 00:00:00	188	293
+992	500	2008-07-09 00:00:00	717	294
+993	500	2007-10-30 00:00:00	13	295
+994	500	2008-01-09 00:00:00	13	253
+995	500	2007-03-20 00:00:00	147	296
+996	500	2007-07-03 00:00:00	148	192
+997	500	2007-06-15 00:00:00	718	219
+998	500	2007-10-17 00:00:00	680	283
+999	500	2007-02-06 00:00:00	188	293
+1000	500	2007-02-12 00:00:00	592	297
+1001	500	2007-12-14 00:00:00	719	298
+1002	500	2007-06-23 00:00:00	148	299
+1003	500	2008-11-04 00:00:00	720	171
+1004	500	2008-10-12 00:00:00	721	209
+1005	500	2008-09-18 00:00:00	722	193
+1006	500	2008-10-07 00:00:00	723	180
+1007	500	2008-09-30 00:00:00	724	203
+1008	500	2008-09-07 00:00:00	725	180
+1009	500	2008-06-25 00:00:00	726	124
+1010	500	2008-06-18 00:00:00	727	203
+1011	500	2008-04-24 00:00:00	728	269
+1012	500	2008-04-30 00:00:00	729	39
+1013	500	2008-04-28 00:00:00	730	4
+1014	500	2007-11-08 00:00:00	731	59
+1015	500	2007-11-01 00:00:00	732	250
+1016	500	2007-12-06 00:00:00	733	198
+1017	500	2007-10-16 00:00:00	734	222
+1018	500	2007-09-17 00:00:00	735	183
+1019	500	2007-09-24 00:00:00	736	183
+1020	500	2007-05-04 00:00:00	737	300
+1021	500	2007-05-17 00:00:00	738	183
+1022	500	2007-05-05 00:00:00	739	222
+1024	500	2008-11-03 00:00:00	741	203
+1026	500	2008-10-24 00:00:00	743	203
+1027	500	2008-10-16 00:00:00	744	203
+1028	500	2008-10-30 00:00:00	745	4
+1029	500	2008-10-27 00:00:00	173	12
+1031	500	2008-10-22 00:00:00	747	12
+1032	500	2008-11-01 00:00:00	125	213
+1033	500	2008-11-02 00:00:00	748	171
+1034	500	2008-10-22 00:00:00	749	171
+1035	500	2008-10-08 00:00:00	750	207
+1036	500	2008-10-06 00:00:00	751	4
+1037	500	2008-09-29 00:00:00	752	4
+1038	500	2008-09-29 00:00:00	753	4
+1039	500	2008-09-29 00:00:00	754	4
+1040	500	2008-10-14 00:00:00	282	209
+1041	500	2008-09-05 00:00:00	755	213
+1042	500	2008-09-28 00:00:00	756	209
+1043	500	2008-09-17 00:00:00	757	301
+1044	500	2008-09-02 00:00:00	758	269
+1045	500	2008-10-01 00:00:00	759	203
+1046	500	2008-10-02 00:00:00	760	171
+1047	500	2008-09-13 00:00:00	761	203
+1048	500	2008-09-24 00:00:00	762	197
+1049	500	2008-09-24 00:00:00	763	203
+1050	500	2008-09-18 00:00:00	764	171
+1051	500	2008-09-23 00:00:00	765	260
+1052	500	2008-09-07 00:00:00	766	180
+1053	500	2008-09-24 00:00:00	767	170
+1054	500	2008-09-09 00:00:00	768	180
+1055	500	2008-08-07 00:00:00	769	39
+1056	500	2008-07-30 00:00:00	503	236
+1057	500	2008-07-24 00:00:00	770	26
+1059	500	2008-07-21 00:00:00	771	290
+1060	500	2008-08-17 00:00:00	283	124
+1061	500	2008-07-30 00:00:00	759	203
+1062	500	2008-04-18 00:00:00	771	290
+1063	500	2008-04-30 00:00:00	772	213
+1064	500	2008-06-09 00:00:00	45	4
+1065	500	2008-04-30 00:00:00	773	213
+1066	500	2008-06-25 00:00:00	774	124
+1067	500	2008-04-17 00:00:00	775	267
+1068	500	2008-06-25 00:00:00	282	209
+1069	500	2008-06-22 00:00:00	776	26
+1070	500	2008-05-29 00:00:00	777	302
+1071	500	2008-06-25 00:00:00	778	124
+1072	500	2008-06-23 00:00:00	779	185
+1073	500	2008-06-09 00:00:00	780	138
+1074	500	2008-05-07 00:00:00	781	203
+1076	500	2008-04-25 00:00:00	783	39
+1078	500	2008-04-22 00:00:00	785	185
+1079	500	2008-04-04 00:00:00	540	39
+1080	500	2008-02-04 00:00:00	511	240
+1081	500	2008-03-03 00:00:00	783	39
+1082	500	2008-03-07 00:00:00	786	39
+1083	500	2008-03-24 00:00:00	787	303
+1084	500	2008-03-31 00:00:00	788	39
+1085	500	2008-03-19 00:00:00	762	197
+1086	500	2008-03-31 00:00:00	789	39
+1087	500	2008-03-18 00:00:00	790	203
+1088	500	2008-03-18 00:00:00	620	39
+1090	500	2008-02-13 00:00:00	792	203
+1091	500	2008-02-29 00:00:00	769	39
+1096	500	2008-01-31 00:00:00	796	39
+1097	500	2008-01-31 00:00:00	796	39
+1098	500	2007-12-24 00:00:00	173	12
+1099	500	2008-01-31 00:00:00	796	39
+1100	500	2008-01-31 00:00:00	796	39
+1101	500	2007-05-07 00:00:00	797	270
+1102	500	2007-11-21 00:00:00	267	12
+1103	500	2007-11-07 00:00:00	413	12
+1104	500	2007-12-26 00:00:00	798	183
+1105	500	2007-12-03 00:00:00	799	183
+1106	500	2007-10-23 00:00:00	800	39
+1107	500	2007-10-30 00:00:00	801	303
+1108	500	2007-09-09 00:00:00	802	203
+1109	500	2007-09-19 00:00:00	803	203
+1110	500	2007-08-15 00:00:00	804	39
+1111	500	2007-09-30 00:00:00	805	185
+1112	500	2007-09-14 00:00:00	806	304
+1113	500	2007-09-17 00:00:00	807	183
+1114	500	2007-09-24 00:00:00	808	183
+1115	500	2007-04-03 00:00:00	809	249
+1116	500	2007-04-10 00:00:00	810	274
+1118	500	2007-04-17 00:00:00	812	138
+1119	500	2007-04-20 00:00:00	813	255
+1121	500	2007-06-29 00:00:00	815	265
+1122	500	2007-06-19 00:00:00	816	305
+1123	500	2007-06-29 00:00:00	817	265
+1124	500	2007-04-29 00:00:00	153	264
+1125	500	2007-06-19 00:00:00	818	197
+1126	500	2007-06-15 00:00:00	267	12
+1127	500	2007-06-19 00:00:00	819	39
+1128	500	2007-05-18 00:00:00	820	39
+1129	500	2007-04-20 00:00:00	821	203
+1130	500	2007-06-19 00:00:00	822	39
+1132	500	2007-03-27 00:00:00	824	26
+1133	500	2007-03-30 00:00:00	775	267
+1134	500	2007-01-29 00:00:00	825	306
+1135	500	2007-02-09 00:00:00	826	306
+1136	500	2007-03-05 00:00:00	827	256
+1137	500	2007-02-09 00:00:00	828	39
+1138	500	2007-03-19 00:00:00	829	39
+1139	500	2007-03-26 00:00:00	830	183
+1140	500	2007-03-29 00:00:00	831	183
+1141	470	2008-10-22 00:00:00	832	307
+1142	420	2008-08-26 00:00:00	833	203
+1143	400	2008-10-03 00:00:00	834	203
+1144	400	2007-03-08 00:00:00	543	229
+1145	400	2007-07-23 00:00:00	592	297
+1146	400	2007-11-27 00:00:00	13	308
+1147	400	2008-10-22 00:00:00	592	309
+1149	400	2008-12-10 00:00:00	237	116
+1150	400	2007-08-15 00:00:00	148	310
+1151	400	2007-02-26 00:00:00	543	310
+1153	400	2008-08-12 00:00:00	837	4
+1154	400	2007-08-06 00:00:00	838	311
+1155	400	2008-04-07 00:00:00	552	203
+1157	350	2007-06-26 00:00:00	148	296
+1158	350	2008-11-03 00:00:00	13	296
+1159	350	2008-03-22 00:00:00	148	312
+1160	350	2007-03-26 00:00:00	840	214
+1162	350	2007-02-26 00:00:00	592	224
+1163	330	2007-06-01 00:00:00	842	4
+1164	325	2008-10-31 00:00:00	843	313
+1165	308	2008-10-23 00:00:00	844	203
+1166	300	2008-05-27 00:00:00	497	39
+1167	300	2008-08-18 00:00:00	845	124
+1168	300	2008-09-10 00:00:00	846	314
+1169	300	2008-03-28 00:00:00	512	205
+1170	300	2007-01-31 00:00:00	847	222
+1171	300	2008-06-12 00:00:00	19	12
+1172	300	2007-03-23 00:00:00	13	315
+1173	300	2007-02-02 00:00:00	13	248
+1174	300	2007-11-30 00:00:00	702	265
+1175	300	2008-11-01 00:00:00	848	213
+1176	300	2007-02-12 00:00:00	13	248
+1177	300	2008-01-31 00:00:00	796	39
+1178	300	2007-03-31 00:00:00	849	186
+1179	300	2007-07-31 00:00:00	775	267
+1181	300	2008-01-10 00:00:00	851	39
+1183	300	2008-02-06 00:00:00	853	203
+1184	300	2007-04-13 00:00:00	700	39
+1185	300	2008-10-07 00:00:00	20	234
+1186	300	2008-07-29 00:00:00	854	316
+1187	300	2008-03-12 00:00:00	481	26
+1188	300	2007-07-12 00:00:00	855	287
+1189	300	2008-03-25 00:00:00	856	203
+1190	300	2008-10-24 00:00:00	857	4
+1191	300	2008-08-04 00:00:00	858	203
+1192	300	2008-07-09 00:00:00	846	314
+1193	300	2008-02-12 00:00:00	544	39
+1194	300	2008-10-20 00:00:00	859	302
+1195	300	2007-05-11 00:00:00	860	12
+1196	300	2007-03-16 00:00:00	861	317
+1197	300	2008-08-28 00:00:00	862	203
+1198	287	2008-08-29 00:00:00	863	171
+1212	260	2008-07-18 00:00:00	873	4
+1213	250	2007-12-04 00:00:00	874	203
+1214	250	2008-08-25 00:00:00	611	185
+1215	250	2008-10-06 00:00:00	13	248
+1216	250	2007-12-12 00:00:00	875	203
+1217	250	2007-03-25 00:00:00	876	264
+1218	250	2007-10-10 00:00:00	877	183
+1219	250	2008-10-21 00:00:00	878	203
+1220	250	2007-10-24 00:00:00	879	318
+1221	250	2008-11-15 00:00:00	880	209
+1222	250	2008-11-02 00:00:00	881	203
+1223	250	2007-06-20 00:00:00	882	222
+1224	250	2008-07-11 00:00:00	883	319
+1225	250	2007-07-18 00:00:00	884	320
+1226	250	2008-10-31 00:00:00	885	171
+1227	250	2008-10-21 00:00:00	886	180
+1228	250	2008-09-05 00:00:00	887	316
+1229	250	2008-10-26 00:00:00	559	321
+1230	250	2008-10-09 00:00:00	888	4
+1231	250	2008-02-14 00:00:00	889	39
+1232	250	2008-10-23 00:00:00	763	203
+1233	250	2008-10-06 00:00:00	890	180
+1235	250	2008-10-12 00:00:00	892	209
+1236	250	2007-09-30 00:00:00	893	199
+1237	250	2008-10-09 00:00:00	894	171
+1238	250	2008-08-13 00:00:00	895	322
+1239	250	2007-11-30 00:00:00	896	306
+1241	250	2007-12-02 00:00:00	898	28
+1242	250	2007-11-02 00:00:00	899	2
+1243	250	2008-10-15 00:00:00	900	203
+1244	250	2007-10-05 00:00:00	901	39
+1245	250	2007-12-08 00:00:00	902	274
+1246	250	2008-02-08 00:00:00	903	39
+1247	250	2008-02-04 00:00:00	13	316
+1248	250	2008-03-30 00:00:00	904	318
+1249	250	2008-02-05 00:00:00	905	185
+1250	250	2008-08-05 00:00:00	905	185
+1251	250	2007-10-29 00:00:00	271	138
+1252	250	2008-08-11 00:00:00	906	81
+1253	250	2008-11-02 00:00:00	907	171
+1254	250	2008-09-15 00:00:00	908	171
+1255	250	2008-07-31 00:00:00	909	203
+1256	250	2007-11-30 00:00:00	910	136
+1257	250	2008-09-23 00:00:00	323	299
+1258	250	2007-11-20 00:00:00	911	207
+1259	250	2008-01-30 00:00:00	912	203
+1260	250	2008-01-24 00:00:00	853	203
+1261	250	2008-03-07 00:00:00	913	203
+1262	250	2008-11-07 00:00:00	914	171
+1263	250	2008-07-16 00:00:00	915	171
+1264	250	2007-11-06 00:00:00	916	39
+1265	250	2008-01-16 00:00:00	917	203
+1266	250	2007-02-02 00:00:00	13	316
+1267	250	2008-08-29 00:00:00	918	203
+1268	250	2008-06-29 00:00:00	153	264
+1269	250	2008-09-18 00:00:00	919	203
+1270	250	2008-03-03 00:00:00	920	39
+1271	250	2007-09-28 00:00:00	921	183
+1272	250	2008-08-05 00:00:00	922	39
+1273	250	2007-12-30 00:00:00	923	177
+1274	250	2007-04-27 00:00:00	924	323
+1275	250	2007-08-09 00:00:00	925	39
+1276	250	2008-07-14 00:00:00	926	302
+1277	250	2008-03-11 00:00:00	927	39
+1278	250	2008-06-09 00:00:00	928	185
+1279	250	2007-06-19 00:00:00	929	183
+1281	250	2008-03-05 00:00:00	905	185
+1282	250	2008-08-13 00:00:00	778	124
+1283	250	2008-07-28 00:00:00	931	193
+1284	250	2008-03-10 00:00:00	932	203
+1285	250	2008-07-31 00:00:00	933	203
+1286	250	2007-03-31 00:00:00	934	185
+1287	250	2008-04-26 00:00:00	323	299
+1289	250	2008-04-24 00:00:00	935	39
+1290	250	2007-05-22 00:00:00	936	4
+1291	250	2007-05-21 00:00:00	882	222
+1292	250	2008-06-27 00:00:00	937	209
+1293	250	2007-04-05 00:00:00	938	222
+1294	250	2007-02-23 00:00:00	939	4
+1295	250	2007-03-09 00:00:00	940	183
+1297	250	2008-05-10 00:00:00	942	203
+1298	250	2007-12-07 00:00:00	943	267
+1299	250	2008-06-06 00:00:00	944	324
+1300	250	2007-12-26 00:00:00	945	325
+1301	250	2008-07-01 00:00:00	946	76
+1302	250	2007-07-06 00:00:00	311	326
+1303	250	2008-02-17 00:00:00	947	327
+1304	250	2008-06-28 00:00:00	948	328
+1305	250	2007-06-19 00:00:00	949	324
+1306	250	2008-10-18 00:00:00	950	329
+1307	250	2008-10-23 00:00:00	951	4
+1308	250	2008-08-28 00:00:00	952	185
+1309	250	2008-09-26 00:00:00	953	4
+1310	250	2007-11-06 00:00:00	954	39
+1311	250	2008-02-26 00:00:00	927	39
+1312	250	2008-10-13 00:00:00	955	262
+1313	250	2008-09-22 00:00:00	956	209
+1314	250	2007-01-22 00:00:00	957	330
+1315	250	2007-05-03 00:00:00	958	2
+1316	230	2007-12-14 00:00:00	959	183
+1317	225	2008-08-21 00:00:00	960	301
+1318	225	2008-09-09 00:00:00	961	301
+1319	225	2008-05-05 00:00:00	962	287
+1320	218	2008-01-31 00:00:00	610	76
+1321	213	2008-09-30 00:00:00	963	203
+1322	213	2008-09-29 00:00:00	964	171
+1323	210	2008-05-14 00:00:00	965	203
+1324	208	2008-02-29 00:00:00	966	39
+1325	208	2008-07-10 00:00:00	967	203
+1326	201	2008-10-08 00:00:00	968	4
+1327	200	2007-07-18 00:00:00	969	331
+1328	200	2007-06-12 00:00:00	970	203
+1329	200	2007-10-25 00:00:00	971	332
+1330	200	2007-04-12 00:00:00	972	332
+1331	200	2007-02-02 00:00:00	973	323
+1332	200	2007-06-02 00:00:00	974	333
+1333	200	2008-03-06 00:00:00	975	39
+1334	200	2008-09-04 00:00:00	976	203
+1335	200	2008-03-27 00:00:00	977	197
+1336	200	2008-10-23 00:00:00	978	203
+1337	200	2008-05-14 00:00:00	979	185
+1338	200	2008-03-02 00:00:00	975	39
+1339	200	2008-03-31 00:00:00	527	249
+1340	200	2008-10-17 00:00:00	978	203
+1341	200	2008-11-13 00:00:00	980	315
+1342	200	2008-10-27 00:00:00	981	2
+1343	200	2007-02-28 00:00:00	482	183
+1344	200	2007-10-20 00:00:00	982	199
+1345	200	2008-10-08 00:00:00	13	334
+1346	200	2008-10-31 00:00:00	983	180
+1347	200	2008-10-29 00:00:00	984	180
+1348	200	2008-10-23 00:00:00	985	203
+1350	200	2008-10-17 00:00:00	675	171
+1351	200	2008-10-13 00:00:00	987	270
+1352	200	2008-12-31 00:00:00	988	4
+1353	200	2008-10-09 00:00:00	752	4
+1354	200	2008-10-27 00:00:00	989	203
+1355	200	2008-10-31 00:00:00	990	4
+1356	200	2008-09-29 00:00:00	991	4
+1357	200	2008-10-24 00:00:00	624	203
+1358	200	2008-09-18 00:00:00	992	4
+1359	200	2008-12-08 00:00:00	993	4
+1360	200	2008-09-30 00:00:00	981	2
+1361	200	2007-09-29 00:00:00	902	274
+1362	200	2008-09-02 00:00:00	511	240
+1363	200	2008-10-15 00:00:00	994	203
+1364	200	2008-07-15 00:00:00	995	331
+1365	200	2008-01-14 00:00:00	529	183
+1366	200	2008-07-18 00:00:00	969	331
+1367	200	2008-08-18 00:00:00	984	185
+1368	200	2008-01-18 00:00:00	821	203
+1369	200	2007-02-09 00:00:00	409	39
+1370	200	2008-10-04 00:00:00	996	203
+1371	200	2008-08-19 00:00:00	997	335
+1372	200	2007-10-22 00:00:00	968	4
+1373	200	2007-11-26 00:00:00	998	197
+1374	200	2007-12-26 00:00:00	968	4
+1375	200	2007-03-23 00:00:00	413	12
+1376	200	2008-05-27 00:00:00	592	317
+1377	200	2007-11-06 00:00:00	999	183
+1378	200	2007-12-21 00:00:00	821	203
+1379	200	2007-09-27 00:00:00	444	205
+1380	200	2007-08-03 00:00:00	1000	199
+1381	200	2007-09-24 00:00:00	842	4
+1382	200	2007-09-21 00:00:00	1001	303
+1383	200	2007-06-14 00:00:00	1002	289
+1384	200	2008-07-02 00:00:00	1003	336
+1385	200	2007-09-24 00:00:00	854	316
+1386	200	2008-03-12 00:00:00	481	26
+1387	200	2008-09-19 00:00:00	1004	4
+1388	200	2007-07-17 00:00:00	1005	331
+1389	200	2007-07-11 00:00:00	842	4
+1390	200	2007-07-20 00:00:00	1006	222
+1391	200	2007-06-30 00:00:00	435	201
+1392	200	2007-01-16 00:00:00	934	185
+1393	200	2008-06-26 00:00:00	860	12
+1394	200	2008-09-30 00:00:00	768	180
+1395	175	2008-05-06 00:00:00	1007	337
+1396	159.62	2007-06-18 00:00:00	13	192
+1397	159.62	2007-07-16 00:00:00	13	215
+1398	159.62	2007-06-18 00:00:00	13	216
+1399	159.62	2007-06-18 00:00:00	1008	214
+1400	159.62	2007-07-20 00:00:00	13	229
+1401	150	2008-02-26 00:00:00	1009	338
+1402	150	2007-06-20 00:00:00	1010	287
+1403	150	2007-07-12 00:00:00	1011	287
+1404	150	2008-04-16 00:00:00	323	339
+1405	150	2008-06-16 00:00:00	281	287
+1406	150	2007-04-21 00:00:00	322	299
+1407	150	2008-06-21 00:00:00	310	287
+1408	150	2008-01-22 00:00:00	1012	244
+1409	150	2008-08-26 00:00:00	1013	317
+1410	150	2008-10-16 00:00:00	1014	291
+1411	140	2008-09-24 00:00:00	1013	317
+1412	130	\N	1015	340
+1413	125	2007-08-23 00:00:00	1007	337
+1414	125	2008-04-25 00:00:00	1011	287
+1415	125	2008-04-17 00:00:00	310	287
+1416	125	2007-07-10 00:00:00	1016	341
+1417	110	2008-01-13 00:00:00	1017	342
+1418	100	2008-06-12 00:00:00	980	315
+1419	100	2008-10-10 00:00:00	1018	343
+1420	100	2008-06-24 00:00:00	974	333
+1421	100	2008-10-01 00:00:00	1019	344
+1422	100	2008-04-26 00:00:00	322	299
+1423	100	2008-08-24 00:00:00	1017	342
+1424	100	2008-03-06 00:00:00	1020	191
+1425	100	2007-10-25 00:00:00	980	315
+1426	100	2007-08-09 00:00:00	980	315
+1427	100	2007-11-23 00:00:00	1018	345
+1428	100	2007-04-06 00:00:00	1021	283
+1429	100	2007-07-27 00:00:00	1022	297
+1430	100	2007-11-26 00:00:00	883	319
+1431	100	2007-08-24 00:00:00	1023	346
+1432	100	2007-12-04 00:00:00	949	324
+1433	100	2008-09-22 00:00:00	322	299
+1434	100	2008-09-04 00:00:00	1018	343
+1435	100	2008-08-24 00:00:00	1023	346
+1436	100	2008-07-14 00:00:00	1009	338
+1437	100	2008-09-18 00:00:00	1018	345
+1438	100	2007-04-21 00:00:00	1024	299
+1439	75	2008-09-17 00:00:00	1025	316
+1440	45	2007-07-25 00:00:00	883	319
+1441	40	2007-08-24 00:00:00	1026	346
+1442	-100	2008-11-21 00:00:00	1027	171
+1443	-200	2008-03-11 00:00:00	1028	183
+1444	-200	2008-01-14 00:00:00	529	183
+1445	-200	2008-08-28 00:00:00	1029	39
+1446	-250	2008-02-12 00:00:00	1030	318
+1447	-300	2007-03-31 00:00:00	673	186
+1448	-400	2007-03-31 00:00:00	1031	186
+1449	-400	2008-10-16 00:00:00	69	186
+1450	-500	2007-10-26 00:00:00	1032	39
+1451	-500	2008-05-16 00:00:00	1033	262
+1452	-600	2008-09-10 00:00:00	74	186
+1453	-700	2008-01-11 00:00:00	69	265
+1454	-700	2008-02-19 00:00:00	74	186
+1456	-1000	2007-09-14 00:00:00	1035	39
+1457	-1000	2007-06-29 00:00:00	1036	39
+1458	-1000	2007-06-29 00:00:00	1037	39
+1459	-1000	2007-12-05 00:00:00	1038	268
+1460	-1000	2008-03-24 00:00:00	74	186
+1461	-1000	2007-09-14 00:00:00	1039	39
+1462	-1000	2007-05-04 00:00:00	418	183
+1463	-1070	2008-06-19 00:00:00	1040	12
+1464	-2100	2007-08-01 00:00:00	483	183
+1465	-2100	2008-03-06 00:00:00	1041	183
+1466	-2200	2008-03-13 00:00:00	1042	200
+1467	-2300	2008-08-28 00:00:00	1043	39
+1468	-2300	2008-08-28 00:00:00	1044	39
+1469	-2300	2008-08-28 00:00:00	1045	39
+1470	-2300	2008-08-28 00:00:00	1046	39
+1471	-2300	2008-08-28 00:00:00	1047	39
+1472	-2300	2008-09-30 00:00:00	1048	249
+1473	-2300	2007-08-01 00:00:00	438	183
+1474	-2300	2008-08-28 00:00:00	1049	39
+1475	-2300	2008-08-28 00:00:00	1050	39
+1476	-2300	2008-08-28 00:00:00	1051	39
+1477	-2300	2008-08-28 00:00:00	1052	39
+1478	-2300	2008-08-28 00:00:00	1053	39
+1479	-2300	2008-08-28 00:00:00	1054	39
+1480	-2300	2008-06-30 00:00:00	1055	196
+1481	-2300	2008-03-10 00:00:00	386	186
+1482	-2300	2008-08-28 00:00:00	1056	39
+1483	-2300	2008-02-29 00:00:00	1057	198
+1484	-2300	2007-06-28 00:00:00	375	183
+1485	-2300	2007-08-21 00:00:00	377	183
+1486	-2300	2008-03-06 00:00:00	1058	183
+1487	-2300	2008-03-10 00:00:00	381	186
+1488	-2300	2008-04-03 00:00:00	1059	185
+1489	26700	2005-04-20 00:00:00	1060	2
+1490	26700	2006-09-29 00:00:00	1061	2
+1491	25000	2006-08-28 00:00:00	1062	2
+1492	25000	2006-05-23 00:00:00	340	2
+1493	25000	2006-05-23 00:00:00	339	2
 1494	20000	2005-11-28 00:00:00	2	2
-1495	15000	2006-03-07 00:00:00	347	1063
-1496	15000	2006-09-27 00:00:00	347	1063
-1497	10000	2005-03-31 00:00:00	175	1064
-1498	10000	2005-03-11 00:00:00	52	1065
-1499	9608	2006-10-24 00:00:00	311	1066
-1500	9216.0300000000007	2006-02-22 00:00:00	311	1066
-1501	8068	2006-10-19 00:00:00	311	1066
+1495	15000	2006-03-07 00:00:00	1063	347
+1496	15000	2006-09-27 00:00:00	1063	347
+1497	10000	2005-03-31 00:00:00	1064	175
+1498	10000	2005-03-11 00:00:00	1065	52
+1499	9608	2006-10-24 00:00:00	1066	311
+1500	9216.0300000000007	2006-02-22 00:00:00	1066	311
+1501	8068	2006-10-19 00:00:00	1066	311
 1502	6700	2006-09-29 00:00:00	2	2
-1503	5000	2006-04-28 00:00:00	175	1064
-1504	5000	2006-04-24 00:00:00	4	1067
-1505	5000	2006-12-11 00:00:00	348	1063
-1506	5000	2006-05-11 00:00:00	4	1068
-1507	5000	2006-11-06 00:00:00	349	362
-1508	5000	2005-11-18 00:00:00	349	1069
-1509	5000	2005-06-14 00:00:00	3	1070
-1510	5000	2006-03-31 00:00:00	350	1071
-1511	5000	2006-02-01 00:00:00	279	1072
-1512	5000	2005-07-07 00:00:00	349	1073
-1513	5000	2006-02-01 00:00:00	279	1061
-1514	5000	2005-11-02 00:00:00	351	1074
-1515	5000	2006-09-07 00:00:00	352	1075
-1516	5000	2005-10-27 00:00:00	349	1076
-1517	5000	2005-06-09 00:00:00	349	1077
-1518	5000	2005-10-27 00:00:00	349	1078
-1519	5000	2006-08-30 00:00:00	349	1069
-1520	5000	2006-07-24 00:00:00	349	360
-1521	4200	2005-09-21 00:00:00	353	1079
-1522	4200	2005-09-21 00:00:00	353	1080
-1523	4200	2006-08-14 00:00:00	279	1081
-1524	4200	2006-01-31 00:00:00	279	1082
-1525	4000	2006-08-16 00:00:00	175	351
-1526	4000	2005-06-14 00:00:00	351	1083
-1527	4000	2005-12-21 00:00:00	192	13
-1528	3968.4400000000001	2006-09-18 00:00:00	311	1066
-1529	3171	2006-08-20 00:00:00	354	1084
-1530	3000	2006-05-10 00:00:00	355	1085
-1531	3000	2006-03-23 00:00:00	356	1086
-1532	3000	2005-12-13 00:00:00	39	1087
-1533	3000	2006-01-09 00:00:00	357	1063
-1534	2500	2006-02-28 00:00:00	357	543
-1535	2500	2006-07-27 00:00:00	2	391
-1536	2500	2006-03-31 00:00:00	358	1088
-1537	2500	2005-04-19 00:00:00	4	1068
-1538	2500	2005-08-30 00:00:00	4	1068
-1539	2500	2006-10-23 00:00:00	359	1089
-1540	2500	2005-08-29 00:00:00	360	1090
-1541	2500	2006-12-05 00:00:00	283	680
-1542	2500	2006-03-23 00:00:00	12	1091
-1543	2500	2005-09-29 00:00:00	4	1068
-1544	2500	2005-07-28 00:00:00	4	1068
-1545	2500	2006-07-24 00:00:00	349	396
-1546	2500	2005-10-27 00:00:00	349	1092
-1547	2475	2005-12-28 00:00:00	11	1093
-1548	2400	2006-11-21 00:00:00	349	397
-1549	2400	2005-11-15 00:00:00	349	397
-1550	2100	2005-12-09 00:00:00	39	1094
-1551	2100	2006-06-29 00:00:00	361	1095
-1552	2100	2006-04-07 00:00:00	362	1096
-1553	2100	2005-12-07 00:00:00	200	674
-1554	2100	2006-06-11 00:00:00	136	436
-1555	2100	2006-05-02 00:00:00	363	1097
-1556	2100	2006-02-13 00:00:00	364	1098
-1557	2100	2006-02-09 00:00:00	39	1099
-1558	2100	2006-02-16 00:00:00	39	1100
-1559	2100	2006-01-17 00:00:00	39	1101
-1560	2100	2006-01-17 00:00:00	39	1101
-1561	2100	2006-03-16 00:00:00	365	1102
-1562	2100	2006-03-10 00:00:00	196	1103
-1563	2100	2005-12-09 00:00:00	39	1094
-1564	2100	2005-10-21 00:00:00	362	1104
-1565	2100	2005-09-21 00:00:00	353	1079
-1566	2100	2005-09-21 00:00:00	353	1080
-1567	2100	2005-12-31 00:00:00	366	1105
-1568	2100	2005-12-07 00:00:00	367	1106
-1569	2100	2005-09-19 00:00:00	368	674
-1570	2100	2005-04-28 00:00:00	39	1107
-1571	2100	2005-05-18 00:00:00	39	1108
-1572	2100	2005-05-18 00:00:00	39	1108
-1573	2100	2005-05-22 00:00:00	307	1109
-1574	2100	2006-10-26 00:00:00	58	1110
-1575	2100	2006-10-26 00:00:00	58	385
-1576	2100	2006-09-06 00:00:00	288	1111
-1577	2100	2006-12-29 00:00:00	183	1112
-1578	2100	2006-12-29 00:00:00	183	1113
-1579	2100	2006-12-29 00:00:00	369	1114
-1580	2100	2006-10-26 00:00:00	39	1115
-1581	2100	2006-10-26 00:00:00	39	1116
-1582	2100	2006-10-26 00:00:00	39	1117
-1583	2100	2006-10-25 00:00:00	13	1118
-1584	2100	2006-10-06 00:00:00	370	674
-1585	2100	2006-10-12 00:00:00	371	1119
-1586	2100	2006-09-27 00:00:00	362	1120
-1587	2100	2006-10-16 00:00:00	372	1121
-1588	2100	2006-10-04 00:00:00	196	1122
-1589	2100	2006-10-04 00:00:00	196	1123
-1590	2100	2006-09-29 00:00:00	373	674
-1591	2100	2006-09-11 00:00:00	18	1124
-1592	2100	2006-09-06 00:00:00	13	1125
-1593	2100	2006-09-06 00:00:00	13	1126
-1594	2100	2006-09-29 00:00:00	374	1127
-1595	2100	2006-03-31 00:00:00	375	1128
-1596	2100	2006-05-26 00:00:00	376	1129
-1597	2100	2006-04-17 00:00:00	377	1130
-1598	2100	2006-06-28 00:00:00	377	1131
-1599	2100	2005-07-11 00:00:00	39	1132
-1600	2000	2006-10-18 00:00:00	375	53
-1601	2000	2006-09-24 00:00:00	266	1133
-1602	2000	2006-09-29 00:00:00	359	13
-1603	2000	2006-11-07 00:00:00	345	1134
-1604	2000	2005-02-17 00:00:00	378	13
-1605	2000	2006-03-23 00:00:00	356	1135
-1606	2000	2005-04-20 00:00:00	357	1136
-1607	2000	2005-03-07 00:00:00	379	13
-1608	2000	2006-12-21 00:00:00	213	1137
-1609	2000	2006-03-06 00:00:00	380	13
-1610	2000	2006-06-21 00:00:00	12	173
-1611	2000	2005-11-18 00:00:00	39	1138
-1612	2000	2006-10-25 00:00:00	39	1139
-1613	2000	2006-01-11 00:00:00	381	13
-1614	2000	2005-06-27 00:00:00	39	1140
-1615	2000	2006-07-11 00:00:00	382	489
-1616	2000	2005-07-28 00:00:00	382	489
-1617	2000	2006-05-22 00:00:00	200	1141
-1618	2000	2005-09-23 00:00:00	357	1063
-1619	2000	2005-03-15 00:00:00	380	13
-1620	2000	2005-01-28 00:00:00	192	13
-1621	2000	2006-02-07 00:00:00	383	1142
-1622	2000	2006-08-18 00:00:00	384	1143
-1623	2000	2005-06-25 00:00:00	264	1144
-1624	2000	2005-07-11 00:00:00	39	1132
-1625	2000	2006-09-11 00:00:00	385	1145
-1626	2000	2006-11-03 00:00:00	386	13
-1627	2000	2006-10-23 00:00:00	380	13
-1628	2000	2006-07-05 00:00:00	387	1146
-1629	2000	2005-02-09 00:00:00	221	489
-1630	2000	2005-07-11 00:00:00	192	13
-1631	2000	2006-03-22 00:00:00	388	1147
-1632	2000	2006-09-01 00:00:00	266	1133
-1633	2000	2005-04-22 00:00:00	87	143
-1634	2000	2005-12-12 00:00:00	205	1148
-1635	2000	2005-09-26 00:00:00	382	489
-1636	2000	2006-09-22 00:00:00	389	1149
-1637	2000	2005-06-25 00:00:00	264	1150
-1638	2000	2006-01-03 00:00:00	359	13
-1639	2000	2005-06-25 00:00:00	264	1151
-1640	2000	2005-11-21 00:00:00	357	1152
-1641	2000	2005-06-03 00:00:00	390	1107
-1642	1900	2006-05-10 00:00:00	355	1085
-1643	1900	2005-04-04 00:00:00	39	1153
-1644	1900	2006-04-17 00:00:00	377	1130
-1645	1650	2005-05-22 00:00:00	307	1154
-1646	1500	2006-10-17 00:00:00	391	1155
-1647	1500	2005-03-25 00:00:00	306	1156
-1648	1500	2006-01-30 00:00:00	244	1152
-1649	1500	2006-08-02 00:00:00	357	1152
-1650	1500	2005-03-07 00:00:00	298	13
-1651	1500	2005-05-23 00:00:00	39	1157
-1652	1500	2005-12-02 00:00:00	39	1158
-1653	1500	2006-02-23 00:00:00	392	1159
-1654	1500	2006-04-06 00:00:00	283	1160
-1655	1500	2006-10-18 00:00:00	196	1161
-1656	1500	2006-05-18 00:00:00	393	1162
-1657	1280	2006-11-28 00:00:00	11	528
-1658	1250	2005-10-04 00:00:00	379	1163
-1659	1200	2005-07-11 00:00:00	216	13
-1660	1200	2005-05-03 00:00:00	360	1164
-1661	1200	2005-10-06 00:00:00	394	1165
-1662	1200	2006-07-11 00:00:00	395	1166
-1663	1200	2005-06-21 00:00:00	345	1134
-1664	1100	2006-06-28 00:00:00	377	1131
-1665	1100	2005-11-21 00:00:00	186	1167
-1666	1100	2006-03-27 00:00:00	23	1168
-1667	1100	2006-12-15 00:00:00	183	1169
-1668	1100	2006-03-27 00:00:00	347	1170
-1669	1100	2005-07-26 00:00:00	26	1171
-1670	1051	2005-09-10 00:00:00	307	1172
-1671	1050	2006-09-11 00:00:00	396	1173
-1672	1000	2006-10-26 00:00:00	39	1174
-1673	1000	2006-10-26 00:00:00	39	1175
-1674	1000	2006-10-25 00:00:00	39	1176
-1675	1000	2006-06-14 00:00:00	383	1177
-1676	1000	2006-10-26 00:00:00	39	1178
-1677	1000	2006-10-25 00:00:00	397	1179
-1678	1000	2005-12-05 00:00:00	398	884
-1679	1000	2006-10-24 00:00:00	399	74
-1680	1000	2006-05-26 00:00:00	376	1180
-1681	1000	2006-03-17 00:00:00	400	53
-1682	1000	2005-08-22 00:00:00	222	1181
-1683	1000	2006-11-06 00:00:00	261	13
-1684	1000	2006-06-16 00:00:00	401	29
-1685	1000	2006-06-01 00:00:00	401	1182
-1686	1000	2005-09-29 00:00:00	402	1183
-1687	1000	2005-11-12 00:00:00	403	13
-1688	1000	2005-03-28 00:00:00	326	13
-1689	1000	2006-03-24 00:00:00	39	1184
-1690	1000	2006-06-19 00:00:00	404	1185
-1691	1000	2006-10-12 00:00:00	12	1186
-1692	1000	2006-07-02 00:00:00	13	74
-1693	1000	2006-05-08 00:00:00	196	1122
-1694	1000	2006-11-07 00:00:00	265	1187
-1695	1000	2006-09-20 00:00:00	379	1163
-1696	1000	2005-06-06 00:00:00	405	1136
-1697	1000	2006-10-26 00:00:00	295	13
-1698	1000	2005-07-18 00:00:00	39	1188
-1699	1000	2006-10-25 00:00:00	406	1189
-1700	1000	2006-10-19 00:00:00	359	1089
-1701	1000	2005-11-03 00:00:00	357	1190
-1702	1000	2006-05-25 00:00:00	389	1191
-1703	1000	2006-05-26 00:00:00	389	1192
-1704	1000	2006-06-06 00:00:00	389	1193
-1705	1000	2005-04-08 00:00:00	407	1194
-1706	1000	2005-06-10 00:00:00	408	1195
-1707	1000	2006-05-24 00:00:00	409	1196
-1708	1000	2006-04-27 00:00:00	357	1197
-1709	1000	2005-11-10 00:00:00	116	1198
-1710	1000	2006-03-30 00:00:00	357	1199
-1711	1000	2006-06-08 00:00:00	381	1200
-1712	1000	2006-03-01 00:00:00	221	489
-1713	1000	2005-03-22 00:00:00	264	1201
-1714	1000	2006-07-11 00:00:00	116	543
-1715	1000	2006-02-22 00:00:00	347	1202
-1716	1000	2006-04-14 00:00:00	410	1203
-1717	1000	2005-06-25 00:00:00	264	1144
-1718	1000	2006-03-07 00:00:00	411	1204
-1719	1000	2006-03-17 00:00:00	282	13
-1720	1000	2006-04-25 00:00:00	393	1205
-1721	1000	2006-01-06 00:00:00	261	13
-1722	1000	2005-02-07 00:00:00	4	1206
-1723	1000	2006-06-05 00:00:00	261	13
-1724	1000	2006-06-22 00:00:00	394	1207
-1725	1000	2006-07-07 00:00:00	356	1208
-1726	1000	2006-07-11 00:00:00	380	13
-1727	1000	2006-05-15 00:00:00	405	543
-1728	1000	2006-08-10 00:00:00	360	13
-1729	1000	2005-08-11 00:00:00	13	1209
-1730	1000	2005-11-09 00:00:00	26	1210
-1731	1000	2006-06-15 00:00:00	295	13
-1732	1000	2005-12-16 00:00:00	412	1211
-1733	1000	2005-12-13 00:00:00	377	1131
-1734	1000	2005-11-29 00:00:00	413	1212
-1735	1000	2005-12-28 00:00:00	11	1213
-1736	1000	2005-12-28 00:00:00	11	1214
-1737	1000	2005-12-28 00:00:00	11	1215
-1738	1000	2005-12-28 00:00:00	11	1216
-1739	1000	2005-12-28 00:00:00	11	1217
-1740	1000	2005-12-28 00:00:00	11	1218
-1741	1000	2005-08-09 00:00:00	177	1219
-1742	1000	2006-10-18 00:00:00	375	1220
-1743	1000	2006-04-06 00:00:00	295	13
-1744	1000	2006-12-06 00:00:00	414	1177
-1745	1000	2006-11-28 00:00:00	11	1221
-1746	1000	2005-12-28 00:00:00	362	1222
-1747	1000	2006-11-28 00:00:00	11	695
-1748	1000	2006-11-28 00:00:00	11	528
-1749	1000	2006-11-29 00:00:00	11	659
-1750	1000	2005-12-31 00:00:00	186	1223
-1751	1000	2006-12-13 00:00:00	11	551
-1752	1000	2006-11-29 00:00:00	11	1224
-1753	1000	2005-10-02 00:00:00	39	1225
-1754	1000	2006-11-28 00:00:00	11	1226
-1755	1000	2006-12-19 00:00:00	200	1227
-1756	1000	2006-11-29 00:00:00	195	1228
-1757	1000	2006-12-29 00:00:00	195	1229
-1758	1000	2005-12-09 00:00:00	39	1230
-1759	1000	2006-01-11 00:00:00	241	1231
-1760	1000	2006-06-08 00:00:00	11	1232
-1761	1000	2005-11-11 00:00:00	345	1233
-1762	1000	2005-12-06 00:00:00	39	1234
-1763	1000	2006-01-17 00:00:00	396	543
-1764	1000	2005-03-26 00:00:00	299	13
-1765	1000	2006-05-05 00:00:00	415	1235
-1766	1000	2006-05-15 00:00:00	265	1236
-1767	1000	2006-09-28 00:00:00	388	1237
-1768	1000	2006-09-29 00:00:00	373	1238
-1769	1000	2006-08-16 00:00:00	373	472
-1770	1000	2006-10-17 00:00:00	416	1239
-1771	1000	2006-09-01 00:00:00	213	1240
-1772	1000	2006-05-06 00:00:00	417	1241
-1773	1000	2006-06-20 00:00:00	28	486
-1774	1000	2006-01-27 00:00:00	355	1085
-1775	1000	2006-09-30 00:00:00	355	123
-1776	1000	2006-09-13 00:00:00	355	123
-1777	1000	2006-08-15 00:00:00	177	1219
-1778	1000	2005-05-10 00:00:00	418	13
-1779	1000	2006-08-25 00:00:00	419	1242
-1780	1000	2006-09-03 00:00:00	136	1243
-1781	1000	2005-03-28 00:00:00	420	1244
-1782	1000	2005-12-30 00:00:00	415	1222
-1783	1000	2006-04-03 00:00:00	280	670
-1784	1000	2006-06-27 00:00:00	421	1245
-1785	1000	2005-05-20 00:00:00	422	1246
-1786	1000	2006-05-22 00:00:00	200	1227
-1787	1000	2005-06-08 00:00:00	423	1247
-1788	1000	2006-02-04 00:00:00	424	1248
-1789	1000	2006-10-06 00:00:00	425	1249
-1790	1000	2006-10-26 00:00:00	58	1250
-1791	1000	2006-01-10 00:00:00	359	13
-1792	1000	2005-06-14 00:00:00	426	1251
-1793	1000	2005-03-21 00:00:00	39	1252
-1794	1000	2006-10-23 00:00:00	347	1253
-1795	1000	2005-03-21 00:00:00	39	1252
-1796	1000	2005-03-17 00:00:00	39	1254
-1797	850	2005-08-06 00:00:00	39	1255
-1798	850	2006-05-01 00:00:00	13	74
-1799	800	2006-10-12 00:00:00	427	1256
-1800	800	2006-03-06 00:00:00	216	13
-1801	800	2005-04-20 00:00:00	216	13
-1802	800	2005-09-09 00:00:00	52	1257
-1803	800	2005-10-14 00:00:00	221	489
-1804	800	2006-09-05 00:00:00	428	1258
-1805	800	2006-10-19 00:00:00	23	1259
-1806	750	2006-06-09 00:00:00	401	74
-1807	750	2006-02-22 00:00:00	39	1176
-1808	750	2006-06-12 00:00:00	357	1260
-1809	750	2006-06-12 00:00:00	241	1231
-1810	750	2006-06-19 00:00:00	409	1261
-1811	750	2005-07-19 00:00:00	52	1262
-1812	750	2006-05-24 00:00:00	379	13
-1813	750	2006-10-27 00:00:00	429	1263
-1814	750	2005-01-21 00:00:00	192	13
-1815	700	2006-03-17 00:00:00	430	13
-1816	625	2005-12-16 00:00:00	267	1264
-1817	625	2005-12-16 00:00:00	267	1265
-1818	625	2005-12-16 00:00:00	267	1266
-1819	600	2005-03-07 00:00:00	430	13
-1820	600	2006-06-16 00:00:00	28	1267
-1821	600	2006-10-10 00:00:00	306	1268
-1822	600	2005-10-17 00:00:00	359	1269
-1823	600	2005-07-28 00:00:00	282	13
-1824	600	2006-03-31 00:00:00	8	13
-1825	600	2006-03-31 00:00:00	306	1270
-1826	575	2006-05-24 00:00:00	323	1271
-1827	550	2006-10-27 00:00:00	197	1272
-1828	525	2006-04-27 00:00:00	431	1273
-1829	520	2006-04-06 00:00:00	283	1160
-1830	500	2006-06-13 00:00:00	11	1274
-1831	500	2005-07-29 00:00:00	39	1275
-1832	500	2005-07-29 00:00:00	39	1276
-1833	500	2005-07-29 00:00:00	39	1277
-1834	500	2005-07-29 00:00:00	39	1278
-1835	500	2005-12-22 00:00:00	432	1279
-1836	500	2005-06-21 00:00:00	433	1280
-1837	500	2005-07-29 00:00:00	39	1281
-1838	500	2005-07-29 00:00:00	39	1282
-1839	500	2005-08-17 00:00:00	39	1283
-1840	500	2005-07-29 00:00:00	39	1284
-1841	500	2005-05-09 00:00:00	348	1285
-1842	500	2005-08-18 00:00:00	434	13
-1843	500	2005-07-29 00:00:00	39	1286
-1844	500	2005-07-29 00:00:00	39	1287
-1845	500	2005-07-29 00:00:00	39	1288
-1846	500	2005-05-02 00:00:00	359	1289
-1847	500	2005-07-29 00:00:00	39	1290
-1848	500	2005-07-29 00:00:00	39	1291
-1849	500	2005-10-21 00:00:00	222	1292
-1850	500	2005-10-21 00:00:00	349	706
-1851	500	2005-06-03 00:00:00	192	1200
-1852	500	2005-11-23 00:00:00	435	13
-1853	500	2005-10-20 00:00:00	360	1293
-1854	500	2005-06-20 00:00:00	436	1294
-1855	500	2005-10-12 00:00:00	11	1295
-1856	500	2005-04-05 00:00:00	436	13
-1857	500	2005-07-06 00:00:00	300	1296
-1858	500	2005-09-25 00:00:00	216	1297
-1859	500	2005-10-26 00:00:00	295	13
-1860	500	2005-07-28 00:00:00	437	13
-1861	500	2005-09-27 00:00:00	28	176
-1862	500	2005-06-09 00:00:00	403	1298
-1863	500	2005-08-02 00:00:00	372	1299
-1864	500	2005-04-29 00:00:00	420	1300
-1865	500	2005-08-04 00:00:00	438	1301
-1866	500	2005-09-30 00:00:00	23	1302
-1867	500	2006-04-17 00:00:00	229	1303
-1868	500	2006-01-26 00:00:00	439	13
-1869	500	2006-05-15 00:00:00	359	1289
-1870	500	2005-11-10 00:00:00	440	1304
-1871	500	2006-03-18 00:00:00	435	13
-1872	500	2006-08-11 00:00:00	360	323
-1873	500	2006-08-11 00:00:00	360	1305
-1874	500	2006-05-28 00:00:00	441	947
-1875	500	2005-05-31 00:00:00	13	1306
-1876	500	2005-06-23 00:00:00	368	1307
-1877	500	2006-01-20 00:00:00	331	1308
-1878	500	2006-04-12 00:00:00	331	13
-1879	500	2006-04-21 00:00:00	418	13
-1880	500	2006-03-17 00:00:00	437	13
-1881	500	2006-07-28 00:00:00	428	1309
-1882	500	2006-08-05 00:00:00	428	1258
-1883	500	2006-07-11 00:00:00	428	13
-1884	500	2006-04-26 00:00:00	436	13
-1885	500	2006-02-10 00:00:00	436	1310
-1886	500	2006-06-14 00:00:00	357	1311
-1887	500	2006-06-29 00:00:00	357	13
-1888	500	2006-06-28 00:00:00	357	1312
-1889	500	2006-05-12 00:00:00	409	1313
-1890	500	2006-06-26 00:00:00	409	1314
-1891	500	2006-02-02 00:00:00	323	543
-1892	500	2006-03-23 00:00:00	442	1315
-1893	500	2006-06-26 00:00:00	443	13
-1894	500	2006-07-11 00:00:00	389	1316
-1895	500	2005-06-29 00:00:00	222	1317
-1896	500	2005-06-23 00:00:00	444	1318
-1897	500	2006-10-13 00:00:00	229	13
-1898	500	2006-10-23 00:00:00	439	13
-1899	500	2006-09-07 00:00:00	445	13
-1900	500	2005-03-17 00:00:00	280	670
-1901	500	2006-11-21 00:00:00	445	13
-1902	500	2005-06-09 00:00:00	413	1319
-1903	500	2005-06-10 00:00:00	28	1320
-1904	500	2005-06-08 00:00:00	28	1267
-1905	500	2006-09-06 00:00:00	446	1152
-1906	500	2006-09-26 00:00:00	447	1321
-1907	500	2006-11-16 00:00:00	214	1322
-1908	500	2006-11-06 00:00:00	245	13
-1909	500	2006-09-21 00:00:00	394	1323
-1910	500	2006-10-06 00:00:00	331	147
-1911	500	2005-04-27 00:00:00	28	1267
-1912	500	2005-06-08 00:00:00	28	176
-1913	500	2006-10-11 00:00:00	282	13
-1914	500	2006-09-07 00:00:00	418	13
-1915	500	2006-10-22 00:00:00	430	13
-1916	500	2006-11-02 00:00:00	116	13
-1917	500	2006-09-08 00:00:00	428	1324
-1918	500	2006-10-23 00:00:00	428	13
-1919	500	2006-10-31 00:00:00	326	13
-1920	500	2005-05-09 00:00:00	11	1325
-1921	500	2006-09-26 00:00:00	288	1111
-1922	500	2006-09-12 00:00:00	436	13
-1923	500	2006-10-04 00:00:00	357	1152
-1924	500	2006-08-14 00:00:00	296	147
-1925	500	2005-06-03 00:00:00	423	1326
-1926	500	2005-06-29 00:00:00	423	1327
-1927	500	2006-09-26 00:00:00	423	1328
-1928	500	2006-10-13 00:00:00	448	1329
-1929	500	2005-03-14 00:00:00	39	1330
-1930	500	2005-03-08 00:00:00	449	1331
-1931	500	2005-03-18 00:00:00	23	1332
-1932	500	2005-02-16 00:00:00	222	1333
-1933	500	2005-02-01 00:00:00	11	1334
-1934	500	2005-02-23 00:00:00	11	1335
-1935	500	2005-02-01 00:00:00	11	1336
-1936	500	2006-09-30 00:00:00	23	1337
-1937	500	2006-11-28 00:00:00	11	1338
-1938	500	2006-11-28 00:00:00	11	1339
-1939	500	2006-11-29 00:00:00	11	1340
-1940	500	2006-12-11 00:00:00	11	1341
-1941	500	2006-11-30 00:00:00	222	1342
-1942	500	2006-08-23 00:00:00	12	1343
-1943	500	2006-06-30 00:00:00	12	1344
-1944	500	2006-10-30 00:00:00	450	1345
-1945	500	2006-07-26 00:00:00	401	74
-1946	500	2006-10-28 00:00:00	146	1346
-1947	500	2006-10-30 00:00:00	367	1347
-1948	500	2006-10-27 00:00:00	451	1348
-1949	500	2006-10-23 00:00:00	452	1349
-1950	500	2006-10-19 00:00:00	362	1350
-1951	500	2006-11-10 00:00:00	222	1351
-1952	500	2006-11-02 00:00:00	453	1352
-1953	500	2006-06-07 00:00:00	401	1353
-1954	500	2006-10-04 00:00:00	349	706
-1955	500	2006-10-18 00:00:00	454	1354
-1956	500	2006-10-18 00:00:00	455	1350
-1957	500	2006-10-04 00:00:00	413	1355
-1958	500	2006-10-18 00:00:00	456	1356
-1959	500	2006-10-17 00:00:00	28	1267
-1960	500	2006-10-11 00:00:00	222	1357
-1961	500	2006-10-02 00:00:00	222	1358
-1962	500	2006-10-18 00:00:00	457	1356
-1963	500	2006-09-28 00:00:00	175	1359
-1964	500	2006-09-26 00:00:00	13	1360
-1965	500	2006-09-19 00:00:00	222	1361
-1966	500	2006-09-25 00:00:00	217	485
-1967	500	2006-09-05 00:00:00	304	1362
-1968	500	2006-08-04 00:00:00	146	1363
-1969	500	2006-08-05 00:00:00	136	1364
-1970	500	2006-08-08 00:00:00	196	1365
-1971	500	2006-07-28 00:00:00	222	45
-1972	500	2006-07-14 00:00:00	67	1366
-1973	500	2006-06-23 00:00:00	458	1367
-1974	500	2006-06-14 00:00:00	146	1363
-1975	500	2006-04-26 00:00:00	39	1368
-1976	500	2006-06-30 00:00:00	451	1348
-1977	500	2006-06-22 00:00:00	28	1369
-1978	500	2006-06-20 00:00:00	28	1320
-1979	500	2006-03-09 00:00:00	267	1370
-1980	500	2006-07-26 00:00:00	361	1371
-1981	500	2006-07-26 00:00:00	361	1372
-1982	500	2006-06-14 00:00:00	11	1373
-1983	500	2006-06-27 00:00:00	11	710
-1984	500	2006-06-13 00:00:00	11	551
-1985	500	2006-06-13 00:00:00	11	864
-1986	500	2006-06-22 00:00:00	11	1374
-1987	500	2006-06-08 00:00:00	11	1375
-1988	500	2006-04-28 00:00:00	459	1376
-1989	500	2006-06-30 00:00:00	222	1361
-1990	500	2006-06-21 00:00:00	222	1377
-1991	500	2005-04-11 00:00:00	23	1259
-1992	500	2005-06-13 00:00:00	23	1168
-1993	500	2006-04-20 00:00:00	23	1259
-1994	500	2006-05-08 00:00:00	5	1378
-1995	500	2006-03-28 00:00:00	371	1379
-1996	500	2006-04-28 00:00:00	222	1380
-1997	500	2006-03-17 00:00:00	39	1381
-1998	500	2006-03-09 00:00:00	39	1100
-1999	500	2006-04-21 00:00:00	413	1355
-2000	500	2006-03-21 00:00:00	5	1382
-2001	500	2006-02-10 00:00:00	13	74
-2002	500	2006-03-20 00:00:00	451	1348
-2003	500	2006-03-22 00:00:00	12	1383
-2004	500	2006-03-28 00:00:00	12	1384
-2005	500	2006-03-13 00:00:00	12	1385
-2006	500	2006-03-30 00:00:00	207	1386
-2007	500	2006-03-31 00:00:00	207	1387
-2008	500	2006-03-31 00:00:00	460	1388
-2009	500	2006-02-22 00:00:00	461	1389
-2010	500	2005-12-13 00:00:00	39	1390
-2011	500	2005-12-13 00:00:00	39	1390
-2012	500	2005-12-13 00:00:00	39	1390
-2013	500	2005-12-06 00:00:00	39	1391
-2014	500	2005-12-06 00:00:00	39	1392
-2015	500	2006-01-30 00:00:00	222	1393
-2016	500	2005-12-28 00:00:00	11	1394
-2017	500	2005-12-29 00:00:00	11	1395
-2018	500	2005-12-17 00:00:00	462	1396
-2019	500	2005-12-16 00:00:00	463	1318
-2020	500	2005-12-03 00:00:00	28	1267
-2021	500	2005-11-14 00:00:00	2	1397
-2022	500	2005-02-01 00:00:00	11	1398
-2023	500	2005-11-10 00:00:00	222	1399
-2024	500	2005-11-21 00:00:00	222	1400
-2025	500	2005-11-10 00:00:00	11	1401
-2026	500	2005-11-10 00:00:00	11	1402
-2027	500	2005-11-10 00:00:00	11	1403
-2028	500	2005-11-10 00:00:00	11	1404
-2029	500	2005-11-10 00:00:00	11	1405
-2030	500	2005-11-10 00:00:00	11	1406
-2031	500	2005-11-10 00:00:00	11	1407
-2032	500	2005-11-15 00:00:00	349	1408
-2033	500	2005-07-29 00:00:00	39	1409
-2034	500	2005-07-29 00:00:00	39	1410
-2035	500	2005-07-29 00:00:00	39	1411
-2036	500	2005-07-29 00:00:00	39	1412
-2037	500	2005-07-29 00:00:00	39	1413
-2038	500	2005-07-29 00:00:00	39	1414
-2039	500	2005-07-29 00:00:00	39	1415
-2040	500	2005-09-19 00:00:00	39	1416
-2041	500	2005-07-29 00:00:00	39	1416
-2042	500	2005-07-29 00:00:00	39	1417
-2043	450	2005-12-12 00:00:00	192	13
-2044	450	2006-03-02 00:00:00	357	1152
-2045	450	2005-04-14 00:00:00	394	1418
-2046	450	2005-09-09 00:00:00	307	1419
-2047	425	2005-03-11 00:00:00	52	1065
-2048	420	2006-02-27 00:00:00	39	1138
-2049	420	2005-05-21 00:00:00	39	1420
-2050	400	2006-10-13 00:00:00	464	1421
-2051	400	2006-10-26 00:00:00	58	1422
-2052	400	2005-06-13 00:00:00	465	1200
-2053	400	2006-10-20 00:00:00	216	13
-2054	400	2005-01-29 00:00:00	466	543
-2055	400	2006-09-07 00:00:00	434	13
-2056	400	2005-11-02 00:00:00	467	1136
-2057	400	2006-06-12 00:00:00	326	13
-2058	400	2005-12-07 00:00:00	367	1106
-2059	400	2006-06-08 00:00:00	403	191
-2060	400	2005-12-29 00:00:00	222	1423
-2061	400	2006-03-27 00:00:00	12	1091
-2062	400	2006-03-31 00:00:00	306	1270
-2063	400	2006-05-30 00:00:00	403	974
-2064	400	2005-07-29 00:00:00	267	1424
-2065	400	2006-03-27 00:00:00	23	1168
-2066	400	2006-06-16 00:00:00	28	1267
-2067	400	2006-04-05 00:00:00	360	13
-2068	400	2006-05-26 00:00:00	376	1129
-2069	400	2006-09-20 00:00:00	4	1425
-2070	400	2006-09-11 00:00:00	18	1124
-2071	400	2006-09-30 00:00:00	303	1426
-2072	390	2006-05-03 00:00:00	52	1427
-2073	375	2005-05-18 00:00:00	468	1013
-2074	375	2005-05-27 00:00:00	293	1200
-2075	350	2005-09-09 00:00:00	307	1419
-2076	350	2005-06-03 00:00:00	323	1428
-2077	350	2005-01-03 00:00:00	222	1429
-2078	350	2006-05-23 00:00:00	347	1253
-2079	350	2006-02-21 00:00:00	39	1430
-2080	350	2005-08-30 00:00:00	39	1431
-2081	350	2005-08-30 00:00:00	39	1431
-2082	300	2005-10-19 00:00:00	222	734
-2083	300	2005-05-02 00:00:00	360	1432
-2084	300	2005-12-01 00:00:00	469	884
-2085	300	2006-10-19 00:00:00	436	13
-2086	300	2006-11-17 00:00:00	39	1433
-2087	300	2006-09-28 00:00:00	197	1272
-2088	300	2006-06-01 00:00:00	222	1434
-2089	300	2006-06-14 00:00:00	376	1435
-2090	300	2006-04-29 00:00:00	299	1436
-2091	300	2006-09-29 00:00:00	372	1437
-2092	300	2005-01-25 00:00:00	4	1438
-2093	300	2005-10-18 00:00:00	332	972
-2094	300	2005-10-07 00:00:00	222	1439
-2095	300	2006-03-17 00:00:00	338	1440
-2096	300	2005-10-03 00:00:00	222	1441
-2097	300	2006-12-12 00:00:00	430	13
-2098	300	2006-06-28 00:00:00	440	147
-2099	300	2005-10-27 00:00:00	76	1442
-2100	300	2006-06-23 00:00:00	367	1443
-2101	300	2005-06-01 00:00:00	76	1444
-2102	300	2006-11-06 00:00:00	436	1445
-2103	300	2006-04-25 00:00:00	470	1446
-2104	300	2005-07-11 00:00:00	471	1447
-2105	300	2006-03-21 00:00:00	76	1442
-2106	300	2006-08-29 00:00:00	472	1448
-2107	300	2005-03-09 00:00:00	87	1449
-2108	300	2005-06-02 00:00:00	403	974
-2109	300	2006-06-30 00:00:00	12	1343
-2110	300	2006-01-14 00:00:00	323	1450
-2111	300	2006-10-01 00:00:00	216	1451
-2112	300	2005-08-17 00:00:00	222	1452
-2113	300	2005-09-13 00:00:00	196	1453
-2114	300	2006-10-12 00:00:00	224	1454
-2115	300	2006-02-06 00:00:00	248	13
-2116	300	2006-03-13 00:00:00	222	734
-2117	300	2005-02-04 00:00:00	248	13
-2118	300	2006-09-07 00:00:00	380	1455
-2119	300	2005-05-03 00:00:00	360	1456
-2120	300	2006-10-21 00:00:00	473	13
-2121	300	2005-11-01 00:00:00	474	1457
-2122	300	2006-01-30 00:00:00	222	1458
-2123	300	2005-11-29 00:00:00	413	1459
-2124	300	2006-08-23 00:00:00	11	1460
-2125	300	2005-09-02 00:00:00	222	1461
-2126	300	2005-09-12 00:00:00	345	304
-2127	300	2005-09-28 00:00:00	222	1462
-2128	300	2006-10-19 00:00:00	447	13
-2129	300	2005-03-16 00:00:00	475	1463
-2130	300	2005-01-15 00:00:00	323	1136
-2131	300	2006-03-15 00:00:00	222	1464
-2132	275	2005-05-02 00:00:00	196	1465
-2133	275	2005-09-15 00:00:00	476	1466
-2134	250	2005-05-17 00:00:00	477	1467
-2135	250	2005-04-20 00:00:00	415	1468
-2136	250	2005-10-06 00:00:00	222	1469
-2137	250	2006-11-22 00:00:00	478	13
-2138	250	2006-05-26 00:00:00	146	1470
-2139	250	2006-07-01 00:00:00	479	13
-2140	250	2006-06-05 00:00:00	39	1471
-2141	250	2006-04-19 00:00:00	372	1472
-2142	250	2006-06-20 00:00:00	28	1473
-2143	250	2005-09-18 00:00:00	358	1474
-2144	250	2006-02-06 00:00:00	480	1455
-2145	250	2006-06-30 00:00:00	28	1475
-2146	250	2006-08-15 00:00:00	316	854
-2147	250	2006-01-26 00:00:00	481	13
-2148	250	2006-05-18 00:00:00	213	1476
-2149	250	2006-05-05 00:00:00	213	1477
-2150	250	2005-11-15 00:00:00	349	1478
-2151	250	2006-02-24 00:00:00	482	1246
-2152	250	2005-11-22 00:00:00	11	1479
-2153	250	2006-06-14 00:00:00	67	823
-2154	250	2006-08-30 00:00:00	483	1480
-2155	250	2005-11-29 00:00:00	222	1481
-2156	250	2005-11-07 00:00:00	222	1469
-2157	250	2005-12-11 00:00:00	264	1482
-2158	250	2006-06-19 00:00:00	484	13
-2159	250	2005-12-01 00:00:00	196	1122
-2160	250	2006-05-16 00:00:00	316	13
-2161	250	2005-12-13 00:00:00	485	1483
-2162	250	2005-09-13 00:00:00	353	1484
-2163	250	2006-02-15 00:00:00	4	1485
-2164	250	2006-03-20 00:00:00	136	1486
-2165	250	2006-04-28 00:00:00	222	1487
-2166	250	2006-06-20 00:00:00	486	13
-2167	250	2006-03-25 00:00:00	39	1099
-2168	250	2006-03-25 00:00:00	39	1099
-2169	250	2006-03-20 00:00:00	264	153
-2170	250	2006-03-24 00:00:00	39	1488
-2171	250	2006-09-07 00:00:00	341	1489
-2172	250	2006-09-20 00:00:00	379	1490
-2173	250	2006-09-20 00:00:00	436	1491
-2174	250	2006-03-24 00:00:00	39	1492
-2175	250	2005-02-01 00:00:00	4	1493
-2176	250	2006-12-14 00:00:00	222	1361
-2177	250	2005-02-21 00:00:00	222	1494
-2178	250	2005-02-04 00:00:00	222	1495
-2179	250	2005-02-23 00:00:00	222	1496
-2180	250	2005-02-24 00:00:00	222	1497
-2181	250	2006-10-11 00:00:00	303	251
-2182	250	2006-10-09 00:00:00	487	1498
-2183	250	2006-08-05 00:00:00	488	1499
-2184	250	2006-10-03 00:00:00	372	1500
-2185	250	2005-05-24 00:00:00	351	1501
-2186	250	2005-10-10 00:00:00	338	1466
-2187	250	2006-10-17 00:00:00	489	1502
-2188	250	2005-03-15 00:00:00	18	1503
-2189	250	2006-10-17 00:00:00	28	176
-2190	250	2006-10-26 00:00:00	266	1504
-2191	250	2005-03-28 00:00:00	222	1496
-2192	250	2006-10-10 00:00:00	490	1505
-2193	250	2005-03-28 00:00:00	222	1497
-2194	250	2005-05-09 00:00:00	244	13
-2195	250	2006-10-11 00:00:00	491	13
-2196	250	2005-03-15 00:00:00	492	1506
-2197	250	2005-05-28 00:00:00	493	1163
-2198	250	2005-03-15 00:00:00	492	1507
-2199	250	2005-04-07 00:00:00	11	1508
-2200	250	2005-04-20 00:00:00	4	1509
-2201	250	2006-09-26 00:00:00	12	1510
-2202	250	2005-05-16 00:00:00	222	1511
-2203	250	2005-09-20 00:00:00	379	1455
-2204	250	2005-06-03 00:00:00	52	1512
-2205	250	2005-07-19 00:00:00	222	1494
-2206	250	2005-05-28 00:00:00	299	1200
-2207	250	2006-01-03 00:00:00	241	1513
-2208	250	2005-11-17 00:00:00	241	1231
-2209	250	2005-09-22 00:00:00	470	1013
-2210	250	2006-10-26 00:00:00	494	13
-2211	250	2006-09-05 00:00:00	316	1514
-2212	250	2006-09-26 00:00:00	349	891
-2213	250	2005-05-08 00:00:00	495	1246
-2214	250	2005-09-21 00:00:00	316	1515
-2215	250	2006-08-14 00:00:00	67	1516
-2216	250	2006-08-23 00:00:00	372	1437
-2217	250	2006-12-20 00:00:00	11	1374
-2218	250	2006-07-05 00:00:00	222	1517
-2219	250	2005-09-12 00:00:00	316	854
-2220	250	2005-05-17 00:00:00	477	1467
-2221	250	2006-06-05 00:00:00	125	1518
-2222	250	2006-06-22 00:00:00	323	973
-2223	250	2006-02-13 00:00:00	296	13
-2224	250	2006-01-06 00:00:00	52	1519
-2225	250	2005-12-30 00:00:00	2	1520
-2226	250	2006-02-11 00:00:00	314	846
-2227	250	2006-07-01 00:00:00	314	13
-2228	250	2006-04-07 00:00:00	52	1521
-2229	250	2005-12-29 00:00:00	222	1481
-2230	250	2006-04-24 00:00:00	347	1522
-2231	250	2005-07-27 00:00:00	496	1523
-2232	250	2006-03-03 00:00:00	497	1524
-2233	250	2006-01-10 00:00:00	4	1525
-2234	250	2006-06-05 00:00:00	222	1517
-2235	250	2005-09-20 00:00:00	316	1501
-2236	250	2006-01-19 00:00:00	4	1525
-2237	250	2005-02-04 00:00:00	316	13
-2238	250	2006-06-19 00:00:00	409	1526
-2239	250	2006-06-21 00:00:00	409	1527
-2240	250	2006-01-10 00:00:00	76	1528
-2241	250	2006-05-17 00:00:00	5	80
-2242	250	2006-05-30 00:00:00	222	1487
-2243	250	2006-03-15 00:00:00	323	1529
-2244	240.97	2006-10-16 00:00:00	498	1530
-2245	225	2006-08-25 00:00:00	244	1152
-2246	225	2006-07-10 00:00:00	39	1531
-2247	210	2006-03-05 00:00:00	39	1532
-2248	206	2005-06-20 00:00:00	76	1533
-2249	205	2005-05-26 00:00:00	222	1534
-2250	201	2006-04-26 00:00:00	222	1535
-2251	200	2006-05-19 00:00:00	440	1536
-2252	200	2006-06-16 00:00:00	12	1343
-2253	200	2006-11-06 00:00:00	487	1537
-2254	200	2006-10-21 00:00:00	307	1538
-2255	200	2006-11-07 00:00:00	222	1535
-2256	200	2005-07-12 00:00:00	360	1539
-2257	200	2006-10-03 00:00:00	372	1500
-2258	200	2005-05-02 00:00:00	469	1540
-2259	200	2006-10-18 00:00:00	12	1344
-2260	200	2005-08-03 00:00:00	331	969
-2261	200	2005-08-03 00:00:00	331	1541
-2262	200	2005-07-19 00:00:00	345	304
-2263	200	2005-05-26 00:00:00	499	664
-2264	200	2006-09-26 00:00:00	349	1542
-2265	200	2006-08-30 00:00:00	222	1535
-2266	200	2005-01-14 00:00:00	323	1428
-2267	200	2005-10-25 00:00:00	477	1543
-2268	200	2006-08-17 00:00:00	500	1544
-2269	200	2006-07-20 00:00:00	345	304
-2270	200	2006-06-26 00:00:00	222	1535
-2271	200	2006-02-13 00:00:00	409	1545
-2272	200	2006-05-05 00:00:00	332	1546
-2273	200	2006-05-03 00:00:00	332	972
-2274	200	2005-08-22 00:00:00	501	1547
-2275	200	2006-09-01 00:00:00	440	1548
-2276	200	2006-09-28 00:00:00	502	1549
-2277	200	2006-03-12 00:00:00	28	1550
-2278	200	2005-12-16 00:00:00	52	1257
-2279	200	2005-12-20 00:00:00	402	1551
-2280	200	2005-11-07 00:00:00	300	1296
-2281	200	2006-07-14 00:00:00	331	969
-2282	200	2005-06-30 00:00:00	28	1552
-2283	200	2006-10-10 00:00:00	503	541
-2284	200	2005-04-26 00:00:00	76	1553
-2285	200	2005-02-17 00:00:00	222	1554
-2286	200	2006-07-07 00:00:00	471	1447
-2287	180	2006-08-03 00:00:00	291	1555
-2288	150	2006-09-28 00:00:00	337	1556
-2289	150	2006-10-12 00:00:00	337	1007
-2290	150	2005-01-31 00:00:00	332	1557
-2291	150	2005-10-18 00:00:00	332	1546
-2292	150	2005-02-16 00:00:00	332	1546
-2293	150	2006-09-19 00:00:00	437	1558
-2294	150	2006-06-16 00:00:00	360	281
-2295	150	2006-07-11 00:00:00	360	1559
-2296	150	2006-07-31 00:00:00	360	1560
-2297	150	2005-11-17 00:00:00	356	1561
-2298	150	2005-04-23 00:00:00	299	1562
-2299	150	2005-09-20 00:00:00	440	147
-2300	150	2006-03-18 00:00:00	338	1466
-2301	150	2006-05-06 00:00:00	299	1562
-2302	150	2006-03-30 00:00:00	244	13
-2303	150	2006-08-15 00:00:00	504	1563
-2304	150	2006-10-10 00:00:00	338	1564
-2305	150	2006-09-06 00:00:00	316	1565
-2306	150	2005-09-21 00:00:00	316	1566
-2307	150	2005-07-12 00:00:00	360	1567
-2308	150	2005-07-01 00:00:00	360	1436
-2309	150	2005-07-05 00:00:00	360	1568
-2310	150	2006-03-14 00:00:00	505	1569
-2311	150	2005-07-07 00:00:00	360	1570
-2312	150	2005-07-07 00:00:00	360	1305
-2313	150	2005-09-29 00:00:00	338	1564
-2314	150	2005-10-27 00:00:00	331	541
-2315	150	2006-07-15 00:00:00	438	1571
-2316	150	2005-01-24 00:00:00	244	1572
-2317	140	2006-08-26 00:00:00	283	1160
-2318	130	2006-06-08 00:00:00	283	1160
-2319	125	2005-06-04 00:00:00	241	1513
-2320	125	2006-05-13 00:00:00	314	846
-2321	125	2006-01-24 00:00:00	323	1573
-2322	125	2006-11-12 00:00:00	341	321
-2323	125	2005-02-15 00:00:00	470	1574
-2324	125	2006-02-09 00:00:00	506	1575
-2325	125	2006-08-14 00:00:00	357	1576
-2326	120	2005-08-05 00:00:00	291	1555
-2327	120	2006-05-11 00:00:00	293	1577
-2328	110	2006-05-07 00:00:00	507	1578
-2329	100	2007-01-06 00:00:00	341	1579
-2330	100	2005-04-14 00:00:00	323	1580
-2331	100	2005-05-07 00:00:00	323	1581
-2332	100	2005-06-20 00:00:00	428	1582
-2333	100	2006-09-26 00:00:00	480	944
-2334	100	2006-08-22 00:00:00	508	1455
-2335	100	2006-06-22 00:00:00	509	1018
-2336	100	2006-09-01 00:00:00	299	1024
-2337	100	2006-04-19 00:00:00	332	1557
-2338	100	2006-09-23 00:00:00	299	1562
-2339	100	2006-09-28 00:00:00	337	1583
-2340	100	2005-10-07 00:00:00	379	1584
-2341	100	2006-04-19 00:00:00	332	1585
-2342	100	2005-10-10 00:00:00	489	1586
-2343	100	2005-10-19 00:00:00	510	1587
-2344	100	2005-08-09 00:00:00	511	1588
-2345	100	2006-11-12 00:00:00	341	1589
-2346	100	2005-07-25 00:00:00	299	1024
-2347	100	2005-12-01 00:00:00	339	1590
-2348	100	2005-08-15 00:00:00	465	1591
-2349	100	2006-09-11 00:00:00	512	1592
-2350	100	2006-08-11 00:00:00	331	995
-2351	100	2006-06-02 00:00:00	348	1593
-2352	100	2006-07-17 00:00:00	513	1594
-2353	100	2006-08-10 00:00:00	347	147
-2354	100	2005-10-12 00:00:00	332	1595
-2355	100	2005-07-07 00:00:00	493	1596
-2356	100	2006-01-09 00:00:00	504	1455
-2357	100	2006-08-25 00:00:00	346	1023
-2358	100	2006-10-18 00:00:00	514	1455
-2359	100	2006-08-21 00:00:00	515	1597
-2360	100	2006-08-08 00:00:00	465	1598
-2361	100	2006-04-13 00:00:00	516	1599
-2362	100	2007-01-06 00:00:00	341	1600
-2363	100	2006-09-27 00:00:00	337	1601
-2364	100	2006-09-25 00:00:00	319	1602
-2365	100	2006-03-08 00:00:00	497	1603
-2366	100	2005-10-21 00:00:00	516	1569
-2367	100	2005-10-26 00:00:00	516	1604
-2368	100	2005-09-20 00:00:00	316	1605
-2369	100	2006-05-23 00:00:00	357	1606
-2370	100	2005-01-10 00:00:00	323	1573
-2371	85.700000000000003	2005-09-12 00:00:00	477	1607
-2372	75	2006-02-16 00:00:00	506	1608
-2373	75	2006-08-10 00:00:00	244	1012
-2374	75	2005-07-20 00:00:00	244	1572
-2375	75	2005-10-12 00:00:00	332	1585
-2376	70	2005-12-07 00:00:00	283	1609
-2377	70	2006-08-08 00:00:00	513	1610
-2378	66.670000000000002	2006-11-08 00:00:00	516	1611
-2379	66.659999999999997	2006-11-08 00:00:00	516	1612
-2380	66.659999999999997	2005-10-13 00:00:00	516	1613
-2381	65	2005-10-27 00:00:00	473	1614
-2382	63	2005-12-08 00:00:00	434	1615
-2383	60	2006-06-15 00:00:00	517	1616
-2384	60	2006-02-04 00:00:00	424	1248
-2385	50	2006-04-15 00:00:00	299	1617
-2386	50	2005-10-26 00:00:00	516	1618
-2387	50	2006-05-07 00:00:00	507	1619
-2388	50	2006-02-09 00:00:00	506	1620
-2389	50	2005-02-18 00:00:00	518	1621
-2390	50	2006-08-29 00:00:00	519	1622
-2391	40	2005-08-17 00:00:00	331	1623
-2392	40	2006-11-19 00:00:00	520	1624
-2393	40	2006-05-07 00:00:00	507	1625
-2394	40	2005-07-15 00:00:00	319	1626
-2395	40	2005-06-28 00:00:00	521	1627
-2396	40	2006-07-17 00:00:00	319	1602
-2397	40	\N	522	1628
-2398	35	2006-09-01 00:00:00	440	1629
-2399	30	2006-09-13 00:00:00	291	1014
-2400	25	2006-01-11 00:00:00	409	1630
-2401	25	2006-05-07 00:00:00	507	1631
-2402	25	2006-06-24 00:00:00	523	1632
-2403	25	2006-08-25 00:00:00	346	1026
-2404	25	2006-04-25 00:00:00	479	1633
-2405	25	2006-06-30 00:00:00	524	1634
-2406	25	2006-01-09 00:00:00	409	1635
-2407	15	2006-01-11 00:00:00	409	1636
-2408	-400	2006-03-27 00:00:00	12	1091
-2409	-500	2005-08-08 00:00:00	39	1416
-2410	-500	2006-07-26 00:00:00	361	1372
-2411	-900	2005-08-31 00:00:00	39	1637
-2412	-1050	2006-01-13 00:00:00	39	1638
-2413	-1500	2005-06-29 00:00:00	39	1639
-2414	-1800	2005-06-03 00:00:00	39	1640
-2415	-1900	2006-05-10 00:00:00	355	1085
-2416	-2100	2005-09-21 00:00:00	353	1080
-2417	-2100	2005-09-21 00:00:00	353	1079
-2418	-2100	2006-02-17 00:00:00	353	1641
-2419	-2100	2006-02-17 00:00:00	353	1642
-2420	2500	2004-10-14 00:00:00	525	1643
-2421	2000	2004-11-11 00:00:00	526	1644
-2422	2000	2005-02-19 00:00:00	527	1645
-2423	1000	2005-11-02 00:00:00	528	1646
-2424	1000	2005-03-13 00:00:00	526	1644
-2425	500	2005-06-08 00:00:00	528	1647
-2426	400	2005-02-01 00:00:00	525	1643
-2427	34000	2004-10-21 00:00:00	529	1063
-2428	33900	2004-01-08 00:00:00	530	1648
-2429	25000	2004-01-14 00:00:00	4	1649
-2430	25000	2004-09-24 00:00:00	4	1650
-2431	20000	2004-10-11 00:00:00	531	1651
-2432	15000	2003-12-31 00:00:00	2	1652
-2433	10000	2004-06-21 00:00:00	532	1653
-2434	8000	2004-06-08 00:00:00	533	1654
-2435	8000	2003-04-30 00:00:00	52	1065
-2436	8000	2004-06-21 00:00:00	76	1655
-2437	7700	2004-01-30 00:00:00	52	1065
-2438	5000	2003-12-29 00:00:00	349	1656
-2439	5000	2004-10-21 00:00:00	534	1326
-2440	5000	2004-10-20 00:00:00	534	1657
-2441	5000	2003-08-08 00:00:00	349	1658
-2442	5000	2003-12-29 00:00:00	530	1659
-2443	5000	2004-10-27 00:00:00	4	1068
-2444	5000	2004-10-29 00:00:00	349	1660
-2445	5000	2004-11-19 00:00:00	349	1661
-2446	5000	2004-11-01 00:00:00	4	1068
-2447	5000	2004-10-20 00:00:00	535	1662
-2448	5000	2003-08-08 00:00:00	349	1663
-2449	5000	2004-08-10 00:00:00	279	1664
-2450	5000	2004-12-09 00:00:00	11	1665
-2451	5000	2004-08-10 00:00:00	279	1666
-2452	5000	2004-03-30 00:00:00	279	1667
-2453	5000	2004-01-13 00:00:00	536	1668
-2454	5000	2003-04-24 00:00:00	349	1669
-2455	5000	2004-06-15 00:00:00	537	1670
-2456	5000	2004-06-23 00:00:00	2	1671
-2457	5000	2003-05-29 00:00:00	394	1323
-2458	5000	2003-05-29 00:00:00	538	1672
-2459	5000	2004-03-31 00:00:00	530	1673
-2460	5000	2004-01-16 00:00:00	539	13
-2461	5000	2003-05-20 00:00:00	540	1674
-2462	5000	2004-03-18 00:00:00	529	13
-2463	5000	2004-07-22 00:00:00	532	1653
-2464	5000	2004-07-13 00:00:00	4	1068
-2465	5000	2004-09-29 00:00:00	4	1068
-2466	5000	2004-10-13 00:00:00	349	1675
-2467	5000	2004-10-13 00:00:00	349	1676
-2468	5000	2003-12-23 00:00:00	349	1660
-2469	5000	2004-10-13 00:00:00	349	1677
-2470	4500	2003-04-23 00:00:00	52	1678
-2471	4500	2004-10-21 00:00:00	2	1679
-2472	4350	2003-09-02 00:00:00	76	1680
-2473	4000	2003-09-15 00:00:00	4	1068
-2474	4000	2004-06-17 00:00:00	532	1681
-2475	4000	2004-06-08 00:00:00	533	1654
-2476	3850	2004-12-02 00:00:00	11	1682
-2477	3700	2004-10-11 00:00:00	540	1683
-2478	3700	2003-12-01 00:00:00	540	1683
-2479	3400	2004-06-08 00:00:00	541	1684
-2480	3000	2004-07-22 00:00:00	76	1655
-2481	3000	2004-01-08 00:00:00	542	13
-2482	3000	2003-12-05 00:00:00	543	1685
-2483	2500	2004-09-09 00:00:00	222	1686
-2484	2500	2004-05-03 00:00:00	544	1064
-2485	2500	2003-09-15 00:00:00	545	1687
-2486	2500	2004-11-15 00:00:00	546	489
-2487	2500	2004-03-16 00:00:00	4	1068
-2488	2500	2004-10-20 00:00:00	349	1688
-2489	2500	2003-08-12 00:00:00	545	1689
-2490	2500	2004-07-27 00:00:00	547	1690
-2491	2500	2004-09-30 00:00:00	222	1686
-2492	2500	2003-05-20 00:00:00	394	1691
-2493	2500	2004-08-09 00:00:00	222	1692
-2494	2500	2004-07-02 00:00:00	222	1693
-2495	2500	2004-04-02 00:00:00	4	1068
-2496	2500	2004-10-11 00:00:00	222	1694
-2497	2200	2004-07-16 00:00:00	542	13
-2498	2100	2004-01-30 00:00:00	52	1065
-2499	2000	2004-04-26 00:00:00	196	1103
-2500	2000	2003-07-03 00:00:00	542	13
-2501	2000	2004-08-11 00:00:00	548	1695
-2502	2000	2003-06-25 00:00:00	549	1696
-2503	2000	2004-07-27 00:00:00	532	1697
-2504	2000	2003-12-10 00:00:00	542	13
-2505	2000	2004-03-04 00:00:00	543	1698
-2506	2000	2004-04-28 00:00:00	267	1699
-2507	2000	2004-01-20 00:00:00	550	1700
-2508	2000	2003-10-23 00:00:00	529	13
-2509	2000	2004-07-19 00:00:00	532	1701
-2510	2000	2004-07-27 00:00:00	551	1702
-2511	2000	2004-07-22 00:00:00	551	1703
-2512	2000	2003-05-31 00:00:00	552	1704
-2513	2000	2003-07-07 00:00:00	545	1705
-2514	2000	2004-01-20 00:00:00	550	1706
-2515	2000	2004-07-22 00:00:00	551	1655
-2516	2000	2004-09-22 00:00:00	553	1707
-2517	2000	2004-01-13 00:00:00	551	1708
-2518	2000	2004-09-30 00:00:00	175	1709
-2519	2000	2004-01-13 00:00:00	551	1710
-2520	2000	2004-08-17 00:00:00	18	1711
-2521	2000	2003-06-26 00:00:00	554	1143
-2522	2000	2004-09-28 00:00:00	555	1712
-2523	2000	2004-01-20 00:00:00	550	1713
-2524	2000	2004-10-18 00:00:00	378	13
-2525	2000	2004-03-04 00:00:00	543	1714
-2526	2000	2004-06-17 00:00:00	532	1715
-2527	2000	2003-06-30 00:00:00	556	1716
-2528	2000	2004-05-31 00:00:00	213	1717
-2529	2000	2003-03-31 00:00:00	556	1718
-2530	2000	2004-01-13 00:00:00	551	1719
-2531	2000	2003-12-23 00:00:00	550	1720
-2532	2000	2003-03-06 00:00:00	39	1721
-2533	2000	2003-03-06 00:00:00	39	1721
-2534	2000	2003-03-28 00:00:00	549	1722
-2535	2000	2004-07-19 00:00:00	76	1723
-2536	2000	2004-06-03 00:00:00	557	1724
-2537	2000	2003-06-23 00:00:00	543	1725
-2538	2000	2004-06-03 00:00:00	557	1726
-2539	2000	2003-09-09 00:00:00	367	1727
-2540	2000	2003-06-27 00:00:00	558	1728
-2541	2000	2004-03-02 00:00:00	551	1729
-2542	2000	2004-05-17 00:00:00	559	1730
-2543	2000	2003-04-29 00:00:00	558	1731
-2544	2000	2004-06-14 00:00:00	549	1732
-2545	2000	2004-07-22 00:00:00	532	1733
-2546	2000	2003-11-24 00:00:00	39	1734
-2547	2000	2003-06-30 00:00:00	558	1735
-2548	2000	2003-11-04 00:00:00	550	1736
-2549	2000	2004-03-05 00:00:00	543	1737
-2550	2000	2004-03-05 00:00:00	543	1738
-2551	2000	2004-03-05 00:00:00	543	1739
-2552	2000	2003-10-14 00:00:00	543	1740
-2553	2000	2004-03-11 00:00:00	543	1741
-2554	2000	2003-07-17 00:00:00	265	1742
-2555	2000	2003-09-29 00:00:00	265	1742
-2556	2000	2004-03-05 00:00:00	543	1743
-2557	2000	2004-04-12 00:00:00	543	1744
-2558	2000	2003-09-25 00:00:00	560	1745
-2559	2000	2004-08-23 00:00:00	561	489
-2560	2000	2003-05-07 00:00:00	26	1746
-2561	2000	2004-06-17 00:00:00	76	1747
-2562	2000	2004-01-22 00:00:00	551	1748
-2563	2000	2003-10-28 00:00:00	213	1749
-2564	2000	2004-04-29 00:00:00	562	1750
-2565	2000	2004-11-01 00:00:00	563	1751
-2566	2000	2004-04-12 00:00:00	551	1752
-2567	2000	2004-04-01 00:00:00	551	1753
-2568	2000	2003-12-04 00:00:00	549	1754
-2569	2000	2003-10-28 00:00:00	213	1755
-2570	2000	2004-03-08 00:00:00	543	1756
-2571	2000	2004-04-19 00:00:00	551	1757
-2572	2000	2004-04-01 00:00:00	551	1758
-2573	2000	2004-03-11 00:00:00	543	1759
-2574	2000	2003-10-04 00:00:00	561	489
-2575	2000	2004-06-21 00:00:00	551	1655
-2576	2000	2004-02-07 00:00:00	39	1760
-2577	2000	2004-09-14 00:00:00	564	1761
-2578	2000	2004-06-17 00:00:00	551	1747
-2579	1850	2004-09-13 00:00:00	565	1762
-2580	1500	2004-11-01 00:00:00	531	1763
-2581	1500	2003-11-13 00:00:00	543	1764
-2582	1500	2003-05-31 00:00:00	566	1765
-2583	1500	2003-06-27 00:00:00	335	1766
-2584	1500	2004-07-22 00:00:00	551	1767
-2585	1500	2004-06-16 00:00:00	11	1768
-2586	1500	2004-11-02 00:00:00	367	1727
-2587	1500	2004-12-16 00:00:00	39	1330
-2588	1500	2003-05-31 00:00:00	566	1765
-2589	1500	2004-07-21 00:00:00	11	551
-2590	1500	2004-10-20 00:00:00	562	1769
-2591	1500	2004-06-25 00:00:00	306	1770
-2592	1500	2004-11-12 00:00:00	245	13
-2593	1500	2004-12-07 00:00:00	394	1691
-2594	1350	2003-10-08 00:00:00	565	1762
-2595	1300	2004-11-01 00:00:00	531	1771
-2596	1250	2003-05-09 00:00:00	222	1772
-2597	1250	2003-04-08 00:00:00	222	1773
-2598	1250	2003-07-09 00:00:00	222	1692
-2599	1250	2003-06-09 00:00:00	222	1692
-2600	1200	2003-05-06 00:00:00	287	1164
-2601	1200	2004-10-24 00:00:00	531	1774
-2602	1100	2003-10-16 00:00:00	229	13
-2603	1001	2003-12-19 00:00:00	530	1775
-2604	1000	2003-12-08 00:00:00	246	1776
-2605	1000	2004-05-04 00:00:00	567	1777
-2606	1000	2004-06-11 00:00:00	39	1778
-2607	1000	2004-07-22 00:00:00	551	1779
-2608	1000	2004-01-30 00:00:00	551	1780
-2609	1000	2004-07-26 00:00:00	551	1781
-2610	1000	2004-08-25 00:00:00	213	1782
-2611	1000	2004-01-19 00:00:00	550	1783
-2612	1000	2004-08-16 00:00:00	18	1784
-2613	1000	2004-07-08 00:00:00	549	1785
-2614	1000	2004-07-26 00:00:00	532	1786
-2615	1000	2004-08-16 00:00:00	551	1787
-2616	1000	2004-04-09 00:00:00	568	1788
-2617	1000	2004-08-27 00:00:00	564	1789
-2618	1000	2004-09-03 00:00:00	28	1790
-2619	1000	2004-09-03 00:00:00	28	1791
-2620	1000	2004-09-03 00:00:00	28	1792
-2621	1000	2004-09-03 00:00:00	222	1793
-2622	1000	2004-09-09 00:00:00	569	1794
-2623	1000	2004-10-05 00:00:00	570	1795
-2624	1000	2004-02-03 00:00:00	204	1796
-2625	1000	2004-09-07 00:00:00	549	1797
-2626	1000	2004-07-12 00:00:00	571	1798
-2627	1000	2004-02-03 00:00:00	204	1064
-2628	1000	2003-07-17 00:00:00	246	1776
-2629	1000	2003-07-17 00:00:00	246	1799
-2630	1000	2004-09-24 00:00:00	76	1800
-2631	1000	2004-10-11 00:00:00	222	1793
-2632	1000	2004-09-23 00:00:00	175	1801
-2633	1000	2004-10-05 00:00:00	76	1802
-2634	1000	2004-10-01 00:00:00	76	1803
-2635	1000	2003-12-29 00:00:00	196	1103
-2636	1000	2004-11-01 00:00:00	307	1804
-2637	1000	2004-11-21 00:00:00	28	176
-2638	1000	2004-10-25 00:00:00	564	1805
-2639	1000	2003-12-30 00:00:00	11	1806
-2640	1000	2004-11-08 00:00:00	222	1807
-2641	1000	2004-11-01 00:00:00	222	1808
-2642	1000	2004-01-05 00:00:00	572	1809
-2643	1000	2004-11-02 00:00:00	2	1810
-2644	1000	2004-10-21 00:00:00	573	69
-2645	1000	2004-10-31 00:00:00	76	1811
-2646	1000	2003-11-21 00:00:00	572	1812
-2647	1000	2004-03-12 00:00:00	11	1813
-2648	1000	2004-12-02 00:00:00	11	1814
-2649	1000	2004-11-29 00:00:00	222	1815
-2650	1000	2004-01-14 00:00:00	556	1816
-2651	1000	2003-06-30 00:00:00	558	1817
-2652	1000	2003-07-01 00:00:00	549	1818
-2653	1000	2003-09-30 00:00:00	551	1302
-2654	1000	2003-10-28 00:00:00	574	1819
-2655	1000	2003-11-24 00:00:00	39	1734
-2656	1000	2004-03-11 00:00:00	543	1820
-2657	1000	2004-03-11 00:00:00	543	1820
-2658	1000	2003-07-24 00:00:00	213	1782
-2659	1000	2003-10-27 00:00:00	39	1420
-2660	1000	2003-08-21 00:00:00	575	1821
-2661	1000	2003-07-31 00:00:00	575	1822
-2662	1000	2003-07-24 00:00:00	556	1823
-2663	1000	2003-07-24 00:00:00	556	1824
-2664	1000	2004-04-14 00:00:00	576	1788
-2665	1000	2003-03-30 00:00:00	279	1825
-2666	1000	2004-04-26 00:00:00	196	1103
-2667	1000	2003-06-25 00:00:00	549	1826
-2668	1000	2003-06-25 00:00:00	549	1826
-2669	1000	2003-05-16 00:00:00	549	1827
-2670	1000	2003-06-24 00:00:00	28	1828
-2671	1000	2003-12-09 00:00:00	577	1829
-2672	1000	2003-09-08 00:00:00	177	1830
-2673	1000	2003-12-15 00:00:00	543	1831
-2674	1000	2003-06-26 00:00:00	11	1832
-2675	1000	2003-06-23 00:00:00	452	1833
-2676	1000	2003-06-26 00:00:00	204	1834
-2677	1000	2003-06-30 00:00:00	204	1064
-2678	1000	2003-06-19 00:00:00	575	1821
-2679	1000	2003-06-30 00:00:00	558	1835
-2680	1000	2003-06-30 00:00:00	177	1836
-2681	1000	2003-12-15 00:00:00	543	1837
-2682	1000	2003-12-08 00:00:00	543	1838
-2683	1000	2003-06-28 00:00:00	6	1839
-2684	1000	2003-11-20 00:00:00	543	1840
-2685	1000	2003-05-14 00:00:00	222	1772
-2686	1000	2003-11-20 00:00:00	543	1841
-2687	1000	2003-05-06 00:00:00	4	1068
-2688	1000	2003-11-24 00:00:00	543	1842
-2689	1000	2004-05-27 00:00:00	549	1843
-2690	1000	2004-05-19 00:00:00	574	1844
-2691	1000	2004-05-22 00:00:00	578	1845
-2692	1000	2004-05-25 00:00:00	579	1846
-2693	1000	2004-03-09 00:00:00	551	1847
-2694	1000	2004-03-09 00:00:00	551	1848
-2695	1000	2003-02-25 00:00:00	549	1849
-2696	1000	2003-02-25 00:00:00	549	1849
-2697	1000	2003-02-25 00:00:00	549	1850
-2698	1000	2004-04-09 00:00:00	580	1798
-2699	1000	2003-02-25 00:00:00	549	1850
-2700	1000	2003-02-12 00:00:00	549	1851
-2701	1000	2003-02-25 00:00:00	549	1852
-2702	1000	2003-02-25 00:00:00	549	1852
-2703	1000	2003-02-25 00:00:00	549	1853
-2704	1000	2003-02-25 00:00:00	549	1853
-2705	1000	2003-02-05 00:00:00	549	1854
-2706	1000	2003-03-30 00:00:00	39	1855
-2707	1000	2003-03-18 00:00:00	246	1856
-2708	1000	2003-03-29 00:00:00	581	1857
-2709	1000	2004-03-23 00:00:00	76	1858
-2710	1000	2004-06-30 00:00:00	564	1859
-2711	1000	2004-06-21 00:00:00	564	1860
-2712	1000	2003-03-26 00:00:00	556	1861
-2713	1000	2004-03-26 00:00:00	28	1862
-2714	1000	2004-06-21 00:00:00	564	1761
-2715	1000	2004-05-31 00:00:00	213	1863
-2716	1000	2004-03-31 00:00:00	28	1862
-2717	1000	2004-03-30 00:00:00	84	1864
-2718	1000	2004-01-24 00:00:00	562	1865
-2719	1000	2003-10-09 00:00:00	575	1822
-2720	1000	2003-02-10 00:00:00	11	1813
-2721	1000	2003-11-25 00:00:00	558	1866
-2722	1000	2004-05-07 00:00:00	222	1867
-2723	1000	2003-12-11 00:00:00	306	1270
-2724	1000	2003-12-30 00:00:00	213	1782
-2725	1000	2004-04-19 00:00:00	2	1868
-2726	1000	2004-04-07 00:00:00	4	1869
-2727	1000	2004-04-23 00:00:00	4	1870
-2728	1000	2004-04-28 00:00:00	582	1871
-2729	1000	2004-04-12 00:00:00	583	1872
-2730	1000	2004-04-12 00:00:00	413	1873
-2731	1000	2003-09-23 00:00:00	584	1326
-2732	1000	2004-06-25 00:00:00	584	1874
-2733	1000	2004-10-20 00:00:00	531	1875
-2734	1000	2003-10-29 00:00:00	555	1876
-2735	1000	2003-02-06 00:00:00	529	1877
-2736	1000	2004-10-23 00:00:00	565	1878
-2737	1000	2004-10-27 00:00:00	565	1198
-2738	1000	2003-09-16 00:00:00	585	1879
-2739	1000	2004-09-08 00:00:00	230	13
-2740	1000	2004-11-04 00:00:00	396	1152
-2741	1000	2003-08-27 00:00:00	331	13
-2742	1000	2003-01-09 00:00:00	248	13
-2743	1000	2004-05-06 00:00:00	287	1880
-2744	1000	2003-06-05 00:00:00	538	1881
-2745	1000	2004-09-10 00:00:00	435	13
-2746	1000	2004-07-24 00:00:00	586	164
-2747	1000	2004-09-11 00:00:00	333	13
-2748	1000	2004-06-23 00:00:00	398	1882
-2749	1000	2003-05-19 00:00:00	530	1883
-2750	1000	2004-08-26 00:00:00	229	13
-2751	1000	2003-01-28 00:00:00	381	1884
-2752	1000	2003-05-29 00:00:00	396	13
-2753	1000	2004-09-17 00:00:00	478	1885
-2754	1000	2003-09-26 00:00:00	248	13
-2755	1000	2004-10-29 00:00:00	261	13
-2756	1000	2003-04-22 00:00:00	587	13
-2757	1000	2004-09-09 00:00:00	588	13
-2758	1000	2003-06-30 00:00:00	530	1886
-2759	1000	2003-02-28 00:00:00	530	1887
-2760	1000	2004-11-12 00:00:00	589	1888
-2761	1000	2003-04-08 00:00:00	530	1889
-2762	1000	2004-06-29 00:00:00	590	1890
-2763	1000	2004-10-29 00:00:00	530	1152
-2764	1000	2004-08-06 00:00:00	500	1891
-2765	1000	2004-10-25 00:00:00	561	1892
-2766	1000	2004-05-11 00:00:00	588	13
-2767	1000	2003-10-03 00:00:00	530	1877
-2768	1000	2004-10-19 00:00:00	346	1893
-2769	1000	2003-12-08 00:00:00	333	13
-2770	1000	2004-10-02 00:00:00	591	1894
-2771	1000	2003-07-21 00:00:00	394	1895
-2772	1000	2003-07-11 00:00:00	545	1896
-2773	1000	2005-01-04 00:00:00	381	1152
-2774	1000	2004-03-02 00:00:00	230	1455
-2775	950	2003-06-30 00:00:00	287	1010
-2776	900	2004-07-01 00:00:00	11	1897
-2777	900	2004-07-01 00:00:00	11	1832
-2778	900	2004-07-01 00:00:00	11	1898
-2779	900	2004-07-01 00:00:00	11	1682
-2780	900	2004-07-01 00:00:00	11	1899
-2781	900	2003-05-08 00:00:00	592	1900
-2782	900	2003-10-09 00:00:00	11	1901
-2783	900	2004-05-06 00:00:00	287	1902
-2784	900	2004-06-16 00:00:00	11	1903
-2785	900	2003-05-06 00:00:00	287	1904
-2786	900	2003-06-27 00:00:00	11	1905
-2787	850	2004-09-21 00:00:00	593	1906
-2788	800	2004-09-24 00:00:00	542	13
-2789	800	2004-08-13 00:00:00	282	1907
-2790	800	2003-08-01 00:00:00	287	1908
-2791	800	2004-03-11 00:00:00	291	1909
-2792	800	2003-06-01 00:00:00	216	1910
-2793	750	2004-11-01 00:00:00	291	13
-2794	750	2004-08-25 00:00:00	76	1911
-2795	750	2003-08-08 00:00:00	4	1912
-2796	750	2004-01-23 00:00:00	4	1913
-2797	750	2004-03-10 00:00:00	594	1914
-2798	700	2004-10-18 00:00:00	531	1915
-2799	700	2004-03-20 00:00:00	595	1916
-2800	700	2004-03-23 00:00:00	595	1917
-2801	700	2004-03-23 00:00:00	595	1918
-2802	700	2003-01-22 00:00:00	293	1919
-2803	700	2003-11-24 00:00:00	560	1745
-2804	700	2004-10-29 00:00:00	531	1920
-2805	700	2004-09-14 00:00:00	11	1813
-2806	640	2004-09-08 00:00:00	596	1921
-2807	625	2003-03-04 00:00:00	222	1922
-2808	625	2004-07-21 00:00:00	222	1923
-2809	625	2004-08-20 00:00:00	222	1923
-2810	625	2004-05-20 00:00:00	222	1924
-2811	625	2003-04-03 00:00:00	222	1922
-2812	600	2003-10-02 00:00:00	529	1877
-2813	600	2004-05-13 00:00:00	592	1925
-2814	600	2004-02-26 00:00:00	542	1926
-2815	600	2004-01-31 00:00:00	312	1927
-2816	600	2004-02-02 00:00:00	248	13
-2817	600	2003-04-01 00:00:00	287	1164
-2818	600	2004-04-22 00:00:00	597	13
-2819	600	2003-09-12 00:00:00	598	1928
-2820	600	2004-05-06 00:00:00	287	1164
-2821	600	2003-05-23 00:00:00	222	1929
-2822	550	2004-09-27 00:00:00	545	1269
-2823	550	2003-03-07 00:00:00	430	13
-2824	501	2004-01-07 00:00:00	599	1930
-2825	501	2004-10-05 00:00:00	4	1931
-2826	500	2004-12-02 00:00:00	11	1932
-2827	500	2004-12-02 00:00:00	11	1933
-2828	500	2004-06-11 00:00:00	28	1934
-2829	500	2004-06-11 00:00:00	28	1935
-2830	500	2004-12-02 00:00:00	11	1936
-2831	500	2003-12-09 00:00:00	554	1937
-2832	500	2004-12-02 00:00:00	11	1938
-2833	500	2004-05-28 00:00:00	222	1939
-2834	500	2003-04-21 00:00:00	299	1436
-2835	500	2004-05-10 00:00:00	222	1940
-2836	500	2004-12-02 00:00:00	11	1941
-2837	500	2003-09-19 00:00:00	287	1024
-2838	500	2004-05-04 00:00:00	4	1931
-2839	500	2004-12-02 00:00:00	11	1942
-2840	500	2003-12-30 00:00:00	213	1782
-2841	500	2004-05-20 00:00:00	4	751
-2842	500	2004-05-10 00:00:00	11	1943
-2843	500	2004-04-23 00:00:00	600	13
-2844	500	2003-12-02 00:00:00	572	1944
-2845	500	2003-12-29 00:00:00	572	1945
-2846	500	2003-12-05 00:00:00	572	1946
-2847	500	2003-12-04 00:00:00	572	1947
-2848	500	2003-12-04 00:00:00	572	1948
-2849	500	2003-12-04 00:00:00	572	1949
-2850	500	2003-12-03 00:00:00	572	1950
-2851	500	2004-12-09 00:00:00	11	1951
-2852	500	2004-12-02 00:00:00	11	1952
-2853	500	2004-12-02 00:00:00	11	1953
-2854	500	2004-12-09 00:00:00	11	1954
-2855	500	2004-04-28 00:00:00	551	1955
-2856	500	2004-04-26 00:00:00	551	1956
-2857	500	2004-12-09 00:00:00	11	1957
-2858	500	2004-07-01 00:00:00	11	1958
-2859	500	2004-07-01 00:00:00	11	1959
-2860	500	2003-10-30 00:00:00	28	486
-2861	500	2003-12-04 00:00:00	28	1934
-2862	500	2003-11-13 00:00:00	572	1960
-2863	500	2004-10-18 00:00:00	76	1811
-2864	500	2003-12-18 00:00:00	222	1961
-2865	500	2003-11-17 00:00:00	4	1962
-2866	500	2004-01-12 00:00:00	267	1963
-2867	500	2004-12-10 00:00:00	601	13
-2868	500	2004-04-06 00:00:00	4	1964
-2869	500	2004-04-19 00:00:00	543	1965
-2870	500	2004-04-30 00:00:00	543	1966
-2871	500	2004-11-01 00:00:00	4	1967
-2872	500	2004-04-12 00:00:00	222	1968
-2873	500	2003-12-16 00:00:00	222	1867
-2874	500	2004-08-25 00:00:00	564	1761
-2875	500	2003-12-31 00:00:00	11	1958
-2876	500	2004-10-25 00:00:00	4	1969
-2877	500	2003-08-22 00:00:00	602	1970
-2878	500	2004-03-27 00:00:00	603	1971
-2879	500	2004-10-29 00:00:00	604	1972
-2880	500	2004-03-08 00:00:00	367	1973
-2881	500	2004-11-01 00:00:00	531	1974
-2882	500	2004-10-26 00:00:00	531	1975
-2883	500	2004-11-16 00:00:00	222	1976
-2884	500	2004-10-28 00:00:00	222	45
-2885	500	2003-12-31 00:00:00	11	1977
-2886	500	2003-10-29 00:00:00	592	1978
-2887	500	2004-05-25 00:00:00	605	1979
-2888	500	2003-11-04 00:00:00	606	1980
-2889	500	2004-10-22 00:00:00	607	1981
-2890	500	2004-10-15 00:00:00	307	1982
-2891	500	2004-02-29 00:00:00	608	1983
-2892	500	2004-10-28 00:00:00	349	1984
-2893	500	2004-02-03 00:00:00	256	1985
-2894	500	2003-10-01 00:00:00	4	1068
-2895	500	2004-10-12 00:00:00	609	1986
-2896	500	2004-02-04 00:00:00	543	1987
-2897	500	2004-09-15 00:00:00	76	1988
-2898	500	2004-12-02 00:00:00	11	1989
-2899	500	2004-12-02 00:00:00	11	1990
-2900	500	2004-03-16 00:00:00	551	1991
-2901	500	2003-02-28 00:00:00	436	489
-2902	500	2004-12-02 00:00:00	11	1992
-2903	500	2003-03-10 00:00:00	222	1993
-2904	500	2004-12-02 00:00:00	11	1994
-2905	500	2004-05-07 00:00:00	244	1152
-2906	500	2004-03-20 00:00:00	338	1995
-2907	500	2004-08-02 00:00:00	543	1987
-2908	500	2004-05-14 00:00:00	610	1996
-2909	500	2004-05-14 00:00:00	610	1997
-2910	500	2004-12-29 00:00:00	11	1998
-2911	500	2004-04-20 00:00:00	611	1999
-2912	500	2004-06-22 00:00:00	296	147
-2913	500	2003-11-03 00:00:00	542	1250
-2914	500	2004-12-02 00:00:00	11	2000
-2915	500	2004-08-11 00:00:00	280	670
-2916	500	2004-12-02 00:00:00	11	2001
-2917	500	2004-12-02 00:00:00	11	2002
-2918	500	2003-01-27 00:00:00	39	2003
-2919	500	2004-05-25 00:00:00	39	1810
-2920	500	2003-03-27 00:00:00	25	2004
-2921	500	2003-03-24 00:00:00	612	2005
-2922	500	2003-03-27 00:00:00	256	2006
-2923	500	2003-03-27 00:00:00	256	2007
-2924	500	2003-03-27 00:00:00	256	2008
-2925	500	2004-06-01 00:00:00	39	1810
-2926	500	2004-12-02 00:00:00	11	2009
-2927	500	2004-03-21 00:00:00	613	489
-2928	500	2004-06-30 00:00:00	564	1761
-2929	500	2004-12-09 00:00:00	11	2010
-2930	500	2004-12-02 00:00:00	11	2010
-2931	500	2004-10-26 00:00:00	282	13
-2932	500	2003-05-23 00:00:00	331	2011
-2933	500	2004-06-04 00:00:00	246	1219
-2934	500	2003-02-21 00:00:00	222	2012
-2935	500	2003-02-21 00:00:00	222	2013
-2936	500	2004-12-02 00:00:00	11	2014
-2937	500	2003-02-04 00:00:00	222	2015
-2938	500	2004-08-14 00:00:00	611	2016
-2939	500	2004-12-02 00:00:00	11	2017
-2940	500	2003-05-29 00:00:00	394	1323
-2941	500	2004-06-04 00:00:00	349	2018
-2942	500	2004-12-02 00:00:00	11	1213
-2943	500	2003-01-27 00:00:00	222	1993
-2944	500	2003-12-09 00:00:00	554	2019
-2945	500	2004-06-25 00:00:00	306	2020
-2946	500	2004-12-02 00:00:00	11	2021
-2947	500	2004-06-29 00:00:00	28	2022
-2948	500	2004-06-29 00:00:00	28	2023
-2949	500	2004-07-19 00:00:00	551	2024
-2950	500	2004-09-13 00:00:00	569	2025
-2951	500	2003-11-10 00:00:00	378	13
-2952	500	2004-04-15 00:00:00	359	1289
-2953	500	2004-06-02 00:00:00	545	1289
-2954	500	2003-10-19 00:00:00	614	1024
-2955	500	2004-09-14 00:00:00	608	2026
-2956	500	2003-07-16 00:00:00	394	1024
-2957	500	2003-05-30 00:00:00	420	2027
-2958	500	2004-09-28 00:00:00	222	1867
-2959	500	2003-08-07 00:00:00	615	13
-2960	500	2003-04-01 00:00:00	616	2028
-2961	500	2004-08-22 00:00:00	617	2029
-2962	500	2004-09-30 00:00:00	427	1256
-2963	500	2004-10-21 00:00:00	596	2030
-2964	500	2004-09-09 00:00:00	213	2031
-2965	500	2003-02-22 00:00:00	335	2032
-2966	500	2004-04-08 00:00:00	477	2033
-2967	500	2004-10-14 00:00:00	542	2034
-2968	500	2004-09-09 00:00:00	213	2035
-2969	500	2004-10-12 00:00:00	618	2036
-2970	500	2003-10-29 00:00:00	619	13
-2971	500	2004-09-24 00:00:00	306	2037
-2972	500	2004-07-21 00:00:00	4	1931
-2973	500	2004-09-02 00:00:00	28	2038
-2974	500	2004-08-31 00:00:00	28	2039
-2975	500	2004-11-06 00:00:00	479	2040
-2976	500	2004-04-28 00:00:00	479	13
-2977	500	2003-11-20 00:00:00	620	2032
-2978	500	2003-12-09 00:00:00	554	1895
-2979	500	2004-09-02 00:00:00	28	1935
-2980	500	2004-03-26 00:00:00	331	13
-2981	500	2004-10-26 00:00:00	621	2041
-2982	500	2004-10-15 00:00:00	327	947
-2983	500	2003-07-14 00:00:00	394	13
-2984	500	2003-05-29 00:00:00	394	2042
-2985	500	2004-01-27 00:00:00	587	13
-2986	500	2004-06-05 00:00:00	436	13
-2987	500	2004-02-05 00:00:00	587	13
-2988	500	2004-01-22 00:00:00	542	2043
-2989	500	2004-06-10 00:00:00	622	13
-2990	500	2003-07-03 00:00:00	222	2044
-2991	500	2003-07-18 00:00:00	222	1940
-2992	500	2004-11-09 00:00:00	244	1152
-2993	500	2003-08-06 00:00:00	222	2045
-2994	500	2003-07-11 00:00:00	552	13
-2995	500	2004-05-07 00:00:00	623	2046
-2996	500	2003-05-05 00:00:00	599	2047
-2997	500	2003-05-05 00:00:00	599	2032
-2998	500	2003-04-30 00:00:00	549	2048
-2999	500	2003-04-30 00:00:00	549	2049
-3000	500	2003-05-10 00:00:00	195	2050
-3001	500	2003-06-28 00:00:00	368	2051
-3002	500	2003-11-26 00:00:00	583	2052
-3003	500	2003-08-12 00:00:00	52	2053
-3004	500	2003-07-23 00:00:00	560	1745
-3005	500	2003-06-20 00:00:00	2	1868
-3006	500	2003-06-24 00:00:00	28	2054
-3007	500	2003-06-24 00:00:00	28	1935
-3008	500	2004-04-27 00:00:00	186	2055
-3009	500	2003-12-18 00:00:00	599	2056
-3010	500	2003-06-24 00:00:00	28	176
-3011	500	2004-04-28 00:00:00	186	1864
-3012	500	2003-03-06 00:00:00	624	2057
-3013	500	2004-05-07 00:00:00	186	2058
-3014	500	2004-03-24 00:00:00	543	2059
-3015	500	2003-06-01 00:00:00	11	2060
-3016	500	2004-06-23 00:00:00	11	2061
-3017	500	2003-09-22 00:00:00	213	2062
-3018	500	2004-05-21 00:00:00	394	2063
-3019	500	2003-11-19 00:00:00	625	2064
-3020	500	2004-06-16 00:00:00	11	2065
-3021	500	2003-08-05 00:00:00	213	2066
-3022	500	2005-01-04 00:00:00	552	13
-3023	500	2003-09-09 00:00:00	367	1727
-3024	500	2003-06-30 00:00:00	558	2067
-3025	500	2003-07-08 00:00:00	367	2068
-3026	500	2003-09-30 00:00:00	551	2069
-3027	500	2003-05-23 00:00:00	558	2070
-3028	500	2003-06-29 00:00:00	560	2071
-3029	500	2003-11-20 00:00:00	620	2072
-3030	500	2003-09-30 00:00:00	222	1867
-3031	500	2004-01-23 00:00:00	345	1134
-3032	500	2004-09-12 00:00:00	338	2073
-3033	500	2003-06-17 00:00:00	349	2018
-3034	500	2003-05-05 00:00:00	222	2074
-3035	500	2003-05-08 00:00:00	222	2075
-3036	500	2003-12-06 00:00:00	241	2076
-3037	500	2004-03-10 00:00:00	551	2069
-3038	500	2004-10-26 00:00:00	590	2077
-3039	500	2004-07-01 00:00:00	11	1813
-3040	500	2004-10-26 00:00:00	521	13
-3041	500	2004-06-01 00:00:00	626	147
-3042	500	2004-01-02 00:00:00	349	2078
-3043	500	2003-08-18 00:00:00	39	2079
-3044	500	2003-09-18 00:00:00	280	670
-3045	500	2004-01-15 00:00:00	627	2080
-3046	500	2004-12-03 00:00:00	222	2081
-3047	500	2003-04-24 00:00:00	11	2060
-3048	500	2003-07-21 00:00:00	394	2082
-3049	500	2004-05-06 00:00:00	503	2083
-3050	500	2004-12-09 00:00:00	11	1832
-3051	500	2004-12-02 00:00:00	11	2084
-3052	500	2004-05-10 00:00:00	503	2085
-3053	500	2004-12-02 00:00:00	11	2086
-3054	500	2004-12-02 00:00:00	11	2087
-3055	500	2004-09-13 00:00:00	76	2088
-3056	500	2004-10-13 00:00:00	628	2089
-3057	500	2004-10-13 00:00:00	553	2090
-3058	500	2004-09-25 00:00:00	562	1865
-3059	500	2004-09-30 00:00:00	46	534
-3060	500	2004-10-26 00:00:00	345	1134
-3061	500	2004-06-02 00:00:00	545	2091
-3062	500	2003-10-28 00:00:00	585	13
-3063	500	2003-09-16 00:00:00	565	1762
-3064	500	2003-09-16 00:00:00	585	2092
-3065	500	2003-06-04 00:00:00	394	2093
-3066	500	2004-06-07 00:00:00	230	13
-3067	500	2004-11-08 00:00:00	230	13
-3068	500	2004-04-08 00:00:00	592	2094
-3069	500	2004-03-21 00:00:00	613	2095
-3070	500	2004-10-29 00:00:00	587	1152
-3071	500	2004-07-21 00:00:00	300	1296
-3072	500	2004-06-22 00:00:00	478	1900
-3073	500	2004-07-15 00:00:00	551	2096
-3074	450	2003-06-27 00:00:00	11	2097
-3075	450	2004-04-02 00:00:00	4	1068
-3076	400	2004-06-24 00:00:00	306	1770
-3077	400	2004-04-22 00:00:00	5	1378
-3078	400	2004-08-11 00:00:00	629	2098
-3079	400	2004-10-18 00:00:00	531	2099
-3080	400	2004-10-04 00:00:00	76	2100
-3081	400	2004-10-29 00:00:00	531	2101
-3082	400	2004-10-13 00:00:00	531	2102
-3083	400	2004-10-27 00:00:00	593	1775
-3084	400	2003-02-10 00:00:00	295	147
-3085	400	2003-12-09 00:00:00	593	2103
-3086	400	2003-08-15 00:00:00	349	2104
-3087	375	2003-07-14 00:00:00	331	969
-3088	375	2004-06-25 00:00:00	561	489
-3089	350	2004-10-05 00:00:00	52	1065
-3090	350	2004-03-01 00:00:00	345	1134
-3091	350	2004-09-17 00:00:00	542	2105
-3092	350	2004-03-29 00:00:00	239	489
-3093	350	2003-05-20 00:00:00	261	164
-3094	350	2004-03-05 00:00:00	219	13
-3095	350	2003-03-12 00:00:00	617	13
-3096	350	2004-09-09 00:00:00	11	2106
-3097	350	2004-01-26 00:00:00	565	1762
-3098	350	2004-03-29 00:00:00	282	13
-3099	350	2003-10-24 00:00:00	222	2107
-3100	350	2004-02-07 00:00:00	503	13
-3101	300	2003-06-04 00:00:00	222	2108
-3102	300	2003-07-10 00:00:00	222	2109
-3103	300	2003-06-04 00:00:00	222	2110
-3104	300	2004-01-30 00:00:00	619	2111
-3105	300	2004-06-30 00:00:00	551	2112
-3106	300	2004-05-13 00:00:00	222	2113
-3107	300	2003-02-26 00:00:00	222	2114
-3108	300	2003-08-07 00:00:00	222	2115
-3109	300	2003-05-19 00:00:00	222	2116
-3110	300	2003-05-06 00:00:00	287	1908
-3111	300	2003-05-06 00:00:00	287	855
-3112	300	2004-09-16 00:00:00	222	2117
-3113	300	2003-04-25 00:00:00	239	13
-3114	300	2003-02-05 00:00:00	222	2118
-3115	300	2004-09-20 00:00:00	222	2119
-3116	300	2004-03-16 00:00:00	287	13
-3117	300	2004-08-12 00:00:00	287	1570
-3118	300	2003-03-10 00:00:00	222	2120
-3119	300	2004-03-31 00:00:00	298	13
-3120	300	2003-08-08 00:00:00	222	2121
-3121	300	2004-09-03 00:00:00	367	1347
-3122	300	2004-02-27 00:00:00	630	13
-3123	300	2003-02-26 00:00:00	222	2122
-3124	300	2003-11-20 00:00:00	222	2123
-3125	300	2004-04-02 00:00:00	222	2124
-3126	300	2004-05-12 00:00:00	631	1907
-3127	300	2004-06-03 00:00:00	586	2125
-3128	300	2004-12-20 00:00:00	222	2126
-3129	300	2003-03-06 00:00:00	222	2127
-3130	300	2004-04-09 00:00:00	4	2128
-3131	300	2003-08-19 00:00:00	475	2129
-3132	300	2004-09-10 00:00:00	436	2130
-3133	300	2003-08-11 00:00:00	323	13
-3134	300	2003-09-15 00:00:00	265	2131
-3135	300	2004-06-29 00:00:00	632	2132
-3136	300	2003-03-07 00:00:00	219	13
-3137	300	2003-04-07 00:00:00	216	13
-3138	300	2004-09-02 00:00:00	28	2133
-3139	300	2004-07-29 00:00:00	287	1436
-3140	300	2003-04-10 00:00:00	222	2134
-3141	300	2004-05-22 00:00:00	333	2135
-3142	300	2003-09-21 00:00:00	633	2136
-3143	300	2003-12-15 00:00:00	222	2119
-3144	300	2003-10-17 00:00:00	222	2137
-3145	300	2004-03-04 00:00:00	222	2126
-3146	300	2004-08-11 00:00:00	372	1437
-3147	300	2004-09-28 00:00:00	4	2138
-3148	300	2004-10-16 00:00:00	213	1477
-3149	300	2004-03-03 00:00:00	222	2139
-3150	300	2003-10-03 00:00:00	222	2140
-3151	300	2003-03-24 00:00:00	222	2141
-3152	300	2004-04-20 00:00:00	287	1024
-3153	300	2003-05-29 00:00:00	222	2142
-3154	300	2003-02-24 00:00:00	222	2143
-3155	300	2004-11-01 00:00:00	531	2144
-3156	300	2004-08-27 00:00:00	586	2145
-3157	300	2004-09-15 00:00:00	531	2146
-3158	300	2003-06-10 00:00:00	222	2147
-3159	300	2003-06-03 00:00:00	630	13
-3160	300	2004-05-16 00:00:00	625	2148
-3161	300	2003-09-19 00:00:00	287	1164
-3162	300	2003-07-11 00:00:00	222	2149
-3163	300	2003-06-04 00:00:00	222	2150
-3164	300	2003-07-01 00:00:00	222	2119
-3165	300	2004-09-30 00:00:00	76	2151
-3166	300	2003-09-25 00:00:00	316	2152
-3167	300	2003-12-19 00:00:00	222	2153
-3168	300	2003-04-10 00:00:00	222	2154
-3169	300	2003-09-11 00:00:00	222	2155
-3170	300	2004-09-28 00:00:00	634	2156
-3171	300	2003-04-14 00:00:00	222	2157
-3172	300	2004-04-20 00:00:00	216	13
-3173	300	2004-06-23 00:00:00	4	2158
-3174	300	2004-03-05 00:00:00	326	489
-3175	300	2004-03-29 00:00:00	430	13
-3176	275	2004-01-13 00:00:00	323	13
-3177	275	2003-02-13 00:00:00	323	13
-3178	272	2004-04-28 00:00:00	627	2159
-3179	270	2003-12-31 00:00:00	574	2160
-3180	250	2003-10-10 00:00:00	11	2161
-3181	250	2003-11-04 00:00:00	627	2162
-3182	250	2003-10-21 00:00:00	627	2163
-3183	250	2003-11-19 00:00:00	627	2163
-3184	250	2003-12-12 00:00:00	627	2163
-3185	250	2003-12-24 00:00:00	627	2164
-3186	250	2003-12-15 00:00:00	222	2165
-3187	250	2003-12-02 00:00:00	222	2166
-3188	250	2003-12-12 00:00:00	635	2167
-3189	250	2004-01-06 00:00:00	627	2163
-3190	250	2004-01-20 00:00:00	627	2163
-3191	250	2004-01-02 00:00:00	222	2166
-3192	250	2004-01-14 00:00:00	4	1931
-3193	250	2004-01-26 00:00:00	4	1931
-3194	250	2004-02-17 00:00:00	349	2168
-3195	250	2004-01-06 00:00:00	2	1678
-3196	250	2004-02-20 00:00:00	222	2169
-3197	250	2004-02-24 00:00:00	627	2170
-3198	250	2004-02-10 00:00:00	4	1931
-3199	250	2004-02-10 00:00:00	4	1931
-3200	250	2004-03-22 00:00:00	18	1784
-3201	250	2004-01-21 00:00:00	267	2171
-3202	250	2004-03-25 00:00:00	372	1472
-3203	250	2004-01-26 00:00:00	636	2172
-3204	250	2004-03-04 00:00:00	4	1931
-3205	250	2004-04-19 00:00:00	222	2173
-3206	250	2004-04-05 00:00:00	4	2174
-3207	250	2004-04-05 00:00:00	4	2175
-3208	250	2004-04-06 00:00:00	4	2174
-3209	250	2004-04-06 00:00:00	4	2175
-3210	250	2004-04-23 00:00:00	4	2174
-3211	250	2004-04-23 00:00:00	4	2176
-3212	250	2004-04-13 00:00:00	551	2177
-3213	250	2004-05-18 00:00:00	4	730
-3214	250	2004-05-14 00:00:00	4	1931
-3215	250	2004-05-03 00:00:00	543	1764
-3216	250	2004-05-21 00:00:00	222	2173
-3217	250	2004-05-26 00:00:00	222	2178
-3218	250	2004-05-20 00:00:00	222	2178
-3219	250	2004-04-27 00:00:00	15	2179
-3220	250	2004-06-26 00:00:00	306	2180
-3221	250	2004-05-24 00:00:00	417	2181
-3222	250	2004-04-22 00:00:00	637	2182
-3223	250	2004-06-16 00:00:00	11	2183
-3224	250	2004-06-16 00:00:00	11	2184
-3225	250	2004-06-23 00:00:00	11	2185
-3226	250	2004-06-16 00:00:00	11	2186
-3227	250	2004-06-16 00:00:00	11	2187
-3228	250	2004-06-16 00:00:00	11	2188
-3229	250	2004-06-23 00:00:00	11	2189
-3230	250	2004-06-16 00:00:00	11	2190
-3231	250	2004-06-23 00:00:00	11	2191
-3232	250	2004-06-23 00:00:00	11	2192
-3233	250	2004-06-16 00:00:00	11	2193
-3234	250	2004-06-23 00:00:00	11	1402
-3235	250	2004-06-29 00:00:00	4	730
-3236	250	2004-06-09 00:00:00	4	1931
-3237	250	2004-06-22 00:00:00	4	1931
-3238	250	2004-04-30 00:00:00	638	2194
-3239	250	2004-06-21 00:00:00	52	2195
-3240	250	2004-07-01 00:00:00	11	2196
-3241	250	2004-07-21 00:00:00	11	2197
-3242	250	2004-07-01 00:00:00	11	2021
-3243	250	2004-07-21 00:00:00	11	2198
-3244	250	2004-07-21 00:00:00	11	2199
-3245	250	2004-07-21 00:00:00	11	1806
-3246	250	2004-07-21 00:00:00	11	2014
-3247	250	2004-07-21 00:00:00	11	2200
-3248	250	2004-07-01 00:00:00	11	2201
-3249	250	2004-07-01 00:00:00	11	2202
-3250	250	2004-07-01 00:00:00	11	1682
-3251	250	2004-07-21 00:00:00	11	2161
-3252	250	2004-07-01 00:00:00	11	2203
-3253	250	2004-07-19 00:00:00	532	2204
-3254	250	2004-07-09 00:00:00	4	1869
-3255	250	2004-07-29 00:00:00	551	2205
-3256	250	2004-07-07 00:00:00	551	2206
-3257	250	2004-07-29 00:00:00	551	2206
-3258	250	2004-07-23 00:00:00	639	2207
-3259	250	2004-08-02 00:00:00	532	2208
-3260	250	2004-08-04 00:00:00	532	2209
-3261	250	2004-08-19 00:00:00	4	1931
-3262	250	2004-08-02 00:00:00	551	2210
-3263	250	2004-08-04 00:00:00	551	2211
-3264	250	2004-09-25 00:00:00	417	2212
-3265	250	2004-08-13 00:00:00	177	2213
-3266	250	2004-09-15 00:00:00	11	2214
-3267	250	2004-09-13 00:00:00	549	2215
-3268	250	2004-09-27 00:00:00	4	1967
-3269	250	2004-09-30 00:00:00	4	1967
-3270	250	2004-09-22 00:00:00	4	2216
-3271	250	2004-10-07 00:00:00	222	1867
-3272	250	2004-09-28 00:00:00	175	2217
-3273	250	2004-10-06 00:00:00	76	2218
-3274	250	2004-10-06 00:00:00	76	2219
-3275	250	2004-10-18 00:00:00	196	2220
-3276	250	2004-10-16 00:00:00	213	2221
-3277	250	2004-11-19 00:00:00	608	1504
-3278	250	2004-10-18 00:00:00	11	1806
-3279	250	2004-10-18 00:00:00	11	2161
-3280	250	2004-10-20 00:00:00	638	2222
-3281	250	2004-10-14 00:00:00	4	1967
-3282	250	2004-10-15 00:00:00	76	2223
-3283	250	2004-10-15 00:00:00	76	2224
-3284	250	2004-10-14 00:00:00	76	2225
-3285	250	2004-12-31 00:00:00	564	1859
-3286	250	2004-12-15 00:00:00	11	2226
-3287	250	2004-12-02 00:00:00	11	2227
-3288	250	2004-12-06 00:00:00	222	1867
-3289	250	2004-12-22 00:00:00	569	2025
-3290	250	2003-10-17 00:00:00	11	2228
-3291	250	2003-10-17 00:00:00	11	1806
-3292	250	2003-08-24 00:00:00	39	2229
-3293	250	2003-08-21 00:00:00	18	2230
-3294	250	2003-08-05 00:00:00	213	2231
-3295	250	2003-09-17 00:00:00	627	2163
-3296	250	2003-09-29 00:00:00	543	2232
-3297	250	2003-09-30 00:00:00	550	2233
-3298	250	2003-08-15 00:00:00	222	2234
-3299	250	2003-07-29 00:00:00	222	2235
-3300	250	2003-06-16 00:00:00	4	1068
-3301	250	2003-06-04 00:00:00	11	2236
-3302	250	2003-04-17 00:00:00	196	2220
-3303	250	2003-05-29 00:00:00	222	2237
-3304	250	2003-04-11 00:00:00	76	2238
-3305	250	2003-03-12 00:00:00	222	2239
-3306	250	2003-03-24 00:00:00	222	2240
-3307	250	2003-03-31 00:00:00	222	2237
-3308	250	2003-03-17 00:00:00	222	2241
-3309	250	2003-03-11 00:00:00	551	2242
-3310	250	2003-03-31 00:00:00	556	2243
-3311	250	2003-03-31 00:00:00	556	2244
-3312	250	2003-01-06 00:00:00	28	176
-3313	250	2003-02-21 00:00:00	222	2245
-3314	250	2003-02-27 00:00:00	222	2237
-3315	250	2003-02-06 00:00:00	222	2246
-3316	250	2003-01-31 00:00:00	222	2247
-3317	250	2003-01-31 00:00:00	222	2248
-3318	250	2003-01-28 00:00:00	4	2249
-3319	250	2003-12-11 00:00:00	640	2250
-3320	250	2003-03-05 00:00:00	641	2251
-3321	250	2003-12-05 00:00:00	642	2252
-3322	250	2004-09-18 00:00:00	640	2250
-3323	250	2004-03-11 00:00:00	539	13
-3324	250	2004-08-19 00:00:00	500	2253
-3325	250	2003-07-30 00:00:00	500	2254
-3326	250	2004-09-22 00:00:00	316	1514
-3327	250	2004-05-16 00:00:00	625	2255
-3328	250	2004-03-12 00:00:00	643	13
-3329	250	2003-06-03 00:00:00	546	489
-3330	250	2004-11-09 00:00:00	625	2256
-3331	250	2004-06-21 00:00:00	554	1606
-3332	250	2004-06-21 00:00:00	554	2257
-3333	250	2004-06-21 00:00:00	554	2258
-3334	250	2004-08-05 00:00:00	644	2259
-3335	250	2004-09-08 00:00:00	645	2260
-3336	250	2004-06-21 00:00:00	554	2261
-3337	250	2004-08-19 00:00:00	398	1970
-3338	250	2004-03-17 00:00:00	495	13
-3339	250	2003-06-12 00:00:00	646	1970
-3340	250	2003-05-14 00:00:00	294	2262
-3341	250	2004-03-30 00:00:00	287	1011
-3342	250	2004-07-29 00:00:00	647	2263
-3343	250	2004-11-05 00:00:00	648	164
-3344	250	2004-08-22 00:00:00	324	2264
-3345	250	2004-11-19 00:00:00	442	13
-3346	250	2004-08-09 00:00:00	327	947
-3347	250	2004-05-25 00:00:00	345	2265
-3348	250	2004-10-25 00:00:00	649	1621
-3349	250	2003-07-15 00:00:00	394	2266
-3350	250	2003-11-13 00:00:00	316	1514
-3351	250	2003-08-21 00:00:00	602	2267
-3352	250	2003-03-31 00:00:00	378	2268
-3353	250	2004-05-07 00:00:00	503	2261
-3354	250	2003-07-29 00:00:00	530	2269
-3355	250	2003-07-11 00:00:00	552	2270
-3356	250	2004-07-01 00:00:00	598	1301
-3357	250	2004-10-05 00:00:00	230	1455
-3358	250	2004-11-08 00:00:00	650	2271
-3359	250	2004-06-26 00:00:00	435	2272
-3360	250	2004-06-10 00:00:00	651	2273
-3361	250	2003-02-06 00:00:00	294	2262
-3362	250	2003-02-06 00:00:00	294	2274
-3363	250	2004-05-13 00:00:00	248	13
-3364	250	2004-05-14 00:00:00	652	13
-3365	250	2003-10-30 00:00:00	650	2271
-3366	250	2004-10-28 00:00:00	541	2275
-3367	250	2003-09-25 00:00:00	316	13
-3368	225	2004-06-16 00:00:00	11	2276
-3369	225	2003-05-02 00:00:00	11	2277
-3370	225	2003-07-17 00:00:00	11	2278
-3371	225	2004-04-07 00:00:00	4	1869
-3372	225	2003-05-02 00:00:00	11	1682
-3373	225	2003-06-27 00:00:00	11	2021
-3374	225	2004-07-01 00:00:00	11	2021
-3375	225	2004-08-26 00:00:00	11	2279
-3376	225	2004-05-06 00:00:00	543	2280
-3377	225	2003-05-02 00:00:00	11	2021
-3378	225	2004-06-16 00:00:00	11	2021
-3379	225	2003-07-17 00:00:00	11	2281
-3380	225	2004-07-01 00:00:00	11	2191
-3381	215	2004-08-17 00:00:00	4	1931
-3382	201	2004-10-08 00:00:00	222	2282
-3383	200	2004-10-20 00:00:00	531	2283
-3384	200	2003-09-12 00:00:00	316	854
-3385	200	2004-08-06 00:00:00	331	969
-3386	200	2004-11-02 00:00:00	531	2284
-3387	200	2004-10-18 00:00:00	653	2285
-3388	200	2003-12-04 00:00:00	654	2286
-3389	200	2004-10-05 00:00:00	222	2140
-3390	200	2004-05-07 00:00:00	503	2287
-3391	200	2003-09-17 00:00:00	631	1907
-3392	200	2004-05-07 00:00:00	503	2288
-3393	200	2004-10-24 00:00:00	531	2289
-3394	200	2003-10-30 00:00:00	655	2290
-3395	200	2004-11-03 00:00:00	76	2219
-3396	200	2004-10-27 00:00:00	656	2291
-3397	200	2004-02-13 00:00:00	657	2292
-3398	200	2003-01-16 00:00:00	4	2249
-3399	200	2004-04-21 00:00:00	627	2159
-3400	200	2004-06-21 00:00:00	4	2293
-3401	200	2003-11-12 00:00:00	627	2080
-3402	200	2004-06-28 00:00:00	4	1912
-3403	200	2004-02-27 00:00:00	543	2294
-3404	200	2004-10-26 00:00:00	531	2295
-3405	200	2004-09-08 00:00:00	4	2293
-3406	200	2004-07-28 00:00:00	4	2296
-3407	200	2004-07-08 00:00:00	222	2297
-3408	200	2004-09-01 00:00:00	4	1967
-3409	200	2004-08-23 00:00:00	76	2298
-3410	200	2004-08-10 00:00:00	222	2282
-3411	200	2004-05-27 00:00:00	222	2140
-3412	200	2004-06-06 00:00:00	521	2299
-3413	200	2004-04-28 00:00:00	586	2300
-3414	200	2004-04-15 00:00:00	554	2301
-3415	200	2004-08-24 00:00:00	324	2302
-3416	200	2003-07-01 00:00:00	335	2303
-3417	200	2003-10-24 00:00:00	222	45
-3418	200	2004-09-08 00:00:00	596	2304
-3419	200	2004-04-27 00:00:00	332	2305
-3420	200	2004-07-22 00:00:00	658	1164
-3421	200	2004-01-23 00:00:00	323	1271
-3422	200	2004-05-14 00:00:00	503	2306
-3423	200	2005-01-05 00:00:00	394	1024
-3424	200	2004-10-13 00:00:00	659	2307
-3425	200	2003-05-20 00:00:00	323	1271
-3426	200	2003-04-18 00:00:00	222	2308
-3427	200	2003-10-10 00:00:00	335	2309
-3428	200	2004-01-21 00:00:00	660	147
-3429	200	2004-04-15 00:00:00	661	1024
-3430	200	2003-05-02 00:00:00	222	2310
-3431	200	2004-11-01 00:00:00	531	2311
-3432	200	2004-10-18 00:00:00	531	2312
-3433	200	2004-09-01 00:00:00	633	2136
-3434	200	2003-07-01 00:00:00	335	2313
-3435	200	2003-10-02 00:00:00	324	2314
-3436	200	2003-05-06 00:00:00	222	2315
-3437	200	2004-03-01 00:00:00	542	2316
-3438	200	2004-11-04 00:00:00	662	2317
-3439	200	2003-06-02 00:00:00	4	1912
-3440	200	2003-11-03 00:00:00	592	2318
-3441	200	2004-12-23 00:00:00	222	2297
-3442	200	2004-05-13 00:00:00	222	2282
-3443	200	2003-10-02 00:00:00	662	2319
-3444	200	2004-07-16 00:00:00	663	2320
-3445	200	2003-04-03 00:00:00	662	2321
-3446	200	2004-05-07 00:00:00	503	2322
-3447	198	2004-06-23 00:00:00	664	1304
-3448	180	2004-04-14 00:00:00	665	2323
-3449	180	2003-11-13 00:00:00	666	2324
-3450	175	2003-03-01 00:00:00	593	1455
-3451	175	2004-10-19 00:00:00	323	13
-3452	175	2004-10-18 00:00:00	664	2325
-3453	175	2003-03-01 00:00:00	593	2326
-3454	150	2004-03-26 00:00:00	597	2327
-3455	150	2003-05-10 00:00:00	299	1562
-3456	150	2003-07-16 00:00:00	287	2328
-3457	150	2004-11-10 00:00:00	667	2319
-3458	150	2003-05-23 00:00:00	299	2329
-3459	150	2004-10-08 00:00:00	668	1569
-3460	150	2004-07-01 00:00:00	287	2330
-3461	150	2004-08-13 00:00:00	669	2331
-3462	150	2003-06-30 00:00:00	287	2332
-3463	150	2004-04-19 00:00:00	299	1024
-3464	150	2003-08-19 00:00:00	598	2333
-3465	150	2003-03-17 00:00:00	338	2334
-3466	150	2003-03-12 00:00:00	657	2335
-3467	150	2003-07-09 00:00:00	287	2336
-3468	150	2004-07-14 00:00:00	287	1010
-3469	150	2004-08-06 00:00:00	287	1908
-3470	150	2003-03-13 00:00:00	244	13
-3471	150	2004-09-22 00:00:00	316	2337
-3472	150	2003-10-22 00:00:00	667	2319
-3473	150	2004-07-29 00:00:00	287	2338
-3474	150	2004-03-08 00:00:00	670	1457
-3475	150	2003-02-19 00:00:00	244	1572
-3476	150	2004-04-02 00:00:00	668	2339
-3477	150	2003-09-24 00:00:00	316	2337
-3478	150	2003-07-29 00:00:00	287	2340
-3479	150	2003-07-23 00:00:00	287	1024
-3480	150	2004-07-09 00:00:00	591	2341
-3481	150	2003-07-23 00:00:00	287	281
-3482	150	2003-09-25 00:00:00	316	2337
-3483	150	2004-05-08 00:00:00	299	1562
-3484	150	2003-07-23 00:00:00	287	2342
-3485	150	2004-04-29 00:00:00	332	2343
-3486	125	2003-05-08 00:00:00	518	2344
-3487	125	2003-04-03 00:00:00	332	1585
-3488	125	2004-08-27 00:00:00	671	2345
-3489	125	2003-08-12 00:00:00	545	2346
-3490	125	2004-06-30 00:00:00	672	2347
-3491	125	2004-04-21 00:00:00	332	2348
-3492	125	2003-08-14 00:00:00	673	2349
-3493	125	2004-04-08 00:00:00	332	2350
-3494	125	2004-09-17 00:00:00	545	2346
-3495	125	2003-08-11 00:00:00	545	1689
-3496	125	2003-10-24 00:00:00	668	2351
-3497	125	2003-04-21 00:00:00	624	147
-3498	120	2004-08-17 00:00:00	319	1556
-3499	100	2004-06-18 00:00:00	655	2352
-3500	100	2003-08-06 00:00:00	674	2353
-3501	100	2004-10-14 00:00:00	531	2354
-3502	100	2003-09-09 00:00:00	332	2355
-3503	100	2004-06-11 00:00:00	291	2356
-3504	100	2003-09-16 00:00:00	332	2357
-3505	100	2004-10-25 00:00:00	398	2358
-3506	100	2003-10-31 00:00:00	655	2359
-3507	100	2004-05-10 00:00:00	675	2360
-3508	100	2004-03-10 00:00:00	338	2334
-3509	100	2004-05-18 00:00:00	503	1308
-3510	100	2004-05-05 00:00:00	503	2361
-3511	100	2004-08-18 00:00:00	676	2362
-3512	100	2003-08-07 00:00:00	601	2363
-3513	100	2004-09-28 00:00:00	338	1564
-3514	100	2004-05-20 00:00:00	346	2364
-3515	100	2004-08-27 00:00:00	677	13
-3516	100	2004-05-05 00:00:00	503	2365
-3517	100	2004-04-25 00:00:00	503	541
-3518	100	2003-10-24 00:00:00	678	2366
-3519	100	2004-05-10 00:00:00	503	2367
-3520	100	2004-01-21 00:00:00	679	1271
-3521	100	2003-07-10 00:00:00	680	2368
-3522	100	2004-10-14 00:00:00	531	2369
-3523	100	2004-03-05 00:00:00	681	2370
-3524	100	2003-09-25 00:00:00	662	2371
-3525	100	2004-10-14 00:00:00	531	2372
-3526	100	2004-09-29 00:00:00	299	1562
-3527	100	2003-08-07 00:00:00	615	2373
-3528	100	2004-08-22 00:00:00	617	2374
-3529	100	2003-02-14 00:00:00	682	2260
-3530	100	2004-08-11 00:00:00	683	2375
-3531	100	2003-12-02 00:00:00	650	2376
-3532	100	2004-10-01 00:00:00	655	2359
-3533	100	2004-08-26 00:00:00	684	2377
-3534	100	2004-08-15 00:00:00	657	2378
-3535	100	2004-09-08 00:00:00	657	2379
-3536	100	2003-08-20 00:00:00	685	2380
-3537	100	2004-02-24 00:00:00	339	2381
-3538	100	2004-02-20 00:00:00	662	2382
-3539	100	2004-11-01 00:00:00	531	2383
-3540	100	2004-11-01 00:00:00	531	2384
-3541	100	2004-08-16 00:00:00	686	2385
-3542	100	2003-09-03 00:00:00	316	2386
-3543	100	2004-11-01 00:00:00	531	2387
-3544	100	2004-11-01 00:00:00	531	2388
-3545	100	2003-07-30 00:00:00	539	1597
-3546	100	2004-03-04 00:00:00	654	2334
-3547	100	2004-10-26 00:00:00	531	2389
-3548	100	2004-10-29 00:00:00	531	2390
-3549	100	2003-03-17 00:00:00	676	1625
-3550	100	2004-10-21 00:00:00	531	2391
-3551	100	2004-10-21 00:00:00	531	2392
-3552	100	2004-10-24 00:00:00	531	2393
-3553	100	2004-10-24 00:00:00	531	2394
-3554	100	2004-10-24 00:00:00	531	2395
-3555	100	2004-07-29 00:00:00	597	2396
-3556	100	2004-10-24 00:00:00	531	2397
-3557	100	2004-11-01 00:00:00	531	2398
-3558	100	2004-08-11 00:00:00	346	2364
-3559	100	2004-04-10 00:00:00	687	2399
-3560	100	2004-10-20 00:00:00	338	2334
-3561	100	2004-10-21 00:00:00	662	2400
-3562	100	2003-09-07 00:00:00	657	2401
-3563	100	2004-04-21 00:00:00	323	2402
-3564	100	2004-03-22 00:00:00	323	1580
-3565	100	2004-11-01 00:00:00	531	2403
-3566	100	2004-09-24 00:00:00	531	2404
-3567	100	2004-10-19 00:00:00	531	2405
-3568	100	2004-03-12 00:00:00	602	2406
-3569	100	2003-09-20 00:00:00	316	2407
-3570	100	2004-09-24 00:00:00	531	2408
-3571	100	2004-10-21 00:00:00	531	2409
-3572	100	2004-09-12 00:00:00	657	2292
-3573	100	2004-10-21 00:00:00	531	2410
-3574	100	2003-08-10 00:00:00	657	2401
-3575	100	2004-05-12 00:00:00	687	2411
-3576	100	2004-08-03 00:00:00	688	2412
-3577	100	2004-10-21 00:00:00	531	2413
-3578	100	2004-10-21 00:00:00	531	2414
-3579	100	2004-10-21 00:00:00	531	2415
-3580	100	2003-03-12 00:00:00	323	2416
-3581	100	2003-02-06 00:00:00	323	2417
-3582	100	2004-10-21 00:00:00	531	2418
-3583	100	2004-10-21 00:00:00	531	2419
-3584	100	2004-10-21 00:00:00	531	2420
-3585	100	2004-10-21 00:00:00	531	2421
-3586	100	2004-10-21 00:00:00	531	2422
-3587	100	2003-06-09 00:00:00	323	1581
-3588	100	2003-05-01 00:00:00	323	2423
-3589	100	2004-10-21 00:00:00	531	2424
-3590	100	2004-09-13 00:00:00	531	2425
-3591	100	2004-10-21 00:00:00	531	2426
-3592	100	2004-10-14 00:00:00	531	2427
-3593	100	2004-01-20 00:00:00	323	1573
-3594	100	2004-06-24 00:00:00	323	1581
-3595	100	2004-05-15 00:00:00	643	2428
-3596	100	2004-10-28 00:00:00	676	1625
-3597	99	2004-05-04 00:00:00	655	2429
-3598	80	2003-11-03 00:00:00	685	2430
-3599	80	2004-05-14 00:00:00	689	2431
-3600	80	2004-05-14 00:00:00	690	2431
-3601	75	2003-07-16 00:00:00	244	1572
-3602	75	2003-07-17 00:00:00	673	2432
-3603	75	2004-06-26 00:00:00	675	2360
-3604	75	2003-01-17 00:00:00	691	2433
-3605	75	2004-09-16 00:00:00	316	2434
-3606	75	2003-09-02 00:00:00	500	2027
-3607	70	2004-07-13 00:00:00	659	2307
-3608	65	2003-10-30 00:00:00	473	1614
-3609	50	2003-09-20 00:00:00	692	2435
-3610	50	2003-06-04 00:00:00	680	2436
-3611	50	2003-12-02 00:00:00	671	2345
-3612	50	2003-06-03 00:00:00	680	2437
-3613	50	2003-08-18 00:00:00	674	2438
-3614	50	2004-08-21 00:00:00	479	1633
-3615	50	2004-02-09 00:00:00	693	2439
-3616	50	2003-09-09 00:00:00	693	2440
-3617	50	2003-10-08 00:00:00	692	2441
-3618	50	2004-04-10 00:00:00	479	1633
-3619	50	2003-09-16 00:00:00	332	2442
-3620	50	2004-05-08 00:00:00	625	2443
-3621	50	2004-04-13 00:00:00	332	2442
-3622	50	2003-08-26 00:00:00	332	2348
-3623	40	2003-11-03 00:00:00	473	2444
-3624	39	2003-02-28 00:00:00	331	2445
-3625	36	2004-10-14 00:00:00	332	2446
-3626	29	2004-05-21 00:00:00	331	2445
-3627	25	2004-06-16 00:00:00	691	2447
-3628	25	2004-08-28 00:00:00	316	2386
-3629	25	2003-05-12 00:00:00	331	2445
-3630	25	2004-10-20 00:00:00	675	2448
-3631	-50	2004-12-31 00:00:00	540	2449
-3632	-50	2003-10-08 00:00:00	692	2435
-3633	-250	2004-05-21 00:00:00	222	2450
-3634	-250	2004-05-20 00:00:00	222	2451
-3635	-250	2003-11-04 00:00:00	627	2162
-3636	-264.69999999999999	2004-09-17 00:00:00	694	2452
-3637	-500	2004-03-31 00:00:00	256	2453
-3638	-700	2003-11-24 00:00:00	560	2454
-3639	-700	2004-04-12 00:00:00	560	2454
-3640	-800	2004-08-11 00:00:00	542	13
-3641	-1000	2003-02-01 00:00:00	205	2455
-3642	-1000	2003-07-31 00:00:00	575	1822
-3643	-1000	2003-07-01 00:00:00	575	1822
-3644	-1000	2003-12-31 00:00:00	543	2456
-3645	-2000	2004-07-28 00:00:00	543	2457
-3646	-2500	2003-07-16 00:00:00	529	2273
-3647	-4250	2003-06-09 00:00:00	665	2458
-3648	1800	2003-05-08 00:00:00	695	2459
-3649	500	2003-03-31 00:00:00	696	2460
-3650	25000	2002-02-01 00:00:00	697	2461
-3651	20000	2001-03-07 00:00:00	175	2462
-3652	20000	2002-04-05 00:00:00	697	489
-3653	20000	2002-10-28 00:00:00	697	2463
-3654	15000	2002-12-09 00:00:00	52	2464
-3655	10000	2002-10-15 00:00:00	697	1881
-3656	7500	2002-01-16 00:00:00	539	489
-3657	7500	2001-10-31 00:00:00	529	489
-3658	5000	2002-10-21 00:00:00	697	2463
-3659	5000	2002-07-03 00:00:00	698	1152
-3660	5000	2002-02-13 00:00:00	529	2465
-3661	5000	2002-03-01 00:00:00	654	489
-3662	5000	2002-02-11 00:00:00	699	2466
-3663	5000	2002-03-11 00:00:00	700	2467
-3664	5000	2002-03-06 00:00:00	697	2468
-3665	5000	2002-10-18 00:00:00	701	2469
-3666	5000	2002-10-15 00:00:00	697	2470
-3667	5000	2002-10-07 00:00:00	349	2471
-3668	5000	2002-09-27 00:00:00	702	2472
-3669	5000	2002-06-05 00:00:00	349	2473
-3670	5000	2002-06-03 00:00:00	349	2474
-3671	5000	2002-09-09 00:00:00	349	2475
-3672	5000	2002-06-21 00:00:00	703	13
-3673	5000	2002-07-09 00:00:00	349	2476
-3674	5000	2002-06-03 00:00:00	349	2477
-3675	5000	2002-06-25 00:00:00	349	2478
-3676	5000	2001-04-01 00:00:00	704	1326
-3677	5000	2002-02-01 00:00:00	699	2479
-3678	5000	2002-06-05 00:00:00	349	2480
-3679	4900	2002-08-14 00:00:00	697	1881
-3680	4500	2002-10-29 00:00:00	540	2481
-3681	4000	2002-10-16 00:00:00	697	1648
-3682	4000	2002-06-03 00:00:00	549	2482
-3683	3100	2002-07-12 00:00:00	477	2483
-3684	3100	2002-10-29 00:00:00	674	2484
-3685	3000	2002-08-26 00:00:00	697	1152
-3686	3000	2001-05-21 00:00:00	697	2485
-3687	3000	2001-12-03 00:00:00	565	489
-3688	2500	2001-02-08 00:00:00	705	2470
-3689	2500	2002-06-27 00:00:00	697	2485
-3690	2000	2002-05-28 00:00:00	706	2486
-3691	2000	2001-12-19 00:00:00	707	1063
-3692	2000	2002-04-03 00:00:00	39	2487
-3693	2000	2002-07-17 00:00:00	708	2488
-3694	2000	2002-09-12 00:00:00	529	489
-3695	2000	2002-09-12 00:00:00	76	2489
-3696	2000	2002-10-22 00:00:00	205	2490
-3697	2000	2002-05-29 00:00:00	529	489
-3698	2000	2001-07-25 00:00:00	529	2491
-3699	2000	2001-01-23 00:00:00	705	2492
-3700	1500	2002-07-09 00:00:00	697	2493
-3701	1350	2002-09-18 00:00:00	565	1762
-3702	1250	2002-08-13 00:00:00	709	2494
-3703	1225	2001-10-23 00:00:00	248	489
-3704	1225	2002-01-25 00:00:00	710	489
-3705	1200	2002-10-22 00:00:00	711	2495
-3706	1200	2002-05-31 00:00:00	712	2496
-3707	1150	2002-04-23 00:00:00	11	2497
-3708	1100	2002-04-08 00:00:00	287	2498
-3709	1100	2002-11-01 00:00:00	668	2499
-3710	1100	2002-04-18 00:00:00	616	2500
-3711	1000	2002-05-10 00:00:00	244	1152
-3712	1000	2001-12-17 00:00:00	11	2501
-3713	1000	2001-05-30 00:00:00	704	2486
-3714	1000	2001-08-03 00:00:00	697	2502
-3715	1000	2001-09-26 00:00:00	697	2503
-3716	1000	2001-11-09 00:00:00	697	2504
-3717	1000	2001-12-28 00:00:00	697	1687
-3718	1000	2001-12-03 00:00:00	703	489
-3719	1000	2001-09-26 00:00:00	713	2470
-3720	1000	2001-04-27 00:00:00	713	2505
-3721	1000	2001-02-06 00:00:00	248	489
-3722	1000	2001-05-31 00:00:00	282	2506
-3723	1000	2001-02-06 00:00:00	714	2507
-3724	1000	2001-05-08 00:00:00	705	2508
-3725	1000	2001-05-01 00:00:00	697	1883
-3726	1000	2001-05-31 00:00:00	697	1648
-3727	1000	2001-07-09 00:00:00	697	1530
-3728	1000	2001-11-09 00:00:00	396	489
-3729	1000	2002-08-01 00:00:00	549	2482
-3730	1000	2002-10-11 00:00:00	697	2509
-3731	1000	2002-12-13 00:00:00	549	2510
-3732	1000	2002-07-01 00:00:00	549	2511
-3733	1000	2002-07-01 00:00:00	549	2512
-3734	1000	2002-07-29 00:00:00	549	2513
-3735	1000	2002-05-06 00:00:00	715	1798
-3736	1000	2001-11-14 00:00:00	716	2470
-3737	1000	2002-11-04 00:00:00	213	2514
-3738	1000	2002-10-18 00:00:00	213	2515
-3739	1000	2002-11-04 00:00:00	177	2516
-3740	1000	2002-10-18 00:00:00	717	2517
-3741	1000	2002-10-31 00:00:00	449	2518
-3742	1000	2002-10-08 00:00:00	718	2519
-3743	1000	2002-10-15 00:00:00	213	2520
-3744	1000	2002-07-26 00:00:00	719	2521
-3745	1000	2002-09-13 00:00:00	720	2522
-3746	1000	2002-09-23 00:00:00	699	2523
-3747	1000	2002-08-23 00:00:00	367	2524
-3748	1000	2002-08-23 00:00:00	367	2525
-3749	1000	2002-09-05 00:00:00	721	2526
-3750	1000	2002-08-23 00:00:00	699	2527
-3751	1000	2002-07-01 00:00:00	722	2528
-3752	1000	2002-07-19 00:00:00	25	2529
-3753	1000	2002-08-28 00:00:00	723	2530
-3754	1000	2002-08-28 00:00:00	723	2530
-3755	1000	2002-07-09 00:00:00	724	2531
-3756	1000	2002-02-28 00:00:00	549	2532
-3757	1000	2002-06-07 00:00:00	549	1769
-3758	1000	2002-06-07 00:00:00	549	1769
-3759	1000	2002-04-05 00:00:00	549	2533
-3760	1000	2002-06-14 00:00:00	549	2534
-3761	1000	2002-06-14 00:00:00	549	2534
-3762	1000	2002-01-07 00:00:00	549	2535
-3763	1000	2002-06-03 00:00:00	562	2536
-3764	1000	2002-01-10 00:00:00	475	2537
-3765	1000	2002-05-03 00:00:00	39	2538
-3766	1000	2002-05-03 00:00:00	39	2538
-3767	1000	2002-06-17 00:00:00	39	2539
-3768	1000	2002-05-20 00:00:00	415	2540
-3769	1000	2002-05-26 00:00:00	388	1798
-3770	1000	2002-06-24 00:00:00	28	2541
-3771	1000	2002-06-30 00:00:00	25	2542
-3772	1000	2002-04-18 00:00:00	367	2543
-3773	1000	2002-07-02 00:00:00	725	2544
-3774	1000	2002-07-02 00:00:00	725	2544
-3775	1000	2002-05-14 00:00:00	726	2545
-3776	1000	2002-05-06 00:00:00	186	1845
-3777	1000	2002-05-28 00:00:00	727	2
-3778	1000	2002-05-28 00:00:00	727	2
-3779	1000	2002-04-29 00:00:00	200	2546
-3780	1000	2002-05-10 00:00:00	728	2547
-3781	1000	2002-06-19 00:00:00	720	2548
-3782	1000	2002-05-16 00:00:00	729	1065
-3783	1000	2002-05-15 00:00:00	730	2549
-3784	1000	2002-05-08 00:00:00	731	1844
-3785	1000	2002-06-24 00:00:00	732	2550
-3786	1000	2002-05-09 00:00:00	733	1798
-3787	1000	2002-05-20 00:00:00	734	1864
-3788	1000	2002-05-15 00:00:00	735	2551
-3789	1000	2002-05-06 00:00:00	715	1798
-3790	1000	2002-05-11 00:00:00	720	2552
-3791	1000	2002-05-11 00:00:00	720	2552
-3792	1000	2002-04-12 00:00:00	4	1067
-3793	1000	2001-12-05 00:00:00	196	2553
-3794	1000	2002-04-08 00:00:00	11	2554
-3795	1000	2002-02-04 00:00:00	736	2555
-3796	1000	2002-02-04 00:00:00	736	2555
-3797	1000	2002-01-14 00:00:00	269	2556
-3798	1000	2002-03-21 00:00:00	222	2557
-3799	1000	2002-03-27 00:00:00	28	2558
-3800	1000	2002-03-27 00:00:00	28	2559
-3801	1000	2002-03-29 00:00:00	28	2541
-3802	1000	2002-03-29 00:00:00	28	2560
-3803	1000	2002-02-21 00:00:00	737	2561
-3804	1000	2002-02-21 00:00:00	737	2561
-3805	1000	2002-03-30 00:00:00	413	2562
-3806	1000	2001-03-09 00:00:00	11	2563
-3807	1000	2002-02-01 00:00:00	11	2564
-3808	1000	2001-11-09 00:00:00	372	2565
-3809	1000	2001-12-18 00:00:00	413	2566
-3810	1000	2001-12-18 00:00:00	413	2566
-3811	1000	2001-07-09 00:00:00	15	2567
-3812	1000	2002-01-07 00:00:00	52	2568
-3813	1000	2001-12-31 00:00:00	222	2569
-3814	1000	2001-09-04 00:00:00	738	2570
-3815	1000	2001-12-14 00:00:00	737	2571
-3816	1000	2001-11-08 00:00:00	549	2572
-3817	1000	2001-12-24 00:00:00	720	2573
-3818	1000	2002-10-03 00:00:00	702	2574
-3819	1000	2002-10-09 00:00:00	739	2488
-3820	1000	2002-11-04 00:00:00	697	2575
-3821	1000	2002-06-13 00:00:00	740	2576
-3822	1000	2002-06-13 00:00:00	740	2576
-3823	1000	2002-04-25 00:00:00	587	489
-3824	1000	2002-05-06 00:00:00	710	489
-3825	1000	2002-03-11 00:00:00	331	489
-3826	1000	2002-06-03 00:00:00	741	2577
-3827	1000	2002-06-25 00:00:00	742	2578
-3828	1000	2002-07-11 00:00:00	294	2579
-3829	1000	2002-04-23 00:00:00	697	2580
-3830	1000	2002-02-13 00:00:00	529	1877
-3831	1000	2001-01-08 00:00:00	585	2470
-3832	1000	2002-09-13 00:00:00	697	2581
-3833	1000	2002-07-22 00:00:00	294	2582
-3834	1000	2001-03-15 00:00:00	743	2583
-3835	1000	2002-03-20 00:00:00	743	2583
-3836	1000	2002-08-21 00:00:00	709	489
-3837	1000	2002-09-10 00:00:00	744	2584
-3838	1000	2002-10-24 00:00:00	196	2553
-3839	1000	2002-10-09 00:00:00	585	1879
-3840	1000	2001-07-23 00:00:00	585	2396
-3841	1000	2001-12-03 00:00:00	565	489
-3842	1000	2001-01-08 00:00:00	585	2470
-3843	1000	2002-10-09 00:00:00	585	489
-3844	1000	2003-01-11 00:00:00	745	2585
-3845	1000	2001-01-16 00:00:00	52	2568
-3846	1000	2001-05-23 00:00:00	746	2586
-3847	1000	2001-06-25 00:00:00	720	2587
-3848	1000	2001-06-08 00:00:00	200	2588
-3849	1000	2001-04-08 00:00:00	730	2589
-3850	1000	2001-03-27 00:00:00	730	2590
-3851	1000	2001-02-14 00:00:00	549	2591
-3852	1000	2001-06-11 00:00:00	549	2592
-3853	1000	2001-04-23 00:00:00	28	2593
-3854	1000	2001-04-23 00:00:00	28	2560
-3855	1000	2001-04-10 00:00:00	28	2594
-3856	1000	2001-05-10 00:00:00	28	2559
-3857	1000	2001-05-11 00:00:00	28	2559
-3858	1000	2001-04-23 00:00:00	28	2558
-3859	1000	2001-06-07 00:00:00	747	2595
-3860	1000	2001-03-21 00:00:00	413	2596
-3861	1000	2001-06-24 00:00:00	213	2514
-3862	1000	2001-06-24 00:00:00	213	2514
-3863	1000	2001-09-27 00:00:00	724	2597
-3864	1000	2002-10-22 00:00:00	748	2598
-3865	1000	2002-04-16 00:00:00	748	2599
-3866	1000	2001-04-26 00:00:00	748	2600
-3867	1000	2001-10-30 00:00:00	98	2601
-3868	1000	2001-10-15 00:00:00	200	2602
-3869	1000	2001-12-27 00:00:00	200	2603
-3870	1000	2001-12-27 00:00:00	200	2604
-3871	1000	2001-12-31 00:00:00	200	2605
-3872	1000	2001-12-27 00:00:00	200	2546
-3873	900	2001-12-27 00:00:00	39	2606
-3874	850	2002-07-12 00:00:00	287	2607
-3875	800	2002-04-24 00:00:00	11	2608
-3876	800	2002-08-23 00:00:00	708	2609
-3877	800	2001-08-07 00:00:00	565	489
-3878	800	2002-06-27 00:00:00	11	2610
-3879	800	2001-08-09 00:00:00	712	2597
-3880	800	2002-04-23 00:00:00	11	2611
-3881	750	2001-12-07 00:00:00	565	489
-3882	750	2001-05-03 00:00:00	282	1907
-3883	750	2002-10-15 00:00:00	213	2612
-3884	750	2002-07-22 00:00:00	4	1067
-3885	700	2002-04-29 00:00:00	5	2613
-3886	700	2002-09-23 00:00:00	699	2614
-3887	650	2002-09-20 00:00:00	749	2615
-3888	650	2002-04-24 00:00:00	750	2616
-3889	650	2002-10-10 00:00:00	741	2617
-3890	650	2002-06-20 00:00:00	598	1928
-3891	600	2002-04-29 00:00:00	239	489
-3892	600	2002-05-07 00:00:00	11	2618
-3893	600	2001-08-17 00:00:00	668	2499
-3894	600	2002-05-02 00:00:00	592	2619
-3895	600	2002-05-10 00:00:00	585	1173
-3896	600	2001-01-18 00:00:00	750	2620
-3897	550	2002-02-28 00:00:00	430	489
-3898	550	2002-04-02 00:00:00	287	2621
-3899	500	2001-11-20 00:00:00	25	2622
-3900	500	2002-08-22 00:00:00	751	2623
-3901	500	2001-08-27 00:00:00	714	1269
-3902	500	2001-05-11 00:00:00	246	2624
-3903	500	2002-09-11 00:00:00	750	2625
-3904	500	2002-06-20 00:00:00	28	2626
-3905	500	2002-08-23 00:00:00	367	2524
-3906	500	2001-11-20 00:00:00	25	2627
-3907	500	2002-09-25 00:00:00	367	2628
-3908	500	2002-06-20 00:00:00	28	2626
-3909	500	2001-11-20 00:00:00	25	2629
-3910	500	2002-04-23 00:00:00	11	2630
-3911	500	2002-09-10 00:00:00	15	2631
-3912	500	2002-02-06 00:00:00	752	2632
-3913	500	2002-06-05 00:00:00	28	2633
-3914	500	2002-04-17 00:00:00	246	2634
-3915	500	2002-04-17 00:00:00	246	2634
-3916	500	2001-02-09 00:00:00	751	2635
-3917	500	2002-03-27 00:00:00	28	2593
-3918	500	2001-03-01 00:00:00	751	2636
-3919	500	2002-09-18 00:00:00	753	2637
-3920	500	2002-08-14 00:00:00	754	2638
-3921	500	2002-04-09 00:00:00	269	2639
-3922	500	2002-09-06 00:00:00	4	2640
-3923	500	2002-10-16 00:00:00	755	2641
-3924	500	2002-04-19 00:00:00	52	2642
-3925	500	2001-05-03 00:00:00	335	2032
-3926	500	2001-10-11 00:00:00	5	2643
-3927	500	2001-06-21 00:00:00	756	2644
-3928	500	2001-09-06 00:00:00	5	2645
-3929	500	2001-12-03 00:00:00	730	2646
-3930	500	2001-07-30 00:00:00	5	2647
-3931	500	2001-03-20 00:00:00	417	2648
-3932	500	2001-06-21 00:00:00	756	2649
-3933	500	2001-04-05 00:00:00	28	2650
-3934	500	2001-05-11 00:00:00	28	2651
-3935	500	2002-10-09 00:00:00	757	2652
-3936	500	2001-12-05 00:00:00	542	489
-3937	500	2001-04-19 00:00:00	222	2653
-3938	500	2002-04-08 00:00:00	549	2654
-3939	500	2002-10-24 00:00:00	697	1530
-3940	500	2002-10-24 00:00:00	697	1530
-3941	500	2001-06-30 00:00:00	11	2655
-3942	500	2001-05-01 00:00:00	697	2656
-3943	500	2002-10-24 00:00:00	697	1530
-3944	500	2002-02-28 00:00:00	549	2532
-3945	500	2002-03-27 00:00:00	28	2594
-3946	500	2002-08-28 00:00:00	753	2637
-3947	500	2002-11-11 00:00:00	287	2657
-3948	500	2002-06-26 00:00:00	758	2658
-3949	500	2002-02-28 00:00:00	759	2659
-3950	500	2002-11-12 00:00:00	213	2660
-3951	500	2002-08-05 00:00:00	760	2661
-3952	500	2002-07-08 00:00:00	697	2662
-3953	500	2001-11-27 00:00:00	280	2663
-3954	500	2002-03-27 00:00:00	28	2664
-3955	500	2002-06-28 00:00:00	742	2019
-3956	500	2002-10-24 00:00:00	761	2665
-3957	500	2002-05-27 00:00:00	762	2666
-3958	500	2002-10-02 00:00:00	763	2667
-3959	500	2002-02-20 00:00:00	741	489
-3960	500	2002-08-30 00:00:00	764	2668
-3961	500	2002-07-08 00:00:00	714	1269
-3962	500	2001-02-08 00:00:00	765	2669
-3963	500	2002-02-05 00:00:00	28	2558
-3964	500	2002-03-06 00:00:00	11	2670
-3965	500	2001-12-11 00:00:00	28	2671
-3966	500	2002-06-30 00:00:00	213	2672
-3967	500	2001-12-13 00:00:00	377	2673
-3968	500	2001-10-15 00:00:00	4	2674
-3969	500	2002-06-20 00:00:00	28	2671
-3970	500	2002-09-04 00:00:00	349	2675
-3971	500	2001-01-08 00:00:00	98	2676
-3972	500	2002-08-28 00:00:00	549	2572
-3973	500	2001-05-07 00:00:00	11	1325
-3974	500	2002-07-08 00:00:00	549	2677
-3975	500	2002-07-08 00:00:00	549	2677
-3976	500	\N	766	2678
-3977	500	2002-05-24 00:00:00	287	310
-3978	500	2001-09-06 00:00:00	767	2679
-3979	500	2001-05-07 00:00:00	11	2680
-3980	500	2001-11-09 00:00:00	427	2665
-3981	500	2002-12-31 00:00:00	52	2681
-3982	500	2002-10-18 00:00:00	585	2682
-3983	500	2002-09-05 00:00:00	722	2683
-3984	500	2002-07-18 00:00:00	287	2684
-3985	500	2002-05-31 00:00:00	219	489
-3986	500	2002-08-31 00:00:00	335	2685
-3987	500	2002-03-12 00:00:00	589	489
-3988	500	2002-06-26 00:00:00	549	2572
-3989	500	2002-08-14 00:00:00	744	1321
-3990	500	2002-08-14 00:00:00	744	2686
-3991	500	2002-08-29 00:00:00	742	2032
-3992	500	2002-08-05 00:00:00	539	489
-3993	500	2002-08-09 00:00:00	659	2307
-3994	500	2002-10-15 00:00:00	213	2660
-3995	500	2002-09-18 00:00:00	542	489
-3996	500	2002-06-11 00:00:00	768	2687
-3997	500	2002-07-22 00:00:00	216	2688
-3998	500	2002-08-30 00:00:00	697	2689
-3999	500	2002-08-01 00:00:00	697	2690
-4000	500	2002-06-25 00:00:00	769	489
-4001	500	2002-08-28 00:00:00	753	2691
-4002	500	2002-09-19 00:00:00	697	1889
-4003	500	2001-05-29 00:00:00	549	2692
-4004	500	2001-07-09 00:00:00	697	1530
-4005	500	2001-09-06 00:00:00	11	2554
-4006	500	2001-02-15 00:00:00	770	2693
-4007	500	2002-10-10 00:00:00	705	2694
-4008	500	2002-10-14 00:00:00	771	2695
-4009	500	2002-03-20 00:00:00	436	489
-4010	500	2001-06-05 00:00:00	240	2696
-4011	500	2002-11-04 00:00:00	238	1892
-4012	500	2002-01-07 00:00:00	625	2697
-4013	500	2002-11-12 00:00:00	714	2698
-4014	500	2001-04-18 00:00:00	712	2699
-4015	500	2002-06-03 00:00:00	772	2700
-4016	450	2001-03-13 00:00:00	751	2701
-4017	400	2002-05-07 00:00:00	11	2702
-4018	400	2002-01-10 00:00:00	712	2496
-4019	400	2002-07-29 00:00:00	565	2703
-4020	400	2002-09-17 00:00:00	349	2704
-4021	400	2002-03-12 00:00:00	291	489
-4022	400	2001-01-23 00:00:00	712	2705
-4023	400	2002-02-20 00:00:00	712	2706
-4024	375	2002-07-31 00:00:00	331	2011
-4025	375	2002-07-23 00:00:00	331	969
-4026	360	2002-09-12 00:00:00	703	2707
-4027	350	2002-10-16 00:00:00	11	2708
-4028	350	2002-08-21 00:00:00	741	2709
-4029	350	2002-03-07 00:00:00	442	489
-4030	350	2001-07-30 00:00:00	331	969
-4031	350	2002-09-26 00:00:00	335	2710
-4032	350	2002-09-16 00:00:00	741	2711
-4033	350	2002-02-04 00:00:00	773	489
-4034	350	2002-06-20 00:00:00	287	2712
-4035	350	2002-06-17 00:00:00	216	1910
-4036	350	2002-07-11 00:00:00	229	489
-4037	350	2001-08-15 00:00:00	529	1877
-4038	350	2002-05-06 00:00:00	261	489
-4039	350	2002-09-13 00:00:00	542	2713
-4040	350	2002-10-28 00:00:00	245	489
-4041	350	2002-03-19 00:00:00	221	489
-4042	350	2002-01-28 00:00:00	293	489
-4043	350	2001-05-29 00:00:00	265	2714
-4044	350	2002-01-25 00:00:00	774	489
-4045	350	2002-06-03 00:00:00	238	489
-4046	335	2002-03-20 00:00:00	712	2597
-4047	335	2002-06-17 00:00:00	712	2597
-4048	325	2001-08-06 00:00:00	601	2715
-4049	300	2002-10-16 00:00:00	775	2716
-4050	300	2002-09-20 00:00:00	222	2717
-4051	300	2002-07-22 00:00:00	751	2718
-4052	300	2002-07-26 00:00:00	751	2719
-4053	300	2002-08-27 00:00:00	751	2720
-4054	300	2002-09-04 00:00:00	751	2721
-4055	300	2002-01-10 00:00:00	4	2722
-4056	300	2001-02-22 00:00:00	751	2723
-4057	300	2002-10-08 00:00:00	333	2724
-4058	300	2002-09-23 00:00:00	699	2614
-4059	300	2002-10-17 00:00:00	593	2103
-4060	300	2002-08-16 00:00:00	668	1569
-4061	300	2002-05-22 00:00:00	740	2725
-4062	300	2002-10-28 00:00:00	697	2463
-4063	300	2002-04-02 00:00:00	592	2726
-4064	300	2002-06-05 00:00:00	241	2727
-4065	300	2002-10-09 00:00:00	222	2728
-4066	300	2002-04-02 00:00:00	776	489
-4067	300	2002-10-01 00:00:00	751	2729
-4068	300	2002-01-28 00:00:00	777	2730
-4069	300	2002-10-02 00:00:00	751	2731
-4070	300	2002-03-05 00:00:00	778	489
-4071	300	2002-03-21 00:00:00	779	489
-4072	300	2002-03-04 00:00:00	780	2688
-4073	300	2002-02-20 00:00:00	248	489
-4074	300	2002-01-16 00:00:00	467	489
-4075	300	2002-01-16 00:00:00	283	489
-4076	300	2002-03-19 00:00:00	597	2732
-4077	300	2002-01-18 00:00:00	781	1083
-4078	300	2002-02-06 00:00:00	782	489
-4079	300	2002-09-12 00:00:00	216	489
-4080	300	2002-07-25 00:00:00	333	2733
-4081	300	2002-11-14 00:00:00	222	2734
-4082	300	2002-07-28 00:00:00	783	489
-4083	300	2002-10-31 00:00:00	287	2735
-4084	300	2002-07-30 00:00:00	593	2103
-4085	300	2002-08-29 00:00:00	428	2736
-4086	300	2002-07-31 00:00:00	287	962
-4087	300	2002-08-20 00:00:00	784	489
-4088	300	2001-12-07 00:00:00	324	2314
-4089	300	2002-07-15 00:00:00	785	2737
-4090	300	2002-03-08 00:00:00	465	489
-4091	300	2001-05-12 00:00:00	5	2738
-4092	300	2001-08-03 00:00:00	216	489
-4093	300	2002-02-20 00:00:00	786	489
-4094	300	2001-02-12 00:00:00	222	2739
-4095	300	2001-07-27 00:00:00	670	1457
-4096	300	2001-06-13 00:00:00	333	974
-4097	300	2001-07-20 00:00:00	542	2740
-4098	300	2001-04-18 00:00:00	780	884
-4099	300	2001-08-24 00:00:00	5	2741
-4100	300	2001-07-11 00:00:00	5	2742
-4101	300	2001-08-16 00:00:00	5	2743
-4102	300	2002-10-01 00:00:00	741	2744
-4103	300	2002-04-08 00:00:00	11	2610
-4104	300	2002-03-12 00:00:00	52	2745
-4105	300	2002-05-22 00:00:00	787	2746
-4106	300	2002-04-26 00:00:00	751	2747
-4107	300	2002-05-01 00:00:00	751	2748
-4108	300	2002-05-13 00:00:00	751	2749
-4109	300	2002-05-20 00:00:00	751	2750
-4110	300	2002-05-21 00:00:00	751	2751
-4111	300	2002-06-13 00:00:00	751	2752
-4112	300	2002-06-17 00:00:00	751	2753
-4113	300	2002-03-01 00:00:00	751	2754
-4114	275	2002-04-08 00:00:00	287	310
-4115	275	2002-03-05 00:00:00	287	1908
-4116	275	2001-03-19 00:00:00	712	2597
-4117	275	2001-05-24 00:00:00	712	2597
-4118	275	2001-09-26 00:00:00	788	489
-4119	275	2002-04-08 00:00:00	287	2755
-4120	250	2002-07-07 00:00:00	546	489
-4121	250	2001-05-30 00:00:00	4	2756
-4122	250	2002-01-18 00:00:00	625	2757
-4123	250	2001-08-10 00:00:00	18	2758
-4124	250	2001-05-21 00:00:00	4	2759
-4125	250	2001-07-17 00:00:00	4	2674
-4126	250	2002-05-09 00:00:00	789	489
-4127	250	2002-06-03 00:00:00	680	489
-4128	250	2002-10-25 00:00:00	625	2760
-4129	250	2001-06-04 00:00:00	18	2758
-4130	250	2001-02-05 00:00:00	4	2759
-4131	250	2002-10-08 00:00:00	705	2761
-4132	250	2001-02-20 00:00:00	323	2762
-4133	250	2002-11-05 00:00:00	743	2763
-4134	250	2002-08-13 00:00:00	664	489
-4135	250	2002-08-15 00:00:00	698	2764
-4136	250	2001-05-25 00:00:00	643	2765
-4137	250	2002-06-12 00:00:00	323	1271
-4138	250	2001-11-07 00:00:00	11	2766
-4139	250	2002-03-11 00:00:00	790	489
-4140	250	2002-10-02 00:00:00	627	2767
-4141	250	2002-09-10 00:00:00	201	2768
-4142	250	2002-08-30 00:00:00	744	2271
-4143	250	2002-05-09 00:00:00	316	2769
-4144	250	2002-09-24 00:00:00	642	2770
-4145	250	2002-04-03 00:00:00	791	489
-4146	250	2002-03-19 00:00:00	792	489
-4147	250	2002-10-23 00:00:00	740	2725
-4148	250	2002-10-07 00:00:00	52	2681
-4149	250	2001-03-22 00:00:00	372	2771
-4150	250	2002-02-11 00:00:00	28	2594
-4151	250	2002-09-12 00:00:00	287	323
-4152	250	2002-04-22 00:00:00	697	2772
-4153	250	2002-02-20 00:00:00	219	489
-4154	250	2002-11-03 00:00:00	614	2773
-4155	250	2002-06-24 00:00:00	549	2215
-4156	250	2002-05-30 00:00:00	793	2774
-4157	250	2002-01-16 00:00:00	788	2688
-4158	250	2001-05-24 00:00:00	780	2688
-4159	250	2002-10-22 00:00:00	775	2775
-4160	250	2001-02-07 00:00:00	248	489
-4161	250	2002-10-30 00:00:00	794	1602
-4162	250	2001-04-18 00:00:00	28	2776
-4163	250	2002-02-28 00:00:00	795	489
-4164	250	2001-12-05 00:00:00	796	2777
-4165	250	2002-10-21 00:00:00	797	2778
-4166	250	2001-06-08 00:00:00	283	2779
-4167	250	2002-08-13 00:00:00	668	2780
-4168	250	2002-02-26 00:00:00	76	2781
-4169	250	2002-11-05 00:00:00	798	2782
-4170	250	2002-12-30 00:00:00	574	2160
-4171	250	2002-10-02 00:00:00	788	489
-4172	250	2001-05-15 00:00:00	697	2396
-4173	250	2002-11-04 00:00:00	558	1306
-4174	250	2001-06-26 00:00:00	749	2783
-4175	250	2002-10-17 00:00:00	797	2326
-4176	250	2002-04-17 00:00:00	799	2784
-4177	250	2002-03-26 00:00:00	76	2785
-4178	250	2002-06-27 00:00:00	241	2786
-4179	250	2002-06-11 00:00:00	244	489
-4180	250	2002-04-05 00:00:00	592	2787
-4181	250	2002-07-11 00:00:00	713	2788
-4182	250	2002-01-25 00:00:00	781	2789
-4183	250	2001-06-07 00:00:00	697	2790
-4184	250	2001-04-17 00:00:00	76	2791
-4185	250	2002-10-22 00:00:00	800	2362
-4186	250	2001-01-17 00:00:00	746	2792
-4187	250	2002-11-01 00:00:00	650	2271
-4188	250	2002-03-29 00:00:00	794	489
-4189	250	2002-10-21 00:00:00	15	2793
-4190	250	2002-02-16 00:00:00	758	2794
-4191	250	2002-10-15 00:00:00	213	2612
-4192	250	2002-02-11 00:00:00	298	489
-4193	250	2002-03-19 00:00:00	801	2795
-4194	250	2001-03-29 00:00:00	743	2763
-4195	250	2002-10-26 00:00:00	372	2771
-4196	250	2002-08-23 00:00:00	697	2503
-4197	250	2002-03-26 00:00:00	752	2796
-4198	250	2002-01-15 00:00:00	323	489
-4199	250	2002-03-20 00:00:00	495	489
-4200	250	2002-10-15 00:00:00	213	2797
-4201	250	2002-06-08 00:00:00	802	2798
-4202	250	2002-10-15 00:00:00	213	2799
-4203	250	2002-10-14 00:00:00	213	2799
-4204	250	2002-08-24 00:00:00	803	2800
-4205	250	2001-10-11 00:00:00	316	1514
-4206	250	2002-01-11 00:00:00	804	2688
-4207	250	2002-01-23 00:00:00	691	489
-4208	250	2002-09-25 00:00:00	805	2801
-4209	250	2001-10-26 00:00:00	746	2792
-4210	250	2002-04-04 00:00:00	601	489
-4211	250	2002-03-07 00:00:00	806	489
-4212	250	2002-07-25 00:00:00	4	2802
-4213	250	2002-06-28 00:00:00	417	2803
-4214	250	2002-03-21 00:00:00	702	2804
-4215	250	2001-05-02 00:00:00	377	2805
-4216	250	2002-08-14 00:00:00	807	2806
-4217	250	2002-04-18 00:00:00	377	2673
-4218	250	2002-10-24 00:00:00	808	2807
-4219	250	2002-08-20 00:00:00	367	2808
-4220	250	2001-04-10 00:00:00	743	2809
-4221	250	2001-11-20 00:00:00	25	2810
-4222	250	2002-07-12 00:00:00	705	2811
-4223	250	2002-01-18 00:00:00	781	2812
-4224	250	2002-09-06 00:00:00	28	2813
-4225	250	2002-01-02 00:00:00	4	2759
-4226	250	2002-06-04 00:00:00	4	2640
-4227	250	2002-06-20 00:00:00	28	2814
-4228	250	2002-10-28 00:00:00	11	2815
-4229	250	2002-09-13 00:00:00	18	2758
-4230	250	2002-04-23 00:00:00	11	2816
-4231	250	2002-02-22 00:00:00	643	489
-4232	250	2001-05-15 00:00:00	412	2817
-4233	250	2002-06-17 00:00:00	267	2818
-4234	250	2002-09-11 00:00:00	587	489
-4235	250	2002-04-05 00:00:00	11	2815
-4236	250	2002-08-29 00:00:00	4	2802
-4237	250	2002-03-28 00:00:00	15	2819
-4238	250	2002-01-04 00:00:00	650	2271
-4239	250	2002-01-04 00:00:00	650	2820
-4240	250	2002-01-16 00:00:00	316	489
-4241	250	2002-09-20 00:00:00	809	2821
-4242	250	2002-08-30 00:00:00	244	1152
-4243	248	2001-07-01 00:00:00	810	2822
-4244	200	2002-09-10 00:00:00	752	2796
-4245	200	2002-01-23 00:00:00	627	2823
-4246	200	2001-04-05 00:00:00	811	2824
-4247	200	2002-11-01 00:00:00	593	2825
-4248	200	2002-10-02 00:00:00	794	489
-4249	200	2002-06-10 00:00:00	11	2618
-4250	200	2001-06-11 00:00:00	720	2826
-4251	200	2001-06-18 00:00:00	240	2827
-4252	200	2002-10-30 00:00:00	267	2828
-4253	200	2002-09-27 00:00:00	797	2326
-4254	200	2001-03-29 00:00:00	331	2829
-4255	200	2002-10-07 00:00:00	332	972
-4256	200	2002-08-23 00:00:00	713	2830
-4257	200	2002-02-20 00:00:00	468	489
-4258	200	2002-08-19 00:00:00	801	489
-4259	200	2002-05-13 00:00:00	323	2831
-4260	200	2002-10-31 00:00:00	795	2709
-4261	200	2002-10-18 00:00:00	222	2832
-4262	200	2002-03-07 00:00:00	812	2833
-4263	200	2002-05-09 00:00:00	287	310
-4264	200	2002-06-27 00:00:00	11	2816
-4265	200	2001-12-30 00:00:00	546	489
-4266	200	2001-10-22 00:00:00	4	2834
-4267	200	2002-06-05 00:00:00	806	2835
-4268	200	2001-08-30 00:00:00	671	2345
-4269	200	2002-04-23 00:00:00	332	1546
-4270	200	2002-10-30 00:00:00	205	2836
-4271	200	2001-12-31 00:00:00	265	2714
-4272	200	2002-03-12 00:00:00	216	489
-4273	200	2002-06-21 00:00:00	287	2837
-4274	200	2002-03-11 00:00:00	267	2828
-4275	200	2002-08-01 00:00:00	813	2838
-4276	200	2002-09-18 00:00:00	323	489
-4277	200	2001-09-21 00:00:00	201	2839
-4278	200	2002-10-31 00:00:00	814	2840
-4279	200	2002-02-20 00:00:00	267	2841
-4280	200	2002-08-06 00:00:00	815	2842
-4281	200	2002-03-27 00:00:00	816	2843
-4282	200	2001-08-08 00:00:00	817	2844
-4283	200	2002-07-25 00:00:00	331	2845
-4284	200	2002-02-08 00:00:00	778	147
-4285	200	2002-07-17 00:00:00	597	2846
-4286	200	2002-05-24 00:00:00	818	2847
-4287	200	2002-03-25 00:00:00	331	2829
-4288	200	2002-07-01 00:00:00	11	2848
-4289	200	\N	819	2849
-4290	200	2001-11-27 00:00:00	614	2850
-4291	200	2002-06-27 00:00:00	11	2610
-4292	199	2002-02-25 00:00:00	749	489
-4293	175	2001-05-31 00:00:00	282	2851
-4294	175	2002-06-12 00:00:00	797	2326
-4295	175	2001-05-31 00:00:00	282	2852
-4296	150	2002-07-24 00:00:00	287	2853
-4297	150	2002-01-25 00:00:00	781	2854
-4298	150	2002-01-25 00:00:00	781	2855
-4299	150	2002-04-05 00:00:00	820	2856
-4300	150	2002-06-15 00:00:00	781	1501
-4301	150	2001-05-21 00:00:00	589	1888
-4302	150	2002-10-21 00:00:00	589	489
-4303	150	2002-04-26 00:00:00	821	1562
-4304	150	2002-09-17 00:00:00	822	2857
-4305	150	2002-08-16 00:00:00	823	2858
-4306	150	2002-09-16 00:00:00	821	13
-4307	150	2002-09-18 00:00:00	824	2859
-4308	150	2002-08-14 00:00:00	331	2860
-4309	150	2002-09-12 00:00:00	316	489
-4310	150	2002-09-19 00:00:00	316	2861
-4311	150	2001-11-26 00:00:00	668	1569
-4312	150	2002-07-18 00:00:00	825	2862
-4313	150	2002-09-23 00:00:00	664	147
-4314	150	2002-07-23 00:00:00	287	2336
-4315	150	2002-07-29 00:00:00	287	2863
-4316	150	2002-09-12 00:00:00	648	2864
-4317	150	2002-08-06 00:00:00	705	2362
-4318	150	2002-06-03 00:00:00	681	2865
-4319	150	2001-07-31 00:00:00	331	2845
-4320	150	2001-10-09 00:00:00	316	2337
-4321	150	2002-03-11 00:00:00	657	2335
-4322	150	2002-02-26 00:00:00	244	489
-4323	150	2002-10-21 00:00:00	826	489
-4324	150	2001-12-06 00:00:00	589	2866
-4325	150	2002-10-21 00:00:00	826	1455
-4326	150	2001-07-27 00:00:00	647	2867
-4327	150	2001-08-23 00:00:00	244	2868
-4328	150	2001-04-06 00:00:00	821	1562
-4329	150	2001-12-28 00:00:00	781	1501
-4330	150	2002-10-28 00:00:00	436	2869
-4331	150	2002-10-28 00:00:00	436	2869
-4332	150	2002-04-09 00:00:00	338	2334
-4333	150	2002-06-07 00:00:00	827	2870
-4334	150	2002-04-17 00:00:00	430	2871
-4335	140	2002-04-22 00:00:00	601	2715
-4336	140	2001-05-02 00:00:00	601	2715
-4337	130	2002-04-10 00:00:00	598	2872
-4338	130	2002-04-05 00:00:00	820	2873
-4339	130	2002-07-29 00:00:00	703	2874
-4340	130	2002-09-11 00:00:00	601	2363
-4341	125	2001-04-20 00:00:00	332	1585
-4342	125	2001-06-29 00:00:00	697	2875
-4343	125	2001-06-29 00:00:00	697	2876
-4344	125	2002-08-21 00:00:00	521	2877
-4345	125	2002-08-22 00:00:00	828	2878
-4346	125	2002-07-18 00:00:00	345	2879
-4347	125	2001-04-26 00:00:00	332	2348
-4348	125	2002-04-05 00:00:00	332	1585
-4349	125	2001-12-04 00:00:00	589	489
-4350	125	2002-03-15 00:00:00	705	2508
-4351	110	2002-09-11 00:00:00	649	2880
-4352	105	2002-04-22 00:00:00	601	1615
-4353	100	2001-03-02 00:00:00	657	2401
-4354	100	2002-04-02 00:00:00	679	489
-4355	100	2002-05-24 00:00:00	287	2328
-4356	100	2002-05-02 00:00:00	425	1455
-4357	100	2001-06-10 00:00:00	829	1907
-4358	100	2001-07-20 00:00:00	598	2881
-4359	100	2001-09-25 00:00:00	585	2882
-4360	100	2001-09-25 00:00:00	585	2883
-4361	100	2001-09-24 00:00:00	829	1907
-4362	100	2002-10-18 00:00:00	593	1455
-4363	100	2001-07-27 00:00:00	647	2263
-4364	100	2001-06-04 00:00:00	654	2884
-4365	100	2001-06-04 00:00:00	654	2885
-4366	100	2002-10-08 00:00:00	229	489
-4367	100	2002-07-02 00:00:00	826	1455
-4368	100	2002-08-28 00:00:00	708	2886
-4369	100	2001-08-20 00:00:00	283	2430
-4370	100	2001-03-08 00:00:00	657	2378
-4371	100	2002-10-01 00:00:00	741	2887
-4372	100	2002-10-01 00:00:00	741	2888
-4373	100	2001-12-05 00:00:00	671	1455
-4374	100	2002-04-30 00:00:00	316	2407
-4375	100	2001-11-20 00:00:00	671	2715
-4376	100	2002-09-13 00:00:00	709	1878
-4377	100	2001-04-19 00:00:00	430	2889
-4378	100	2001-08-03 00:00:00	465	2890
-4379	100	2002-07-22 00:00:00	446	2891
-4380	100	2002-09-09 00:00:00	655	2290
-4381	100	2002-09-06 00:00:00	465	2890
-4382	100	2002-09-18 00:00:00	332	1585
-4383	100	2002-05-09 00:00:00	670	2892
-4384	100	2001-04-19 00:00:00	711	1455
-4385	100	2001-06-20 00:00:00	293	2893
-4386	100	2002-03-21 00:00:00	711	1455
-4387	100	2002-10-02 00:00:00	821	1024
-4388	100	2001-07-11 00:00:00	697	2894
-4389	100	2002-02-23 00:00:00	657	2379
-4390	100	2002-11-08 00:00:00	601	1455
-4391	100	2002-06-03 00:00:00	830	2895
-4392	100	2002-05-02 00:00:00	831	2264
-4393	100	2001-06-29 00:00:00	697	2790
-4394	100	2001-09-29 00:00:00	711	1455
-4395	100	2002-11-08 00:00:00	601	2715
-4396	100	2002-07-31 00:00:00	753	2896
-4397	100	2002-02-17 00:00:00	657	2352
-4398	100	2001-08-23 00:00:00	283	2779
-4399	100	2001-06-22 00:00:00	703	2874
-4400	100	2002-11-05 00:00:00	697	2897
-4401	100	2002-08-01 00:00:00	832	2898
-4402	100	2002-09-26 00:00:00	821	1562
-4403	100	2002-10-20 00:00:00	705	2899
-4404	100	2002-06-11 00:00:00	654	2900
-4405	100	2002-02-21 00:00:00	323	2423
-4406	100	2002-03-28 00:00:00	655	2901
-4407	100	2002-08-14 00:00:00	697	1881
-4408	100	2002-08-26 00:00:00	713	2902
-4409	100	2001-12-30 00:00:00	625	2903
-4410	100	2002-04-24 00:00:00	784	1878
-4411	100	2001-08-28 00:00:00	655	2904
-4412	100	2001-12-19 00:00:00	697	2905
-4413	100	2002-05-17 00:00:00	703	1907
-4414	100	2002-10-09 00:00:00	833	2906
-4415	100	2002-10-22 00:00:00	643	489
-4416	100	2002-12-14 00:00:00	601	2907
-4417	100	2002-01-18 00:00:00	703	2874
-4418	100	2002-10-16 00:00:00	287	2908
-4419	100	2002-07-02 00:00:00	789	2057
-4420	100	2002-02-21 00:00:00	323	2909
-4421	100	2002-09-13 00:00:00	741	2910
-4422	100	2002-09-13 00:00:00	741	1285
-4423	100	2002-09-18 00:00:00	741	2911
-4424	100	2002-07-01 00:00:00	824	147
-4425	100	2002-10-26 00:00:00	436	2912
-4426	100	2002-02-22 00:00:00	323	1573
-4427	100	2002-09-04 00:00:00	834	2913
-4428	100	2002-09-16 00:00:00	835	2914
-4429	100	2002-04-24 00:00:00	323	2915
-4430	100	2002-08-21 00:00:00	477	2916
-4431	100	2002-05-20 00:00:00	323	1581
-4432	100	2002-07-17 00:00:00	593	1455
-4433	100	2001-02-26 00:00:00	657	2379
-4434	100	2001-03-05 00:00:00	657	2335
-4435	100	2002-09-09 00:00:00	316	2407
-4436	100	2002-08-20 00:00:00	316	2917
-4437	100	2001-09-10 00:00:00	705	2918
-4438	100	2002-09-11 00:00:00	836	2919
-4439	100	2002-08-30 00:00:00	585	2920
-4440	100	2002-07-25 00:00:00	670	2921
-4441	100	2002-09-26 00:00:00	837	2922
-4442	100	2002-08-18 00:00:00	657	2401
-4443	100	2002-05-28 00:00:00	420	2787
-4444	100	2002-02-01 00:00:00	838	2923
-4445	100	2001-05-05 00:00:00	323	2924
-4446	100	2002-05-14 00:00:00	799	2925
-4447	100	2002-08-27 00:00:00	479	1633
-4448	100	2002-09-09 00:00:00	714	2926
-4449	100	2002-09-09 00:00:00	714	2927
-4450	100	2002-06-11 00:00:00	654	2928
-4451	100	2002-09-11 00:00:00	601	1455
-4452	99	2002-04-26 00:00:00	655	2352
-4453	99	2002-04-26 00:00:00	655	2904
-4454	90	2002-08-02 00:00:00	742	2929
-4455	80	2002-05-15 00:00:00	675	2360
-4456	80	2001-06-04 00:00:00	654	2930
-4457	75	2002-09-04 00:00:00	741	2931
-4458	75	2001-12-04 00:00:00	697	2932
-4459	75	2001-02-22 00:00:00	324	2264
-4460	75	2002-08-02 00:00:00	244	1012
-4461	75	2002-10-15 00:00:00	833	2933
-4462	75	2002-10-01 00:00:00	803	2934
-4463	75	2002-10-23 00:00:00	652	2935
-4464	75	2002-09-20 00:00:00	711	1455
-4465	70	2002-09-19 00:00:00	833	2936
-4466	70	2002-04-04 00:00:00	601	1455
-4467	65	2001-08-06 00:00:00	601	1455
-4468	60	2002-04-17 00:00:00	758	2937
-4469	60	2001-09-10 00:00:00	703	2938
-4470	59	2002-04-07 00:00:00	659	2939
-4471	50	2002-06-11 00:00:00	654	2940
-4472	50	2001-10-10 00:00:00	430	2889
-4473	50	2001-05-28 00:00:00	436	2941
-4474	50	2001-06-07 00:00:00	680	2942
-4475	50	2001-06-07 00:00:00	680	2943
-4476	50	2001-06-07 00:00:00	680	2437
-4477	50	2001-03-22 00:00:00	839	2944
-4478	50	2001-04-18 00:00:00	697	2945
-4479	50	2002-05-24 00:00:00	772	1501
-4480	50	2002-05-24 00:00:00	840	2946
-4481	50	2002-07-08 00:00:00	772	2947
-4482	50	2002-06-03 00:00:00	680	2437
-4483	50	2002-06-03 00:00:00	680	2948
-4484	50	2002-06-05 00:00:00	680	2436
-4485	50	2002-06-05 00:00:00	680	2949
-4486	50	2002-06-03 00:00:00	759	2950
-4487	50	2002-06-03 00:00:00	759	2951
-4488	50	2001-06-04 00:00:00	654	2952
-4489	50	2001-06-04 00:00:00	654	2953
-4490	50	2002-08-21 00:00:00	652	2954
-4491	50	2002-09-16 00:00:00	833	2955
-4492	50	2002-08-25 00:00:00	841	2956
-4493	50	2002-09-29 00:00:00	788	2957
-4494	50	2002-06-11 00:00:00	654	2958
-4495	50	2002-06-11 00:00:00	654	2959
-4496	50	2002-06-11 00:00:00	654	1877
-4497	50	2002-04-24 00:00:00	293	2893
-4498	50	2002-03-26 00:00:00	839	2960
-4499	50	2002-03-15 00:00:00	839	2961
-4500	50	2002-01-25 00:00:00	647	2867
-4501	50	2002-10-09 00:00:00	833	2962
-4502	50	2002-11-05 00:00:00	697	2963
-4503	50	2002-10-12 00:00:00	674	2964
-4504	50	2002-10-21 00:00:00	312	2965
-4505	45	2002-09-09 00:00:00	842	2966
-4506	45	2002-09-20 00:00:00	749	2967
-4507	40	2002-09-20 00:00:00	749	2968
-4508	40	2002-11-01 00:00:00	843	2969
-4509	35	2002-04-11 00:00:00	794	1602
-4510	33	2001-03-12 00:00:00	331	2445
-4511	30	2001-05-14 00:00:00	830	2970
-4512	30	2002-09-20 00:00:00	749	2971
-4513	30	2001-05-06 00:00:00	659	2972
-4514	30	2001-09-17 00:00:00	697	2965
-4515	30	2001-08-08 00:00:00	331	2973
-4516	29	2002-01-21 00:00:00	331	2445
-4517	25	2002-11-01 00:00:00	843	2974
-4518	25	2002-03-20 00:00:00	776	2975
-4519	25	2002-05-10 00:00:00	830	2976
-4520	25	2002-05-10 00:00:00	830	2977
-4521	25	2001-05-04 00:00:00	830	2978
-4522	25	2001-07-26 00:00:00	331	2445
-4523	25	2001-09-17 00:00:00	697	2423
-4524	25	2002-09-20 00:00:00	749	2979
-4525	25	2001-05-10 00:00:00	830	2976
-4526	25	2001-04-30 00:00:00	331	2445
-4527	25	2002-07-25 00:00:00	744	2980
-4528	25	2001-05-22 00:00:00	830	318
-4529	25	2001-05-29 00:00:00	830	2981
-4530	25	2001-05-29 00:00:00	830	2982
-4531	25	2002-09-29 00:00:00	788	2983
-4532	25	2002-02-16 00:00:00	675	2448
-4533	25	2002-05-16 00:00:00	830	2984
-4534	25	2002-05-10 00:00:00	331	2445
-4535	20	2002-05-15 00:00:00	675	2985
-4536	20	2001-07-09 00:00:00	697	2986
-4537	20	2001-05-15 00:00:00	830	2987
-4538	20	2002-06-04 00:00:00	794	2988
-4539	20	2002-04-02 00:00:00	844	2989
-4540	20	2001-05-09 00:00:00	830	2990
-4541	20	2002-05-15 00:00:00	675	2991
-4542	20	2001-05-10 00:00:00	830	2992
-4543	20	2001-05-03 00:00:00	830	2993
-4544	16	2001-05-10 00:00:00	830	2994
-4545	15	2001-05-08 00:00:00	830	2995
-4546	10	2002-09-20 00:00:00	749	2996
-4547	10	2001-05-15 00:00:00	830	2997
-4548	-200	2001-01-03 00:00:00	811	2998
-4549	-200	2001-01-03 00:00:00	811	2999
-4550	-200	2001-01-03 00:00:00	811	2999
-4551	-500	2002-08-28 00:00:00	549	2572
-4552	-500	2002-07-17 00:00:00	28	3000
-4553	-1000	2002-08-01 00:00:00	549	2482
-4554	-1000	2002-06-17 00:00:00	737	3001
-4555	-1000	2002-05-01 00:00:00	28	3002
-4556	-1000	2001-06-05 00:00:00	549	3003
-4557	-1000	2002-05-23 00:00:00	39	3004
-4558	-1000	2002-11-04 00:00:00	213	3005
-4559	-2000	2002-08-01 00:00:00	549	2482
-4560	50000	2000-09-27 00:00:00	845	3006
-4561	25000	2000-11-03 00:00:00	846	3007
-4562	25000	2000-01-10 00:00:00	530	3008
-4563	20000	2000-03-17 00:00:00	76	3009
-4564	20000	2000-06-30 00:00:00	2	3010
-4565	15000	1999-05-28 00:00:00	724	3011
-4566	13369	2000-01-01 00:00:00	530	3012
-4567	12000	2000-06-07 00:00:00	847	3013
-4568	10000	2000-06-07 00:00:00	175	3013
-4569	10000	2000-05-03 00:00:00	848	3014
-4570	10000	2000-06-30 00:00:00	2	1652
-4571	10000	2000-01-10 00:00:00	530	3015
-4572	7700	2000-01-04 00:00:00	849	3016
-4573	7500	1999-09-10 00:00:00	530	3017
-4574	5000	2000-08-01 00:00:00	179	3018
-4575	5000	1999-10-13 00:00:00	2	3019
-4576	5000	1999-10-13 00:00:00	850	3019
-4577	5000	1999-08-31 00:00:00	851	2695
-4578	5000	2000-03-17 00:00:00	846	3009
-4579	5000	2000-09-18 00:00:00	175	3013
-4580	5000	2000-10-13 00:00:00	846	3020
-4581	5000	2000-09-30 00:00:00	529	489
-4582	5000	2000-10-12 00:00:00	654	489
-4583	5000	2000-10-13 00:00:00	539	489
-4584	5000	2000-10-12 00:00:00	177	3021
-4585	5000	2000-06-26 00:00:00	852	3022
-4586	5000	2000-07-07 00:00:00	530	2461
-4587	5000	2000-07-11 00:00:00	853	3023
-4588	5000	2000-10-10 00:00:00	854	3024
-4589	5000	2000-06-27 00:00:00	852	3025
-4590	5000	2000-09-06 00:00:00	76	2695
-4591	5000	1999-01-22 00:00:00	52	3026
-4592	4500	2000-07-11 00:00:00	855	3027
-4593	4500	2000-07-20 00:00:00	853	3028
-4594	4500	1999-12-27 00:00:00	855	3029
-4595	4000	2000-10-30 00:00:00	4	3030
-4596	4000	2000-10-11 00:00:00	565	489
-4597	4000	2000-03-16 00:00:00	565	3031
-4598	4000	2000-05-16 00:00:00	856	3032
-4599	4000	1999-05-18 00:00:00	856	3033
-4600	3346	1999-06-16 00:00:00	654	3034
-4601	3200	1999-11-29 00:00:00	855	3035
-4602	2000	1999-06-30 00:00:00	28	3036
-4603	2000	1999-06-30 00:00:00	28	3037
-4604	2000	2000-05-16 00:00:00	856	3038
-4605	2000	2000-05-16 00:00:00	856	3039
-4606	2000	1999-03-10 00:00:00	543	3040
-4607	2000	2000-06-30 00:00:00	850	3041
-4608	2000	2000-09-29 00:00:00	4	3042
-4609	2000	1999-12-10 00:00:00	39	3043
-4610	2000	2000-05-17 00:00:00	856	3044
-4611	2000	2000-05-17 00:00:00	856	3045
-4612	2000	1999-05-11 00:00:00	856	3046
-4613	2000	1999-05-13 00:00:00	856	3047
-4614	2000	1999-06-30 00:00:00	28	3048
-4615	2000	1999-06-30 00:00:00	28	3049
-4616	2000	1999-04-29 00:00:00	856	3050
-4617	2000	1999-04-15 00:00:00	558	1722
-4618	2000	2000-08-25 00:00:00	177	3051
-4619	2000	2000-11-09 00:00:00	848	3052
-4620	1500	1999-05-10 00:00:00	5	3053
-4621	1500	2000-12-14 00:00:00	853	3054
-4622	1500	2000-12-08 00:00:00	530	2485
-4623	1500	2000-09-20 00:00:00	714	1687
-4624	1500	2000-03-20 00:00:00	39	3055
-4625	1250	2000-10-17 00:00:00	857	489
-4626	1200	1999-08-03 00:00:00	529	489
-4627	1200	2000-08-02 00:00:00	529	489
-4628	1000	2000-08-16 00:00:00	858	3056
-4629	1000	2000-08-28 00:00:00	859	3057
-4630	1000	2000-08-09 00:00:00	417	3058
-4631	1000	2000-09-22 00:00:00	860	3059
-4632	1000	2000-08-28 00:00:00	861	2547
-4633	1000	2000-08-25 00:00:00	862	1864
-4634	1000	2000-08-28 00:00:00	863	2545
-4635	1000	2000-09-18 00:00:00	39	3060
-4636	1000	2000-09-04 00:00:00	39	3061
-4637	1000	2000-09-27 00:00:00	39	3062
-4638	1000	2000-07-20 00:00:00	850	3019
-4639	1000	2000-09-26 00:00:00	15	3063
-4640	1000	2000-09-26 00:00:00	15	3064
-4641	1000	2000-08-28 00:00:00	864	2545
-4642	1000	2000-08-28 00:00:00	865	2545
-4643	1000	2000-08-31 00:00:00	866	2545
-4644	1000	2000-09-27 00:00:00	52	3065
-4645	1000	2000-10-17 00:00:00	867	3066
-4646	1000	2000-10-17 00:00:00	867	3067
-4647	1000	2000-10-03 00:00:00	39	3068
-4648	1000	2000-10-04 00:00:00	39	1778
-4649	1000	2000-09-15 00:00:00	87	3069
-4650	1000	2000-09-07 00:00:00	267	3070
-4651	1000	2000-09-07 00:00:00	267	3070
-4652	1000	2000-09-08 00:00:00	267	3071
-4653	1000	2000-09-08 00:00:00	267	3071
-4654	1000	2000-11-14 00:00:00	39	3072
-4655	1000	2000-10-30 00:00:00	39	3073
-4656	1000	2000-11-01 00:00:00	39	3074
-4657	1000	2000-11-01 00:00:00	39	3074
-4658	1000	2000-11-01 00:00:00	39	3075
-4659	1000	2000-10-31 00:00:00	39	1778
-4660	1000	2000-10-20 00:00:00	413	3076
-4661	1000	2000-11-01 00:00:00	868	3077
-4662	1000	2000-10-24 00:00:00	868	3078
-4663	1000	2000-11-03 00:00:00	11	3079
-4664	1000	2000-10-25 00:00:00	869	3080
-4665	1000	2000-10-26 00:00:00	870	3081
-4666	1000	2000-11-03 00:00:00	76	3082
-4667	1000	2000-11-28 00:00:00	39	3083
-4668	1000	2000-10-25 00:00:00	549	3084
-4669	1000	2000-12-21 00:00:00	39	1778
-4670	1000	2000-12-28 00:00:00	39	3074
-4671	1000	2000-09-28 00:00:00	867	3065
-4672	1000	2000-09-12 00:00:00	867	3066
-4673	1000	2000-07-20 00:00:00	39	3019
-4674	1000	2000-08-10 00:00:00	39	1778
-4675	1000	2000-07-19 00:00:00	39	3085
-4676	1000	2000-07-19 00:00:00	39	3086
-4677	1000	2000-03-27 00:00:00	549	3087
-4678	1000	2000-04-04 00:00:00	549	3088
-4679	1000	2000-05-16 00:00:00	549	3089
-4680	1000	2000-06-13 00:00:00	549	3090
-4681	1000	2000-06-13 00:00:00	549	3090
-4682	1000	2000-06-13 00:00:00	549	3091
-4683	1000	2000-06-13 00:00:00	549	3091
-4684	1000	2000-06-06 00:00:00	549	2533
-4685	1000	2000-04-11 00:00:00	549	2512
-4686	1000	2000-06-27 00:00:00	549	3092
-4687	1000	2000-06-27 00:00:00	549	3092
-4688	1000	2000-06-27 00:00:00	549	3093
-4689	1000	2000-06-27 00:00:00	549	3093
-4690	1000	2000-06-27 00:00:00	549	3094
-4691	1000	2000-06-27 00:00:00	549	3094
-4692	1000	2000-06-27 00:00:00	549	3095
-4693	1000	2000-06-27 00:00:00	549	3095
-4694	1000	2000-02-15 00:00:00	549	3096
-4695	1000	2000-06-27 00:00:00	549	3097
-4696	1000	2000-06-27 00:00:00	549	3097
-4697	1000	2000-02-01 00:00:00	549	3098
-4698	1000	2000-02-01 00:00:00	549	3099
-4699	1000	2000-02-01 00:00:00	549	3099
-4700	1000	2000-06-29 00:00:00	871	3100
-4701	1000	2000-06-29 00:00:00	871	1826
-4702	1000	2000-05-11 00:00:00	872	3101
-4703	1000	2000-04-27 00:00:00	869	3101
-4704	1000	2000-05-03 00:00:00	377	3102
-4705	1000	2000-05-03 00:00:00	377	3103
-4706	1000	2000-06-28 00:00:00	873	1722
-4707	1000	2000-06-19 00:00:00	427	3104
-4708	1000	2000-06-23 00:00:00	427	3105
-4709	1000	2000-06-06 00:00:00	850	3106
-4710	1000	2000-05-01 00:00:00	201	3107
-4711	1000	2000-06-29 00:00:00	267	3108
-4712	1000	2000-04-18 00:00:00	397	3109
-4713	1000	2000-04-29 00:00:00	874	3110
-4714	1000	2000-05-01 00:00:00	874	3111
-4715	1000	2000-04-04 00:00:00	856	3112
-4716	1000	2000-04-04 00:00:00	856	3113
-4717	1000	2000-06-15 00:00:00	306	3114
-4718	1000	2000-06-15 00:00:00	306	3114
-4719	1000	2000-06-30 00:00:00	39	3115
-4720	1000	2000-06-30 00:00:00	39	3115
-4721	1000	2000-06-07 00:00:00	39	3116
-4722	1000	2000-05-15 00:00:00	102	3117
-4723	1000	2000-04-19 00:00:00	98	3118
-4724	1000	2000-06-22 00:00:00	867	3119
-4725	1000	2000-06-30 00:00:00	867	3120
-4726	1000	2000-06-30 00:00:00	867	3120
-4727	1000	2000-06-29 00:00:00	867	3121
-4728	1000	2000-06-26 00:00:00	867	3122
-4729	1000	2000-06-26 00:00:00	867	3122
-4730	1000	2000-06-07 00:00:00	725	3013
-4731	1000	2000-06-07 00:00:00	725	3013
-4732	1000	2000-06-05 00:00:00	875	3123
-4733	1000	2000-05-17 00:00:00	413	3124
-4734	1000	2000-06-08 00:00:00	876	3125
-4735	1000	2000-06-16 00:00:00	750	2548
-4736	1000	2000-06-20 00:00:00	877	3126
-4737	1000	2000-04-20 00:00:00	878	3127
-4738	1000	2000-05-31 00:00:00	4	3128
-4739	1000	2000-05-22 00:00:00	11	3129
-4740	1000	2000-05-31 00:00:00	858	3130
-4741	1000	2000-04-14 00:00:00	355	3101
-4742	1000	2000-02-23 00:00:00	879	1868
-4743	1000	2000-04-13 00:00:00	543	3131
-4744	1000	2000-04-26 00:00:00	543	3132
-4745	1000	2000-02-09 00:00:00	856	3133
-4746	1000	2000-03-21 00:00:00	856	3134
-4747	1000	2000-03-28 00:00:00	856	3135
-4748	1000	2000-03-30 00:00:00	306	3136
-4749	1000	2000-03-30 00:00:00	306	3136
-4750	1000	2000-03-31 00:00:00	880	3137
-4751	1000	2000-03-24 00:00:00	876	3138
-4752	1000	2000-03-24 00:00:00	876	3139
-4753	1000	2000-01-28 00:00:00	746	3140
-4754	1000	2000-02-03 00:00:00	39	3043
-4755	1000	2000-03-20 00:00:00	39	3055
-4756	1000	2000-02-24 00:00:00	881	3141
-4757	1000	2000-02-18 00:00:00	882	3142
-4758	1000	1999-12-20 00:00:00	883	3143
-4759	1000	1999-12-29 00:00:00	730	3144
-4760	1000	1999-12-29 00:00:00	730	3145
-4761	1000	1999-12-29 00:00:00	730	3146
-4762	1000	1999-12-06 00:00:00	549	1826
-4763	1000	1999-10-10 00:00:00	549	3147
-4764	1000	1999-10-04 00:00:00	549	3148
-4765	1000	1999-10-04 00:00:00	549	3148
-4766	1000	1999-10-04 00:00:00	549	3149
-4767	1000	1999-10-04 00:00:00	549	3149
-4768	1000	1999-10-01 00:00:00	549	3150
-4769	1000	1999-10-01 00:00:00	549	3150
-4770	1000	1999-10-01 00:00:00	549	3151
-4771	1000	1999-10-01 00:00:00	549	3151
-4772	1000	1999-08-24 00:00:00	549	3152
-4773	1000	1999-08-24 00:00:00	549	3152
-4774	1000	1999-10-13 00:00:00	549	3153
-4775	1000	1999-10-13 00:00:00	549	3153
-4776	1000	1999-10-01 00:00:00	549	3136
-4777	1000	1999-10-01 00:00:00	549	3136
-4778	1000	1999-11-19 00:00:00	549	1826
-4779	1000	1999-10-04 00:00:00	549	3154
-4780	1000	1999-09-28 00:00:00	549	3106
-4781	1000	1999-09-28 00:00:00	549	3106
-4782	1000	1999-10-01 00:00:00	213	3155
-4783	1000	1999-07-02 00:00:00	884	3156
-4784	1000	1999-12-02 00:00:00	885	3157
-4785	1000	1999-08-26 00:00:00	851	3158
-4786	1000	1999-10-07 00:00:00	851	3159
-4787	1000	1999-08-12 00:00:00	746	3160
-4788	1000	1999-11-05 00:00:00	413	3161
-4789	1000	1999-09-01 00:00:00	879	3162
-4790	1000	1999-08-19 00:00:00	876	3163
-4791	1000	1999-11-29 00:00:00	25	3164
-4792	1000	1999-10-27 00:00:00	856	3165
-4793	1000	1999-12-21 00:00:00	856	3166
-4794	1000	1999-07-15 00:00:00	856	3033
-4795	1000	1999-11-09 00:00:00	856	3167
-4796	1000	1999-07-15 00:00:00	856	3168
-4797	1000	1999-12-29 00:00:00	856	3169
-4798	1000	1999-09-23 00:00:00	856	3170
-4799	1000	1999-12-17 00:00:00	856	3171
-4800	1000	1999-12-29 00:00:00	856	3169
-4801	1000	1999-11-12 00:00:00	856	3172
-4802	1000	1999-12-30 00:00:00	856	3173
-4803	1000	1999-12-29 00:00:00	856	3174
-4804	1000	1999-11-15 00:00:00	856	3175
-4805	1000	1999-07-15 00:00:00	856	3168
-4806	1000	1999-12-29 00:00:00	856	3174
-4807	1000	1999-08-31 00:00:00	856	3171
-4808	1000	1999-11-22 00:00:00	856	3176
-4809	1000	1999-10-04 00:00:00	856	3044
-4810	1000	1999-12-21 00:00:00	856	3166
-4811	1000	1999-12-31 00:00:00	886	3177
-4812	1000	1999-10-29 00:00:00	175	3178
-4813	1000	1999-12-21 00:00:00	11	3179
-4814	1000	1999-07-06 00:00:00	377	3103
-4815	1000	1999-07-06 00:00:00	377	3103
-4816	1000	1999-11-08 00:00:00	39	3180
-4817	1000	1999-10-14 00:00:00	39	3181
-4818	1000	1999-10-14 00:00:00	39	3181
-4819	1000	1999-09-07 00:00:00	39	3182
-4820	1000	1999-11-08 00:00:00	39	3183
-4821	1000	1999-10-25 00:00:00	39	3184
-4822	1000	1999-11-17 00:00:00	39	3185
-4823	1000	1999-11-17 00:00:00	39	3185
-4824	1000	1999-12-10 00:00:00	39	3186
-4825	1000	1999-11-08 00:00:00	39	3187
-4826	1000	1999-11-08 00:00:00	39	3188
-4827	1000	1999-11-08 00:00:00	39	3189
-4828	1000	1999-11-02 00:00:00	39	3190
-4829	1000	1999-07-01 00:00:00	39	2695
-4830	1000	1999-11-04 00:00:00	887	3191
-4831	1000	1999-11-01 00:00:00	887	3192
-4832	1000	1999-11-10 00:00:00	887	3193
-4833	1000	1999-11-15 00:00:00	887	3194
-4834	1000	1999-12-22 00:00:00	858	1079
-4835	1000	1999-12-22 00:00:00	858	1080
-4836	1000	1999-10-29 00:00:00	543	3195
-4837	1000	1999-10-29 00:00:00	543	3196
-4838	1000	1999-10-19 00:00:00	543	3196
-4839	1000	1999-12-22 00:00:00	543	3197
-4840	1000	1999-12-22 00:00:00	543	3198
-4841	1000	1999-10-18 00:00:00	543	3199
-4842	1000	1999-08-06 00:00:00	576	3200
-4843	1000	1999-08-06 00:00:00	576	3201
-4844	1000	1999-08-26 00:00:00	576	3202
-4845	1000	1999-08-26 00:00:00	576	3203
-4846	1000	1999-07-14 00:00:00	543	3204
-4847	1000	1999-07-29 00:00:00	543	3205
-4848	1000	1999-07-29 00:00:00	543	3206
-4849	1000	1999-07-27 00:00:00	887	3207
-4850	1000	1999-07-26 00:00:00	887	3208
-4851	1000	1999-08-02 00:00:00	887	3209
-4852	1000	1999-09-30 00:00:00	882	3210
-4853	1000	1999-07-06 00:00:00	377	3103
-4854	1000	1999-07-06 00:00:00	377	3103
-4855	1000	1999-03-24 00:00:00	15	3211
-4856	1000	1999-02-23 00:00:00	15	3212
-4857	1000	1999-02-01 00:00:00	201	3107
-4858	1000	1999-04-28 00:00:00	856	3213
-4859	1000	1999-04-28 00:00:00	856	3214
-4860	1000	1999-05-04 00:00:00	856	3050
-4861	1000	1999-04-23 00:00:00	856	3215
-4862	1000	1999-04-23 00:00:00	856	3215
-4863	1000	1999-05-27 00:00:00	856	3047
-4864	1000	1999-05-28 00:00:00	856	3216
-4865	1000	1999-05-18 00:00:00	856	3046
-4866	1000	1999-06-09 00:00:00	884	3217
-4867	1000	1999-04-19 00:00:00	558	1722
-4868	1000	1999-03-16 00:00:00	417	3218
-4869	1000	1999-03-16 00:00:00	417	3219
-4870	1000	1999-03-16 00:00:00	417	3220
-4871	1000	1999-03-16 00:00:00	417	3221
-4872	1000	1999-04-23 00:00:00	888	3145
-4873	1000	1999-06-30 00:00:00	28	3049
-4874	1000	1999-06-30 00:00:00	28	3222
-4875	1000	1999-06-30 00:00:00	28	3223
-4876	1000	1999-06-30 00:00:00	28	3224
-4877	1000	1999-06-01 00:00:00	28	3225
-4878	1000	1999-05-28 00:00:00	28	3225
-4879	1000	1999-06-30 00:00:00	28	3048
-4880	1000	1999-06-30 00:00:00	28	3037
-4881	1000	1999-06-30 00:00:00	28	3036
-4882	1000	1999-06-04 00:00:00	306	3226
-4883	1000	1999-06-18 00:00:00	306	3227
-4884	1000	1999-03-11 00:00:00	881	3141
-4885	1000	1999-05-27 00:00:00	25	3228
-4886	1000	1999-05-19 00:00:00	25	3228
-4887	1000	1999-04-19 00:00:00	76	3229
-4888	1000	1999-05-18 00:00:00	98	3230
-4889	1000	1999-04-22 00:00:00	885	3231
-4890	1000	1999-05-15 00:00:00	87	3069
-4891	1000	1999-06-01 00:00:00	860	3232
-4892	1000	1999-06-01 00:00:00	860	3233
-4893	1000	1999-06-03 00:00:00	543	3234
-4894	1000	1999-05-13 00:00:00	543	3013
-4895	1000	1999-06-03 00:00:00	543	3235
-4896	1000	1999-06-30 00:00:00	543	3236
-4897	1000	1999-05-03 00:00:00	543	3237
-4898	1000	1999-06-18 00:00:00	543	3238
-4899	1000	2000-05-16 00:00:00	396	3239
-4900	1000	2000-05-06 00:00:00	710	489
-4901	1000	2000-11-13 00:00:00	769	489
-4902	1000	2000-02-07 00:00:00	852	489
-4903	1000	1999-11-19 00:00:00	248	489
-4904	1000	1999-11-19 00:00:00	889	489
-4905	1000	1999-11-01 00:00:00	857	489
-4906	1000	2000-02-08 00:00:00	890	489
-4907	1000	2000-12-27 00:00:00	530	489
-4908	1000	2000-10-21 00:00:00	891	3240
-4909	1000	2000-10-22 00:00:00	620	3241
-4910	1000	2000-08-01 00:00:00	892	3242
-4911	1000	2000-05-31 00:00:00	855	3243
-4912	1000	1999-08-18 00:00:00	539	489
-4913	1000	2000-10-11 00:00:00	529	489
-4914	1000	2000-03-16 00:00:00	565	3031
-4915	1000	1999-10-08 00:00:00	565	3031
-4916	1000	2000-10-11 00:00:00	565	489
-4917	1000	2000-07-20 00:00:00	585	2396
-4918	1000	1999-08-31 00:00:00	585	1173
-4919	1000	1999-05-06 00:00:00	543	3244
-4920	1000	1999-06-25 00:00:00	882	3245
-4921	1000	1999-04-12 00:00:00	887	3246
-4922	1000	1999-04-15 00:00:00	887	3247
-4923	1000	1999-05-17 00:00:00	887	3248
-4924	1000	1999-05-17 00:00:00	887	3249
-4925	1000	1999-06-10 00:00:00	893	3250
-4926	1000	1999-05-24 00:00:00	893	3251
-4927	1000	1999-06-30 00:00:00	893	3252
-4928	1000	1999-03-31 00:00:00	893	3253
-4929	1000	1999-03-31 00:00:00	893	3254
-4930	1000	1999-03-09 00:00:00	894	3255
-4931	1000	1999-03-17 00:00:00	894	3256
-4932	1000	1999-03-31 00:00:00	894	3257
-4933	1000	1999-03-31 00:00:00	858	3258
-4934	1000	1999-03-31 00:00:00	858	3259
-4935	1000	1999-03-15 00:00:00	887	3260
-4936	1000	1999-03-29 00:00:00	887	3261
-4937	1000	1999-03-29 00:00:00	887	3262
-4938	1000	1999-03-15 00:00:00	887	3263
-4939	1000	1999-02-08 00:00:00	11	3179
-4940	1000	2000-02-24 00:00:00	895	3264
-4941	1000	2000-08-16 00:00:00	39	3265
-4942	1000	2000-08-17 00:00:00	867	3266
-4943	1000	2000-07-13 00:00:00	867	3267
-4944	1000	2000-07-12 00:00:00	867	3268
-4945	1000	2000-07-12 00:00:00	867	3268
-4946	900	1999-11-23 00:00:00	200	3269
-4947	900	2000-06-20 00:00:00	282	2506
-4948	900	2000-09-11 00:00:00	781	3270
-4949	765	1999-03-23 00:00:00	750	3271
-4950	750	1999-06-14 00:00:00	4	3272
-4951	750	2000-08-30 00:00:00	712	2705
-4952	750	2000-12-12 00:00:00	239	489
-4953	750	1999-01-26 00:00:00	750	3273
-4954	700	2000-06-01 00:00:00	240	3274
-4955	687.80999999999995	2000-08-31 00:00:00	896	3275
-4956	670	1999-08-21 00:00:00	39	3276
-4957	670	1999-10-19 00:00:00	39	3276
-4958	670	1999-08-23 00:00:00	39	3277
-4959	625	1999-11-04 00:00:00	887	3278
-4960	600	2000-03-02 00:00:00	897	3279
-4961	600	2000-03-16 00:00:00	585	1173
-4962	600	2000-06-27 00:00:00	28	3280
-4963	600	1999-10-07 00:00:00	898	3281
-4964	575	2000-07-12 00:00:00	899	3282
-4965	500	2000-07-28 00:00:00	867	3283
-4966	500	1999-10-26 00:00:00	436	489
-4967	500	2000-04-20 00:00:00	530	489
-4968	500	2000-01-31 00:00:00	222	3284
-4969	500	2000-06-19 00:00:00	900	3285
-4970	500	2000-03-08 00:00:00	28	3225
-4971	500	1999-11-29 00:00:00	267	3286
-4972	500	2000-08-07 00:00:00	867	3287
-4973	500	1999-06-28 00:00:00	5	3288
-4974	500	1999-06-30 00:00:00	5	3289
-4975	500	2000-07-18 00:00:00	39	3290
-4976	500	2000-11-01 00:00:00	39	3075
-4977	500	2000-03-21 00:00:00	28	3291
-4978	500	1999-12-28 00:00:00	750	3273
-4979	500	1999-08-24 00:00:00	396	489
-4980	500	2000-07-28 00:00:00	867	3292
-4981	500	2000-07-20 00:00:00	901	3293
-4982	500	2000-07-18 00:00:00	781	3293
-4983	500	2000-11-03 00:00:00	902	3241
-4984	500	2000-10-25 00:00:00	11	3294
-4985	500	2000-07-11 00:00:00	903	3054
-4986	500	2000-11-07 00:00:00	15	3295
-4987	500	2000-10-26 00:00:00	39	3296
-4988	500	2000-08-26 00:00:00	370	3297
-4989	500	2000-07-31 00:00:00	213	3298
-4990	500	2000-09-11 00:00:00	15	3211
-4991	500	2000-10-24 00:00:00	39	3299
-4992	500	2000-09-25 00:00:00	76	3300
-4993	500	2000-02-28 00:00:00	904	3301
-4994	500	2000-06-23 00:00:00	5	3302
-4995	500	2000-09-27 00:00:00	905	3303
-4996	500	2000-02-09 00:00:00	39	3304
-4997	500	2000-08-16 00:00:00	589	2864
-4998	500	2000-09-25 00:00:00	906	489
-4999	500	2000-08-28 00:00:00	39	3305
-5000	500	1999-12-23 00:00:00	856	3306
-5001	500	1999-10-12 00:00:00	11	3079
-5002	500	2000-05-11 00:00:00	39	3083
-5003	500	1999-08-25 00:00:00	28	3307
-5004	500	1999-07-28 00:00:00	28	3308
-5005	500	2000-06-27 00:00:00	18	3309
-5006	500	2000-09-11 00:00:00	39	3310
-5007	500	2000-06-15 00:00:00	213	3311
-5008	500	1999-12-02 00:00:00	885	3157
-5009	500	1999-12-02 00:00:00	885	3312
-5010	500	1999-12-28 00:00:00	856	3313
-5011	500	1999-07-29 00:00:00	887	3314
-5012	500	2000-05-16 00:00:00	856	3315
-5013	500	2000-05-06 00:00:00	907	3316
-5014	500	2000-08-31 00:00:00	867	3317
-5015	500	2000-04-05 00:00:00	856	3318
-5016	500	1999-08-13 00:00:00	5	3289
-5017	500	1999-08-26 00:00:00	11	3319
-5018	500	2000-04-05 00:00:00	856	3320
-5019	500	1999-10-01 00:00:00	213	3155
-5020	500	1999-06-14 00:00:00	908	3321
-5021	500	2000-08-25 00:00:00	240	3322
-5022	500	2000-09-20 00:00:00	4	3323
-5023	500	2000-08-25 00:00:00	909	3324
-5024	500	1999-06-07 00:00:00	213	3325
-5025	500	2000-07-12 00:00:00	910	3326
-5026	500	1999-12-06 00:00:00	549	3327
-5027	500	2000-08-28 00:00:00	911	3328
-5028	500	2000-09-07 00:00:00	867	3329
-5029	500	2000-08-15 00:00:00	909	3330
-5030	500	2000-12-21 00:00:00	39	3075
-5031	500	2000-08-24 00:00:00	901	2757
-5032	500	2000-08-08 00:00:00	377	3331
-5033	500	2000-10-17 00:00:00	867	3332
-5034	500	2000-10-02 00:00:00	912	3333
-5035	500	2000-05-26 00:00:00	530	3334
-5036	500	2000-02-15 00:00:00	913	2695
-5037	500	1999-04-26 00:00:00	894	3335
-5038	500	2000-01-21 00:00:00	901	308
-5039	500	2000-09-06 00:00:00	914	3336
-5040	500	2000-10-20 00:00:00	312	1927
-5041	500	2000-05-01 00:00:00	714	3337
-5042	500	1999-06-29 00:00:00	845	3338
-5043	500	2000-03-17 00:00:00	335	3339
-5044	500	2000-04-20 00:00:00	530	2656
-5045	500	2000-04-20 00:00:00	530	3340
-5046	500	1999-06-30 00:00:00	915	3338
-5047	500	2000-05-11 00:00:00	542	3341
-5048	500	1999-09-09 00:00:00	222	3342
-5049	500	2000-07-31 00:00:00	892	3343
-5050	500	1999-06-30 00:00:00	893	3344
-5051	500	1999-11-11 00:00:00	916	3345
-5052	500	2000-10-23 00:00:00	28	3346
-5053	500	2000-07-11 00:00:00	877	3347
-5054	500	1999-06-30 00:00:00	893	3253
-5055	500	2000-05-11 00:00:00	917	2360
-5056	500	2000-07-31 00:00:00	917	3348
-5057	500	1999-12-15 00:00:00	267	3349
-5058	500	1999-05-12 00:00:00	417	3350
-5059	500	1999-05-12 00:00:00	417	3187
-5060	500	1999-05-12 00:00:00	417	3187
-5061	500	2000-08-11 00:00:00	267	3351
-5062	500	2000-07-24 00:00:00	11	3352
-5063	500	2000-07-06 00:00:00	15	3353
-5064	500	2000-10-26 00:00:00	870	3354
-5065	500	1999-06-21 00:00:00	300	3355
-5066	500	1999-10-20 00:00:00	856	3356
-5067	500	2000-05-08 00:00:00	917	3357
-5068	500	2000-11-03 00:00:00	918	3358
-5069	500	1999-06-30 00:00:00	28	3075
-5070	500	1999-05-12 00:00:00	5	3359
-5071	500	1999-11-29 00:00:00	267	3360
-5072	500	1999-06-08 00:00:00	28	3291
-5073	500	1999-05-06 00:00:00	11	3361
-5074	500	1999-12-16 00:00:00	28	3291
-5075	500	2000-11-01 00:00:00	413	3362
-5076	500	2000-10-27 00:00:00	18	3309
-5077	500	1999-01-26 00:00:00	11	3363
-5078	500	1999-11-19 00:00:00	587	489
-5079	500	2000-11-01 00:00:00	413	3362
-5080	500	2000-04-07 00:00:00	919	489
-5081	500	2000-11-02 00:00:00	867	3119
-5082	500	2000-11-06 00:00:00	867	3364
-5083	500	2000-06-09 00:00:00	853	1648
-5084	500	2000-04-10 00:00:00	920	489
-5085	500	2000-02-22 00:00:00	856	3365
-5086	500	1999-10-21 00:00:00	39	3366
-5087	500	2000-09-04 00:00:00	921	1928
-5088	500	2000-05-22 00:00:00	11	3367
-5089	500	2000-06-18 00:00:00	922	3368
-5090	500	1999-09-07 00:00:00	39	3369
-5091	500	1999-10-21 00:00:00	39	3370
-5092	500	2000-04-28 00:00:00	877	3371
-5093	500	2000-05-27 00:00:00	877	3372
-5094	500	2000-05-31 00:00:00	877	3373
-5095	500	2000-06-01 00:00:00	877	3374
-5096	500	2000-06-05 00:00:00	877	3375
-5097	500	2000-06-06 00:00:00	877	3376
-5098	500	2000-06-07 00:00:00	877	3377
-5099	500	2000-06-09 00:00:00	877	3378
-5100	500	2000-06-20 00:00:00	877	3347
-5101	500	2000-05-04 00:00:00	5	3379
-5102	500	1999-12-16 00:00:00	28	3291
-5103	500	2000-06-09 00:00:00	543	3380
-5104	500	2000-06-23 00:00:00	15	3075
-5105	450	2000-04-25 00:00:00	530	3381
-5106	400	2000-01-09 00:00:00	890	489
-5107	400	1999-07-14 00:00:00	5	3382
-5108	400	2000-07-17 00:00:00	867	3383
-5109	400	1999-06-30 00:00:00	5	3384
-5110	400	2000-01-18 00:00:00	542	489
-5111	400	1999-05-10 00:00:00	11	3385
-5112	400	2000-03-14 00:00:00	5	3386
-5113	400	1999-07-14 00:00:00	5	3387
-5114	400	2000-03-14 00:00:00	5	3388
-5115	400	1999-11-01 00:00:00	750	3389
-5116	400	1999-10-12 00:00:00	917	3357
-5117	400	2000-03-01 00:00:00	616	3390
-5118	400	2000-03-14 00:00:00	5	3391
-5119	400	2000-11-02 00:00:00	889	3392
-5120	375	1999-10-21 00:00:00	858	3393
-5121	375	1999-10-21 00:00:00	858	3393
-5122	360	2000-07-19 00:00:00	601	2715
-5123	350	1999-12-21 00:00:00	856	3394
-5124	350	2000-07-25 00:00:00	917	969
-5125	350	2000-03-10 00:00:00	923	489
-5126	350	2000-02-07 00:00:00	293	489
-5127	350	2000-10-30 00:00:00	924	3395
-5128	350	1999-06-24 00:00:00	750	3389
-5129	350	2000-06-26 00:00:00	521	3396
-5130	350	2000-07-20 00:00:00	751	3397
-5131	350	2000-09-14 00:00:00	741	3398
-5132	350	2000-06-15 00:00:00	900	3399
-5133	330	1999-10-19 00:00:00	39	3276
-5134	325	1999-11-23 00:00:00	925	3400
-5135	300	1999-07-28 00:00:00	5	3401
-5136	300	2000-10-03 00:00:00	926	3402
-5137	300	2000-08-27 00:00:00	676	3403
-5138	300	2000-08-21 00:00:00	927	3404
-5139	300	2000-08-07 00:00:00	751	3405
-5140	300	1999-07-08 00:00:00	746	3140
-5141	300	2000-06-26 00:00:00	28	3280
-5142	300	1999-08-21 00:00:00	928	3406
-5143	300	1999-11-04 00:00:00	4	3407
-5144	300	2000-05-15 00:00:00	39	3408
-5145	300	2000-10-23 00:00:00	28	3049
-5146	300	1999-09-22 00:00:00	5	3409
-5147	300	2000-02-03 00:00:00	905	3303
-5148	300	2000-03-03 00:00:00	929	3410
-5149	300	2000-06-30 00:00:00	222	3411
-5150	300	2000-10-23 00:00:00	28	3412
-5151	300	2000-03-23 00:00:00	442	489
-5152	300	2000-02-03 00:00:00	930	489
-5153	300	1999-05-28 00:00:00	28	3280
-5154	300	2000-08-03 00:00:00	222	3413
-5155	300	2000-03-14 00:00:00	436	489
-5156	300	2000-02-03 00:00:00	248	489
-5157	300	2000-01-20 00:00:00	712	3414
-5158	300	2000-04-26 00:00:00	856	3415
-5159	300	2000-09-08 00:00:00	222	3416
-5160	300	2000-10-16 00:00:00	751	3417
-5161	300	2000-10-31 00:00:00	39	3418
-5162	300	2000-02-03 00:00:00	261	489
-5163	300	1999-08-25 00:00:00	601	2715
-5164	300	2000-03-16 00:00:00	905	489
-5165	300	2000-03-25 00:00:00	931	3419
-5166	300	2000-11-08 00:00:00	932	489
-5167	300	2000-01-24 00:00:00	856	3420
-5168	300	2000-08-23 00:00:00	900	3399
-5169	300	2000-04-26 00:00:00	5	3421
-5170	300	2000-03-31 00:00:00	39	3422
-5171	300	2000-10-23 00:00:00	28	3423
-5172	300	2000-07-06 00:00:00	15	3424
-5173	300	2000-10-25 00:00:00	549	3425
-5174	300	1999-10-23 00:00:00	933	3426
-5175	300	1999-11-06 00:00:00	916	3427
-5176	300	2000-02-08 00:00:00	221	489
-5177	300	2000-07-18 00:00:00	867	3428
-5178	300	2000-05-15 00:00:00	39	3429
-5179	275	1999-08-13 00:00:00	712	2705
-5180	250	2000-10-18 00:00:00	752	3430
-5181	250	2000-08-31 00:00:00	867	3431
-5182	250	2000-09-01 00:00:00	934	3432
-5183	250	1999-11-09 00:00:00	240	3433
-5184	250	2000-10-17 00:00:00	18	3309
-5185	250	2000-09-12 00:00:00	867	2602
-5186	250	1999-09-16 00:00:00	856	3434
-5187	250	1999-12-08 00:00:00	856	3435
-5188	250	1999-12-16 00:00:00	856	3436
-5189	250	1999-09-16 00:00:00	856	3437
-5190	250	1999-08-13 00:00:00	745	3438
-5191	250	1999-08-17 00:00:00	856	3439
-5192	250	1999-09-16 00:00:00	856	2052
-5193	250	2000-12-08 00:00:00	15	3440
-5194	250	1999-08-13 00:00:00	780	884
-5195	250	1999-12-21 00:00:00	856	3441
-5196	250	2000-03-29 00:00:00	745	3442
-5197	250	1999-08-31 00:00:00	856	3443
-5198	250	2000-10-12 00:00:00	783	1900
-5199	250	2000-08-31 00:00:00	794	3444
-5200	250	1999-11-24 00:00:00	856	3437
-5201	250	1999-09-29 00:00:00	935	3445
-5202	250	1999-12-15 00:00:00	98	3446
-5203	250	1999-09-03 00:00:00	98	3446
-5204	250	1999-07-29 00:00:00	98	3446
-5205	250	1999-12-15 00:00:00	750	3447
-5206	250	1999-09-17 00:00:00	76	3448
-5207	250	1999-12-27 00:00:00	76	3449
-5208	250	1999-09-29 00:00:00	39	3450
-5209	250	1999-12-31 00:00:00	882	3451
-5210	250	2000-09-14 00:00:00	936	3452
-5211	250	2000-10-18 00:00:00	222	3453
-5212	250	2000-10-02 00:00:00	937	3454
-5213	250	1999-07-20 00:00:00	565	1198
-5214	250	1999-11-02 00:00:00	11	3455
-5215	250	2000-07-31 00:00:00	867	3456
-5216	250	2000-08-23 00:00:00	529	3457
-5217	250	1999-07-14 00:00:00	543	3458
-5218	250	1999-07-14 00:00:00	543	3459
-5219	250	1999-08-18 00:00:00	887	3460
-5220	250	1999-07-07 00:00:00	858	3393
-5221	250	1999-08-06 00:00:00	11	3461
-5222	250	1999-03-24 00:00:00	15	3462
-5223	250	1999-05-10 00:00:00	856	2052
-5224	250	2000-09-01 00:00:00	858	3463
-5225	250	2000-08-14 00:00:00	4	3464
-5226	250	1999-06-29 00:00:00	887	3465
-5227	250	1999-06-01 00:00:00	887	3466
-5228	250	2000-11-13 00:00:00	746	3467
-5229	250	1999-01-19 00:00:00	868	3468
-5230	250	1999-05-28 00:00:00	938	3469
-5231	250	2000-11-03 00:00:00	76	3449
-5232	250	2000-07-25 00:00:00	15	3470
-5233	250	1999-06-30 00:00:00	893	3471
-5234	250	1999-05-14 00:00:00	5	3472
-5235	250	1999-06-30 00:00:00	28	3473
-5236	250	1999-05-13 00:00:00	712	2705
-5237	250	2000-07-17 00:00:00	867	3474
-5238	250	1999-04-15 00:00:00	939	3475
-5239	250	1999-04-08 00:00:00	939	3476
-5240	250	1999-05-22 00:00:00	940	3477
-5241	250	1999-02-15 00:00:00	76	3478
-5242	250	1999-01-22 00:00:00	76	3449
-5243	250	1999-03-11 00:00:00	858	3479
-5244	250	1999-04-09 00:00:00	98	3480
-5245	250	1999-01-19 00:00:00	98	3480
-5246	250	1999-06-07 00:00:00	98	3446
-5247	250	1999-03-02 00:00:00	98	3446
-5248	250	1999-06-23 00:00:00	928	3481
-5249	250	1999-05-21 00:00:00	222	3482
-5250	250	1999-03-03 00:00:00	222	3483
-5251	250	2000-10-24 00:00:00	941	3484
-5252	250	2000-08-09 00:00:00	867	3485
-5253	250	2000-08-19 00:00:00	867	3486
-5254	250	1999-06-23 00:00:00	712	2496
-5255	250	2000-09-18 00:00:00	76	3487
-5256	250	2000-09-13 00:00:00	76	3449
-5257	250	2000-07-28 00:00:00	76	3449
-5258	250	2000-05-30 00:00:00	942	2688
-5259	250	2000-03-23 00:00:00	298	3488
-5260	250	2000-02-07 00:00:00	801	2795
-5261	250	2000-03-10 00:00:00	943	489
-5262	250	2000-06-01 00:00:00	780	3489
-5263	250	2000-05-12 00:00:00	239	489
-5264	250	2000-05-02 00:00:00	944	489
-5265	250	2000-03-17 00:00:00	326	489
-5266	250	2000-08-18 00:00:00	794	489
-5267	250	2000-03-10 00:00:00	889	489
-5268	250	2000-02-03 00:00:00	587	489
-5269	250	2000-04-01 00:00:00	229	489
-5270	250	2000-08-21 00:00:00	911	489
-5271	250	2000-03-10 00:00:00	945	489
-5272	250	1999-11-19 00:00:00	945	489
-5273	250	2000-02-05 00:00:00	312	489
-5274	250	2000-03-23 00:00:00	933	489
-5275	250	2000-02-08 00:00:00	283	489
-5276	250	2000-09-22 00:00:00	783	489
-5277	250	2000-03-07 00:00:00	946	489
-5278	250	2000-11-06 00:00:00	741	489
-5279	250	2000-02-16 00:00:00	947	489
-5280	250	2000-01-14 00:00:00	530	3490
-5281	250	2000-11-07 00:00:00	39	3491
-5282	250	2000-10-31 00:00:00	39	3492
-5283	250	2000-10-31 00:00:00	39	3492
-5284	250	2000-10-31 00:00:00	39	3492
-5285	250	2000-10-26 00:00:00	39	3493
-5286	250	2000-11-03 00:00:00	903	3054
-5287	250	2000-10-26 00:00:00	948	3494
-5288	250	2000-04-03 00:00:00	530	2871
-5289	250	1999-10-05 00:00:00	650	2271
-5290	250	2000-08-11 00:00:00	650	2271
-5291	250	1999-09-21 00:00:00	780	3495
-5292	250	2000-05-24 00:00:00	949	3496
-5293	250	2000-04-20 00:00:00	944	3497
-5294	250	1999-10-12 00:00:00	293	3498
-5295	250	2000-07-24 00:00:00	950	3499
-5296	250	2000-10-23 00:00:00	951	3500
-5297	250	2000-05-09 00:00:00	901	3501
-5298	250	2000-03-17 00:00:00	552	3502
-5299	250	1999-10-06 00:00:00	666	3503
-5300	250	2000-05-11 00:00:00	944	3504
-5301	250	2000-09-18 00:00:00	741	1885
-5302	250	2000-05-12 00:00:00	944	3505
-5303	250	2000-06-26 00:00:00	944	3506
-5304	250	2000-10-23 00:00:00	951	3507
-5305	250	1999-12-30 00:00:00	952	3508
-5306	250	2000-09-25 00:00:00	952	3509
-5307	250	2000-09-15 00:00:00	907	3510
-5308	250	2000-05-15 00:00:00	856	3437
-5309	250	2000-04-26 00:00:00	856	3420
-5310	250	2000-05-11 00:00:00	939	3475
-5311	250	2000-04-28 00:00:00	939	3511
-5312	250	2000-06-30 00:00:00	867	3512
-5313	250	2000-05-26 00:00:00	76	3449
-5314	250	2000-05-23 00:00:00	941	3484
-5315	250	2000-03-15 00:00:00	856	3513
-5316	250	2000-03-29 00:00:00	856	3514
-5317	250	2000-03-24 00:00:00	935	3515
-5318	250	2000-01-13 00:00:00	612	3516
-5319	250	2000-03-31 00:00:00	928	3481
-5320	250	2000-03-09 00:00:00	712	2496
-5321	250	2000-03-10 00:00:00	28	3517
-5322	250	2000-02-25 00:00:00	28	3518
-5323	250	2000-03-08 00:00:00	28	3308
-5324	250	2000-03-08 00:00:00	28	3223
-5325	250	2000-02-25 00:00:00	28	3519
-5326	250	2000-03-22 00:00:00	868	3468
-5327	250	2000-03-06 00:00:00	222	3520
-5328	250	2000-02-28 00:00:00	39	3521
-5329	250	2000-03-29 00:00:00	858	3522
-5330	250	2000-03-13 00:00:00	750	3389
-5331	250	2000-02-21 00:00:00	608	3523
-5332	250	2000-02-23 00:00:00	887	3524
-5333	250	1999-10-04 00:00:00	549	3315
-5334	250	2000-07-26 00:00:00	724	3525
-5335	250	1999-11-29 00:00:00	28	3049
-5336	250	1999-11-19 00:00:00	28	3519
-5337	250	2000-08-21 00:00:00	39	3526
-5338	250	1999-09-17 00:00:00	267	3527
-5339	250	1999-12-10 00:00:00	953	3528
-5340	250	1999-11-22 00:00:00	200	3529
-5341	250	1999-09-14 00:00:00	746	3530
-5342	250	2000-08-18 00:00:00	39	3531
-5343	247	2000-10-02 00:00:00	746	3454
-5344	225	2000-03-16 00:00:00	911	489
-5345	225	2000-03-10 00:00:00	954	489
-5346	225	2000-01-19 00:00:00	955	2688
-5347	220	1999-10-28 00:00:00	956	3532
-5348	200	2000-07-12 00:00:00	724	3533
-5349	200	2000-03-10 00:00:00	957	489
-5350	200	2000-08-10 00:00:00	28	3534
-5351	200	1999-07-20 00:00:00	565	2703
-5352	200	1999-11-05 00:00:00	882	3535
-5353	200	2000-01-26 00:00:00	958	489
-5354	200	2000-10-29 00:00:00	948	3536
-5355	200	1999-11-15 00:00:00	300	3537
-5356	200	1999-03-15 00:00:00	881	3538
-5357	200	2000-06-01 00:00:00	948	3536
-5358	200	2000-08-09 00:00:00	585	2396
-5359	200	2000-09-25 00:00:00	585	2396
-5360	200	1999-12-22 00:00:00	856	2052
-5361	200	1999-07-30 00:00:00	265	3539
-5362	200	1999-03-18 00:00:00	935	3540
-5363	200	1999-10-27 00:00:00	882	3535
-5364	200	1999-12-06 00:00:00	265	3539
-5365	200	2000-09-11 00:00:00	657	3541
-5366	200	2000-09-02 00:00:00	39	3542
-5367	200	2000-04-17 00:00:00	959	489
-5368	200	1999-06-22 00:00:00	960	3543
-5369	200	2000-10-30 00:00:00	917	3544
-5370	200	1999-09-22 00:00:00	856	3545
-5371	200	1999-06-22 00:00:00	960	3543
-5372	200	2000-03-03 00:00:00	882	3535
-5373	200	1999-05-28 00:00:00	28	3519
-5374	200	2000-09-21 00:00:00	868	3468
-5375	200	1999-06-30 00:00:00	28	3534
-5376	200	1999-10-26 00:00:00	882	3535
-5377	200	2000-11-13 00:00:00	917	489
-5378	200	1999-10-12 00:00:00	917	3348
-5379	200	2000-08-31 00:00:00	39	3542
-5380	200	2000-04-13 00:00:00	961	3546
-5381	200	2000-08-09 00:00:00	750	3389
-5382	200	2000-11-02 00:00:00	4	3547
-5383	200	2000-10-23 00:00:00	28	3548
-5384	200	2000-10-23 00:00:00	28	3549
-5385	200	2000-04-10 00:00:00	794	489
-5386	200	2000-02-29 00:00:00	882	3550
-5387	200	2000-02-14 00:00:00	962	3551
-5388	200	2000-10-26 00:00:00	963	489
-5389	200	2000-09-04 00:00:00	892	3552
-5390	200	1999-12-06 00:00:00	964	3553
-5391	200	1999-11-30 00:00:00	671	2345
-5392	200	2000-10-30 00:00:00	867	3383
-5393	200	2000-06-08 00:00:00	238	489
-5394	200	2000-10-15 00:00:00	495	489
-5395	200	2000-04-11 00:00:00	521	489
-5396	200	2000-10-23 00:00:00	28	3554
-5397	200	1999-07-21 00:00:00	944	2688
-5398	200	2000-04-14 00:00:00	965	489
-5399	200	2000-10-23 00:00:00	28	3555
-5400	200	1999-12-06 00:00:00	964	3556
-5401	200	2000-06-12 00:00:00	542	3557
-5402	200	2000-03-21 00:00:00	966	3558
-5403	200	2000-04-06 00:00:00	967	489
-5404	200	2000-04-27 00:00:00	958	3559
-5405	200	2000-02-25 00:00:00	616	3560
-5406	200	2000-06-24 00:00:00	944	3561
-5407	200	1999-12-03 00:00:00	530	2897
-5408	200	2000-01-27 00:00:00	968	489
-5409	200	2000-04-17 00:00:00	465	489
-5410	200	2000-06-01 00:00:00	324	2314
-5411	200	2000-01-17 00:00:00	324	3562
-5412	200	1999-11-17 00:00:00	671	3563
-5413	200	1999-12-31 00:00:00	671	3563
-5414	200	2000-01-27 00:00:00	901	3564
-5415	200	2000-04-06 00:00:00	842	3565
-5416	200	2000-10-31 00:00:00	889	3566
-5417	200	2000-11-06 00:00:00	969	3567
-5418	200	2000-08-28 00:00:00	473	3568
-5419	200	1999-12-06 00:00:00	964	884
-5420	195	2000-10-23 00:00:00	970	3569
-5421	175	2000-05-08 00:00:00	587	2871
-5422	160	2000-11-02 00:00:00	971	3570
-5423	150	2000-02-14 00:00:00	244	2871
-5424	150	2000-06-23 00:00:00	968	489
-5425	150	2000-03-24 00:00:00	244	489
-5426	150	2000-08-15 00:00:00	972	489
-5427	150	2000-03-06 00:00:00	326	2871
-5428	150	1999-07-26 00:00:00	244	2871
-5429	150	2000-08-30 00:00:00	942	489
-5430	150	2000-09-23 00:00:00	973	489
-5431	150	2000-09-25 00:00:00	965	2360
-5432	150	2000-06-14 00:00:00	973	489
-5433	150	2000-03-17 00:00:00	806	489
-5434	150	2000-09-22 00:00:00	974	489
-5435	150	2000-10-31 00:00:00	791	489
-5436	150	2000-05-02 00:00:00	975	3571
-5437	150	2000-09-23 00:00:00	821	489
-5438	150	1999-09-07 00:00:00	648	3572
-5439	150	2000-11-13 00:00:00	914	3573
-5440	150	2000-08-10 00:00:00	976	2893
-5441	150	2000-09-13 00:00:00	821	1562
-5442	150	2000-09-01 00:00:00	966	3574
-5443	150	2000-11-01 00:00:00	668	3575
-5444	150	2000-06-02 00:00:00	944	3576
-5445	150	2000-08-04 00:00:00	977	3577
-5446	150	2000-01-10 00:00:00	978	308
-5447	150	2000-11-28 00:00:00	668	3578
-5448	150	2000-05-10 00:00:00	973	3579
-5449	150	2000-08-11 00:00:00	962	3580
-5450	150	2000-02-17 00:00:00	929	3581
-5451	150	2000-07-21 00:00:00	917	1005
-5452	150	1999-10-01 00:00:00	539	2871
-5453	140	2000-05-16 00:00:00	601	2715
-5454	125	2000-04-19 00:00:00	979	3582
-5455	125	2000-05-08 00:00:00	248	2871
-5456	125	2000-07-10 00:00:00	969	3583
-5457	100	1999-12-10 00:00:00	565	2396
-5458	100	1999-10-08 00:00:00	565	3584
-5459	100	2000-07-10 00:00:00	966	3585
-5460	100	1999-10-22 00:00:00	585	2920
-5461	100	2000-08-18 00:00:00	945	489
-5462	100	2000-05-02 00:00:00	980	489
-5463	100	1999-10-04 00:00:00	857	489
-5464	100	2000-09-25 00:00:00	857	489
-5465	100	2000-02-08 00:00:00	283	3586
-5466	100	2000-08-26 00:00:00	981	962
-5467	100	2000-09-22 00:00:00	965	489
-5468	100	2000-07-05 00:00:00	982	1018
-5469	100	2000-05-31 00:00:00	333	974
-5470	100	2000-09-28 00:00:00	465	3587
-5471	100	2000-04-04 00:00:00	332	1585
-5472	100	1999-08-03 00:00:00	465	3587
-5473	100	2000-06-27 00:00:00	901	2336
-5474	100	2000-10-23 00:00:00	601	1455
-5475	100	2000-09-11 00:00:00	601	489
-5476	100	2000-10-25 00:00:00	781	3588
-5477	100	1999-11-06 00:00:00	916	3589
-5478	100	1999-08-09 00:00:00	983	3590
-5479	100	2000-05-10 00:00:00	901	3589
-5480	100	2000-07-14 00:00:00	892	3591
-5481	100	2000-09-15 00:00:00	741	3592
-5482	100	2000-04-18 00:00:00	944	3593
-5483	100	2000-09-15 00:00:00	741	3594
-5484	100	2000-04-28 00:00:00	585	2920
-5485	100	2000-05-16 00:00:00	601	1615
-5486	100	2000-09-04 00:00:00	801	1597
-5487	100	2000-09-13 00:00:00	312	2965
-5488	100	2001-01-08 00:00:00	676	3595
-5489	100	2000-04-02 00:00:00	921	3596
-5490	100	2000-08-14 00:00:00	977	3597
-5491	100	2000-09-04 00:00:00	984	3598
-5492	100	2000-07-19 00:00:00	976	3599
-5493	100	2000-02-07 00:00:00	565	2871
-5494	100	2000-08-24 00:00:00	985	2889
-5495	100	1999-08-10 00:00:00	801	1198
-5496	100	2000-08-28 00:00:00	741	3600
-5497	100	2000-11-06 00:00:00	601	2907
-5498	100	2000-03-17 00:00:00	966	2871
-5499	100	2000-09-15 00:00:00	741	3601
-5500	100	2000-04-06 00:00:00	332	3602
-5501	100	2000-08-04 00:00:00	601	2363
-5502	100	2000-08-28 00:00:00	955	3603
-5503	100	2000-08-09 00:00:00	892	3604
-5504	100	2000-05-01 00:00:00	842	3605
-5505	100	2000-11-17 00:00:00	585	2920
-5506	100	2000-08-29 00:00:00	955	3606
-5507	100	2000-08-15 00:00:00	966	3607
-5508	100	2000-08-09 00:00:00	986	3608
-5509	100	2000-02-18 00:00:00	585	2871
-5510	100	2000-04-03 00:00:00	987	3609
-5511	100	2000-09-06 00:00:00	973	2029
-5512	100	2000-06-06 00:00:00	944	3610
-5513	100	2000-06-29 00:00:00	947	3611
-5514	99	2000-07-06 00:00:00	965	2783
-5515	99	2000-02-25 00:00:00	982	1018
-5516	99	2000-05-11 00:00:00	917	1005
-5517	80	2000-12-08 00:00:00	283	3586
-5518	75	2000-01-26 00:00:00	978	3612
-5519	75	2000-09-15 00:00:00	741	3613
-5520	75	2000-01-10 00:00:00	978	3614
-5521	75	1999-11-15 00:00:00	710	3615
-5522	75	2000-09-01 00:00:00	244	2871
-5523	75	2000-04-04 00:00:00	842	3605
-5524	75	1999-09-15 00:00:00	955	3606
-5525	75	2000-01-07 00:00:00	978	3616
-5526	75	2000-09-15 00:00:00	741	2712
-5527	70	1999-08-26 00:00:00	521	2871
-5528	70	2000-06-05 00:00:00	601	1455
-5529	70	2000-06-15 00:00:00	521	2871
-5530	65	2000-08-23 00:00:00	473	1614
-5531	60	2000-08-10 00:00:00	917	2429
-5532	60	2000-09-11 00:00:00	890	2938
-5533	60	1999-09-02 00:00:00	521	3617
-5534	50	2000-06-27 00:00:00	988	2871
-5535	50	2000-06-02 00:00:00	680	2943
-5536	50	2000-10-24 00:00:00	989	3618
-5537	50	2000-09-29 00:00:00	965	3496
-5538	50	2000-04-07 00:00:00	530	3619
-5539	50	2000-05-08 00:00:00	917	3620
-5540	50	2000-11-13 00:00:00	990	3621
-5541	50	2000-09-25 00:00:00	912	3622
-5542	50	2000-09-29 00:00:00	965	3623
-5543	50	2000-10-01 00:00:00	436	3624
-5544	50	2000-09-29 00:00:00	965	2985
-5545	50	2000-06-07 00:00:00	680	2942
-5546	50	1999-08-24 00:00:00	689	3589
-5547	50	2000-09-29 00:00:00	965	3625
-5548	50	2000-04-06 00:00:00	332	3626
-5549	50	1999-09-14 00:00:00	537	3627
-5550	50	2000-09-29 00:00:00	965	2360
-5551	50	1999-10-28 00:00:00	650	3628
-5552	40	1999-09-23 00:00:00	965	3625
-5553	40	2000-09-29 00:00:00	965	3629
-5554	40	2000-09-11 00:00:00	991	2871
-5555	40	2000-09-02 00:00:00	436	3630
-5556	40	2000-12-11 00:00:00	473	3631
-5557	39	2000-02-14 00:00:00	917	3620
-5558	30	1999-09-23 00:00:00	965	3623
-5559	30	2000-02-01 00:00:00	794	3632
-5560	30	1999-08-04 00:00:00	917	2973
-5561	25	2000-10-13 00:00:00	312	2965
-5562	25	2000-08-17 00:00:00	949	3633
-5563	25	2000-06-08 00:00:00	680	3634
-5564	25	2000-08-26 00:00:00	981	3635
-5565	25	1999-09-09 00:00:00	890	3636
-5566	25	2000-08-02 00:00:00	917	3620
-5567	20	2000-09-29 00:00:00	965	3637
-5568	20	2000-09-29 00:00:00	965	3638
-5569	20	2000-01-26 00:00:00	794	2871
-5570	20	2000-01-19 00:00:00	794	2988
-5571	15	1999-09-23 00:00:00	965	3639
-5572	10	2000-09-29 00:00:00	965	3639
-5573	-50	2000-07-14 00:00:00	856	3640
-5574	-250	1999-12-06 00:00:00	28	3641
-5575	-500	2000-12-21 00:00:00	39	3075
-5576	-500	1999-07-20 00:00:00	5	3289
-5577	-500	2000-03-24 00:00:00	28	3642
-5578	-750	1999-05-19 00:00:00	28	3642
-5579	-1000	2000-06-30 00:00:00	856	3643
-5580	-1000	2000-12-21 00:00:00	39	1778
-5581	-1000	1999-06-30 00:00:00	28	3036
-5582	-1000	2000-12-28 00:00:00	39	3074
-5583	-1000	1999-05-06 00:00:00	543	3644
-5584	-1000	2000-05-31 00:00:00	858	3645
-5585	-1000	1999-10-25 00:00:00	543	3196
-5586	-1000	2000-06-30 00:00:00	856	3646
-5587	-1000	2000-06-30 00:00:00	856	3647
-5588	-1000	2000-10-04 00:00:00	39	1778
-5589	-1000	2000-05-31 00:00:00	856	3648
-5590	-1000	2000-06-30 00:00:00	856	3649
-5591	-1000	2000-05-31 00:00:00	856	3650
-5592	-1000	2000-06-30 00:00:00	856	3651
-5593	-1000	1999-04-19 00:00:00	558	1722
-5594	-1000	2000-06-30 00:00:00	856	3652
-5595	-1000	2000-06-30 00:00:00	856	3653
-5596	-1000	2000-06-30 00:00:00	856	3654
-5597	-1000	1999-05-04 00:00:00	856	3050
-5598	-1000	2000-06-30 00:00:00	856	3655
-5599	-1000	2000-06-30 00:00:00	856	3230
-5600	-1000	2000-05-17 00:00:00	856	3230
-5601	-1000	2000-05-31 00:00:00	856	3656
-5602	-1000	2000-06-30 00:00:00	856	3657
-5603	-1000	1999-08-15 00:00:00	856	3033
-5604	-1000	1999-07-15 00:00:00	856	3168
-5605	-1000	1999-05-18 00:00:00	856	3046
-5606	-1000	1999-05-27 00:00:00	856	3047
-5607	-1000	1999-06-30 00:00:00	28	3037
-5608	-1000	1999-07-13 00:00:00	858	3652
-5609	-1000	1999-06-30 00:00:00	28	3048
-5610	-1000	2000-06-30 00:00:00	856	3658
-5611	-1000	1999-08-10 00:00:00	876	3659
-5612	-1000	1999-06-30 00:00:00	28	3049
-5613	-1000	2000-06-30 00:00:00	856	3660
-5614	-1000	2000-06-30 00:00:00	856	3661
-5615	-1000	2000-02-03 00:00:00	39	3043
-5616	-1500	2000-05-09 00:00:00	39	3662
-5617	-2000	1999-05-18 00:00:00	876	3659
-5618	-2000	1999-07-15 00:00:00	856	3033
-5619	-3000	2000-05-31 00:00:00	856	3663
-5620	-3000	2000-11-20 00:00:00	856	3663
-5621	-3000	2000-11-20 00:00:00	856	3663
-5622	2500	1999-02-11 00:00:00	992	3664
-5623	2500	1998-12-22 00:00:00	992	3664
-5624	1800	1998-08-26 00:00:00	993	3665
-5625	1000	1999-07-27 00:00:00	994	3666
-5626	1000	1999-10-14 00:00:00	993	3667
-5627	1000	1999-02-05 00:00:00	995	3668
-5628	25000	1998-06-23 00:00:00	585	3669
-5629	20000	1998-10-06 00:00:00	537	3670
-5630	10000	1998-05-06 00:00:00	724	3671
-5631	10000	1998-08-17 00:00:00	846	3672
-5632	10000	1997-02-27 00:00:00	52	3673
-5633	10000	1997-02-19 00:00:00	2	3674
-5634	7500	1997-07-03 00:00:00	585	1063
-5635	7500	1997-07-08 00:00:00	585	3675
-5636	7000	1997-01-24 00:00:00	52	3026
-5637	5000	1998-10-27 00:00:00	585	1063
-5638	5000	1998-05-19 00:00:00	996	3676
-5639	5000	1998-10-15 00:00:00	997	3677
-5640	5000	1998-10-15 00:00:00	997	3136
-5641	5000	1998-03-11 00:00:00	998	3678
-5642	5000	1998-04-30 00:00:00	999	3679
-5643	5000	1998-10-15 00:00:00	770	3680
-5644	5000	1998-04-30 00:00:00	999	3681
-5645	5000	1998-10-02 00:00:00	565	3682
-5646	5000	1998-10-23 00:00:00	52	3026
-5647	5000	1997-07-10 00:00:00	1000	3683
-5648	5000	1998-08-18 00:00:00	52	3026
-5649	5000	1998-08-18 00:00:00	1000	1670
-5650	5000	1997-11-18 00:00:00	1000	1670
-5651	5000	1998-11-11 00:00:00	999	2555
-5652	5000	1998-11-02 00:00:00	529	489
-5653	5000	1997-03-19 00:00:00	1001	3684
-5654	5000	1997-07-11 00:00:00	1000	3506
-5655	5000	1997-07-11 00:00:00	1000	3685
-5656	5000	1998-11-11 00:00:00	999	3686
-5657	5000	1998-10-30 00:00:00	539	489
-5658	3500	1998-04-23 00:00:00	1002	3687
-5659	3000	1998-11-09 00:00:00	182	3136
-5660	3000	1998-08-01 00:00:00	848	3688
-5661	3000	1998-10-19 00:00:00	2	3689
-5662	3000	1998-08-01 00:00:00	848	3690
-5663	3000	1997-04-30 00:00:00	585	3691
-5664	3000	1998-08-01 00:00:00	848	3692
-5665	2500	1998-09-15 00:00:00	998	3693
-5666	2500	1998-09-28 00:00:00	1003	3694
-5667	2500	1997-06-23 00:00:00	1004	3695
-5668	2500	1998-05-19 00:00:00	1005	3696
-5669	2500	1998-10-29 00:00:00	565	3031
-5670	2500	1997-04-14 00:00:00	1004	3697
-5671	2500	1998-06-29 00:00:00	1003	3698
-5672	2500	1998-10-29 00:00:00	654	489
-5673	2000	1998-06-26 00:00:00	998	1889
-5674	2000	1998-10-22 00:00:00	1006	3699
-5675	2000	1998-10-22 00:00:00	1006	3700
-5676	2000	1998-10-28 00:00:00	1007	3701
-5677	2000	1998-10-21 00:00:00	1008	3702
-5678	2000	1998-10-09 00:00:00	2	3703
-5679	2000	1998-10-21 00:00:00	1008	3704
-5680	2000	1996-07-08 00:00:00	1003	3691
-5681	2000	1998-10-09 00:00:00	1009	3705
-5682	2000	1997-05-08 00:00:00	1003	3691
-5683	2000	1998-06-09 00:00:00	1010	3706
-5684	1772	1998-06-03 00:00:00	1003	3691
-5685	1574	1995-09-27 00:00:00	1003	3707
-5686	1500	1996-12-09 00:00:00	1011	3708
-5687	1500	1997-04-25 00:00:00	585	3709
-5688	1500	1997-08-05 00:00:00	529	3710
-5689	1500	1998-09-28 00:00:00	996	3711
-5690	1500	1997-09-06 00:00:00	549	3703
-5691	1500	1997-07-16 00:00:00	539	3710
-5692	1500	1998-05-18 00:00:00	1010	3712
-5693	1500	1998-10-20 00:00:00	998	3713
-5694	1500	1998-03-25 00:00:00	998	3714
-5695	1500	1997-12-08 00:00:00	1001	3715
-5696	1353	1998-11-05 00:00:00	1003	3716
-5697	1200	1998-08-19 00:00:00	5	3717
-5698	1200	1998-02-24 00:00:00	1000	3718
-5699	1000	1998-08-07 00:00:00	76	3719
-5700	1000	1998-09-05 00:00:00	76	3720
-5701	1000	1998-09-14 00:00:00	15	3075
-5702	1000	1998-09-04 00:00:00	583	3721
-5703	1000	1998-07-17 00:00:00	195	3722
-5704	1000	1998-07-17 00:00:00	195	3722
-5705	1000	1998-07-17 00:00:00	195	3723
-5706	1000	1998-07-17 00:00:00	195	3723
-5707	1000	1998-08-19 00:00:00	5	3724
-5708	1000	1998-07-23 00:00:00	1012	3725
-5709	1000	1998-07-22 00:00:00	1013	3726
-5710	1000	1998-07-06 00:00:00	1013	3727
-5711	1000	1998-07-10 00:00:00	885	3728
-5712	1000	1998-07-10 00:00:00	885	3728
-5713	1000	1998-07-01 00:00:00	885	3729
-5714	1000	1998-07-01 00:00:00	885	3729
-5715	1000	1998-07-10 00:00:00	11	3730
-5716	1000	1998-05-19 00:00:00	886	3731
-5717	1000	1998-04-07 00:00:00	1014	2482
-5718	1000	1998-07-10 00:00:00	1015	3732
-5719	1000	1998-04-28 00:00:00	885	3231
-5720	1000	1998-06-29 00:00:00	549	3733
-5721	1000	1998-06-29 00:00:00	549	3733
-5722	1000	1998-06-29 00:00:00	549	3734
-5723	1000	1998-06-03 00:00:00	549	3735
-5724	1000	1998-06-03 00:00:00	549	3736
-5725	1000	1998-06-08 00:00:00	1016	3737
-5726	1000	1998-06-30 00:00:00	1016	3738
-5727	1000	1998-04-22 00:00:00	366	3739
-5728	1000	1998-04-22 00:00:00	366	3739
-5729	1000	1998-06-26 00:00:00	1017	3740
-5730	1000	1998-06-26 00:00:00	1017	3740
-5731	1000	1998-06-04 00:00:00	1017	3741
-5732	1000	1998-06-19 00:00:00	377	3742
-5733	1000	1998-04-30 00:00:00	750	3743
-5734	1000	1998-06-29 00:00:00	1018	3744
-5735	1000	1998-06-25 00:00:00	1013	3745
-5736	1000	1998-06-25 00:00:00	1013	3746
-5737	1000	1998-06-25 00:00:00	1013	3747
-5738	1000	1998-06-25 00:00:00	1013	3748
-5739	1000	1998-05-06 00:00:00	1013	3749
-5740	1000	1998-05-01 00:00:00	856	3750
-5741	1000	1998-03-25 00:00:00	11	3751
-5742	1000	1998-02-13 00:00:00	417	3752
-5743	1000	1998-03-20 00:00:00	1019	3753
-5744	1000	1998-03-08 00:00:00	1016	3754
-5745	1000	1998-02-02 00:00:00	1016	3755
-5746	1000	1998-03-31 00:00:00	1020	3705
-5747	1000	1998-03-03 00:00:00	881	3141
-5748	1000	1998-01-08 00:00:00	1021	3756
-5749	1000	1998-03-06 00:00:00	1022	3101
-5750	1000	1998-03-24 00:00:00	1017	3757
-5751	1000	1998-03-27 00:00:00	1017	3758
-5752	1000	1998-03-23 00:00:00	1017	3277
-5753	1000	1998-03-23 00:00:00	1017	3277
-5754	1000	1998-02-26 00:00:00	1018	3759
-5755	1000	1998-02-26 00:00:00	1018	3759
-5756	1000	1998-02-26 00:00:00	1018	3760
-5757	1000	1998-02-26 00:00:00	1018	3760
-5758	1000	1998-03-26 00:00:00	15	3761
-5759	1000	1998-03-26 00:00:00	15	3761
-5760	1000	1998-03-31 00:00:00	856	3762
-5761	1000	1998-03-02 00:00:00	1013	3763
-5762	1000	1998-03-02 00:00:00	1013	3763
-5763	1000	1998-03-31 00:00:00	549	3734
-5764	1000	1998-01-23 00:00:00	549	3764
-5765	1000	1998-03-10 00:00:00	1023	3765
-5766	1000	1998-03-31 00:00:00	1024	3766
-5767	1000	1998-03-31 00:00:00	1024	3766
-5768	1000	1998-03-17 00:00:00	882	1065
-5769	1000	1998-02-09 00:00:00	11	3767
-5770	1000	1997-11-06 00:00:00	377	3768
-5771	1000	1997-12-31 00:00:00	549	3769
-5772	1000	1997-09-06 00:00:00	549	3703
-5773	1000	1997-11-12 00:00:00	549	3770
-5774	1000	1997-12-04 00:00:00	549	3771
-5775	1000	1997-08-18 00:00:00	201	3107
-5776	1000	1997-12-08 00:00:00	1018	3772
-5777	1000	1997-12-24 00:00:00	1021	3756
-5778	1000	1997-12-16 00:00:00	1025	3030
-5779	1000	1997-12-10 00:00:00	1026	1827
-5780	1000	1997-12-30 00:00:00	1013	3749
-5781	1000	1997-10-22 00:00:00	1027	3773
-5782	1000	1997-12-17 00:00:00	76	3774
-5783	1000	1997-12-08 00:00:00	1028	2555
-5784	1000	1997-12-05 00:00:00	1017	3277
-5785	1000	1997-11-06 00:00:00	377	3768
-5786	1000	1997-08-04 00:00:00	195	3775
-5787	1000	1997-12-18 00:00:00	195	3776
-5788	1000	1997-10-21 00:00:00	267	3777
-5789	1000	1997-10-20 00:00:00	267	3778
-5790	1000	1997-09-15 00:00:00	267	3779
-5791	1000	1997-09-15 00:00:00	267	3779
-5792	1000	1997-07-28 00:00:00	1029	3780
-5793	1000	1997-06-24 00:00:00	1013	3781
-5794	1000	1997-06-16 00:00:00	549	3782
-5795	1000	1997-06-16 00:00:00	549	3783
-5796	1000	1997-06-16 00:00:00	549	3784
-5797	1000	1997-06-16 00:00:00	549	3784
-5798	1000	1997-02-20 00:00:00	881	3785
-5799	1000	1997-01-23 00:00:00	549	3136
-5800	1000	1997-01-23 00:00:00	549	3136
-5801	1000	1997-03-14 00:00:00	1030	3786
-5802	1000	1997-06-13 00:00:00	1030	3787
-5803	1000	1997-06-30 00:00:00	267	3788
-5804	1000	1997-06-30 00:00:00	267	3788
-5805	1000	1997-06-26 00:00:00	5	3789
-5806	1000	1997-04-08 00:00:00	11	3790
-5807	1000	1998-11-22 00:00:00	1006	3791
-5808	1000	1998-10-23 00:00:00	1031	3792
-5809	1000	1998-10-23 00:00:00	1031	3792
-5810	1000	1998-10-29 00:00:00	1013	3793
-5811	1000	1998-07-29 00:00:00	176	3794
-5812	1000	1998-08-21 00:00:00	996	3795
-5813	1000	1998-02-13 00:00:00	1032	3796
-5814	1000	1998-05-15 00:00:00	1032	3797
-5815	1000	1998-01-19 00:00:00	1032	3798
-5816	1000	1997-05-01 00:00:00	964	3799
-5817	1000	1997-06-05 00:00:00	1011	3800
-5818	1000	1995-10-10 00:00:00	1011	3801
-5819	1000	1998-04-05 00:00:00	1005	3802
-5820	1000	1998-10-20 00:00:00	998	3803
-5821	1000	1998-11-02 00:00:00	998	3804
-5822	1000	1995-06-07 00:00:00	998	3805
-5823	1000	1995-07-31 00:00:00	998	3806
-5824	1000	1998-10-29 00:00:00	998	1889
-5825	1000	1998-11-16 00:00:00	998	3807
-5826	1000	1998-11-02 00:00:00	998	3008
-5827	1000	1995-04-17 00:00:00	998	3808
-5828	1000	1998-09-29 00:00:00	1003	3809
-5829	1000	1998-10-28 00:00:00	1003	3810
-5830	1000	1998-09-28 00:00:00	1003	3694
-5831	1000	1997-12-04 00:00:00	1003	3693
-5832	1000	1998-07-23 00:00:00	1003	3811
-5833	1000	1998-03-27 00:00:00	1003	3812
-5834	1000	1996-05-31 00:00:00	1003	3813
-5835	1000	1997-04-26 00:00:00	1003	3814
-5836	1000	1998-01-29 00:00:00	1003	3815
-5837	1000	1998-09-10 00:00:00	1000	3816
-5838	1000	1998-04-28 00:00:00	539	3544
-5839	1000	1997-07-17 00:00:00	654	3710
-5840	1000	1998-08-26 00:00:00	585	489
-5841	1000	1998-10-27 00:00:00	585	489
-5842	1000	1998-03-10 00:00:00	585	3817
-5843	1000	1998-12-15 00:00:00	585	1670
-5844	1000	1998-04-29 00:00:00	529	3544
-5845	1000	1998-06-19 00:00:00	529	489
-5846	1000	1997-02-04 00:00:00	537	3818
-5847	1000	1997-07-15 00:00:00	565	3710
-5848	1000	1998-10-20 00:00:00	549	3771
-5849	1000	1998-10-27 00:00:00	549	3819
-5850	1000	1998-10-20 00:00:00	549	3782
-5851	1000	1998-10-31 00:00:00	267	3820
-5852	1000	1998-10-31 00:00:00	267	3820
-5853	1000	1998-10-31 00:00:00	267	3070
-5854	1000	1998-12-22 00:00:00	11	3821
-5855	1000	1997-06-30 00:00:00	549	3680
-5856	1000	1997-06-30 00:00:00	549	3680
-5857	1000	1998-06-23 00:00:00	895	3822
-5858	1000	1998-07-06 00:00:00	1008	3823
-5859	1000	1998-08-17 00:00:00	1008	1065
-5860	1000	1998-08-17 00:00:00	1008	1065
-5861	1000	1998-08-30 00:00:00	1033	3824
-5862	1000	1998-10-13 00:00:00	1009	3758
-5863	1000	1998-10-13 00:00:00	2	3758
-5864	1000	1998-09-04 00:00:00	1034	1065
-5865	1000	1998-09-25 00:00:00	1035	3695
-5866	1000	1998-09-04 00:00:00	267	3825
-5867	1000	1998-07-23 00:00:00	76	3826
-5868	900	1997-12-16 00:00:00	1013	3030
-5869	900	1998-03-05 00:00:00	1018	3827
-5870	900	1998-03-15 00:00:00	1018	3827
-5871	900	1997-10-21 00:00:00	267	3828
-5872	800	1997-10-28 00:00:00	1036	3829
-5873	800	1998-10-13 00:00:00	1037	3830
-5874	750	1998-08-11 00:00:00	1033	3831
-5875	750	1998-12-01 00:00:00	28	3225
-5876	750	1997-12-09 00:00:00	1000	3832
-5877	750	1998-07-10 00:00:00	1038	3833
-5878	750	1998-07-08 00:00:00	1039	3834
-5879	750	1998-02-15 00:00:00	298	3835
-5880	750	1998-02-20 00:00:00	1000	3685
-5881	750	1997-12-09 00:00:00	1000	3685
-5882	750	1998-10-01 00:00:00	539	489
-5883	700	1998-01-08 00:00:00	712	2496
-5884	700	1997-10-30 00:00:00	1040	3836
-5885	700	1997-06-13 00:00:00	52	3026
-5886	632	1998-06-26 00:00:00	610	3837
-5887	625	1998-02-25 00:00:00	750	3273
-5888	600	1998-07-10 00:00:00	998	3838
-5889	600	1997-09-09 00:00:00	5	3839
-5890	600	1998-09-14 00:00:00	750	3840
-5891	600	1997-06-27 00:00:00	1013	3841
-5892	550	1998-01-16 00:00:00	654	489
-5893	550	1997-10-15 00:00:00	654	489
-5894	500	1998-01-27 00:00:00	25	3842
-5895	500	1998-09-08 00:00:00	1040	3843
-5896	500	1998-09-01 00:00:00	610	3844
-5897	500	1997-04-21 00:00:00	741	3808
-5898	500	1998-08-20 00:00:00	1013	3845
-5899	500	1998-10-29 00:00:00	1013	3846
-5900	500	1998-07-20 00:00:00	1016	3847
-5901	500	1998-09-08 00:00:00	1040	3848
-5902	500	1998-06-05 00:00:00	1041	3849
-5903	500	1998-08-20 00:00:00	1013	3850
-5904	500	1998-10-29 00:00:00	1013	3851
-5905	500	1998-10-29 00:00:00	1013	3852
-5906	500	1998-03-18 00:00:00	612	3101
-5907	500	1998-10-29 00:00:00	26	3853
-5908	500	1998-10-22 00:00:00	11	3767
-5909	500	1998-12-08 00:00:00	222	2557
-5910	500	1998-06-08 00:00:00	1042	310
-5911	500	1998-02-19 00:00:00	537	3818
-5912	500	1998-04-07 00:00:00	1000	3854
-5913	500	1998-01-20 00:00:00	1000	3855
-5914	500	1998-05-29 00:00:00	1000	3856
-5915	500	1998-05-06 00:00:00	1013	3857
-5916	500	1998-09-14 00:00:00	1013	3858
-5917	500	1998-08-31 00:00:00	1000	3859
-5918	500	1998-09-02 00:00:00	1000	3860
-5919	500	1998-01-09 00:00:00	1000	3860
-5920	500	1998-06-04 00:00:00	1013	3861
-5921	500	1998-10-31 00:00:00	267	3070
-5922	500	1998-09-09 00:00:00	1000	3862
-5923	500	1998-09-30 00:00:00	1017	3863
-5924	500	1998-11-06 00:00:00	306	3226
-5925	500	1998-10-28 00:00:00	1043	3864
-5926	500	1998-09-14 00:00:00	1003	3813
-5927	500	1998-02-24 00:00:00	1003	3813
-5928	500	1998-11-06 00:00:00	1003	3865
-5929	500	1998-03-19 00:00:00	1003	3866
-5930	500	1998-03-27 00:00:00	1003	3867
-5931	500	1998-06-22 00:00:00	267	3070
-5932	500	1998-03-31 00:00:00	1013	3868
-5933	500	1998-04-30 00:00:00	750	3743
-5934	500	1997-12-16 00:00:00	265	3869
-5935	500	1998-03-04 00:00:00	1013	3870
-5936	500	1997-07-08 00:00:00	1001	3871
-5937	500	1998-08-11 00:00:00	28	3872
-5938	500	1998-07-28 00:00:00	76	3873
-5939	500	1998-03-04 00:00:00	1013	3870
-5940	500	1998-06-29 00:00:00	1044	3874
-5941	500	1997-10-02 00:00:00	1045	3875
-5942	500	1998-08-12 00:00:00	28	3225
-5943	500	1998-02-23 00:00:00	1046	3876
-5944	500	1998-08-12 00:00:00	28	3048
-5945	500	1998-08-12 00:00:00	28	3037
-5946	500	1998-06-26 00:00:00	1017	3877
-5947	500	1997-06-02 00:00:00	673	3706
-5948	500	1998-03-25 00:00:00	11	3079
-5949	500	1998-06-15 00:00:00	265	3878
-5950	500	1997-11-06 00:00:00	306	3879
-5951	500	1997-11-03 00:00:00	293	3880
-5952	500	1998-05-26 00:00:00	293	1013
-5953	500	1998-05-28 00:00:00	671	3881
-5954	500	1998-05-19 00:00:00	998	3882
-5955	500	1997-03-26 00:00:00	585	3883
-5956	500	1998-09-11 00:00:00	28	3884
-5957	500	1998-09-03 00:00:00	939	3885
-5958	500	1997-05-20 00:00:00	585	3340
-5959	500	1998-07-10 00:00:00	1032	3886
-5960	500	1998-07-15 00:00:00	76	3887
-5961	500	1998-09-18 00:00:00	935	3888
-5962	500	1998-03-31 00:00:00	182	3889
-5963	500	1998-04-24 00:00:00	565	3544
-5964	500	1998-03-03 00:00:00	565	489
-5965	500	1997-11-10 00:00:00	539	489
-5966	500	1998-09-28 00:00:00	28	3890
-5967	500	1998-10-20 00:00:00	1013	3891
-5968	500	1998-09-02 00:00:00	1035	3892
-5969	500	1998-08-20 00:00:00	76	3893
-5970	500	1998-09-14 00:00:00	15	3075
-5971	500	1997-01-24 00:00:00	565	489
-5972	500	1998-09-17 00:00:00	15	3894
-5973	500	1997-02-04 00:00:00	943	3895
-5974	500	1998-10-26 00:00:00	1013	3896
-5975	500	1998-10-28 00:00:00	1013	3897
-5976	500	1998-04-24 00:00:00	654	3544
-5977	500	1998-10-29 00:00:00	1013	3898
-5978	500	1998-06-22 00:00:00	1047	3899
-5979	500	1998-04-22 00:00:00	1013	3900
-5980	500	1998-03-16 00:00:00	1019	3901
-5981	500	1998-01-10 00:00:00	998	3902
-5982	500	1998-03-02 00:00:00	213	3903
-5983	500	1997-09-12 00:00:00	267	3904
-5984	500	1998-01-21 00:00:00	1048	3905
-5985	500	1998-03-12 00:00:00	998	3807
-5986	500	1998-03-09 00:00:00	213	3906
-5987	500	1997-10-15 00:00:00	267	3778
-5988	500	1998-01-23 00:00:00	11	3907
-5989	500	1998-10-20 00:00:00	998	3908
-5990	500	1998-03-10 00:00:00	998	3909
-5991	500	1997-07-16 00:00:00	1049	3910
-5992	500	1998-03-25 00:00:00	998	3911
-5993	500	1998-09-18 00:00:00	998	3912
-5994	500	1997-04-16 00:00:00	1011	3800
-5995	500	1997-12-09 00:00:00	552	3913
-5996	500	1997-10-28 00:00:00	552	3914
-5997	500	1997-12-05 00:00:00	552	3915
-5998	500	1997-05-22 00:00:00	11	3916
-5999	500	1997-06-18 00:00:00	612	3917
-6000	500	1997-03-04 00:00:00	1050	3703
-6001	500	1997-06-30 00:00:00	1033	3768
-6002	500	1997-06-30 00:00:00	1033	3918
-6003	500	1998-04-30 00:00:00	589	3919
-6004	500	1998-05-27 00:00:00	919	3920
-6005	500	1997-09-05 00:00:00	919	3710
-6006	500	1997-05-08 00:00:00	939	3921
-6007	500	1997-12-12 00:00:00	562	3922
-6008	500	1997-02-06 00:00:00	931	3923
-6009	500	1998-05-19 00:00:00	1051	3924
-6010	500	1998-05-07 00:00:00	944	3862
-6011	500	1998-06-18 00:00:00	1052	3925
-6012	500	1997-09-30 00:00:00	1053	3926
-6013	500	1997-03-31 00:00:00	1013	3927
-6014	500	1997-06-09 00:00:00	1013	3928
-6015	500	1997-07-16 00:00:00	1037	3929
-6016	500	1998-09-18 00:00:00	998	3930
-6017	500	1997-10-14 00:00:00	76	3931
-6018	500	1998-03-30 00:00:00	1019	3932
-6019	500	1997-08-29 00:00:00	1029	3933
-6020	500	1998-07-31 00:00:00	998	3693
-6021	500	1997-12-18 00:00:00	1017	3934
-6022	480	1998-02-22 00:00:00	1054	3935
-6023	450	1997-12-06 00:00:00	1000	3816
-6024	450	1998-07-27 00:00:00	565	2688
-6025	400	1997-03-20 00:00:00	745	2585
-6026	400	1998-02-27 00:00:00	616	3936
-6027	400	1997-10-01 00:00:00	750	3447
-6028	400	1998-07-13 00:00:00	5	3937
-6029	400	1998-04-04 00:00:00	908	3938
-6030	400	1998-09-23 00:00:00	5	3939
-6031	400	1997-09-03 00:00:00	1048	2871
-6032	400	1998-02-17 00:00:00	5	3382
-6033	390	1998-05-04 00:00:00	967	1013
-6034	375	1998-10-16 00:00:00	998	3714
-6035	350	1998-08-01 00:00:00	610	3940
-6036	325	1998-07-06 00:00:00	1055	3941
-6037	325	1998-11-23 00:00:00	330	3942
-6038	320	1997-06-10 00:00:00	967	1013
-6039	300	1997-12-09 00:00:00	1000	3854
-6040	300	1998-06-09 00:00:00	1056	3943
-6041	300	1997-12-11 00:00:00	868	3468
-6042	300	1998-09-09 00:00:00	222	3944
-6043	300	1997-11-24 00:00:00	552	3945
-6044	300	1998-01-13 00:00:00	930	3943
-6045	300	1997-09-18 00:00:00	222	3946
-6046	300	1998-03-26 00:00:00	1057	3943
-6047	300	1998-02-02 00:00:00	1013	3947
-6048	300	1998-05-22 00:00:00	933	3948
-6049	300	1998-03-19 00:00:00	5	3949
-6050	300	1998-10-29 00:00:00	26	3950
-6051	300	1997-09-17 00:00:00	529	3457
-6052	300	1997-03-14 00:00:00	1057	3951
-6053	300	1997-10-18 00:00:00	589	3952
-6054	300	1998-05-15 00:00:00	377	3953
-6055	300	1998-12-22 00:00:00	11	3954
-6056	300	1998-03-17 00:00:00	5	3955
-6057	300	1996-11-18 00:00:00	1058	3956
-6058	300	1998-09-11 00:00:00	15	3957
-6059	300	1998-03-09 00:00:00	998	3958
-6060	300	1997-03-04 00:00:00	919	3943
-6061	300	1997-04-18 00:00:00	5	3959
-6062	300	1998-12-18 00:00:00	751	3960
-6063	300	1998-04-26 00:00:00	1059	3961
-6064	300	1998-08-22 00:00:00	377	3953
-6065	300	1997-02-05 00:00:00	906	3943
-6066	300	1998-01-26 00:00:00	1060	3962
-6067	300	1998-02-13 00:00:00	221	3963
-6068	300	1997-04-24 00:00:00	5	3964
-6069	300	1997-04-18 00:00:00	5	3965
-6070	300	1998-11-06 00:00:00	882	2160
-6071	300	1997-04-13 00:00:00	5	3966
-6072	300	1997-06-07 00:00:00	916	1024
-6073	300	1998-03-31 00:00:00	916	3967
-6074	300	1998-04-15 00:00:00	1061	3968
-6075	300	1997-01-24 00:00:00	542	3943
-6076	300	1998-06-10 00:00:00	998	3969
-6077	300	1998-08-06 00:00:00	1016	3970
-6078	300	1998-07-24 00:00:00	5	3971
-6079	300	1998-06-01 00:00:00	1062	3943
-6080	300	1998-06-24 00:00:00	1013	3972
-6081	300	1998-04-16 00:00:00	1001	3973
-6082	300	1997-09-08 00:00:00	920	3943
-6083	300	1997-04-08 00:00:00	751	3974
-6084	300	\N	989	3975
-6085	300	1998-09-11 00:00:00	15	3976
-6086	300	1998-09-18 00:00:00	15	3977
-6087	300	1998-05-01 00:00:00	1021	3978
-6088	300	1998-07-16 00:00:00	998	3979
-6089	300	1997-10-09 00:00:00	917	3980
-6090	300	1998-09-18 00:00:00	15	3981
-6091	300	1997-12-10 00:00:00	542	3943
-6092	300	1998-03-06 00:00:00	1016	3737
-6093	300	1998-10-25 00:00:00	935	3982
-6094	300	1998-04-02 00:00:00	931	3943
-6095	300	1998-04-15 00:00:00	930	3920
-6096	300	1998-05-11 00:00:00	261	3943
-6097	300	1998-06-08 00:00:00	1016	3737
-6098	300	1998-08-26 00:00:00	856	3983
-6099	300	1998-04-16 00:00:00	1001	3973
-6100	300	1997-12-04 00:00:00	671	3984
-6101	290	1997-01-24 00:00:00	712	2496
-6102	275	1998-03-03 00:00:00	998	3985
-6103	275	1998-03-18 00:00:00	998	3958
-6104	250	1997-05-07 00:00:00	1063	3986
-6105	250	1998-07-28 00:00:00	28	3987
-6106	250	1998-02-23 00:00:00	1046	3988
-6107	250	1995-01-30 00:00:00	1046	3989
-6108	250	1998-06-18 00:00:00	724	3990
-6109	250	1998-10-23 00:00:00	1064	3991
-6110	250	1995-02-10 00:00:00	1046	3992
-6111	250	1998-02-19 00:00:00	521	3993
-6112	250	1998-08-11 00:00:00	28	3994
-6113	250	1997-07-24 00:00:00	442	3710
-6114	250	1998-08-11 00:00:00	28	3995
-6115	250	1998-09-16 00:00:00	1017	3996
-6116	250	1998-04-27 00:00:00	442	3920
-6117	250	1998-04-23 00:00:00	4	3997
-6118	250	1997-07-12 00:00:00	930	3710
-6119	250	1998-07-21 00:00:00	1003	3813
-6120	250	1998-10-23 00:00:00	28	3519
-6121	250	1996-03-14 00:00:00	1003	3998
-6122	250	1998-11-02 00:00:00	1000	3999
-6123	250	1998-09-21 00:00:00	1013	4000
-6124	250	1998-06-02 00:00:00	1000	4001
-6125	250	1998-08-12 00:00:00	28	3280
-6126	250	1998-07-16 00:00:00	936	4002
-6127	250	1997-12-09 00:00:00	1000	4003
-6128	250	1998-11-17 00:00:00	267	4004
-6129	250	1997-07-18 00:00:00	1065	3710
-6130	250	1998-10-31 00:00:00	885	4005
-6131	250	1997-12-08 00:00:00	650	4006
-6132	250	1998-11-02 00:00:00	1000	4007
-6133	250	1998-09-25 00:00:00	565	3031
-6134	250	1998-11-04 00:00:00	1013	4000
-6135	250	1998-11-03 00:00:00	1013	4008
-6136	250	1997-04-21 00:00:00	741	3943
-6137	250	1997-01-23 00:00:00	1066	4009
-6138	250	1997-07-30 00:00:00	895	4010
-6139	250	1998-09-14 00:00:00	1013	4011
-6140	250	1998-03-02 00:00:00	298	3943
-6141	250	1998-05-28 00:00:00	298	3835
-6142	250	1998-01-24 00:00:00	1067	3943
-6143	250	1998-12-09 00:00:00	1004	4012
-6144	250	1998-04-14 00:00:00	741	3943
-6145	250	1998-08-20 00:00:00	1013	4008
-6146	250	1998-08-26 00:00:00	1068	4013
-6147	250	1998-07-03 00:00:00	935	4014
-6148	250	1997-08-01 00:00:00	539	489
-6149	250	1998-06-22 00:00:00	890	3943
-6150	250	1998-01-30 00:00:00	890	3943
-6151	250	1998-04-15 00:00:00	890	3920
-6152	250	1997-09-08 00:00:00	1069	4015
-6153	250	1998-04-30 00:00:00	769	3920
-6154	250	1998-08-06 00:00:00	712	2597
-6155	250	1998-07-16 00:00:00	1004	4012
-6156	250	1998-04-21 00:00:00	1013	4016
-6157	250	1997-04-04 00:00:00	565	4017
-6158	250	1998-07-07 00:00:00	1070	3696
-6159	250	1998-10-20 00:00:00	1013	4018
-6160	250	1997-11-24 00:00:00	945	4019
-6161	250	1998-03-23 00:00:00	945	3943
-6162	250	1998-10-20 00:00:00	1013	4020
-6163	250	1997-03-27 00:00:00	1071	3943
-6164	250	1998-10-20 00:00:00	1013	4021
-6165	250	1998-10-28 00:00:00	868	3468
-6166	250	1998-07-27 00:00:00	585	4022
-6167	250	1998-09-15 00:00:00	935	4023
-6168	250	1998-10-07 00:00:00	1013	4024
-6169	250	1998-07-06 00:00:00	801	4025
-6170	250	1997-04-22 00:00:00	1072	4026
-6171	250	1997-06-10 00:00:00	967	1013
-6172	250	1998-04-02 00:00:00	585	3817
-6173	250	1997-02-06 00:00:00	905	3943
-6174	250	1998-02-04 00:00:00	905	3943
-6175	250	1998-09-28 00:00:00	28	4027
-6176	250	1997-08-13 00:00:00	881	4028
-6177	250	1997-10-09 00:00:00	1073	4029
-6178	250	1995-08-03 00:00:00	998	3807
-6179	250	1997-11-29 00:00:00	195	3826
-6180	250	1998-05-22 00:00:00	998	4030
-6181	250	1998-03-26 00:00:00	939	3476
-6182	250	1997-12-18 00:00:00	1017	4031
-6183	250	1997-03-26 00:00:00	1074	4032
-6184	250	1997-08-25 00:00:00	881	4033
-6185	250	1997-08-04 00:00:00	1029	4034
-6186	250	1998-07-13 00:00:00	4	4035
-6187	250	1997-11-11 00:00:00	1019	4036
-6188	250	1998-03-16 00:00:00	1001	3826
-6189	250	1997-11-19 00:00:00	786	3710
-6190	250	1998-03-25 00:00:00	1075	4037
-6191	250	1997-08-12 00:00:00	4	3997
-6192	250	1997-07-21 00:00:00	4	3997
-6193	250	1998-06-08 00:00:00	786	3920
-6194	250	1998-03-10 00:00:00	1016	4038
-6195	250	1998-05-18 00:00:00	944	3685
-6196	250	1998-05-18 00:00:00	944	3816
-6197	250	1998-05-13 00:00:00	944	3816
-6198	250	1998-05-04 00:00:00	944	3943
-6199	250	1998-03-19 00:00:00	786	3943
-6200	250	1997-05-20 00:00:00	786	3943
-6201	250	1998-05-28 00:00:00	417	4039
-6202	250	1997-05-30 00:00:00	1001	4040
-6203	250	1997-10-08 00:00:00	751	4041
-6204	250	1997-12-12 00:00:00	1040	4042
-6205	250	1997-07-28 00:00:00	1076	4043
-6206	250	1997-04-15 00:00:00	939	3476
-6207	250	1997-01-09 00:00:00	222	4044
-6208	250	1998-06-30 00:00:00	919	4045
-6209	250	1998-03-27 00:00:00	549	4046
-6210	250	1998-01-07 00:00:00	1025	4047
-6211	250	1998-06-25 00:00:00	724	3990
-6212	250	1997-10-15 00:00:00	306	3226
-6213	250	1997-05-20 00:00:00	612	4048
-6214	250	1997-09-26 00:00:00	222	4049
-6215	250	1997-05-06 00:00:00	5	4050
-6216	250	1997-11-18 00:00:00	552	4051
-6217	250	1997-04-09 00:00:00	248	3943
-6218	250	1998-01-28 00:00:00	1015	3732
-6219	250	1997-05-06 00:00:00	5	4052
-6220	250	1998-01-20 00:00:00	248	3943
-6221	250	1998-02-18 00:00:00	222	3946
-6222	250	1998-05-15 00:00:00	283	3943
-6223	250	1998-01-23 00:00:00	283	3943
-6224	250	1998-01-05 00:00:00	222	4053
-6225	250	1998-06-10 00:00:00	333	4054
-6226	250	1998-01-20 00:00:00	906	4055
-6227	250	1998-08-11 00:00:00	1033	4056
-6228	250	1998-08-11 00:00:00	28	3519
-6229	250	1998-01-11 00:00:00	1077	3909
-6230	250	1998-07-17 00:00:00	1078	4057
-6231	250	1998-06-24 00:00:00	968	4058
-6232	250	1997-10-28 00:00:00	222	4059
-6233	250	1998-08-03 00:00:00	1078	4060
-6234	250	1998-05-15 00:00:00	293	4061
-6235	250	1997-10-02 00:00:00	222	4062
-6236	250	1998-01-20 00:00:00	933	4063
-6237	250	1998-03-03 00:00:00	1013	3928
-6238	250	1998-04-01 00:00:00	1079	4064
-6239	250	1997-01-31 00:00:00	947	3943
-6240	250	1998-04-29 00:00:00	1059	4065
-6241	250	1998-09-08 00:00:00	1033	4066
-6242	250	1998-09-28 00:00:00	28	3884
-6243	250	1997-10-30 00:00:00	1036	4067
-6244	250	1998-09-28 00:00:00	28	3225
-6245	250	1998-09-28 00:00:00	28	3308
-6246	250	1997-08-07 00:00:00	585	489
-6247	250	1998-06-10 00:00:00	724	3990
-6248	250	1998-10-01 00:00:00	610	3940
-6249	225	1998-01-23 00:00:00	905	4068
-6250	225	1998-01-07 00:00:00	1025	4047
-6251	225	1998-10-20 00:00:00	751	4069
-6252	225	1997-12-09 00:00:00	1000	4070
-6253	225	1998-01-07 00:00:00	1013	4047
-6254	200	1998-06-24 00:00:00	542	3943
-6255	200	1997-11-06 00:00:00	452	4071
-6256	200	1998-03-31 00:00:00	882	2160
-6257	200	1998-05-29 00:00:00	1080	4072
-6258	200	1995-02-22 00:00:00	1003	4073
-6259	200	1996-04-18 00:00:00	1003	4074
-6260	200	1997-08-01 00:00:00	1081	3710
-6261	200	1998-03-03 00:00:00	587	3943
-6262	200	1997-06-20 00:00:00	587	4075
-6263	200	1998-03-24 00:00:00	889	3943
-6264	200	1998-06-01 00:00:00	892	3854
-6265	200	1998-06-04 00:00:00	958	4076
-6266	200	1998-02-06 00:00:00	958	3943
-6267	200	1998-06-24 00:00:00	1082	3943
-6268	200	1998-03-09 00:00:00	794	3943
-6269	200	1998-01-15 00:00:00	794	4077
-6270	200	1998-02-09 00:00:00	616	3560
-6271	200	1998-02-16 00:00:00	616	4078
-6272	200	1997-02-20 00:00:00	221	4079
-6273	200	1997-04-11 00:00:00	1074	3577
-6274	200	1997-03-26 00:00:00	1074	4032
-6275	200	1998-02-24 00:00:00	957	3943
-6276	200	1997-05-29 00:00:00	985	3943
-6277	200	1997-02-26 00:00:00	914	4080
-6278	200	1998-04-06 00:00:00	600	3943
-6279	200	1997-12-24 00:00:00	998	4081
-6280	200	1998-09-08 00:00:00	998	4082
-6281	200	1998-07-31 00:00:00	998	3619
-6282	200	1998-06-24 00:00:00	1083	4083
-6283	200	1998-05-29 00:00:00	1084	4084
-6284	200	1997-02-24 00:00:00	931	4085
-6285	200	1997-04-29 00:00:00	942	3943
-6286	200	1998-06-23 00:00:00	942	3943
-6287	200	1998-04-20 00:00:00	239	3943
-6288	200	1997-08-26 00:00:00	239	3710
-6289	200	1997-08-19 00:00:00	1085	4086
-6290	200	1997-09-01 00:00:00	916	4087
-6291	200	1997-06-12 00:00:00	333	4054
-6292	200	1997-06-17 00:00:00	933	3948
-6293	200	1998-03-12 00:00:00	1086	4088
-6294	200	1998-03-25 00:00:00	1086	4089
-6295	200	1997-03-11 00:00:00	1087	4090
-6296	200	1997-03-04 00:00:00	529	4091
-6297	200	1998-10-21 00:00:00	15	4092
-6298	200	1998-04-01 00:00:00	964	4093
-6299	200	1998-12-16 00:00:00	11	3455
-6300	200	1997-01-20 00:00:00	890	4094
-6301	200	1997-07-11 00:00:00	890	3710
-6302	200	1998-04-08 00:00:00	842	4095
-6303	200	1998-02-26 00:00:00	1032	3936
-6304	200	1998-01-26 00:00:00	495	4096
-6305	200	1997-10-01 00:00:00	565	4097
-6306	200	1997-04-21 00:00:00	945	3943
-6307	200	1998-06-10 00:00:00	1088	4098
-6308	200	1998-03-05 00:00:00	911	3943
-6309	200	1997-02-18 00:00:00	1089	4099
-6310	200	1997-04-14 00:00:00	1067	3943
-6311	200	1997-09-17 00:00:00	529	3457
-6312	200	1998-11-03 00:00:00	1013	4100
-6313	200	1998-09-22 00:00:00	4	4101
-6314	200	1998-10-02 00:00:00	222	4102
-6315	200	1997-04-25 00:00:00	585	4103
-6316	200	1998-10-13 00:00:00	1090	4104
-6317	200	1997-02-28 00:00:00	930	3943
-6318	200	1998-07-30 00:00:00	1013	4008
-6319	200	1998-01-22 00:00:00	968	3943
-6320	200	1998-05-04 00:00:00	968	3920
-6321	200	1997-08-01 00:00:00	968	3710
-6322	200	1998-06-30 00:00:00	465	3920
-6323	200	1998-04-16 00:00:00	332	4105
-6324	200	1997-01-10 00:00:00	1091	4106
-6325	200	1997-10-20 00:00:00	267	3904
-6326	200	1997-08-27 00:00:00	1092	4107
-6327	200	1998-06-30 00:00:00	306	4108
-6328	200	1998-05-19 00:00:00	306	4108
-6329	198	1998-02-26 00:00:00	991	3943
-6330	189	1998-05-01 00:00:00	917	4109
-6331	175	1997-04-08 00:00:00	1093	4032
-6332	175	1998-03-20 00:00:00	920	3943
-6333	175	1997-03-11 00:00:00	991	3943
-6334	175	1998-04-15 00:00:00	962	3920
-6335	175	1997-02-17 00:00:00	958	4110
-6336	175	1998-03-23 00:00:00	1094	3943
-6337	175	1997-03-24 00:00:00	967	3943
-6338	175	1997-02-12 00:00:00	244	3943
-6339	175	1997-03-13 00:00:00	911	3943
-6340	175	1997-02-17 00:00:00	801	4111
-6341	175	1998-01-31 00:00:00	801	4112
-6342	175	1997-02-10 00:00:00	958	4111
-6343	175	1998-05-11 00:00:00	967	4099
-6344	175	1997-07-12 00:00:00	962	3710
-6345	175	1998-03-02 00:00:00	954	3943
-6346	175	1998-06-15 00:00:00	802	3943
-6347	159	1997-05-19 00:00:00	998	4113
-6348	150	1997-05-23 00:00:00	1048	3905
-6349	150	1997-09-13 00:00:00	916	3589
-6350	150	1997-08-05 00:00:00	529	3490
-6351	150	1998-05-06 00:00:00	1095	3920
-6352	150	1997-05-27 00:00:00	794	3943
-6353	150	1997-10-21 00:00:00	917	4109
-6354	150	1997-07-24 00:00:00	465	3710
-6355	150	1998-04-02 00:00:00	1095	3920
-6356	150	1998-07-02 00:00:00	689	4114
-6357	150	1997-08-01 00:00:00	930	4115
-6358	150	1998-02-12 00:00:00	965	3943
-6359	150	1998-06-20 00:00:00	1096	3943
-6360	150	1997-07-05 00:00:00	1071	3816
-6361	150	1998-06-08 00:00:00	1097	4116
-6362	150	1998-04-14 00:00:00	1074	4117
-6363	150	1997-02-03 00:00:00	1098	3693
-6364	150	1997-09-22 00:00:00	780	4118
-6365	150	1998-05-18 00:00:00	947	3943
-6366	150	1997-12-19 00:00:00	1084	3943
-6367	150	1998-02-04 00:00:00	244	3943
-6368	150	1997-07-08 00:00:00	244	3943
-6369	150	1997-04-28 00:00:00	1082	3943
-6370	150	1997-05-02 00:00:00	821	4119
-6371	150	1998-04-25 00:00:00	1099	3920
-6372	150	1998-03-17 00:00:00	1071	3943
-6373	150	1998-06-11 00:00:00	587	3943
-6374	150	1998-10-13 00:00:00	565	3584
-6375	150	1998-06-18 00:00:00	1100	4120
-6376	150	1998-04-15 00:00:00	943	3920
-6377	150	1998-06-05 00:00:00	988	4009
-6378	150	1998-08-14 00:00:00	539	489
-6379	150	1997-02-06 00:00:00	616	4121
-6380	150	1997-04-09 00:00:00	920	3943
-6381	150	1997-03-07 00:00:00	1094	3943
-6382	150	1997-03-17 00:00:00	1075	3943
-6383	150	1997-02-19 00:00:00	616	4078
-6384	150	1997-04-10 00:00:00	587	4075
-6385	150	1997-07-17 00:00:00	1101	3710
-6386	150	1997-11-21 00:00:00	1102	4122
-6387	150	1997-04-24 00:00:00	1103	3943
-6388	150	1998-03-09 00:00:00	998	4123
-6389	150	1997-03-14 00:00:00	1084	4099
-6390	150	1998-03-01 00:00:00	821	3943
-6391	150	\N	944	3862
-6392	150	1997-11-04 00:00:00	221	3710
-6393	150	1997-07-21 00:00:00	565	489
-6394	150	1997-03-04 00:00:00	495	4124
-6395	150	1997-05-07 00:00:00	239	3943
-6396	150	1997-10-04 00:00:00	1062	4125
-6397	150	1997-05-15 00:00:00	925	4126
-6398	150	1998-09-14 00:00:00	1003	4127
-6399	150	1997-07-17 00:00:00	1099	3710
-6400	140	1997-06-10 00:00:00	967	1013
-6401	130	1997-07-15 00:00:00	602	4128
-6402	128	1997-12-03 00:00:00	680	3943
-6403	125	1997-03-12 00:00:00	1080	4129
-6404	125	1998-06-08 00:00:00	968	3943
-6405	125	1998-04-30 00:00:00	589	3943
-6406	125	1997-03-07 00:00:00	597	4130
-6407	125	1998-05-15 00:00:00	539	4131
-6408	125	1997-07-21 00:00:00	857	4132
-6409	125	1998-02-06 00:00:00	905	4133
-6410	125	1998-02-06 00:00:00	905	4134
-6411	125	1997-09-12 00:00:00	965	4135
-6412	125	1997-09-08 00:00:00	965	2360
-6413	125	1998-07-02 00:00:00	965	3943
-6414	125	1997-10-30 00:00:00	1036	4067
-6415	125	1997-09-16 00:00:00	965	4136
-6416	125	1998-05-30 00:00:00	1104	4137
-6417	125	1997-03-12 00:00:00	1077	4138
-6418	125	1997-09-01 00:00:00	1105	4139
-6419	120	1998-07-29 00:00:00	1046	4140
-6420	120	1998-07-07 00:00:00	1106	4141
-6421	100	1998-10-22 00:00:00	585	2920
-6422	100	1998-04-15 00:00:00	949	3920
-6423	100	1998-12-01 00:00:00	585	4142
-6424	100	1998-03-10 00:00:00	998	3693
-6425	100	1997-10-23 00:00:00	1107	4143
-6426	100	1997-04-03 00:00:00	961	1024
-6427	100	1998-10-19 00:00:00	565	4144
-6428	100	1998-03-20 00:00:00	238	4145
-6429	100	1998-06-04 00:00:00	944	4146
-6430	100	1997-05-23 00:00:00	585	2920
-6431	100	1998-02-22 00:00:00	978	4147
-6432	100	1998-04-20 00:00:00	944	4148
-6433	100	1998-06-25 00:00:00	1071	3943
-6434	100	1998-01-18 00:00:00	978	4125
-6435	100	1998-01-18 00:00:00	978	4149
-6436	100	\N	1000	1889
-6437	100	1998-07-07 00:00:00	589	4067
-6438	100	1997-09-26 00:00:00	659	4150
-6439	100	1998-06-17 00:00:00	1071	4151
-6440	100	1998-07-07 00:00:00	1108	4152
-6441	100	1998-05-11 00:00:00	1109	4153
-6442	100	1998-03-10 00:00:00	1110	4154
-6443	100	1998-04-07 00:00:00	332	4155
-6444	100	1997-05-14 00:00:00	821	4156
-6445	100	1998-06-16 00:00:00	989	4157
-6446	100	1998-06-30 00:00:00	1105	4158
-6447	100	1998-06-29 00:00:00	1105	4159
-6448	100	1997-08-05 00:00:00	597	4160
-6449	100	1998-02-03 00:00:00	616	4161
-6450	100	1998-06-18 00:00:00	1000	4162
-6451	100	1997-01-23 00:00:00	616	4163
-6452	100	1997-06-05 00:00:00	597	4164
-6453	100	1998-06-15 00:00:00	963	4165
-6454	100	1998-02-16 00:00:00	1111	4166
-6455	100	1998-05-01 00:00:00	602	4167
-6456	100	1998-02-23 00:00:00	916	3589
-6457	100	1997-09-22 00:00:00	916	1024
-6458	100	1997-07-14 00:00:00	657	4168
-6459	100	1997-05-28 00:00:00	917	4169
-6460	100	1997-04-30 00:00:00	332	4170
-6461	100	1997-09-13 00:00:00	1077	4138
-6462	100	1998-10-20 00:00:00	1000	4162
-6463	100	1998-03-09 00:00:00	585	2920
-6464	100	1997-11-10 00:00:00	521	4171
-6465	100	1997-07-14 00:00:00	1003	4172
-6466	100	1998-02-26 00:00:00	1032	4148
-6467	100	1998-11-20 00:00:00	1003	4173
-6468	100	1998-01-28 00:00:00	1003	4172
-6469	100	1998-04-20 00:00:00	293	4061
-6470	100	1998-05-23 00:00:00	976	4174
-6471	100	1998-05-23 00:00:00	976	4175
-6472	100	1997-07-16 00:00:00	949	3710
-6473	100	1998-07-30 00:00:00	585	2920
-6474	100	1998-10-08 00:00:00	996	2965
-6475	100	1997-02-22 00:00:00	967	4176
-6476	100	1997-04-01 00:00:00	1074	4126
-6477	100	1998-05-15 00:00:00	842	4095
-6478	100	1998-04-27 00:00:00	601	4177
-6479	100	1998-03-15 00:00:00	324	4178
-6480	100	1998-06-16 00:00:00	654	4179
-6481	100	1997-09-03 00:00:00	1048	1018
-6482	100	1998-08-13 00:00:00	996	4180
-6483	100	1998-06-11 00:00:00	1070	4181
-6484	100	1998-05-12 00:00:00	585	2988
-6485	100	1997-06-30 00:00:00	1071	4182
-6486	100	1998-04-20 00:00:00	585	2965
-6487	100	1998-05-11 00:00:00	892	4183
-6488	100	1997-06-17 00:00:00	654	4184
-6489	100	1998-07-14 00:00:00	1112	4185
-6490	100	1995-06-07 00:00:00	998	4186
-6491	100	1998-06-09 00:00:00	1113	3835
-6492	100	1998-04-30 00:00:00	585	4187
-6493	100	1998-01-10 00:00:00	998	4188
-6494	100	1997-06-17 00:00:00	654	4189
-6495	100	1998-10-15 00:00:00	998	3619
-6496	100	1998-06-06 00:00:00	1114	4190
-6497	100	1997-03-28 00:00:00	1115	2352
-6498	100	1998-10-13 00:00:00	998	3619
-6499	100	1997-08-14 00:00:00	601	4191
-6500	70	1997-06-17 00:00:00	654	4192
-6501	70	1998-06-16 00:00:00	654	4193
-6502	50	1998-06-16 00:00:00	654	4194
-6503	50	1997-10-06 00:00:00	585	2920
-6504	50	1997-12-19 00:00:00	585	2920
-6505	35	1997-06-17 00:00:00	654	4195
-6506	10	1998-09-05 00:00:00	1116	4196
-6507	-300	1998-06-08 00:00:00	1016	3737
-6508	-500	1998-07-30 00:00:00	1016	4197
-6509	-600	1998-09-20 00:00:00	1016	4198
-6510	-1000	1998-12-20 00:00:00	1008	4199
-6511	-1000	1998-11-22 00:00:00	1006	3700
-6512	-1000	1998-11-25 00:00:00	1006	3699
-6513	-1000	1998-10-21 00:00:00	1008	3702
-6514	-1000	1998-10-09 00:00:00	1017	3672
-6515	-1000	1998-08-27 00:00:00	1017	3672
-6516	-1000	1998-10-28 00:00:00	1007	4200
-6517	-20000	1997-09-11 00:00:00	76	4201
-6518	500	1997-06-24 00:00:00	1117	4202
-6519	300	1997-10-20 00:00:00	1118	4203
-6520	250	1997-09-23 00:00:00	1117	4202
-6521	100	1997-01-29 00:00:00	1119	4204
-6522	80000	1996-06-28 00:00:00	846	4205
-6523	50000	1995-12-20 00:00:00	846	4205
-6524	50000	1995-10-02 00:00:00	1120	4205
-6525	20000	1996-06-28 00:00:00	76	4205
-6526	10000	1996-06-04 00:00:00	848	4206
-6527	10000	1996-01-29 00:00:00	1121	4205
-6528	10000	1995-02-09 00:00:00	52	4207
-6529	10000	1996-02-23 00:00:00	175	4208
-6530	10000	1995-05-23 00:00:00	848	4206
-6531	6000	1996-05-02 00:00:00	52	4209
-6532	5000	1996-05-29 00:00:00	175	3013
-6533	5000	1996-06-28 00:00:00	76	4210
-6534	5000	1996-05-29 00:00:00	1122	3013
-6535	5000	1996-04-30 00:00:00	2	3689
-6536	4000	1996-04-29 00:00:00	52	4211
-6537	3000	1996-10-31 00:00:00	52	4212
-6538	2500	1995-06-14 00:00:00	1123	1722
-6539	2500	1995-06-14 00:00:00	175	1722
-6540	2500	1995-06-14 00:00:00	1123	4213
-6541	2000	1995-06-30 00:00:00	1124	4214
-6542	2000	1995-06-30 00:00:00	1124	4214
-6543	2000	1996-05-17 00:00:00	1125	4215
-6544	2000	1996-05-17 00:00:00	1125	4215
-6545	1300	1995-09-10 00:00:00	5	4216
-6546	1250	1995-10-11 00:00:00	76	4217
-6547	1000	1995-04-26 00:00:00	1126	4218
-6548	1000	1995-09-22 00:00:00	1053	4219
-6549	1000	1995-09-28 00:00:00	1127	4220
-6550	1000	1995-12-15 00:00:00	200	4221
-6551	1000	1995-10-04 00:00:00	1037	4222
-6552	1000	1995-11-20 00:00:00	1128	4223
-6553	1000	1995-11-20 00:00:00	1128	4223
-6554	1000	1995-11-20 00:00:00	1128	4224
-6555	1000	1995-11-20 00:00:00	1128	4224
-6556	1000	1995-11-22 00:00:00	246	4225
-6557	1000	1995-12-29 00:00:00	1129	4226
-6558	1000	1995-12-29 00:00:00	1129	4226
-6559	1000	1995-12-29 00:00:00	1129	4227
-6560	1000	1995-12-29 00:00:00	1129	4228
-6561	1000	1995-07-20 00:00:00	417	4229
-6562	1000	1995-10-17 00:00:00	1030	3787
-6563	1000	1995-11-30 00:00:00	1124	4230
-6564	1000	1995-12-22 00:00:00	220	4231
-6565	1000	1996-01-30 00:00:00	4	4232
-6566	1000	1995-08-08 00:00:00	390	4233
-6567	1000	1995-12-06 00:00:00	1013	3850
-6568	1000	1995-12-06 00:00:00	1013	3972
-6569	1000	1995-12-09 00:00:00	1013	4234
-6570	1000	1995-12-09 00:00:00	1013	4234
-6571	1000	1996-01-26 00:00:00	582	4235
-6572	1000	1996-01-26 00:00:00	582	4235
-6573	1000	1996-02-08 00:00:00	1126	4236
-6574	1000	1995-12-31 00:00:00	1130	4237
-6575	1000	1995-08-07 00:00:00	1131	4238
-6576	1000	1995-08-07 00:00:00	1131	4239
-6577	1000	1995-08-22 00:00:00	1131	4240
-6578	1000	1995-08-14 00:00:00	1131	4241
-6579	1000	1995-08-07 00:00:00	1131	4242
-6580	1000	1995-08-07 00:00:00	1131	4243
-6581	1000	1995-08-14 00:00:00	1131	4244
-6582	1000	1995-09-29 00:00:00	1131	4245
-6583	1000	1995-09-29 00:00:00	1131	3013
-6584	1000	1995-08-07 00:00:00	1131	4246
-6585	1000	1996-02-22 00:00:00	1132	4247
-6586	1000	1995-12-11 00:00:00	1132	4248
-6587	1000	1995-12-11 00:00:00	1132	4249
-6588	1000	1995-12-11 00:00:00	1132	4250
-6589	1000	1995-12-11 00:00:00	1132	4251
-6590	1000	1996-03-29 00:00:00	1126	4252
-6591	1000	1995-10-31 00:00:00	452	4253
-6592	1000	1996-02-06 00:00:00	720	2552
-6593	1000	1996-02-15 00:00:00	1125	4254
-6594	1000	1996-02-07 00:00:00	200	4224
-6595	1000	1995-10-27 00:00:00	1131	4255
-6596	1000	1995-10-23 00:00:00	1131	3703
-6597	1000	1995-11-03 00:00:00	1131	4256
-6598	1000	1996-05-10 00:00:00	1133	4257
-6599	1000	1996-04-15 00:00:00	412	4258
-6600	1000	1996-05-10 00:00:00	412	4259
-6601	1000	1996-06-12 00:00:00	1132	4260
-6602	1000	1996-05-20 00:00:00	1132	4261
-6603	1000	1996-06-12 00:00:00	1132	4262
-6604	1000	1996-06-06 00:00:00	1004	4263
-6605	1000	1996-06-11 00:00:00	1004	4264
-6606	1000	1996-04-21 00:00:00	26	4265
-6607	1000	1996-06-27 00:00:00	417	4229
-6608	1000	1996-06-27 00:00:00	417	4266
-6609	1000	1996-06-27 00:00:00	417	4267
-6610	1000	1996-06-27 00:00:00	417	4268
-6611	1000	1996-06-27 00:00:00	417	4269
-6612	1000	1996-06-26 00:00:00	1134	4270
-6613	1000	1996-06-26 00:00:00	1129	4271
-6614	1000	1996-04-12 00:00:00	1135	4272
-6615	1000	1996-04-26 00:00:00	1135	4273
-6616	1000	1996-05-02 00:00:00	1135	4274
-6617	1000	1996-06-07 00:00:00	1124	4275
-6618	1000	1996-06-28 00:00:00	76	4276
-6619	1000	1996-05-15 00:00:00	76	4277
-6620	1000	1996-06-27 00:00:00	1030	3787
-6621	1000	1996-06-05 00:00:00	1030	3786
-6622	1000	1996-05-10 00:00:00	1136	4278
-6623	1000	1996-06-29 00:00:00	807	4231
-6624	1000	1996-05-03 00:00:00	1137	4279
-6625	1000	1996-05-21 00:00:00	1137	4280
-6626	1000	1996-04-04 00:00:00	1138	4281
-6627	1000	1996-06-20 00:00:00	220	4231
-6628	1000	1996-05-01 00:00:00	1125	4282
-6629	1000	1996-04-26 00:00:00	1125	4283
-6630	1000	1996-05-28 00:00:00	1139	4284
-6631	1000	1996-05-29 00:00:00	208	4285
-6632	1000	1996-05-22 00:00:00	208	4286
-6633	1000	1996-06-30 00:00:00	195	4287
-6634	1000	1996-02-28 00:00:00	390	4288
-6635	1000	1996-06-07 00:00:00	1017	4289
-6636	1000	1995-10-31 00:00:00	452	4253
-6637	1000	1996-02-08 00:00:00	1013	4290
-6638	1000	1996-02-08 00:00:00	1013	4290
-6639	1000	1996-07-19 00:00:00	1053	4291
-6640	1000	1996-08-16 00:00:00	1130	4237
-6641	1000	1996-07-01 00:00:00	1140	4292
-6642	1000	1996-07-16 00:00:00	1125	4293
-6643	1000	1996-07-16 00:00:00	1125	4293
-6644	1000	1996-08-22 00:00:00	11	3079
-6645	1000	1996-09-23 00:00:00	1127	4294
-6646	1000	1996-09-24 00:00:00	1132	4295
-6647	1000	1996-09-24 00:00:00	1132	4296
-6648	1000	1996-09-23 00:00:00	1141	4297
-6649	1000	1996-09-13 00:00:00	1001	4298
-6650	1000	1996-08-20 00:00:00	848	4299
-6651	1000	1996-09-03 00:00:00	1142	4300
-6652	1000	1996-09-10 00:00:00	1143	4289
-6653	1000	1996-10-02 00:00:00	1144	4301
-6654	1000	1995-12-30 00:00:00	1126	4302
-6655	1000	1995-12-30 00:00:00	1126	4218
-6656	1000	1995-10-19 00:00:00	1126	4303
-6657	1000	1995-10-19 00:00:00	1126	4304
-6658	1000	1995-10-20 00:00:00	1126	4305
-6659	1000	1995-12-30 00:00:00	1126	4306
-6660	1000	1995-10-25 00:00:00	1126	4307
-6661	1000	1995-12-30 00:00:00	1126	4308
-6662	1000	1995-12-31 00:00:00	1126	4309
-6663	1000	1995-12-30 00:00:00	1126	4309
-6664	1000	1995-10-30 00:00:00	412	4259
-6665	1000	1995-07-10 00:00:00	750	4310
-6666	1000	1995-12-26 00:00:00	208	4286
-6667	1000	1995-12-26 00:00:00	208	4211
-6668	1000	1995-05-26 00:00:00	1131	4311
-6669	1000	1996-09-18 00:00:00	11	4312
-6670	1000	1996-09-10 00:00:00	1137	4279
-6671	1000	1996-10-03 00:00:00	720	3783
-6672	1000	1995-05-26 00:00:00	1131	1734
-6673	1000	1996-10-16 00:00:00	1145	3057
-6674	1000	1996-10-01 00:00:00	280	4313
-6675	1000	1996-10-23 00:00:00	1004	4314
-6676	1000	1996-11-04 00:00:00	25	4315
-6677	1000	1995-07-03 00:00:00	1126	4316
-6678	1000	1995-03-30 00:00:00	1146	4317
-6679	1000	1995-03-30 00:00:00	1146	4317
-6680	1000	1995-05-01 00:00:00	195	3776
-6681	1000	1996-10-28 00:00:00	240	4318
-6682	1000	1995-06-27 00:00:00	1013	4319
-6683	1000	1995-02-13 00:00:00	1013	4320
-6684	1000	1995-02-10 00:00:00	1013	4320
-6685	1000	1996-10-24 00:00:00	1139	4284
-6686	1000	1996-11-13 00:00:00	1021	4321
-6687	1000	1996-11-01 00:00:00	1147	4322
-6688	1000	1996-10-22 00:00:00	76	4323
-6689	1000	1996-10-29 00:00:00	4	4324
-6690	1000	1996-10-29 00:00:00	4	4325
-6691	1000	1995-06-16 00:00:00	1030	3231
-6692	1000	1996-10-21 00:00:00	195	4326
-6693	1000	1995-05-10 00:00:00	881	3785
-6694	1000	1995-03-21 00:00:00	725	1722
-6695	1000	1996-10-21 00:00:00	195	4326
-6696	1000	1996-07-03 00:00:00	1017	4327
-6697	1000	1996-12-31 00:00:00	24	4328
-6698	1000	1996-12-31 00:00:00	24	4328
-6699	1000	1995-03-21 00:00:00	725	1722
-6700	1000	1996-12-10 00:00:00	1013	4329
-6701	1000	1995-05-24 00:00:00	725	4330
-6702	1000	1995-06-01 00:00:00	1004	4331
-6703	1000	1995-06-19 00:00:00	1053	4332
-6704	1000	1995-04-26 00:00:00	1126	4333
-6705	1000	1995-04-17 00:00:00	1126	4334
-6706	1000	1995-04-25 00:00:00	1126	4335
-6707	1000	1995-04-26 00:00:00	1126	4336
-6708	1000	1995-04-26 00:00:00	1126	4337
-6709	1000	1995-04-13 00:00:00	1126	4338
-6710	1000	1995-04-13 00:00:00	1126	4339
-6711	1000	1995-04-19 00:00:00	1126	4335
-6712	1000	1995-05-09 00:00:00	11	4340
-6713	1000	1995-04-24 00:00:00	11	3079
-6714	1000	1995-02-22 00:00:00	1126	4341
-6715	965	1996-06-04 00:00:00	1127	4342
-6716	950	1996-10-16 00:00:00	1132	4343
-6717	900	1995-08-31 00:00:00	206	4270
-6718	900	1996-06-29 00:00:00	720	4344
-6719	800	1996-11-22 00:00:00	881	4345
-6720	800	1996-11-22 00:00:00	881	4346
-6721	800	1996-11-22 00:00:00	881	4347
-6722	750	1996-12-19 00:00:00	750	3273
-6723	700	1996-09-04 00:00:00	5	4216
-6724	700	1996-06-12 00:00:00	1132	4348
-6725	700	1996-10-28 00:00:00	1148	4349
-6726	700	1996-09-04 00:00:00	5	4350
-6727	700	1996-09-04 00:00:00	5	4351
-6728	600	1996-01-26 00:00:00	750	3273
-6729	600	1996-06-26 00:00:00	1127	4352
-6730	600	1996-03-14 00:00:00	1132	4353
-6731	600	1995-02-01 00:00:00	1013	4354
-6732	600	1996-09-17 00:00:00	5	4355
-6733	500	1996-10-03 00:00:00	1132	4356
-6734	500	1996-10-02 00:00:00	1132	4357
-6735	500	1996-10-09 00:00:00	1149	4358
-6736	500	1995-12-01 00:00:00	1126	4359
-6737	500	1995-05-05 00:00:00	908	4360
-6738	500	1996-10-07 00:00:00	1053	4332
-6739	500	1996-08-27 00:00:00	1150	4361
-6740	500	1996-09-10 00:00:00	1143	4289
-6741	500	1996-09-09 00:00:00	1136	4362
-6742	500	1996-09-30 00:00:00	1140	4363
-6743	500	1996-09-10 00:00:00	26	4364
-6744	500	1996-09-04 00:00:00	1091	4365
-6745	500	1996-11-08 00:00:00	1037	4366
-6746	500	1996-09-02 00:00:00	1130	4367
-6747	500	1996-09-21 00:00:00	1132	4368
-6748	500	1996-09-30 00:00:00	1053	4369
-6749	500	1996-08-26 00:00:00	1053	4370
-6750	500	1996-08-26 00:00:00	1053	4371
-6751	500	1996-08-26 00:00:00	1053	4372
-6752	500	1996-07-22 00:00:00	1132	4373
-6753	500	1996-08-22 00:00:00	4	3030
-6754	500	1996-07-16 00:00:00	1151	4374
-6755	500	1995-06-14 00:00:00	1053	4375
-6756	500	1995-12-06 00:00:00	1013	3850
-6757	500	1995-06-19 00:00:00	1053	4291
-6758	500	1996-10-29 00:00:00	1152	4376
-6759	500	1996-11-07 00:00:00	240	4377
-6760	500	1996-07-05 00:00:00	1153	4378
-6761	500	1996-10-30 00:00:00	1152	4379
-6762	500	1996-10-24 00:00:00	1152	4380
-6763	500	1996-10-18 00:00:00	222	4381
-6764	500	1996-06-11 00:00:00	1132	4382
-6765	500	1996-07-29 00:00:00	1143	4383
-6766	500	1995-10-10 00:00:00	1126	4384
-6767	500	1996-10-24 00:00:00	1152	4380
-6768	500	1996-10-28 00:00:00	15	4385
-6769	500	1996-07-26 00:00:00	11	4386
-6770	500	1996-10-25 00:00:00	15	4387
-6771	500	1996-03-29 00:00:00	1013	3927
-6772	500	1996-03-27 00:00:00	1013	4388
-6773	500	1996-06-29 00:00:00	720	4389
-6774	500	1996-10-25 00:00:00	1130	4390
-6775	500	1995-12-29 00:00:00	5	4391
-6776	500	1995-11-30 00:00:00	1154	4392
-6777	500	1995-02-21 00:00:00	52	4393
-6778	500	1995-12-21 00:00:00	11	3916
-6779	500	1996-06-17 00:00:00	1130	4394
-6780	500	1995-12-21 00:00:00	4	4395
-6781	500	1996-03-06 00:00:00	720	4396
-6782	500	1996-03-12 00:00:00	1155	4397
-6783	500	1996-02-06 00:00:00	1139	4398
-6784	500	1996-02-06 00:00:00	1139	4398
-6785	500	1995-05-15 00:00:00	1124	4399
-6786	500	1996-03-14 00:00:00	5	4400
-6787	500	1995-12-12 00:00:00	1132	4401
-6788	500	1996-10-24 00:00:00	1001	4402
-6789	500	1995-05-15 00:00:00	1124	4214
-6790	500	1996-10-11 00:00:00	1004	4403
-6791	500	1996-10-04 00:00:00	720	4404
-6792	500	1995-04-03 00:00:00	1044	4405
-6793	500	1995-10-10 00:00:00	11	4312
-6794	500	1995-07-30 00:00:00	1124	4399
-6795	500	1996-11-08 00:00:00	1037	4406
-6796	500	1995-12-11 00:00:00	1156	4407
-6797	500	1995-10-09 00:00:00	1126	4408
-6798	495	1996-11-18 00:00:00	610	3837
-6799	400	1995-07-27 00:00:00	1013	4319
-6800	400	1996-07-25 00:00:00	936	4002
-6801	400	1996-12-19 00:00:00	222	4409
-6802	400	1995-07-17 00:00:00	1013	4410
-6803	400	1996-03-25 00:00:00	1130	4411
-6804	400	1995-07-24 00:00:00	1013	4412
-6805	400	1995-03-10 00:00:00	5	4413
-6806	400	1995-02-01 00:00:00	1013	4354
-6807	400	1996-04-15 00:00:00	5	4414
-6808	400	1996-04-10 00:00:00	5	4415
-6809	375	1996-05-31 00:00:00	76	4416
-6810	360	1996-10-17 00:00:00	4	4417
-6811	350	1996-07-05 00:00:00	4	3065
-6812	350	1996-06-20 00:00:00	4	4418
-6813	333	1996-06-07 00:00:00	724	3525
-6814	300	1996-09-28 00:00:00	5	3966
-6815	300	1996-06-19 00:00:00	1132	4419
-6816	300	1996-10-25 00:00:00	1130	4394
-6817	300	1996-07-21 00:00:00	200	3269
-6818	300	1996-04-22 00:00:00	5	4420
-6819	300	1996-04-19 00:00:00	5	4421
-6820	300	1996-04-10 00:00:00	5	4422
-6821	300	1996-11-04 00:00:00	612	4423
-6822	300	1996-07-24 00:00:00	222	4424
-6823	300	1996-11-05 00:00:00	612	4425
-6824	300	1995-10-30 00:00:00	750	4426
-6825	300	1996-02-20 00:00:00	1126	4427
-6826	300	1996-12-23 00:00:00	1013	4428
-6827	300	1996-09-28 00:00:00	5	4429
-6828	300	1996-10-24 00:00:00	1001	3826
-6829	300	1995-04-24 00:00:00	5	4430
-6830	300	1996-02-29 00:00:00	1157	4431
-6831	290	1996-04-22 00:00:00	712	4432
-6832	290	1995-06-30 00:00:00	712	4433
-6833	290	1995-03-03 00:00:00	712	4434
-6834	290	1995-05-31 00:00:00	712	4432
-6835	290	1995-09-13 00:00:00	712	4433
-6836	290	1995-05-10 00:00:00	52	4209
-6837	290	1996-01-23 00:00:00	712	4433
-6838	290	1996-04-24 00:00:00	712	4432
-6839	280	1995-12-13 00:00:00	1127	4435
-6840	280	1995-06-10 00:00:00	1158	4436
-6841	250	1996-07-26 00:00:00	4	4418
-6842	250	1995-12-06 00:00:00	1159	4437
-6843	250	1995-12-29 00:00:00	751	4438
-6844	250	1996-03-14 00:00:00	1132	4439
-6845	250	1996-03-25 00:00:00	1160	4440
-6846	250	1996-02-26 00:00:00	751	4441
-6847	250	1996-03-08 00:00:00	751	3417
-6848	250	1996-02-13 00:00:00	751	4442
-6849	250	1996-05-08 00:00:00	1161	4443
-6850	250	1996-05-08 00:00:00	1161	4444
-6851	250	1996-05-28 00:00:00	1132	4445
-6852	250	1996-06-12 00:00:00	1132	4446
-6853	250	1996-06-12 00:00:00	1132	4447
-6854	250	1996-05-20 00:00:00	1132	4448
-6855	250	1996-06-28 00:00:00	1162	4449
-6856	250	1996-05-20 00:00:00	222	4450
-6857	250	1996-04-08 00:00:00	1130	4451
-6858	250	1996-05-23 00:00:00	751	4452
-6859	250	1996-06-04 00:00:00	4	4453
-6860	250	1996-03-27 00:00:00	1013	4454
-6861	250	1996-03-29 00:00:00	1013	4455
-6862	250	1996-07-21 00:00:00	200	4456
-6863	250	1996-07-12 00:00:00	939	3476
-6864	250	1996-07-16 00:00:00	240	4457
-6865	250	1996-09-30 00:00:00	306	4458
-6866	250	1996-09-21 00:00:00	1132	4445
-6867	250	1996-09-30 00:00:00	1163	4459
-6868	250	1996-09-20 00:00:00	76	3350
-6869	250	1996-09-17 00:00:00	25	4460
-6870	250	1996-09-10 00:00:00	26	4461
-6871	250	1996-09-19 00:00:00	1164	4462
-6872	250	1996-10-14 00:00:00	908	4463
-6873	250	1995-09-18 00:00:00	1163	4459
-6874	250	1996-10-11 00:00:00	1165	4464
-6875	250	1996-10-24 00:00:00	908	4352
-6876	250	1995-08-04 00:00:00	724	3525
-6877	250	1995-06-14 00:00:00	1166	4465
-6878	250	1996-10-21 00:00:00	222	4466
-6879	250	1996-10-25 00:00:00	201	4467
-6880	250	1996-11-05 00:00:00	612	4468
-6881	250	1996-11-04 00:00:00	1162	4449
-6882	250	1996-10-22 00:00:00	1125	4469
-6883	250	1995-04-04 00:00:00	939	3476
-6884	250	1996-12-16 00:00:00	11	3916
-6885	250	1996-12-31 00:00:00	751	4470
-6886	250	1996-08-01 00:00:00	1013	4319
-6887	250	1995-01-12 00:00:00	1004	4471
-6888	250	1995-06-07 00:00:00	26	4472
-6889	250	1995-04-14 00:00:00	1126	4473
-6890	250	1995-04-14 00:00:00	1126	4474
-6891	250	1996-10-24 00:00:00	1152	4475
-6892	250	1996-10-24 00:00:00	1152	4476
-6893	250	1994-06-20 00:00:00	1167	4477
-6894	215	1996-10-24 00:00:00	1168	4478
-6895	200	1996-02-28 00:00:00	11	4479
-6896	200	1996-10-01 00:00:00	1132	4480
-6897	200	1996-04-22 00:00:00	1169	4481
-6898	200	1996-07-17 00:00:00	1013	4482
-6899	200	1996-12-18 00:00:00	52	4483
-6900	200	1996-12-30 00:00:00	52	4484
-6901	200	1995-05-12 00:00:00	246	4485
-6902	200	1995-07-17 00:00:00	1013	4482
-6903	200	1995-05-25 00:00:00	11	4486
-6904	200	1995-07-05 00:00:00	1013	4487
-6905	200	1996-08-12 00:00:00	4	4232
-6906	200	1996-08-15 00:00:00	1132	4488
-6907	200	1996-08-30 00:00:00	712	4489
-6908	200	1996-08-30 00:00:00	1053	4332
-6909	200	1996-09-21 00:00:00	1132	4490
-6910	200	1996-04-26 00:00:00	417	4491
-6911	200	1995-12-15 00:00:00	939	3476
-6912	200	1996-04-10 00:00:00	1132	4401
-6913	200	1996-05-22 00:00:00	1132	4492
-6914	200	1996-04-19 00:00:00	5	4493
-6915	200	1996-04-19 00:00:00	5	4494
-6916	200	1996-10-02 00:00:00	1053	4495
-6917	200	1996-10-15 00:00:00	1159	4496
-6918	200	1996-10-29 00:00:00	1132	4497
-6919	-100	1995-09-02 00:00:00	1126	4498
-6920	-500	1995-11-30 00:00:00	1126	4303
-6921	-500	1995-10-09 00:00:00	1126	4499
-6922	-500	1995-07-30 00:00:00	1124	4214
-6923	-1000	1995-11-30 00:00:00	1124	4230
-6924	-1000	1995-08-28 00:00:00	1124	4500
-6925	-1000	1995-08-28 00:00:00	1124	4500
-6926	-1000	1996-02-28 00:00:00	1126	4501
-6927	-1000	1996-07-16 00:00:00	1125	4215
-6928	-1000	1996-07-16 00:00:00	1125	4215
-6929	10000	1994-10-05 00:00:00	52	4502
-6930	8000	1993-02-22 00:00:00	52	4503
-6931	7500	1993-01-29 00:00:00	52	4393
-6932	5000	1994-06-22 00:00:00	1027	4504
-6933	4500	1994-06-29 00:00:00	848	4505
-6934	2500	1994-08-23 00:00:00	724	4506
-6935	2000	1994-04-21 00:00:00	1170	4507
-6936	2000	1993-11-24 00:00:00	536	4508
-6937	1200	1994-04-01 00:00:00	5	4509
-6938	1000	1994-11-02 00:00:00	246	4510
-6939	1000	1994-10-18 00:00:00	25	4511
-6940	1000	1994-09-06 00:00:00	25	4512
-6941	1000	1994-09-30 00:00:00	306	4513
-6942	1000	1994-09-07 00:00:00	1130	4514
-6943	1000	1994-10-11 00:00:00	1171	4515
-6944	1000	1994-09-19 00:00:00	417	4516
-6945	1000	1994-09-26 00:00:00	417	4517
-6946	1000	1994-11-04 00:00:00	246	4518
-6947	1000	1994-11-02 00:00:00	246	4519
-6948	1000	1994-10-19 00:00:00	397	3109
-6949	1000	1994-07-08 00:00:00	76	4520
-6950	1000	1994-09-16 00:00:00	205	4521
-6951	1000	1994-11-02 00:00:00	1053	3926
-6952	1000	1994-11-07 00:00:00	26	4522
-6953	1000	1994-09-19 00:00:00	390	4523
-6954	1000	1994-07-27 00:00:00	463	4524
-6955	1000	1994-10-31 00:00:00	15	4525
-6956	1000	1994-10-20 00:00:00	1172	4526
-6957	1000	1994-11-08 00:00:00	1173	4527
-6958	1000	1994-05-27 00:00:00	417	4528
-6959	1000	1994-06-13 00:00:00	1030	3231
-6960	1000	1994-08-12 00:00:00	1030	4529
-6961	1000	1994-07-06 00:00:00	417	4268
-6962	1000	1994-08-24 00:00:00	1174	4530
-6963	1000	1994-07-12 00:00:00	1014	4531
-6964	1000	1994-08-23 00:00:00	1175	4532
-6965	1000	1994-06-20 00:00:00	1174	4533
-6966	1000	1993-01-22 00:00:00	52	4393
-6967	1000	1994-06-17 00:00:00	200	4534
-6968	1000	1994-04-22 00:00:00	1013	4264
-6969	1000	1994-05-20 00:00:00	15	4027
-6970	1000	1994-06-07 00:00:00	1176	4535
-6971	1000	1994-04-28 00:00:00	1176	4535
-6972	1000	1994-05-23 00:00:00	1176	4536
-6973	1000	1994-04-13 00:00:00	1177	4537
-6974	1000	1994-06-21 00:00:00	1170	4538
-6975	1000	1994-05-09 00:00:00	11	3079
-6976	1000	1994-03-11 00:00:00	26	4539
-6977	1000	1994-04-13 00:00:00	205	4540
-6978	1000	1994-01-18 00:00:00	25	4541
-6979	1000	1994-01-17 00:00:00	25	4542
-6980	1000	1994-01-29 00:00:00	390	1722
-6981	1000	1994-01-29 00:00:00	390	1722
-6982	1000	1994-03-31 00:00:00	558	4543
-6983	1000	1994-03-31 00:00:00	558	1722
-6984	1000	1994-03-31 00:00:00	558	1722
-6985	1000	1993-07-08 00:00:00	1030	3231
-6986	1000	1993-08-06 00:00:00	1030	4529
-6987	1000	1993-12-14 00:00:00	1178	4544
-6988	1000	1993-12-29 00:00:00	725	4545
-6989	1000	1993-10-27 00:00:00	576	4546
-6990	1000	1993-10-27 00:00:00	576	4546
-6991	1000	1993-10-27 00:00:00	576	4547
-6992	1000	1993-10-27 00:00:00	576	4547
-6993	1000	1993-11-24 00:00:00	536	4548
-6994	1000	1993-12-14 00:00:00	848	4549
-6995	1000	1993-04-30 00:00:00	390	4550
-6996	1000	1993-03-02 00:00:00	1013	4551
-6997	1000	1993-06-13 00:00:00	452	4552
-6998	1000	1993-03-22 00:00:00	1060	4553
-6999	1000	1993-06-07 00:00:00	11	4554
-7000	1000	1993-04-26 00:00:00	76	4555
-7001	900	1994-09-30 00:00:00	306	4556
-7002	900	1994-09-30 00:00:00	306	4513
-7003	800	1994-09-30 00:00:00	306	4556
-7004	760	1993-10-20 00:00:00	52	4557
-7005	750	1993-06-07 00:00:00	1173	4558
-7006	750	1994-08-17 00:00:00	1179	4559
-7007	750	1993-12-01 00:00:00	928	4560
-7008	750	1993-06-07 00:00:00	1173	4561
-7009	750	1994-09-06 00:00:00	25	4512
-7010	700	1994-09-12 00:00:00	1175	4562
-7011	620	1993-04-09 00:00:00	52	4557
-7012	600	1994-12-06 00:00:00	750	3273
-7013	575	1994-06-20 00:00:00	1130	4563
-7014	540	1993-03-26 00:00:00	52	4564
-7015	500	1993-08-27 00:00:00	52	4564
-7016	500	1993-08-13 00:00:00	52	4565
-7017	500	1994-06-15 00:00:00	1180	4566
-7018	500	1994-06-15 00:00:00	1180	4567
-7019	500	1994-08-26 00:00:00	26	4568
-7020	500	1994-09-06 00:00:00	246	4569
-7021	500	1994-08-25 00:00:00	246	4570
-7022	500	1994-09-27 00:00:00	25	4571
-7023	500	1993-05-20 00:00:00	222	4395
-7024	500	1994-09-27 00:00:00	25	4572
-7025	500	1994-09-18 00:00:00	908	4573
-7026	500	1993-06-15 00:00:00	52	4557
-7027	500	1994-05-27 00:00:00	1174	4574
-7028	500	1993-10-21 00:00:00	52	4557
-7029	500	1993-10-22 00:00:00	52	4557
-7030	500	1993-02-26 00:00:00	52	4393
-7031	500	1994-11-25 00:00:00	222	4395
-7032	500	1994-09-26 00:00:00	1181	4575
-7033	500	1994-09-26 00:00:00	1181	4575
-7034	500	1994-07-19 00:00:00	1053	4291
-7035	500	1994-10-24 00:00:00	52	4565
-7036	500	1994-08-01 00:00:00	1175	4576
-7037	500	1994-09-30 00:00:00	306	4577
-7038	500	1994-07-14 00:00:00	222	4395
-7039	500	1994-10-21 00:00:00	1172	4578
-7040	500	1994-08-01 00:00:00	1175	4579
-7041	500	1994-08-11 00:00:00	15	4580
-7042	500	1994-08-12 00:00:00	1182	4581
-7043	500	1994-11-04 00:00:00	1183	4582
-7044	500	1994-03-28 00:00:00	11	3916
-7045	500	1994-04-06 00:00:00	1184	4583
-7046	500	1994-05-02 00:00:00	1021	4584
-7047	500	1993-04-30 00:00:00	390	4585
-7048	500	1994-04-01 00:00:00	5	4586
-7049	500	1993-04-30 00:00:00	390	4587
-7050	500	1994-04-01 00:00:00	5	4588
-7051	500	1994-04-01 00:00:00	5	4589
-7052	500	1994-09-30 00:00:00	306	4590
-7053	500	1994-06-17 00:00:00	1053	4375
-7054	500	1994-06-20 00:00:00	1053	4591
-7055	500	1994-06-20 00:00:00	1053	4591
-7056	500	1994-06-17 00:00:00	1053	4592
-7057	500	1993-04-06 00:00:00	52	4557
-7058	500	1994-06-21 00:00:00	1185	4593
-7059	500	1994-06-22 00:00:00	26	4472
-7060	500	1993-11-03 00:00:00	390	4594
-7061	500	1993-08-24 00:00:00	11	3916
-7062	500	1994-02-18 00:00:00	52	4565
-7063	500	1994-01-20 00:00:00	222	4395
-7064	500	1994-04-06 00:00:00	222	4395
-7065	500	1993-06-09 00:00:00	15	4580
-7066	500	1993-06-21 00:00:00	1053	4595
-7067	500	1994-03-09 00:00:00	11	4596
-7068	450	1993-09-02 00:00:00	1140	4597
-7069	400	1994-07-27 00:00:00	1013	4598
-7070	400	1994-08-04 00:00:00	15	4599
-7071	400	1993-10-14 00:00:00	750	4600
-7072	400	1994-04-01 00:00:00	5	4422
-7073	400	1994-09-01 00:00:00	5	4414
-7074	400	1994-09-10 00:00:00	1186	4601
-7075	400	1993-10-08 00:00:00	11	4602
-7076	400	1994-07-08 00:00:00	417	4603
-7077	355	1994-05-31 00:00:00	52	4565
-7078	350	1994-10-24 00:00:00	928	4604
-7079	350	1994-10-31 00:00:00	222	4395
-7080	350	1994-06-22 00:00:00	1174	4605
-7081	300	1994-04-27 00:00:00	1187	4606
-7082	300	1994-09-07 00:00:00	1130	4607
-7083	300	1994-12-12 00:00:00	1014	4608
-7084	300	1994-04-01 00:00:00	5	4609
-7085	300	1994-09-30 00:00:00	306	4610
-7086	300	1994-09-06 00:00:00	936	3292
-7087	300	1994-04-01 00:00:00	5	4611
-7088	300	1993-12-08 00:00:00	750	3273
-7089	300	1993-05-20 00:00:00	15	4612
-7090	300	1994-09-27 00:00:00	306	4613
-7091	300	1994-04-01 00:00:00	5	4614
-7092	300	1994-06-15 00:00:00	5	4615
-7093	300	1994-06-16 00:00:00	5	4616
-7094	300	1994-04-01 00:00:00	5	4617
-7095	300	1994-09-29 00:00:00	5	4618
-7096	300	1994-11-07 00:00:00	1163	4619
-7097	300	1994-08-11 00:00:00	812	4620
-7098	300	1993-12-08 00:00:00	750	3273
-7099	290	1994-05-13 00:00:00	712	4434
-7100	290	1993-11-22 00:00:00	712	4434
-7101	290	1994-09-02 00:00:00	52	4621
-7102	290	1993-10-22 00:00:00	712	4434
-7103	290	1993-08-20 00:00:00	712	4622
-7104	290	1994-03-24 00:00:00	712	4434
-7105	290	1993-06-18 00:00:00	712	4622
-7106	290	1994-08-12 00:00:00	712	4434
-7107	286	1993-12-29 00:00:00	1188	4623
-7108	255	1994-05-02 00:00:00	222	4395
-7109	250	1993-06-18 00:00:00	558	4624
-7110	250	1994-03-24 00:00:00	712	4625
-7111	250	1994-04-07 00:00:00	52	4565
-7112	250	1993-03-12 00:00:00	1013	4626
-7113	250	1993-03-22 00:00:00	52	4565
-7114	250	1994-03-07 00:00:00	939	4627
-7115	250	1994-02-04 00:00:00	881	4628
-7116	250	1993-03-26 00:00:00	1189	4629
-7117	250	1994-05-04 00:00:00	306	4630
-7118	250	1993-05-27 00:00:00	1180	4631
-7119	250	1993-04-30 00:00:00	390	4632
-7120	250	1993-04-29 00:00:00	939	4627
-7121	250	1994-02-03 00:00:00	712	4625
-7122	250	1993-08-18 00:00:00	908	4633
-7123	250	1993-07-30 00:00:00	4	4453
-7124	250	1994-06-29 00:00:00	1179	4634
-7125	250	1993-11-08 00:00:00	1013	4635
-7126	250	1994-05-09 00:00:00	452	4636
-7127	250	1993-04-28 00:00:00	52	4565
-7128	250	1993-04-12 00:00:00	52	4557
-7129	250	1993-12-01 00:00:00	928	4560
-7130	250	1994-06-22 00:00:00	26	4364
-7131	250	1994-06-14 00:00:00	928	4637
-7132	250	1993-09-30 00:00:00	712	4625
-7133	250	1993-05-14 00:00:00	712	4625
-7134	250	1993-11-01 00:00:00	52	4565
-7135	250	1993-07-14 00:00:00	52	4557
-7136	250	1993-07-20 00:00:00	52	4638
-7137	250	1994-06-09 00:00:00	1013	4639
-7138	250	1993-07-28 00:00:00	52	4638
-7139	250	1993-11-17 00:00:00	11	4596
-7140	250	1993-01-28 00:00:00	52	4393
-7141	250	1993-03-11 00:00:00	222	4395
-7142	250	1994-10-24 00:00:00	928	4640
-7143	250	1993-05-10 00:00:00	222	4395
-7144	250	1994-08-11 00:00:00	812	4641
-7145	250	1994-12-08 00:00:00	26	4472
-7146	250	1994-10-18 00:00:00	306	4642
-7147	250	1994-08-23 00:00:00	1190	4643
-7148	250	1994-07-10 00:00:00	1190	4644
-7149	250	1994-07-06 00:00:00	1190	4645
-7150	250	1994-09-07 00:00:00	1191	4646
-7151	250	1994-12-29 00:00:00	222	4395
-7152	250	1994-09-01 00:00:00	5	3839
-7153	250	1993-05-07 00:00:00	1004	4647
-7154	250	1994-04-07 00:00:00	939	4648
-7155	250	1994-10-21 00:00:00	205	4649
-7156	250	1994-10-27 00:00:00	1192	4650
-7157	250	1994-10-21 00:00:00	1193	4651
-7158	250	1994-09-26 00:00:00	1001	4652
-7159	210	1993-07-17 00:00:00	1158	4653
-7160	200	1994-11-09 00:00:00	11	4654
-7161	200	1994-08-15 00:00:00	1163	4655
-7162	200	1994-08-15 00:00:00	1180	4656
-7163	200	1994-08-10 00:00:00	1180	4657
-7164	200	1993-06-23 00:00:00	1001	4658
-7165	200	1994-09-23 00:00:00	1053	4659
-7166	200	1994-11-22 00:00:00	1163	4660
-7167	200	1994-07-25 00:00:00	1013	4487
-7168	200	1993-09-02 00:00:00	1140	4597
-7169	200	1993-11-09 00:00:00	1163	4661
-7170	200	1994-08-15 00:00:00	1163	4662
-7171	200	1994-09-08 00:00:00	52	4565
-7172	200	1993-05-24 00:00:00	4	4453
-7173	200	1993-01-19 00:00:00	222	4395
-7174	200	1994-10-07 00:00:00	1175	4663
-7175	200	1994-10-13 00:00:00	11	4664
-7176	200	1993-04-27 00:00:00	11	4665
-7177	200	1993-03-29 00:00:00	1060	4666
-7178	200	1994-10-18 00:00:00	1188	4667
-7179	200	1993-12-07 00:00:00	300	4668
-7180	200	1993-03-26 00:00:00	15	4612
-7181	200	1994-03-31 00:00:00	1174	4669
-7182	100	1994-08-30 00:00:00	1194	4670
-7183	100	1994-08-11 00:00:00	306	4630
-7184	-1000	1994-06-21 00:00:00	1170	4538
-7185	-1000	1994-06-30 00:00:00	5	4671
-7186	10000	1991-02-27 00:00:00	52	4503
-7187	10000	1992-04-16 00:00:00	848	4672
-7188	5000	1992-08-31 00:00:00	76	4673
-7189	2500	1992-10-02 00:00:00	2	4674
-7190	2500	1992-07-28 00:00:00	1001	4675
-7191	2100	1992-07-28 00:00:00	52	4676
-7192	2000	1992-07-31 00:00:00	76	4677
-7193	1000	1991-04-08 00:00:00	1013	4678
-7194	1000	1992-06-01 00:00:00	1195	4679
-7195	1000	1992-05-20 00:00:00	1196	4680
-7196	1000	1991-04-08 00:00:00	1013	4681
-7197	1000	1992-07-21 00:00:00	306	4682
-7198	1000	1992-08-28 00:00:00	1197	4683
-7199	1000	1992-06-25 00:00:00	1198	4684
-7200	1000	1991-05-22 00:00:00	11	4685
-7201	1000	1991-11-06 00:00:00	1199	4686
-7202	1000	1992-07-27 00:00:00	15	4687
-7203	1000	1991-04-08 00:00:00	1013	4681
-7204	1000	1992-08-14 00:00:00	1013	4688
-7205	1000	1992-11-14 00:00:00	1200	4689
-7206	1000	1992-09-01 00:00:00	1201	4690
-7207	1000	1991-12-18 00:00:00	1007	4691
-7208	1000	1992-09-01 00:00:00	1201	4692
-7209	1000	1992-09-01 00:00:00	1201	4693
-7210	1000	1992-09-25 00:00:00	1147	4694
-7211	1000	1992-04-14 00:00:00	1202	4695
-7212	1000	1992-09-04 00:00:00	1013	4696
-7213	1000	1992-09-08 00:00:00	880	4697
-7214	1000	1992-04-14 00:00:00	1202	4698
-7215	1000	1992-04-14 00:00:00	1202	4699
-7216	1000	1992-06-30 00:00:00	1163	4700
-7217	1000	1991-06-20 00:00:00	1013	4701
-7218	1000	1992-09-28 00:00:00	1202	4289
-7219	1000	1992-09-28 00:00:00	1202	4289
-7220	1000	1992-08-28 00:00:00	1202	4702
-7221	1000	1992-08-28 00:00:00	1202	4702
-7222	1000	1992-09-02 00:00:00	1202	4703
-7223	1000	1992-09-02 00:00:00	1202	4704
-7224	1000	1992-05-29 00:00:00	1131	4705
-7225	1000	1992-08-09 00:00:00	1013	4706
-7226	1000	1992-08-04 00:00:00	1013	4707
-7227	1000	1992-05-27 00:00:00	1203	4708
-7228	1000	1991-02-04 00:00:00	1202	4709
-7229	1000	1992-08-13 00:00:00	1199	4710
-7230	1000	1991-05-09 00:00:00	1202	4711
-7231	1000	1991-11-12 00:00:00	1204	4712
-7232	1000	1991-09-30 00:00:00	1014	4713
-7233	1000	1991-06-03 00:00:00	1030	4714
-7234	1000	1991-12-20 00:00:00	1205	4715
-7235	1000	1991-01-10 00:00:00	1206	4716
-7236	1000	1992-02-10 00:00:00	886	4717
-7237	1000	1992-02-10 00:00:00	886	4718
-7238	1000	1992-02-10 00:00:00	886	4719
-7239	1000	1991-10-23 00:00:00	1013	4720
-7240	1000	1992-03-16 00:00:00	1205	4721
-7241	1000	1992-03-13 00:00:00	1204	4722
-7242	1000	1992-10-30 00:00:00	1207	4723
-7243	1000	1992-02-24 00:00:00	1013	4724
-7244	1000	1991-07-31 00:00:00	1013	4725
-7245	1000	1991-10-18 00:00:00	1208	4726
-7246	1000	1992-02-25 00:00:00	1013	4727
-7247	1000	1992-04-14 00:00:00	1131	4728
-7248	1000	1992-03-23 00:00:00	1013	4729
-7249	1000	1987-09-28 00:00:00	1209	4730
-7250	1000	1991-06-11 00:00:00	1016	4231
-7251	1000	1992-03-23 00:00:00	1210	4731
-7252	1000	1992-01-16 00:00:00	1128	4537
-7253	1000	1992-01-17 00:00:00	1202	4732
-7254	1000	1991-07-01 00:00:00	4	4733
-7255	1000	1992-01-17 00:00:00	1202	4734
-7256	1000	1992-02-07 00:00:00	1147	4735
-7257	1000	1992-11-02 00:00:00	848	4736
-7258	1000	1992-10-13 00:00:00	1173	4737
-7259	1000	1992-10-15 00:00:00	1202	4738
-7260	1000	1992-10-24 00:00:00	1202	4703
-7261	1000	1992-10-24 00:00:00	1202	4704
-7262	1000	1991-07-31 00:00:00	1013	4739
-7263	1000	1991-12-23 00:00:00	1202	4740
-7264	1000	1991-11-06 00:00:00	1199	4741
-7265	1000	1992-06-01 00:00:00	1064	4231
-7266	1000	1992-03-23 00:00:00	1211	4742
-7267	1000	1992-09-29 00:00:00	881	4743
-7268	1000	1991-12-23 00:00:00	1202	4740
-7269	1000	1991-08-26 00:00:00	1202	4744
-7270	1000	1991-12-26 00:00:00	1202	4745
-7271	1000	1992-03-26 00:00:00	1016	4746
-7272	1000	1992-04-23 00:00:00	1204	4747
-7273	1000	1991-12-26 00:00:00	1202	4748
-7274	1000	1991-12-26 00:00:00	1202	4748
-7275	1000	1992-10-23 00:00:00	1206	4749
-7276	1000	1992-10-26 00:00:00	1212	4750
-7277	1000	1992-07-20 00:00:00	567	4751
-7278	1000	1992-03-31 00:00:00	1007	4752
-7279	1000	1991-12-19 00:00:00	1202	4753
-7280	1000	\N	1213	4754
-7281	1000	1991-12-18 00:00:00	1007	4691
-7282	1000	1992-05-11 00:00:00	1196	4755
-7283	1000	1991-01-18 00:00:00	1214	4756
-7284	1000	1992-09-30 00:00:00	1215	4757
-7285	1000	1992-09-30 00:00:00	1215	4758
-7286	1000	1992-10-01 00:00:00	1090	4759
-7287	1000	1992-09-28 00:00:00	76	4712
-7288	1000	1992-09-17 00:00:00	25	4760
-7289	1000	1992-09-17 00:00:00	25	4760
-7290	1000	1992-05-15 00:00:00	1030	4761
-7291	978	1991-08-22 00:00:00	1016	4762
-7292	900	1992-09-01 00:00:00	1216	4763
-7293	900	1991-06-24 00:00:00	1013	4764
-7294	900	1992-09-09 00:00:00	750	4765
-7295	900	1992-09-01 00:00:00	1216	4766
-7296	850	1992-09-15 00:00:00	1016	4767
-7297	800	1992-07-06 00:00:00	1013	4768
-7298	750	1992-07-06 00:00:00	1013	4769
-7299	700	1992-06-15 00:00:00	1217	4770
-7300	700	1992-07-15 00:00:00	1218	4771
-7301	700	1992-04-08 00:00:00	812	4772
-7302	700	1992-12-04 00:00:00	1219	4773
-7303	600	1992-12-10 00:00:00	750	3273
-7304	600	1991-10-20 00:00:00	300	4774
-7305	500	1992-03-24 00:00:00	1060	4775
-7306	500	1991-11-18 00:00:00	1030	4776
-7307	500	1991-11-20 00:00:00	1204	4565
-7308	500	1991-07-09 00:00:00	213	4777
-7309	500	1991-12-02 00:00:00	750	4778
-7310	500	1991-04-05 00:00:00	725	4779
-7311	500	1991-04-26 00:00:00	1202	4780
-7312	500	1991-01-10 00:00:00	1206	4781
-7313	500	1991-01-10 00:00:00	1206	4781
-7314	500	1992-05-21 00:00:00	1131	4782
-7315	500	1992-10-20 00:00:00	76	4783
-7316	500	1992-10-20 00:00:00	76	4783
-7317	500	1992-10-02 00:00:00	306	4784
-7318	500	1992-10-09 00:00:00	1220	4729
-7319	500	1992-10-22 00:00:00	1001	4785
-7320	500	1992-10-30 00:00:00	1202	4786
-7321	500	1992-10-30 00:00:00	1202	4787
-7322	500	1992-09-21 00:00:00	1173	4788
-7323	500	1992-09-21 00:00:00	1173	4789
-7324	500	1992-10-26 00:00:00	1013	4790
-7325	500	1992-09-30 00:00:00	1188	4791
-7326	500	1992-10-26 00:00:00	1026	4792
-7327	500	1992-09-15 00:00:00	1221	4793
-7328	500	1992-09-21 00:00:00	1013	4794
-7329	500	1992-09-28 00:00:00	1202	4795
-7330	500	1992-09-01 00:00:00	1201	4690
-7331	500	1992-09-01 00:00:00	1201	4692
-7332	500	1991-04-23 00:00:00	11	4796
-7333	500	1992-08-12 00:00:00	1204	4797
-7334	500	1992-08-10 00:00:00	1222	4798
-7335	500	1992-10-15 00:00:00	1030	3312
-7336	500	1992-07-11 00:00:00	1201	4799
-7337	500	1992-08-14 00:00:00	1220	4800
-7338	500	1992-07-13 00:00:00	1189	4801
-7339	500	1992-08-21 00:00:00	25	4802
-7340	500	1992-07-08 00:00:00	1198	4729
-7341	500	1992-08-14 00:00:00	246	4803
-7342	500	1992-06-30 00:00:00	222	4395
-7343	500	1992-06-19 00:00:00	1013	4804
-7344	500	1992-05-04 00:00:00	1013	4805
-7345	500	1992-06-24 00:00:00	1223	4806
-7346	500	1992-06-27 00:00:00	1195	4807
-7347	500	1992-06-19 00:00:00	1053	4595
-7348	500	1992-04-14 00:00:00	750	3273
-7349	500	1992-05-21 00:00:00	1224	4808
-7350	500	1992-06-29 00:00:00	1202	4809
-7351	500	1992-05-29 00:00:00	11	4685
-7352	500	1991-05-02 00:00:00	11	4810
-7353	500	1992-04-28 00:00:00	1204	4565
-7354	500	1992-03-10 00:00:00	222	4395
-7355	500	1992-03-30 00:00:00	1141	4811
-7356	500	1992-03-31 00:00:00	1225	4812
-7357	500	1992-01-23 00:00:00	11	3916
-7358	500	1992-01-29 00:00:00	1226	4813
-7359	500	1991-06-11 00:00:00	1205	4814
-7360	500	1992-01-31 00:00:00	1225	4815
-7361	500	1992-01-31 00:00:00	1225	4816
-7362	500	1992-01-31 00:00:00	1225	4817
-7363	500	1992-01-31 00:00:00	1225	4818
-7364	500	1992-09-25 00:00:00	1227	4819
-7365	500	1991-12-12 00:00:00	1013	4820
-7366	500	1991-12-12 00:00:00	1013	4821
-7367	500	1992-11-24 00:00:00	52	4565
-7368	500	1991-07-25 00:00:00	939	4822
-7369	499	1992-12-05 00:00:00	928	4823
-7370	499	1992-12-05 00:00:00	928	4824
-7371	465	1992-10-15 00:00:00	15	4825
-7372	450	1992-07-06 00:00:00	1013	4768
-7373	400	1992-05-18 00:00:00	1013	4826
-7374	400	1991-05-07 00:00:00	1013	4827
-7375	400	1991-10-24 00:00:00	1228	4828
-7376	400	1992-09-29 00:00:00	1222	4829
-7377	400	1992-10-26 00:00:00	1179	4830
-7378	400	1992-10-22 00:00:00	1163	4831
-7379	400	1991-06-03 00:00:00	1013	4832
-7380	375	1991-07-01 00:00:00	25	4833
-7381	350	1992-07-13 00:00:00	1218	4834
-7382	350	1992-07-06 00:00:00	1013	4835
-7383	350	1992-06-01 00:00:00	1013	4836
-7384	300	1992-03-11 00:00:00	1225	4837
-7385	300	1991-06-18 00:00:00	213	4838
-7386	300	1992-11-24 00:00:00	1053	4839
-7387	300	1991-06-19 00:00:00	1053	4595
-7388	300	1992-06-15 00:00:00	1217	4770
-7389	300	1992-09-18 00:00:00	1013	4840
-7390	300	1992-12-14 00:00:00	222	4395
-7391	300	1992-09-25 00:00:00	881	4841
-7392	300	1992-03-29 00:00:00	1013	4842
-7393	300	1992-03-29 00:00:00	1013	4843
-7394	300	1992-08-06 00:00:00	1195	4844
-7395	300	1992-10-15 00:00:00	222	4845
-7396	300	1992-10-19 00:00:00	1189	4846
-7397	300	1992-10-30 00:00:00	1221	4847
-7398	300	1991-12-09 00:00:00	1225	4837
-7399	300	1992-11-05 00:00:00	928	4848
-7400	300	1992-07-15 00:00:00	1229	4849
-7401	300	1991-12-11 00:00:00	1053	4850
-7402	300	1992-03-07 00:00:00	1225	4851
-7403	300	1992-11-24 00:00:00	1053	4595
-7404	285	1992-08-10 00:00:00	52	4852
-7405	250	1991-04-22 00:00:00	11	4853
-7406	250	1992-12-08 00:00:00	1133	4257
-7407	250	1991-10-04 00:00:00	265	4854
-7408	250	1991-09-24 00:00:00	1013	4769
-7409	250	1992-02-26 00:00:00	1225	4855
-7410	250	1992-02-04 00:00:00	1225	4856
-7411	250	1992-05-22 00:00:00	1131	4857
-7412	250	1991-09-06 00:00:00	1016	4858
-7413	250	1991-06-20 00:00:00	1053	4859
-7414	250	1991-01-17 00:00:00	222	4395
-7415	250	1991-01-22 00:00:00	222	4395
-7416	250	1991-02-21 00:00:00	222	4395
-7417	250	1991-10-25 00:00:00	1202	4786
-7418	250	1991-10-25 00:00:00	1202	4787
-7419	250	1991-08-26 00:00:00	1202	4860
-7420	250	1992-07-23 00:00:00	1230	4861
-7421	250	1991-07-16 00:00:00	1202	4862
-7422	250	1992-06-24 00:00:00	558	4863
-7423	250	1992-07-22 00:00:00	1202	4809
-7424	250	1991-03-27 00:00:00	222	4395
-7425	250	1991-03-28 00:00:00	222	4395
-7426	250	1992-06-29 00:00:00	222	4395
-7427	250	1992-10-27 00:00:00	1180	4864
-7428	250	1992-10-27 00:00:00	222	4395
-7429	250	1992-10-19 00:00:00	222	4395
-7430	250	1992-07-24 00:00:00	1131	4865
-7431	250	1992-01-31 00:00:00	1225	4866
-7432	250	1992-08-11 00:00:00	222	4395
-7433	250	1992-05-06 00:00:00	1163	4867
-7434	250	1992-04-15 00:00:00	1163	4868
-7435	250	1992-01-31 00:00:00	1225	4869
-7436	250	1992-06-17 00:00:00	1231	4555
-7437	250	1992-05-20 00:00:00	25	4460
-7438	250	1992-01-31 00:00:00	1225	4870
-7439	250	1992-08-26 00:00:00	222	4395
-7440	250	1992-09-11 00:00:00	1016	4871
-7441	250	1992-10-07 00:00:00	1199	4872
-7442	250	1992-06-22 00:00:00	1090	4873
-7443	250	1991-05-20 00:00:00	11	4874
-7444	250	1991-12-19 00:00:00	222	4395
-7445	250	1992-09-17 00:00:00	1221	4875
-7446	250	1992-04-20 00:00:00	1225	4876
-7447	250	1992-08-10 00:00:00	1131	4877
-7448	250	1991-08-27 00:00:00	222	4395
-7449	250	1992-04-13 00:00:00	1204	4878
-7450	250	1991-07-12 00:00:00	222	4395
-7451	250	1992-10-13 00:00:00	222	4395
-7452	250	1992-03-31 00:00:00	1232	4879
-7453	250	1992-10-22 00:00:00	1013	4880
-7454	250	1992-10-27 00:00:00	574	4881
-7455	250	1992-04-02 00:00:00	1131	4882
-7456	250	1992-10-21 00:00:00	4	4565
-7457	250	1992-05-22 00:00:00	1131	4883
-7458	250	1991-11-21 00:00:00	1140	4884
-7459	250	1992-02-03 00:00:00	222	4395
-7460	250	1991-07-01 00:00:00	25	4460
-7461	250	1992-11-12 00:00:00	4	4565
-7462	250	1992-11-02 00:00:00	4	4885
-7463	250	1992-10-27 00:00:00	5	4886
-7464	250	1992-10-27 00:00:00	5	4887
-7465	250	1992-02-03 00:00:00	1013	4888
-7466	250	1991-08-06 00:00:00	939	4627
-7467	250	1992-11-02 00:00:00	1233	4889
-7468	250	1992-03-30 00:00:00	1234	4890
-7469	250	1992-11-06 00:00:00	5	4891
-7470	250	1992-03-11 00:00:00	11	4596
-7471	250	1992-03-12 00:00:00	11	4892
-7472	250	1992-11-06 00:00:00	5	4891
-7473	200	1992-09-18 00:00:00	936	3292
-7474	200	1992-10-04 00:00:00	1188	4893
-7475	200	1992-11-11 00:00:00	452	4894
-7476	200	1992-10-19 00:00:00	1220	4895
-7477	200	1992-10-30 00:00:00	1221	4896
-7478	200	1992-10-22 00:00:00	1216	4897
-7479	200	1992-12-16 00:00:00	1013	4898
-7480	200	1992-09-29 00:00:00	1001	4899
-7481	200	1992-11-02 00:00:00	4	4900
-7482	200	1992-10-29 00:00:00	11	4901
-7483	200	1992-11-02 00:00:00	25	4902
-7484	200	1992-10-26 00:00:00	1202	4809
-7485	200	1992-09-15 00:00:00	15	4903
-7486	200	1992-09-25 00:00:00	1206	4904
-7487	200	1992-09-25 00:00:00	1206	4904
-7488	200	1992-09-03 00:00:00	52	4905
-7489	200	1992-09-29 00:00:00	4	4906
-7490	200	1992-07-24 00:00:00	936	4907
-7491	200	1992-07-24 00:00:00	936	4908
-7492	200	1992-08-09 00:00:00	1013	4909
-7493	200	1992-08-04 00:00:00	1013	4910
-7494	200	1992-07-06 00:00:00	1013	4888
-7495	200	1992-07-28 00:00:00	1013	4911
-7496	200	1992-07-14 00:00:00	1013	4912
-7497	200	1992-06-04 00:00:00	1163	4913
-7498	200	1992-04-20 00:00:00	1225	4914
-7499	200	1992-04-20 00:00:00	1225	4915
-7500	200	1992-02-07 00:00:00	936	4916
-7501	200	1992-03-24 00:00:00	1013	4888
-7502	200	1992-03-09 00:00:00	1225	4837
-7503	200	1992-03-13 00:00:00	11	4665
-7504	200	1992-03-06 00:00:00	11	4917
-7505	200	1991-12-22 00:00:00	1147	4918
-7506	200	1991-12-18 00:00:00	1013	4919
-7507	200	1991-08-05 00:00:00	1013	4919
-7508	200	1991-12-11 00:00:00	1053	4920
-7509	200	1991-12-07 00:00:00	1053	4375
-7510	200	1991-08-12 00:00:00	11	4921
-7511	200	1991-04-22 00:00:00	11	4922
-7512	200	1991-05-02 00:00:00	11	4923
-7513	-12	1991-01-25 00:00:00	1235	4924
-7514	-50	1992-01-17 00:00:00	1235	4925
-7515	-150	1992-10-21 00:00:00	1016	4926
-7516	-350	1992-07-24 00:00:00	1013	4927
-7517	-500	1992-12-07 00:00:00	1201	4928
-7518	-500	1992-12-07 00:00:00	1201	4929
-7519	-1000	1992-10-13 00:00:00	1215	4758
-7520	5000	1989-01-31 00:00:00	11	4930
-7521	4000	1990-07-23 00:00:00	52	4564
-7522	2500	1990-04-20 00:00:00	11	4931
-7523	2000	1989-12-01 00:00:00	11	3916
-7524	2000	1989-09-19 00:00:00	52	4932
-7525	1015	1990-06-30 00:00:00	1236	4933
-7526	1000	1990-10-24 00:00:00	1237	4934
-7527	1000	1989-05-09 00:00:00	11	4935
-7528	1000	1989-06-08 00:00:00	11	4936
-7529	1000	1990-12-19 00:00:00	1238	4937
-7530	1000	1990-12-19 00:00:00	1238	4833
-7531	1000	1990-11-15 00:00:00	1239	4938
-7532	1000	1990-11-15 00:00:00	1239	4939
-7533	1000	1990-10-24 00:00:00	1240	4393
-7534	1000	1990-10-16 00:00:00	1241	4940
-7535	1000	1990-10-17 00:00:00	1129	4941
-7536	1000	1990-08-07 00:00:00	206	4942
-7537	1000	1990-07-19 00:00:00	1206	4716
-7538	1000	1990-07-19 00:00:00	1206	4716
-7539	1000	1990-06-30 00:00:00	1236	4943
-7540	1000	1990-06-29 00:00:00	1242	4944
-7541	1000	1990-05-22 00:00:00	11	4945
-7542	1000	1990-05-01 00:00:00	11	3916
-7543	1000	1990-03-13 00:00:00	1243	4946
-7544	1000	1990-03-01 00:00:00	1243	4947
-7545	1000	1990-03-01 00:00:00	1243	4948
-7546	1000	1989-10-17 00:00:00	52	4949
-7547	1000	1989-11-01 00:00:00	1244	4950
-7548	1000	1989-11-01 00:00:00	1244	4951
-7549	1000	1989-11-01 00:00:00	1244	4218
-7550	1000	1989-04-13 00:00:00	1129	4952
-7551	1000	1989-06-05 00:00:00	1129	4953
-7552	1000	1989-03-23 00:00:00	52	4954
-7553	1000	1989-06-05 00:00:00	1129	4953
-7554	1000	1989-05-15 00:00:00	1013	4707
-7555	1000	1989-06-19 00:00:00	723	4955
-7556	1000	1989-04-21 00:00:00	1001	4956
-7557	1000	1989-04-20 00:00:00	1245	4957
-7558	1000	1989-11-01 00:00:00	1244	4218
-7559	1000	1989-11-22 00:00:00	4	4958
-7560	1000	1989-11-14 00:00:00	11	4959
-7561	800	1989-12-22 00:00:00	1013	4960
-7562	760	1989-02-22 00:00:00	52	4954
-7563	750	1990-06-30 00:00:00	1173	4961
-7564	750	1990-06-30 00:00:00	1173	4961
-7565	680	1989-11-10 00:00:00	52	4949
-7566	600	1990-10-29 00:00:00	1237	4375
-7567	600	1990-12-10 00:00:00	1013	4962
-7568	550	1989-09-19 00:00:00	52	4932
-7569	500	1990-06-12 00:00:00	1246	4393
-7570	500	1990-07-17 00:00:00	1238	4963
-7571	500	1990-06-30 00:00:00	1237	4964
-7572	500	1990-06-30 00:00:00	1237	4965
-7573	500	1990-06-30 00:00:00	1237	4291
-7574	500	1990-06-30 00:00:00	1237	4291
-7575	500	1989-12-13 00:00:00	1247	4966
-7576	500	1990-06-30 00:00:00	1173	4967
-7577	500	1990-06-30 00:00:00	1173	4968
-7578	500	1990-06-30 00:00:00	1173	4968
-7579	500	1989-05-11 00:00:00	1248	4969
-7580	500	1990-05-24 00:00:00	11	4970
-7581	500	1989-05-11 00:00:00	1248	4971
-7582	500	1989-03-10 00:00:00	1248	4972
-7583	500	1990-01-11 00:00:00	1140	4973
-7584	500	1990-02-15 00:00:00	1206	4974
-7585	500	1990-02-15 00:00:00	1206	4975
-7586	500	1990-03-26 00:00:00	1249	4976
-7587	500	1989-07-11 00:00:00	1129	4977
-7588	500	1990-02-27 00:00:00	1214	4978
-7589	500	1990-02-27 00:00:00	1214	4979
-7590	500	1989-11-14 00:00:00	1237	4980
-7591	500	1989-12-04 00:00:00	1206	4981
-7592	500	1989-12-04 00:00:00	1206	4982
-7593	500	1989-11-27 00:00:00	52	4949
-7594	500	1989-02-06 00:00:00	11	4810
-7595	500	1989-03-23 00:00:00	11	4983
-7596	500	1989-02-02 00:00:00	1060	4984
-7597	500	1989-02-01 00:00:00	1017	4985
-7598	500	1990-11-03 00:00:00	1250	4986
-7599	500	1990-12-26 00:00:00	1247	4987
-7600	485	1990-08-14 00:00:00	1236	4933
-7601	485	1990-08-14 00:00:00	1236	4988
-7602	480	1990-07-23 00:00:00	52	4564
-7603	400	1989-12-12 00:00:00	222	4989
-7604	400	1990-12-10 00:00:00	1013	4962
-7605	400	1990-11-01 00:00:00	1237	4990
-7606	400	1990-08-13 00:00:00	222	4991
-7607	400	1990-08-20 00:00:00	11	4992
-7608	337	1989-12-12 00:00:00	4	4993
-7609	315	1990-05-07 00:00:00	11	4853
-7610	300	1989-08-11 00:00:00	1247	4994
-7611	300	1990-06-13 00:00:00	1249	4995
-7612	300	1990-09-07 00:00:00	1247	4994
-7613	300	1989-04-28 00:00:00	1245	4996
-7614	300	1989-06-15 00:00:00	5	4997
-7615	300	1989-11-06 00:00:00	11	4998
-7616	300	1990-08-20 00:00:00	11	4999
-7617	300	1989-08-01 00:00:00	450	5000
-7618	300	1990-07-09 00:00:00	1251	5001
-7619	300	1990-03-26 00:00:00	1252	5002
-7620	300	1990-10-04 00:00:00	1253	3896
-7621	300	1990-06-04 00:00:00	1254	5003
-7622	300	1990-12-14 00:00:00	1013	4212
-7623	275	1990-10-04 00:00:00	11	5004
-7624	250	1990-03-23 00:00:00	1255	5005
-7625	250	1990-10-15 00:00:00	1256	5006
-7626	250	1990-03-23 00:00:00	1255	5007
-7627	250	1990-05-19 00:00:00	5	5008
-7628	250	1990-01-31 00:00:00	1244	5009
-7629	250	1990-03-31 00:00:00	1244	5010
-7630	250	1990-03-13 00:00:00	5	5011
-7631	250	1990-03-13 00:00:00	5	5012
-7632	250	1990-10-01 00:00:00	11	5013
-7633	250	1990-08-01 00:00:00	1237	5014
-7634	250	1989-08-10 00:00:00	11	5015
-7635	250	1989-12-08 00:00:00	5	5016
-7636	250	1989-09-01 00:00:00	11	5017
-7637	250	1989-03-14 00:00:00	1060	5018
-7638	250	1989-12-12 00:00:00	1254	5019
-7639	250	1989-10-02 00:00:00	11	5020
-7640	250	1990-10-24 00:00:00	1237	5021
-7641	250	1989-12-08 00:00:00	5	5022
-7642	250	1990-12-04 00:00:00	222	4395
-7643	250	1990-06-30 00:00:00	1173	4961
-7644	250	1990-06-30 00:00:00	1173	4961
-7645	250	1990-11-02 00:00:00	222	4991
-7646	250	1990-04-02 00:00:00	1173	4968
-7647	250	1990-04-02 00:00:00	1173	4968
-7648	250	1990-06-11 00:00:00	11	5023
-7649	250	1990-09-28 00:00:00	1240	5024
-7650	240	1990-08-14 00:00:00	52	5025
-7651	240	1990-10-26 00:00:00	52	5025
-7652	240	1990-03-01 00:00:00	52	5025
-7653	220	1989-10-02 00:00:00	11	5026
-7654	220	1989-09-18 00:00:00	11	5027
-7655	200	1989-05-22 00:00:00	222	5028
-7656	200	1990-06-11 00:00:00	222	4991
-7657	200	1990-05-01 00:00:00	222	4991
-7658	200	1990-04-13 00:00:00	222	4991
-7659	200	1990-05-25 00:00:00	1257	5029
-7660	200	1990-09-06 00:00:00	1236	5030
-7661	200	1989-08-18 00:00:00	222	5028
-7662	200	1990-03-31 00:00:00	1243	5031
-7663	200	1989-07-31 00:00:00	222	5028
-7664	200	1990-06-08 00:00:00	1238	5032
-7665	200	1989-07-03 00:00:00	222	5028
-7666	200	1989-01-19 00:00:00	222	5028
-7667	200	1989-02-20 00:00:00	222	5028
-7668	200	1989-04-12 00:00:00	222	5028
-7669	200	1989-05-01 00:00:00	222	5028
-7670	200	1990-08-20 00:00:00	11	4931
-7671	200	1989-10-09 00:00:00	222	5028
-7672	200	1990-03-31 00:00:00	1243	5033
-7673	200	1990-12-14 00:00:00	1013	4212
-7674	200	1990-01-23 00:00:00	222	5028
-7675	200	1989-08-07 00:00:00	1013	5034
-7676	200	1990-08-20 00:00:00	11	5035
-7677	200	1990-03-06 00:00:00	222	5028
-7678	100	\N	1258	5036
-7679	-15	1990-06-30 00:00:00	1236	4988
-7680	-24	1990-12-30 00:00:00	1235	4924
-7681	-485	1990-08-14 00:00:00	1236	4988
-7682	-500	1989-05-11 00:00:00	1248	4969
+1503	5000	2006-04-28 00:00:00	1064	175
+1504	5000	2006-04-24 00:00:00	1067	4
+1505	5000	2006-12-11 00:00:00	1063	348
+1506	5000	2006-05-11 00:00:00	1068	4
+1510	5000	2006-03-31 00:00:00	1071	350
+1511	5000	2006-02-01 00:00:00	1072	279
+1513	5000	2006-02-01 00:00:00	1061	279
+1514	5000	2005-11-02 00:00:00	1074	351
+1515	5000	2006-09-07 00:00:00	1075	352
+1521	4200	2005-09-21 00:00:00	1079	353
+1522	4200	2005-09-21 00:00:00	1080	353
+1523	4200	2006-08-14 00:00:00	1081	279
+1524	4200	2006-01-31 00:00:00	1082	279
+1525	4000	2006-08-16 00:00:00	351	175
+1526	4000	2005-06-14 00:00:00	1083	351
+1527	4000	2005-12-21 00:00:00	13	192
+1528	3968.4400000000001	2006-09-18 00:00:00	1066	311
+1529	3171	2006-08-20 00:00:00	1084	354
+1530	3000	2006-05-10 00:00:00	1085	355
+1531	3000	2006-03-23 00:00:00	1086	356
+1532	3000	2005-12-13 00:00:00	1087	39
+1533	3000	2006-01-09 00:00:00	1063	357
+1534	2500	2006-02-28 00:00:00	543	357
+1535	2500	2006-07-27 00:00:00	391	2
+1536	2500	2006-03-31 00:00:00	1088	358
+1537	2500	2005-04-19 00:00:00	1068	4
+1538	2500	2005-08-30 00:00:00	1068	4
+1539	2500	2006-10-23 00:00:00	1089	359
+1540	2500	2005-08-29 00:00:00	1090	360
+1541	2500	2006-12-05 00:00:00	680	283
+1542	2500	2006-03-23 00:00:00	1091	12
+1543	2500	2005-09-29 00:00:00	1068	4
+1544	2500	2005-07-28 00:00:00	1068	4
+1550	2100	2005-12-09 00:00:00	1094	39
+1551	2100	2006-06-29 00:00:00	1095	361
+1552	2100	2006-04-07 00:00:00	1096	362
+1553	2100	2005-12-07 00:00:00	674	200
+1554	2100	2006-06-11 00:00:00	436	136
+1555	2100	2006-05-02 00:00:00	1097	363
+1556	2100	2006-02-13 00:00:00	1098	364
+1557	2100	2006-02-09 00:00:00	1099	39
+1558	2100	2006-02-16 00:00:00	1100	39
+1559	2100	2006-01-17 00:00:00	1101	39
+1560	2100	2006-01-17 00:00:00	1101	39
+1561	2100	2006-03-16 00:00:00	1102	365
+1562	2100	2006-03-10 00:00:00	1103	196
+1563	2100	2005-12-09 00:00:00	1094	39
+1564	2100	2005-10-21 00:00:00	1104	362
+1565	2100	2005-09-21 00:00:00	1079	353
+1566	2100	2005-09-21 00:00:00	1080	353
+1567	2100	2005-12-31 00:00:00	1105	366
+1568	2100	2005-12-07 00:00:00	1106	367
+1569	2100	2005-09-19 00:00:00	674	368
+1570	2100	2005-04-28 00:00:00	1107	39
+1571	2100	2005-05-18 00:00:00	1108	39
+1572	2100	2005-05-18 00:00:00	1108	39
+1573	2100	2005-05-22 00:00:00	1109	307
+1574	2100	2006-10-26 00:00:00	1110	58
+1575	2100	2006-10-26 00:00:00	385	58
+1576	2100	2006-09-06 00:00:00	1111	288
+1577	2100	2006-12-29 00:00:00	1112	183
+1578	2100	2006-12-29 00:00:00	1113	183
+1579	2100	2006-12-29 00:00:00	1114	369
+1580	2100	2006-10-26 00:00:00	1115	39
+1581	2100	2006-10-26 00:00:00	1116	39
+1582	2100	2006-10-26 00:00:00	1117	39
+1583	2100	2006-10-25 00:00:00	1118	13
+1584	2100	2006-10-06 00:00:00	674	370
+1585	2100	2006-10-12 00:00:00	1119	371
+1586	2100	2006-09-27 00:00:00	1120	362
+1587	2100	2006-10-16 00:00:00	1121	372
+1588	2100	2006-10-04 00:00:00	1122	196
+1589	2100	2006-10-04 00:00:00	1123	196
+1590	2100	2006-09-29 00:00:00	674	373
+1591	2100	2006-09-11 00:00:00	1124	18
+1592	2100	2006-09-06 00:00:00	1125	13
+1593	2100	2006-09-06 00:00:00	1126	13
+1594	2100	2006-09-29 00:00:00	1127	374
+1595	2100	2006-03-31 00:00:00	1128	375
+1596	2100	2006-05-26 00:00:00	1129	376
+1597	2100	2006-04-17 00:00:00	1130	377
+1598	2100	2006-06-28 00:00:00	1131	377
+1599	2100	2005-07-11 00:00:00	1132	39
+1600	2000	2006-10-18 00:00:00	53	375
+1601	2000	2006-09-24 00:00:00	1133	266
+1602	2000	2006-09-29 00:00:00	13	359
+1603	2000	2006-11-07 00:00:00	1134	345
+1604	2000	2005-02-17 00:00:00	13	378
+1605	2000	2006-03-23 00:00:00	1135	356
+1606	2000	2005-04-20 00:00:00	1136	357
+1607	2000	2005-03-07 00:00:00	13	379
+1608	2000	2006-12-21 00:00:00	1137	213
+1609	2000	2006-03-06 00:00:00	13	380
+1610	2000	2006-06-21 00:00:00	173	12
+1611	2000	2005-11-18 00:00:00	1138	39
+1612	2000	2006-10-25 00:00:00	1139	39
+1613	2000	2006-01-11 00:00:00	13	381
+1614	2000	2005-06-27 00:00:00	1140	39
+1615	2000	2006-07-11 00:00:00	489	382
+1616	2000	2005-07-28 00:00:00	489	382
+1617	2000	2006-05-22 00:00:00	1141	200
+1618	2000	2005-09-23 00:00:00	1063	357
+1619	2000	2005-03-15 00:00:00	13	380
+1620	2000	2005-01-28 00:00:00	13	192
+1621	2000	2006-02-07 00:00:00	1142	383
+1622	2000	2006-08-18 00:00:00	1143	384
+1623	2000	2005-06-25 00:00:00	1144	264
+1624	2000	2005-07-11 00:00:00	1132	39
+1625	2000	2006-09-11 00:00:00	1145	385
+1626	2000	2006-11-03 00:00:00	13	386
+1627	2000	2006-10-23 00:00:00	13	380
+1628	2000	2006-07-05 00:00:00	1146	387
+1629	2000	2005-02-09 00:00:00	489	221
+1630	2000	2005-07-11 00:00:00	13	192
+1631	2000	2006-03-22 00:00:00	1147	388
+1632	2000	2006-09-01 00:00:00	1133	266
+1633	2000	2005-04-22 00:00:00	143	87
+1634	2000	2005-12-12 00:00:00	1148	205
+1635	2000	2005-09-26 00:00:00	489	382
+1636	2000	2006-09-22 00:00:00	1149	389
+1637	2000	2005-06-25 00:00:00	1150	264
+1638	2000	2006-01-03 00:00:00	13	359
+1639	2000	2005-06-25 00:00:00	1151	264
+1640	2000	2005-11-21 00:00:00	1152	357
+1641	2000	2005-06-03 00:00:00	1107	390
+1642	1900	2006-05-10 00:00:00	1085	355
+1643	1900	2005-04-04 00:00:00	1153	39
+1644	1900	2006-04-17 00:00:00	1130	377
+1645	1650	2005-05-22 00:00:00	1154	307
+1646	1500	2006-10-17 00:00:00	1155	391
+1647	1500	2005-03-25 00:00:00	1156	306
+1648	1500	2006-01-30 00:00:00	1152	244
+1649	1500	2006-08-02 00:00:00	1152	357
+1650	1500	2005-03-07 00:00:00	13	298
+1651	1500	2005-05-23 00:00:00	1157	39
+1652	1500	2005-12-02 00:00:00	1158	39
+1653	1500	2006-02-23 00:00:00	1159	392
+1654	1500	2006-04-06 00:00:00	1160	283
+1655	1500	2006-10-18 00:00:00	1161	196
+1656	1500	2006-05-18 00:00:00	1162	393
+1658	1250	2005-10-04 00:00:00	1163	379
+1659	1200	2005-07-11 00:00:00	13	216
+1660	1200	2005-05-03 00:00:00	1164	360
+1661	1200	2005-10-06 00:00:00	1165	394
+1662	1200	2006-07-11 00:00:00	1166	395
+1663	1200	2005-06-21 00:00:00	1134	345
+1664	1100	2006-06-28 00:00:00	1131	377
+1665	1100	2005-11-21 00:00:00	1167	186
+1666	1100	2006-03-27 00:00:00	1168	23
+1667	1100	2006-12-15 00:00:00	1169	183
+1668	1100	2006-03-27 00:00:00	1170	347
+1669	1100	2005-07-26 00:00:00	1171	26
+1670	1051	2005-09-10 00:00:00	1172	307
+1671	1050	2006-09-11 00:00:00	1173	396
+1672	1000	2006-10-26 00:00:00	1174	39
+1673	1000	2006-10-26 00:00:00	1175	39
+1674	1000	2006-10-25 00:00:00	1176	39
+1675	1000	2006-06-14 00:00:00	1177	383
+1676	1000	2006-10-26 00:00:00	1178	39
+1677	1000	2006-10-25 00:00:00	1179	397
+1678	1000	2005-12-05 00:00:00	884	398
+1679	1000	2006-10-24 00:00:00	74	399
+1680	1000	2006-05-26 00:00:00	1180	376
+1681	1000	2006-03-17 00:00:00	53	400
+1682	1000	2005-08-22 00:00:00	1181	222
+1683	1000	2006-11-06 00:00:00	13	261
+1684	1000	2006-06-16 00:00:00	29	401
+1685	1000	2006-06-01 00:00:00	1182	401
+1686	1000	2005-09-29 00:00:00	1183	402
+1687	1000	2005-11-12 00:00:00	13	403
+1688	1000	2005-03-28 00:00:00	13	326
+1689	1000	2006-03-24 00:00:00	1184	39
+1690	1000	2006-06-19 00:00:00	1185	404
+1691	1000	2006-10-12 00:00:00	1186	12
+1692	1000	2006-07-02 00:00:00	74	13
+1693	1000	2006-05-08 00:00:00	1122	196
+1694	1000	2006-11-07 00:00:00	1187	265
+1695	1000	2006-09-20 00:00:00	1163	379
+1696	1000	2005-06-06 00:00:00	1136	405
+1697	1000	2006-10-26 00:00:00	13	295
+1698	1000	2005-07-18 00:00:00	1188	39
+1699	1000	2006-10-25 00:00:00	1189	406
+1700	1000	2006-10-19 00:00:00	1089	359
+1701	1000	2005-11-03 00:00:00	1190	357
+1702	1000	2006-05-25 00:00:00	1191	389
+1703	1000	2006-05-26 00:00:00	1192	389
+1704	1000	2006-06-06 00:00:00	1193	389
+1705	1000	2005-04-08 00:00:00	1194	407
+1706	1000	2005-06-10 00:00:00	1195	408
+1707	1000	2006-05-24 00:00:00	1196	409
+1708	1000	2006-04-27 00:00:00	1197	357
+1709	1000	2005-11-10 00:00:00	1198	116
+1710	1000	2006-03-30 00:00:00	1199	357
+1711	1000	2006-06-08 00:00:00	1200	381
+1712	1000	2006-03-01 00:00:00	489	221
+1713	1000	2005-03-22 00:00:00	1201	264
+1714	1000	2006-07-11 00:00:00	543	116
+1715	1000	2006-02-22 00:00:00	1202	347
+1716	1000	2006-04-14 00:00:00	1203	410
+1717	1000	2005-06-25 00:00:00	1144	264
+1718	1000	2006-03-07 00:00:00	1204	411
+1719	1000	2006-03-17 00:00:00	13	282
+1720	1000	2006-04-25 00:00:00	1205	393
+1721	1000	2006-01-06 00:00:00	13	261
+1722	1000	2005-02-07 00:00:00	1206	4
+1723	1000	2006-06-05 00:00:00	13	261
+1724	1000	2006-06-22 00:00:00	1207	394
+1725	1000	2006-07-07 00:00:00	1208	356
+1726	1000	2006-07-11 00:00:00	13	380
+1727	1000	2006-05-15 00:00:00	543	405
+1728	1000	2006-08-10 00:00:00	13	360
+1729	1000	2005-08-11 00:00:00	1209	13
+1730	1000	2005-11-09 00:00:00	1210	26
+1731	1000	2006-06-15 00:00:00	13	295
+1732	1000	2005-12-16 00:00:00	1211	412
+1733	1000	2005-12-13 00:00:00	1131	377
+1734	1000	2005-11-29 00:00:00	1212	413
+1741	1000	2005-08-09 00:00:00	1219	177
+1742	1000	2006-10-18 00:00:00	1220	375
+1743	1000	2006-04-06 00:00:00	13	295
+1744	1000	2006-12-06 00:00:00	1177	414
+1746	1000	2005-12-28 00:00:00	1222	362
+1750	1000	2005-12-31 00:00:00	1223	186
+1753	1000	2005-10-02 00:00:00	1225	39
+1755	1000	2006-12-19 00:00:00	1227	200
+1756	1000	2006-11-29 00:00:00	1228	195
+1757	1000	2006-12-29 00:00:00	1229	195
+1758	1000	2005-12-09 00:00:00	1230	39
+1759	1000	2006-01-11 00:00:00	1231	241
+1761	1000	2005-11-11 00:00:00	1233	345
+1762	1000	2005-12-06 00:00:00	1234	39
+1763	1000	2006-01-17 00:00:00	543	396
+1764	1000	2005-03-26 00:00:00	13	299
+1765	1000	2006-05-05 00:00:00	1235	415
+1766	1000	2006-05-15 00:00:00	1236	265
+1767	1000	2006-09-28 00:00:00	1237	388
+1768	1000	2006-09-29 00:00:00	1238	373
+1769	1000	2006-08-16 00:00:00	472	373
+1770	1000	2006-10-17 00:00:00	1239	416
+1771	1000	2006-09-01 00:00:00	1240	213
+1772	1000	2006-05-06 00:00:00	1241	417
+1773	1000	2006-06-20 00:00:00	486	28
+1774	1000	2006-01-27 00:00:00	1085	355
+1775	1000	2006-09-30 00:00:00	123	355
+1776	1000	2006-09-13 00:00:00	123	355
+1777	1000	2006-08-15 00:00:00	1219	177
+1778	1000	2005-05-10 00:00:00	13	418
+1779	1000	2006-08-25 00:00:00	1242	419
+1780	1000	2006-09-03 00:00:00	1243	136
+1781	1000	2005-03-28 00:00:00	1244	420
+1782	1000	2005-12-30 00:00:00	1222	415
+1784	1000	2006-06-27 00:00:00	1245	421
+1785	1000	2005-05-20 00:00:00	1246	422
+1786	1000	2006-05-22 00:00:00	1227	200
+1787	1000	2005-06-08 00:00:00	1247	423
+1788	1000	2006-02-04 00:00:00	1248	424
+1789	1000	2006-10-06 00:00:00	1249	425
+1790	1000	2006-10-26 00:00:00	1250	58
+1791	1000	2006-01-10 00:00:00	13	359
+1792	1000	2005-06-14 00:00:00	1251	426
+1793	1000	2005-03-21 00:00:00	1252	39
+1794	1000	2006-10-23 00:00:00	1253	347
+1795	1000	2005-03-21 00:00:00	1252	39
+1796	1000	2005-03-17 00:00:00	1254	39
+1797	850	2005-08-06 00:00:00	1255	39
+1798	850	2006-05-01 00:00:00	74	13
+1799	800	2006-10-12 00:00:00	1256	427
+1800	800	2006-03-06 00:00:00	13	216
+1801	800	2005-04-20 00:00:00	13	216
+1802	800	2005-09-09 00:00:00	1257	52
+1803	800	2005-10-14 00:00:00	489	221
+1804	800	2006-09-05 00:00:00	1258	428
+1805	800	2006-10-19 00:00:00	1259	23
+1806	750	2006-06-09 00:00:00	74	401
+1807	750	2006-02-22 00:00:00	1176	39
+1808	750	2006-06-12 00:00:00	1260	357
+1809	750	2006-06-12 00:00:00	1231	241
+1810	750	2006-06-19 00:00:00	1261	409
+1811	750	2005-07-19 00:00:00	1262	52
+1812	750	2006-05-24 00:00:00	13	379
+1813	750	2006-10-27 00:00:00	1263	429
+1814	750	2005-01-21 00:00:00	13	192
+1815	700	2006-03-17 00:00:00	13	430
+1816	625	2005-12-16 00:00:00	1264	267
+1817	625	2005-12-16 00:00:00	1265	267
+1818	625	2005-12-16 00:00:00	1266	267
+1819	600	2005-03-07 00:00:00	13	430
+1820	600	2006-06-16 00:00:00	1267	28
+1821	600	2006-10-10 00:00:00	1268	306
+1822	600	2005-10-17 00:00:00	1269	359
+1823	600	2005-07-28 00:00:00	13	282
+1824	600	2006-03-31 00:00:00	13	8
+1825	600	2006-03-31 00:00:00	1270	306
+1826	575	2006-05-24 00:00:00	1271	323
+1827	550	2006-10-27 00:00:00	1272	197
+1828	525	2006-04-27 00:00:00	1273	431
+1829	520	2006-04-06 00:00:00	1160	283
+1831	500	2005-07-29 00:00:00	1275	39
+1832	500	2005-07-29 00:00:00	1276	39
+1833	500	2005-07-29 00:00:00	1277	39
+1834	500	2005-07-29 00:00:00	1278	39
+1835	500	2005-12-22 00:00:00	1279	432
+1836	500	2005-06-21 00:00:00	1280	433
+1837	500	2005-07-29 00:00:00	1281	39
+1838	500	2005-07-29 00:00:00	1282	39
+1839	500	2005-08-17 00:00:00	1283	39
+1840	500	2005-07-29 00:00:00	1284	39
+1841	500	2005-05-09 00:00:00	1285	348
+1842	500	2005-08-18 00:00:00	13	434
+1843	500	2005-07-29 00:00:00	1286	39
+1844	500	2005-07-29 00:00:00	1287	39
+1845	500	2005-07-29 00:00:00	1288	39
+1846	500	2005-05-02 00:00:00	1289	359
+1847	500	2005-07-29 00:00:00	1290	39
+1848	500	2005-07-29 00:00:00	1291	39
+1849	500	2005-10-21 00:00:00	1292	222
+1851	500	2005-06-03 00:00:00	1200	192
+1852	500	2005-11-23 00:00:00	13	435
+1853	500	2005-10-20 00:00:00	1293	360
+1854	500	2005-06-20 00:00:00	1294	436
+1856	500	2005-04-05 00:00:00	13	436
+1857	500	2005-07-06 00:00:00	1296	300
+1858	500	2005-09-25 00:00:00	1297	216
+1859	500	2005-10-26 00:00:00	13	295
+1860	500	2005-07-28 00:00:00	13	437
+1861	500	2005-09-27 00:00:00	176	28
+1862	500	2005-06-09 00:00:00	1298	403
+1863	500	2005-08-02 00:00:00	1299	372
+1864	500	2005-04-29 00:00:00	1300	420
+1865	500	2005-08-04 00:00:00	1301	438
+1866	500	2005-09-30 00:00:00	1302	23
+1867	500	2006-04-17 00:00:00	1303	229
+1868	500	2006-01-26 00:00:00	13	439
+1869	500	2006-05-15 00:00:00	1289	359
+1870	500	2005-11-10 00:00:00	1304	440
+1871	500	2006-03-18 00:00:00	13	435
+1872	500	2006-08-11 00:00:00	323	360
+1873	500	2006-08-11 00:00:00	1305	360
+1874	500	2006-05-28 00:00:00	947	441
+1875	500	2005-05-31 00:00:00	1306	13
+1876	500	2005-06-23 00:00:00	1307	368
+1877	500	2006-01-20 00:00:00	1308	331
+1878	500	2006-04-12 00:00:00	13	331
+1879	500	2006-04-21 00:00:00	13	418
+1880	500	2006-03-17 00:00:00	13	437
+1881	500	2006-07-28 00:00:00	1309	428
+1882	500	2006-08-05 00:00:00	1258	428
+1883	500	2006-07-11 00:00:00	13	428
+1884	500	2006-04-26 00:00:00	13	436
+1885	500	2006-02-10 00:00:00	1310	436
+1886	500	2006-06-14 00:00:00	1311	357
+1887	500	2006-06-29 00:00:00	13	357
+1888	500	2006-06-28 00:00:00	1312	357
+1889	500	2006-05-12 00:00:00	1313	409
+1890	500	2006-06-26 00:00:00	1314	409
+1891	500	2006-02-02 00:00:00	543	323
+1892	500	2006-03-23 00:00:00	1315	442
+1893	500	2006-06-26 00:00:00	13	443
+1894	500	2006-07-11 00:00:00	1316	389
+1895	500	2005-06-29 00:00:00	1317	222
+1896	500	2005-06-23 00:00:00	1318	444
+1897	500	2006-10-13 00:00:00	13	229
+1898	500	2006-10-23 00:00:00	13	439
+1899	500	2006-09-07 00:00:00	13	445
+1901	500	2006-11-21 00:00:00	13	445
+1902	500	2005-06-09 00:00:00	1319	413
+1903	500	2005-06-10 00:00:00	1320	28
+1904	500	2005-06-08 00:00:00	1267	28
+1905	500	2006-09-06 00:00:00	1152	446
+1906	500	2006-09-26 00:00:00	1321	447
+1907	500	2006-11-16 00:00:00	1322	214
+1908	500	2006-11-06 00:00:00	13	245
+1909	500	2006-09-21 00:00:00	1323	394
+1910	500	2006-10-06 00:00:00	147	331
+1911	500	2005-04-27 00:00:00	1267	28
+1912	500	2005-06-08 00:00:00	176	28
+1913	500	2006-10-11 00:00:00	13	282
+1914	500	2006-09-07 00:00:00	13	418
+1915	500	2006-10-22 00:00:00	13	430
+1916	500	2006-11-02 00:00:00	13	116
+1917	500	2006-09-08 00:00:00	1324	428
+1918	500	2006-10-23 00:00:00	13	428
+1919	500	2006-10-31 00:00:00	13	326
+1921	500	2006-09-26 00:00:00	1111	288
+1922	500	2006-09-12 00:00:00	13	436
+1923	500	2006-10-04 00:00:00	1152	357
+1924	500	2006-08-14 00:00:00	147	296
+1925	500	2005-06-03 00:00:00	1326	423
+1926	500	2005-06-29 00:00:00	1327	423
+1927	500	2006-09-26 00:00:00	1328	423
+1928	500	2006-10-13 00:00:00	1329	448
+1929	500	2005-03-14 00:00:00	1330	39
+1930	500	2005-03-08 00:00:00	1331	449
+1931	500	2005-03-18 00:00:00	1332	23
+1932	500	2005-02-16 00:00:00	1333	222
+1936	500	2006-09-30 00:00:00	1337	23
+1941	500	2006-11-30 00:00:00	1342	222
+1942	500	2006-08-23 00:00:00	1343	12
+1943	500	2006-06-30 00:00:00	1344	12
+1944	500	2006-10-30 00:00:00	1345	450
+1945	500	2006-07-26 00:00:00	74	401
+1946	500	2006-10-28 00:00:00	1346	146
+1947	500	2006-10-30 00:00:00	1347	367
+1948	500	2006-10-27 00:00:00	1348	451
+1949	500	2006-10-23 00:00:00	1349	452
+1950	500	2006-10-19 00:00:00	1350	362
+1951	500	2006-11-10 00:00:00	1351	222
+1952	500	2006-11-02 00:00:00	1352	453
+1953	500	2006-06-07 00:00:00	1353	401
+1955	500	2006-10-18 00:00:00	1354	454
+1956	500	2006-10-18 00:00:00	1350	455
+1957	500	2006-10-04 00:00:00	1355	413
+1958	500	2006-10-18 00:00:00	1356	456
+1959	500	2006-10-17 00:00:00	1267	28
+1960	500	2006-10-11 00:00:00	1357	222
+1961	500	2006-10-02 00:00:00	1358	222
+1962	500	2006-10-18 00:00:00	1356	457
+1963	500	2006-09-28 00:00:00	1359	175
+1964	500	2006-09-26 00:00:00	1360	13
+1965	500	2006-09-19 00:00:00	1361	222
+1966	500	2006-09-25 00:00:00	485	217
+1967	500	2006-09-05 00:00:00	1362	304
+1968	500	2006-08-04 00:00:00	1363	146
+1969	500	2006-08-05 00:00:00	1364	136
+1970	500	2006-08-08 00:00:00	1365	196
+1971	500	2006-07-28 00:00:00	45	222
+1973	500	2006-06-23 00:00:00	1367	458
+1974	500	2006-06-14 00:00:00	1363	146
+1975	500	2006-04-26 00:00:00	1368	39
+1976	500	2006-06-30 00:00:00	1348	451
+1977	500	2006-06-22 00:00:00	1369	28
+1978	500	2006-06-20 00:00:00	1320	28
+1979	500	2006-03-09 00:00:00	1370	267
+1980	500	2006-07-26 00:00:00	1371	361
+1981	500	2006-07-26 00:00:00	1372	361
+1988	500	2006-04-28 00:00:00	1376	459
+1989	500	2006-06-30 00:00:00	1361	222
+1990	500	2006-06-21 00:00:00	1377	222
+1991	500	2005-04-11 00:00:00	1259	23
+1992	500	2005-06-13 00:00:00	1168	23
+1993	500	2006-04-20 00:00:00	1259	23
+1995	500	2006-03-28 00:00:00	1379	371
+1996	500	2006-04-28 00:00:00	1380	222
+1997	500	2006-03-17 00:00:00	1381	39
+1998	500	2006-03-09 00:00:00	1100	39
+1999	500	2006-04-21 00:00:00	1355	413
+2001	500	2006-02-10 00:00:00	74	13
+2002	500	2006-03-20 00:00:00	1348	451
+2003	500	2006-03-22 00:00:00	1383	12
+2004	500	2006-03-28 00:00:00	1384	12
+2005	500	2006-03-13 00:00:00	1385	12
+2006	500	2006-03-30 00:00:00	1386	207
+2007	500	2006-03-31 00:00:00	1387	207
+2008	500	2006-03-31 00:00:00	1388	460
+2009	500	2006-02-22 00:00:00	1389	461
+2010	500	2005-12-13 00:00:00	1390	39
+2011	500	2005-12-13 00:00:00	1390	39
+2012	500	2005-12-13 00:00:00	1390	39
+2013	500	2005-12-06 00:00:00	1391	39
+2014	500	2005-12-06 00:00:00	1392	39
+2015	500	2006-01-30 00:00:00	1393	222
+2018	500	2005-12-17 00:00:00	1396	462
+2019	500	2005-12-16 00:00:00	1318	463
+2020	500	2005-12-03 00:00:00	1267	28
+2021	500	2005-11-14 00:00:00	1397	2
+2023	500	2005-11-10 00:00:00	1399	222
+2024	500	2005-11-21 00:00:00	1400	222
+2033	500	2005-07-29 00:00:00	1409	39
+2034	500	2005-07-29 00:00:00	1410	39
+2035	500	2005-07-29 00:00:00	1411	39
+2036	500	2005-07-29 00:00:00	1412	39
+2037	500	2005-07-29 00:00:00	1413	39
+2038	500	2005-07-29 00:00:00	1414	39
+2039	500	2005-07-29 00:00:00	1415	39
+2040	500	2005-09-19 00:00:00	1416	39
+2041	500	2005-07-29 00:00:00	1416	39
+2042	500	2005-07-29 00:00:00	1417	39
+2043	450	2005-12-12 00:00:00	13	192
+2044	450	2006-03-02 00:00:00	1152	357
+2045	450	2005-04-14 00:00:00	1418	394
+2046	450	2005-09-09 00:00:00	1419	307
+2047	425	2005-03-11 00:00:00	1065	52
+2048	420	2006-02-27 00:00:00	1138	39
+2049	420	2005-05-21 00:00:00	1420	39
+2050	400	2006-10-13 00:00:00	1421	464
+2051	400	2006-10-26 00:00:00	1422	58
+2052	400	2005-06-13 00:00:00	1200	465
+2053	400	2006-10-20 00:00:00	13	216
+2054	400	2005-01-29 00:00:00	543	466
+2055	400	2006-09-07 00:00:00	13	434
+2056	400	2005-11-02 00:00:00	1136	467
+2057	400	2006-06-12 00:00:00	13	326
+2058	400	2005-12-07 00:00:00	1106	367
+2059	400	2006-06-08 00:00:00	191	403
+2060	400	2005-12-29 00:00:00	1423	222
+2061	400	2006-03-27 00:00:00	1091	12
+2062	400	2006-03-31 00:00:00	1270	306
+2063	400	2006-05-30 00:00:00	974	403
+2064	400	2005-07-29 00:00:00	1424	267
+2065	400	2006-03-27 00:00:00	1168	23
+2066	400	2006-06-16 00:00:00	1267	28
+2067	400	2006-04-05 00:00:00	13	360
+2068	400	2006-05-26 00:00:00	1129	376
+2069	400	2006-09-20 00:00:00	1425	4
+2070	400	2006-09-11 00:00:00	1124	18
+2071	400	2006-09-30 00:00:00	1426	303
+2072	390	2006-05-03 00:00:00	1427	52
+2073	375	2005-05-18 00:00:00	1013	468
+2074	375	2005-05-27 00:00:00	1200	293
+2075	350	2005-09-09 00:00:00	1419	307
+2076	350	2005-06-03 00:00:00	1428	323
+2077	350	2005-01-03 00:00:00	1429	222
+2078	350	2006-05-23 00:00:00	1253	347
+2079	350	2006-02-21 00:00:00	1430	39
+2080	350	2005-08-30 00:00:00	1431	39
+2081	350	2005-08-30 00:00:00	1431	39
+2082	300	2005-10-19 00:00:00	734	222
+2083	300	2005-05-02 00:00:00	1432	360
+2084	300	2005-12-01 00:00:00	884	469
+2085	300	2006-10-19 00:00:00	13	436
+2086	300	2006-11-17 00:00:00	1433	39
+2087	300	2006-09-28 00:00:00	1272	197
+2088	300	2006-06-01 00:00:00	1434	222
+2089	300	2006-06-14 00:00:00	1435	376
+2090	300	2006-04-29 00:00:00	1436	299
+2091	300	2006-09-29 00:00:00	1437	372
+2092	300	2005-01-25 00:00:00	1438	4
+2093	300	2005-10-18 00:00:00	972	332
+2094	300	2005-10-07 00:00:00	1439	222
+2095	300	2006-03-17 00:00:00	1440	338
+2096	300	2005-10-03 00:00:00	1441	222
+2097	300	2006-12-12 00:00:00	13	430
+2098	300	2006-06-28 00:00:00	147	440
+2099	300	2005-10-27 00:00:00	1442	76
+2100	300	2006-06-23 00:00:00	1443	367
+2101	300	2005-06-01 00:00:00	1444	76
+2102	300	2006-11-06 00:00:00	1445	436
+2103	300	2006-04-25 00:00:00	1446	470
+2104	300	2005-07-11 00:00:00	1447	471
+2105	300	2006-03-21 00:00:00	1442	76
+2106	300	2006-08-29 00:00:00	1448	472
+2107	300	2005-03-09 00:00:00	1449	87
+2108	300	2005-06-02 00:00:00	974	403
+2109	300	2006-06-30 00:00:00	1343	12
+2110	300	2006-01-14 00:00:00	1450	323
+2111	300	2006-10-01 00:00:00	1451	216
+2112	300	2005-08-17 00:00:00	1452	222
+2113	300	2005-09-13 00:00:00	1453	196
+2114	300	2006-10-12 00:00:00	1454	224
+2115	300	2006-02-06 00:00:00	13	248
+2116	300	2006-03-13 00:00:00	734	222
+2117	300	2005-02-04 00:00:00	13	248
+2118	300	2006-09-07 00:00:00	1455	380
+2119	300	2005-05-03 00:00:00	1456	360
+2120	300	2006-10-21 00:00:00	13	473
+2121	300	2005-11-01 00:00:00	1457	474
+2122	300	2006-01-30 00:00:00	1458	222
+2123	300	2005-11-29 00:00:00	1459	413
+2125	300	2005-09-02 00:00:00	1461	222
+2126	300	2005-09-12 00:00:00	304	345
+2127	300	2005-09-28 00:00:00	1462	222
+2128	300	2006-10-19 00:00:00	13	447
+2129	300	2005-03-16 00:00:00	1463	475
+2130	300	2005-01-15 00:00:00	1136	323
+2131	300	2006-03-15 00:00:00	1464	222
+2132	275	2005-05-02 00:00:00	1465	196
+2133	275	2005-09-15 00:00:00	1466	476
+2134	250	2005-05-17 00:00:00	1467	477
+2135	250	2005-04-20 00:00:00	1468	415
+2136	250	2005-10-06 00:00:00	1469	222
+2137	250	2006-11-22 00:00:00	13	478
+2138	250	2006-05-26 00:00:00	1470	146
+2139	250	2006-07-01 00:00:00	13	479
+2140	250	2006-06-05 00:00:00	1471	39
+2141	250	2006-04-19 00:00:00	1472	372
+2142	250	2006-06-20 00:00:00	1473	28
+2143	250	2005-09-18 00:00:00	1474	358
+2144	250	2006-02-06 00:00:00	1455	480
+2145	250	2006-06-30 00:00:00	1475	28
+2146	250	2006-08-15 00:00:00	854	316
+2147	250	2006-01-26 00:00:00	13	481
+2148	250	2006-05-18 00:00:00	1476	213
+2149	250	2006-05-05 00:00:00	1477	213
+2151	250	2006-02-24 00:00:00	1246	482
+2154	250	2006-08-30 00:00:00	1480	483
+2155	250	2005-11-29 00:00:00	1481	222
+2156	250	2005-11-07 00:00:00	1469	222
+2157	250	2005-12-11 00:00:00	1482	264
+2158	250	2006-06-19 00:00:00	13	484
+2159	250	2005-12-01 00:00:00	1122	196
+2160	250	2006-05-16 00:00:00	13	316
+2161	250	2005-12-13 00:00:00	1483	485
+2162	250	2005-09-13 00:00:00	1484	353
+2163	250	2006-02-15 00:00:00	1485	4
+2164	250	2006-03-20 00:00:00	1486	136
+2165	250	2006-04-28 00:00:00	1487	222
+2166	250	2006-06-20 00:00:00	13	486
+2167	250	2006-03-25 00:00:00	1099	39
+2168	250	2006-03-25 00:00:00	1099	39
+2169	250	2006-03-20 00:00:00	153	264
+2170	250	2006-03-24 00:00:00	1488	39
+2171	250	2006-09-07 00:00:00	1489	341
+2172	250	2006-09-20 00:00:00	1490	379
+2173	250	2006-09-20 00:00:00	1491	436
+2174	250	2006-03-24 00:00:00	1492	39
+2175	250	2005-02-01 00:00:00	1493	4
+2176	250	2006-12-14 00:00:00	1361	222
+2177	250	2005-02-21 00:00:00	1494	222
+2178	250	2005-02-04 00:00:00	1495	222
+2179	250	2005-02-23 00:00:00	1496	222
+2180	250	2005-02-24 00:00:00	1497	222
+2181	250	2006-10-11 00:00:00	251	303
+2182	250	2006-10-09 00:00:00	1498	487
+2183	250	2006-08-05 00:00:00	1499	488
+2184	250	2006-10-03 00:00:00	1500	372
+2185	250	2005-05-24 00:00:00	1501	351
+2186	250	2005-10-10 00:00:00	1466	338
+2187	250	2006-10-17 00:00:00	1502	489
+2188	250	2005-03-15 00:00:00	1503	18
+2189	250	2006-10-17 00:00:00	176	28
+2190	250	2006-10-26 00:00:00	1504	266
+2191	250	2005-03-28 00:00:00	1496	222
+2192	250	2006-10-10 00:00:00	1505	490
+2193	250	2005-03-28 00:00:00	1497	222
+2194	250	2005-05-09 00:00:00	13	244
+2195	250	2006-10-11 00:00:00	13	491
+2196	250	2005-03-15 00:00:00	1506	492
+2197	250	2005-05-28 00:00:00	1163	493
+2198	250	2005-03-15 00:00:00	1507	492
+2200	250	2005-04-20 00:00:00	1509	4
+2201	250	2006-09-26 00:00:00	1510	12
+2202	250	2005-05-16 00:00:00	1511	222
+2203	250	2005-09-20 00:00:00	1455	379
+2204	250	2005-06-03 00:00:00	1512	52
+2205	250	2005-07-19 00:00:00	1494	222
+2206	250	2005-05-28 00:00:00	1200	299
+2207	250	2006-01-03 00:00:00	1513	241
+2208	250	2005-11-17 00:00:00	1231	241
+2209	250	2005-09-22 00:00:00	1013	470
+2210	250	2006-10-26 00:00:00	13	494
+2211	250	2006-09-05 00:00:00	1514	316
+2213	250	2005-05-08 00:00:00	1246	495
+2214	250	2005-09-21 00:00:00	1515	316
+2216	250	2006-08-23 00:00:00	1437	372
+2218	250	2006-07-05 00:00:00	1517	222
+2219	250	2005-09-12 00:00:00	854	316
+2220	250	2005-05-17 00:00:00	1467	477
+2222	250	2006-06-22 00:00:00	973	323
+2223	250	2006-02-13 00:00:00	13	296
+2224	250	2006-01-06 00:00:00	1519	52
+2225	250	2005-12-30 00:00:00	1520	2
+2226	250	2006-02-11 00:00:00	846	314
+2227	250	2006-07-01 00:00:00	13	314
+2228	250	2006-04-07 00:00:00	1521	52
+2229	250	2005-12-29 00:00:00	1481	222
+2230	250	2006-04-24 00:00:00	1522	347
+2231	250	2005-07-27 00:00:00	1523	496
+2232	250	2006-03-03 00:00:00	1524	497
+2233	250	2006-01-10 00:00:00	1525	4
+2234	250	2006-06-05 00:00:00	1517	222
+2235	250	2005-09-20 00:00:00	1501	316
+2236	250	2006-01-19 00:00:00	1525	4
+2237	250	2005-02-04 00:00:00	13	316
+2238	250	2006-06-19 00:00:00	1526	409
+2239	250	2006-06-21 00:00:00	1527	409
+2240	250	2006-01-10 00:00:00	1528	76
+2242	250	2006-05-30 00:00:00	1487	222
+2243	250	2006-03-15 00:00:00	1529	323
+2244	240.97	2006-10-16 00:00:00	1530	498
+2245	225	2006-08-25 00:00:00	1152	244
+2246	225	2006-07-10 00:00:00	1531	39
+2247	210	2006-03-05 00:00:00	1532	39
+2248	206	2005-06-20 00:00:00	1533	76
+2249	205	2005-05-26 00:00:00	1534	222
+2250	201	2006-04-26 00:00:00	1535	222
+2251	200	2006-05-19 00:00:00	1536	440
+2252	200	2006-06-16 00:00:00	1343	12
+2253	200	2006-11-06 00:00:00	1537	487
+2254	200	2006-10-21 00:00:00	1538	307
+2255	200	2006-11-07 00:00:00	1535	222
+2256	200	2005-07-12 00:00:00	1539	360
+2257	200	2006-10-03 00:00:00	1500	372
+2258	200	2005-05-02 00:00:00	1540	469
+2259	200	2006-10-18 00:00:00	1344	12
+2260	200	2005-08-03 00:00:00	969	331
+2261	200	2005-08-03 00:00:00	1541	331
+2262	200	2005-07-19 00:00:00	304	345
+2263	200	2005-05-26 00:00:00	664	499
+2265	200	2006-08-30 00:00:00	1535	222
+2266	200	2005-01-14 00:00:00	1428	323
+2267	200	2005-10-25 00:00:00	1543	477
+2268	200	2006-08-17 00:00:00	1544	500
+2269	200	2006-07-20 00:00:00	304	345
+2270	200	2006-06-26 00:00:00	1535	222
+2271	200	2006-02-13 00:00:00	1545	409
+2272	200	2006-05-05 00:00:00	1546	332
+2273	200	2006-05-03 00:00:00	972	332
+2274	200	2005-08-22 00:00:00	1547	501
+2275	200	2006-09-01 00:00:00	1548	440
+2276	200	2006-09-28 00:00:00	1549	502
+2277	200	2006-03-12 00:00:00	1550	28
+2278	200	2005-12-16 00:00:00	1257	52
+2279	200	2005-12-20 00:00:00	1551	402
+2280	200	2005-11-07 00:00:00	1296	300
+2281	200	2006-07-14 00:00:00	969	331
+2282	200	2005-06-30 00:00:00	1552	28
+2283	200	2006-10-10 00:00:00	541	503
+2284	200	2005-04-26 00:00:00	1553	76
+2285	200	2005-02-17 00:00:00	1554	222
+2286	200	2006-07-07 00:00:00	1447	471
+2287	180	2006-08-03 00:00:00	1555	291
+2288	150	2006-09-28 00:00:00	1556	337
+2289	150	2006-10-12 00:00:00	1007	337
+2290	150	2005-01-31 00:00:00	1557	332
+2291	150	2005-10-18 00:00:00	1546	332
+2292	150	2005-02-16 00:00:00	1546	332
+2293	150	2006-09-19 00:00:00	1558	437
+2294	150	2006-06-16 00:00:00	281	360
+2295	150	2006-07-11 00:00:00	1559	360
+2296	150	2006-07-31 00:00:00	1560	360
+2297	150	2005-11-17 00:00:00	1561	356
+2298	150	2005-04-23 00:00:00	1562	299
+2299	150	2005-09-20 00:00:00	147	440
+2300	150	2006-03-18 00:00:00	1466	338
+2301	150	2006-05-06 00:00:00	1562	299
+2302	150	2006-03-30 00:00:00	13	244
+2303	150	2006-08-15 00:00:00	1563	504
+2304	150	2006-10-10 00:00:00	1564	338
+2305	150	2006-09-06 00:00:00	1565	316
+2306	150	2005-09-21 00:00:00	1566	316
+2307	150	2005-07-12 00:00:00	1567	360
+2308	150	2005-07-01 00:00:00	1436	360
+2309	150	2005-07-05 00:00:00	1568	360
+2310	150	2006-03-14 00:00:00	1569	505
+2311	150	2005-07-07 00:00:00	1570	360
+2312	150	2005-07-07 00:00:00	1305	360
+2313	150	2005-09-29 00:00:00	1564	338
+2314	150	2005-10-27 00:00:00	541	331
+2315	150	2006-07-15 00:00:00	1571	438
+2316	150	2005-01-24 00:00:00	1572	244
+2317	140	2006-08-26 00:00:00	1160	283
+2318	130	2006-06-08 00:00:00	1160	283
+2319	125	2005-06-04 00:00:00	1513	241
+2320	125	2006-05-13 00:00:00	846	314
+2321	125	2006-01-24 00:00:00	1573	323
+2322	125	2006-11-12 00:00:00	321	341
+2323	125	2005-02-15 00:00:00	1574	470
+2324	125	2006-02-09 00:00:00	1575	506
+2325	125	2006-08-14 00:00:00	1576	357
+2326	120	2005-08-05 00:00:00	1555	291
+2327	120	2006-05-11 00:00:00	1577	293
+2328	110	2006-05-07 00:00:00	1578	507
+2329	100	2007-01-06 00:00:00	1579	341
+2330	100	2005-04-14 00:00:00	1580	323
+2331	100	2005-05-07 00:00:00	1581	323
+2332	100	2005-06-20 00:00:00	1582	428
+2333	100	2006-09-26 00:00:00	944	480
+2334	100	2006-08-22 00:00:00	1455	508
+2335	100	2006-06-22 00:00:00	1018	509
+2336	100	2006-09-01 00:00:00	1024	299
+2337	100	2006-04-19 00:00:00	1557	332
+2338	100	2006-09-23 00:00:00	1562	299
+2339	100	2006-09-28 00:00:00	1583	337
+2340	100	2005-10-07 00:00:00	1584	379
+2341	100	2006-04-19 00:00:00	1585	332
+2342	100	2005-10-10 00:00:00	1586	489
+2343	100	2005-10-19 00:00:00	1587	510
+2344	100	2005-08-09 00:00:00	1588	511
+2345	100	2006-11-12 00:00:00	1589	341
+2346	100	2005-07-25 00:00:00	1024	299
+2347	100	2005-12-01 00:00:00	1590	339
+2348	100	2005-08-15 00:00:00	1591	465
+2349	100	2006-09-11 00:00:00	1592	512
+2350	100	2006-08-11 00:00:00	995	331
+2351	100	2006-06-02 00:00:00	1593	348
+2352	100	2006-07-17 00:00:00	1594	513
+2353	100	2006-08-10 00:00:00	147	347
+2354	100	2005-10-12 00:00:00	1595	332
+2355	100	2005-07-07 00:00:00	1596	493
+2356	100	2006-01-09 00:00:00	1455	504
+2357	100	2006-08-25 00:00:00	1023	346
+2358	100	2006-10-18 00:00:00	1455	514
+2359	100	2006-08-21 00:00:00	1597	515
+2360	100	2006-08-08 00:00:00	1598	465
+2361	100	2006-04-13 00:00:00	1599	516
+2362	100	2007-01-06 00:00:00	1600	341
+2363	100	2006-09-27 00:00:00	1601	337
+2364	100	2006-09-25 00:00:00	1602	319
+2365	100	2006-03-08 00:00:00	1603	497
+2366	100	2005-10-21 00:00:00	1569	516
+2367	100	2005-10-26 00:00:00	1604	516
+2368	100	2005-09-20 00:00:00	1605	316
+2369	100	2006-05-23 00:00:00	1606	357
+2370	100	2005-01-10 00:00:00	1573	323
+2371	85.700000000000003	2005-09-12 00:00:00	1607	477
+2372	75	2006-02-16 00:00:00	1608	506
+2373	75	2006-08-10 00:00:00	1012	244
+2374	75	2005-07-20 00:00:00	1572	244
+2375	75	2005-10-12 00:00:00	1585	332
+2376	70	2005-12-07 00:00:00	1609	283
+2377	70	2006-08-08 00:00:00	1610	513
+2378	66.670000000000002	2006-11-08 00:00:00	1611	516
+2379	66.659999999999997	2006-11-08 00:00:00	1612	516
+2380	66.659999999999997	2005-10-13 00:00:00	1613	516
+2381	65	2005-10-27 00:00:00	1614	473
+2382	63	2005-12-08 00:00:00	1615	434
+2383	60	2006-06-15 00:00:00	1616	517
+2384	60	2006-02-04 00:00:00	1248	424
+2385	50	2006-04-15 00:00:00	1617	299
+2386	50	2005-10-26 00:00:00	1618	516
+2387	50	2006-05-07 00:00:00	1619	507
+2388	50	2006-02-09 00:00:00	1620	506
+2389	50	2005-02-18 00:00:00	1621	518
+2390	50	2006-08-29 00:00:00	1622	519
+2391	40	2005-08-17 00:00:00	1623	331
+2392	40	2006-11-19 00:00:00	1624	520
+2393	40	2006-05-07 00:00:00	1625	507
+2394	40	2005-07-15 00:00:00	1626	319
+2395	40	2005-06-28 00:00:00	1627	521
+2396	40	2006-07-17 00:00:00	1602	319
+2397	40	\N	1628	522
+2398	35	2006-09-01 00:00:00	1629	440
+2399	30	2006-09-13 00:00:00	1014	291
+2400	25	2006-01-11 00:00:00	1630	409
+2401	25	2006-05-07 00:00:00	1631	507
+2402	25	2006-06-24 00:00:00	1632	523
+2403	25	2006-08-25 00:00:00	1026	346
+2404	25	2006-04-25 00:00:00	1633	479
+2405	25	2006-06-30 00:00:00	1634	524
+2406	25	2006-01-09 00:00:00	1635	409
+2407	15	2006-01-11 00:00:00	1636	409
+2408	-400	2006-03-27 00:00:00	1091	12
+2409	-500	2005-08-08 00:00:00	1416	39
+2410	-500	2006-07-26 00:00:00	1372	361
+2411	-900	2005-08-31 00:00:00	1637	39
+2412	-1050	2006-01-13 00:00:00	1638	39
+2413	-1500	2005-06-29 00:00:00	1639	39
+2414	-1800	2005-06-03 00:00:00	1640	39
+2415	-1900	2006-05-10 00:00:00	1085	355
+2416	-2100	2005-09-21 00:00:00	1080	353
+2417	-2100	2005-09-21 00:00:00	1079	353
+2418	-2100	2006-02-17 00:00:00	1641	353
+2419	-2100	2006-02-17 00:00:00	1642	353
+2420	2500	2004-10-14 00:00:00	1643	525
+2421	2000	2004-11-11 00:00:00	1644	526
+2422	2000	2005-02-19 00:00:00	1645	527
+2423	1000	2005-11-02 00:00:00	1646	528
+2424	1000	2005-03-13 00:00:00	1644	526
+2425	500	2005-06-08 00:00:00	1647	528
+2426	400	2005-02-01 00:00:00	1643	525
+2427	34000	2004-10-21 00:00:00	1063	529
+2428	33900	2004-01-08 00:00:00	1648	530
+2429	25000	2004-01-14 00:00:00	1649	4
+2430	25000	2004-09-24 00:00:00	1650	4
+2431	20000	2004-10-11 00:00:00	1651	531
+2432	15000	2003-12-31 00:00:00	1652	2
+2433	10000	2004-06-21 00:00:00	1653	532
+2434	8000	2004-06-08 00:00:00	1654	533
+2435	8000	2003-04-30 00:00:00	1065	52
+2436	8000	2004-06-21 00:00:00	1655	76
+2437	7700	2004-01-30 00:00:00	1065	52
+2439	5000	2004-10-21 00:00:00	1326	534
+2440	5000	2004-10-20 00:00:00	1657	534
+2442	5000	2003-12-29 00:00:00	1659	530
+2443	5000	2004-10-27 00:00:00	1068	4
+2446	5000	2004-11-01 00:00:00	1068	4
+2447	5000	2004-10-20 00:00:00	1662	535
+2449	5000	2004-08-10 00:00:00	1664	279
+2451	5000	2004-08-10 00:00:00	1666	279
+2452	5000	2004-03-30 00:00:00	1667	279
+2453	5000	2004-01-13 00:00:00	1668	536
+2455	5000	2004-06-15 00:00:00	1670	537
+2456	5000	2004-06-23 00:00:00	1671	2
+2457	5000	2003-05-29 00:00:00	1323	394
+2458	5000	2003-05-29 00:00:00	1672	538
+2459	5000	2004-03-31 00:00:00	1673	530
+2460	5000	2004-01-16 00:00:00	13	539
+2462	5000	2004-03-18 00:00:00	13	529
+2463	5000	2004-07-22 00:00:00	1653	532
+2464	5000	2004-07-13 00:00:00	1068	4
+2465	5000	2004-09-29 00:00:00	1068	4
+2470	4500	2003-04-23 00:00:00	1678	52
+2471	4500	2004-10-21 00:00:00	1679	2
+2472	4350	2003-09-02 00:00:00	1680	76
+2473	4000	2003-09-15 00:00:00	1068	4
+2474	4000	2004-06-17 00:00:00	1681	532
+2475	4000	2004-06-08 00:00:00	1654	533
+2479	3400	2004-06-08 00:00:00	1684	541
+2480	3000	2004-07-22 00:00:00	1655	76
+2481	3000	2004-01-08 00:00:00	13	542
+2482	3000	2003-12-05 00:00:00	1685	543
+2483	2500	2004-09-09 00:00:00	1686	222
+2484	2500	2004-05-03 00:00:00	1064	544
+2485	2500	2003-09-15 00:00:00	1687	545
+2486	2500	2004-11-15 00:00:00	489	546
+2487	2500	2004-03-16 00:00:00	1068	4
+2489	2500	2003-08-12 00:00:00	1689	545
+2490	2500	2004-07-27 00:00:00	1690	547
+2491	2500	2004-09-30 00:00:00	1686	222
+2492	2500	2003-05-20 00:00:00	1691	394
+2493	2500	2004-08-09 00:00:00	1692	222
+2494	2500	2004-07-02 00:00:00	1693	222
+2495	2500	2004-04-02 00:00:00	1068	4
+2496	2500	2004-10-11 00:00:00	1694	222
+2497	2200	2004-07-16 00:00:00	13	542
+2498	2100	2004-01-30 00:00:00	1065	52
+2499	2000	2004-04-26 00:00:00	1103	196
+2500	2000	2003-07-03 00:00:00	13	542
+2501	2000	2004-08-11 00:00:00	1695	548
+2502	2000	2003-06-25 00:00:00	1696	549
+2503	2000	2004-07-27 00:00:00	1697	532
+2504	2000	2003-12-10 00:00:00	13	542
+2505	2000	2004-03-04 00:00:00	1698	543
+2506	2000	2004-04-28 00:00:00	1699	267
+2507	2000	2004-01-20 00:00:00	1700	550
+2508	2000	2003-10-23 00:00:00	13	529
+2509	2000	2004-07-19 00:00:00	1701	532
+2510	2000	2004-07-27 00:00:00	1702	551
+2511	2000	2004-07-22 00:00:00	1703	551
+2512	2000	2003-05-31 00:00:00	1704	552
+2513	2000	2003-07-07 00:00:00	1705	545
+2514	2000	2004-01-20 00:00:00	1706	550
+2515	2000	2004-07-22 00:00:00	1655	551
+2516	2000	2004-09-22 00:00:00	1707	553
+2517	2000	2004-01-13 00:00:00	1708	551
+2518	2000	2004-09-30 00:00:00	1709	175
+2519	2000	2004-01-13 00:00:00	1710	551
+2520	2000	2004-08-17 00:00:00	1711	18
+2521	2000	2003-06-26 00:00:00	1143	554
+2522	2000	2004-09-28 00:00:00	1712	555
+2523	2000	2004-01-20 00:00:00	1713	550
+2524	2000	2004-10-18 00:00:00	13	378
+2525	2000	2004-03-04 00:00:00	1714	543
+2526	2000	2004-06-17 00:00:00	1715	532
+2527	2000	2003-06-30 00:00:00	1716	556
+2528	2000	2004-05-31 00:00:00	1717	213
+2529	2000	2003-03-31 00:00:00	1718	556
+2530	2000	2004-01-13 00:00:00	1719	551
+2531	2000	2003-12-23 00:00:00	1720	550
+2532	2000	2003-03-06 00:00:00	1721	39
+2533	2000	2003-03-06 00:00:00	1721	39
+2534	2000	2003-03-28 00:00:00	1722	549
+2535	2000	2004-07-19 00:00:00	1723	76
+2536	2000	2004-06-03 00:00:00	1724	557
+2537	2000	2003-06-23 00:00:00	1725	543
+2538	2000	2004-06-03 00:00:00	1726	557
+2539	2000	2003-09-09 00:00:00	1727	367
+2540	2000	2003-06-27 00:00:00	1728	558
+2541	2000	2004-03-02 00:00:00	1729	551
+2542	2000	2004-05-17 00:00:00	1730	559
+2543	2000	2003-04-29 00:00:00	1731	558
+2544	2000	2004-06-14 00:00:00	1732	549
+2545	2000	2004-07-22 00:00:00	1733	532
+2546	2000	2003-11-24 00:00:00	1734	39
+2547	2000	2003-06-30 00:00:00	1735	558
+2548	2000	2003-11-04 00:00:00	1736	550
+2549	2000	2004-03-05 00:00:00	1737	543
+2550	2000	2004-03-05 00:00:00	1738	543
+2551	2000	2004-03-05 00:00:00	1739	543
+2552	2000	2003-10-14 00:00:00	1740	543
+2553	2000	2004-03-11 00:00:00	1741	543
+2554	2000	2003-07-17 00:00:00	1742	265
+2555	2000	2003-09-29 00:00:00	1742	265
+2556	2000	2004-03-05 00:00:00	1743	543
+2557	2000	2004-04-12 00:00:00	1744	543
+2558	2000	2003-09-25 00:00:00	1745	560
+2559	2000	2004-08-23 00:00:00	489	561
+2560	2000	2003-05-07 00:00:00	1746	26
+2561	2000	2004-06-17 00:00:00	1747	76
+2562	2000	2004-01-22 00:00:00	1748	551
+2563	2000	2003-10-28 00:00:00	1749	213
+2564	2000	2004-04-29 00:00:00	1750	562
+2565	2000	2004-11-01 00:00:00	1751	563
+2566	2000	2004-04-12 00:00:00	1752	551
+2567	2000	2004-04-01 00:00:00	1753	551
+2568	2000	2003-12-04 00:00:00	1754	549
+2569	2000	2003-10-28 00:00:00	1755	213
+2570	2000	2004-03-08 00:00:00	1756	543
+2571	2000	2004-04-19 00:00:00	1757	551
+2572	2000	2004-04-01 00:00:00	1758	551
+2573	2000	2004-03-11 00:00:00	1759	543
+2574	2000	2003-10-04 00:00:00	489	561
+2575	2000	2004-06-21 00:00:00	1655	551
+2576	2000	2004-02-07 00:00:00	1760	39
+2577	2000	2004-09-14 00:00:00	1761	564
+2578	2000	2004-06-17 00:00:00	1747	551
+2579	1850	2004-09-13 00:00:00	1762	565
+2580	1500	2004-11-01 00:00:00	1763	531
+2581	1500	2003-11-13 00:00:00	1764	543
+2582	1500	2003-05-31 00:00:00	1765	566
+2583	1500	2003-06-27 00:00:00	1766	335
+2584	1500	2004-07-22 00:00:00	1767	551
+2586	1500	2004-11-02 00:00:00	1727	367
+2587	1500	2004-12-16 00:00:00	1330	39
+2588	1500	2003-05-31 00:00:00	1765	566
+2590	1500	2004-10-20 00:00:00	1769	562
+2591	1500	2004-06-25 00:00:00	1770	306
+2592	1500	2004-11-12 00:00:00	13	245
+2593	1500	2004-12-07 00:00:00	1691	394
+2594	1350	2003-10-08 00:00:00	1762	565
+2595	1300	2004-11-01 00:00:00	1771	531
+2596	1250	2003-05-09 00:00:00	1772	222
+2597	1250	2003-04-08 00:00:00	1773	222
+2598	1250	2003-07-09 00:00:00	1692	222
+2599	1250	2003-06-09 00:00:00	1692	222
+2600	1200	2003-05-06 00:00:00	1164	287
+2601	1200	2004-10-24 00:00:00	1774	531
+2602	1100	2003-10-16 00:00:00	13	229
+2603	1001	2003-12-19 00:00:00	1775	530
+2604	1000	2003-12-08 00:00:00	1776	246
+2605	1000	2004-05-04 00:00:00	1777	567
+2606	1000	2004-06-11 00:00:00	1778	39
+2607	1000	2004-07-22 00:00:00	1779	551
+2608	1000	2004-01-30 00:00:00	1780	551
+2609	1000	2004-07-26 00:00:00	1781	551
+2610	1000	2004-08-25 00:00:00	1782	213
+2611	1000	2004-01-19 00:00:00	1783	550
+2612	1000	2004-08-16 00:00:00	1784	18
+2613	1000	2004-07-08 00:00:00	1785	549
+2614	1000	2004-07-26 00:00:00	1786	532
+2615	1000	2004-08-16 00:00:00	1787	551
+2616	1000	2004-04-09 00:00:00	1788	568
+2617	1000	2004-08-27 00:00:00	1789	564
+2618	1000	2004-09-03 00:00:00	1790	28
+2619	1000	2004-09-03 00:00:00	1791	28
+2620	1000	2004-09-03 00:00:00	1792	28
+2621	1000	2004-09-03 00:00:00	1793	222
+2622	1000	2004-09-09 00:00:00	1794	569
+2623	1000	2004-10-05 00:00:00	1795	570
+2624	1000	2004-02-03 00:00:00	1796	204
+2625	1000	2004-09-07 00:00:00	1797	549
+2626	1000	2004-07-12 00:00:00	1798	571
+2627	1000	2004-02-03 00:00:00	1064	204
+2628	1000	2003-07-17 00:00:00	1776	246
+2629	1000	2003-07-17 00:00:00	1799	246
+2630	1000	2004-09-24 00:00:00	1800	76
+2631	1000	2004-10-11 00:00:00	1793	222
+2632	1000	2004-09-23 00:00:00	1801	175
+2633	1000	2004-10-05 00:00:00	1802	76
+2634	1000	2004-10-01 00:00:00	1803	76
+2635	1000	2003-12-29 00:00:00	1103	196
+2636	1000	2004-11-01 00:00:00	1804	307
+2637	1000	2004-11-21 00:00:00	176	28
+2638	1000	2004-10-25 00:00:00	1805	564
+2640	1000	2004-11-08 00:00:00	1807	222
+2641	1000	2004-11-01 00:00:00	1808	222
+2642	1000	2004-01-05 00:00:00	1809	572
+2643	1000	2004-11-02 00:00:00	1810	2
+2644	1000	2004-10-21 00:00:00	69	573
+2645	1000	2004-10-31 00:00:00	1811	76
+2646	1000	2003-11-21 00:00:00	1812	572
+2649	1000	2004-11-29 00:00:00	1815	222
+2650	1000	2004-01-14 00:00:00	1816	556
+2651	1000	2003-06-30 00:00:00	1817	558
+2652	1000	2003-07-01 00:00:00	1818	549
+2653	1000	2003-09-30 00:00:00	1302	551
+2654	1000	2003-10-28 00:00:00	1819	574
+2655	1000	2003-11-24 00:00:00	1734	39
+2656	1000	2004-03-11 00:00:00	1820	543
+2657	1000	2004-03-11 00:00:00	1820	543
+2658	1000	2003-07-24 00:00:00	1782	213
+2659	1000	2003-10-27 00:00:00	1420	39
+2660	1000	2003-08-21 00:00:00	1821	575
+2661	1000	2003-07-31 00:00:00	1822	575
+2662	1000	2003-07-24 00:00:00	1823	556
+2663	1000	2003-07-24 00:00:00	1824	556
+2664	1000	2004-04-14 00:00:00	1788	576
+2665	1000	2003-03-30 00:00:00	1825	279
+2666	1000	2004-04-26 00:00:00	1103	196
+2667	1000	2003-06-25 00:00:00	1826	549
+2668	1000	2003-06-25 00:00:00	1826	549
+2669	1000	2003-05-16 00:00:00	1827	549
+2670	1000	2003-06-24 00:00:00	1828	28
+2671	1000	2003-12-09 00:00:00	1829	577
+2672	1000	2003-09-08 00:00:00	1830	177
+2673	1000	2003-12-15 00:00:00	1831	543
+2675	1000	2003-06-23 00:00:00	1833	452
+2676	1000	2003-06-26 00:00:00	1834	204
+2677	1000	2003-06-30 00:00:00	1064	204
+2678	1000	2003-06-19 00:00:00	1821	575
+2679	1000	2003-06-30 00:00:00	1835	558
+2680	1000	2003-06-30 00:00:00	1836	177
+2681	1000	2003-12-15 00:00:00	1837	543
+2682	1000	2003-12-08 00:00:00	1838	543
+2683	1000	2003-06-28 00:00:00	1839	6
+2684	1000	2003-11-20 00:00:00	1840	543
+2685	1000	2003-05-14 00:00:00	1772	222
+2686	1000	2003-11-20 00:00:00	1841	543
+2687	1000	2003-05-06 00:00:00	1068	4
+2688	1000	2003-11-24 00:00:00	1842	543
+2689	1000	2004-05-27 00:00:00	1843	549
+2690	1000	2004-05-19 00:00:00	1844	574
+2691	1000	2004-05-22 00:00:00	1845	578
+2692	1000	2004-05-25 00:00:00	1846	579
+2693	1000	2004-03-09 00:00:00	1847	551
+2694	1000	2004-03-09 00:00:00	1848	551
+2695	1000	2003-02-25 00:00:00	1849	549
+2696	1000	2003-02-25 00:00:00	1849	549
+2697	1000	2003-02-25 00:00:00	1850	549
+2698	1000	2004-04-09 00:00:00	1798	580
+2699	1000	2003-02-25 00:00:00	1850	549
+2700	1000	2003-02-12 00:00:00	1851	549
+2701	1000	2003-02-25 00:00:00	1852	549
+2702	1000	2003-02-25 00:00:00	1852	549
+2703	1000	2003-02-25 00:00:00	1853	549
+2704	1000	2003-02-25 00:00:00	1853	549
+2705	1000	2003-02-05 00:00:00	1854	549
+2706	1000	2003-03-30 00:00:00	1855	39
+2707	1000	2003-03-18 00:00:00	1856	246
+2708	1000	2003-03-29 00:00:00	1857	581
+2709	1000	2004-03-23 00:00:00	1858	76
+2710	1000	2004-06-30 00:00:00	1859	564
+2711	1000	2004-06-21 00:00:00	1860	564
+2712	1000	2003-03-26 00:00:00	1861	556
+2713	1000	2004-03-26 00:00:00	1862	28
+2714	1000	2004-06-21 00:00:00	1761	564
+2715	1000	2004-05-31 00:00:00	1863	213
+2716	1000	2004-03-31 00:00:00	1862	28
+2717	1000	2004-03-30 00:00:00	1864	84
+2718	1000	2004-01-24 00:00:00	1865	562
+2719	1000	2003-10-09 00:00:00	1822	575
+2721	1000	2003-11-25 00:00:00	1866	558
+2722	1000	2004-05-07 00:00:00	1867	222
+2723	1000	2003-12-11 00:00:00	1270	306
+2724	1000	2003-12-30 00:00:00	1782	213
+2725	1000	2004-04-19 00:00:00	1868	2
+2726	1000	2004-04-07 00:00:00	1869	4
+2727	1000	2004-04-23 00:00:00	1870	4
+2728	1000	2004-04-28 00:00:00	1871	582
+2729	1000	2004-04-12 00:00:00	1872	583
+2730	1000	2004-04-12 00:00:00	1873	413
+2731	1000	2003-09-23 00:00:00	1326	584
+2732	1000	2004-06-25 00:00:00	1874	584
+2733	1000	2004-10-20 00:00:00	1875	531
+2734	1000	2003-10-29 00:00:00	1876	555
+2735	1000	2003-02-06 00:00:00	1877	529
+2736	1000	2004-10-23 00:00:00	1878	565
+2737	1000	2004-10-27 00:00:00	1198	565
+2738	1000	2003-09-16 00:00:00	1879	585
+2739	1000	2004-09-08 00:00:00	13	230
+2740	1000	2004-11-04 00:00:00	1152	396
+2741	1000	2003-08-27 00:00:00	13	331
+2742	1000	2003-01-09 00:00:00	13	248
+2743	1000	2004-05-06 00:00:00	1880	287
+2744	1000	2003-06-05 00:00:00	1881	538
+2745	1000	2004-09-10 00:00:00	13	435
+2746	1000	2004-07-24 00:00:00	164	586
+2747	1000	2004-09-11 00:00:00	13	333
+2748	1000	2004-06-23 00:00:00	1882	398
+2749	1000	2003-05-19 00:00:00	1883	530
+2750	1000	2004-08-26 00:00:00	13	229
+2751	1000	2003-01-28 00:00:00	1884	381
+2752	1000	2003-05-29 00:00:00	13	396
+2753	1000	2004-09-17 00:00:00	1885	478
+2754	1000	2003-09-26 00:00:00	13	248
+2755	1000	2004-10-29 00:00:00	13	261
+2756	1000	2003-04-22 00:00:00	13	587
+2757	1000	2004-09-09 00:00:00	13	588
+2758	1000	2003-06-30 00:00:00	1886	530
+2759	1000	2003-02-28 00:00:00	1887	530
+2760	1000	2004-11-12 00:00:00	1888	589
+2761	1000	2003-04-08 00:00:00	1889	530
+2762	1000	2004-06-29 00:00:00	1890	590
+2763	1000	2004-10-29 00:00:00	1152	530
+2764	1000	2004-08-06 00:00:00	1891	500
+2765	1000	2004-10-25 00:00:00	1892	561
+2766	1000	2004-05-11 00:00:00	13	588
+2767	1000	2003-10-03 00:00:00	1877	530
+2768	1000	2004-10-19 00:00:00	1893	346
+2769	1000	2003-12-08 00:00:00	13	333
+2770	1000	2004-10-02 00:00:00	1894	591
+2771	1000	2003-07-21 00:00:00	1895	394
+2772	1000	2003-07-11 00:00:00	1896	545
+2773	1000	2005-01-04 00:00:00	1152	381
+2774	1000	2004-03-02 00:00:00	1455	230
+2775	950	2003-06-30 00:00:00	1010	287
+2781	900	2003-05-08 00:00:00	1900	592
+2783	900	2004-05-06 00:00:00	1902	287
+2785	900	2003-05-06 00:00:00	1904	287
+2787	850	2004-09-21 00:00:00	1906	593
+2788	800	2004-09-24 00:00:00	13	542
+2789	800	2004-08-13 00:00:00	1907	282
+2790	800	2003-08-01 00:00:00	1908	287
+2791	800	2004-03-11 00:00:00	1909	291
+2792	800	2003-06-01 00:00:00	1910	216
+2793	750	2004-11-01 00:00:00	13	291
+2794	750	2004-08-25 00:00:00	1911	76
+2795	750	2003-08-08 00:00:00	1912	4
+2796	750	2004-01-23 00:00:00	1913	4
+2797	750	2004-03-10 00:00:00	1914	594
+2798	700	2004-10-18 00:00:00	1915	531
+2799	700	2004-03-20 00:00:00	1916	595
+2800	700	2004-03-23 00:00:00	1917	595
+2801	700	2004-03-23 00:00:00	1918	595
+2802	700	2003-01-22 00:00:00	1919	293
+2803	700	2003-11-24 00:00:00	1745	560
+2804	700	2004-10-29 00:00:00	1920	531
+2806	640	2004-09-08 00:00:00	1921	596
+2807	625	2003-03-04 00:00:00	1922	222
+2808	625	2004-07-21 00:00:00	1923	222
+2809	625	2004-08-20 00:00:00	1923	222
+2810	625	2004-05-20 00:00:00	1924	222
+2811	625	2003-04-03 00:00:00	1922	222
+2812	600	2003-10-02 00:00:00	1877	529
+2813	600	2004-05-13 00:00:00	1925	592
+2814	600	2004-02-26 00:00:00	1926	542
+2815	600	2004-01-31 00:00:00	1927	312
+2816	600	2004-02-02 00:00:00	13	248
+2817	600	2003-04-01 00:00:00	1164	287
+2818	600	2004-04-22 00:00:00	13	597
+2819	600	2003-09-12 00:00:00	1928	598
+2820	600	2004-05-06 00:00:00	1164	287
+2821	600	2003-05-23 00:00:00	1929	222
+2822	550	2004-09-27 00:00:00	1269	545
+2823	550	2003-03-07 00:00:00	13	430
+2824	501	2004-01-07 00:00:00	1930	599
+2825	501	2004-10-05 00:00:00	1931	4
+2828	500	2004-06-11 00:00:00	1934	28
+2829	500	2004-06-11 00:00:00	1935	28
+2831	500	2003-12-09 00:00:00	1937	554
+2833	500	2004-05-28 00:00:00	1939	222
+2834	500	2003-04-21 00:00:00	1436	299
+2835	500	2004-05-10 00:00:00	1940	222
+2837	500	2003-09-19 00:00:00	1024	287
+2838	500	2004-05-04 00:00:00	1931	4
+2840	500	2003-12-30 00:00:00	1782	213
+2841	500	2004-05-20 00:00:00	751	4
+2843	500	2004-04-23 00:00:00	13	600
+2844	500	2003-12-02 00:00:00	1944	572
+2845	500	2003-12-29 00:00:00	1945	572
+2846	500	2003-12-05 00:00:00	1946	572
+2847	500	2003-12-04 00:00:00	1947	572
+2848	500	2003-12-04 00:00:00	1948	572
+2849	500	2003-12-04 00:00:00	1949	572
+2850	500	2003-12-03 00:00:00	1950	572
+2855	500	2004-04-28 00:00:00	1955	551
+2856	500	2004-04-26 00:00:00	1956	551
+2860	500	2003-10-30 00:00:00	486	28
+2861	500	2003-12-04 00:00:00	1934	28
+2862	500	2003-11-13 00:00:00	1960	572
+2863	500	2004-10-18 00:00:00	1811	76
+2864	500	2003-12-18 00:00:00	1961	222
+2865	500	2003-11-17 00:00:00	1962	4
+2866	500	2004-01-12 00:00:00	1963	267
+2867	500	2004-12-10 00:00:00	13	601
+2868	500	2004-04-06 00:00:00	1964	4
+2869	500	2004-04-19 00:00:00	1965	543
+2870	500	2004-04-30 00:00:00	1966	543
+2871	500	2004-11-01 00:00:00	1967	4
+2872	500	2004-04-12 00:00:00	1968	222
+2873	500	2003-12-16 00:00:00	1867	222
+2874	500	2004-08-25 00:00:00	1761	564
+2876	500	2004-10-25 00:00:00	1969	4
+2877	500	2003-08-22 00:00:00	1970	602
+2878	500	2004-03-27 00:00:00	1971	603
+2879	500	2004-10-29 00:00:00	1972	604
+2880	500	2004-03-08 00:00:00	1973	367
+2881	500	2004-11-01 00:00:00	1974	531
+2882	500	2004-10-26 00:00:00	1975	531
+2883	500	2004-11-16 00:00:00	1976	222
+2884	500	2004-10-28 00:00:00	45	222
+2886	500	2003-10-29 00:00:00	1978	592
+2887	500	2004-05-25 00:00:00	1979	605
+2888	500	2003-11-04 00:00:00	1980	606
+2889	500	2004-10-22 00:00:00	1981	607
+2890	500	2004-10-15 00:00:00	1982	307
+2891	500	2004-02-29 00:00:00	1983	608
+2893	500	2004-02-03 00:00:00	1985	256
+2894	500	2003-10-01 00:00:00	1068	4
+2895	500	2004-10-12 00:00:00	1986	609
+2896	500	2004-02-04 00:00:00	1987	543
+2897	500	2004-09-15 00:00:00	1988	76
+2900	500	2004-03-16 00:00:00	1991	551
+2901	500	2003-02-28 00:00:00	489	436
+2903	500	2003-03-10 00:00:00	1993	222
+2905	500	2004-05-07 00:00:00	1152	244
+2906	500	2004-03-20 00:00:00	1995	338
+2907	500	2004-08-02 00:00:00	1987	543
+2908	500	2004-05-14 00:00:00	1996	610
+2909	500	2004-05-14 00:00:00	1997	610
+2911	500	2004-04-20 00:00:00	1999	611
+2912	500	2004-06-22 00:00:00	147	296
+2913	500	2003-11-03 00:00:00	1250	542
+2918	500	2003-01-27 00:00:00	2003	39
+2919	500	2004-05-25 00:00:00	1810	39
+2920	500	2003-03-27 00:00:00	2004	25
+2921	500	2003-03-24 00:00:00	2005	612
+2922	500	2003-03-27 00:00:00	2006	256
+2923	500	2003-03-27 00:00:00	2007	256
+2924	500	2003-03-27 00:00:00	2008	256
+2925	500	2004-06-01 00:00:00	1810	39
+2927	500	2004-03-21 00:00:00	489	613
+2928	500	2004-06-30 00:00:00	1761	564
+2931	500	2004-10-26 00:00:00	13	282
+2932	500	2003-05-23 00:00:00	2011	331
+2933	500	2004-06-04 00:00:00	1219	246
+2934	500	2003-02-21 00:00:00	2012	222
+2935	500	2003-02-21 00:00:00	2013	222
+2937	500	2003-02-04 00:00:00	2015	222
+2938	500	2004-08-14 00:00:00	2016	611
+2940	500	2003-05-29 00:00:00	1323	394
+2943	500	2003-01-27 00:00:00	1993	222
+2944	500	2003-12-09 00:00:00	2019	554
+2945	500	2004-06-25 00:00:00	2020	306
+2947	500	2004-06-29 00:00:00	2022	28
+2948	500	2004-06-29 00:00:00	2023	28
+2949	500	2004-07-19 00:00:00	2024	551
+2950	500	2004-09-13 00:00:00	2025	569
+2951	500	2003-11-10 00:00:00	13	378
+2952	500	2004-04-15 00:00:00	1289	359
+2953	500	2004-06-02 00:00:00	1289	545
+2954	500	2003-10-19 00:00:00	1024	614
+2955	500	2004-09-14 00:00:00	2026	608
+2956	500	2003-07-16 00:00:00	1024	394
+2957	500	2003-05-30 00:00:00	2027	420
+2958	500	2004-09-28 00:00:00	1867	222
+2959	500	2003-08-07 00:00:00	13	615
+2960	500	2003-04-01 00:00:00	2028	616
+2961	500	2004-08-22 00:00:00	2029	617
+2962	500	2004-09-30 00:00:00	1256	427
+2963	500	2004-10-21 00:00:00	2030	596
+2964	500	2004-09-09 00:00:00	2031	213
+2965	500	2003-02-22 00:00:00	2032	335
+2966	500	2004-04-08 00:00:00	2033	477
+2967	500	2004-10-14 00:00:00	2034	542
+2968	500	2004-09-09 00:00:00	2035	213
+2969	500	2004-10-12 00:00:00	2036	618
+2970	500	2003-10-29 00:00:00	13	619
+2971	500	2004-09-24 00:00:00	2037	306
+2972	500	2004-07-21 00:00:00	1931	4
+2973	500	2004-09-02 00:00:00	2038	28
+2974	500	2004-08-31 00:00:00	2039	28
+2975	500	2004-11-06 00:00:00	2040	479
+2976	500	2004-04-28 00:00:00	13	479
+2977	500	2003-11-20 00:00:00	2032	620
+2978	500	2003-12-09 00:00:00	1895	554
+2979	500	2004-09-02 00:00:00	1935	28
+2980	500	2004-03-26 00:00:00	13	331
+2981	500	2004-10-26 00:00:00	2041	621
+2982	500	2004-10-15 00:00:00	947	327
+2983	500	2003-07-14 00:00:00	13	394
+2984	500	2003-05-29 00:00:00	2042	394
+2985	500	2004-01-27 00:00:00	13	587
+2986	500	2004-06-05 00:00:00	13	436
+2987	500	2004-02-05 00:00:00	13	587
+2988	500	2004-01-22 00:00:00	2043	542
+2989	500	2004-06-10 00:00:00	13	622
+2990	500	2003-07-03 00:00:00	2044	222
+2991	500	2003-07-18 00:00:00	1940	222
+2992	500	2004-11-09 00:00:00	1152	244
+2993	500	2003-08-06 00:00:00	2045	222
+2994	500	2003-07-11 00:00:00	13	552
+2995	500	2004-05-07 00:00:00	2046	623
+2996	500	2003-05-05 00:00:00	2047	599
+2997	500	2003-05-05 00:00:00	2032	599
+2998	500	2003-04-30 00:00:00	2048	549
+2999	500	2003-04-30 00:00:00	2049	549
+3000	500	2003-05-10 00:00:00	2050	195
+3001	500	2003-06-28 00:00:00	2051	368
+3002	500	2003-11-26 00:00:00	2052	583
+3003	500	2003-08-12 00:00:00	2053	52
+3004	500	2003-07-23 00:00:00	1745	560
+3005	500	2003-06-20 00:00:00	1868	2
+3006	500	2003-06-24 00:00:00	2054	28
+3007	500	2003-06-24 00:00:00	1935	28
+3008	500	2004-04-27 00:00:00	2055	186
+3009	500	2003-12-18 00:00:00	2056	599
+3010	500	2003-06-24 00:00:00	176	28
+3011	500	2004-04-28 00:00:00	1864	186
+3012	500	2003-03-06 00:00:00	2057	624
+3013	500	2004-05-07 00:00:00	2058	186
+3014	500	2004-03-24 00:00:00	2059	543
+3017	500	2003-09-22 00:00:00	2062	213
+3018	500	2004-05-21 00:00:00	2063	394
+3019	500	2003-11-19 00:00:00	2064	625
+3021	500	2003-08-05 00:00:00	2066	213
+3022	500	2005-01-04 00:00:00	13	552
+3023	500	2003-09-09 00:00:00	1727	367
+3024	500	2003-06-30 00:00:00	2067	558
+3025	500	2003-07-08 00:00:00	2068	367
+3026	500	2003-09-30 00:00:00	2069	551
+3027	500	2003-05-23 00:00:00	2070	558
+3028	500	2003-06-29 00:00:00	2071	560
+3029	500	2003-11-20 00:00:00	2072	620
+3030	500	2003-09-30 00:00:00	1867	222
+3031	500	2004-01-23 00:00:00	1134	345
+3032	500	2004-09-12 00:00:00	2073	338
+3034	500	2003-05-05 00:00:00	2074	222
+3035	500	2003-05-08 00:00:00	2075	222
+3036	500	2003-12-06 00:00:00	2076	241
+3037	500	2004-03-10 00:00:00	2069	551
+3038	500	2004-10-26 00:00:00	2077	590
+3040	500	2004-10-26 00:00:00	13	521
+3041	500	2004-06-01 00:00:00	147	626
+3043	500	2003-08-18 00:00:00	2079	39
+3045	500	2004-01-15 00:00:00	2080	627
+3046	500	2004-12-03 00:00:00	2081	222
+3048	500	2003-07-21 00:00:00	2082	394
+3049	500	2004-05-06 00:00:00	2083	503
+3052	500	2004-05-10 00:00:00	2085	503
+3055	500	2004-09-13 00:00:00	2088	76
+3056	500	2004-10-13 00:00:00	2089	628
+3057	500	2004-10-13 00:00:00	2090	553
+3058	500	2004-09-25 00:00:00	1865	562
+3059	500	2004-09-30 00:00:00	534	46
+3060	500	2004-10-26 00:00:00	1134	345
+3061	500	2004-06-02 00:00:00	2091	545
+3062	500	2003-10-28 00:00:00	13	585
+3063	500	2003-09-16 00:00:00	1762	565
+3064	500	2003-09-16 00:00:00	2092	585
+3065	500	2003-06-04 00:00:00	2093	394
+3066	500	2004-06-07 00:00:00	13	230
+3067	500	2004-11-08 00:00:00	13	230
+3068	500	2004-04-08 00:00:00	2094	592
+3069	500	2004-03-21 00:00:00	2095	613
+3070	500	2004-10-29 00:00:00	1152	587
+3071	500	2004-07-21 00:00:00	1296	300
+3072	500	2004-06-22 00:00:00	1900	478
+3073	500	2004-07-15 00:00:00	2096	551
+3075	450	2004-04-02 00:00:00	1068	4
+3076	400	2004-06-24 00:00:00	1770	306
+3078	400	2004-08-11 00:00:00	2098	629
+3079	400	2004-10-18 00:00:00	2099	531
+3080	400	2004-10-04 00:00:00	2100	76
+3081	400	2004-10-29 00:00:00	2101	531
+3082	400	2004-10-13 00:00:00	2102	531
+3083	400	2004-10-27 00:00:00	1775	593
+3084	400	2003-02-10 00:00:00	147	295
+3085	400	2003-12-09 00:00:00	2103	593
+3087	375	2003-07-14 00:00:00	969	331
+3088	375	2004-06-25 00:00:00	489	561
+3089	350	2004-10-05 00:00:00	1065	52
+3090	350	2004-03-01 00:00:00	1134	345
+3091	350	2004-09-17 00:00:00	2105	542
+3092	350	2004-03-29 00:00:00	489	239
+3093	350	2003-05-20 00:00:00	164	261
+3094	350	2004-03-05 00:00:00	13	219
+3095	350	2003-03-12 00:00:00	13	617
+3097	350	2004-01-26 00:00:00	1762	565
+3098	350	2004-03-29 00:00:00	13	282
+3099	350	2003-10-24 00:00:00	2107	222
+3100	350	2004-02-07 00:00:00	13	503
+3101	300	2003-06-04 00:00:00	2108	222
+3102	300	2003-07-10 00:00:00	2109	222
+3103	300	2003-06-04 00:00:00	2110	222
+3104	300	2004-01-30 00:00:00	2111	619
+3105	300	2004-06-30 00:00:00	2112	551
+3106	300	2004-05-13 00:00:00	2113	222
+3107	300	2003-02-26 00:00:00	2114	222
+3108	300	2003-08-07 00:00:00	2115	222
+3109	300	2003-05-19 00:00:00	2116	222
+3110	300	2003-05-06 00:00:00	1908	287
+3111	300	2003-05-06 00:00:00	855	287
+3112	300	2004-09-16 00:00:00	2117	222
+3113	300	2003-04-25 00:00:00	13	239
+3114	300	2003-02-05 00:00:00	2118	222
+3115	300	2004-09-20 00:00:00	2119	222
+3116	300	2004-03-16 00:00:00	13	287
+3117	300	2004-08-12 00:00:00	1570	287
+3118	300	2003-03-10 00:00:00	2120	222
+3119	300	2004-03-31 00:00:00	13	298
+3120	300	2003-08-08 00:00:00	2121	222
+3121	300	2004-09-03 00:00:00	1347	367
+3122	300	2004-02-27 00:00:00	13	630
+3123	300	2003-02-26 00:00:00	2122	222
+3124	300	2003-11-20 00:00:00	2123	222
+3125	300	2004-04-02 00:00:00	2124	222
+3126	300	2004-05-12 00:00:00	1907	631
+3127	300	2004-06-03 00:00:00	2125	586
+3128	300	2004-12-20 00:00:00	2126	222
+3129	300	2003-03-06 00:00:00	2127	222
+3130	300	2004-04-09 00:00:00	2128	4
+3131	300	2003-08-19 00:00:00	2129	475
+3132	300	2004-09-10 00:00:00	2130	436
+3133	300	2003-08-11 00:00:00	13	323
+3134	300	2003-09-15 00:00:00	2131	265
+3135	300	2004-06-29 00:00:00	2132	632
+3136	300	2003-03-07 00:00:00	13	219
+3137	300	2003-04-07 00:00:00	13	216
+3138	300	2004-09-02 00:00:00	2133	28
+3139	300	2004-07-29 00:00:00	1436	287
+3140	300	2003-04-10 00:00:00	2134	222
+3141	300	2004-05-22 00:00:00	2135	333
+3142	300	2003-09-21 00:00:00	2136	633
+3143	300	2003-12-15 00:00:00	2119	222
+3144	300	2003-10-17 00:00:00	2137	222
+3145	300	2004-03-04 00:00:00	2126	222
+3146	300	2004-08-11 00:00:00	1437	372
+3147	300	2004-09-28 00:00:00	2138	4
+3148	300	2004-10-16 00:00:00	1477	213
+3149	300	2004-03-03 00:00:00	2139	222
+3150	300	2003-10-03 00:00:00	2140	222
+3151	300	2003-03-24 00:00:00	2141	222
+3152	300	2004-04-20 00:00:00	1024	287
+3153	300	2003-05-29 00:00:00	2142	222
+3154	300	2003-02-24 00:00:00	2143	222
+3155	300	2004-11-01 00:00:00	2144	531
+3156	300	2004-08-27 00:00:00	2145	586
+3157	300	2004-09-15 00:00:00	2146	531
+3158	300	2003-06-10 00:00:00	2147	222
+3159	300	2003-06-03 00:00:00	13	630
+3160	300	2004-05-16 00:00:00	2148	625
+3161	300	2003-09-19 00:00:00	1164	287
+3162	300	2003-07-11 00:00:00	2149	222
+3163	300	2003-06-04 00:00:00	2150	222
+3164	300	2003-07-01 00:00:00	2119	222
+3165	300	2004-09-30 00:00:00	2151	76
+3166	300	2003-09-25 00:00:00	2152	316
+3167	300	2003-12-19 00:00:00	2153	222
+3168	300	2003-04-10 00:00:00	2154	222
+3169	300	2003-09-11 00:00:00	2155	222
+3170	300	2004-09-28 00:00:00	2156	634
+3171	300	2003-04-14 00:00:00	2157	222
+3172	300	2004-04-20 00:00:00	13	216
+3173	300	2004-06-23 00:00:00	2158	4
+3174	300	2004-03-05 00:00:00	489	326
+3175	300	2004-03-29 00:00:00	13	430
+3176	275	2004-01-13 00:00:00	13	323
+3177	275	2003-02-13 00:00:00	13	323
+3178	272	2004-04-28 00:00:00	2159	627
+3179	270	2003-12-31 00:00:00	2160	574
+3181	250	2003-11-04 00:00:00	2162	627
+3182	250	2003-10-21 00:00:00	2163	627
+3183	250	2003-11-19 00:00:00	2163	627
+3184	250	2003-12-12 00:00:00	2163	627
+3185	250	2003-12-24 00:00:00	2164	627
+3186	250	2003-12-15 00:00:00	2165	222
+3187	250	2003-12-02 00:00:00	2166	222
+3188	250	2003-12-12 00:00:00	2167	635
+3189	250	2004-01-06 00:00:00	2163	627
+3190	250	2004-01-20 00:00:00	2163	627
+3191	250	2004-01-02 00:00:00	2166	222
+3192	250	2004-01-14 00:00:00	1931	4
+3193	250	2004-01-26 00:00:00	1931	4
+3195	250	2004-01-06 00:00:00	1678	2
+3196	250	2004-02-20 00:00:00	2169	222
+3197	250	2004-02-24 00:00:00	2170	627
+3198	250	2004-02-10 00:00:00	1931	4
+3199	250	2004-02-10 00:00:00	1931	4
+3200	250	2004-03-22 00:00:00	1784	18
+3201	250	2004-01-21 00:00:00	2171	267
+3202	250	2004-03-25 00:00:00	1472	372
+3203	250	2004-01-26 00:00:00	2172	636
+3204	250	2004-03-04 00:00:00	1931	4
+3205	250	2004-04-19 00:00:00	2173	222
+3206	250	2004-04-05 00:00:00	2174	4
+3207	250	2004-04-05 00:00:00	2175	4
+3208	250	2004-04-06 00:00:00	2174	4
+3209	250	2004-04-06 00:00:00	2175	4
+3210	250	2004-04-23 00:00:00	2174	4
+3211	250	2004-04-23 00:00:00	2176	4
+3212	250	2004-04-13 00:00:00	2177	551
+3213	250	2004-05-18 00:00:00	730	4
+3214	250	2004-05-14 00:00:00	1931	4
+3215	250	2004-05-03 00:00:00	1764	543
+3216	250	2004-05-21 00:00:00	2173	222
+3217	250	2004-05-26 00:00:00	2178	222
+3218	250	2004-05-20 00:00:00	2178	222
+3219	250	2004-04-27 00:00:00	2179	15
+3220	250	2004-06-26 00:00:00	2180	306
+3221	250	2004-05-24 00:00:00	2181	417
+3222	250	2004-04-22 00:00:00	2182	637
+3235	250	2004-06-29 00:00:00	730	4
+3236	250	2004-06-09 00:00:00	1931	4
+3237	250	2004-06-22 00:00:00	1931	4
+3238	250	2004-04-30 00:00:00	2194	638
+3239	250	2004-06-21 00:00:00	2195	52
+3253	250	2004-07-19 00:00:00	2204	532
+3254	250	2004-07-09 00:00:00	1869	4
+3255	250	2004-07-29 00:00:00	2205	551
+3256	250	2004-07-07 00:00:00	2206	551
+3257	250	2004-07-29 00:00:00	2206	551
+3258	250	2004-07-23 00:00:00	2207	639
+3259	250	2004-08-02 00:00:00	2208	532
+3260	250	2004-08-04 00:00:00	2209	532
+3261	250	2004-08-19 00:00:00	1931	4
+3262	250	2004-08-02 00:00:00	2210	551
+3263	250	2004-08-04 00:00:00	2211	551
+3264	250	2004-09-25 00:00:00	2212	417
+3265	250	2004-08-13 00:00:00	2213	177
+3267	250	2004-09-13 00:00:00	2215	549
+3268	250	2004-09-27 00:00:00	1967	4
+3269	250	2004-09-30 00:00:00	1967	4
+3270	250	2004-09-22 00:00:00	2216	4
+3271	250	2004-10-07 00:00:00	1867	222
+3272	250	2004-09-28 00:00:00	2217	175
+3273	250	2004-10-06 00:00:00	2218	76
+3274	250	2004-10-06 00:00:00	2219	76
+3275	250	2004-10-18 00:00:00	2220	196
+3276	250	2004-10-16 00:00:00	2221	213
+3277	250	2004-11-19 00:00:00	1504	608
+3280	250	2004-10-20 00:00:00	2222	638
+3281	250	2004-10-14 00:00:00	1967	4
+3282	250	2004-10-15 00:00:00	2223	76
+3283	250	2004-10-15 00:00:00	2224	76
+3284	250	2004-10-14 00:00:00	2225	76
+3285	250	2004-12-31 00:00:00	1859	564
+3288	250	2004-12-06 00:00:00	1867	222
+3289	250	2004-12-22 00:00:00	2025	569
+3292	250	2003-08-24 00:00:00	2229	39
+3293	250	2003-08-21 00:00:00	2230	18
+3294	250	2003-08-05 00:00:00	2231	213
+3295	250	2003-09-17 00:00:00	2163	627
+3296	250	2003-09-29 00:00:00	2232	543
+3297	250	2003-09-30 00:00:00	2233	550
+3298	250	2003-08-15 00:00:00	2234	222
+3299	250	2003-07-29 00:00:00	2235	222
+3300	250	2003-06-16 00:00:00	1068	4
+3302	250	2003-04-17 00:00:00	2220	196
+3303	250	2003-05-29 00:00:00	2237	222
+3304	250	2003-04-11 00:00:00	2238	76
+3305	250	2003-03-12 00:00:00	2239	222
+3306	250	2003-03-24 00:00:00	2240	222
+3307	250	2003-03-31 00:00:00	2237	222
+3308	250	2003-03-17 00:00:00	2241	222
+3309	250	2003-03-11 00:00:00	2242	551
+3310	250	2003-03-31 00:00:00	2243	556
+3311	250	2003-03-31 00:00:00	2244	556
+3312	250	2003-01-06 00:00:00	176	28
+3313	250	2003-02-21 00:00:00	2245	222
+3314	250	2003-02-27 00:00:00	2237	222
+3315	250	2003-02-06 00:00:00	2246	222
+3316	250	2003-01-31 00:00:00	2247	222
+3317	250	2003-01-31 00:00:00	2248	222
+3318	250	2003-01-28 00:00:00	2249	4
+3319	250	2003-12-11 00:00:00	2250	640
+3320	250	2003-03-05 00:00:00	2251	641
+3321	250	2003-12-05 00:00:00	2252	642
+3322	250	2004-09-18 00:00:00	2250	640
+3323	250	2004-03-11 00:00:00	13	539
+3324	250	2004-08-19 00:00:00	2253	500
+3325	250	2003-07-30 00:00:00	2254	500
+3326	250	2004-09-22 00:00:00	1514	316
+3327	250	2004-05-16 00:00:00	2255	625
+3328	250	2004-03-12 00:00:00	13	643
+3329	250	2003-06-03 00:00:00	489	546
+3330	250	2004-11-09 00:00:00	2256	625
+3331	250	2004-06-21 00:00:00	1606	554
+3332	250	2004-06-21 00:00:00	2257	554
+3333	250	2004-06-21 00:00:00	2258	554
+3334	250	2004-08-05 00:00:00	2259	644
+3335	250	2004-09-08 00:00:00	2260	645
+3336	250	2004-06-21 00:00:00	2261	554
+3337	250	2004-08-19 00:00:00	1970	398
+3338	250	2004-03-17 00:00:00	13	495
+3339	250	2003-06-12 00:00:00	1970	646
+3340	250	2003-05-14 00:00:00	2262	294
+3341	250	2004-03-30 00:00:00	1011	287
+3342	250	2004-07-29 00:00:00	2263	647
+3343	250	2004-11-05 00:00:00	164	648
+3344	250	2004-08-22 00:00:00	2264	324
+3345	250	2004-11-19 00:00:00	13	442
+3346	250	2004-08-09 00:00:00	947	327
+3347	250	2004-05-25 00:00:00	2265	345
+3348	250	2004-10-25 00:00:00	1621	649
+3349	250	2003-07-15 00:00:00	2266	394
+3350	250	2003-11-13 00:00:00	1514	316
+3351	250	2003-08-21 00:00:00	2267	602
+3352	250	2003-03-31 00:00:00	2268	378
+3353	250	2004-05-07 00:00:00	2261	503
+3354	250	2003-07-29 00:00:00	2269	530
+3355	250	2003-07-11 00:00:00	2270	552
+3356	250	2004-07-01 00:00:00	1301	598
+3357	250	2004-10-05 00:00:00	1455	230
+3358	250	2004-11-08 00:00:00	2271	650
+3359	250	2004-06-26 00:00:00	2272	435
+3360	250	2004-06-10 00:00:00	2273	651
+3361	250	2003-02-06 00:00:00	2262	294
+3362	250	2003-02-06 00:00:00	2274	294
+3363	250	2004-05-13 00:00:00	13	248
+3364	250	2004-05-14 00:00:00	13	652
+3365	250	2003-10-30 00:00:00	2271	650
+3366	250	2004-10-28 00:00:00	2275	541
+3367	250	2003-09-25 00:00:00	13	316
+3371	225	2004-04-07 00:00:00	1869	4
+3376	225	2004-05-06 00:00:00	2280	543
+3381	215	2004-08-17 00:00:00	1931	4
+3382	201	2004-10-08 00:00:00	2282	222
+3383	200	2004-10-20 00:00:00	2283	531
+3384	200	2003-09-12 00:00:00	854	316
+3385	200	2004-08-06 00:00:00	969	331
+3386	200	2004-11-02 00:00:00	2284	531
+3387	200	2004-10-18 00:00:00	2285	653
+3388	200	2003-12-04 00:00:00	2286	654
+3389	200	2004-10-05 00:00:00	2140	222
+3390	200	2004-05-07 00:00:00	2287	503
+3391	200	2003-09-17 00:00:00	1907	631
+3392	200	2004-05-07 00:00:00	2288	503
+3393	200	2004-10-24 00:00:00	2289	531
+3394	200	2003-10-30 00:00:00	2290	655
+3395	200	2004-11-03 00:00:00	2219	76
+3396	200	2004-10-27 00:00:00	2291	656
+3397	200	2004-02-13 00:00:00	2292	657
+3398	200	2003-01-16 00:00:00	2249	4
+3399	200	2004-04-21 00:00:00	2159	627
+3400	200	2004-06-21 00:00:00	2293	4
+3401	200	2003-11-12 00:00:00	2080	627
+3402	200	2004-06-28 00:00:00	1912	4
+3403	200	2004-02-27 00:00:00	2294	543
+3404	200	2004-10-26 00:00:00	2295	531
+3405	200	2004-09-08 00:00:00	2293	4
+3406	200	2004-07-28 00:00:00	2296	4
+3407	200	2004-07-08 00:00:00	2297	222
+3408	200	2004-09-01 00:00:00	1967	4
+3409	200	2004-08-23 00:00:00	2298	76
+3410	200	2004-08-10 00:00:00	2282	222
+3411	200	2004-05-27 00:00:00	2140	222
+3412	200	2004-06-06 00:00:00	2299	521
+3413	200	2004-04-28 00:00:00	2300	586
+3414	200	2004-04-15 00:00:00	2301	554
+3415	200	2004-08-24 00:00:00	2302	324
+3416	200	2003-07-01 00:00:00	2303	335
+3417	200	2003-10-24 00:00:00	45	222
+3418	200	2004-09-08 00:00:00	2304	596
+3419	200	2004-04-27 00:00:00	2305	332
+3420	200	2004-07-22 00:00:00	1164	658
+3421	200	2004-01-23 00:00:00	1271	323
+3422	200	2004-05-14 00:00:00	2306	503
+3423	200	2005-01-05 00:00:00	1024	394
+3424	200	2004-10-13 00:00:00	2307	659
+3425	200	2003-05-20 00:00:00	1271	323
+3426	200	2003-04-18 00:00:00	2308	222
+3427	200	2003-10-10 00:00:00	2309	335
+3428	200	2004-01-21 00:00:00	147	660
+3429	200	2004-04-15 00:00:00	1024	661
+3430	200	2003-05-02 00:00:00	2310	222
+3431	200	2004-11-01 00:00:00	2311	531
+3432	200	2004-10-18 00:00:00	2312	531
+3433	200	2004-09-01 00:00:00	2136	633
+3434	200	2003-07-01 00:00:00	2313	335
+3435	200	2003-10-02 00:00:00	2314	324
+3436	200	2003-05-06 00:00:00	2315	222
+3437	200	2004-03-01 00:00:00	2316	542
+3438	200	2004-11-04 00:00:00	2317	662
+3439	200	2003-06-02 00:00:00	1912	4
+3440	200	2003-11-03 00:00:00	2318	592
+3441	200	2004-12-23 00:00:00	2297	222
+3442	200	2004-05-13 00:00:00	2282	222
+3443	200	2003-10-02 00:00:00	2319	662
+3444	200	2004-07-16 00:00:00	2320	663
+3445	200	2003-04-03 00:00:00	2321	662
+3446	200	2004-05-07 00:00:00	2322	503
+3447	198	2004-06-23 00:00:00	1304	664
+3448	180	2004-04-14 00:00:00	2323	665
+3449	180	2003-11-13 00:00:00	2324	666
+3450	175	2003-03-01 00:00:00	1455	593
+3451	175	2004-10-19 00:00:00	13	323
+3452	175	2004-10-18 00:00:00	2325	664
+3453	175	2003-03-01 00:00:00	2326	593
+3454	150	2004-03-26 00:00:00	2327	597
+3455	150	2003-05-10 00:00:00	1562	299
+3456	150	2003-07-16 00:00:00	2328	287
+3457	150	2004-11-10 00:00:00	2319	667
+3458	150	2003-05-23 00:00:00	2329	299
+3459	150	2004-10-08 00:00:00	1569	668
+3460	150	2004-07-01 00:00:00	2330	287
+3461	150	2004-08-13 00:00:00	2331	669
+3462	150	2003-06-30 00:00:00	2332	287
+3463	150	2004-04-19 00:00:00	1024	299
+3464	150	2003-08-19 00:00:00	2333	598
+3465	150	2003-03-17 00:00:00	2334	338
+3466	150	2003-03-12 00:00:00	2335	657
+3467	150	2003-07-09 00:00:00	2336	287
+3468	150	2004-07-14 00:00:00	1010	287
+3469	150	2004-08-06 00:00:00	1908	287
+3470	150	2003-03-13 00:00:00	13	244
+3471	150	2004-09-22 00:00:00	2337	316
+3472	150	2003-10-22 00:00:00	2319	667
+3473	150	2004-07-29 00:00:00	2338	287
+3474	150	2004-03-08 00:00:00	1457	670
+3475	150	2003-02-19 00:00:00	1572	244
+3476	150	2004-04-02 00:00:00	2339	668
+3477	150	2003-09-24 00:00:00	2337	316
+3478	150	2003-07-29 00:00:00	2340	287
+3479	150	2003-07-23 00:00:00	1024	287
+3480	150	2004-07-09 00:00:00	2341	591
+3481	150	2003-07-23 00:00:00	281	287
+3482	150	2003-09-25 00:00:00	2337	316
+3483	150	2004-05-08 00:00:00	1562	299
+3484	150	2003-07-23 00:00:00	2342	287
+3485	150	2004-04-29 00:00:00	2343	332
+3486	125	2003-05-08 00:00:00	2344	518
+3487	125	2003-04-03 00:00:00	1585	332
+3488	125	2004-08-27 00:00:00	2345	671
+3489	125	2003-08-12 00:00:00	2346	545
+3490	125	2004-06-30 00:00:00	2347	672
+3491	125	2004-04-21 00:00:00	2348	332
+3492	125	2003-08-14 00:00:00	2349	673
+3493	125	2004-04-08 00:00:00	2350	332
+3494	125	2004-09-17 00:00:00	2346	545
+3495	125	2003-08-11 00:00:00	1689	545
+3496	125	2003-10-24 00:00:00	2351	668
+3497	125	2003-04-21 00:00:00	147	624
+3498	120	2004-08-17 00:00:00	1556	319
+3499	100	2004-06-18 00:00:00	2352	655
+3500	100	2003-08-06 00:00:00	2353	674
+3501	100	2004-10-14 00:00:00	2354	531
+3502	100	2003-09-09 00:00:00	2355	332
+3503	100	2004-06-11 00:00:00	2356	291
+3504	100	2003-09-16 00:00:00	2357	332
+3505	100	2004-10-25 00:00:00	2358	398
+3506	100	2003-10-31 00:00:00	2359	655
+3507	100	2004-05-10 00:00:00	2360	675
+3508	100	2004-03-10 00:00:00	2334	338
+3509	100	2004-05-18 00:00:00	1308	503
+3510	100	2004-05-05 00:00:00	2361	503
+3511	100	2004-08-18 00:00:00	2362	676
+3512	100	2003-08-07 00:00:00	2363	601
+3513	100	2004-09-28 00:00:00	1564	338
+3514	100	2004-05-20 00:00:00	2364	346
+3515	100	2004-08-27 00:00:00	13	677
+3516	100	2004-05-05 00:00:00	2365	503
+3517	100	2004-04-25 00:00:00	541	503
+3518	100	2003-10-24 00:00:00	2366	678
+3519	100	2004-05-10 00:00:00	2367	503
+3520	100	2004-01-21 00:00:00	1271	679
+3521	100	2003-07-10 00:00:00	2368	680
+3522	100	2004-10-14 00:00:00	2369	531
+3523	100	2004-03-05 00:00:00	2370	681
+3524	100	2003-09-25 00:00:00	2371	662
+3525	100	2004-10-14 00:00:00	2372	531
+3526	100	2004-09-29 00:00:00	1562	299
+3527	100	2003-08-07 00:00:00	2373	615
+3528	100	2004-08-22 00:00:00	2374	617
+3529	100	2003-02-14 00:00:00	2260	682
+3530	100	2004-08-11 00:00:00	2375	683
+3531	100	2003-12-02 00:00:00	2376	650
+3532	100	2004-10-01 00:00:00	2359	655
+3533	100	2004-08-26 00:00:00	2377	684
+3534	100	2004-08-15 00:00:00	2378	657
+3535	100	2004-09-08 00:00:00	2379	657
+3536	100	2003-08-20 00:00:00	2380	685
+3537	100	2004-02-24 00:00:00	2381	339
+3538	100	2004-02-20 00:00:00	2382	662
+3539	100	2004-11-01 00:00:00	2383	531
+3540	100	2004-11-01 00:00:00	2384	531
+3541	100	2004-08-16 00:00:00	2385	686
+3542	100	2003-09-03 00:00:00	2386	316
+3543	100	2004-11-01 00:00:00	2387	531
+3544	100	2004-11-01 00:00:00	2388	531
+3545	100	2003-07-30 00:00:00	1597	539
+3546	100	2004-03-04 00:00:00	2334	654
+3547	100	2004-10-26 00:00:00	2389	531
+3548	100	2004-10-29 00:00:00	2390	531
+3549	100	2003-03-17 00:00:00	1625	676
+3550	100	2004-10-21 00:00:00	2391	531
+3551	100	2004-10-21 00:00:00	2392	531
+3552	100	2004-10-24 00:00:00	2393	531
+3553	100	2004-10-24 00:00:00	2394	531
+3554	100	2004-10-24 00:00:00	2395	531
+3555	100	2004-07-29 00:00:00	2396	597
+3556	100	2004-10-24 00:00:00	2397	531
+3557	100	2004-11-01 00:00:00	2398	531
+3558	100	2004-08-11 00:00:00	2364	346
+3559	100	2004-04-10 00:00:00	2399	687
+3560	100	2004-10-20 00:00:00	2334	338
+3561	100	2004-10-21 00:00:00	2400	662
+3562	100	2003-09-07 00:00:00	2401	657
+3563	100	2004-04-21 00:00:00	2402	323
+3564	100	2004-03-22 00:00:00	1580	323
+3565	100	2004-11-01 00:00:00	2403	531
+3566	100	2004-09-24 00:00:00	2404	531
+3567	100	2004-10-19 00:00:00	2405	531
+3568	100	2004-03-12 00:00:00	2406	602
+3569	100	2003-09-20 00:00:00	2407	316
+3570	100	2004-09-24 00:00:00	2408	531
+3571	100	2004-10-21 00:00:00	2409	531
+3572	100	2004-09-12 00:00:00	2292	657
+3573	100	2004-10-21 00:00:00	2410	531
+3574	100	2003-08-10 00:00:00	2401	657
+3575	100	2004-05-12 00:00:00	2411	687
+3576	100	2004-08-03 00:00:00	2412	688
+3577	100	2004-10-21 00:00:00	2413	531
+3578	100	2004-10-21 00:00:00	2414	531
+3579	100	2004-10-21 00:00:00	2415	531
+3580	100	2003-03-12 00:00:00	2416	323
+3581	100	2003-02-06 00:00:00	2417	323
+3582	100	2004-10-21 00:00:00	2418	531
+3583	100	2004-10-21 00:00:00	2419	531
+3584	100	2004-10-21 00:00:00	2420	531
+3585	100	2004-10-21 00:00:00	2421	531
+3586	100	2004-10-21 00:00:00	2422	531
+3587	100	2003-06-09 00:00:00	1581	323
+3588	100	2003-05-01 00:00:00	2423	323
+3589	100	2004-10-21 00:00:00	2424	531
+3590	100	2004-09-13 00:00:00	2425	531
+3591	100	2004-10-21 00:00:00	2426	531
+3592	100	2004-10-14 00:00:00	2427	531
+3593	100	2004-01-20 00:00:00	1573	323
+3594	100	2004-06-24 00:00:00	1581	323
+3595	100	2004-05-15 00:00:00	2428	643
+3596	100	2004-10-28 00:00:00	1625	676
+3597	99	2004-05-04 00:00:00	2429	655
+3598	80	2003-11-03 00:00:00	2430	685
+3599	80	2004-05-14 00:00:00	2431	689
+3600	80	2004-05-14 00:00:00	2431	690
+3601	75	2003-07-16 00:00:00	1572	244
+3602	75	2003-07-17 00:00:00	2432	673
+3603	75	2004-06-26 00:00:00	2360	675
+3604	75	2003-01-17 00:00:00	2433	691
+3605	75	2004-09-16 00:00:00	2434	316
+3606	75	2003-09-02 00:00:00	2027	500
+3607	70	2004-07-13 00:00:00	2307	659
+3608	65	2003-10-30 00:00:00	1614	473
+3609	50	2003-09-20 00:00:00	2435	692
+3610	50	2003-06-04 00:00:00	2436	680
+3611	50	2003-12-02 00:00:00	2345	671
+3612	50	2003-06-03 00:00:00	2437	680
+3613	50	2003-08-18 00:00:00	2438	674
+3614	50	2004-08-21 00:00:00	1633	479
+3615	50	2004-02-09 00:00:00	2439	693
+3616	50	2003-09-09 00:00:00	2440	693
+3617	50	2003-10-08 00:00:00	2441	692
+3618	50	2004-04-10 00:00:00	1633	479
+3619	50	2003-09-16 00:00:00	2442	332
+3620	50	2004-05-08 00:00:00	2443	625
+3621	50	2004-04-13 00:00:00	2442	332
+3622	50	2003-08-26 00:00:00	2348	332
+3623	40	2003-11-03 00:00:00	2444	473
+3624	39	2003-02-28 00:00:00	2445	331
+3625	36	2004-10-14 00:00:00	2446	332
+3626	29	2004-05-21 00:00:00	2445	331
+3627	25	2004-06-16 00:00:00	2447	691
+3628	25	2004-08-28 00:00:00	2386	316
+3629	25	2003-05-12 00:00:00	2445	331
+3630	25	2004-10-20 00:00:00	2448	675
+3632	-50	2003-10-08 00:00:00	2435	692
+3633	-250	2004-05-21 00:00:00	2450	222
+3634	-250	2004-05-20 00:00:00	2451	222
+3635	-250	2003-11-04 00:00:00	2162	627
+3636	-264.69999999999999	2004-09-17 00:00:00	2452	694
+3637	-500	2004-03-31 00:00:00	2453	256
+3638	-700	2003-11-24 00:00:00	2454	560
+3639	-700	2004-04-12 00:00:00	2454	560
+3640	-800	2004-08-11 00:00:00	13	542
+3641	-1000	2003-02-01 00:00:00	2455	205
+3642	-1000	2003-07-31 00:00:00	1822	575
+3643	-1000	2003-07-01 00:00:00	1822	575
+3644	-1000	2003-12-31 00:00:00	2456	543
+3645	-2000	2004-07-28 00:00:00	2457	543
+3646	-2500	2003-07-16 00:00:00	2273	529
+3647	-4250	2003-06-09 00:00:00	2458	665
+3648	1800	2003-05-08 00:00:00	2459	695
+3649	500	2003-03-31 00:00:00	2460	696
+3650	25000	2002-02-01 00:00:00	2461	697
+3651	20000	2001-03-07 00:00:00	2462	175
+3652	20000	2002-04-05 00:00:00	489	697
+3653	20000	2002-10-28 00:00:00	2463	697
+3654	15000	2002-12-09 00:00:00	2464	52
+3655	10000	2002-10-15 00:00:00	1881	697
+3656	7500	2002-01-16 00:00:00	489	539
+3657	7500	2001-10-31 00:00:00	489	529
+3658	5000	2002-10-21 00:00:00	2463	697
+3659	5000	2002-07-03 00:00:00	1152	698
+3660	5000	2002-02-13 00:00:00	2465	529
+3661	5000	2002-03-01 00:00:00	489	654
+3662	5000	2002-02-11 00:00:00	2466	699
+3663	5000	2002-03-11 00:00:00	2467	700
+3664	5000	2002-03-06 00:00:00	2468	697
+3665	5000	2002-10-18 00:00:00	2469	701
+3666	5000	2002-10-15 00:00:00	2470	697
+3668	5000	2002-09-27 00:00:00	2472	702
+3672	5000	2002-06-21 00:00:00	13	703
+3676	5000	2001-04-01 00:00:00	1326	704
+3677	5000	2002-02-01 00:00:00	2479	699
+3679	4900	2002-08-14 00:00:00	1881	697
+3681	4000	2002-10-16 00:00:00	1648	697
+3682	4000	2002-06-03 00:00:00	2482	549
+3683	3100	2002-07-12 00:00:00	2483	477
+3684	3100	2002-10-29 00:00:00	2484	674
+3685	3000	2002-08-26 00:00:00	1152	697
+3686	3000	2001-05-21 00:00:00	2485	697
+3687	3000	2001-12-03 00:00:00	489	565
+3688	2500	2001-02-08 00:00:00	2470	705
+3689	2500	2002-06-27 00:00:00	2485	697
+3690	2000	2002-05-28 00:00:00	2486	706
+3691	2000	2001-12-19 00:00:00	1063	707
+3692	2000	2002-04-03 00:00:00	2487	39
+3693	2000	2002-07-17 00:00:00	2488	708
+3694	2000	2002-09-12 00:00:00	489	529
+3695	2000	2002-09-12 00:00:00	2489	76
+3696	2000	2002-10-22 00:00:00	2490	205
+3697	2000	2002-05-29 00:00:00	489	529
+3698	2000	2001-07-25 00:00:00	2491	529
+3699	2000	2001-01-23 00:00:00	2492	705
+3700	1500	2002-07-09 00:00:00	2493	697
+3701	1350	2002-09-18 00:00:00	1762	565
+3702	1250	2002-08-13 00:00:00	2494	709
+3703	1225	2001-10-23 00:00:00	489	248
+3704	1225	2002-01-25 00:00:00	489	710
+3705	1200	2002-10-22 00:00:00	2495	711
+3706	1200	2002-05-31 00:00:00	2496	712
+3708	1100	2002-04-08 00:00:00	2498	287
+3709	1100	2002-11-01 00:00:00	2499	668
+3710	1100	2002-04-18 00:00:00	2500	616
+3711	1000	2002-05-10 00:00:00	1152	244
+3713	1000	2001-05-30 00:00:00	2486	704
+3714	1000	2001-08-03 00:00:00	2502	697
+3715	1000	2001-09-26 00:00:00	2503	697
+3716	1000	2001-11-09 00:00:00	2504	697
+3717	1000	2001-12-28 00:00:00	1687	697
+3718	1000	2001-12-03 00:00:00	489	703
+3719	1000	2001-09-26 00:00:00	2470	713
+3720	1000	2001-04-27 00:00:00	2505	713
+3721	1000	2001-02-06 00:00:00	489	248
+3722	1000	2001-05-31 00:00:00	2506	282
+3723	1000	2001-02-06 00:00:00	2507	714
+3724	1000	2001-05-08 00:00:00	2508	705
+3725	1000	2001-05-01 00:00:00	1883	697
+3726	1000	2001-05-31 00:00:00	1648	697
+3727	1000	2001-07-09 00:00:00	1530	697
+3728	1000	2001-11-09 00:00:00	489	396
+3729	1000	2002-08-01 00:00:00	2482	549
+3730	1000	2002-10-11 00:00:00	2509	697
+3731	1000	2002-12-13 00:00:00	2510	549
+3732	1000	2002-07-01 00:00:00	2511	549
+3733	1000	2002-07-01 00:00:00	2512	549
+3734	1000	2002-07-29 00:00:00	2513	549
+3735	1000	2002-05-06 00:00:00	1798	715
+3736	1000	2001-11-14 00:00:00	2470	716
+3737	1000	2002-11-04 00:00:00	2514	213
+3738	1000	2002-10-18 00:00:00	2515	213
+3739	1000	2002-11-04 00:00:00	2516	177
+3740	1000	2002-10-18 00:00:00	2517	717
+3741	1000	2002-10-31 00:00:00	2518	449
+3742	1000	2002-10-08 00:00:00	2519	718
+3743	1000	2002-10-15 00:00:00	2520	213
+3744	1000	2002-07-26 00:00:00	2521	719
+3745	1000	2002-09-13 00:00:00	2522	720
+3746	1000	2002-09-23 00:00:00	2523	699
+3747	1000	2002-08-23 00:00:00	2524	367
+3748	1000	2002-08-23 00:00:00	2525	367
+3749	1000	2002-09-05 00:00:00	2526	721
+3750	1000	2002-08-23 00:00:00	2527	699
+3751	1000	2002-07-01 00:00:00	2528	722
+3752	1000	2002-07-19 00:00:00	2529	25
+3753	1000	2002-08-28 00:00:00	2530	723
+3754	1000	2002-08-28 00:00:00	2530	723
+3755	1000	2002-07-09 00:00:00	2531	724
+3756	1000	2002-02-28 00:00:00	2532	549
+3757	1000	2002-06-07 00:00:00	1769	549
+3758	1000	2002-06-07 00:00:00	1769	549
+3759	1000	2002-04-05 00:00:00	2533	549
+3760	1000	2002-06-14 00:00:00	2534	549
+3761	1000	2002-06-14 00:00:00	2534	549
+3762	1000	2002-01-07 00:00:00	2535	549
+3763	1000	2002-06-03 00:00:00	2536	562
+3764	1000	2002-01-10 00:00:00	2537	475
+3765	1000	2002-05-03 00:00:00	2538	39
+3766	1000	2002-05-03 00:00:00	2538	39
+3767	1000	2002-06-17 00:00:00	2539	39
+3768	1000	2002-05-20 00:00:00	2540	415
+3769	1000	2002-05-26 00:00:00	1798	388
+3770	1000	2002-06-24 00:00:00	2541	28
+3771	1000	2002-06-30 00:00:00	2542	25
+3772	1000	2002-04-18 00:00:00	2543	367
+3773	1000	2002-07-02 00:00:00	2544	725
+3774	1000	2002-07-02 00:00:00	2544	725
+3775	1000	2002-05-14 00:00:00	2545	726
+3776	1000	2002-05-06 00:00:00	1845	186
+3777	1000	2002-05-28 00:00:00	2	727
+3778	1000	2002-05-28 00:00:00	2	727
+3779	1000	2002-04-29 00:00:00	2546	200
+3780	1000	2002-05-10 00:00:00	2547	728
+3781	1000	2002-06-19 00:00:00	2548	720
+3782	1000	2002-05-16 00:00:00	1065	729
+3783	1000	2002-05-15 00:00:00	2549	730
+3784	1000	2002-05-08 00:00:00	1844	731
+3785	1000	2002-06-24 00:00:00	2550	732
+3786	1000	2002-05-09 00:00:00	1798	733
+3787	1000	2002-05-20 00:00:00	1864	734
+3788	1000	2002-05-15 00:00:00	2551	735
+3789	1000	2002-05-06 00:00:00	1798	715
+3790	1000	2002-05-11 00:00:00	2552	720
+3791	1000	2002-05-11 00:00:00	2552	720
+3792	1000	2002-04-12 00:00:00	1067	4
+3793	1000	2001-12-05 00:00:00	2553	196
+3795	1000	2002-02-04 00:00:00	2555	736
+3796	1000	2002-02-04 00:00:00	2555	736
+3797	1000	2002-01-14 00:00:00	2556	269
+3798	1000	2002-03-21 00:00:00	2557	222
+3799	1000	2002-03-27 00:00:00	2558	28
+3800	1000	2002-03-27 00:00:00	2559	28
+3801	1000	2002-03-29 00:00:00	2541	28
+3802	1000	2002-03-29 00:00:00	2560	28
+3803	1000	2002-02-21 00:00:00	2561	737
+3804	1000	2002-02-21 00:00:00	2561	737
+3805	1000	2002-03-30 00:00:00	2562	413
+3808	1000	2001-11-09 00:00:00	2565	372
+3809	1000	2001-12-18 00:00:00	2566	413
+3810	1000	2001-12-18 00:00:00	2566	413
+3811	1000	2001-07-09 00:00:00	2567	15
+3812	1000	2002-01-07 00:00:00	2568	52
+3813	1000	2001-12-31 00:00:00	2569	222
+3814	1000	2001-09-04 00:00:00	2570	738
+3815	1000	2001-12-14 00:00:00	2571	737
+3816	1000	2001-11-08 00:00:00	2572	549
+3817	1000	2001-12-24 00:00:00	2573	720
+3818	1000	2002-10-03 00:00:00	2574	702
+3819	1000	2002-10-09 00:00:00	2488	739
+3820	1000	2002-11-04 00:00:00	2575	697
+3821	1000	2002-06-13 00:00:00	2576	740
+3822	1000	2002-06-13 00:00:00	2576	740
+3823	1000	2002-04-25 00:00:00	489	587
+3824	1000	2002-05-06 00:00:00	489	710
+3825	1000	2002-03-11 00:00:00	489	331
+3826	1000	2002-06-03 00:00:00	2577	741
+3827	1000	2002-06-25 00:00:00	2578	742
+3828	1000	2002-07-11 00:00:00	2579	294
+3829	1000	2002-04-23 00:00:00	2580	697
+3830	1000	2002-02-13 00:00:00	1877	529
+3831	1000	2001-01-08 00:00:00	2470	585
+3832	1000	2002-09-13 00:00:00	2581	697
+3833	1000	2002-07-22 00:00:00	2582	294
+3834	1000	2001-03-15 00:00:00	2583	743
+3835	1000	2002-03-20 00:00:00	2583	743
+3836	1000	2002-08-21 00:00:00	489	709
+3837	1000	2002-09-10 00:00:00	2584	744
+3838	1000	2002-10-24 00:00:00	2553	196
+3839	1000	2002-10-09 00:00:00	1879	585
+3840	1000	2001-07-23 00:00:00	2396	585
+3841	1000	2001-12-03 00:00:00	489	565
+3842	1000	2001-01-08 00:00:00	2470	585
+3843	1000	2002-10-09 00:00:00	489	585
+3844	1000	2003-01-11 00:00:00	2585	745
+3845	1000	2001-01-16 00:00:00	2568	52
+3846	1000	2001-05-23 00:00:00	2586	746
+3847	1000	2001-06-25 00:00:00	2587	720
+3848	1000	2001-06-08 00:00:00	2588	200
+3849	1000	2001-04-08 00:00:00	2589	730
+3850	1000	2001-03-27 00:00:00	2590	730
+3851	1000	2001-02-14 00:00:00	2591	549
+3852	1000	2001-06-11 00:00:00	2592	549
+3853	1000	2001-04-23 00:00:00	2593	28
+3854	1000	2001-04-23 00:00:00	2560	28
+3855	1000	2001-04-10 00:00:00	2594	28
+3856	1000	2001-05-10 00:00:00	2559	28
+3857	1000	2001-05-11 00:00:00	2559	28
+3858	1000	2001-04-23 00:00:00	2558	28
+3859	1000	2001-06-07 00:00:00	2595	747
+3860	1000	2001-03-21 00:00:00	2596	413
+3861	1000	2001-06-24 00:00:00	2514	213
+3862	1000	2001-06-24 00:00:00	2514	213
+3863	1000	2001-09-27 00:00:00	2597	724
+3864	1000	2002-10-22 00:00:00	2598	748
+3865	1000	2002-04-16 00:00:00	2599	748
+3866	1000	2001-04-26 00:00:00	2600	748
+3867	1000	2001-10-30 00:00:00	2601	98
+3868	1000	2001-10-15 00:00:00	2602	200
+3869	1000	2001-12-27 00:00:00	2603	200
+3870	1000	2001-12-27 00:00:00	2604	200
+3871	1000	2001-12-31 00:00:00	2605	200
+3872	1000	2001-12-27 00:00:00	2546	200
+3873	900	2001-12-27 00:00:00	2606	39
+3874	850	2002-07-12 00:00:00	2607	287
+3876	800	2002-08-23 00:00:00	2609	708
+3877	800	2001-08-07 00:00:00	489	565
+3879	800	2001-08-09 00:00:00	2597	712
+3881	750	2001-12-07 00:00:00	489	565
+3882	750	2001-05-03 00:00:00	1907	282
+3883	750	2002-10-15 00:00:00	2612	213
+3884	750	2002-07-22 00:00:00	1067	4
+3886	700	2002-09-23 00:00:00	2614	699
+3887	650	2002-09-20 00:00:00	2615	749
+3888	650	2002-04-24 00:00:00	2616	750
+3889	650	2002-10-10 00:00:00	2617	741
+3890	650	2002-06-20 00:00:00	1928	598
+3891	600	2002-04-29 00:00:00	489	239
+3893	600	2001-08-17 00:00:00	2499	668
+3894	600	2002-05-02 00:00:00	2619	592
+3895	600	2002-05-10 00:00:00	1173	585
+3896	600	2001-01-18 00:00:00	2620	750
+3897	550	2002-02-28 00:00:00	489	430
+3898	550	2002-04-02 00:00:00	2621	287
+3899	500	2001-11-20 00:00:00	2622	25
+3900	500	2002-08-22 00:00:00	2623	751
+3901	500	2001-08-27 00:00:00	1269	714
+3902	500	2001-05-11 00:00:00	2624	246
+3903	500	2002-09-11 00:00:00	2625	750
+3904	500	2002-06-20 00:00:00	2626	28
+3905	500	2002-08-23 00:00:00	2524	367
+3906	500	2001-11-20 00:00:00	2627	25
+3907	500	2002-09-25 00:00:00	2628	367
+3908	500	2002-06-20 00:00:00	2626	28
+3909	500	2001-11-20 00:00:00	2629	25
+3911	500	2002-09-10 00:00:00	2631	15
+3912	500	2002-02-06 00:00:00	2632	752
+3913	500	2002-06-05 00:00:00	2633	28
+3914	500	2002-04-17 00:00:00	2634	246
+3915	500	2002-04-17 00:00:00	2634	246
+3916	500	2001-02-09 00:00:00	2635	751
+3917	500	2002-03-27 00:00:00	2593	28
+3918	500	2001-03-01 00:00:00	2636	751
+3919	500	2002-09-18 00:00:00	2637	753
+3920	500	2002-08-14 00:00:00	2638	754
+3921	500	2002-04-09 00:00:00	2639	269
+3922	500	2002-09-06 00:00:00	2640	4
+3923	500	2002-10-16 00:00:00	2641	755
+3924	500	2002-04-19 00:00:00	2642	52
+3925	500	2001-05-03 00:00:00	2032	335
+3927	500	2001-06-21 00:00:00	2644	756
+3929	500	2001-12-03 00:00:00	2646	730
+3931	500	2001-03-20 00:00:00	2648	417
+3932	500	2001-06-21 00:00:00	2649	756
+3933	500	2001-04-05 00:00:00	2650	28
+3934	500	2001-05-11 00:00:00	2651	28
+3935	500	2002-10-09 00:00:00	2652	757
+3936	500	2001-12-05 00:00:00	489	542
+3937	500	2001-04-19 00:00:00	2653	222
+3938	500	2002-04-08 00:00:00	2654	549
+3939	500	2002-10-24 00:00:00	1530	697
+3940	500	2002-10-24 00:00:00	1530	697
+3942	500	2001-05-01 00:00:00	2656	697
+3943	500	2002-10-24 00:00:00	1530	697
+3944	500	2002-02-28 00:00:00	2532	549
+3945	500	2002-03-27 00:00:00	2594	28
+3946	500	2002-08-28 00:00:00	2637	753
+3947	500	2002-11-11 00:00:00	2657	287
+3948	500	2002-06-26 00:00:00	2658	758
+3949	500	2002-02-28 00:00:00	2659	759
+3950	500	2002-11-12 00:00:00	2660	213
+3951	500	2002-08-05 00:00:00	2661	760
+3952	500	2002-07-08 00:00:00	2662	697
+3954	500	2002-03-27 00:00:00	2664	28
+3955	500	2002-06-28 00:00:00	2019	742
+3956	500	2002-10-24 00:00:00	2665	761
+3957	500	2002-05-27 00:00:00	2666	762
+3958	500	2002-10-02 00:00:00	2667	763
+3959	500	2002-02-20 00:00:00	489	741
+3960	500	2002-08-30 00:00:00	2668	764
+3961	500	2002-07-08 00:00:00	1269	714
+3962	500	2001-02-08 00:00:00	2669	765
+3963	500	2002-02-05 00:00:00	2558	28
+3965	500	2001-12-11 00:00:00	2671	28
+3966	500	2002-06-30 00:00:00	2672	213
+3967	500	2001-12-13 00:00:00	2673	377
+3968	500	2001-10-15 00:00:00	2674	4
+3969	500	2002-06-20 00:00:00	2671	28
+3971	500	2001-01-08 00:00:00	2676	98
+3972	500	2002-08-28 00:00:00	2572	549
+3974	500	2002-07-08 00:00:00	2677	549
+3975	500	2002-07-08 00:00:00	2677	549
+3976	500	\N	2678	766
+3977	500	2002-05-24 00:00:00	310	287
+3978	500	2001-09-06 00:00:00	2679	767
+3980	500	2001-11-09 00:00:00	2665	427
+3981	500	2002-12-31 00:00:00	2681	52
+3982	500	2002-10-18 00:00:00	2682	585
+3983	500	2002-09-05 00:00:00	2683	722
+3984	500	2002-07-18 00:00:00	2684	287
+3985	500	2002-05-31 00:00:00	489	219
+3986	500	2002-08-31 00:00:00	2685	335
+3987	500	2002-03-12 00:00:00	489	589
+3988	500	2002-06-26 00:00:00	2572	549
+3989	500	2002-08-14 00:00:00	1321	744
+3990	500	2002-08-14 00:00:00	2686	744
+3991	500	2002-08-29 00:00:00	2032	742
+3992	500	2002-08-05 00:00:00	489	539
+3993	500	2002-08-09 00:00:00	2307	659
+3994	500	2002-10-15 00:00:00	2660	213
+3995	500	2002-09-18 00:00:00	489	542
+3996	500	2002-06-11 00:00:00	2687	768
+3997	500	2002-07-22 00:00:00	2688	216
+3998	500	2002-08-30 00:00:00	2689	697
+3999	500	2002-08-01 00:00:00	2690	697
+4000	500	2002-06-25 00:00:00	489	769
+4001	500	2002-08-28 00:00:00	2691	753
+4002	500	2002-09-19 00:00:00	1889	697
+4003	500	2001-05-29 00:00:00	2692	549
+4004	500	2001-07-09 00:00:00	1530	697
+4006	500	2001-02-15 00:00:00	2693	770
+4007	500	2002-10-10 00:00:00	2694	705
+4008	500	2002-10-14 00:00:00	2695	771
+4009	500	2002-03-20 00:00:00	489	436
+4010	500	2001-06-05 00:00:00	2696	240
+4011	500	2002-11-04 00:00:00	1892	238
+4012	500	2002-01-07 00:00:00	2697	625
+4013	500	2002-11-12 00:00:00	2698	714
+4014	500	2001-04-18 00:00:00	2699	712
+4015	500	2002-06-03 00:00:00	2700	772
+4016	450	2001-03-13 00:00:00	2701	751
+4018	400	2002-01-10 00:00:00	2496	712
+4019	400	2002-07-29 00:00:00	2703	565
+4021	400	2002-03-12 00:00:00	489	291
+4022	400	2001-01-23 00:00:00	2705	712
+4023	400	2002-02-20 00:00:00	2706	712
+4024	375	2002-07-31 00:00:00	2011	331
+4025	375	2002-07-23 00:00:00	969	331
+4026	360	2002-09-12 00:00:00	2707	703
+4028	350	2002-08-21 00:00:00	2709	741
+4029	350	2002-03-07 00:00:00	489	442
+4030	350	2001-07-30 00:00:00	969	331
+4031	350	2002-09-26 00:00:00	2710	335
+4032	350	2002-09-16 00:00:00	2711	741
+4033	350	2002-02-04 00:00:00	489	773
+4034	350	2002-06-20 00:00:00	2712	287
+4035	350	2002-06-17 00:00:00	1910	216
+4036	350	2002-07-11 00:00:00	489	229
+4037	350	2001-08-15 00:00:00	1877	529
+4038	350	2002-05-06 00:00:00	489	261
+4039	350	2002-09-13 00:00:00	2713	542
+4040	350	2002-10-28 00:00:00	489	245
+4041	350	2002-03-19 00:00:00	489	221
+4042	350	2002-01-28 00:00:00	489	293
+4043	350	2001-05-29 00:00:00	2714	265
+4044	350	2002-01-25 00:00:00	489	774
+4045	350	2002-06-03 00:00:00	489	238
+4046	335	2002-03-20 00:00:00	2597	712
+4047	335	2002-06-17 00:00:00	2597	712
+4048	325	2001-08-06 00:00:00	2715	601
+4049	300	2002-10-16 00:00:00	2716	775
+4050	300	2002-09-20 00:00:00	2717	222
+4051	300	2002-07-22 00:00:00	2718	751
+4052	300	2002-07-26 00:00:00	2719	751
+4053	300	2002-08-27 00:00:00	2720	751
+4054	300	2002-09-04 00:00:00	2721	751
+4055	300	2002-01-10 00:00:00	2722	4
+4056	300	2001-02-22 00:00:00	2723	751
+4057	300	2002-10-08 00:00:00	2724	333
+4058	300	2002-09-23 00:00:00	2614	699
+4059	300	2002-10-17 00:00:00	2103	593
+4060	300	2002-08-16 00:00:00	1569	668
+4061	300	2002-05-22 00:00:00	2725	740
+4062	300	2002-10-28 00:00:00	2463	697
+4063	300	2002-04-02 00:00:00	2726	592
+4064	300	2002-06-05 00:00:00	2727	241
+4065	300	2002-10-09 00:00:00	2728	222
+4066	300	2002-04-02 00:00:00	489	776
+4067	300	2002-10-01 00:00:00	2729	751
+4068	300	2002-01-28 00:00:00	2730	777
+4069	300	2002-10-02 00:00:00	2731	751
+4070	300	2002-03-05 00:00:00	489	778
+4071	300	2002-03-21 00:00:00	489	779
+4072	300	2002-03-04 00:00:00	2688	780
+4073	300	2002-02-20 00:00:00	489	248
+4074	300	2002-01-16 00:00:00	489	467
+4075	300	2002-01-16 00:00:00	489	283
+4076	300	2002-03-19 00:00:00	2732	597
+4077	300	2002-01-18 00:00:00	1083	781
+4078	300	2002-02-06 00:00:00	489	782
+4079	300	2002-09-12 00:00:00	489	216
+4080	300	2002-07-25 00:00:00	2733	333
+4081	300	2002-11-14 00:00:00	2734	222
+4082	300	2002-07-28 00:00:00	489	783
+4083	300	2002-10-31 00:00:00	2735	287
+4084	300	2002-07-30 00:00:00	2103	593
+4085	300	2002-08-29 00:00:00	2736	428
+4086	300	2002-07-31 00:00:00	962	287
+4087	300	2002-08-20 00:00:00	489	784
+4088	300	2001-12-07 00:00:00	2314	324
+4089	300	2002-07-15 00:00:00	2737	785
+4090	300	2002-03-08 00:00:00	489	465
+4092	300	2001-08-03 00:00:00	489	216
+4093	300	2002-02-20 00:00:00	489	786
+4094	300	2001-02-12 00:00:00	2739	222
+4095	300	2001-07-27 00:00:00	1457	670
+4096	300	2001-06-13 00:00:00	974	333
+4097	300	2001-07-20 00:00:00	2740	542
+4098	300	2001-04-18 00:00:00	884	780
+4102	300	2002-10-01 00:00:00	2744	741
+4104	300	2002-03-12 00:00:00	2745	52
+4105	300	2002-05-22 00:00:00	2746	787
+4106	300	2002-04-26 00:00:00	2747	751
+4107	300	2002-05-01 00:00:00	2748	751
+4108	300	2002-05-13 00:00:00	2749	751
+4109	300	2002-05-20 00:00:00	2750	751
+4110	300	2002-05-21 00:00:00	2751	751
+4111	300	2002-06-13 00:00:00	2752	751
+4112	300	2002-06-17 00:00:00	2753	751
+4113	300	2002-03-01 00:00:00	2754	751
+4114	275	2002-04-08 00:00:00	310	287
+4115	275	2002-03-05 00:00:00	1908	287
+4116	275	2001-03-19 00:00:00	2597	712
+4117	275	2001-05-24 00:00:00	2597	712
+4118	275	2001-09-26 00:00:00	489	788
+4119	275	2002-04-08 00:00:00	2755	287
+4120	250	2002-07-07 00:00:00	489	546
+4121	250	2001-05-30 00:00:00	2756	4
+4122	250	2002-01-18 00:00:00	2757	625
+4123	250	2001-08-10 00:00:00	2758	18
+4124	250	2001-05-21 00:00:00	2759	4
+4125	250	2001-07-17 00:00:00	2674	4
+4126	250	2002-05-09 00:00:00	489	789
+4127	250	2002-06-03 00:00:00	489	680
+4128	250	2002-10-25 00:00:00	2760	625
+4129	250	2001-06-04 00:00:00	2758	18
+4130	250	2001-02-05 00:00:00	2759	4
+4131	250	2002-10-08 00:00:00	2761	705
+4132	250	2001-02-20 00:00:00	2762	323
+4133	250	2002-11-05 00:00:00	2763	743
+4134	250	2002-08-13 00:00:00	489	664
+4135	250	2002-08-15 00:00:00	2764	698
+4136	250	2001-05-25 00:00:00	2765	643
+4137	250	2002-06-12 00:00:00	1271	323
+4139	250	2002-03-11 00:00:00	489	790
+4140	250	2002-10-02 00:00:00	2767	627
+4141	250	2002-09-10 00:00:00	2768	201
+4142	250	2002-08-30 00:00:00	2271	744
+4143	250	2002-05-09 00:00:00	2769	316
+4144	250	2002-09-24 00:00:00	2770	642
+4145	250	2002-04-03 00:00:00	489	791
+4146	250	2002-03-19 00:00:00	489	792
+4147	250	2002-10-23 00:00:00	2725	740
+4148	250	2002-10-07 00:00:00	2681	52
+4149	250	2001-03-22 00:00:00	2771	372
+4150	250	2002-02-11 00:00:00	2594	28
+4151	250	2002-09-12 00:00:00	323	287
+4152	250	2002-04-22 00:00:00	2772	697
+4153	250	2002-02-20 00:00:00	489	219
+4154	250	2002-11-03 00:00:00	2773	614
+4155	250	2002-06-24 00:00:00	2215	549
+4156	250	2002-05-30 00:00:00	2774	793
+4157	250	2002-01-16 00:00:00	2688	788
+4158	250	2001-05-24 00:00:00	2688	780
+4159	250	2002-10-22 00:00:00	2775	775
+4160	250	2001-02-07 00:00:00	489	248
+4161	250	2002-10-30 00:00:00	1602	794
+4162	250	2001-04-18 00:00:00	2776	28
+4163	250	2002-02-28 00:00:00	489	795
+4164	250	2001-12-05 00:00:00	2777	796
+4165	250	2002-10-21 00:00:00	2778	797
+4166	250	2001-06-08 00:00:00	2779	283
+4167	250	2002-08-13 00:00:00	2780	668
+4168	250	2002-02-26 00:00:00	2781	76
+4169	250	2002-11-05 00:00:00	2782	798
+4170	250	2002-12-30 00:00:00	2160	574
+4171	250	2002-10-02 00:00:00	489	788
+4172	250	2001-05-15 00:00:00	2396	697
+4173	250	2002-11-04 00:00:00	1306	558
+4174	250	2001-06-26 00:00:00	2783	749
+4175	250	2002-10-17 00:00:00	2326	797
+4176	250	2002-04-17 00:00:00	2784	799
+4177	250	2002-03-26 00:00:00	2785	76
+4178	250	2002-06-27 00:00:00	2786	241
+4179	250	2002-06-11 00:00:00	489	244
+4180	250	2002-04-05 00:00:00	2787	592
+4181	250	2002-07-11 00:00:00	2788	713
+4182	250	2002-01-25 00:00:00	2789	781
+4183	250	2001-06-07 00:00:00	2790	697
+4184	250	2001-04-17 00:00:00	2791	76
+4185	250	2002-10-22 00:00:00	2362	800
+4186	250	2001-01-17 00:00:00	2792	746
+4187	250	2002-11-01 00:00:00	2271	650
+4188	250	2002-03-29 00:00:00	489	794
+4189	250	2002-10-21 00:00:00	2793	15
+4190	250	2002-02-16 00:00:00	2794	758
+4191	250	2002-10-15 00:00:00	2612	213
+4192	250	2002-02-11 00:00:00	489	298
+4193	250	2002-03-19 00:00:00	2795	801
+4194	250	2001-03-29 00:00:00	2763	743
+4195	250	2002-10-26 00:00:00	2771	372
+4196	250	2002-08-23 00:00:00	2503	697
+4197	250	2002-03-26 00:00:00	2796	752
+4198	250	2002-01-15 00:00:00	489	323
+4199	250	2002-03-20 00:00:00	489	495
+4200	250	2002-10-15 00:00:00	2797	213
+4201	250	2002-06-08 00:00:00	2798	802
+4202	250	2002-10-15 00:00:00	2799	213
+4203	250	2002-10-14 00:00:00	2799	213
+4204	250	2002-08-24 00:00:00	2800	803
+4205	250	2001-10-11 00:00:00	1514	316
+4206	250	2002-01-11 00:00:00	2688	804
+4207	250	2002-01-23 00:00:00	489	691
+4208	250	2002-09-25 00:00:00	2801	805
+4209	250	2001-10-26 00:00:00	2792	746
+4210	250	2002-04-04 00:00:00	489	601
+4211	250	2002-03-07 00:00:00	489	806
+4212	250	2002-07-25 00:00:00	2802	4
+4213	250	2002-06-28 00:00:00	2803	417
+4214	250	2002-03-21 00:00:00	2804	702
+4215	250	2001-05-02 00:00:00	2805	377
+4216	250	2002-08-14 00:00:00	2806	807
+4217	250	2002-04-18 00:00:00	2673	377
+4218	250	2002-10-24 00:00:00	2807	808
+4219	250	2002-08-20 00:00:00	2808	367
+4220	250	2001-04-10 00:00:00	2809	743
+4221	250	2001-11-20 00:00:00	2810	25
+4222	250	2002-07-12 00:00:00	2811	705
+4223	250	2002-01-18 00:00:00	2812	781
+4224	250	2002-09-06 00:00:00	2813	28
+4225	250	2002-01-02 00:00:00	2759	4
+4226	250	2002-06-04 00:00:00	2640	4
+4227	250	2002-06-20 00:00:00	2814	28
+4229	250	2002-09-13 00:00:00	2758	18
+4231	250	2002-02-22 00:00:00	489	643
+4232	250	2001-05-15 00:00:00	2817	412
+4233	250	2002-06-17 00:00:00	2818	267
+4234	250	2002-09-11 00:00:00	489	587
+4236	250	2002-08-29 00:00:00	2802	4
+4237	250	2002-03-28 00:00:00	2819	15
+4238	250	2002-01-04 00:00:00	2271	650
+4239	250	2002-01-04 00:00:00	2820	650
+4240	250	2002-01-16 00:00:00	489	316
+4241	250	2002-09-20 00:00:00	2821	809
+4242	250	2002-08-30 00:00:00	1152	244
+4243	248	2001-07-01 00:00:00	2822	810
+4244	200	2002-09-10 00:00:00	2796	752
+4245	200	2002-01-23 00:00:00	2823	627
+4246	200	2001-04-05 00:00:00	2824	811
+4247	200	2002-11-01 00:00:00	2825	593
+4248	200	2002-10-02 00:00:00	489	794
+4250	200	2001-06-11 00:00:00	2826	720
+4251	200	2001-06-18 00:00:00	2827	240
+4252	200	2002-10-30 00:00:00	2828	267
+4253	200	2002-09-27 00:00:00	2326	797
+4254	200	2001-03-29 00:00:00	2829	331
+4255	200	2002-10-07 00:00:00	972	332
+4256	200	2002-08-23 00:00:00	2830	713
+4257	200	2002-02-20 00:00:00	489	468
+4258	200	2002-08-19 00:00:00	489	801
+4259	200	2002-05-13 00:00:00	2831	323
+4260	200	2002-10-31 00:00:00	2709	795
+4261	200	2002-10-18 00:00:00	2832	222
+4262	200	2002-03-07 00:00:00	2833	812
+4263	200	2002-05-09 00:00:00	310	287
+4265	200	2001-12-30 00:00:00	489	546
+4266	200	2001-10-22 00:00:00	2834	4
+4267	200	2002-06-05 00:00:00	2835	806
+4268	200	2001-08-30 00:00:00	2345	671
+4269	200	2002-04-23 00:00:00	1546	332
+4270	200	2002-10-30 00:00:00	2836	205
+4271	200	2001-12-31 00:00:00	2714	265
+4272	200	2002-03-12 00:00:00	489	216
+4273	200	2002-06-21 00:00:00	2837	287
+4274	200	2002-03-11 00:00:00	2828	267
+4275	200	2002-08-01 00:00:00	2838	813
+4276	200	2002-09-18 00:00:00	489	323
+4277	200	2001-09-21 00:00:00	2839	201
+4278	200	2002-10-31 00:00:00	2840	814
+4279	200	2002-02-20 00:00:00	2841	267
+4280	200	2002-08-06 00:00:00	2842	815
+4281	200	2002-03-27 00:00:00	2843	816
+4282	200	2001-08-08 00:00:00	2844	817
+4283	200	2002-07-25 00:00:00	2845	331
+4284	200	2002-02-08 00:00:00	147	778
+4285	200	2002-07-17 00:00:00	2846	597
+4286	200	2002-05-24 00:00:00	2847	818
+4287	200	2002-03-25 00:00:00	2829	331
+4289	200	\N	2849	819
+4290	200	2001-11-27 00:00:00	2850	614
+4292	199	2002-02-25 00:00:00	489	749
+4293	175	2001-05-31 00:00:00	2851	282
+4294	175	2002-06-12 00:00:00	2326	797
+4295	175	2001-05-31 00:00:00	2852	282
+4296	150	2002-07-24 00:00:00	2853	287
+4297	150	2002-01-25 00:00:00	2854	781
+4298	150	2002-01-25 00:00:00	2855	781
+4299	150	2002-04-05 00:00:00	2856	820
+4300	150	2002-06-15 00:00:00	1501	781
+4301	150	2001-05-21 00:00:00	1888	589
+4302	150	2002-10-21 00:00:00	489	589
+4303	150	2002-04-26 00:00:00	1562	821
+4304	150	2002-09-17 00:00:00	2857	822
+4305	150	2002-08-16 00:00:00	2858	823
+4306	150	2002-09-16 00:00:00	13	821
+4307	150	2002-09-18 00:00:00	2859	824
+4308	150	2002-08-14 00:00:00	2860	331
+4309	150	2002-09-12 00:00:00	489	316
+4310	150	2002-09-19 00:00:00	2861	316
+4311	150	2001-11-26 00:00:00	1569	668
+4312	150	2002-07-18 00:00:00	2862	825
+4313	150	2002-09-23 00:00:00	147	664
+4314	150	2002-07-23 00:00:00	2336	287
+4315	150	2002-07-29 00:00:00	2863	287
+4316	150	2002-09-12 00:00:00	2864	648
+4317	150	2002-08-06 00:00:00	2362	705
+4318	150	2002-06-03 00:00:00	2865	681
+4319	150	2001-07-31 00:00:00	2845	331
+4320	150	2001-10-09 00:00:00	2337	316
+4321	150	2002-03-11 00:00:00	2335	657
+4322	150	2002-02-26 00:00:00	489	244
+4323	150	2002-10-21 00:00:00	489	826
+4324	150	2001-12-06 00:00:00	2866	589
+4325	150	2002-10-21 00:00:00	1455	826
+4326	150	2001-07-27 00:00:00	2867	647
+4327	150	2001-08-23 00:00:00	2868	244
+4328	150	2001-04-06 00:00:00	1562	821
+4329	150	2001-12-28 00:00:00	1501	781
+4330	150	2002-10-28 00:00:00	2869	436
+4331	150	2002-10-28 00:00:00	2869	436
+4332	150	2002-04-09 00:00:00	2334	338
+4333	150	2002-06-07 00:00:00	2870	827
+4334	150	2002-04-17 00:00:00	2871	430
+4335	140	2002-04-22 00:00:00	2715	601
+4336	140	2001-05-02 00:00:00	2715	601
+4337	130	2002-04-10 00:00:00	2872	598
+4338	130	2002-04-05 00:00:00	2873	820
+4339	130	2002-07-29 00:00:00	2874	703
+4340	130	2002-09-11 00:00:00	2363	601
+4341	125	2001-04-20 00:00:00	1585	332
+4342	125	2001-06-29 00:00:00	2875	697
+4343	125	2001-06-29 00:00:00	2876	697
+4344	125	2002-08-21 00:00:00	2877	521
+4345	125	2002-08-22 00:00:00	2878	828
+4346	125	2002-07-18 00:00:00	2879	345
+4347	125	2001-04-26 00:00:00	2348	332
+4348	125	2002-04-05 00:00:00	1585	332
+4349	125	2001-12-04 00:00:00	489	589
+4350	125	2002-03-15 00:00:00	2508	705
+4351	110	2002-09-11 00:00:00	2880	649
+4352	105	2002-04-22 00:00:00	1615	601
+4353	100	2001-03-02 00:00:00	2401	657
+4354	100	2002-04-02 00:00:00	489	679
+4355	100	2002-05-24 00:00:00	2328	287
+4356	100	2002-05-02 00:00:00	1455	425
+4357	100	2001-06-10 00:00:00	1907	829
+4358	100	2001-07-20 00:00:00	2881	598
+4359	100	2001-09-25 00:00:00	2882	585
+4360	100	2001-09-25 00:00:00	2883	585
+4361	100	2001-09-24 00:00:00	1907	829
+4362	100	2002-10-18 00:00:00	1455	593
+4363	100	2001-07-27 00:00:00	2263	647
+4364	100	2001-06-04 00:00:00	2884	654
+4365	100	2001-06-04 00:00:00	2885	654
+4366	100	2002-10-08 00:00:00	489	229
+4367	100	2002-07-02 00:00:00	1455	826
+4368	100	2002-08-28 00:00:00	2886	708
+4369	100	2001-08-20 00:00:00	2430	283
+4370	100	2001-03-08 00:00:00	2378	657
+4371	100	2002-10-01 00:00:00	2887	741
+4372	100	2002-10-01 00:00:00	2888	741
+4373	100	2001-12-05 00:00:00	1455	671
+4374	100	2002-04-30 00:00:00	2407	316
+4375	100	2001-11-20 00:00:00	2715	671
+4376	100	2002-09-13 00:00:00	1878	709
+4377	100	2001-04-19 00:00:00	2889	430
+4378	100	2001-08-03 00:00:00	2890	465
+4379	100	2002-07-22 00:00:00	2891	446
+4380	100	2002-09-09 00:00:00	2290	655
+4381	100	2002-09-06 00:00:00	2890	465
+4382	100	2002-09-18 00:00:00	1585	332
+4383	100	2002-05-09 00:00:00	2892	670
+4384	100	2001-04-19 00:00:00	1455	711
+4385	100	2001-06-20 00:00:00	2893	293
+4386	100	2002-03-21 00:00:00	1455	711
+4387	100	2002-10-02 00:00:00	1024	821
+4388	100	2001-07-11 00:00:00	2894	697
+4389	100	2002-02-23 00:00:00	2379	657
+4390	100	2002-11-08 00:00:00	1455	601
+4391	100	2002-06-03 00:00:00	2895	830
+4392	100	2002-05-02 00:00:00	2264	831
+4393	100	2001-06-29 00:00:00	2790	697
+4394	100	2001-09-29 00:00:00	1455	711
+4395	100	2002-11-08 00:00:00	2715	601
+4396	100	2002-07-31 00:00:00	2896	753
+4397	100	2002-02-17 00:00:00	2352	657
+4398	100	2001-08-23 00:00:00	2779	283
+4399	100	2001-06-22 00:00:00	2874	703
+4400	100	2002-11-05 00:00:00	2897	697
+4401	100	2002-08-01 00:00:00	2898	832
+4402	100	2002-09-26 00:00:00	1562	821
+4403	100	2002-10-20 00:00:00	2899	705
+4404	100	2002-06-11 00:00:00	2900	654
+4405	100	2002-02-21 00:00:00	2423	323
+4406	100	2002-03-28 00:00:00	2901	655
+4407	100	2002-08-14 00:00:00	1881	697
+4408	100	2002-08-26 00:00:00	2902	713
+4409	100	2001-12-30 00:00:00	2903	625
+4410	100	2002-04-24 00:00:00	1878	784
+4411	100	2001-08-28 00:00:00	2904	655
+4412	100	2001-12-19 00:00:00	2905	697
+4413	100	2002-05-17 00:00:00	1907	703
+4414	100	2002-10-09 00:00:00	2906	833
+4415	100	2002-10-22 00:00:00	489	643
+4416	100	2002-12-14 00:00:00	2907	601
+4417	100	2002-01-18 00:00:00	2874	703
+4418	100	2002-10-16 00:00:00	2908	287
+4419	100	2002-07-02 00:00:00	2057	789
+4420	100	2002-02-21 00:00:00	2909	323
+4421	100	2002-09-13 00:00:00	2910	741
+4422	100	2002-09-13 00:00:00	1285	741
+4423	100	2002-09-18 00:00:00	2911	741
+4424	100	2002-07-01 00:00:00	147	824
+4425	100	2002-10-26 00:00:00	2912	436
+4426	100	2002-02-22 00:00:00	1573	323
+4427	100	2002-09-04 00:00:00	2913	834
+4428	100	2002-09-16 00:00:00	2914	835
+4429	100	2002-04-24 00:00:00	2915	323
+4430	100	2002-08-21 00:00:00	2916	477
+4431	100	2002-05-20 00:00:00	1581	323
+4432	100	2002-07-17 00:00:00	1455	593
+4433	100	2001-02-26 00:00:00	2379	657
+4434	100	2001-03-05 00:00:00	2335	657
+4435	100	2002-09-09 00:00:00	2407	316
+4436	100	2002-08-20 00:00:00	2917	316
+4437	100	2001-09-10 00:00:00	2918	705
+4438	100	2002-09-11 00:00:00	2919	836
+4439	100	2002-08-30 00:00:00	2920	585
+4440	100	2002-07-25 00:00:00	2921	670
+4441	100	2002-09-26 00:00:00	2922	837
+4442	100	2002-08-18 00:00:00	2401	657
+4443	100	2002-05-28 00:00:00	2787	420
+4444	100	2002-02-01 00:00:00	2923	838
+4445	100	2001-05-05 00:00:00	2924	323
+4446	100	2002-05-14 00:00:00	2925	799
+4447	100	2002-08-27 00:00:00	1633	479
+4448	100	2002-09-09 00:00:00	2926	714
+4449	100	2002-09-09 00:00:00	2927	714
+4450	100	2002-06-11 00:00:00	2928	654
+4451	100	2002-09-11 00:00:00	1455	601
+4452	99	2002-04-26 00:00:00	2352	655
+4453	99	2002-04-26 00:00:00	2904	655
+4454	90	2002-08-02 00:00:00	2929	742
+4455	80	2002-05-15 00:00:00	2360	675
+4456	80	2001-06-04 00:00:00	2930	654
+4457	75	2002-09-04 00:00:00	2931	741
+4458	75	2001-12-04 00:00:00	2932	697
+4459	75	2001-02-22 00:00:00	2264	324
+4460	75	2002-08-02 00:00:00	1012	244
+4461	75	2002-10-15 00:00:00	2933	833
+4462	75	2002-10-01 00:00:00	2934	803
+4463	75	2002-10-23 00:00:00	2935	652
+4464	75	2002-09-20 00:00:00	1455	711
+4465	70	2002-09-19 00:00:00	2936	833
+4466	70	2002-04-04 00:00:00	1455	601
+4467	65	2001-08-06 00:00:00	1455	601
+4468	60	2002-04-17 00:00:00	2937	758
+4469	60	2001-09-10 00:00:00	2938	703
+4470	59	2002-04-07 00:00:00	2939	659
+4471	50	2002-06-11 00:00:00	2940	654
+4472	50	2001-10-10 00:00:00	2889	430
+4473	50	2001-05-28 00:00:00	2941	436
+4474	50	2001-06-07 00:00:00	2942	680
+4475	50	2001-06-07 00:00:00	2943	680
+4476	50	2001-06-07 00:00:00	2437	680
+4477	50	2001-03-22 00:00:00	2944	839
+4478	50	2001-04-18 00:00:00	2945	697
+4479	50	2002-05-24 00:00:00	1501	772
+4480	50	2002-05-24 00:00:00	2946	840
+4481	50	2002-07-08 00:00:00	2947	772
+4482	50	2002-06-03 00:00:00	2437	680
+4483	50	2002-06-03 00:00:00	2948	680
+4484	50	2002-06-05 00:00:00	2436	680
+4485	50	2002-06-05 00:00:00	2949	680
+4486	50	2002-06-03 00:00:00	2950	759
+4487	50	2002-06-03 00:00:00	2951	759
+4488	50	2001-06-04 00:00:00	2952	654
+4489	50	2001-06-04 00:00:00	2953	654
+4490	50	2002-08-21 00:00:00	2954	652
+4491	50	2002-09-16 00:00:00	2955	833
+4492	50	2002-08-25 00:00:00	2956	841
+4493	50	2002-09-29 00:00:00	2957	788
+4494	50	2002-06-11 00:00:00	2958	654
+4495	50	2002-06-11 00:00:00	2959	654
+4496	50	2002-06-11 00:00:00	1877	654
+4497	50	2002-04-24 00:00:00	2893	293
+4498	50	2002-03-26 00:00:00	2960	839
+4499	50	2002-03-15 00:00:00	2961	839
+4500	50	2002-01-25 00:00:00	2867	647
+4501	50	2002-10-09 00:00:00	2962	833
+4502	50	2002-11-05 00:00:00	2963	697
+4503	50	2002-10-12 00:00:00	2964	674
+4504	50	2002-10-21 00:00:00	2965	312
+4505	45	2002-09-09 00:00:00	2966	842
+4506	45	2002-09-20 00:00:00	2967	749
+4507	40	2002-09-20 00:00:00	2968	749
+4508	40	2002-11-01 00:00:00	2969	843
+4509	35	2002-04-11 00:00:00	1602	794
+4510	33	2001-03-12 00:00:00	2445	331
+4511	30	2001-05-14 00:00:00	2970	830
+4512	30	2002-09-20 00:00:00	2971	749
+4513	30	2001-05-06 00:00:00	2972	659
+4514	30	2001-09-17 00:00:00	2965	697
+4515	30	2001-08-08 00:00:00	2973	331
+4516	29	2002-01-21 00:00:00	2445	331
+4517	25	2002-11-01 00:00:00	2974	843
+4518	25	2002-03-20 00:00:00	2975	776
+4519	25	2002-05-10 00:00:00	2976	830
+4520	25	2002-05-10 00:00:00	2977	830
+4521	25	2001-05-04 00:00:00	2978	830
+4522	25	2001-07-26 00:00:00	2445	331
+4523	25	2001-09-17 00:00:00	2423	697
+4524	25	2002-09-20 00:00:00	2979	749
+4525	25	2001-05-10 00:00:00	2976	830
+4526	25	2001-04-30 00:00:00	2445	331
+4527	25	2002-07-25 00:00:00	2980	744
+4528	25	2001-05-22 00:00:00	318	830
+4529	25	2001-05-29 00:00:00	2981	830
+4530	25	2001-05-29 00:00:00	2982	830
+4531	25	2002-09-29 00:00:00	2983	788
+4532	25	2002-02-16 00:00:00	2448	675
+4533	25	2002-05-16 00:00:00	2984	830
+4534	25	2002-05-10 00:00:00	2445	331
+4535	20	2002-05-15 00:00:00	2985	675
+4536	20	2001-07-09 00:00:00	2986	697
+4537	20	2001-05-15 00:00:00	2987	830
+4538	20	2002-06-04 00:00:00	2988	794
+4539	20	2002-04-02 00:00:00	2989	844
+4540	20	2001-05-09 00:00:00	2990	830
+4541	20	2002-05-15 00:00:00	2991	675
+4542	20	2001-05-10 00:00:00	2992	830
+4543	20	2001-05-03 00:00:00	2993	830
+4544	16	2001-05-10 00:00:00	2994	830
+4545	15	2001-05-08 00:00:00	2995	830
+4546	10	2002-09-20 00:00:00	2996	749
+4547	10	2001-05-15 00:00:00	2997	830
+4548	-200	2001-01-03 00:00:00	2998	811
+4549	-200	2001-01-03 00:00:00	2999	811
+4550	-200	2001-01-03 00:00:00	2999	811
+4551	-500	2002-08-28 00:00:00	2572	549
+4552	-500	2002-07-17 00:00:00	3000	28
+4553	-1000	2002-08-01 00:00:00	2482	549
+4554	-1000	2002-06-17 00:00:00	3001	737
+4555	-1000	2002-05-01 00:00:00	3002	28
+4556	-1000	2001-06-05 00:00:00	3003	549
+4557	-1000	2002-05-23 00:00:00	3004	39
+4558	-1000	2002-11-04 00:00:00	3005	213
+4559	-2000	2002-08-01 00:00:00	2482	549
+4560	50000	2000-09-27 00:00:00	3006	845
+4561	25000	2000-11-03 00:00:00	3007	846
+4562	25000	2000-01-10 00:00:00	3008	530
+4563	20000	2000-03-17 00:00:00	3009	76
+4564	20000	2000-06-30 00:00:00	3010	2
+4565	15000	1999-05-28 00:00:00	3011	724
+4566	13369	2000-01-01 00:00:00	3012	530
+4567	12000	2000-06-07 00:00:00	3013	847
+4568	10000	2000-06-07 00:00:00	3013	175
+4569	10000	2000-05-03 00:00:00	3014	848
+4570	10000	2000-06-30 00:00:00	1652	2
+4571	10000	2000-01-10 00:00:00	3015	530
+4572	7700	2000-01-04 00:00:00	3016	849
+4573	7500	1999-09-10 00:00:00	3017	530
+4574	5000	2000-08-01 00:00:00	3018	179
+4575	5000	1999-10-13 00:00:00	3019	2
+4576	5000	1999-10-13 00:00:00	3019	850
+4577	5000	1999-08-31 00:00:00	2695	851
+4578	5000	2000-03-17 00:00:00	3009	846
+4579	5000	2000-09-18 00:00:00	3013	175
+4580	5000	2000-10-13 00:00:00	3020	846
+4581	5000	2000-09-30 00:00:00	489	529
+4582	5000	2000-10-12 00:00:00	489	654
+4583	5000	2000-10-13 00:00:00	489	539
+4584	5000	2000-10-12 00:00:00	3021	177
+4585	5000	2000-06-26 00:00:00	3022	852
+4586	5000	2000-07-07 00:00:00	2461	530
+4587	5000	2000-07-11 00:00:00	3023	853
+4588	5000	2000-10-10 00:00:00	3024	854
+4589	5000	2000-06-27 00:00:00	3025	852
+4590	5000	2000-09-06 00:00:00	2695	76
+4591	5000	1999-01-22 00:00:00	3026	52
+4592	4500	2000-07-11 00:00:00	3027	855
+4593	4500	2000-07-20 00:00:00	3028	853
+4594	4500	1999-12-27 00:00:00	3029	855
+4595	4000	2000-10-30 00:00:00	3030	4
+4596	4000	2000-10-11 00:00:00	489	565
+4597	4000	2000-03-16 00:00:00	3031	565
+4598	4000	2000-05-16 00:00:00	3032	856
+4599	4000	1999-05-18 00:00:00	3033	856
+4600	3346	1999-06-16 00:00:00	3034	654
+4601	3200	1999-11-29 00:00:00	3035	855
+4602	2000	1999-06-30 00:00:00	3036	28
+4603	2000	1999-06-30 00:00:00	3037	28
+4604	2000	2000-05-16 00:00:00	3038	856
+4605	2000	2000-05-16 00:00:00	3039	856
+4606	2000	1999-03-10 00:00:00	3040	543
+4607	2000	2000-06-30 00:00:00	3041	850
+4608	2000	2000-09-29 00:00:00	3042	4
+4609	2000	1999-12-10 00:00:00	3043	39
+4610	2000	2000-05-17 00:00:00	3044	856
+4611	2000	2000-05-17 00:00:00	3045	856
+4612	2000	1999-05-11 00:00:00	3046	856
+4613	2000	1999-05-13 00:00:00	3047	856
+4614	2000	1999-06-30 00:00:00	3048	28
+4615	2000	1999-06-30 00:00:00	3049	28
+4616	2000	1999-04-29 00:00:00	3050	856
+4617	2000	1999-04-15 00:00:00	1722	558
+4618	2000	2000-08-25 00:00:00	3051	177
+4619	2000	2000-11-09 00:00:00	3052	848
+4621	1500	2000-12-14 00:00:00	3054	853
+4622	1500	2000-12-08 00:00:00	2485	530
+4623	1500	2000-09-20 00:00:00	1687	714
+4624	1500	2000-03-20 00:00:00	3055	39
+4625	1250	2000-10-17 00:00:00	489	857
+4626	1200	1999-08-03 00:00:00	489	529
+4627	1200	2000-08-02 00:00:00	489	529
+4628	1000	2000-08-16 00:00:00	3056	858
+4629	1000	2000-08-28 00:00:00	3057	859
+4630	1000	2000-08-09 00:00:00	3058	417
+4631	1000	2000-09-22 00:00:00	3059	860
+4632	1000	2000-08-28 00:00:00	2547	861
+4633	1000	2000-08-25 00:00:00	1864	862
+4634	1000	2000-08-28 00:00:00	2545	863
+4635	1000	2000-09-18 00:00:00	3060	39
+4636	1000	2000-09-04 00:00:00	3061	39
+4637	1000	2000-09-27 00:00:00	3062	39
+4638	1000	2000-07-20 00:00:00	3019	850
+4639	1000	2000-09-26 00:00:00	3063	15
+4640	1000	2000-09-26 00:00:00	3064	15
+4641	1000	2000-08-28 00:00:00	2545	864
+4642	1000	2000-08-28 00:00:00	2545	865
+4643	1000	2000-08-31 00:00:00	2545	866
+4644	1000	2000-09-27 00:00:00	3065	52
+4645	1000	2000-10-17 00:00:00	3066	867
+4646	1000	2000-10-17 00:00:00	3067	867
+4647	1000	2000-10-03 00:00:00	3068	39
+4648	1000	2000-10-04 00:00:00	1778	39
+4649	1000	2000-09-15 00:00:00	3069	87
+4650	1000	2000-09-07 00:00:00	3070	267
+4651	1000	2000-09-07 00:00:00	3070	267
+4652	1000	2000-09-08 00:00:00	3071	267
+4653	1000	2000-09-08 00:00:00	3071	267
+4654	1000	2000-11-14 00:00:00	3072	39
+4655	1000	2000-10-30 00:00:00	3073	39
+4656	1000	2000-11-01 00:00:00	3074	39
+4657	1000	2000-11-01 00:00:00	3074	39
+4658	1000	2000-11-01 00:00:00	3075	39
+4659	1000	2000-10-31 00:00:00	1778	39
+4660	1000	2000-10-20 00:00:00	3076	413
+4661	1000	2000-11-01 00:00:00	3077	868
+4662	1000	2000-10-24 00:00:00	3078	868
+4664	1000	2000-10-25 00:00:00	3080	869
+4665	1000	2000-10-26 00:00:00	3081	870
+4666	1000	2000-11-03 00:00:00	3082	76
+4667	1000	2000-11-28 00:00:00	3083	39
+4668	1000	2000-10-25 00:00:00	3084	549
+4669	1000	2000-12-21 00:00:00	1778	39
+4670	1000	2000-12-28 00:00:00	3074	39
+4671	1000	2000-09-28 00:00:00	3065	867
+4672	1000	2000-09-12 00:00:00	3066	867
+4673	1000	2000-07-20 00:00:00	3019	39
+4674	1000	2000-08-10 00:00:00	1778	39
+4675	1000	2000-07-19 00:00:00	3085	39
+4676	1000	2000-07-19 00:00:00	3086	39
+4677	1000	2000-03-27 00:00:00	3087	549
+4678	1000	2000-04-04 00:00:00	3088	549
+4679	1000	2000-05-16 00:00:00	3089	549
+4680	1000	2000-06-13 00:00:00	3090	549
+4681	1000	2000-06-13 00:00:00	3090	549
+4682	1000	2000-06-13 00:00:00	3091	549
+4683	1000	2000-06-13 00:00:00	3091	549
+4684	1000	2000-06-06 00:00:00	2533	549
+4685	1000	2000-04-11 00:00:00	2512	549
+4686	1000	2000-06-27 00:00:00	3092	549
+4687	1000	2000-06-27 00:00:00	3092	549
+4688	1000	2000-06-27 00:00:00	3093	549
+4689	1000	2000-06-27 00:00:00	3093	549
+4690	1000	2000-06-27 00:00:00	3094	549
+4691	1000	2000-06-27 00:00:00	3094	549
+4692	1000	2000-06-27 00:00:00	3095	549
+4693	1000	2000-06-27 00:00:00	3095	549
+4694	1000	2000-02-15 00:00:00	3096	549
+4695	1000	2000-06-27 00:00:00	3097	549
+4696	1000	2000-06-27 00:00:00	3097	549
+4697	1000	2000-02-01 00:00:00	3098	549
+4698	1000	2000-02-01 00:00:00	3099	549
+4699	1000	2000-02-01 00:00:00	3099	549
+4700	1000	2000-06-29 00:00:00	3100	871
+4701	1000	2000-06-29 00:00:00	1826	871
+4702	1000	2000-05-11 00:00:00	3101	872
+4703	1000	2000-04-27 00:00:00	3101	869
+4704	1000	2000-05-03 00:00:00	3102	377
+4705	1000	2000-05-03 00:00:00	3103	377
+4706	1000	2000-06-28 00:00:00	1722	873
+4707	1000	2000-06-19 00:00:00	3104	427
+4708	1000	2000-06-23 00:00:00	3105	427
+4709	1000	2000-06-06 00:00:00	3106	850
+4710	1000	2000-05-01 00:00:00	3107	201
+4711	1000	2000-06-29 00:00:00	3108	267
+4712	1000	2000-04-18 00:00:00	3109	397
+4713	1000	2000-04-29 00:00:00	3110	874
+4714	1000	2000-05-01 00:00:00	3111	874
+4715	1000	2000-04-04 00:00:00	3112	856
+4716	1000	2000-04-04 00:00:00	3113	856
+4717	1000	2000-06-15 00:00:00	3114	306
+4718	1000	2000-06-15 00:00:00	3114	306
+4719	1000	2000-06-30 00:00:00	3115	39
+4720	1000	2000-06-30 00:00:00	3115	39
+4721	1000	2000-06-07 00:00:00	3116	39
+4723	1000	2000-04-19 00:00:00	3118	98
+4724	1000	2000-06-22 00:00:00	3119	867
+4725	1000	2000-06-30 00:00:00	3120	867
+4726	1000	2000-06-30 00:00:00	3120	867
+4727	1000	2000-06-29 00:00:00	3121	867
+4728	1000	2000-06-26 00:00:00	3122	867
+4729	1000	2000-06-26 00:00:00	3122	867
+4730	1000	2000-06-07 00:00:00	3013	725
+4731	1000	2000-06-07 00:00:00	3013	725
+4732	1000	2000-06-05 00:00:00	3123	875
+4733	1000	2000-05-17 00:00:00	3124	413
+4734	1000	2000-06-08 00:00:00	3125	876
+4735	1000	2000-06-16 00:00:00	2548	750
+4736	1000	2000-06-20 00:00:00	3126	877
+4737	1000	2000-04-20 00:00:00	3127	878
+4738	1000	2000-05-31 00:00:00	3128	4
+4740	1000	2000-05-31 00:00:00	3130	858
+4741	1000	2000-04-14 00:00:00	3101	355
+4742	1000	2000-02-23 00:00:00	1868	879
+4743	1000	2000-04-13 00:00:00	3131	543
+4744	1000	2000-04-26 00:00:00	3132	543
+4745	1000	2000-02-09 00:00:00	3133	856
+4746	1000	2000-03-21 00:00:00	3134	856
+4747	1000	2000-03-28 00:00:00	3135	856
+4748	1000	2000-03-30 00:00:00	3136	306
+4749	1000	2000-03-30 00:00:00	3136	306
+4750	1000	2000-03-31 00:00:00	3137	880
+4751	1000	2000-03-24 00:00:00	3138	876
+4752	1000	2000-03-24 00:00:00	3139	876
+4753	1000	2000-01-28 00:00:00	3140	746
+4754	1000	2000-02-03 00:00:00	3043	39
+4755	1000	2000-03-20 00:00:00	3055	39
+4756	1000	2000-02-24 00:00:00	3141	881
+4757	1000	2000-02-18 00:00:00	3142	882
+4758	1000	1999-12-20 00:00:00	3143	883
+4759	1000	1999-12-29 00:00:00	3144	730
+4760	1000	1999-12-29 00:00:00	3145	730
+4761	1000	1999-12-29 00:00:00	3146	730
+4762	1000	1999-12-06 00:00:00	1826	549
+4763	1000	1999-10-10 00:00:00	3147	549
+4764	1000	1999-10-04 00:00:00	3148	549
+4765	1000	1999-10-04 00:00:00	3148	549
+4766	1000	1999-10-04 00:00:00	3149	549
+4767	1000	1999-10-04 00:00:00	3149	549
+4768	1000	1999-10-01 00:00:00	3150	549
+4769	1000	1999-10-01 00:00:00	3150	549
+4770	1000	1999-10-01 00:00:00	3151	549
+4771	1000	1999-10-01 00:00:00	3151	549
+4772	1000	1999-08-24 00:00:00	3152	549
+4773	1000	1999-08-24 00:00:00	3152	549
+4774	1000	1999-10-13 00:00:00	3153	549
+4775	1000	1999-10-13 00:00:00	3153	549
+4776	1000	1999-10-01 00:00:00	3136	549
+4777	1000	1999-10-01 00:00:00	3136	549
+4778	1000	1999-11-19 00:00:00	1826	549
+4779	1000	1999-10-04 00:00:00	3154	549
+4780	1000	1999-09-28 00:00:00	3106	549
+4781	1000	1999-09-28 00:00:00	3106	549
+4782	1000	1999-10-01 00:00:00	3155	213
+4783	1000	1999-07-02 00:00:00	3156	884
+4784	1000	1999-12-02 00:00:00	3157	885
+4785	1000	1999-08-26 00:00:00	3158	851
+4786	1000	1999-10-07 00:00:00	3159	851
+4787	1000	1999-08-12 00:00:00	3160	746
+4788	1000	1999-11-05 00:00:00	3161	413
+4789	1000	1999-09-01 00:00:00	3162	879
+4790	1000	1999-08-19 00:00:00	3163	876
+4791	1000	1999-11-29 00:00:00	3164	25
+4792	1000	1999-10-27 00:00:00	3165	856
+4793	1000	1999-12-21 00:00:00	3166	856
+4794	1000	1999-07-15 00:00:00	3033	856
+4795	1000	1999-11-09 00:00:00	3167	856
+4796	1000	1999-07-15 00:00:00	3168	856
+4797	1000	1999-12-29 00:00:00	3169	856
+4798	1000	1999-09-23 00:00:00	3170	856
+4799	1000	1999-12-17 00:00:00	3171	856
+4800	1000	1999-12-29 00:00:00	3169	856
+4801	1000	1999-11-12 00:00:00	3172	856
+4802	1000	1999-12-30 00:00:00	3173	856
+4803	1000	1999-12-29 00:00:00	3174	856
+4804	1000	1999-11-15 00:00:00	3175	856
+4805	1000	1999-07-15 00:00:00	3168	856
+4806	1000	1999-12-29 00:00:00	3174	856
+4807	1000	1999-08-31 00:00:00	3171	856
+4808	1000	1999-11-22 00:00:00	3176	856
+4809	1000	1999-10-04 00:00:00	3044	856
+4810	1000	1999-12-21 00:00:00	3166	856
+4811	1000	1999-12-31 00:00:00	3177	886
+4812	1000	1999-10-29 00:00:00	3178	175
+4814	1000	1999-07-06 00:00:00	3103	377
+4815	1000	1999-07-06 00:00:00	3103	377
+4816	1000	1999-11-08 00:00:00	3180	39
+4817	1000	1999-10-14 00:00:00	3181	39
+4818	1000	1999-10-14 00:00:00	3181	39
+4819	1000	1999-09-07 00:00:00	3182	39
+4820	1000	1999-11-08 00:00:00	3183	39
+4821	1000	1999-10-25 00:00:00	3184	39
+4822	1000	1999-11-17 00:00:00	3185	39
+4823	1000	1999-11-17 00:00:00	3185	39
+4824	1000	1999-12-10 00:00:00	3186	39
+4825	1000	1999-11-08 00:00:00	3187	39
+4826	1000	1999-11-08 00:00:00	3188	39
+4827	1000	1999-11-08 00:00:00	3189	39
+4828	1000	1999-11-02 00:00:00	3190	39
+4829	1000	1999-07-01 00:00:00	2695	39
+4830	1000	1999-11-04 00:00:00	3191	887
+4831	1000	1999-11-01 00:00:00	3192	887
+4832	1000	1999-11-10 00:00:00	3193	887
+4833	1000	1999-11-15 00:00:00	3194	887
+4834	1000	1999-12-22 00:00:00	1079	858
+4835	1000	1999-12-22 00:00:00	1080	858
+4836	1000	1999-10-29 00:00:00	3195	543
+4837	1000	1999-10-29 00:00:00	3196	543
+4838	1000	1999-10-19 00:00:00	3196	543
+4839	1000	1999-12-22 00:00:00	3197	543
+4840	1000	1999-12-22 00:00:00	3198	543
+4841	1000	1999-10-18 00:00:00	3199	543
+4842	1000	1999-08-06 00:00:00	3200	576
+4843	1000	1999-08-06 00:00:00	3201	576
+4844	1000	1999-08-26 00:00:00	3202	576
+4845	1000	1999-08-26 00:00:00	3203	576
+4846	1000	1999-07-14 00:00:00	3204	543
+4847	1000	1999-07-29 00:00:00	3205	543
+4848	1000	1999-07-29 00:00:00	3206	543
+4849	1000	1999-07-27 00:00:00	3207	887
+4850	1000	1999-07-26 00:00:00	3208	887
+4851	1000	1999-08-02 00:00:00	3209	887
+4852	1000	1999-09-30 00:00:00	3210	882
+4853	1000	1999-07-06 00:00:00	3103	377
+4854	1000	1999-07-06 00:00:00	3103	377
+4855	1000	1999-03-24 00:00:00	3211	15
+4856	1000	1999-02-23 00:00:00	3212	15
+4857	1000	1999-02-01 00:00:00	3107	201
+4858	1000	1999-04-28 00:00:00	3213	856
+4859	1000	1999-04-28 00:00:00	3214	856
+4860	1000	1999-05-04 00:00:00	3050	856
+4861	1000	1999-04-23 00:00:00	3215	856
+4862	1000	1999-04-23 00:00:00	3215	856
+4863	1000	1999-05-27 00:00:00	3047	856
+4864	1000	1999-05-28 00:00:00	3216	856
+4865	1000	1999-05-18 00:00:00	3046	856
+4866	1000	1999-06-09 00:00:00	3217	884
+4867	1000	1999-04-19 00:00:00	1722	558
+4868	1000	1999-03-16 00:00:00	3218	417
+4869	1000	1999-03-16 00:00:00	3219	417
+4870	1000	1999-03-16 00:00:00	3220	417
+4871	1000	1999-03-16 00:00:00	3221	417
+4872	1000	1999-04-23 00:00:00	3145	888
+4873	1000	1999-06-30 00:00:00	3049	28
+4874	1000	1999-06-30 00:00:00	3222	28
+4875	1000	1999-06-30 00:00:00	3223	28
+4876	1000	1999-06-30 00:00:00	3224	28
+4877	1000	1999-06-01 00:00:00	3225	28
+4878	1000	1999-05-28 00:00:00	3225	28
+4879	1000	1999-06-30 00:00:00	3048	28
+4880	1000	1999-06-30 00:00:00	3037	28
+4881	1000	1999-06-30 00:00:00	3036	28
+4882	1000	1999-06-04 00:00:00	3226	306
+4883	1000	1999-06-18 00:00:00	3227	306
+4884	1000	1999-03-11 00:00:00	3141	881
+4885	1000	1999-05-27 00:00:00	3228	25
+4886	1000	1999-05-19 00:00:00	3228	25
+4887	1000	1999-04-19 00:00:00	3229	76
+4888	1000	1999-05-18 00:00:00	3230	98
+4889	1000	1999-04-22 00:00:00	3231	885
+4890	1000	1999-05-15 00:00:00	3069	87
+4891	1000	1999-06-01 00:00:00	3232	860
+4892	1000	1999-06-01 00:00:00	3233	860
+4893	1000	1999-06-03 00:00:00	3234	543
+4894	1000	1999-05-13 00:00:00	3013	543
+4895	1000	1999-06-03 00:00:00	3235	543
+4896	1000	1999-06-30 00:00:00	3236	543
+4897	1000	1999-05-03 00:00:00	3237	543
+4898	1000	1999-06-18 00:00:00	3238	543
+4899	1000	2000-05-16 00:00:00	3239	396
+4900	1000	2000-05-06 00:00:00	489	710
+4901	1000	2000-11-13 00:00:00	489	769
+4902	1000	2000-02-07 00:00:00	489	852
+4903	1000	1999-11-19 00:00:00	489	248
+4904	1000	1999-11-19 00:00:00	489	889
+4905	1000	1999-11-01 00:00:00	489	857
+4906	1000	2000-02-08 00:00:00	489	890
+4907	1000	2000-12-27 00:00:00	489	530
+4908	1000	2000-10-21 00:00:00	3240	891
+4909	1000	2000-10-22 00:00:00	3241	620
+4910	1000	2000-08-01 00:00:00	3242	892
+4911	1000	2000-05-31 00:00:00	3243	855
+4912	1000	1999-08-18 00:00:00	489	539
+4913	1000	2000-10-11 00:00:00	489	529
+4914	1000	2000-03-16 00:00:00	3031	565
+4915	1000	1999-10-08 00:00:00	3031	565
+4916	1000	2000-10-11 00:00:00	489	565
+4917	1000	2000-07-20 00:00:00	2396	585
+4918	1000	1999-08-31 00:00:00	1173	585
+4919	1000	1999-05-06 00:00:00	3244	543
+4920	1000	1999-06-25 00:00:00	3245	882
+4921	1000	1999-04-12 00:00:00	3246	887
+4922	1000	1999-04-15 00:00:00	3247	887
+4923	1000	1999-05-17 00:00:00	3248	887
+4924	1000	1999-05-17 00:00:00	3249	887
+4925	1000	1999-06-10 00:00:00	3250	893
+4926	1000	1999-05-24 00:00:00	3251	893
+4927	1000	1999-06-30 00:00:00	3252	893
+4928	1000	1999-03-31 00:00:00	3253	893
+4929	1000	1999-03-31 00:00:00	3254	893
+4930	1000	1999-03-09 00:00:00	3255	894
+4931	1000	1999-03-17 00:00:00	3256	894
+4932	1000	1999-03-31 00:00:00	3257	894
+4933	1000	1999-03-31 00:00:00	3258	858
+4934	1000	1999-03-31 00:00:00	3259	858
+4935	1000	1999-03-15 00:00:00	3260	887
+4936	1000	1999-03-29 00:00:00	3261	887
+4937	1000	1999-03-29 00:00:00	3262	887
+4938	1000	1999-03-15 00:00:00	3263	887
+4940	1000	2000-02-24 00:00:00	3264	895
+4941	1000	2000-08-16 00:00:00	3265	39
+4942	1000	2000-08-17 00:00:00	3266	867
+4943	1000	2000-07-13 00:00:00	3267	867
+4944	1000	2000-07-12 00:00:00	3268	867
+4945	1000	2000-07-12 00:00:00	3268	867
+4946	900	1999-11-23 00:00:00	3269	200
+4947	900	2000-06-20 00:00:00	2506	282
+4948	900	2000-09-11 00:00:00	3270	781
+4949	765	1999-03-23 00:00:00	3271	750
+4950	750	1999-06-14 00:00:00	3272	4
+4951	750	2000-08-30 00:00:00	2705	712
+4952	750	2000-12-12 00:00:00	489	239
+4953	750	1999-01-26 00:00:00	3273	750
+4954	700	2000-06-01 00:00:00	3274	240
+4955	687.80999999999995	2000-08-31 00:00:00	3275	896
+4956	670	1999-08-21 00:00:00	3276	39
+4957	670	1999-10-19 00:00:00	3276	39
+4958	670	1999-08-23 00:00:00	3277	39
+4959	625	1999-11-04 00:00:00	3278	887
+4960	600	2000-03-02 00:00:00	3279	897
+4961	600	2000-03-16 00:00:00	1173	585
+4962	600	2000-06-27 00:00:00	3280	28
+4963	600	1999-10-07 00:00:00	3281	898
+4964	575	2000-07-12 00:00:00	3282	899
+4965	500	2000-07-28 00:00:00	3283	867
+4966	500	1999-10-26 00:00:00	489	436
+4967	500	2000-04-20 00:00:00	489	530
+4968	500	2000-01-31 00:00:00	3284	222
+4969	500	2000-06-19 00:00:00	3285	900
+4970	500	2000-03-08 00:00:00	3225	28
+4971	500	1999-11-29 00:00:00	3286	267
+4972	500	2000-08-07 00:00:00	3287	867
+4975	500	2000-07-18 00:00:00	3290	39
+4976	500	2000-11-01 00:00:00	3075	39
+4977	500	2000-03-21 00:00:00	3291	28
+4978	500	1999-12-28 00:00:00	3273	750
+4979	500	1999-08-24 00:00:00	489	396
+4980	500	2000-07-28 00:00:00	3292	867
+4981	500	2000-07-20 00:00:00	3293	901
+4982	500	2000-07-18 00:00:00	3293	781
+4983	500	2000-11-03 00:00:00	3241	902
+4985	500	2000-07-11 00:00:00	3054	903
+4986	500	2000-11-07 00:00:00	3295	15
+4987	500	2000-10-26 00:00:00	3296	39
+4988	500	2000-08-26 00:00:00	3297	370
+4989	500	2000-07-31 00:00:00	3298	213
+4990	500	2000-09-11 00:00:00	3211	15
+4991	500	2000-10-24 00:00:00	3299	39
+4992	500	2000-09-25 00:00:00	3300	76
+4993	500	2000-02-28 00:00:00	3301	904
+4995	500	2000-09-27 00:00:00	3303	905
+4996	500	2000-02-09 00:00:00	3304	39
+4997	500	2000-08-16 00:00:00	2864	589
+4998	500	2000-09-25 00:00:00	489	906
+4999	500	2000-08-28 00:00:00	3305	39
+5000	500	1999-12-23 00:00:00	3306	856
+5002	500	2000-05-11 00:00:00	3083	39
+5003	500	1999-08-25 00:00:00	3307	28
+5004	500	1999-07-28 00:00:00	3308	28
+5005	500	2000-06-27 00:00:00	3309	18
+5006	500	2000-09-11 00:00:00	3310	39
+5007	500	2000-06-15 00:00:00	3311	213
+5008	500	1999-12-02 00:00:00	3157	885
+5009	500	1999-12-02 00:00:00	3312	885
+5010	500	1999-12-28 00:00:00	3313	856
+5011	500	1999-07-29 00:00:00	3314	887
+5012	500	2000-05-16 00:00:00	3315	856
+5013	500	2000-05-06 00:00:00	3316	907
+5014	500	2000-08-31 00:00:00	3317	867
+5015	500	2000-04-05 00:00:00	3318	856
+5018	500	2000-04-05 00:00:00	3320	856
+5019	500	1999-10-01 00:00:00	3155	213
+5020	500	1999-06-14 00:00:00	3321	908
+5021	500	2000-08-25 00:00:00	3322	240
+5022	500	2000-09-20 00:00:00	3323	4
+5023	500	2000-08-25 00:00:00	3324	909
+5024	500	1999-06-07 00:00:00	3325	213
+5025	500	2000-07-12 00:00:00	3326	910
+5026	500	1999-12-06 00:00:00	3327	549
+5027	500	2000-08-28 00:00:00	3328	911
+5028	500	2000-09-07 00:00:00	3329	867
+5029	500	2000-08-15 00:00:00	3330	909
+5030	500	2000-12-21 00:00:00	3075	39
+5031	500	2000-08-24 00:00:00	2757	901
+5032	500	2000-08-08 00:00:00	3331	377
+5033	500	2000-10-17 00:00:00	3332	867
+5034	500	2000-10-02 00:00:00	3333	912
+5035	500	2000-05-26 00:00:00	3334	530
+5036	500	2000-02-15 00:00:00	2695	913
+5037	500	1999-04-26 00:00:00	3335	894
+5038	500	2000-01-21 00:00:00	308	901
+5039	500	2000-09-06 00:00:00	3336	914
+5040	500	2000-10-20 00:00:00	1927	312
+5041	500	2000-05-01 00:00:00	3337	714
+5042	500	1999-06-29 00:00:00	3338	845
+5043	500	2000-03-17 00:00:00	3339	335
+5044	500	2000-04-20 00:00:00	2656	530
+5045	500	2000-04-20 00:00:00	3340	530
+5046	500	1999-06-30 00:00:00	3338	915
+5047	500	2000-05-11 00:00:00	3341	542
+5048	500	1999-09-09 00:00:00	3342	222
+5049	500	2000-07-31 00:00:00	3343	892
+5050	500	1999-06-30 00:00:00	3344	893
+5051	500	1999-11-11 00:00:00	3345	916
+5052	500	2000-10-23 00:00:00	3346	28
+5053	500	2000-07-11 00:00:00	3347	877
+5054	500	1999-06-30 00:00:00	3253	893
+5055	500	2000-05-11 00:00:00	2360	917
+5056	500	2000-07-31 00:00:00	3348	917
+5057	500	1999-12-15 00:00:00	3349	267
+5058	500	1999-05-12 00:00:00	3350	417
+5059	500	1999-05-12 00:00:00	3187	417
+5060	500	1999-05-12 00:00:00	3187	417
+5061	500	2000-08-11 00:00:00	3351	267
+5063	500	2000-07-06 00:00:00	3353	15
+5064	500	2000-10-26 00:00:00	3354	870
+5065	500	1999-06-21 00:00:00	3355	300
+5066	500	1999-10-20 00:00:00	3356	856
+5067	500	2000-05-08 00:00:00	3357	917
+5068	500	2000-11-03 00:00:00	3358	918
+5069	500	1999-06-30 00:00:00	3075	28
+5071	500	1999-11-29 00:00:00	3360	267
+5072	500	1999-06-08 00:00:00	3291	28
+5074	500	1999-12-16 00:00:00	3291	28
+5075	500	2000-11-01 00:00:00	3362	413
+5076	500	2000-10-27 00:00:00	3309	18
+5078	500	1999-11-19 00:00:00	489	587
+5079	500	2000-11-01 00:00:00	3362	413
+5080	500	2000-04-07 00:00:00	489	919
+5081	500	2000-11-02 00:00:00	3119	867
+5082	500	2000-11-06 00:00:00	3364	867
+5083	500	2000-06-09 00:00:00	1648	853
+5084	500	2000-04-10 00:00:00	489	920
+5085	500	2000-02-22 00:00:00	3365	856
+5086	500	1999-10-21 00:00:00	3366	39
+5087	500	2000-09-04 00:00:00	1928	921
+5089	500	2000-06-18 00:00:00	3368	922
+5090	500	1999-09-07 00:00:00	3369	39
+5091	500	1999-10-21 00:00:00	3370	39
+5092	500	2000-04-28 00:00:00	3371	877
+5093	500	2000-05-27 00:00:00	3372	877
+5094	500	2000-05-31 00:00:00	3373	877
+5095	500	2000-06-01 00:00:00	3374	877
+5096	500	2000-06-05 00:00:00	3375	877
+5097	500	2000-06-06 00:00:00	3376	877
+5098	500	2000-06-07 00:00:00	3377	877
+5099	500	2000-06-09 00:00:00	3378	877
+5100	500	2000-06-20 00:00:00	3347	877
+5102	500	1999-12-16 00:00:00	3291	28
+5103	500	2000-06-09 00:00:00	3380	543
+5104	500	2000-06-23 00:00:00	3075	15
+5105	450	2000-04-25 00:00:00	3381	530
+5106	400	2000-01-09 00:00:00	489	890
+5108	400	2000-07-17 00:00:00	3383	867
+5110	400	2000-01-18 00:00:00	489	542
+5115	400	1999-11-01 00:00:00	3389	750
+5116	400	1999-10-12 00:00:00	3357	917
+5117	400	2000-03-01 00:00:00	3390	616
+5119	400	2000-11-02 00:00:00	3392	889
+5120	375	1999-10-21 00:00:00	3393	858
+5121	375	1999-10-21 00:00:00	3393	858
+5122	360	2000-07-19 00:00:00	2715	601
+5123	350	1999-12-21 00:00:00	3394	856
+5124	350	2000-07-25 00:00:00	969	917
+5125	350	2000-03-10 00:00:00	489	923
+5126	350	2000-02-07 00:00:00	489	293
+5127	350	2000-10-30 00:00:00	3395	924
+5128	350	1999-06-24 00:00:00	3389	750
+5129	350	2000-06-26 00:00:00	3396	521
+5130	350	2000-07-20 00:00:00	3397	751
+5131	350	2000-09-14 00:00:00	3398	741
+5132	350	2000-06-15 00:00:00	3399	900
+5133	330	1999-10-19 00:00:00	3276	39
+5134	325	1999-11-23 00:00:00	3400	925
+5136	300	2000-10-03 00:00:00	3402	926
+5137	300	2000-08-27 00:00:00	3403	676
+5138	300	2000-08-21 00:00:00	3404	927
+5139	300	2000-08-07 00:00:00	3405	751
+5140	300	1999-07-08 00:00:00	3140	746
+5141	300	2000-06-26 00:00:00	3280	28
+5142	300	1999-08-21 00:00:00	3406	928
+5143	300	1999-11-04 00:00:00	3407	4
+5144	300	2000-05-15 00:00:00	3408	39
+5145	300	2000-10-23 00:00:00	3049	28
+5147	300	2000-02-03 00:00:00	3303	905
+5148	300	2000-03-03 00:00:00	3410	929
+5149	300	2000-06-30 00:00:00	3411	222
+5150	300	2000-10-23 00:00:00	3412	28
+5151	300	2000-03-23 00:00:00	489	442
+5152	300	2000-02-03 00:00:00	489	930
+5153	300	1999-05-28 00:00:00	3280	28
+5154	300	2000-08-03 00:00:00	3413	222
+5155	300	2000-03-14 00:00:00	489	436
+5156	300	2000-02-03 00:00:00	489	248
+5157	300	2000-01-20 00:00:00	3414	712
+5158	300	2000-04-26 00:00:00	3415	856
+5159	300	2000-09-08 00:00:00	3416	222
+5160	300	2000-10-16 00:00:00	3417	751
+5161	300	2000-10-31 00:00:00	3418	39
+5162	300	2000-02-03 00:00:00	489	261
+5163	300	1999-08-25 00:00:00	2715	601
+5164	300	2000-03-16 00:00:00	489	905
+5165	300	2000-03-25 00:00:00	3419	931
+5166	300	2000-11-08 00:00:00	489	932
+5167	300	2000-01-24 00:00:00	3420	856
+5168	300	2000-08-23 00:00:00	3399	900
+5170	300	2000-03-31 00:00:00	3422	39
+5171	300	2000-10-23 00:00:00	3423	28
+5172	300	2000-07-06 00:00:00	3424	15
+5173	300	2000-10-25 00:00:00	3425	549
+5174	300	1999-10-23 00:00:00	3426	933
+5175	300	1999-11-06 00:00:00	3427	916
+5176	300	2000-02-08 00:00:00	489	221
+5177	300	2000-07-18 00:00:00	3428	867
+5178	300	2000-05-15 00:00:00	3429	39
+5179	275	1999-08-13 00:00:00	2705	712
+5180	250	2000-10-18 00:00:00	3430	752
+5181	250	2000-08-31 00:00:00	3431	867
+5182	250	2000-09-01 00:00:00	3432	934
+5183	250	1999-11-09 00:00:00	3433	240
+5184	250	2000-10-17 00:00:00	3309	18
+5185	250	2000-09-12 00:00:00	2602	867
+5186	250	1999-09-16 00:00:00	3434	856
+5187	250	1999-12-08 00:00:00	3435	856
+5188	250	1999-12-16 00:00:00	3436	856
+5189	250	1999-09-16 00:00:00	3437	856
+5190	250	1999-08-13 00:00:00	3438	745
+5191	250	1999-08-17 00:00:00	3439	856
+5192	250	1999-09-16 00:00:00	2052	856
+5193	250	2000-12-08 00:00:00	3440	15
+5194	250	1999-08-13 00:00:00	884	780
+5195	250	1999-12-21 00:00:00	3441	856
+5196	250	2000-03-29 00:00:00	3442	745
+5197	250	1999-08-31 00:00:00	3443	856
+5198	250	2000-10-12 00:00:00	1900	783
+5199	250	2000-08-31 00:00:00	3444	794
+5200	250	1999-11-24 00:00:00	3437	856
+5201	250	1999-09-29 00:00:00	3445	935
+5202	250	1999-12-15 00:00:00	3446	98
+5203	250	1999-09-03 00:00:00	3446	98
+5204	250	1999-07-29 00:00:00	3446	98
+5205	250	1999-12-15 00:00:00	3447	750
+5206	250	1999-09-17 00:00:00	3448	76
+5207	250	1999-12-27 00:00:00	3449	76
+5208	250	1999-09-29 00:00:00	3450	39
+5209	250	1999-12-31 00:00:00	3451	882
+5210	250	2000-09-14 00:00:00	3452	936
+5211	250	2000-10-18 00:00:00	3453	222
+5212	250	2000-10-02 00:00:00	3454	937
+5213	250	1999-07-20 00:00:00	1198	565
+5215	250	2000-07-31 00:00:00	3456	867
+5216	250	2000-08-23 00:00:00	3457	529
+5217	250	1999-07-14 00:00:00	3458	543
+5218	250	1999-07-14 00:00:00	3459	543
+5219	250	1999-08-18 00:00:00	3460	887
+5220	250	1999-07-07 00:00:00	3393	858
+5222	250	1999-03-24 00:00:00	3462	15
+5223	250	1999-05-10 00:00:00	2052	856
+5224	250	2000-09-01 00:00:00	3463	858
+5225	250	2000-08-14 00:00:00	3464	4
+5226	250	1999-06-29 00:00:00	3465	887
+5227	250	1999-06-01 00:00:00	3466	887
+5228	250	2000-11-13 00:00:00	3467	746
+5229	250	1999-01-19 00:00:00	3468	868
+5230	250	1999-05-28 00:00:00	3469	938
+5231	250	2000-11-03 00:00:00	3449	76
+5232	250	2000-07-25 00:00:00	3470	15
+5233	250	1999-06-30 00:00:00	3471	893
+5235	250	1999-06-30 00:00:00	3473	28
+5236	250	1999-05-13 00:00:00	2705	712
+5237	250	2000-07-17 00:00:00	3474	867
+5238	250	1999-04-15 00:00:00	3475	939
+5239	250	1999-04-08 00:00:00	3476	939
+5240	250	1999-05-22 00:00:00	3477	940
+5241	250	1999-02-15 00:00:00	3478	76
+5242	250	1999-01-22 00:00:00	3449	76
+5243	250	1999-03-11 00:00:00	3479	858
+5244	250	1999-04-09 00:00:00	3480	98
+5245	250	1999-01-19 00:00:00	3480	98
+5246	250	1999-06-07 00:00:00	3446	98
+5247	250	1999-03-02 00:00:00	3446	98
+5248	250	1999-06-23 00:00:00	3481	928
+5249	250	1999-05-21 00:00:00	3482	222
+5250	250	1999-03-03 00:00:00	3483	222
+5251	250	2000-10-24 00:00:00	3484	941
+5252	250	2000-08-09 00:00:00	3485	867
+5253	250	2000-08-19 00:00:00	3486	867
+5254	250	1999-06-23 00:00:00	2496	712
+5255	250	2000-09-18 00:00:00	3487	76
+5256	250	2000-09-13 00:00:00	3449	76
+5257	250	2000-07-28 00:00:00	3449	76
+5258	250	2000-05-30 00:00:00	2688	942
+5259	250	2000-03-23 00:00:00	3488	298
+5260	250	2000-02-07 00:00:00	2795	801
+5261	250	2000-03-10 00:00:00	489	943
+5262	250	2000-06-01 00:00:00	3489	780
+5263	250	2000-05-12 00:00:00	489	239
+5264	250	2000-05-02 00:00:00	489	944
+5265	250	2000-03-17 00:00:00	489	326
+5266	250	2000-08-18 00:00:00	489	794
+5267	250	2000-03-10 00:00:00	489	889
+5268	250	2000-02-03 00:00:00	489	587
+5269	250	2000-04-01 00:00:00	489	229
+5270	250	2000-08-21 00:00:00	489	911
+5271	250	2000-03-10 00:00:00	489	945
+5272	250	1999-11-19 00:00:00	489	945
+5273	250	2000-02-05 00:00:00	489	312
+5274	250	2000-03-23 00:00:00	489	933
+5275	250	2000-02-08 00:00:00	489	283
+5276	250	2000-09-22 00:00:00	489	783
+5277	250	2000-03-07 00:00:00	489	946
+5278	250	2000-11-06 00:00:00	489	741
+5279	250	2000-02-16 00:00:00	489	947
+5280	250	2000-01-14 00:00:00	3490	530
+5281	250	2000-11-07 00:00:00	3491	39
+5282	250	2000-10-31 00:00:00	3492	39
+5283	250	2000-10-31 00:00:00	3492	39
+5284	250	2000-10-31 00:00:00	3492	39
+5285	250	2000-10-26 00:00:00	3493	39
+5286	250	2000-11-03 00:00:00	3054	903
+5287	250	2000-10-26 00:00:00	3494	948
+5288	250	2000-04-03 00:00:00	2871	530
+5289	250	1999-10-05 00:00:00	2271	650
+5290	250	2000-08-11 00:00:00	2271	650
+5291	250	1999-09-21 00:00:00	3495	780
+5292	250	2000-05-24 00:00:00	3496	949
+5293	250	2000-04-20 00:00:00	3497	944
+5294	250	1999-10-12 00:00:00	3498	293
+5295	250	2000-07-24 00:00:00	3499	950
+5296	250	2000-10-23 00:00:00	3500	951
+5297	250	2000-05-09 00:00:00	3501	901
+5298	250	2000-03-17 00:00:00	3502	552
+5299	250	1999-10-06 00:00:00	3503	666
+5300	250	2000-05-11 00:00:00	3504	944
+5301	250	2000-09-18 00:00:00	1885	741
+5302	250	2000-05-12 00:00:00	3505	944
+5303	250	2000-06-26 00:00:00	3506	944
+5304	250	2000-10-23 00:00:00	3507	951
+5305	250	1999-12-30 00:00:00	3508	952
+5306	250	2000-09-25 00:00:00	3509	952
+5307	250	2000-09-15 00:00:00	3510	907
+5308	250	2000-05-15 00:00:00	3437	856
+5309	250	2000-04-26 00:00:00	3420	856
+5310	250	2000-05-11 00:00:00	3475	939
+5311	250	2000-04-28 00:00:00	3511	939
+5312	250	2000-06-30 00:00:00	3512	867
+5313	250	2000-05-26 00:00:00	3449	76
+5314	250	2000-05-23 00:00:00	3484	941
+5315	250	2000-03-15 00:00:00	3513	856
+5316	250	2000-03-29 00:00:00	3514	856
+5317	250	2000-03-24 00:00:00	3515	935
+5318	250	2000-01-13 00:00:00	3516	612
+5319	250	2000-03-31 00:00:00	3481	928
+5320	250	2000-03-09 00:00:00	2496	712
+5321	250	2000-03-10 00:00:00	3517	28
+5322	250	2000-02-25 00:00:00	3518	28
+5323	250	2000-03-08 00:00:00	3308	28
+5324	250	2000-03-08 00:00:00	3223	28
+5325	250	2000-02-25 00:00:00	3519	28
+5326	250	2000-03-22 00:00:00	3468	868
+5327	250	2000-03-06 00:00:00	3520	222
+5328	250	2000-02-28 00:00:00	3521	39
+5329	250	2000-03-29 00:00:00	3522	858
+5330	250	2000-03-13 00:00:00	3389	750
+5331	250	2000-02-21 00:00:00	3523	608
+5332	250	2000-02-23 00:00:00	3524	887
+5333	250	1999-10-04 00:00:00	3315	549
+5334	250	2000-07-26 00:00:00	3525	724
+5335	250	1999-11-29 00:00:00	3049	28
+5336	250	1999-11-19 00:00:00	3519	28
+5337	250	2000-08-21 00:00:00	3526	39
+5338	250	1999-09-17 00:00:00	3527	267
+5339	250	1999-12-10 00:00:00	3528	953
+5340	250	1999-11-22 00:00:00	3529	200
+5341	250	1999-09-14 00:00:00	3530	746
+5342	250	2000-08-18 00:00:00	3531	39
+5343	247	2000-10-02 00:00:00	3454	746
+5344	225	2000-03-16 00:00:00	489	911
+5345	225	2000-03-10 00:00:00	489	954
+5346	225	2000-01-19 00:00:00	2688	955
+5348	200	2000-07-12 00:00:00	3533	724
+5349	200	2000-03-10 00:00:00	489	957
+5350	200	2000-08-10 00:00:00	3534	28
+5351	200	1999-07-20 00:00:00	2703	565
+5352	200	1999-11-05 00:00:00	3535	882
+5353	200	2000-01-26 00:00:00	489	958
+5354	200	2000-10-29 00:00:00	3536	948
+5355	200	1999-11-15 00:00:00	3537	300
+5356	200	1999-03-15 00:00:00	3538	881
+5357	200	2000-06-01 00:00:00	3536	948
+5358	200	2000-08-09 00:00:00	2396	585
+5359	200	2000-09-25 00:00:00	2396	585
+5360	200	1999-12-22 00:00:00	2052	856
+5361	200	1999-07-30 00:00:00	3539	265
+5362	200	1999-03-18 00:00:00	3540	935
+5363	200	1999-10-27 00:00:00	3535	882
+5364	200	1999-12-06 00:00:00	3539	265
+5365	200	2000-09-11 00:00:00	3541	657
+5366	200	2000-09-02 00:00:00	3542	39
+5367	200	2000-04-17 00:00:00	489	959
+5368	200	1999-06-22 00:00:00	3543	960
+5369	200	2000-10-30 00:00:00	3544	917
+5370	200	1999-09-22 00:00:00	3545	856
+5371	200	1999-06-22 00:00:00	3543	960
+5372	200	2000-03-03 00:00:00	3535	882
+5373	200	1999-05-28 00:00:00	3519	28
+5374	200	2000-09-21 00:00:00	3468	868
+5375	200	1999-06-30 00:00:00	3534	28
+5376	200	1999-10-26 00:00:00	3535	882
+5377	200	2000-11-13 00:00:00	489	917
+5378	200	1999-10-12 00:00:00	3348	917
+5379	200	2000-08-31 00:00:00	3542	39
+5380	200	2000-04-13 00:00:00	3546	961
+5381	200	2000-08-09 00:00:00	3389	750
+5382	200	2000-11-02 00:00:00	3547	4
+5383	200	2000-10-23 00:00:00	3548	28
+5384	200	2000-10-23 00:00:00	3549	28
+5385	200	2000-04-10 00:00:00	489	794
+5386	200	2000-02-29 00:00:00	3550	882
+5387	200	2000-02-14 00:00:00	3551	962
+5388	200	2000-10-26 00:00:00	489	963
+5389	200	2000-09-04 00:00:00	3552	892
+5390	200	1999-12-06 00:00:00	3553	964
+5391	200	1999-11-30 00:00:00	2345	671
+5392	200	2000-10-30 00:00:00	3383	867
+5393	200	2000-06-08 00:00:00	489	238
+5394	200	2000-10-15 00:00:00	489	495
+5395	200	2000-04-11 00:00:00	489	521
+5396	200	2000-10-23 00:00:00	3554	28
+5397	200	1999-07-21 00:00:00	2688	944
+5398	200	2000-04-14 00:00:00	489	965
+5399	200	2000-10-23 00:00:00	3555	28
+5400	200	1999-12-06 00:00:00	3556	964
+5401	200	2000-06-12 00:00:00	3557	542
+5402	200	2000-03-21 00:00:00	3558	966
+5403	200	2000-04-06 00:00:00	489	967
+5404	200	2000-04-27 00:00:00	3559	958
+5405	200	2000-02-25 00:00:00	3560	616
+5406	200	2000-06-24 00:00:00	3561	944
+5407	200	1999-12-03 00:00:00	2897	530
+5408	200	2000-01-27 00:00:00	489	968
+5409	200	2000-04-17 00:00:00	489	465
+5410	200	2000-06-01 00:00:00	2314	324
+5411	200	2000-01-17 00:00:00	3562	324
+5412	200	1999-11-17 00:00:00	3563	671
+5413	200	1999-12-31 00:00:00	3563	671
+5414	200	2000-01-27 00:00:00	3564	901
+5415	200	2000-04-06 00:00:00	3565	842
+5416	200	2000-10-31 00:00:00	3566	889
+5417	200	2000-11-06 00:00:00	3567	969
+5418	200	2000-08-28 00:00:00	3568	473
+5419	200	1999-12-06 00:00:00	884	964
+5420	195	2000-10-23 00:00:00	3569	970
+5421	175	2000-05-08 00:00:00	2871	587
+5422	160	2000-11-02 00:00:00	3570	971
+5423	150	2000-02-14 00:00:00	2871	244
+5424	150	2000-06-23 00:00:00	489	968
+5425	150	2000-03-24 00:00:00	489	244
+5426	150	2000-08-15 00:00:00	489	972
+5427	150	2000-03-06 00:00:00	2871	326
+5428	150	1999-07-26 00:00:00	2871	244
+5429	150	2000-08-30 00:00:00	489	942
+5430	150	2000-09-23 00:00:00	489	973
+5431	150	2000-09-25 00:00:00	2360	965
+5432	150	2000-06-14 00:00:00	489	973
+5433	150	2000-03-17 00:00:00	489	806
+5434	150	2000-09-22 00:00:00	489	974
+5435	150	2000-10-31 00:00:00	489	791
+5436	150	2000-05-02 00:00:00	3571	975
+5437	150	2000-09-23 00:00:00	489	821
+5438	150	1999-09-07 00:00:00	3572	648
+5439	150	2000-11-13 00:00:00	3573	914
+5440	150	2000-08-10 00:00:00	2893	976
+5441	150	2000-09-13 00:00:00	1562	821
+5442	150	2000-09-01 00:00:00	3574	966
+5443	150	2000-11-01 00:00:00	3575	668
+5444	150	2000-06-02 00:00:00	3576	944
+5445	150	2000-08-04 00:00:00	3577	977
+5446	150	2000-01-10 00:00:00	308	978
+5447	150	2000-11-28 00:00:00	3578	668
+5448	150	2000-05-10 00:00:00	3579	973
+5449	150	2000-08-11 00:00:00	3580	962
+5450	150	2000-02-17 00:00:00	3581	929
+5451	150	2000-07-21 00:00:00	1005	917
+5452	150	1999-10-01 00:00:00	2871	539
+5453	140	2000-05-16 00:00:00	2715	601
+5454	125	2000-04-19 00:00:00	3582	979
+5455	125	2000-05-08 00:00:00	2871	248
+5456	125	2000-07-10 00:00:00	3583	969
+5457	100	1999-12-10 00:00:00	2396	565
+5458	100	1999-10-08 00:00:00	3584	565
+5459	100	2000-07-10 00:00:00	3585	966
+5460	100	1999-10-22 00:00:00	2920	585
+5461	100	2000-08-18 00:00:00	489	945
+5462	100	2000-05-02 00:00:00	489	980
+5463	100	1999-10-04 00:00:00	489	857
+5464	100	2000-09-25 00:00:00	489	857
+5465	100	2000-02-08 00:00:00	3586	283
+5466	100	2000-08-26 00:00:00	962	981
+5467	100	2000-09-22 00:00:00	489	965
+5468	100	2000-07-05 00:00:00	1018	982
+5469	100	2000-05-31 00:00:00	974	333
+5470	100	2000-09-28 00:00:00	3587	465
+5471	100	2000-04-04 00:00:00	1585	332
+5472	100	1999-08-03 00:00:00	3587	465
+5473	100	2000-06-27 00:00:00	2336	901
+5474	100	2000-10-23 00:00:00	1455	601
+5475	100	2000-09-11 00:00:00	489	601
+5476	100	2000-10-25 00:00:00	3588	781
+5477	100	1999-11-06 00:00:00	3589	916
+5478	100	1999-08-09 00:00:00	3590	983
+5479	100	2000-05-10 00:00:00	3589	901
+5480	100	2000-07-14 00:00:00	3591	892
+5481	100	2000-09-15 00:00:00	3592	741
+5482	100	2000-04-18 00:00:00	3593	944
+5483	100	2000-09-15 00:00:00	3594	741
+5484	100	2000-04-28 00:00:00	2920	585
+5485	100	2000-05-16 00:00:00	1615	601
+5486	100	2000-09-04 00:00:00	1597	801
+5487	100	2000-09-13 00:00:00	2965	312
+5488	100	2001-01-08 00:00:00	3595	676
+5489	100	2000-04-02 00:00:00	3596	921
+5490	100	2000-08-14 00:00:00	3597	977
+5491	100	2000-09-04 00:00:00	3598	984
+5492	100	2000-07-19 00:00:00	3599	976
+5493	100	2000-02-07 00:00:00	2871	565
+5494	100	2000-08-24 00:00:00	2889	985
+5495	100	1999-08-10 00:00:00	1198	801
+5496	100	2000-08-28 00:00:00	3600	741
+5497	100	2000-11-06 00:00:00	2907	601
+5498	100	2000-03-17 00:00:00	2871	966
+5499	100	2000-09-15 00:00:00	3601	741
+5500	100	2000-04-06 00:00:00	3602	332
+5501	100	2000-08-04 00:00:00	2363	601
+5502	100	2000-08-28 00:00:00	3603	955
+5503	100	2000-08-09 00:00:00	3604	892
+5504	100	2000-05-01 00:00:00	3605	842
+5505	100	2000-11-17 00:00:00	2920	585
+5506	100	2000-08-29 00:00:00	3606	955
+5507	100	2000-08-15 00:00:00	3607	966
+5508	100	2000-08-09 00:00:00	3608	986
+5509	100	2000-02-18 00:00:00	2871	585
+5510	100	2000-04-03 00:00:00	3609	987
+5511	100	2000-09-06 00:00:00	2029	973
+5512	100	2000-06-06 00:00:00	3610	944
+5513	100	2000-06-29 00:00:00	3611	947
+5514	99	2000-07-06 00:00:00	2783	965
+5515	99	2000-02-25 00:00:00	1018	982
+5516	99	2000-05-11 00:00:00	1005	917
+5517	80	2000-12-08 00:00:00	3586	283
+5518	75	2000-01-26 00:00:00	3612	978
+5519	75	2000-09-15 00:00:00	3613	741
+5520	75	2000-01-10 00:00:00	3614	978
+5521	75	1999-11-15 00:00:00	3615	710
+5522	75	2000-09-01 00:00:00	2871	244
+5523	75	2000-04-04 00:00:00	3605	842
+5524	75	1999-09-15 00:00:00	3606	955
+5525	75	2000-01-07 00:00:00	3616	978
+5526	75	2000-09-15 00:00:00	2712	741
+5527	70	1999-08-26 00:00:00	2871	521
+5528	70	2000-06-05 00:00:00	1455	601
+5529	70	2000-06-15 00:00:00	2871	521
+5530	65	2000-08-23 00:00:00	1614	473
+5531	60	2000-08-10 00:00:00	2429	917
+5532	60	2000-09-11 00:00:00	2938	890
+5533	60	1999-09-02 00:00:00	3617	521
+5534	50	2000-06-27 00:00:00	2871	988
+5535	50	2000-06-02 00:00:00	2943	680
+5536	50	2000-10-24 00:00:00	3618	989
+5537	50	2000-09-29 00:00:00	3496	965
+5538	50	2000-04-07 00:00:00	3619	530
+5539	50	2000-05-08 00:00:00	3620	917
+5540	50	2000-11-13 00:00:00	3621	990
+5541	50	2000-09-25 00:00:00	3622	912
+5542	50	2000-09-29 00:00:00	3623	965
+5543	50	2000-10-01 00:00:00	3624	436
+5544	50	2000-09-29 00:00:00	2985	965
+5545	50	2000-06-07 00:00:00	2942	680
+5546	50	1999-08-24 00:00:00	3589	689
+5547	50	2000-09-29 00:00:00	3625	965
+5548	50	2000-04-06 00:00:00	3626	332
+5549	50	1999-09-14 00:00:00	3627	537
+5550	50	2000-09-29 00:00:00	2360	965
+5551	50	1999-10-28 00:00:00	3628	650
+5552	40	1999-09-23 00:00:00	3625	965
+5553	40	2000-09-29 00:00:00	3629	965
+5554	40	2000-09-11 00:00:00	2871	991
+5555	40	2000-09-02 00:00:00	3630	436
+5556	40	2000-12-11 00:00:00	3631	473
+5557	39	2000-02-14 00:00:00	3620	917
+5558	30	1999-09-23 00:00:00	3623	965
+5559	30	2000-02-01 00:00:00	3632	794
+5560	30	1999-08-04 00:00:00	2973	917
+5561	25	2000-10-13 00:00:00	2965	312
+5562	25	2000-08-17 00:00:00	3633	949
+5563	25	2000-06-08 00:00:00	3634	680
+5564	25	2000-08-26 00:00:00	3635	981
+5565	25	1999-09-09 00:00:00	3636	890
+5566	25	2000-08-02 00:00:00	3620	917
+5567	20	2000-09-29 00:00:00	3637	965
+5568	20	2000-09-29 00:00:00	3638	965
+5569	20	2000-01-26 00:00:00	2871	794
+5570	20	2000-01-19 00:00:00	2988	794
+5571	15	1999-09-23 00:00:00	3639	965
+5572	10	2000-09-29 00:00:00	3639	965
+5573	-50	2000-07-14 00:00:00	3640	856
+5574	-250	1999-12-06 00:00:00	3641	28
+5575	-500	2000-12-21 00:00:00	3075	39
+5577	-500	2000-03-24 00:00:00	3642	28
+5578	-750	1999-05-19 00:00:00	3642	28
+5579	-1000	2000-06-30 00:00:00	3643	856
+5580	-1000	2000-12-21 00:00:00	1778	39
+5581	-1000	1999-06-30 00:00:00	3036	28
+5582	-1000	2000-12-28 00:00:00	3074	39
+5583	-1000	1999-05-06 00:00:00	3644	543
+5584	-1000	2000-05-31 00:00:00	3645	858
+5585	-1000	1999-10-25 00:00:00	3196	543
+5586	-1000	2000-06-30 00:00:00	3646	856
+5587	-1000	2000-06-30 00:00:00	3647	856
+5588	-1000	2000-10-04 00:00:00	1778	39
+5589	-1000	2000-05-31 00:00:00	3648	856
+5590	-1000	2000-06-30 00:00:00	3649	856
+5591	-1000	2000-05-31 00:00:00	3650	856
+5592	-1000	2000-06-30 00:00:00	3651	856
+5593	-1000	1999-04-19 00:00:00	1722	558
+5594	-1000	2000-06-30 00:00:00	3652	856
+5595	-1000	2000-06-30 00:00:00	3653	856
+5596	-1000	2000-06-30 00:00:00	3654	856
+5597	-1000	1999-05-04 00:00:00	3050	856
+5598	-1000	2000-06-30 00:00:00	3655	856
+5599	-1000	2000-06-30 00:00:00	3230	856
+5600	-1000	2000-05-17 00:00:00	3230	856
+5601	-1000	2000-05-31 00:00:00	3656	856
+5602	-1000	2000-06-30 00:00:00	3657	856
+5603	-1000	1999-08-15 00:00:00	3033	856
+5604	-1000	1999-07-15 00:00:00	3168	856
+5605	-1000	1999-05-18 00:00:00	3046	856
+5606	-1000	1999-05-27 00:00:00	3047	856
+5607	-1000	1999-06-30 00:00:00	3037	28
+5608	-1000	1999-07-13 00:00:00	3652	858
+5609	-1000	1999-06-30 00:00:00	3048	28
+5610	-1000	2000-06-30 00:00:00	3658	856
+5611	-1000	1999-08-10 00:00:00	3659	876
+5612	-1000	1999-06-30 00:00:00	3049	28
+5613	-1000	2000-06-30 00:00:00	3660	856
+5614	-1000	2000-06-30 00:00:00	3661	856
+5615	-1000	2000-02-03 00:00:00	3043	39
+5616	-1500	2000-05-09 00:00:00	3662	39
+5617	-2000	1999-05-18 00:00:00	3659	876
+5618	-2000	1999-07-15 00:00:00	3033	856
+5619	-3000	2000-05-31 00:00:00	3663	856
+5620	-3000	2000-11-20 00:00:00	3663	856
+5621	-3000	2000-11-20 00:00:00	3663	856
+5622	2500	1999-02-11 00:00:00	3664	992
+5623	2500	1998-12-22 00:00:00	3664	992
+5624	1800	1998-08-26 00:00:00	3665	993
+5625	1000	1999-07-27 00:00:00	3666	994
+5626	1000	1999-10-14 00:00:00	3667	993
+5627	1000	1999-02-05 00:00:00	3668	995
+5628	25000	1998-06-23 00:00:00	3669	585
+5629	20000	1998-10-06 00:00:00	3670	537
+5630	10000	1998-05-06 00:00:00	3671	724
+5631	10000	1998-08-17 00:00:00	3672	846
+5632	10000	1997-02-27 00:00:00	3673	52
+5633	10000	1997-02-19 00:00:00	3674	2
+5634	7500	1997-07-03 00:00:00	1063	585
+5635	7500	1997-07-08 00:00:00	3675	585
+5636	7000	1997-01-24 00:00:00	3026	52
+5637	5000	1998-10-27 00:00:00	1063	585
+5638	5000	1998-05-19 00:00:00	3676	996
+5639	5000	1998-10-15 00:00:00	3677	997
+5640	5000	1998-10-15 00:00:00	3136	997
+5641	5000	1998-03-11 00:00:00	3678	998
+5642	5000	1998-04-30 00:00:00	3679	999
+5643	5000	1998-10-15 00:00:00	3680	770
+5644	5000	1998-04-30 00:00:00	3681	999
+5645	5000	1998-10-02 00:00:00	3682	565
+5646	5000	1998-10-23 00:00:00	3026	52
+5647	5000	1997-07-10 00:00:00	3683	1000
+5648	5000	1998-08-18 00:00:00	3026	52
+5649	5000	1998-08-18 00:00:00	1670	1000
+5650	5000	1997-11-18 00:00:00	1670	1000
+5651	5000	1998-11-11 00:00:00	2555	999
+5652	5000	1998-11-02 00:00:00	489	529
+5653	5000	1997-03-19 00:00:00	3684	1001
+5654	5000	1997-07-11 00:00:00	3506	1000
+5655	5000	1997-07-11 00:00:00	3685	1000
+5656	5000	1998-11-11 00:00:00	3686	999
+5657	5000	1998-10-30 00:00:00	489	539
+5658	3500	1998-04-23 00:00:00	3687	1002
+5659	3000	1998-11-09 00:00:00	3136	182
+5660	3000	1998-08-01 00:00:00	3688	848
+5661	3000	1998-10-19 00:00:00	3689	2
+5662	3000	1998-08-01 00:00:00	3690	848
+5663	3000	1997-04-30 00:00:00	3691	585
+5664	3000	1998-08-01 00:00:00	3692	848
+5665	2500	1998-09-15 00:00:00	3693	998
+5666	2500	1998-09-28 00:00:00	3694	1003
+5667	2500	1997-06-23 00:00:00	3695	1004
+5668	2500	1998-05-19 00:00:00	3696	1005
+5669	2500	1998-10-29 00:00:00	3031	565
+5670	2500	1997-04-14 00:00:00	3697	1004
+5671	2500	1998-06-29 00:00:00	3698	1003
+5672	2500	1998-10-29 00:00:00	489	654
+5673	2000	1998-06-26 00:00:00	1889	998
+5674	2000	1998-10-22 00:00:00	3699	1006
+5675	2000	1998-10-22 00:00:00	3700	1006
+5676	2000	1998-10-28 00:00:00	3701	1007
+5677	2000	1998-10-21 00:00:00	3702	1008
+5678	2000	1998-10-09 00:00:00	3703	2
+5679	2000	1998-10-21 00:00:00	3704	1008
+5680	2000	1996-07-08 00:00:00	3691	1003
+5681	2000	1998-10-09 00:00:00	3705	1009
+5682	2000	1997-05-08 00:00:00	3691	1003
+5683	2000	1998-06-09 00:00:00	3706	1010
+5684	1772	1998-06-03 00:00:00	3691	1003
+5685	1574	1995-09-27 00:00:00	3707	1003
+5686	1500	1996-12-09 00:00:00	3708	1011
+5687	1500	1997-04-25 00:00:00	3709	585
+5688	1500	1997-08-05 00:00:00	3710	529
+5689	1500	1998-09-28 00:00:00	3711	996
+5690	1500	1997-09-06 00:00:00	3703	549
+5691	1500	1997-07-16 00:00:00	3710	539
+5692	1500	1998-05-18 00:00:00	3712	1010
+5693	1500	1998-10-20 00:00:00	3713	998
+5694	1500	1998-03-25 00:00:00	3714	998
+5695	1500	1997-12-08 00:00:00	3715	1001
+5696	1353	1998-11-05 00:00:00	3716	1003
+5698	1200	1998-02-24 00:00:00	3718	1000
+5699	1000	1998-08-07 00:00:00	3719	76
+5700	1000	1998-09-05 00:00:00	3720	76
+5701	1000	1998-09-14 00:00:00	3075	15
+5702	1000	1998-09-04 00:00:00	3721	583
+5703	1000	1998-07-17 00:00:00	3722	195
+5704	1000	1998-07-17 00:00:00	3722	195
+5705	1000	1998-07-17 00:00:00	3723	195
+5706	1000	1998-07-17 00:00:00	3723	195
+5708	1000	1998-07-23 00:00:00	3725	1012
+5709	1000	1998-07-22 00:00:00	3726	1013
+5710	1000	1998-07-06 00:00:00	3727	1013
+5711	1000	1998-07-10 00:00:00	3728	885
+5712	1000	1998-07-10 00:00:00	3728	885
+5713	1000	1998-07-01 00:00:00	3729	885
+5714	1000	1998-07-01 00:00:00	3729	885
+5716	1000	1998-05-19 00:00:00	3731	886
+5717	1000	1998-04-07 00:00:00	2482	1014
+5718	1000	1998-07-10 00:00:00	3732	1015
+5719	1000	1998-04-28 00:00:00	3231	885
+5720	1000	1998-06-29 00:00:00	3733	549
+5721	1000	1998-06-29 00:00:00	3733	549
+5722	1000	1998-06-29 00:00:00	3734	549
+5723	1000	1998-06-03 00:00:00	3735	549
+5724	1000	1998-06-03 00:00:00	3736	549
+5725	1000	1998-06-08 00:00:00	3737	1016
+5726	1000	1998-06-30 00:00:00	3738	1016
+5727	1000	1998-04-22 00:00:00	3739	366
+5728	1000	1998-04-22 00:00:00	3739	366
+5729	1000	1998-06-26 00:00:00	3740	1017
+5730	1000	1998-06-26 00:00:00	3740	1017
+5731	1000	1998-06-04 00:00:00	3741	1017
+5732	1000	1998-06-19 00:00:00	3742	377
+5733	1000	1998-04-30 00:00:00	3743	750
+5734	1000	1998-06-29 00:00:00	3744	1018
+5735	1000	1998-06-25 00:00:00	3745	1013
+5736	1000	1998-06-25 00:00:00	3746	1013
+5737	1000	1998-06-25 00:00:00	3747	1013
+5738	1000	1998-06-25 00:00:00	3748	1013
+5739	1000	1998-05-06 00:00:00	3749	1013
+5740	1000	1998-05-01 00:00:00	3750	856
+5742	1000	1998-02-13 00:00:00	3752	417
+5743	1000	1998-03-20 00:00:00	3753	1019
+5744	1000	1998-03-08 00:00:00	3754	1016
+5745	1000	1998-02-02 00:00:00	3755	1016
+5746	1000	1998-03-31 00:00:00	3705	1020
+5747	1000	1998-03-03 00:00:00	3141	881
+5748	1000	1998-01-08 00:00:00	3756	1021
+5749	1000	1998-03-06 00:00:00	3101	1022
+5750	1000	1998-03-24 00:00:00	3757	1017
+5751	1000	1998-03-27 00:00:00	3758	1017
+5752	1000	1998-03-23 00:00:00	3277	1017
+5753	1000	1998-03-23 00:00:00	3277	1017
+5754	1000	1998-02-26 00:00:00	3759	1018
+5755	1000	1998-02-26 00:00:00	3759	1018
+5756	1000	1998-02-26 00:00:00	3760	1018
+5757	1000	1998-02-26 00:00:00	3760	1018
+5758	1000	1998-03-26 00:00:00	3761	15
+5759	1000	1998-03-26 00:00:00	3761	15
+5760	1000	1998-03-31 00:00:00	3762	856
+5761	1000	1998-03-02 00:00:00	3763	1013
+5762	1000	1998-03-02 00:00:00	3763	1013
+5763	1000	1998-03-31 00:00:00	3734	549
+5764	1000	1998-01-23 00:00:00	3764	549
+5765	1000	1998-03-10 00:00:00	3765	1023
+5766	1000	1998-03-31 00:00:00	3766	1024
+5767	1000	1998-03-31 00:00:00	3766	1024
+5768	1000	1998-03-17 00:00:00	1065	882
+5770	1000	1997-11-06 00:00:00	3768	377
+5771	1000	1997-12-31 00:00:00	3769	549
+5772	1000	1997-09-06 00:00:00	3703	549
+5773	1000	1997-11-12 00:00:00	3770	549
+5774	1000	1997-12-04 00:00:00	3771	549
+5775	1000	1997-08-18 00:00:00	3107	201
+5776	1000	1997-12-08 00:00:00	3772	1018
+5777	1000	1997-12-24 00:00:00	3756	1021
+5778	1000	1997-12-16 00:00:00	3030	1025
+5779	1000	1997-12-10 00:00:00	1827	1026
+5780	1000	1997-12-30 00:00:00	3749	1013
+5781	1000	1997-10-22 00:00:00	3773	1027
+5782	1000	1997-12-17 00:00:00	3774	76
+5783	1000	1997-12-08 00:00:00	2555	1028
+5784	1000	1997-12-05 00:00:00	3277	1017
+5785	1000	1997-11-06 00:00:00	3768	377
+5786	1000	1997-08-04 00:00:00	3775	195
+5787	1000	1997-12-18 00:00:00	3776	195
+5788	1000	1997-10-21 00:00:00	3777	267
+5789	1000	1997-10-20 00:00:00	3778	267
+5790	1000	1997-09-15 00:00:00	3779	267
+5791	1000	1997-09-15 00:00:00	3779	267
+5792	1000	1997-07-28 00:00:00	3780	1029
+5793	1000	1997-06-24 00:00:00	3781	1013
+5794	1000	1997-06-16 00:00:00	3782	549
+5795	1000	1997-06-16 00:00:00	3783	549
+5796	1000	1997-06-16 00:00:00	3784	549
+5797	1000	1997-06-16 00:00:00	3784	549
+5798	1000	1997-02-20 00:00:00	3785	881
+5799	1000	1997-01-23 00:00:00	3136	549
+5800	1000	1997-01-23 00:00:00	3136	549
+5801	1000	1997-03-14 00:00:00	3786	1030
+5802	1000	1997-06-13 00:00:00	3787	1030
+5803	1000	1997-06-30 00:00:00	3788	267
+5804	1000	1997-06-30 00:00:00	3788	267
+5807	1000	1998-11-22 00:00:00	3791	1006
+5808	1000	1998-10-23 00:00:00	3792	1031
+5809	1000	1998-10-23 00:00:00	3792	1031
+5810	1000	1998-10-29 00:00:00	3793	1013
+5811	1000	1998-07-29 00:00:00	3794	176
+5812	1000	1998-08-21 00:00:00	3795	996
+5813	1000	1998-02-13 00:00:00	3796	1032
+5814	1000	1998-05-15 00:00:00	3797	1032
+5815	1000	1998-01-19 00:00:00	3798	1032
+5816	1000	1997-05-01 00:00:00	3799	964
+5817	1000	1997-06-05 00:00:00	3800	1011
+5818	1000	1995-10-10 00:00:00	3801	1011
+5819	1000	1998-04-05 00:00:00	3802	1005
+5820	1000	1998-10-20 00:00:00	3803	998
+5821	1000	1998-11-02 00:00:00	3804	998
+5822	1000	1995-06-07 00:00:00	3805	998
+5823	1000	1995-07-31 00:00:00	3806	998
+5824	1000	1998-10-29 00:00:00	1889	998
+5825	1000	1998-11-16 00:00:00	3807	998
+5826	1000	1998-11-02 00:00:00	3008	998
+5827	1000	1995-04-17 00:00:00	3808	998
+5828	1000	1998-09-29 00:00:00	3809	1003
+5829	1000	1998-10-28 00:00:00	3810	1003
+5830	1000	1998-09-28 00:00:00	3694	1003
+5831	1000	1997-12-04 00:00:00	3693	1003
+5832	1000	1998-07-23 00:00:00	3811	1003
+5833	1000	1998-03-27 00:00:00	3812	1003
+5834	1000	1996-05-31 00:00:00	3813	1003
+5835	1000	1997-04-26 00:00:00	3814	1003
+5836	1000	1998-01-29 00:00:00	3815	1003
+5837	1000	1998-09-10 00:00:00	3816	1000
+5838	1000	1998-04-28 00:00:00	3544	539
+5839	1000	1997-07-17 00:00:00	3710	654
+5840	1000	1998-08-26 00:00:00	489	585
+5841	1000	1998-10-27 00:00:00	489	585
+5842	1000	1998-03-10 00:00:00	3817	585
+5843	1000	1998-12-15 00:00:00	1670	585
+5844	1000	1998-04-29 00:00:00	3544	529
+5845	1000	1998-06-19 00:00:00	489	529
+5846	1000	1997-02-04 00:00:00	3818	537
+5847	1000	1997-07-15 00:00:00	3710	565
+5848	1000	1998-10-20 00:00:00	3771	549
+5849	1000	1998-10-27 00:00:00	3819	549
+5850	1000	1998-10-20 00:00:00	3782	549
+5851	1000	1998-10-31 00:00:00	3820	267
+5852	1000	1998-10-31 00:00:00	3820	267
+5853	1000	1998-10-31 00:00:00	3070	267
+5855	1000	1997-06-30 00:00:00	3680	549
+5856	1000	1997-06-30 00:00:00	3680	549
+5857	1000	1998-06-23 00:00:00	3822	895
+5858	1000	1998-07-06 00:00:00	3823	1008
+5859	1000	1998-08-17 00:00:00	1065	1008
+5860	1000	1998-08-17 00:00:00	1065	1008
+5861	1000	1998-08-30 00:00:00	3824	1033
+5862	1000	1998-10-13 00:00:00	3758	1009
+5863	1000	1998-10-13 00:00:00	3758	2
+5864	1000	1998-09-04 00:00:00	1065	1034
+5865	1000	1998-09-25 00:00:00	3695	1035
+5866	1000	1998-09-04 00:00:00	3825	267
+5867	1000	1998-07-23 00:00:00	3826	76
+5868	900	1997-12-16 00:00:00	3030	1013
+5869	900	1998-03-05 00:00:00	3827	1018
+5870	900	1998-03-15 00:00:00	3827	1018
+5871	900	1997-10-21 00:00:00	3828	267
+5872	800	1997-10-28 00:00:00	3829	1036
+5873	800	1998-10-13 00:00:00	3830	1037
+5874	750	1998-08-11 00:00:00	3831	1033
+5875	750	1998-12-01 00:00:00	3225	28
+5876	750	1997-12-09 00:00:00	3832	1000
+5877	750	1998-07-10 00:00:00	3833	1038
+5878	750	1998-07-08 00:00:00	3834	1039
+5879	750	1998-02-15 00:00:00	3835	298
+5880	750	1998-02-20 00:00:00	3685	1000
+5881	750	1997-12-09 00:00:00	3685	1000
+5882	750	1998-10-01 00:00:00	489	539
+5883	700	1998-01-08 00:00:00	2496	712
+5884	700	1997-10-30 00:00:00	3836	1040
+5885	700	1997-06-13 00:00:00	3026	52
+5886	632	1998-06-26 00:00:00	3837	610
+5887	625	1998-02-25 00:00:00	3273	750
+5888	600	1998-07-10 00:00:00	3838	998
+5890	600	1998-09-14 00:00:00	3840	750
+5891	600	1997-06-27 00:00:00	3841	1013
+5892	550	1998-01-16 00:00:00	489	654
+5893	550	1997-10-15 00:00:00	489	654
+5894	500	1998-01-27 00:00:00	3842	25
+5895	500	1998-09-08 00:00:00	3843	1040
+5896	500	1998-09-01 00:00:00	3844	610
+5897	500	1997-04-21 00:00:00	3808	741
+5898	500	1998-08-20 00:00:00	3845	1013
+5899	500	1998-10-29 00:00:00	3846	1013
+5900	500	1998-07-20 00:00:00	3847	1016
+5901	500	1998-09-08 00:00:00	3848	1040
+5902	500	1998-06-05 00:00:00	3849	1041
+5903	500	1998-08-20 00:00:00	3850	1013
+5904	500	1998-10-29 00:00:00	3851	1013
+5905	500	1998-10-29 00:00:00	3852	1013
+5906	500	1998-03-18 00:00:00	3101	612
+5907	500	1998-10-29 00:00:00	3853	26
+5909	500	1998-12-08 00:00:00	2557	222
+5910	500	1998-06-08 00:00:00	310	1042
+5911	500	1998-02-19 00:00:00	3818	537
+5912	500	1998-04-07 00:00:00	3854	1000
+5913	500	1998-01-20 00:00:00	3855	1000
+5914	500	1998-05-29 00:00:00	3856	1000
+5915	500	1998-05-06 00:00:00	3857	1013
+5916	500	1998-09-14 00:00:00	3858	1013
+5917	500	1998-08-31 00:00:00	3859	1000
+5918	500	1998-09-02 00:00:00	3860	1000
+5919	500	1998-01-09 00:00:00	3860	1000
+5920	500	1998-06-04 00:00:00	3861	1013
+5921	500	1998-10-31 00:00:00	3070	267
+5922	500	1998-09-09 00:00:00	3862	1000
+5923	500	1998-09-30 00:00:00	3863	1017
+5924	500	1998-11-06 00:00:00	3226	306
+5925	500	1998-10-28 00:00:00	3864	1043
+5926	500	1998-09-14 00:00:00	3813	1003
+5927	500	1998-02-24 00:00:00	3813	1003
+5928	500	1998-11-06 00:00:00	3865	1003
+5929	500	1998-03-19 00:00:00	3866	1003
+5930	500	1998-03-27 00:00:00	3867	1003
+5931	500	1998-06-22 00:00:00	3070	267
+5932	500	1998-03-31 00:00:00	3868	1013
+5933	500	1998-04-30 00:00:00	3743	750
+5934	500	1997-12-16 00:00:00	3869	265
+5935	500	1998-03-04 00:00:00	3870	1013
+5936	500	1997-07-08 00:00:00	3871	1001
+5937	500	1998-08-11 00:00:00	3872	28
+5938	500	1998-07-28 00:00:00	3873	76
+5939	500	1998-03-04 00:00:00	3870	1013
+5940	500	1998-06-29 00:00:00	3874	1044
+5941	500	1997-10-02 00:00:00	3875	1045
+5942	500	1998-08-12 00:00:00	3225	28
+5943	500	1998-02-23 00:00:00	3876	1046
+5944	500	1998-08-12 00:00:00	3048	28
+5945	500	1998-08-12 00:00:00	3037	28
+5946	500	1998-06-26 00:00:00	3877	1017
+5947	500	1997-06-02 00:00:00	3706	673
+5949	500	1998-06-15 00:00:00	3878	265
+5950	500	1997-11-06 00:00:00	3879	306
+5951	500	1997-11-03 00:00:00	3880	293
+5952	500	1998-05-26 00:00:00	1013	293
+5953	500	1998-05-28 00:00:00	3881	671
+5954	500	1998-05-19 00:00:00	3882	998
+5955	500	1997-03-26 00:00:00	3883	585
+5956	500	1998-09-11 00:00:00	3884	28
+5957	500	1998-09-03 00:00:00	3885	939
+5958	500	1997-05-20 00:00:00	3340	585
+5959	500	1998-07-10 00:00:00	3886	1032
+5960	500	1998-07-15 00:00:00	3887	76
+5961	500	1998-09-18 00:00:00	3888	935
+5962	500	1998-03-31 00:00:00	3889	182
+5963	500	1998-04-24 00:00:00	3544	565
+5964	500	1998-03-03 00:00:00	489	565
+5965	500	1997-11-10 00:00:00	489	539
+5966	500	1998-09-28 00:00:00	3890	28
+5967	500	1998-10-20 00:00:00	3891	1013
+5968	500	1998-09-02 00:00:00	3892	1035
+5969	500	1998-08-20 00:00:00	3893	76
+5970	500	1998-09-14 00:00:00	3075	15
+5971	500	1997-01-24 00:00:00	489	565
+5972	500	1998-09-17 00:00:00	3894	15
+5973	500	1997-02-04 00:00:00	3895	943
+5974	500	1998-10-26 00:00:00	3896	1013
+5975	500	1998-10-28 00:00:00	3897	1013
+5976	500	1998-04-24 00:00:00	3544	654
+5977	500	1998-10-29 00:00:00	3898	1013
+5978	500	1998-06-22 00:00:00	3899	1047
+5979	500	1998-04-22 00:00:00	3900	1013
+5980	500	1998-03-16 00:00:00	3901	1019
+5981	500	1998-01-10 00:00:00	3902	998
+5982	500	1998-03-02 00:00:00	3903	213
+5983	500	1997-09-12 00:00:00	3904	267
+5984	500	1998-01-21 00:00:00	3905	1048
+5985	500	1998-03-12 00:00:00	3807	998
+5986	500	1998-03-09 00:00:00	3906	213
+5987	500	1997-10-15 00:00:00	3778	267
+5989	500	1998-10-20 00:00:00	3908	998
+5990	500	1998-03-10 00:00:00	3909	998
+5991	500	1997-07-16 00:00:00	3910	1049
+5992	500	1998-03-25 00:00:00	3911	998
+5993	500	1998-09-18 00:00:00	3912	998
+5994	500	1997-04-16 00:00:00	3800	1011
+5995	500	1997-12-09 00:00:00	3913	552
+5996	500	1997-10-28 00:00:00	3914	552
+5997	500	1997-12-05 00:00:00	3915	552
+5999	500	1997-06-18 00:00:00	3917	612
+6000	500	1997-03-04 00:00:00	3703	1050
+6001	500	1997-06-30 00:00:00	3768	1033
+6002	500	1997-06-30 00:00:00	3918	1033
+6003	500	1998-04-30 00:00:00	3919	589
+6004	500	1998-05-27 00:00:00	3920	919
+6005	500	1997-09-05 00:00:00	3710	919
+6006	500	1997-05-08 00:00:00	3921	939
+6007	500	1997-12-12 00:00:00	3922	562
+6008	500	1997-02-06 00:00:00	3923	931
+6009	500	1998-05-19 00:00:00	3924	1051
+6010	500	1998-05-07 00:00:00	3862	944
+6011	500	1998-06-18 00:00:00	3925	1052
+6012	500	1997-09-30 00:00:00	3926	1053
+6013	500	1997-03-31 00:00:00	3927	1013
+6014	500	1997-06-09 00:00:00	3928	1013
+6015	500	1997-07-16 00:00:00	3929	1037
+6016	500	1998-09-18 00:00:00	3930	998
+6017	500	1997-10-14 00:00:00	3931	76
+6018	500	1998-03-30 00:00:00	3932	1019
+6019	500	1997-08-29 00:00:00	3933	1029
+6020	500	1998-07-31 00:00:00	3693	998
+6021	500	1997-12-18 00:00:00	3934	1017
+6022	480	1998-02-22 00:00:00	3935	1054
+6023	450	1997-12-06 00:00:00	3816	1000
+6024	450	1998-07-27 00:00:00	2688	565
+6025	400	1997-03-20 00:00:00	2585	745
+6026	400	1998-02-27 00:00:00	3936	616
+6027	400	1997-10-01 00:00:00	3447	750
+6029	400	1998-04-04 00:00:00	3938	908
+6031	400	1997-09-03 00:00:00	2871	1048
+6033	390	1998-05-04 00:00:00	1013	967
+6034	375	1998-10-16 00:00:00	3714	998
+6035	350	1998-08-01 00:00:00	3940	610
+6036	325	1998-07-06 00:00:00	3941	1055
+6037	325	1998-11-23 00:00:00	3942	330
+6038	320	1997-06-10 00:00:00	1013	967
+6039	300	1997-12-09 00:00:00	3854	1000
+6040	300	1998-06-09 00:00:00	3943	1056
+6041	300	1997-12-11 00:00:00	3468	868
+6042	300	1998-09-09 00:00:00	3944	222
+6043	300	1997-11-24 00:00:00	3945	552
+6044	300	1998-01-13 00:00:00	3943	930
+6045	300	1997-09-18 00:00:00	3946	222
+6046	300	1998-03-26 00:00:00	3943	1057
+6047	300	1998-02-02 00:00:00	3947	1013
+6048	300	1998-05-22 00:00:00	3948	933
+6050	300	1998-10-29 00:00:00	3950	26
+6051	300	1997-09-17 00:00:00	3457	529
+6052	300	1997-03-14 00:00:00	3951	1057
+6053	300	1997-10-18 00:00:00	3952	589
+6054	300	1998-05-15 00:00:00	3953	377
+6057	300	1996-11-18 00:00:00	3956	1058
+6058	300	1998-09-11 00:00:00	3957	15
+6059	300	1998-03-09 00:00:00	3958	998
+6060	300	1997-03-04 00:00:00	3943	919
+6062	300	1998-12-18 00:00:00	3960	751
+6063	300	1998-04-26 00:00:00	3961	1059
+6064	300	1998-08-22 00:00:00	3953	377
+6065	300	1997-02-05 00:00:00	3943	906
+6066	300	1998-01-26 00:00:00	3962	1060
+6067	300	1998-02-13 00:00:00	3963	221
+6070	300	1998-11-06 00:00:00	2160	882
+6072	300	1997-06-07 00:00:00	1024	916
+6073	300	1998-03-31 00:00:00	3967	916
+6074	300	1998-04-15 00:00:00	3968	1061
+6075	300	1997-01-24 00:00:00	3943	542
+6076	300	1998-06-10 00:00:00	3969	998
+6077	300	1998-08-06 00:00:00	3970	1016
+6079	300	1998-06-01 00:00:00	3943	1062
+6080	300	1998-06-24 00:00:00	3972	1013
+6081	300	1998-04-16 00:00:00	3973	1001
+6082	300	1997-09-08 00:00:00	3943	920
+6083	300	1997-04-08 00:00:00	3974	751
+6084	300	\N	3975	989
+6085	300	1998-09-11 00:00:00	3976	15
+6086	300	1998-09-18 00:00:00	3977	15
+6087	300	1998-05-01 00:00:00	3978	1021
+6088	300	1998-07-16 00:00:00	3979	998
+6089	300	1997-10-09 00:00:00	3980	917
+6090	300	1998-09-18 00:00:00	3981	15
+6091	300	1997-12-10 00:00:00	3943	542
+6092	300	1998-03-06 00:00:00	3737	1016
+6093	300	1998-10-25 00:00:00	3982	935
+6094	300	1998-04-02 00:00:00	3943	931
+6095	300	1998-04-15 00:00:00	3920	930
+6096	300	1998-05-11 00:00:00	3943	261
+6097	300	1998-06-08 00:00:00	3737	1016
+6098	300	1998-08-26 00:00:00	3983	856
+6099	300	1998-04-16 00:00:00	3973	1001
+6100	300	1997-12-04 00:00:00	3984	671
+6101	290	1997-01-24 00:00:00	2496	712
+6102	275	1998-03-03 00:00:00	3985	998
+6103	275	1998-03-18 00:00:00	3958	998
+6104	250	1997-05-07 00:00:00	3986	1063
+6105	250	1998-07-28 00:00:00	3987	28
+6106	250	1998-02-23 00:00:00	3988	1046
+6107	250	1995-01-30 00:00:00	3989	1046
+6108	250	1998-06-18 00:00:00	3990	724
+6109	250	1998-10-23 00:00:00	3991	1064
+6110	250	1995-02-10 00:00:00	3992	1046
+6111	250	1998-02-19 00:00:00	3993	521
+6112	250	1998-08-11 00:00:00	3994	28
+6113	250	1997-07-24 00:00:00	3710	442
+6114	250	1998-08-11 00:00:00	3995	28
+6115	250	1998-09-16 00:00:00	3996	1017
+6116	250	1998-04-27 00:00:00	3920	442
+6117	250	1998-04-23 00:00:00	3997	4
+6118	250	1997-07-12 00:00:00	3710	930
+6119	250	1998-07-21 00:00:00	3813	1003
+6120	250	1998-10-23 00:00:00	3519	28
+6121	250	1996-03-14 00:00:00	3998	1003
+6122	250	1998-11-02 00:00:00	3999	1000
+6123	250	1998-09-21 00:00:00	4000	1013
+6124	250	1998-06-02 00:00:00	4001	1000
+6125	250	1998-08-12 00:00:00	3280	28
+6126	250	1998-07-16 00:00:00	4002	936
+6127	250	1997-12-09 00:00:00	4003	1000
+6128	250	1998-11-17 00:00:00	4004	267
+6129	250	1997-07-18 00:00:00	3710	1065
+6130	250	1998-10-31 00:00:00	4005	885
+6131	250	1997-12-08 00:00:00	4006	650
+6132	250	1998-11-02 00:00:00	4007	1000
+6133	250	1998-09-25 00:00:00	3031	565
+6134	250	1998-11-04 00:00:00	4000	1013
+6135	250	1998-11-03 00:00:00	4008	1013
+6136	250	1997-04-21 00:00:00	3943	741
+6137	250	1997-01-23 00:00:00	4009	1066
+6138	250	1997-07-30 00:00:00	4010	895
+6139	250	1998-09-14 00:00:00	4011	1013
+6140	250	1998-03-02 00:00:00	3943	298
+6141	250	1998-05-28 00:00:00	3835	298
+6142	250	1998-01-24 00:00:00	3943	1067
+6143	250	1998-12-09 00:00:00	4012	1004
+6144	250	1998-04-14 00:00:00	3943	741
+6145	250	1998-08-20 00:00:00	4008	1013
+6146	250	1998-08-26 00:00:00	4013	1068
+6147	250	1998-07-03 00:00:00	4014	935
+6148	250	1997-08-01 00:00:00	489	539
+6149	250	1998-06-22 00:00:00	3943	890
+6150	250	1998-01-30 00:00:00	3943	890
+6151	250	1998-04-15 00:00:00	3920	890
+6152	250	1997-09-08 00:00:00	4015	1069
+6153	250	1998-04-30 00:00:00	3920	769
+6154	250	1998-08-06 00:00:00	2597	712
+6155	250	1998-07-16 00:00:00	4012	1004
+6156	250	1998-04-21 00:00:00	4016	1013
+6157	250	1997-04-04 00:00:00	4017	565
+6158	250	1998-07-07 00:00:00	3696	1070
+6159	250	1998-10-20 00:00:00	4018	1013
+6160	250	1997-11-24 00:00:00	4019	945
+6161	250	1998-03-23 00:00:00	3943	945
+6162	250	1998-10-20 00:00:00	4020	1013
+6163	250	1997-03-27 00:00:00	3943	1071
+6164	250	1998-10-20 00:00:00	4021	1013
+6165	250	1998-10-28 00:00:00	3468	868
+6166	250	1998-07-27 00:00:00	4022	585
+6167	250	1998-09-15 00:00:00	4023	935
+6168	250	1998-10-07 00:00:00	4024	1013
+6169	250	1998-07-06 00:00:00	4025	801
+6170	250	1997-04-22 00:00:00	4026	1072
+6171	250	1997-06-10 00:00:00	1013	967
+6172	250	1998-04-02 00:00:00	3817	585
+6173	250	1997-02-06 00:00:00	3943	905
+6174	250	1998-02-04 00:00:00	3943	905
+6175	250	1998-09-28 00:00:00	4027	28
+6176	250	1997-08-13 00:00:00	4028	881
+6177	250	1997-10-09 00:00:00	4029	1073
+6178	250	1995-08-03 00:00:00	3807	998
+6179	250	1997-11-29 00:00:00	3826	195
+6180	250	1998-05-22 00:00:00	4030	998
+6181	250	1998-03-26 00:00:00	3476	939
+6182	250	1997-12-18 00:00:00	4031	1017
+6183	250	1997-03-26 00:00:00	4032	1074
+6184	250	1997-08-25 00:00:00	4033	881
+6185	250	1997-08-04 00:00:00	4034	1029
+6186	250	1998-07-13 00:00:00	4035	4
+6187	250	1997-11-11 00:00:00	4036	1019
+6188	250	1998-03-16 00:00:00	3826	1001
+6189	250	1997-11-19 00:00:00	3710	786
+6190	250	1998-03-25 00:00:00	4037	1075
+6191	250	1997-08-12 00:00:00	3997	4
+6192	250	1997-07-21 00:00:00	3997	4
+6193	250	1998-06-08 00:00:00	3920	786
+6194	250	1998-03-10 00:00:00	4038	1016
+6195	250	1998-05-18 00:00:00	3685	944
+6196	250	1998-05-18 00:00:00	3816	944
+6197	250	1998-05-13 00:00:00	3816	944
+6198	250	1998-05-04 00:00:00	3943	944
+6199	250	1998-03-19 00:00:00	3943	786
+6200	250	1997-05-20 00:00:00	3943	786
+6201	250	1998-05-28 00:00:00	4039	417
+6202	250	1997-05-30 00:00:00	4040	1001
+6203	250	1997-10-08 00:00:00	4041	751
+6204	250	1997-12-12 00:00:00	4042	1040
+6205	250	1997-07-28 00:00:00	4043	1076
+6206	250	1997-04-15 00:00:00	3476	939
+6207	250	1997-01-09 00:00:00	4044	222
+6208	250	1998-06-30 00:00:00	4045	919
+6209	250	1998-03-27 00:00:00	4046	549
+6210	250	1998-01-07 00:00:00	4047	1025
+6211	250	1998-06-25 00:00:00	3990	724
+6212	250	1997-10-15 00:00:00	3226	306
+6213	250	1997-05-20 00:00:00	4048	612
+6214	250	1997-09-26 00:00:00	4049	222
+6216	250	1997-11-18 00:00:00	4051	552
+6217	250	1997-04-09 00:00:00	3943	248
+6218	250	1998-01-28 00:00:00	3732	1015
+6220	250	1998-01-20 00:00:00	3943	248
+6221	250	1998-02-18 00:00:00	3946	222
+6222	250	1998-05-15 00:00:00	3943	283
+6223	250	1998-01-23 00:00:00	3943	283
+6224	250	1998-01-05 00:00:00	4053	222
+6225	250	1998-06-10 00:00:00	4054	333
+6226	250	1998-01-20 00:00:00	4055	906
+6227	250	1998-08-11 00:00:00	4056	1033
+6228	250	1998-08-11 00:00:00	3519	28
+6229	250	1998-01-11 00:00:00	3909	1077
+6230	250	1998-07-17 00:00:00	4057	1078
+6231	250	1998-06-24 00:00:00	4058	968
+6232	250	1997-10-28 00:00:00	4059	222
+6233	250	1998-08-03 00:00:00	4060	1078
+6234	250	1998-05-15 00:00:00	4061	293
+6235	250	1997-10-02 00:00:00	4062	222
+6236	250	1998-01-20 00:00:00	4063	933
+6237	250	1998-03-03 00:00:00	3928	1013
+6238	250	1998-04-01 00:00:00	4064	1079
+6239	250	1997-01-31 00:00:00	3943	947
+6240	250	1998-04-29 00:00:00	4065	1059
+6241	250	1998-09-08 00:00:00	4066	1033
+6242	250	1998-09-28 00:00:00	3884	28
+6243	250	1997-10-30 00:00:00	4067	1036
+6244	250	1998-09-28 00:00:00	3225	28
+6245	250	1998-09-28 00:00:00	3308	28
+6246	250	1997-08-07 00:00:00	489	585
+6247	250	1998-06-10 00:00:00	3990	724
+6248	250	1998-10-01 00:00:00	3940	610
+6249	225	1998-01-23 00:00:00	4068	905
+6250	225	1998-01-07 00:00:00	4047	1025
+6251	225	1998-10-20 00:00:00	4069	751
+6252	225	1997-12-09 00:00:00	4070	1000
+6253	225	1998-01-07 00:00:00	4047	1013
+6254	200	1998-06-24 00:00:00	3943	542
+6255	200	1997-11-06 00:00:00	4071	452
+6256	200	1998-03-31 00:00:00	2160	882
+6257	200	1998-05-29 00:00:00	4072	1080
+6258	200	1995-02-22 00:00:00	4073	1003
+6259	200	1996-04-18 00:00:00	4074	1003
+6260	200	1997-08-01 00:00:00	3710	1081
+6261	200	1998-03-03 00:00:00	3943	587
+6262	200	1997-06-20 00:00:00	4075	587
+6263	200	1998-03-24 00:00:00	3943	889
+6264	200	1998-06-01 00:00:00	3854	892
+6265	200	1998-06-04 00:00:00	4076	958
+6266	200	1998-02-06 00:00:00	3943	958
+6267	200	1998-06-24 00:00:00	3943	1082
+6268	200	1998-03-09 00:00:00	3943	794
+6269	200	1998-01-15 00:00:00	4077	794
+6270	200	1998-02-09 00:00:00	3560	616
+6271	200	1998-02-16 00:00:00	4078	616
+6272	200	1997-02-20 00:00:00	4079	221
+6273	200	1997-04-11 00:00:00	3577	1074
+6274	200	1997-03-26 00:00:00	4032	1074
+6275	200	1998-02-24 00:00:00	3943	957
+6276	200	1997-05-29 00:00:00	3943	985
+6277	200	1997-02-26 00:00:00	4080	914
+6278	200	1998-04-06 00:00:00	3943	600
+6279	200	1997-12-24 00:00:00	4081	998
+6280	200	1998-09-08 00:00:00	4082	998
+6281	200	1998-07-31 00:00:00	3619	998
+6282	200	1998-06-24 00:00:00	4083	1083
+6283	200	1998-05-29 00:00:00	4084	1084
+6284	200	1997-02-24 00:00:00	4085	931
+6285	200	1997-04-29 00:00:00	3943	942
+6286	200	1998-06-23 00:00:00	3943	942
+6287	200	1998-04-20 00:00:00	3943	239
+6288	200	1997-08-26 00:00:00	3710	239
+6289	200	1997-08-19 00:00:00	4086	1085
+6290	200	1997-09-01 00:00:00	4087	916
+6291	200	1997-06-12 00:00:00	4054	333
+6292	200	1997-06-17 00:00:00	3948	933
+6293	200	1998-03-12 00:00:00	4088	1086
+6294	200	1998-03-25 00:00:00	4089	1086
+6295	200	1997-03-11 00:00:00	4090	1087
+6296	200	1997-03-04 00:00:00	4091	529
+6297	200	1998-10-21 00:00:00	4092	15
+6298	200	1998-04-01 00:00:00	4093	964
+6300	200	1997-01-20 00:00:00	4094	890
+6301	200	1997-07-11 00:00:00	3710	890
+6302	200	1998-04-08 00:00:00	4095	842
+6303	200	1998-02-26 00:00:00	3936	1032
+6304	200	1998-01-26 00:00:00	4096	495
+6305	200	1997-10-01 00:00:00	4097	565
+6306	200	1997-04-21 00:00:00	3943	945
+6307	200	1998-06-10 00:00:00	4098	1088
+6308	200	1998-03-05 00:00:00	3943	911
+6309	200	1997-02-18 00:00:00	4099	1089
+6310	200	1997-04-14 00:00:00	3943	1067
+6311	200	1997-09-17 00:00:00	3457	529
+6312	200	1998-11-03 00:00:00	4100	1013
+6313	200	1998-09-22 00:00:00	4101	4
+6314	200	1998-10-02 00:00:00	4102	222
+6315	200	1997-04-25 00:00:00	4103	585
+6316	200	1998-10-13 00:00:00	4104	1090
+6317	200	1997-02-28 00:00:00	3943	930
+6318	200	1998-07-30 00:00:00	4008	1013
+6319	200	1998-01-22 00:00:00	3943	968
+6320	200	1998-05-04 00:00:00	3920	968
+6321	200	1997-08-01 00:00:00	3710	968
+6322	200	1998-06-30 00:00:00	3920	465
+6323	200	1998-04-16 00:00:00	4105	332
+6324	200	1997-01-10 00:00:00	4106	1091
+6325	200	1997-10-20 00:00:00	3904	267
+6326	200	1997-08-27 00:00:00	4107	1092
+6327	200	1998-06-30 00:00:00	4108	306
+6328	200	1998-05-19 00:00:00	4108	306
+6329	198	1998-02-26 00:00:00	3943	991
+6330	189	1998-05-01 00:00:00	4109	917
+6331	175	1997-04-08 00:00:00	4032	1093
+6332	175	1998-03-20 00:00:00	3943	920
+6333	175	1997-03-11 00:00:00	3943	991
+6334	175	1998-04-15 00:00:00	3920	962
+6335	175	1997-02-17 00:00:00	4110	958
+6336	175	1998-03-23 00:00:00	3943	1094
+6337	175	1997-03-24 00:00:00	3943	967
+6338	175	1997-02-12 00:00:00	3943	244
+6339	175	1997-03-13 00:00:00	3943	911
+6340	175	1997-02-17 00:00:00	4111	801
+6341	175	1998-01-31 00:00:00	4112	801
+6342	175	1997-02-10 00:00:00	4111	958
+6343	175	1998-05-11 00:00:00	4099	967
+6344	175	1997-07-12 00:00:00	3710	962
+6345	175	1998-03-02 00:00:00	3943	954
+6346	175	1998-06-15 00:00:00	3943	802
+6347	159	1997-05-19 00:00:00	4113	998
+6348	150	1997-05-23 00:00:00	3905	1048
+6349	150	1997-09-13 00:00:00	3589	916
+6350	150	1997-08-05 00:00:00	3490	529
+6351	150	1998-05-06 00:00:00	3920	1095
+6352	150	1997-05-27 00:00:00	3943	794
+6353	150	1997-10-21 00:00:00	4109	917
+6354	150	1997-07-24 00:00:00	3710	465
+6355	150	1998-04-02 00:00:00	3920	1095
+6356	150	1998-07-02 00:00:00	4114	689
+6357	150	1997-08-01 00:00:00	4115	930
+6358	150	1998-02-12 00:00:00	3943	965
+6359	150	1998-06-20 00:00:00	3943	1096
+6360	150	1997-07-05 00:00:00	3816	1071
+6361	150	1998-06-08 00:00:00	4116	1097
+6362	150	1998-04-14 00:00:00	4117	1074
+6363	150	1997-02-03 00:00:00	3693	1098
+6364	150	1997-09-22 00:00:00	4118	780
+6365	150	1998-05-18 00:00:00	3943	947
+6366	150	1997-12-19 00:00:00	3943	1084
+6367	150	1998-02-04 00:00:00	3943	244
+6368	150	1997-07-08 00:00:00	3943	244
+6369	150	1997-04-28 00:00:00	3943	1082
+6370	150	1997-05-02 00:00:00	4119	821
+6371	150	1998-04-25 00:00:00	3920	1099
+6372	150	1998-03-17 00:00:00	3943	1071
+6373	150	1998-06-11 00:00:00	3943	587
+6374	150	1998-10-13 00:00:00	3584	565
+6375	150	1998-06-18 00:00:00	4120	1100
+6376	150	1998-04-15 00:00:00	3920	943
+6377	150	1998-06-05 00:00:00	4009	988
+6378	150	1998-08-14 00:00:00	489	539
+6379	150	1997-02-06 00:00:00	4121	616
+6380	150	1997-04-09 00:00:00	3943	920
+6381	150	1997-03-07 00:00:00	3943	1094
+6382	150	1997-03-17 00:00:00	3943	1075
+6383	150	1997-02-19 00:00:00	4078	616
+6384	150	1997-04-10 00:00:00	4075	587
+6385	150	1997-07-17 00:00:00	3710	1101
+6386	150	1997-11-21 00:00:00	4122	1102
+6387	150	1997-04-24 00:00:00	3943	1103
+6388	150	1998-03-09 00:00:00	4123	998
+6389	150	1997-03-14 00:00:00	4099	1084
+6390	150	1998-03-01 00:00:00	3943	821
+6391	150	\N	3862	944
+6392	150	1997-11-04 00:00:00	3710	221
+6393	150	1997-07-21 00:00:00	489	565
+6394	150	1997-03-04 00:00:00	4124	495
+6395	150	1997-05-07 00:00:00	3943	239
+6396	150	1997-10-04 00:00:00	4125	1062
+6397	150	1997-05-15 00:00:00	4126	925
+6398	150	1998-09-14 00:00:00	4127	1003
+6399	150	1997-07-17 00:00:00	3710	1099
+6400	140	1997-06-10 00:00:00	1013	967
+6401	130	1997-07-15 00:00:00	4128	602
+6402	128	1997-12-03 00:00:00	3943	680
+6403	125	1997-03-12 00:00:00	4129	1080
+6404	125	1998-06-08 00:00:00	3943	968
+6405	125	1998-04-30 00:00:00	3943	589
+6406	125	1997-03-07 00:00:00	4130	597
+6407	125	1998-05-15 00:00:00	4131	539
+6408	125	1997-07-21 00:00:00	4132	857
+6409	125	1998-02-06 00:00:00	4133	905
+6410	125	1998-02-06 00:00:00	4134	905
+6411	125	1997-09-12 00:00:00	4135	965
+6412	125	1997-09-08 00:00:00	2360	965
+6413	125	1998-07-02 00:00:00	3943	965
+6414	125	1997-10-30 00:00:00	4067	1036
+6415	125	1997-09-16 00:00:00	4136	965
+6416	125	1998-05-30 00:00:00	4137	1104
+6417	125	1997-03-12 00:00:00	4138	1077
+6418	125	1997-09-01 00:00:00	4139	1105
+6419	120	1998-07-29 00:00:00	4140	1046
+6420	120	1998-07-07 00:00:00	4141	1106
+6421	100	1998-10-22 00:00:00	2920	585
+6422	100	1998-04-15 00:00:00	3920	949
+6423	100	1998-12-01 00:00:00	4142	585
+6424	100	1998-03-10 00:00:00	3693	998
+6425	100	1997-10-23 00:00:00	4143	1107
+6426	100	1997-04-03 00:00:00	1024	961
+6427	100	1998-10-19 00:00:00	4144	565
+6428	100	1998-03-20 00:00:00	4145	238
+6429	100	1998-06-04 00:00:00	4146	944
+6430	100	1997-05-23 00:00:00	2920	585
+6431	100	1998-02-22 00:00:00	4147	978
+6432	100	1998-04-20 00:00:00	4148	944
+6433	100	1998-06-25 00:00:00	3943	1071
+6434	100	1998-01-18 00:00:00	4125	978
+6435	100	1998-01-18 00:00:00	4149	978
+6436	100	\N	1889	1000
+6437	100	1998-07-07 00:00:00	4067	589
+6438	100	1997-09-26 00:00:00	4150	659
+6439	100	1998-06-17 00:00:00	4151	1071
+6440	100	1998-07-07 00:00:00	4152	1108
+6441	100	1998-05-11 00:00:00	4153	1109
+6442	100	1998-03-10 00:00:00	4154	1110
+6443	100	1998-04-07 00:00:00	4155	332
+6444	100	1997-05-14 00:00:00	4156	821
+6445	100	1998-06-16 00:00:00	4157	989
+6446	100	1998-06-30 00:00:00	4158	1105
+6447	100	1998-06-29 00:00:00	4159	1105
+6448	100	1997-08-05 00:00:00	4160	597
+6449	100	1998-02-03 00:00:00	4161	616
+6450	100	1998-06-18 00:00:00	4162	1000
+6451	100	1997-01-23 00:00:00	4163	616
+6452	100	1997-06-05 00:00:00	4164	597
+6453	100	1998-06-15 00:00:00	4165	963
+6454	100	1998-02-16 00:00:00	4166	1111
+6455	100	1998-05-01 00:00:00	4167	602
+6456	100	1998-02-23 00:00:00	3589	916
+6457	100	1997-09-22 00:00:00	1024	916
+6458	100	1997-07-14 00:00:00	4168	657
+6459	100	1997-05-28 00:00:00	4169	917
+6460	100	1997-04-30 00:00:00	4170	332
+6461	100	1997-09-13 00:00:00	4138	1077
+6462	100	1998-10-20 00:00:00	4162	1000
+6463	100	1998-03-09 00:00:00	2920	585
+6464	100	1997-11-10 00:00:00	4171	521
+6465	100	1997-07-14 00:00:00	4172	1003
+6466	100	1998-02-26 00:00:00	4148	1032
+6467	100	1998-11-20 00:00:00	4173	1003
+6468	100	1998-01-28 00:00:00	4172	1003
+6469	100	1998-04-20 00:00:00	4061	293
+6470	100	1998-05-23 00:00:00	4174	976
+6471	100	1998-05-23 00:00:00	4175	976
+6472	100	1997-07-16 00:00:00	3710	949
+6473	100	1998-07-30 00:00:00	2920	585
+6474	100	1998-10-08 00:00:00	2965	996
+6475	100	1997-02-22 00:00:00	4176	967
+6476	100	1997-04-01 00:00:00	4126	1074
+6477	100	1998-05-15 00:00:00	4095	842
+6478	100	1998-04-27 00:00:00	4177	601
+6479	100	1998-03-15 00:00:00	4178	324
+6480	100	1998-06-16 00:00:00	4179	654
+6481	100	1997-09-03 00:00:00	1018	1048
+6482	100	1998-08-13 00:00:00	4180	996
+6483	100	1998-06-11 00:00:00	4181	1070
+6484	100	1998-05-12 00:00:00	2988	585
+6485	100	1997-06-30 00:00:00	4182	1071
+6486	100	1998-04-20 00:00:00	2965	585
+6487	100	1998-05-11 00:00:00	4183	892
+6488	100	1997-06-17 00:00:00	4184	654
+6489	100	1998-07-14 00:00:00	4185	1112
+6490	100	1995-06-07 00:00:00	4186	998
+6491	100	1998-06-09 00:00:00	3835	1113
+6492	100	1998-04-30 00:00:00	4187	585
+6493	100	1998-01-10 00:00:00	4188	998
+6494	100	1997-06-17 00:00:00	4189	654
+6495	100	1998-10-15 00:00:00	3619	998
+6496	100	1998-06-06 00:00:00	4190	1114
+6497	100	1997-03-28 00:00:00	2352	1115
+6498	100	1998-10-13 00:00:00	3619	998
+6499	100	1997-08-14 00:00:00	4191	601
+6500	70	1997-06-17 00:00:00	4192	654
+6501	70	1998-06-16 00:00:00	4193	654
+6502	50	1998-06-16 00:00:00	4194	654
+6503	50	1997-10-06 00:00:00	2920	585
+6504	50	1997-12-19 00:00:00	2920	585
+6505	35	1997-06-17 00:00:00	4195	654
+6506	10	1998-09-05 00:00:00	4196	1116
+6507	-300	1998-06-08 00:00:00	3737	1016
+6508	-500	1998-07-30 00:00:00	4197	1016
+6509	-600	1998-09-20 00:00:00	4198	1016
+6510	-1000	1998-12-20 00:00:00	4199	1008
+6511	-1000	1998-11-22 00:00:00	3700	1006
+6512	-1000	1998-11-25 00:00:00	3699	1006
+6513	-1000	1998-10-21 00:00:00	3702	1008
+6514	-1000	1998-10-09 00:00:00	3672	1017
+6515	-1000	1998-08-27 00:00:00	3672	1017
+6516	-1000	1998-10-28 00:00:00	4200	1007
+6517	-20000	1997-09-11 00:00:00	4201	76
+6518	500	1997-06-24 00:00:00	4202	1117
+6519	300	1997-10-20 00:00:00	4203	1118
+6520	250	1997-09-23 00:00:00	4202	1117
+6521	100	1997-01-29 00:00:00	4204	1119
+6522	80000	1996-06-28 00:00:00	4205	846
+6523	50000	1995-12-20 00:00:00	4205	846
+6524	50000	1995-10-02 00:00:00	4205	1120
+6525	20000	1996-06-28 00:00:00	4205	76
+6526	10000	1996-06-04 00:00:00	4206	848
+6527	10000	1996-01-29 00:00:00	4205	1121
+6528	10000	1995-02-09 00:00:00	4207	52
+6529	10000	1996-02-23 00:00:00	4208	175
+6530	10000	1995-05-23 00:00:00	4206	848
+6531	6000	1996-05-02 00:00:00	4209	52
+6532	5000	1996-05-29 00:00:00	3013	175
+6533	5000	1996-06-28 00:00:00	4210	76
+6534	5000	1996-05-29 00:00:00	3013	1122
+6535	5000	1996-04-30 00:00:00	3689	2
+6536	4000	1996-04-29 00:00:00	4211	52
+6537	3000	1996-10-31 00:00:00	4212	52
+6538	2500	1995-06-14 00:00:00	1722	1123
+6539	2500	1995-06-14 00:00:00	1722	175
+6540	2500	1995-06-14 00:00:00	4213	1123
+6541	2000	1995-06-30 00:00:00	4214	1124
+6542	2000	1995-06-30 00:00:00	4214	1124
+6543	2000	1996-05-17 00:00:00	4215	1125
+6544	2000	1996-05-17 00:00:00	4215	1125
+6546	1250	1995-10-11 00:00:00	4217	76
+6547	1000	1995-04-26 00:00:00	4218	1126
+6548	1000	1995-09-22 00:00:00	4219	1053
+6549	1000	1995-09-28 00:00:00	4220	1127
+6550	1000	1995-12-15 00:00:00	4221	200
+6551	1000	1995-10-04 00:00:00	4222	1037
+6552	1000	1995-11-20 00:00:00	4223	1128
+6553	1000	1995-11-20 00:00:00	4223	1128
+6554	1000	1995-11-20 00:00:00	4224	1128
+6555	1000	1995-11-20 00:00:00	4224	1128
+6556	1000	1995-11-22 00:00:00	4225	246
+6557	1000	1995-12-29 00:00:00	4226	1129
+6558	1000	1995-12-29 00:00:00	4226	1129
+6559	1000	1995-12-29 00:00:00	4227	1129
+6560	1000	1995-12-29 00:00:00	4228	1129
+6561	1000	1995-07-20 00:00:00	4229	417
+6562	1000	1995-10-17 00:00:00	3787	1030
+6563	1000	1995-11-30 00:00:00	4230	1124
+6564	1000	1995-12-22 00:00:00	4231	220
+6565	1000	1996-01-30 00:00:00	4232	4
+6566	1000	1995-08-08 00:00:00	4233	390
+6567	1000	1995-12-06 00:00:00	3850	1013
+6568	1000	1995-12-06 00:00:00	3972	1013
+6569	1000	1995-12-09 00:00:00	4234	1013
+6570	1000	1995-12-09 00:00:00	4234	1013
+6571	1000	1996-01-26 00:00:00	4235	582
+6572	1000	1996-01-26 00:00:00	4235	582
+6573	1000	1996-02-08 00:00:00	4236	1126
+6574	1000	1995-12-31 00:00:00	4237	1130
+6575	1000	1995-08-07 00:00:00	4238	1131
+6576	1000	1995-08-07 00:00:00	4239	1131
+6577	1000	1995-08-22 00:00:00	4240	1131
+6578	1000	1995-08-14 00:00:00	4241	1131
+6579	1000	1995-08-07 00:00:00	4242	1131
+6580	1000	1995-08-07 00:00:00	4243	1131
+6581	1000	1995-08-14 00:00:00	4244	1131
+6582	1000	1995-09-29 00:00:00	4245	1131
+6583	1000	1995-09-29 00:00:00	3013	1131
+6584	1000	1995-08-07 00:00:00	4246	1131
+6585	1000	1996-02-22 00:00:00	4247	1132
+6586	1000	1995-12-11 00:00:00	4248	1132
+6587	1000	1995-12-11 00:00:00	4249	1132
+6588	1000	1995-12-11 00:00:00	4250	1132
+6589	1000	1995-12-11 00:00:00	4251	1132
+6590	1000	1996-03-29 00:00:00	4252	1126
+6591	1000	1995-10-31 00:00:00	4253	452
+6592	1000	1996-02-06 00:00:00	2552	720
+6593	1000	1996-02-15 00:00:00	4254	1125
+6594	1000	1996-02-07 00:00:00	4224	200
+6595	1000	1995-10-27 00:00:00	4255	1131
+6596	1000	1995-10-23 00:00:00	3703	1131
+6597	1000	1995-11-03 00:00:00	4256	1131
+6598	1000	1996-05-10 00:00:00	4257	1133
+6599	1000	1996-04-15 00:00:00	4258	412
+6600	1000	1996-05-10 00:00:00	4259	412
+6601	1000	1996-06-12 00:00:00	4260	1132
+6602	1000	1996-05-20 00:00:00	4261	1132
+6603	1000	1996-06-12 00:00:00	4262	1132
+6604	1000	1996-06-06 00:00:00	4263	1004
+6605	1000	1996-06-11 00:00:00	4264	1004
+6606	1000	1996-04-21 00:00:00	4265	26
+6607	1000	1996-06-27 00:00:00	4229	417
+6608	1000	1996-06-27 00:00:00	4266	417
+6609	1000	1996-06-27 00:00:00	4267	417
+6610	1000	1996-06-27 00:00:00	4268	417
+6611	1000	1996-06-27 00:00:00	4269	417
+6612	1000	1996-06-26 00:00:00	4270	1134
+6613	1000	1996-06-26 00:00:00	4271	1129
+6614	1000	1996-04-12 00:00:00	4272	1135
+6615	1000	1996-04-26 00:00:00	4273	1135
+6616	1000	1996-05-02 00:00:00	4274	1135
+6617	1000	1996-06-07 00:00:00	4275	1124
+6618	1000	1996-06-28 00:00:00	4276	76
+6619	1000	1996-05-15 00:00:00	4277	76
+6620	1000	1996-06-27 00:00:00	3787	1030
+6621	1000	1996-06-05 00:00:00	3786	1030
+6622	1000	1996-05-10 00:00:00	4278	1136
+6623	1000	1996-06-29 00:00:00	4231	807
+6624	1000	1996-05-03 00:00:00	4279	1137
+6625	1000	1996-05-21 00:00:00	4280	1137
+6626	1000	1996-04-04 00:00:00	4281	1138
+6627	1000	1996-06-20 00:00:00	4231	220
+6628	1000	1996-05-01 00:00:00	4282	1125
+6629	1000	1996-04-26 00:00:00	4283	1125
+6630	1000	1996-05-28 00:00:00	4284	1139
+6631	1000	1996-05-29 00:00:00	4285	208
+6632	1000	1996-05-22 00:00:00	4286	208
+6633	1000	1996-06-30 00:00:00	4287	195
+6634	1000	1996-02-28 00:00:00	4288	390
+6635	1000	1996-06-07 00:00:00	4289	1017
+6636	1000	1995-10-31 00:00:00	4253	452
+6637	1000	1996-02-08 00:00:00	4290	1013
+6638	1000	1996-02-08 00:00:00	4290	1013
+6639	1000	1996-07-19 00:00:00	4291	1053
+6640	1000	1996-08-16 00:00:00	4237	1130
+6641	1000	1996-07-01 00:00:00	4292	1140
+6642	1000	1996-07-16 00:00:00	4293	1125
+6643	1000	1996-07-16 00:00:00	4293	1125
+6645	1000	1996-09-23 00:00:00	4294	1127
+6646	1000	1996-09-24 00:00:00	4295	1132
+6647	1000	1996-09-24 00:00:00	4296	1132
+6648	1000	1996-09-23 00:00:00	4297	1141
+6649	1000	1996-09-13 00:00:00	4298	1001
+6650	1000	1996-08-20 00:00:00	4299	848
+6651	1000	1996-09-03 00:00:00	4300	1142
+6652	1000	1996-09-10 00:00:00	4289	1143
+6653	1000	1996-10-02 00:00:00	4301	1144
+6654	1000	1995-12-30 00:00:00	4302	1126
+6655	1000	1995-12-30 00:00:00	4218	1126
+6656	1000	1995-10-19 00:00:00	4303	1126
+6657	1000	1995-10-19 00:00:00	4304	1126
+6658	1000	1995-10-20 00:00:00	4305	1126
+6659	1000	1995-12-30 00:00:00	4306	1126
+6660	1000	1995-10-25 00:00:00	4307	1126
+6661	1000	1995-12-30 00:00:00	4308	1126
+6662	1000	1995-12-31 00:00:00	4309	1126
+6663	1000	1995-12-30 00:00:00	4309	1126
+6664	1000	1995-10-30 00:00:00	4259	412
+6665	1000	1995-07-10 00:00:00	4310	750
+6666	1000	1995-12-26 00:00:00	4286	208
+6667	1000	1995-12-26 00:00:00	4211	208
+6668	1000	1995-05-26 00:00:00	4311	1131
+6670	1000	1996-09-10 00:00:00	4279	1137
+6671	1000	1996-10-03 00:00:00	3783	720
+6672	1000	1995-05-26 00:00:00	1734	1131
+6673	1000	1996-10-16 00:00:00	3057	1145
+6675	1000	1996-10-23 00:00:00	4314	1004
+6676	1000	1996-11-04 00:00:00	4315	25
+6677	1000	1995-07-03 00:00:00	4316	1126
+6678	1000	1995-03-30 00:00:00	4317	1146
+6679	1000	1995-03-30 00:00:00	4317	1146
+6680	1000	1995-05-01 00:00:00	3776	195
+6681	1000	1996-10-28 00:00:00	4318	240
+6682	1000	1995-06-27 00:00:00	4319	1013
+6683	1000	1995-02-13 00:00:00	4320	1013
+6684	1000	1995-02-10 00:00:00	4320	1013
+6685	1000	1996-10-24 00:00:00	4284	1139
+6686	1000	1996-11-13 00:00:00	4321	1021
+6687	1000	1996-11-01 00:00:00	4322	1147
+6688	1000	1996-10-22 00:00:00	4323	76
+6689	1000	1996-10-29 00:00:00	4324	4
+6690	1000	1996-10-29 00:00:00	4325	4
+6691	1000	1995-06-16 00:00:00	3231	1030
+6692	1000	1996-10-21 00:00:00	4326	195
+6693	1000	1995-05-10 00:00:00	3785	881
+6694	1000	1995-03-21 00:00:00	1722	725
+6695	1000	1996-10-21 00:00:00	4326	195
+6696	1000	1996-07-03 00:00:00	4327	1017
+6697	1000	1996-12-31 00:00:00	4328	24
+6698	1000	1996-12-31 00:00:00	4328	24
+6699	1000	1995-03-21 00:00:00	1722	725
+6700	1000	1996-12-10 00:00:00	4329	1013
+6701	1000	1995-05-24 00:00:00	4330	725
+6702	1000	1995-06-01 00:00:00	4331	1004
+6703	1000	1995-06-19 00:00:00	4332	1053
+6704	1000	1995-04-26 00:00:00	4333	1126
+6705	1000	1995-04-17 00:00:00	4334	1126
+6706	1000	1995-04-25 00:00:00	4335	1126
+6707	1000	1995-04-26 00:00:00	4336	1126
+6708	1000	1995-04-26 00:00:00	4337	1126
+6709	1000	1995-04-13 00:00:00	4338	1126
+6710	1000	1995-04-13 00:00:00	4339	1126
+6711	1000	1995-04-19 00:00:00	4335	1126
+6714	1000	1995-02-22 00:00:00	4341	1126
+6715	965	1996-06-04 00:00:00	4342	1127
+6716	950	1996-10-16 00:00:00	4343	1132
+6717	900	1995-08-31 00:00:00	4270	206
+6718	900	1996-06-29 00:00:00	4344	720
+6719	800	1996-11-22 00:00:00	4345	881
+6720	800	1996-11-22 00:00:00	4346	881
+6721	800	1996-11-22 00:00:00	4347	881
+6722	750	1996-12-19 00:00:00	3273	750
+6724	700	1996-06-12 00:00:00	4348	1132
+6725	700	1996-10-28 00:00:00	4349	1148
+6728	600	1996-01-26 00:00:00	3273	750
+6729	600	1996-06-26 00:00:00	4352	1127
+6730	600	1996-03-14 00:00:00	4353	1132
+6731	600	1995-02-01 00:00:00	4354	1013
+6733	500	1996-10-03 00:00:00	4356	1132
+6734	500	1996-10-02 00:00:00	4357	1132
+6735	500	1996-10-09 00:00:00	4358	1149
+6736	500	1995-12-01 00:00:00	4359	1126
+6737	500	1995-05-05 00:00:00	4360	908
+6738	500	1996-10-07 00:00:00	4332	1053
+6739	500	1996-08-27 00:00:00	4361	1150
+6740	500	1996-09-10 00:00:00	4289	1143
+6741	500	1996-09-09 00:00:00	4362	1136
+6742	500	1996-09-30 00:00:00	4363	1140
+6743	500	1996-09-10 00:00:00	4364	26
+6744	500	1996-09-04 00:00:00	4365	1091
+6745	500	1996-11-08 00:00:00	4366	1037
+6746	500	1996-09-02 00:00:00	4367	1130
+6747	500	1996-09-21 00:00:00	4368	1132
+6748	500	1996-09-30 00:00:00	4369	1053
+6749	500	1996-08-26 00:00:00	4370	1053
+6750	500	1996-08-26 00:00:00	4371	1053
+6751	500	1996-08-26 00:00:00	4372	1053
+6752	500	1996-07-22 00:00:00	4373	1132
+6753	500	1996-08-22 00:00:00	3030	4
+6754	500	1996-07-16 00:00:00	4374	1151
+6755	500	1995-06-14 00:00:00	4375	1053
+6756	500	1995-12-06 00:00:00	3850	1013
+6757	500	1995-06-19 00:00:00	4291	1053
+6758	500	1996-10-29 00:00:00	4376	1152
+6759	500	1996-11-07 00:00:00	4377	240
+6760	500	1996-07-05 00:00:00	4378	1153
+6761	500	1996-10-30 00:00:00	4379	1152
+6762	500	1996-10-24 00:00:00	4380	1152
+6763	500	1996-10-18 00:00:00	4381	222
+6764	500	1996-06-11 00:00:00	4382	1132
+6765	500	1996-07-29 00:00:00	4383	1143
+6766	500	1995-10-10 00:00:00	4384	1126
+6767	500	1996-10-24 00:00:00	4380	1152
+6768	500	1996-10-28 00:00:00	4385	15
+6770	500	1996-10-25 00:00:00	4387	15
+6771	500	1996-03-29 00:00:00	3927	1013
+6772	500	1996-03-27 00:00:00	4388	1013
+6773	500	1996-06-29 00:00:00	4389	720
+6774	500	1996-10-25 00:00:00	4390	1130
+6776	500	1995-11-30 00:00:00	4392	1154
+6777	500	1995-02-21 00:00:00	4393	52
+6779	500	1996-06-17 00:00:00	4394	1130
+6780	500	1995-12-21 00:00:00	4395	4
+6781	500	1996-03-06 00:00:00	4396	720
+6782	500	1996-03-12 00:00:00	4397	1155
+6783	500	1996-02-06 00:00:00	4398	1139
+6784	500	1996-02-06 00:00:00	4398	1139
+6785	500	1995-05-15 00:00:00	4399	1124
+6787	500	1995-12-12 00:00:00	4401	1132
+6788	500	1996-10-24 00:00:00	4402	1001
+6789	500	1995-05-15 00:00:00	4214	1124
+6790	500	1996-10-11 00:00:00	4403	1004
+6791	500	1996-10-04 00:00:00	4404	720
+6792	500	1995-04-03 00:00:00	4405	1044
+6794	500	1995-07-30 00:00:00	4399	1124
+6795	500	1996-11-08 00:00:00	4406	1037
+6796	500	1995-12-11 00:00:00	4407	1156
+6797	500	1995-10-09 00:00:00	4408	1126
+6798	495	1996-11-18 00:00:00	3837	610
+6799	400	1995-07-27 00:00:00	4319	1013
+6800	400	1996-07-25 00:00:00	4002	936
+6801	400	1996-12-19 00:00:00	4409	222
+6802	400	1995-07-17 00:00:00	4410	1013
+6803	400	1996-03-25 00:00:00	4411	1130
+6804	400	1995-07-24 00:00:00	4412	1013
+6806	400	1995-02-01 00:00:00	4354	1013
+6809	375	1996-05-31 00:00:00	4416	76
+6810	360	1996-10-17 00:00:00	4417	4
+6811	350	1996-07-05 00:00:00	3065	4
+6812	350	1996-06-20 00:00:00	4418	4
+6813	333	1996-06-07 00:00:00	3525	724
+6815	300	1996-06-19 00:00:00	4419	1132
+6816	300	1996-10-25 00:00:00	4394	1130
+6817	300	1996-07-21 00:00:00	3269	200
+6821	300	1996-11-04 00:00:00	4423	612
+6822	300	1996-07-24 00:00:00	4424	222
+6823	300	1996-11-05 00:00:00	4425	612
+6824	300	1995-10-30 00:00:00	4426	750
+6825	300	1996-02-20 00:00:00	4427	1126
+6826	300	1996-12-23 00:00:00	4428	1013
+6828	300	1996-10-24 00:00:00	3826	1001
+6830	300	1996-02-29 00:00:00	4431	1157
+6831	290	1996-04-22 00:00:00	4432	712
+6832	290	1995-06-30 00:00:00	4433	712
+6833	290	1995-03-03 00:00:00	4434	712
+6834	290	1995-05-31 00:00:00	4432	712
+6835	290	1995-09-13 00:00:00	4433	712
+6836	290	1995-05-10 00:00:00	4209	52
+6837	290	1996-01-23 00:00:00	4433	712
+6838	290	1996-04-24 00:00:00	4432	712
+6839	280	1995-12-13 00:00:00	4435	1127
+6840	280	1995-06-10 00:00:00	4436	1158
+6841	250	1996-07-26 00:00:00	4418	4
+6842	250	1995-12-06 00:00:00	4437	1159
+6843	250	1995-12-29 00:00:00	4438	751
+6844	250	1996-03-14 00:00:00	4439	1132
+6845	250	1996-03-25 00:00:00	4440	1160
+6846	250	1996-02-26 00:00:00	4441	751
+6847	250	1996-03-08 00:00:00	3417	751
+6848	250	1996-02-13 00:00:00	4442	751
+6849	250	1996-05-08 00:00:00	4443	1161
+6850	250	1996-05-08 00:00:00	4444	1161
+6851	250	1996-05-28 00:00:00	4445	1132
+6852	250	1996-06-12 00:00:00	4446	1132
+6853	250	1996-06-12 00:00:00	4447	1132
+6854	250	1996-05-20 00:00:00	4448	1132
+6855	250	1996-06-28 00:00:00	4449	1162
+6856	250	1996-05-20 00:00:00	4450	222
+6857	250	1996-04-08 00:00:00	4451	1130
+6858	250	1996-05-23 00:00:00	4452	751
+6859	250	1996-06-04 00:00:00	4453	4
+6860	250	1996-03-27 00:00:00	4454	1013
+6861	250	1996-03-29 00:00:00	4455	1013
+6862	250	1996-07-21 00:00:00	4456	200
+6863	250	1996-07-12 00:00:00	3476	939
+6864	250	1996-07-16 00:00:00	4457	240
+6865	250	1996-09-30 00:00:00	4458	306
+6866	250	1996-09-21 00:00:00	4445	1132
+6867	250	1996-09-30 00:00:00	4459	1163
+6868	250	1996-09-20 00:00:00	3350	76
+6869	250	1996-09-17 00:00:00	4460	25
+6870	250	1996-09-10 00:00:00	4461	26
+6871	250	1996-09-19 00:00:00	4462	1164
+6872	250	1996-10-14 00:00:00	4463	908
+6873	250	1995-09-18 00:00:00	4459	1163
+6874	250	1996-10-11 00:00:00	4464	1165
+6875	250	1996-10-24 00:00:00	4352	908
+6876	250	1995-08-04 00:00:00	3525	724
+6877	250	1995-06-14 00:00:00	4465	1166
+6878	250	1996-10-21 00:00:00	4466	222
+6879	250	1996-10-25 00:00:00	4467	201
+6880	250	1996-11-05 00:00:00	4468	612
+6881	250	1996-11-04 00:00:00	4449	1162
+6882	250	1996-10-22 00:00:00	4469	1125
+6883	250	1995-04-04 00:00:00	3476	939
+6885	250	1996-12-31 00:00:00	4470	751
+6886	250	1996-08-01 00:00:00	4319	1013
+6887	250	1995-01-12 00:00:00	4471	1004
+6888	250	1995-06-07 00:00:00	4472	26
+6889	250	1995-04-14 00:00:00	4473	1126
+6890	250	1995-04-14 00:00:00	4474	1126
+6891	250	1996-10-24 00:00:00	4475	1152
+6892	250	1996-10-24 00:00:00	4476	1152
+6893	250	1994-06-20 00:00:00	4477	1167
+6894	215	1996-10-24 00:00:00	4478	1168
+6896	200	1996-10-01 00:00:00	4480	1132
+6897	200	1996-04-22 00:00:00	4481	1169
+6898	200	1996-07-17 00:00:00	4482	1013
+6899	200	1996-12-18 00:00:00	4483	52
+6900	200	1996-12-30 00:00:00	4484	52
+6901	200	1995-05-12 00:00:00	4485	246
+6902	200	1995-07-17 00:00:00	4482	1013
+6904	200	1995-07-05 00:00:00	4487	1013
+6905	200	1996-08-12 00:00:00	4232	4
+6906	200	1996-08-15 00:00:00	4488	1132
+6907	200	1996-08-30 00:00:00	4489	712
+6908	200	1996-08-30 00:00:00	4332	1053
+6909	200	1996-09-21 00:00:00	4490	1132
+6910	200	1996-04-26 00:00:00	4491	417
+6911	200	1995-12-15 00:00:00	3476	939
+6912	200	1996-04-10 00:00:00	4401	1132
+6913	200	1996-05-22 00:00:00	4492	1132
+6916	200	1996-10-02 00:00:00	4495	1053
+6917	200	1996-10-15 00:00:00	4496	1159
+6918	200	1996-10-29 00:00:00	4497	1132
+6919	-100	1995-09-02 00:00:00	4498	1126
+6920	-500	1995-11-30 00:00:00	4303	1126
+6921	-500	1995-10-09 00:00:00	4499	1126
+6922	-500	1995-07-30 00:00:00	4214	1124
+6923	-1000	1995-11-30 00:00:00	4230	1124
+6924	-1000	1995-08-28 00:00:00	4500	1124
+6925	-1000	1995-08-28 00:00:00	4500	1124
+6926	-1000	1996-02-28 00:00:00	4501	1126
+6927	-1000	1996-07-16 00:00:00	4215	1125
+6928	-1000	1996-07-16 00:00:00	4215	1125
+6929	10000	1994-10-05 00:00:00	4502	52
+6930	8000	1993-02-22 00:00:00	4503	52
+6931	7500	1993-01-29 00:00:00	4393	52
+6932	5000	1994-06-22 00:00:00	4504	1027
+6933	4500	1994-06-29 00:00:00	4505	848
+6934	2500	1994-08-23 00:00:00	4506	724
+6935	2000	1994-04-21 00:00:00	4507	1170
+6936	2000	1993-11-24 00:00:00	4508	536
+6938	1000	1994-11-02 00:00:00	4510	246
+6939	1000	1994-10-18 00:00:00	4511	25
+6940	1000	1994-09-06 00:00:00	4512	25
+6941	1000	1994-09-30 00:00:00	4513	306
+6942	1000	1994-09-07 00:00:00	4514	1130
+6943	1000	1994-10-11 00:00:00	4515	1171
+6944	1000	1994-09-19 00:00:00	4516	417
+6945	1000	1994-09-26 00:00:00	4517	417
+6946	1000	1994-11-04 00:00:00	4518	246
+6947	1000	1994-11-02 00:00:00	4519	246
+6948	1000	1994-10-19 00:00:00	3109	397
+6949	1000	1994-07-08 00:00:00	4520	76
+6950	1000	1994-09-16 00:00:00	4521	205
+6951	1000	1994-11-02 00:00:00	3926	1053
+6952	1000	1994-11-07 00:00:00	4522	26
+6953	1000	1994-09-19 00:00:00	4523	390
+6954	1000	1994-07-27 00:00:00	4524	463
+6955	1000	1994-10-31 00:00:00	4525	15
+6956	1000	1994-10-20 00:00:00	4526	1172
+6957	1000	1994-11-08 00:00:00	4527	1173
+6958	1000	1994-05-27 00:00:00	4528	417
+6959	1000	1994-06-13 00:00:00	3231	1030
+6960	1000	1994-08-12 00:00:00	4529	1030
+6961	1000	1994-07-06 00:00:00	4268	417
+6962	1000	1994-08-24 00:00:00	4530	1174
+6963	1000	1994-07-12 00:00:00	4531	1014
+6964	1000	1994-08-23 00:00:00	4532	1175
+6965	1000	1994-06-20 00:00:00	4533	1174
+6966	1000	1993-01-22 00:00:00	4393	52
+6967	1000	1994-06-17 00:00:00	4534	200
+6968	1000	1994-04-22 00:00:00	4264	1013
+6969	1000	1994-05-20 00:00:00	4027	15
+6970	1000	1994-06-07 00:00:00	4535	1176
+6971	1000	1994-04-28 00:00:00	4535	1176
+6972	1000	1994-05-23 00:00:00	4536	1176
+6973	1000	1994-04-13 00:00:00	4537	1177
+6974	1000	1994-06-21 00:00:00	4538	1170
+6976	1000	1994-03-11 00:00:00	4539	26
+6977	1000	1994-04-13 00:00:00	4540	205
+6978	1000	1994-01-18 00:00:00	4541	25
+6979	1000	1994-01-17 00:00:00	4542	25
+6980	1000	1994-01-29 00:00:00	1722	390
+6981	1000	1994-01-29 00:00:00	1722	390
+6982	1000	1994-03-31 00:00:00	4543	558
+6983	1000	1994-03-31 00:00:00	1722	558
+6984	1000	1994-03-31 00:00:00	1722	558
+6985	1000	1993-07-08 00:00:00	3231	1030
+6986	1000	1993-08-06 00:00:00	4529	1030
+6987	1000	1993-12-14 00:00:00	4544	1178
+6988	1000	1993-12-29 00:00:00	4545	725
+6989	1000	1993-10-27 00:00:00	4546	576
+6990	1000	1993-10-27 00:00:00	4546	576
+6991	1000	1993-10-27 00:00:00	4547	576
+6992	1000	1993-10-27 00:00:00	4547	576
+6993	1000	1993-11-24 00:00:00	4548	536
+6994	1000	1993-12-14 00:00:00	4549	848
+6995	1000	1993-04-30 00:00:00	4550	390
+6996	1000	1993-03-02 00:00:00	4551	1013
+6997	1000	1993-06-13 00:00:00	4552	452
+6998	1000	1993-03-22 00:00:00	4553	1060
+7000	1000	1993-04-26 00:00:00	4555	76
+7001	900	1994-09-30 00:00:00	4556	306
+7002	900	1994-09-30 00:00:00	4513	306
+7003	800	1994-09-30 00:00:00	4556	306
+7004	760	1993-10-20 00:00:00	4557	52
+7005	750	1993-06-07 00:00:00	4558	1173
+7006	750	1994-08-17 00:00:00	4559	1179
+7007	750	1993-12-01 00:00:00	4560	928
+7008	750	1993-06-07 00:00:00	4561	1173
+7009	750	1994-09-06 00:00:00	4512	25
+7010	700	1994-09-12 00:00:00	4562	1175
+7011	620	1993-04-09 00:00:00	4557	52
+7012	600	1994-12-06 00:00:00	3273	750
+7013	575	1994-06-20 00:00:00	4563	1130
+7014	540	1993-03-26 00:00:00	4564	52
+7015	500	1993-08-27 00:00:00	4564	52
+7016	500	1993-08-13 00:00:00	4565	52
+7017	500	1994-06-15 00:00:00	4566	1180
+7018	500	1994-06-15 00:00:00	4567	1180
+7019	500	1994-08-26 00:00:00	4568	26
+7020	500	1994-09-06 00:00:00	4569	246
+7021	500	1994-08-25 00:00:00	4570	246
+7022	500	1994-09-27 00:00:00	4571	25
+7023	500	1993-05-20 00:00:00	4395	222
+7024	500	1994-09-27 00:00:00	4572	25
+7025	500	1994-09-18 00:00:00	4573	908
+7026	500	1993-06-15 00:00:00	4557	52
+7027	500	1994-05-27 00:00:00	4574	1174
+7028	500	1993-10-21 00:00:00	4557	52
+7029	500	1993-10-22 00:00:00	4557	52
+7030	500	1993-02-26 00:00:00	4393	52
+7031	500	1994-11-25 00:00:00	4395	222
+7032	500	1994-09-26 00:00:00	4575	1181
+7033	500	1994-09-26 00:00:00	4575	1181
+7034	500	1994-07-19 00:00:00	4291	1053
+7035	500	1994-10-24 00:00:00	4565	52
+7036	500	1994-08-01 00:00:00	4576	1175
+7037	500	1994-09-30 00:00:00	4577	306
+7038	500	1994-07-14 00:00:00	4395	222
+7039	500	1994-10-21 00:00:00	4578	1172
+7040	500	1994-08-01 00:00:00	4579	1175
+7041	500	1994-08-11 00:00:00	4580	15
+7042	500	1994-08-12 00:00:00	4581	1182
+7043	500	1994-11-04 00:00:00	4582	1183
+7045	500	1994-04-06 00:00:00	4583	1184
+7046	500	1994-05-02 00:00:00	4584	1021
+7047	500	1993-04-30 00:00:00	4585	390
+7049	500	1993-04-30 00:00:00	4587	390
+7052	500	1994-09-30 00:00:00	4590	306
+7053	500	1994-06-17 00:00:00	4375	1053
+7054	500	1994-06-20 00:00:00	4591	1053
+7055	500	1994-06-20 00:00:00	4591	1053
+7056	500	1994-06-17 00:00:00	4592	1053
+7057	500	1993-04-06 00:00:00	4557	52
+7058	500	1994-06-21 00:00:00	4593	1185
+7059	500	1994-06-22 00:00:00	4472	26
+7060	500	1993-11-03 00:00:00	4594	390
+7062	500	1994-02-18 00:00:00	4565	52
+7063	500	1994-01-20 00:00:00	4395	222
+7064	500	1994-04-06 00:00:00	4395	222
+7065	500	1993-06-09 00:00:00	4580	15
+7066	500	1993-06-21 00:00:00	4595	1053
+7068	450	1993-09-02 00:00:00	4597	1140
+7069	400	1994-07-27 00:00:00	4598	1013
+7070	400	1994-08-04 00:00:00	4599	15
+7071	400	1993-10-14 00:00:00	4600	750
+7074	400	1994-09-10 00:00:00	4601	1186
+7076	400	1994-07-08 00:00:00	4603	417
+7077	355	1994-05-31 00:00:00	4565	52
+7078	350	1994-10-24 00:00:00	4604	928
+7079	350	1994-10-31 00:00:00	4395	222
+7080	350	1994-06-22 00:00:00	4605	1174
+7081	300	1994-04-27 00:00:00	4606	1187
+7082	300	1994-09-07 00:00:00	4607	1130
+7083	300	1994-12-12 00:00:00	4608	1014
+7085	300	1994-09-30 00:00:00	4610	306
+7086	300	1994-09-06 00:00:00	3292	936
+7088	300	1993-12-08 00:00:00	3273	750
+7089	300	1993-05-20 00:00:00	4612	15
+7090	300	1994-09-27 00:00:00	4613	306
+7096	300	1994-11-07 00:00:00	4619	1163
+7097	300	1994-08-11 00:00:00	4620	812
+7098	300	1993-12-08 00:00:00	3273	750
+7099	290	1994-05-13 00:00:00	4434	712
+7100	290	1993-11-22 00:00:00	4434	712
+7101	290	1994-09-02 00:00:00	4621	52
+7102	290	1993-10-22 00:00:00	4434	712
+7103	290	1993-08-20 00:00:00	4622	712
+7104	290	1994-03-24 00:00:00	4434	712
+7105	290	1993-06-18 00:00:00	4622	712
+7106	290	1994-08-12 00:00:00	4434	712
+7107	286	1993-12-29 00:00:00	4623	1188
+7108	255	1994-05-02 00:00:00	4395	222
+7109	250	1993-06-18 00:00:00	4624	558
+7110	250	1994-03-24 00:00:00	4625	712
+7111	250	1994-04-07 00:00:00	4565	52
+7112	250	1993-03-12 00:00:00	4626	1013
+7113	250	1993-03-22 00:00:00	4565	52
+7114	250	1994-03-07 00:00:00	4627	939
+7115	250	1994-02-04 00:00:00	4628	881
+7116	250	1993-03-26 00:00:00	4629	1189
+7117	250	1994-05-04 00:00:00	4630	306
+7118	250	1993-05-27 00:00:00	4631	1180
+7119	250	1993-04-30 00:00:00	4632	390
+7120	250	1993-04-29 00:00:00	4627	939
+7121	250	1994-02-03 00:00:00	4625	712
+7122	250	1993-08-18 00:00:00	4633	908
+7123	250	1993-07-30 00:00:00	4453	4
+7124	250	1994-06-29 00:00:00	4634	1179
+7125	250	1993-11-08 00:00:00	4635	1013
+7126	250	1994-05-09 00:00:00	4636	452
+7127	250	1993-04-28 00:00:00	4565	52
+7128	250	1993-04-12 00:00:00	4557	52
+7129	250	1993-12-01 00:00:00	4560	928
+7130	250	1994-06-22 00:00:00	4364	26
+7131	250	1994-06-14 00:00:00	4637	928
+7132	250	1993-09-30 00:00:00	4625	712
+7133	250	1993-05-14 00:00:00	4625	712
+7134	250	1993-11-01 00:00:00	4565	52
+7135	250	1993-07-14 00:00:00	4557	52
+7136	250	1993-07-20 00:00:00	4638	52
+7137	250	1994-06-09 00:00:00	4639	1013
+7138	250	1993-07-28 00:00:00	4638	52
+7140	250	1993-01-28 00:00:00	4393	52
+7141	250	1993-03-11 00:00:00	4395	222
+7142	250	1994-10-24 00:00:00	4640	928
+7143	250	1993-05-10 00:00:00	4395	222
+7144	250	1994-08-11 00:00:00	4641	812
+7145	250	1994-12-08 00:00:00	4472	26
+7146	250	1994-10-18 00:00:00	4642	306
+7147	250	1994-08-23 00:00:00	4643	1190
+7148	250	1994-07-10 00:00:00	4644	1190
+7149	250	1994-07-06 00:00:00	4645	1190
+7150	250	1994-09-07 00:00:00	4646	1191
+7151	250	1994-12-29 00:00:00	4395	222
+7153	250	1993-05-07 00:00:00	4647	1004
+7154	250	1994-04-07 00:00:00	4648	939
+7155	250	1994-10-21 00:00:00	4649	205
+7156	250	1994-10-27 00:00:00	4650	1192
+7157	250	1994-10-21 00:00:00	4651	1193
+7158	250	1994-09-26 00:00:00	4652	1001
+7159	210	1993-07-17 00:00:00	4653	1158
+7161	200	1994-08-15 00:00:00	4655	1163
+7162	200	1994-08-15 00:00:00	4656	1180
+7163	200	1994-08-10 00:00:00	4657	1180
+7164	200	1993-06-23 00:00:00	4658	1001
+7165	200	1994-09-23 00:00:00	4659	1053
+7166	200	1994-11-22 00:00:00	4660	1163
+7167	200	1994-07-25 00:00:00	4487	1013
+7168	200	1993-09-02 00:00:00	4597	1140
+7169	200	1993-11-09 00:00:00	4661	1163
+7170	200	1994-08-15 00:00:00	4662	1163
+7171	200	1994-09-08 00:00:00	4565	52
+7172	200	1993-05-24 00:00:00	4453	4
+7173	200	1993-01-19 00:00:00	4395	222
+7174	200	1994-10-07 00:00:00	4663	1175
+7177	200	1993-03-29 00:00:00	4666	1060
+7178	200	1994-10-18 00:00:00	4667	1188
+7179	200	1993-12-07 00:00:00	4668	300
+7180	200	1993-03-26 00:00:00	4612	15
+7181	200	1994-03-31 00:00:00	4669	1174
+7182	100	1994-08-30 00:00:00	4670	1194
+7183	100	1994-08-11 00:00:00	4630	306
+7184	-1000	1994-06-21 00:00:00	4538	1170
+7186	10000	1991-02-27 00:00:00	4503	52
+7187	10000	1992-04-16 00:00:00	4672	848
+7188	5000	1992-08-31 00:00:00	4673	76
+7189	2500	1992-10-02 00:00:00	4674	2
+7190	2500	1992-07-28 00:00:00	4675	1001
+7191	2100	1992-07-28 00:00:00	4676	52
+7192	2000	1992-07-31 00:00:00	4677	76
+7193	1000	1991-04-08 00:00:00	4678	1013
+7194	1000	1992-06-01 00:00:00	4679	1195
+7195	1000	1992-05-20 00:00:00	4680	1196
+7196	1000	1991-04-08 00:00:00	4681	1013
+7197	1000	1992-07-21 00:00:00	4682	306
+7198	1000	1992-08-28 00:00:00	4683	1197
+7199	1000	1992-06-25 00:00:00	4684	1198
+7201	1000	1991-11-06 00:00:00	4686	1199
+7202	1000	1992-07-27 00:00:00	4687	15
+7203	1000	1991-04-08 00:00:00	4681	1013
+7204	1000	1992-08-14 00:00:00	4688	1013
+7205	1000	1992-11-14 00:00:00	4689	1200
+7206	1000	1992-09-01 00:00:00	4690	1201
+7207	1000	1991-12-18 00:00:00	4691	1007
+7208	1000	1992-09-01 00:00:00	4692	1201
+7209	1000	1992-09-01 00:00:00	4693	1201
+7210	1000	1992-09-25 00:00:00	4694	1147
+7211	1000	1992-04-14 00:00:00	4695	1202
+7212	1000	1992-09-04 00:00:00	4696	1013
+7213	1000	1992-09-08 00:00:00	4697	880
+7214	1000	1992-04-14 00:00:00	4698	1202
+7215	1000	1992-04-14 00:00:00	4699	1202
+7216	1000	1992-06-30 00:00:00	4700	1163
+7217	1000	1991-06-20 00:00:00	4701	1013
+7218	1000	1992-09-28 00:00:00	4289	1202
+7219	1000	1992-09-28 00:00:00	4289	1202
+7220	1000	1992-08-28 00:00:00	4702	1202
+7221	1000	1992-08-28 00:00:00	4702	1202
+7222	1000	1992-09-02 00:00:00	4703	1202
+7223	1000	1992-09-02 00:00:00	4704	1202
+7224	1000	1992-05-29 00:00:00	4705	1131
+7225	1000	1992-08-09 00:00:00	4706	1013
+7226	1000	1992-08-04 00:00:00	4707	1013
+7227	1000	1992-05-27 00:00:00	4708	1203
+7228	1000	1991-02-04 00:00:00	4709	1202
+7229	1000	1992-08-13 00:00:00	4710	1199
+7230	1000	1991-05-09 00:00:00	4711	1202
+7231	1000	1991-11-12 00:00:00	4712	1204
+7232	1000	1991-09-30 00:00:00	4713	1014
+7233	1000	1991-06-03 00:00:00	4714	1030
+7234	1000	1991-12-20 00:00:00	4715	1205
+7235	1000	1991-01-10 00:00:00	4716	1206
+7236	1000	1992-02-10 00:00:00	4717	886
+7237	1000	1992-02-10 00:00:00	4718	886
+7238	1000	1992-02-10 00:00:00	4719	886
+7239	1000	1991-10-23 00:00:00	4720	1013
+7240	1000	1992-03-16 00:00:00	4721	1205
+7241	1000	1992-03-13 00:00:00	4722	1204
+7242	1000	1992-10-30 00:00:00	4723	1207
+7243	1000	1992-02-24 00:00:00	4724	1013
+7244	1000	1991-07-31 00:00:00	4725	1013
+7245	1000	1991-10-18 00:00:00	4726	1208
+7246	1000	1992-02-25 00:00:00	4727	1013
+7247	1000	1992-04-14 00:00:00	4728	1131
+7248	1000	1992-03-23 00:00:00	4729	1013
+7249	1000	1987-09-28 00:00:00	4730	1209
+7250	1000	1991-06-11 00:00:00	4231	1016
+7251	1000	1992-03-23 00:00:00	4731	1210
+7252	1000	1992-01-16 00:00:00	4537	1128
+7253	1000	1992-01-17 00:00:00	4732	1202
+7254	1000	1991-07-01 00:00:00	4733	4
+7255	1000	1992-01-17 00:00:00	4734	1202
+7256	1000	1992-02-07 00:00:00	4735	1147
+7257	1000	1992-11-02 00:00:00	4736	848
+7258	1000	1992-10-13 00:00:00	4737	1173
+7259	1000	1992-10-15 00:00:00	4738	1202
+7260	1000	1992-10-24 00:00:00	4703	1202
+7261	1000	1992-10-24 00:00:00	4704	1202
+7262	1000	1991-07-31 00:00:00	4739	1013
+7263	1000	1991-12-23 00:00:00	4740	1202
+7264	1000	1991-11-06 00:00:00	4741	1199
+7265	1000	1992-06-01 00:00:00	4231	1064
+7266	1000	1992-03-23 00:00:00	4742	1211
+7267	1000	1992-09-29 00:00:00	4743	881
+7268	1000	1991-12-23 00:00:00	4740	1202
+7269	1000	1991-08-26 00:00:00	4744	1202
+7270	1000	1991-12-26 00:00:00	4745	1202
+7271	1000	1992-03-26 00:00:00	4746	1016
+7272	1000	1992-04-23 00:00:00	4747	1204
+7273	1000	1991-12-26 00:00:00	4748	1202
+7274	1000	1991-12-26 00:00:00	4748	1202
+7275	1000	1992-10-23 00:00:00	4749	1206
+7276	1000	1992-10-26 00:00:00	4750	1212
+7277	1000	1992-07-20 00:00:00	4751	567
+7278	1000	1992-03-31 00:00:00	4752	1007
+7279	1000	1991-12-19 00:00:00	4753	1202
+7280	1000	\N	4754	1213
+7281	1000	1991-12-18 00:00:00	4691	1007
+7282	1000	1992-05-11 00:00:00	4755	1196
+7283	1000	1991-01-18 00:00:00	4756	1214
+7284	1000	1992-09-30 00:00:00	4757	1215
+7285	1000	1992-09-30 00:00:00	4758	1215
+7286	1000	1992-10-01 00:00:00	4759	1090
+7287	1000	1992-09-28 00:00:00	4712	76
+7288	1000	1992-09-17 00:00:00	4760	25
+7289	1000	1992-09-17 00:00:00	4760	25
+7290	1000	1992-05-15 00:00:00	4761	1030
+7291	978	1991-08-22 00:00:00	4762	1016
+7292	900	1992-09-01 00:00:00	4763	1216
+7293	900	1991-06-24 00:00:00	4764	1013
+7294	900	1992-09-09 00:00:00	4765	750
+7295	900	1992-09-01 00:00:00	4766	1216
+7296	850	1992-09-15 00:00:00	4767	1016
+7297	800	1992-07-06 00:00:00	4768	1013
+7298	750	1992-07-06 00:00:00	4769	1013
+7299	700	1992-06-15 00:00:00	4770	1217
+7300	700	1992-07-15 00:00:00	4771	1218
+7301	700	1992-04-08 00:00:00	4772	812
+7302	700	1992-12-04 00:00:00	4773	1219
+7303	600	1992-12-10 00:00:00	3273	750
+7304	600	1991-10-20 00:00:00	4774	300
+7305	500	1992-03-24 00:00:00	4775	1060
+7306	500	1991-11-18 00:00:00	4776	1030
+7307	500	1991-11-20 00:00:00	4565	1204
+7308	500	1991-07-09 00:00:00	4777	213
+7309	500	1991-12-02 00:00:00	4778	750
+7310	500	1991-04-05 00:00:00	4779	725
+7311	500	1991-04-26 00:00:00	4780	1202
+7312	500	1991-01-10 00:00:00	4781	1206
+7313	500	1991-01-10 00:00:00	4781	1206
+7314	500	1992-05-21 00:00:00	4782	1131
+7315	500	1992-10-20 00:00:00	4783	76
+7316	500	1992-10-20 00:00:00	4783	76
+7317	500	1992-10-02 00:00:00	4784	306
+7318	500	1992-10-09 00:00:00	4729	1220
+7319	500	1992-10-22 00:00:00	4785	1001
+7320	500	1992-10-30 00:00:00	4786	1202
+7321	500	1992-10-30 00:00:00	4787	1202
+7322	500	1992-09-21 00:00:00	4788	1173
+7323	500	1992-09-21 00:00:00	4789	1173
+7324	500	1992-10-26 00:00:00	4790	1013
+7325	500	1992-09-30 00:00:00	4791	1188
+7326	500	1992-10-26 00:00:00	4792	1026
+7327	500	1992-09-15 00:00:00	4793	1221
+7328	500	1992-09-21 00:00:00	4794	1013
+7329	500	1992-09-28 00:00:00	4795	1202
+7330	500	1992-09-01 00:00:00	4690	1201
+7331	500	1992-09-01 00:00:00	4692	1201
+7333	500	1992-08-12 00:00:00	4797	1204
+7334	500	1992-08-10 00:00:00	4798	1222
+7335	500	1992-10-15 00:00:00	3312	1030
+7336	500	1992-07-11 00:00:00	4799	1201
+7337	500	1992-08-14 00:00:00	4800	1220
+7338	500	1992-07-13 00:00:00	4801	1189
+7339	500	1992-08-21 00:00:00	4802	25
+7340	500	1992-07-08 00:00:00	4729	1198
+7341	500	1992-08-14 00:00:00	4803	246
+7342	500	1992-06-30 00:00:00	4395	222
+7343	500	1992-06-19 00:00:00	4804	1013
+7344	500	1992-05-04 00:00:00	4805	1013
+7345	500	1992-06-24 00:00:00	4806	1223
+7346	500	1992-06-27 00:00:00	4807	1195
+7347	500	1992-06-19 00:00:00	4595	1053
+7348	500	1992-04-14 00:00:00	3273	750
+7349	500	1992-05-21 00:00:00	4808	1224
+7350	500	1992-06-29 00:00:00	4809	1202
+7353	500	1992-04-28 00:00:00	4565	1204
+7354	500	1992-03-10 00:00:00	4395	222
+7355	500	1992-03-30 00:00:00	4811	1141
+7356	500	1992-03-31 00:00:00	4812	1225
+7358	500	1992-01-29 00:00:00	4813	1226
+7359	500	1991-06-11 00:00:00	4814	1205
+7360	500	1992-01-31 00:00:00	4815	1225
+7361	500	1992-01-31 00:00:00	4816	1225
+7362	500	1992-01-31 00:00:00	4817	1225
+7363	500	1992-01-31 00:00:00	4818	1225
+7364	500	1992-09-25 00:00:00	4819	1227
+7365	500	1991-12-12 00:00:00	4820	1013
+7366	500	1991-12-12 00:00:00	4821	1013
+7367	500	1992-11-24 00:00:00	4565	52
+7368	500	1991-07-25 00:00:00	4822	939
+7369	499	1992-12-05 00:00:00	4823	928
+7370	499	1992-12-05 00:00:00	4824	928
+7371	465	1992-10-15 00:00:00	4825	15
+7372	450	1992-07-06 00:00:00	4768	1013
+7373	400	1992-05-18 00:00:00	4826	1013
+7374	400	1991-05-07 00:00:00	4827	1013
+7375	400	1991-10-24 00:00:00	4828	1228
+7376	400	1992-09-29 00:00:00	4829	1222
+7377	400	1992-10-26 00:00:00	4830	1179
+7378	400	1992-10-22 00:00:00	4831	1163
+7379	400	1991-06-03 00:00:00	4832	1013
+7380	375	1991-07-01 00:00:00	4833	25
+7381	350	1992-07-13 00:00:00	4834	1218
+7382	350	1992-07-06 00:00:00	4835	1013
+7383	350	1992-06-01 00:00:00	4836	1013
+7384	300	1992-03-11 00:00:00	4837	1225
+7385	300	1991-06-18 00:00:00	4838	213
+7386	300	1992-11-24 00:00:00	4839	1053
+7387	300	1991-06-19 00:00:00	4595	1053
+7388	300	1992-06-15 00:00:00	4770	1217
+7389	300	1992-09-18 00:00:00	4840	1013
+7390	300	1992-12-14 00:00:00	4395	222
+7391	300	1992-09-25 00:00:00	4841	881
+7392	300	1992-03-29 00:00:00	4842	1013
+7393	300	1992-03-29 00:00:00	4843	1013
+7394	300	1992-08-06 00:00:00	4844	1195
+7395	300	1992-10-15 00:00:00	4845	222
+7396	300	1992-10-19 00:00:00	4846	1189
+7397	300	1992-10-30 00:00:00	4847	1221
+7398	300	1991-12-09 00:00:00	4837	1225
+7399	300	1992-11-05 00:00:00	4848	928
+7400	300	1992-07-15 00:00:00	4849	1229
+7401	300	1991-12-11 00:00:00	4850	1053
+7402	300	1992-03-07 00:00:00	4851	1225
+7403	300	1992-11-24 00:00:00	4595	1053
+7404	285	1992-08-10 00:00:00	4852	52
+7406	250	1992-12-08 00:00:00	4257	1133
+7407	250	1991-10-04 00:00:00	4854	265
+7408	250	1991-09-24 00:00:00	4769	1013
+7409	250	1992-02-26 00:00:00	4855	1225
+7410	250	1992-02-04 00:00:00	4856	1225
+7411	250	1992-05-22 00:00:00	4857	1131
+7412	250	1991-09-06 00:00:00	4858	1016
+7413	250	1991-06-20 00:00:00	4859	1053
+7414	250	1991-01-17 00:00:00	4395	222
+7415	250	1991-01-22 00:00:00	4395	222
+7416	250	1991-02-21 00:00:00	4395	222
+7417	250	1991-10-25 00:00:00	4786	1202
+7418	250	1991-10-25 00:00:00	4787	1202
+7419	250	1991-08-26 00:00:00	4860	1202
+7420	250	1992-07-23 00:00:00	4861	1230
+7421	250	1991-07-16 00:00:00	4862	1202
+7422	250	1992-06-24 00:00:00	4863	558
+7423	250	1992-07-22 00:00:00	4809	1202
+7424	250	1991-03-27 00:00:00	4395	222
+7425	250	1991-03-28 00:00:00	4395	222
+7426	250	1992-06-29 00:00:00	4395	222
+7427	250	1992-10-27 00:00:00	4864	1180
+7428	250	1992-10-27 00:00:00	4395	222
+7429	250	1992-10-19 00:00:00	4395	222
+7430	250	1992-07-24 00:00:00	4865	1131
+7431	250	1992-01-31 00:00:00	4866	1225
+7432	250	1992-08-11 00:00:00	4395	222
+7433	250	1992-05-06 00:00:00	4867	1163
+7434	250	1992-04-15 00:00:00	4868	1163
+7435	250	1992-01-31 00:00:00	4869	1225
+7436	250	1992-06-17 00:00:00	4555	1231
+7437	250	1992-05-20 00:00:00	4460	25
+7438	250	1992-01-31 00:00:00	4870	1225
+7439	250	1992-08-26 00:00:00	4395	222
+7440	250	1992-09-11 00:00:00	4871	1016
+7441	250	1992-10-07 00:00:00	4872	1199
+7442	250	1992-06-22 00:00:00	4873	1090
+7444	250	1991-12-19 00:00:00	4395	222
+7445	250	1992-09-17 00:00:00	4875	1221
+7446	250	1992-04-20 00:00:00	4876	1225
+7447	250	1992-08-10 00:00:00	4877	1131
+7448	250	1991-08-27 00:00:00	4395	222
+7449	250	1992-04-13 00:00:00	4878	1204
+7450	250	1991-07-12 00:00:00	4395	222
+7451	250	1992-10-13 00:00:00	4395	222
+7452	250	1992-03-31 00:00:00	4879	1232
+7453	250	1992-10-22 00:00:00	4880	1013
+7454	250	1992-10-27 00:00:00	4881	574
+7455	250	1992-04-02 00:00:00	4882	1131
+7456	250	1992-10-21 00:00:00	4565	4
+7457	250	1992-05-22 00:00:00	4883	1131
+7458	250	1991-11-21 00:00:00	4884	1140
+7459	250	1992-02-03 00:00:00	4395	222
+7460	250	1991-07-01 00:00:00	4460	25
+7461	250	1992-11-12 00:00:00	4565	4
+7462	250	1992-11-02 00:00:00	4885	4
+7465	250	1992-02-03 00:00:00	4888	1013
+7466	250	1991-08-06 00:00:00	4627	939
+7467	250	1992-11-02 00:00:00	4889	1233
+7468	250	1992-03-30 00:00:00	4890	1234
+7473	200	1992-09-18 00:00:00	3292	936
+7474	200	1992-10-04 00:00:00	4893	1188
+7475	200	1992-11-11 00:00:00	4894	452
+7476	200	1992-10-19 00:00:00	4895	1220
+7477	200	1992-10-30 00:00:00	4896	1221
+7478	200	1992-10-22 00:00:00	4897	1216
+7479	200	1992-12-16 00:00:00	4898	1013
+7480	200	1992-09-29 00:00:00	4899	1001
+7481	200	1992-11-02 00:00:00	4900	4
+7483	200	1992-11-02 00:00:00	4902	25
+7484	200	1992-10-26 00:00:00	4809	1202
+7485	200	1992-09-15 00:00:00	4903	15
+7486	200	1992-09-25 00:00:00	4904	1206
+7487	200	1992-09-25 00:00:00	4904	1206
+7488	200	1992-09-03 00:00:00	4905	52
+7489	200	1992-09-29 00:00:00	4906	4
+7490	200	1992-07-24 00:00:00	4907	936
+7491	200	1992-07-24 00:00:00	4908	936
+7492	200	1992-08-09 00:00:00	4909	1013
+7493	200	1992-08-04 00:00:00	4910	1013
+7494	200	1992-07-06 00:00:00	4888	1013
+7495	200	1992-07-28 00:00:00	4911	1013
+7496	200	1992-07-14 00:00:00	4912	1013
+7497	200	1992-06-04 00:00:00	4913	1163
+7498	200	1992-04-20 00:00:00	4914	1225
+7499	200	1992-04-20 00:00:00	4915	1225
+7500	200	1992-02-07 00:00:00	4916	936
+7501	200	1992-03-24 00:00:00	4888	1013
+7502	200	1992-03-09 00:00:00	4837	1225
+7505	200	1991-12-22 00:00:00	4918	1147
+7506	200	1991-12-18 00:00:00	4919	1013
+7507	200	1991-08-05 00:00:00	4919	1013
+7508	200	1991-12-11 00:00:00	4920	1053
+7509	200	1991-12-07 00:00:00	4375	1053
+7515	-150	1992-10-21 00:00:00	4926	1016
+7516	-350	1992-07-24 00:00:00	4927	1013
+7517	-500	1992-12-07 00:00:00	4928	1201
+7518	-500	1992-12-07 00:00:00	4929	1201
+7519	-1000	1992-10-13 00:00:00	4758	1215
+7521	4000	1990-07-23 00:00:00	4564	52
+7524	2000	1989-09-19 00:00:00	4932	52
+7525	1015	1990-06-30 00:00:00	4933	1236
+7526	1000	1990-10-24 00:00:00	4934	1237
+7529	1000	1990-12-19 00:00:00	4937	1238
+7530	1000	1990-12-19 00:00:00	4833	1238
+7531	1000	1990-11-15 00:00:00	4938	1239
+7532	1000	1990-11-15 00:00:00	4939	1239
+7533	1000	1990-10-24 00:00:00	4393	1240
+7534	1000	1990-10-16 00:00:00	4940	1241
+7535	1000	1990-10-17 00:00:00	4941	1129
+7536	1000	1990-08-07 00:00:00	4942	206
+7537	1000	1990-07-19 00:00:00	4716	1206
+7538	1000	1990-07-19 00:00:00	4716	1206
+7539	1000	1990-06-30 00:00:00	4943	1236
+7540	1000	1990-06-29 00:00:00	4944	1242
+7543	1000	1990-03-13 00:00:00	4946	1243
+7544	1000	1990-03-01 00:00:00	4947	1243
+7545	1000	1990-03-01 00:00:00	4948	1243
+7546	1000	1989-10-17 00:00:00	4949	52
+7547	1000	1989-11-01 00:00:00	4950	1244
+7548	1000	1989-11-01 00:00:00	4951	1244
+7549	1000	1989-11-01 00:00:00	4218	1244
+7550	1000	1989-04-13 00:00:00	4952	1129
+7551	1000	1989-06-05 00:00:00	4953	1129
+7552	1000	1989-03-23 00:00:00	4954	52
+7553	1000	1989-06-05 00:00:00	4953	1129
+7554	1000	1989-05-15 00:00:00	4707	1013
+7555	1000	1989-06-19 00:00:00	4955	723
+7556	1000	1989-04-21 00:00:00	4956	1001
+7557	1000	1989-04-20 00:00:00	4957	1245
+7558	1000	1989-11-01 00:00:00	4218	1244
+7559	1000	1989-11-22 00:00:00	4958	4
+7561	800	1989-12-22 00:00:00	4960	1013
+7562	760	1989-02-22 00:00:00	4954	52
+7563	750	1990-06-30 00:00:00	4961	1173
+7564	750	1990-06-30 00:00:00	4961	1173
+7565	680	1989-11-10 00:00:00	4949	52
+7566	600	1990-10-29 00:00:00	4375	1237
+7567	600	1990-12-10 00:00:00	4962	1013
+7568	550	1989-09-19 00:00:00	4932	52
+7569	500	1990-06-12 00:00:00	4393	1246
+7570	500	1990-07-17 00:00:00	4963	1238
+7571	500	1990-06-30 00:00:00	4964	1237
+7572	500	1990-06-30 00:00:00	4965	1237
+7573	500	1990-06-30 00:00:00	4291	1237
+7574	500	1990-06-30 00:00:00	4291	1237
+7575	500	1989-12-13 00:00:00	4966	1247
+7576	500	1990-06-30 00:00:00	4967	1173
+7577	500	1990-06-30 00:00:00	4968	1173
+7578	500	1990-06-30 00:00:00	4968	1173
+7579	500	1989-05-11 00:00:00	4969	1248
+7581	500	1989-05-11 00:00:00	4971	1248
+7582	500	1989-03-10 00:00:00	4972	1248
+7583	500	1990-01-11 00:00:00	4973	1140
+7584	500	1990-02-15 00:00:00	4974	1206
+7585	500	1990-02-15 00:00:00	4975	1206
+7586	500	1990-03-26 00:00:00	4976	1249
+7587	500	1989-07-11 00:00:00	4977	1129
+7588	500	1990-02-27 00:00:00	4978	1214
+7589	500	1990-02-27 00:00:00	4979	1214
+7590	500	1989-11-14 00:00:00	4980	1237
+7591	500	1989-12-04 00:00:00	4981	1206
+7592	500	1989-12-04 00:00:00	4982	1206
+7593	500	1989-11-27 00:00:00	4949	52
+7596	500	1989-02-02 00:00:00	4984	1060
+7597	500	1989-02-01 00:00:00	4985	1017
+7598	500	1990-11-03 00:00:00	4986	1250
+7599	500	1990-12-26 00:00:00	4987	1247
+7600	485	1990-08-14 00:00:00	4933	1236
+7601	485	1990-08-14 00:00:00	4988	1236
+7602	480	1990-07-23 00:00:00	4564	52
+7603	400	1989-12-12 00:00:00	4989	222
+7604	400	1990-12-10 00:00:00	4962	1013
+7605	400	1990-11-01 00:00:00	4990	1237
+7606	400	1990-08-13 00:00:00	4991	222
+7608	337	1989-12-12 00:00:00	4993	4
+7610	300	1989-08-11 00:00:00	4994	1247
+7611	300	1990-06-13 00:00:00	4995	1249
+7612	300	1990-09-07 00:00:00	4994	1247
+7613	300	1989-04-28 00:00:00	4996	1245
+7617	300	1989-08-01 00:00:00	5000	450
+7618	300	1990-07-09 00:00:00	5001	1251
+7619	300	1990-03-26 00:00:00	5002	1252
+7620	300	1990-10-04 00:00:00	3896	1253
+7621	300	1990-06-04 00:00:00	5003	1254
+7622	300	1990-12-14 00:00:00	4212	1013
+7624	250	1990-03-23 00:00:00	5005	1255
+7625	250	1990-10-15 00:00:00	5006	1256
+7626	250	1990-03-23 00:00:00	5007	1255
+7628	250	1990-01-31 00:00:00	5009	1244
+7629	250	1990-03-31 00:00:00	5010	1244
+7633	250	1990-08-01 00:00:00	5014	1237
+7637	250	1989-03-14 00:00:00	5018	1060
+7638	250	1989-12-12 00:00:00	5019	1254
+7640	250	1990-10-24 00:00:00	5021	1237
+7642	250	1990-12-04 00:00:00	4395	222
+7643	250	1990-06-30 00:00:00	4961	1173
+7644	250	1990-06-30 00:00:00	4961	1173
+7645	250	1990-11-02 00:00:00	4991	222
+7646	250	1990-04-02 00:00:00	4968	1173
+7647	250	1990-04-02 00:00:00	4968	1173
+7649	250	1990-09-28 00:00:00	5024	1240
+7650	240	1990-08-14 00:00:00	5025	52
+7651	240	1990-10-26 00:00:00	5025	52
+7652	240	1990-03-01 00:00:00	5025	52
+7655	200	1989-05-22 00:00:00	5028	222
+7656	200	1990-06-11 00:00:00	4991	222
+7657	200	1990-05-01 00:00:00	4991	222
+7658	200	1990-04-13 00:00:00	4991	222
+7659	200	1990-05-25 00:00:00	5029	1257
+7660	200	1990-09-06 00:00:00	5030	1236
+7661	200	1989-08-18 00:00:00	5028	222
+7662	200	1990-03-31 00:00:00	5031	1243
+7663	200	1989-07-31 00:00:00	5028	222
+7664	200	1990-06-08 00:00:00	5032	1238
+7665	200	1989-07-03 00:00:00	5028	222
+7666	200	1989-01-19 00:00:00	5028	222
+7667	200	1989-02-20 00:00:00	5028	222
+7668	200	1989-04-12 00:00:00	5028	222
+7669	200	1989-05-01 00:00:00	5028	222
+7671	200	1989-10-09 00:00:00	5028	222
+7672	200	1990-03-31 00:00:00	5033	1243
+7673	200	1990-12-14 00:00:00	4212	1013
+7674	200	1990-01-23 00:00:00	5028	222
+7675	200	1989-08-07 00:00:00	5034	1013
+7677	200	1990-03-06 00:00:00	5028	222
+7678	100	\N	5036	1258
+7679	-15	1990-06-30 00:00:00	4988	1236
+7681	-485	1990-08-14 00:00:00	4988	1236
+7682	-500	1989-05-11 00:00:00	4969	1248
 \.
 
 
@@ -10828,14 +10071,8 @@ COPY contributions (id, amount, date, recipient_id, contributor_id) FROM stdin;
 --
 
 COPY contributors (id, name, type, zipcode, address, city, state, occupation, business_id) FROM stdin;
-1	FOX, RICHARD C	I	14607	\N	ROCHESTER	NY	PRESI	1
 2	MAY, PETER W	I	10017	\N	NEW YORK	NY	PRESIDENT	2
-3	SMITH, ELIZABETH	I	10024	173 RIVERSIDE Dr APT 120	NEW YORK	NY	CEO	3
-4	COGHLAN, SANDRA J	I	13904	\N	BINGHAMTON	NY	OWNER	4
-5	TOPPER, LEWIS	I	10021	\N	NEW YORK	NY	PRESIDENT	5
 6	TOPPER, LEWIS E MR	I	10065	220 E 65 St Apt 19G	NEW YORK	NY	Executive	6
-7	HUNT, PETER K	I	11788	10 Rabro Dr	HAUPPAUGE	NY	Licensee	7
-8	COGHLAN, JEFFREY	I	13904	\N	BINGHAMTON	NY	VICE PRESIDENT	8
 9	MASSOUD, PHILLIPE	I	10016	\N	NEW YORK	NY	INTERNATIONAL HOSPITALITY INVESTMEN	9
 10	BANK, JEFFREY	I	10025	650 W End Ave Apt #G-Ab	NEW YORK	NY	President	10
 11	CUTLER, ALICE	I	10024	215 W 90th St Apt #Pha	NEW YORK	NY	Entrepeneur	11
@@ -10843,9 +10080,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 13	NEW YORK STATE RESTAURANT ASSOCIATION	C	12205	409 NEW KARNER RD	ALBANY	NY		13
 14	GRIEBEL, DOUG	I	10024	225 W 83RD 23-A	NEW YORK	NY	RESTAURANT OWNER	14
 15	MASSOUD, PHILIPPE MR	I	10016	\N	NEW YORK	NY	OWNER	9
-16	HENDEL, PAUL	I	11563	146 Horton Ave	LYNBROOK	NY	Licensee	7
-17	DEBENEDITTIS, SUMI H	I	10577	700 Anderson Hill Rd	PURCHASE	NY	Manager, Industry Relations	15
-18	COOPER, KELI J	I	13904	\N	BINGHAMTON	NY	MANAGEMENT CONSULTANT	16
 19	WADE, JOHN W II	I	13502	151 N Genesee St	UTICA	NY	Owner	17
 20	TOPPER, LEWIS E	I	11361	\N	BAYSIDE	NY	EXECUTIVE	6
 21	FOX, RICHARD	I	14610	\N	ROCHESTER	NY	CEO	18
@@ -10907,7 +10141,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 77	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	12210	12 SLENDON AVE	ALBANY	NY		47
 78	TOPPER, LEWIS	I	11952	\N	MATTIPUCK	NY	EXECUTIVE	6
 79	TOPPER, LEWIS E MR	I	10065	\N	NEW YORK	NY		6
-80	O'DONNELL, JAMES L	I	13601	120 Washington St Ste 201	WATERTOWN	NY	Licensee	7
+160	TYMVIOS, MINOS	I	11741	\N	HOLBROOK	NY	OWNER	90
 81	RUBENSTEIN, AMY	I	10028	993 Fifth Ave 9th Floor	NEW YORK	NY	Restauranteur	23
 82	GIUNTA, LISA	I	10012	\N	NEW YORK	NY	MANAGER	48
 83	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	11205	15 WASHINGTON PL	NEW YORK	NY		47
@@ -10915,21 +10149,16 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 85	GRUNBERG, JUDITH	I	12184	83 Silvernail Rd	VALATIE	NY	restauranteur	49
 86	TAO LAS VEGAS RESTAURANT	C	10106	888 7TH AVE 34TH FL	NEW YORK	NY		50
 87	TOPPER, LEWIS	I	11361	42-40 Bell Blvd Ste 200	BAYSIDE	NY	President	6
-88	CUADRA, ALBERT	I	11743	38 New St Ste 2	HUNTINGTON	NY	Licensee	7
 89	TOPPER, LEWIS T	I	11952	4240 Bell Boulevard Ste 200	MATTITUCK	NY	Executive	6
 90	DUNSTON, BRUCE	I	11710	\N	BELLMORE	NY	NIGHT CLUB OWNER	51
 91	KING DAVID RESTAURANT	C	11375	10110 QUEENS BLVD	FOREST HILLS	NY		52
 92	DJENCIC, AGIM	I	10306	387 Bedford Ave	STATEN ISLAND	NY	Owner	53
 93	TOPPER, LEWIS	I	11362	\N	HORACE HARDING	NY	EXECUTIVE	6
 94	TOPPER, LEWIS MR	I	11361	4240 Bell Blvd	BAYSIDE	NY	Information Requested	6
-95	CISNEROS, RICHARD R	I	10199	427 10th Ave and 34th	NEW YORK	NY	Licensee	7
 96	GOULDMAN, BILL MR	I	10019	\N	NEW YORK	NY	OWNER	54
-97	WATERS, SCOTT	I	11566	1782 Roberta Lane	MERRICK	NY	President/Franchisee	55
 98	FOX, RICHARD	I	14610	\N	ROCHESTER	NY	MA	56
-99	FOX, JOHNATHAN	I	14607	\N	ROCHESTER	NY	ASST. GEN	57
 100	MAY, PETER W	I	10017	280 Park Ave Fl 41	NEW YORK	NY	President & CEO	2
 101	FIOTOS, FRANK	I	11357	\N	WHITESTONE	NY	RESTAURANT	58
-102	WILDER, ALBERT	I	12572	PO 271	RHINEBECK	NY	Licensee	7
 103	BERNSTEIN, ALLEN J MR	I	11590	\N	NESTBURY	NY	PRES	59
 104	BIBERAJ, MAXHUN	I	10704	\N	YONKERS	NY	SAMS PLACE RESTAURANT/OWNER/MANAGER	60
 105	TOPPER, LEWIS E MR	I	11361	4240 Bell Boulevard Ste 200	BAYSIDE	NY	Executive	6
@@ -10938,14 +10167,12 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 108	BERNSTEIN, ALLEN	I	11042	\N	NEW HYDE PARK	NY	PRESIDENT	63
 109	BERNSTEIN, ALLEN J	I	11590	\N	WESTBURY	NY	CHAIRMAN	59
 110	TOPPER, LEWIS MR	I	11361	\N	BAYSIDE	NY	EXECUTIVE	6
-111	LAURINO, GERALD	I	11580	75 South Central Ave	VALLEY STREAM	NY	Licensee	7
 112	BERNSTEIN, LORI	I	11040	\N	NEW HYDE PARK	NY	N/A/HOMEMAKER	59
 113	MEMETI, RIFAT	I	10305	\N	STATEN ISLAND	NY	RESTAURATEUR	40
 114	KARALEKAS, COSTAS	I	11106	\N	ASTORIA	NY	RESTAURAT	64
 115	PISCOPO, JOHN	I	10304	22 Seven Gables Rd	STATEN ISLAND	NY	General Manager	65
 116	PAK, CHUNG HO	I	10028	1100 Madison Ave	NEW YORK	NY	Owner	66
 117	GRUNBERG, JUDITH	I	12184	83 Silvernail Rd	VALATIE	NY	Owner	67
-118	PULEO, FRANK	I	10304	860 Bay St	STATEN ISLAND	NY	Owner	68
 119	BUTLER, JEANNINE	I	12946	\N	LAKE PLACID	NY	RESTAURANT OWNER	12
 120	PI, JAMES	I	11377	57-08 39th Ave	WOODSIDE	NY	rest owner	19
 121	BERNSTEIN, ALLEN J	I	11040	\N	NEW HYDE PARK	NY	PRESIDENT	59
@@ -10967,11 +10194,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 137	BERNSTEIN, ALLEN J	I	11590	\N	WESTBURY	NY	CHAIR	59
 138	TOPPER, LEWIS	I	11362	42-40 Bell Blvd 200	HORACE HARDING	NY	Executive	6
 139	MAY, PETER W	I	10023	146 Central Park West	NEW YORK	NY	Investor	2
-140	LAURINO, GERALD	I	11580	75 South Central Ave	VALLEY STREAM	NY	Licensee	78
 141	PICKARD, JOSHUA	I	10012	\N	NEW YORK	NY	OWNER	79
 142	MAY, PETER W	I	10023	\N	NEW YORK	NY	PRESIDENT	2
 143	TEITELBAUM, DOUGLAS P	I	10022	885 3rd Ave 34th Floor	NEW YORK	NY	CEO	80
-144	PAULINE, JOSEPH	I	13903	1447 Pennsylvania Ave	BINGHAMTON	NY	Franchisee	81
 145	BERNSTEIN, ALLEN	I	11590	400 POST AVE	WESTBURY	NY		82
 146	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	\N	\N	\N	NY		47
 147	FOOD CONSULTANTS	C	13209	3606 JOHN GLENN BLVD	SYRACUSE	NY		83
@@ -10979,7 +10204,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 149	KONSTANTINOU RESTAURANT INC	C	14519	2030 STATE ROUTE 104	ONTARIO	NY		84
 150	SEACHORE RESTAURANT CORP	C	10464	591 CITY ISLAND AVE	BRONX	NY		85
 151	TACO PAC	C	11432	\N	Jamaica	NY		86
-152	WILLIAMS, ANNE	I	13760	\N	ENDWELL	NY	PRESIDENT	8
 153	SHATZEL, DAVID SR	I	14216	1067 Amherst St	BUFFALO	NY	Owner	87
 154	BERNSTEIN, ALLEN J MR	I	11040	\N	NEW HYDE PARK	NY	EXECUTIVE	59
 155	PELL, LEWIS	I	10023	\N	NEW YORK	NY	RESTRANTEUR	34
@@ -10987,30 +10211,18 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 157	KAUFMANN, MICHAEL	I	10514	41 Pond Hill Rd	CHAPPAQUA	NY	President	88
 158	BERNSTEIN, ALLEN	I	11040	\N	NEW HYDE PARK	NY	EXECUTIVE	59
 159	CORTES, ARTURO	I	10522	\N	DOBBS FERRY	NY	GENERAL MANAGER	89
-160	TYMVIOS, MINOS	I	11741	\N	HOLBROOK	NY	OWNER	90
-161	MEYERS, DAVID J	I	14760	1309 West State St	OLEAN	NY	Licensee	78
-162	LOBDELL, MARTIN	I	13079	\N	ANN ARBOUR	NY	CEO	91
-163	MEYERS, DAVID J	I	14760	1309 West State St	OLEAN	NY	Licensee	7
 164	NEW YORK STATE RESTAURANT ASSOCIATION	C	12205	409 KARNER RD	ALBANY	NY		13
-165	MEYERS, JOHN W	I	14750	401 East Fairmount Ave	LAKEWOOD	NY	Licensee	7
 166	NICKERSON, MICHAEL	I	14845	226 Fairfield Dr	HORSEHEADS	NY	Owner	92
 167	LAVO	C	10106	888 7TH AVE 34TH FL	NEW YORK	NY		93
-168	WOODSIDE, KEVIN E	I	10977	\N	WESLEY HILLS	NY	VICE PRE	94
 169	RAMADAN, ZEAD	I	10471	5900 Arlington Ave Apt 22V	BRONX	NY	Restauranteur	73
 170	COLANDREA NEW CORNER RESTAURANT	C	11209	7201 8TH AVE	BROOKLYN	NY		95
 171	WEST, PAMELA	I	12180	8 PARK AVE	TROY	NY	FAST FOOD MANAGER	96
-172	PINKERTON, STEPHEN B	I	13027	\N	BALDWINSVILLE	NY	FRANCHISE OWNE	91
 173	CROCILLA, DOMINICK	I	13502	2426 Chenango Rd	UTICA	NY	Owner	97
-174	SWEENEY, MICHAEL G	I	10312	3267 Richmond Ave	STATEN ISLAND	NY	Licensee	7
 175	BERNARDI, GLEN	I	10505	\N	BALDWIN PLACE	NY	RESTAURANT OWNER	40
 176	BROWNE, JOHN	I	11418	84-23 107th St	RICHMOND HILL	NY	Restauranteur	98
-177	REEHER, J JOHN	I	12065	21 Greenlea Dr	CLIFTON PARK	NY	Licensee	7
-178	COLLEY, DEAN W	I	10519	PO 779	CROTON FALLS	NY	Licensee	7
-179	BUONO, JR, LOUIS	I	14624	760 Elmgrove Rd	ROCHESTER	NY	Licensee	7
 180	PISCOPO, JOHN R	I	10304	\N	STATEN ISLAND	NY	GENERAL MANAGER	99
 181	EBERSTADT, MICHAEL	I	10024	\N	NEW YORK	NY	RESTAURATEUR	34
 182	RUSSO, LOUIS	I	11509	\N	ATLANTIC BEACH	NY	EXECUTIVE	100
-183	BEATTY, MICHAEL F	I	14141	Route 219	SPRINGVILLE	NY	Licensee	7
 184	Stage, John	I	10031	614 West 146th St Apt 2	New York	NY	Owner	101
 185	PALAZZO GRILL & BAR	C	11354	154-17 ROOSEVELT AV	FLUSHING,	NY		102
 186	AUNT BUTCHIES CAKES INC	C	11228	6901 13TH AVE	BROOKLYN	NY	BAKERY	103
@@ -11021,63 +10233,34 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 191	NINAS RESTAURANT	C	11222	635 MEEKER AVE	BROOKLYN	NY		107
 192	NEW YORK RESTAURANT ASSOCIATION	C	12205	409 NEW KARNER RD	ALBANY	NY		108
 193	SUAREZ, PHILIP	I	10010	1 Lexington Ave Apt 1A	NEW YORK	NY	Restaurateur	19
-194	MAGLIOCCA, PATRICE F	I	12534	30 King Arthur's Way	HUDSON	NY	Licensee	7
-195	BLACKBURN, RAY	I	13045	\N	CORTLAND	NY	PRESIDENT	109
-196	MARCELLUS, WILLIAM R	I	12831	16 Cramer Path	GANSEVOORT	NY	Licensee	7
-197	POLSINELLO, RICHARD J	I	12019	18 Legends Way	BALLSTON LAKE	NY	President	110
 198	SINGH, HERENDRA MR	I	11714	150 Hicksville Rd	BETHPAGE	NY	Restaurateur	19
-199	TSCHOHL, LORI S	I	14204	429 William St	BUFFALO	NY	Licensee	111
-200	PERNA, RICHARD R	I	10467	300 East 204th St	BRONX	NY	Licensee	111
-201	MARCELLUS, WILLIAM R	I	12831	16 Cramer Path	GANSEVOORT	NY	Licensee	112
 202	BRESLIN, MICHAEL	I	11222	330 North Henry St	BROOKLYN	NY	Restauranteur	98
-203	DIEKMANN, WILLIAM E	I	10570	70 Memorial Plaza 2nd Floor	PLEASANTVILLE	NY	Licensee	78
 204	LIBERATOSIS, DENNIS	I	10008	\N	NEW YORK	NY	OWNER	113
 205	RUSITZKY, HARRIS	I	14618	6 Woodbury Place	ROCHESTER	NY	President	114
 206	MENAGIAS, JERRY	I	12309	5 Cephalonia Court	SCHENECTADY	NY	Restaurateur/Partner	115
 207	BOZZI, BRUCE	I	10021	\N	NEW YORK	NY	OWNER	116
 208	CRISCI, FRANK	I	10708	\N	BRONXVILLE	NY	CHEF	117
 209	WILDER, AIDA L	I	12572	\N	RHINEBECK	NY	RESTAURANT OWNER	34
-210	KABIR, SAHANGID	I	11207	\N	BROOKLYN	NY	DIST. SUPERVISOR	118
 211	UNITED RESTAURANT HOTEL & TAVERN ASSOCIATION	C	12207	C/O OSTROFF HIFFA & ASSOCIATES INC	ALBANY	NY		119
-212	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	restaurateur	120
-213	DELL'ORTO, ANTHONY	I	10522	187 Northfield Ave	DOBBS FERRY	NY	President	121
 214	BOZZI, BRUCE	I	10021	737 Park Ave	NEW YORK	NY	Owner	122
 215	CIRELLA, SALVATORE	I	11747	\N	MELVILLE	NY	MANAGER	123
-216	DIEKMANN, WILLIAM E	I	10570	Diekmann McDonald's PO 295	PLEASANTVILLE	NY	Licensee	7
 217	STAGE, JOHN	I	10031	\N	NEW YORK	NY	OWNER	101
-218	VOGT, JOHN	I	11757	\N	LINDENHURST	NY	REG DIR RESTAURANT OPS	118
-219	SULLIVAN, MARIA J	I	11050	33 Harriman	SANDS POINT	NY	Licensee	7
 220	GASHI, SACIR	I	10003	\N	NEW YORK	NY	RESTAURATEUR	12
-221	FLYNN, EDWARD L	I	11385	7511 Myrtle Ave	GLENDALE	NY	Licensee	7
-222	GROUT, ROGER E	I	12065	PO 441	CLIFTON PARK	NY	Licensee	7
-223	RUSITZKY, HARRIS H	I	14618	6 Woodbury Place	ROCHESTER	NY	Executive	124
-224	VOGT, JOHN	I	11757	\N	LINDENHURST	NY	REG. DIR. OF OPS	118
 225	TROIA, JOHN	I	11030	76 Dorchester Dr	MANHASSET	NY	Restauranteur	98
-226	CAVEGN, JOSEPH	I	10980	14 John St	STONY POINT	NY	President	125
-227	MOHRMANN, WILLIAM A	I	11934	626 Montauk Highway	CENTER MORICHES	NY	Licensee	7
 228	LIGRECI, JOHN	I	10314	149 Westcolt Blvd	STATEN ISLAND	NY	Owner	126
 229	CHERPELIS, STEPHEN	I	11363	\N	DOUGLASTON	NY	OWNER	127
-230	RODRIGUEZ, JUAN A	I	11746	33 Walt Whitman Rd Ste 212	HUNTINGTON STATION	NY	Licensee	78
-231	LAROSE, RICHARD G	I	11201	82 Court St	BROOKLYN	NY	Licensee	7
 232	MILICH, SCOTT W	I	10956	3 Bel Aire Ter	NEW CITY	NY	Owner	128
-233	RODRIGUEZ, JUAN A	I	11746	33 Walt Whitman Rd Ste 212	HUNTINGTON STATION	NY	Licensee	7
 234	TSOUPELIS, SYMEON	I	13413	\N	NEW HARTFORD	NY	OWNER	129
 235	BIRCHARD, THOMAS R	I	10003	221 E 17TH ST	NEW YORK	NY	RESTAURANT OWNER	130
-236	SOUCH, PETER	I	13601	\N	WATERTOWN	NY	PRESIDENT	131
 237	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	12207	12 SHERIDAN AVE STE 1	ALBANY	NY		47
 238	NEW YORK RESTAURANT ASSOCIATION-INDUSTRY PAC	C	12205	409 NEW KARNER RD	ALBANY	NY		132
-239	BUONO, DOMENICK	I	14624	760 Elmgrove Rd	ROCHESTER	NY	Licensee	7
 240	WADE, JOHN W II	I	13502	151 N Genesee St	UTICA	NY	Owner	133
-241	REARDON, RENEE	I	12804	31 Orchard Dr	QUEENSBURY	NY	Licensee	134
 242	DEMONTE, VINCENT	I	10309	34 Burton Ave	STATEN ISLAND	NY	Co-Owner	135
 243	PAK, CHUNG HO	I	10028	1100 Madison Ave	NEW YORK	NY		66
-244	TREFFILETTI, PATRICK M	I	12309	1059 Lamplighter Rd	NISKAYUNA	NY	Licensee	7
 245	SINGER, NANCY	I	11937	10 QUARTY CT	E.HAMPTON	NY	Restauranteur	19
 246	PAPPALARDO, PAT	I	10314	1741 Victory Blvd	STATEN ISLAND	NY	Owner	136
 247	BOZZI, BRUCE JR	I	10011	59 W 12th St PHA	NEW YORK	NY	Executive Vice President	122
 248	MCCANN, PATRICK	I	12203	\N	LITTLE FALLS	NY	OWNER	137
-249	PRITCHETT, DONALD R	I	11590	35 Old Country Rd	WESTBURY	NY	Licensee	7
-250	YIP, ESTHER	I	10016	\N	NEW YORK	NY	PRESIDENT	138
 251	MANESSIS, ANASTASIOS E	I	10583	6 Old Farm Rd	SCARSDALE	NY	President	139
 252	SPILIADIS, CONSTANTINOS	I	10019	146 W 57th St Apt 48C	NEW YORK	NY	restaurant owner -	49
 253	IRACI, ROSARIO	I	10304	\N	STATEN ISLAND	NY	RESTAURANT	58
@@ -11092,14 +10275,12 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 262	MUNSON, JOHN E	I	12901	North Bowl Restaurant 28 North Bowl Lane	PLATTSBURGH	NY	Owner	145
 263	MCLEAN, CAROLE	I	12901	20-22 City hall Place	PLATTSBURGH	NY	Restaurant Owner	49
 264	LOMONACO, MICHAEL	I	10075	515 E 79th St	NEW YORK	NY	Restaurant Management	146
-265	LAWRENCE, JACQUES E	I	11771	66 Woodland Dr	OYSTER BAY COVE	NY	Licensee	7
 266	ZUPPA, GARY	I	10509	512 Clocktower Rd	BREWSTER	NY	Owner	147
 267	KLOSEK, STEVE J	I	13502	6168 Walker Rd	DEERFIELD	NY	Owner	148
 268	KLOSEK, STEVEN	I	13502	\N	UTICA	NY	TAVERN OWNER	149
 269	ROSENZWEIG, ANNE	I	10128	\N	NEW YORK	NY	CHEF	117
 270	MAZZONE, ANGELO	I	12302	1 Glen Ave	SCOTIA	NY	Restaurateur	19
 271	MANESSIS, ANASTASIOS E	I	10583	6 Old Farm Rd	SCARSDALE	NY	president	139
-272	ANDERER, MICHAEL B	I	11754	40 Carriage Dr	KINGS PARK	NY	Licensee	78
 273	OREN, SIMON	I	10021	\N	NEW YORK	NY	RESTAURANTURE	150
 274	PISCOPO, JOHN	I	10304	862 Huguenot Ave	STATEN ISLAND	NY	Restauranteur	151
 275	SIMPSON, HELEN	I	12866	\N	SARATOGA SPRINGS	NY	RESTAURANT OWNER	12
@@ -11115,24 +10296,16 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 285	MAVRIKIS, JONATHAN	I	11530	4 Carteret Place	GARDEN CITY	NY	Owner	157
 286	Piscopo, John	I	10304	22 Seven Gables Rd	Staten Island	NY	General Manager	65
 287	MCDONALD, JEFF	I	12309	840 Londonderry Rd	SCHENECTADY	NY	restaurant	58
-288	PFEIFFER, DARLENE	I	12466	PO 1185	PORT EWEN	NY	Executive	158
 289	MANESSIS, ANASTASIOS	I	10583	\N	SCARSDALE	NY	RESTAURANTE	139
-290	ANDERER, MICHAEL B	I	11754	40 Carriage Dr	KINGS PARK	NY	Licensee	7
-291	DIFRANCESCO, LOUI	I	14612	\N	ROCHESTER	NY	COO	91
 292	CANNISTRACI, LISA	I	10038	\N	NEW YORK	NY	BAR OWNER	159
 293	CAVEGN, JOSEPH A MR	I	10980	\N	STONY POINT	NY	PRESIDENT	160
 294	RAMADAN, ZEAD	I	10471	590 Arlington Ave 22V	BRONX	NY	Restraunteur	73
 295	Piscopo, John R	I	10304	22 Seven Gables Rd	Staten Island	NY	General Manager	99
 296	DENNIS, GEORGE	I	12203	\N	ALBANY	NY	OWNER	161
 297	SUFFOLK COUNTY RESTAURANT & TAVERN ASSOCIATION	C	11779	PO BOX 2705	RONKONKOMA	NY		43
-298	CHIN, TIM	I	10462	\N	BRONX	NY	MANAGER	162
-299	CHIN, STANLEY	I	10462	\N	BRONX	NY	FRANCHISEE	162
-300	TRAUGOTT, RANDY	I	14607	\N	ROCHESTER	NY	MANAG	163
-301	COOPER, MICHAEL	I	13904	\N	BINGHAMTON	NY	CARPENTER	164
 302	DINOSAUR RESTAURANTS	C	13202	246 W WILLOW ST	SYRACUSE	NY		165
 303	CORTESE RESTAURANT INC	C	13904	117 ROBINSON ST	BINGHAMTON	NY		166
 304	ANTONIOS RESTAURANT	C	14304	7708 NF BLVD	NF	NY		167
-305	BRUSH, ANDREW	I	13045	\N	CORTLAND	NY	DIRECTOR	168
 306	CARMINES RESTAURANT	C	12206	818 CENTRAL AVE	ALBANY	NY		169
 307	EJP RESTAURANT CORP	C	11561	945 W BEECH ST	LONG BEACH	NY		170
 308	JSC RESTAURANT CORP	C	11219	1100 60TH ST	BROOKLYN	NY		171
@@ -11181,27 +10354,19 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 351	WEINSTEIN, MICHAEL	I	10003	85 5th Ave Fl 14	NEW YORK	NY	CEO	28
 352	ARK TAMPA LLC	C	10003	C/O ARK RESTAURANTS CORP 85 5TH AVE	NEW YORK	NY	RESTAURANTS	200
 353	ARK HOLLYWOOD LLC	C	10003	C/O ARK RESTAURANTS CORP 85 5TH AVE	NEW YORK	NY	RESTAURANTS	201
-354	COUGHLAN, SANDRA J	I	13904	124 Crocker Hill Rd	BINGHAMTON	NY	OWNER	4
 355	CHATWAL, VIKRAM	I	10128	300 E 93rd St	NEW YORK	NY	Executive	30
 356	TOPPER, LEWIS E	I	11361	42-40 Bell Blvd Ste 200	BAYSIDE	NY	Executive	6
 357	RIESE, RANDI S	I	11560	587 Duck Pond Rd	MATINECOCK	NY	Homemaker	197
 358	Topper, Lewis E Mr	I	10065	220 E 65 St 19G	New York	NY	Executive	6
 359	OSI Restaurant Partners	C	10027	\N	New York	NY		202
-360	COGHLAN, JEFFREY J	I	13904	124 Crocker Hill Rd	BINGHAMPTON	NY	Vp	203
-361	COUGHLAN, JEFFREY	I	13904	124 Crocker Hill Rd	BINGHAMTON	NY	VICE PRESIDENT	8
-362	FOX, RICHARD C	I	14607	20 N Union St	ROCHESTER	NY	President	204
 363	FOX, RICHARD C MR	I	14607	20 NORTH UNION St	ROCHESTER	NY	WENDY'S RESTAURANTS OF ROCHESTER IN	56
 364	RIESE, DENNIS	I	11560	587 Duck Pond Rd	MATINECOCK	NY	President & CEO	197
 365	TOPPER, LEWIS E MR	I	10065	220 E 65 St 9G	NEW YORK	NY	EXECUTIVE	6
-366	COUGHLAN, SANDRA J	I	13904	124 Crocker Hill Rd	BINGHAMTON	NY	Owner	205
-367	TOPPER, LEWIS	I	10021	220 E 65th St Apt 196	NEW YORK	NY	President	206
 368	HOLDER, DEBORAH	I	11746	10 Landing Ct	DIX HILLS	NY	Restaurant Owner	207
 369	Topper, Lewis E Mr	I	10065	220 E 65 St Apt 19G	New York	NY	Executive	6
 370	KOLKEN, ELIZABETH	I	14213	69 CHENANGO ST	BUFFALO	NY	RESTAURATEUR	208
 371	HANSON, STEPHEN	I	10023	\N	NEW YORK	NY	PRESIDENT	31
 372	NEDERLANDER, JAMES L	I	10018	1450 Broadway Fl 6 6th Floor	NEW YORK	NY	PRESIDENT	195
-373	DUCKSTEIN, RONALD	I	10598	1134 GAMBELLI DR	YORKTOWN HTS	NY	Joint Venture Partne	209
-374	FOX, RICHARD C	I	14607	20 N Union St	ROCHESTER	NY	PRESI	1
 375	POLL, GILLIS J MR	I	11732	2 FARM HILL LANE	MUTTONTOWN	NY	RESTAURATEUR	210
 376	LYNTON, CAROL	I	10024	33 W 81st St	NEW YORK	NY	Restaurantere	211
 377	SMITH, JOSEPH MR	I	10128	47 E 87TH St Apt 8D	NEW YORK	NY	RESTAURANTEUR	212
@@ -11221,11 +10386,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 391	PONTARELLI, ROBERT W	I	10011	\N	NEW YORK	NY	OWNER	216
 392	CHATWAL, VIVEK	I	10036	595 11th Ave	MANHATTAN	NY	Partner	213
 393	KOLAJ, PAUL	I	10601	199 Main St 9th Floor	WHITE PLAINS	NY	President & CEO	217
-394	COOPER, KELI J	I	13904	112 Crockerhill Rd	BINGHAMTON	NY	MANAGEMENT CONSULTANT	16
 395	BERNSTEIN, ALLEN J	I	11030	11 DORAL DR	MANHASSET	NY	EXECUTIVE	82
-396	COOPER, KELI J	I	13904	112 Crockerhill Rd	BINGHAMTON	NY	Management Consultan	218
-397	WILLIAMS, ANNE	I	13760	2644 Clearview Dr	ENDWELL	NY	President	203
-398	WILLIAMS, ANNE	I	13760	2644 Clearview Dr	ENDWELL	NY	President	219
 399	KOLAJ, JOHN P	I	10504	24 Sniffen Rd	ARMONK	NY	CEO/ Co- founder	220
 400	RUBENSTEIN, AMY	I	10028	993 5th Ave Fl 9 9th Floor	NEW YORK	NY	Restaurateur	23
 401	FIREMAN, JOHNATHAN	I	10014	70 Barrow St	NEW YORK	NY	Restaurateur	19
@@ -11337,13 +10498,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 507	WILLIAMS, STACEY E	I	10601	40 Barker Ave APT 3F	WHITE PLAINS	NY	Lead Trainer & Store	238
 508	LI, ZHEN	I	10027	3117 Broadway 22 Number 22	NEW YORK	NY	President	257
 509	TOPPER, LEWIS	I	11361	42-40 Bell Blvd Ste 200	BAYSIDE	NY	PRESIDENT	6
-510	LORENZINI, SILVIO	I	13104	\N	MANLIUS	NY	PRESIDENT	258
 511	SMITH, JOSEPH	I	10128	47 E 87th St 8D	NEW YORK	NY	OWNER	212
 512	STILLMAN, ALAN N	I	10022	\N	NEW YORK	NY	RESTAURANTEUR	256
 513	NEDERLANDER, JAMES M	I	10018	1450 Broadway FL 6	NEW YORK	NY	President	195
 514	SHARMA, RAJIV	I	11746	8 Firelight Ct	DIX HILLS	NY	Owner	255
-515	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	Restaurateur	120
-516	PERKINS, ROBERT L	I	10011	140 7th Ave Apt 2L	NEW YORK	NY	Vice President	259
 517	PARK, IN S	I	11354	3517 154th St	FLUSHING	NY	Caterer/Restaurateur	260
 518	NATHAN, JEFFREY	I	10018	\N	NEW YORK	NY	RESTAURANTEUR	34
 519	BERNSTEIN, ALLEN J	I	11042	3333 NEW HYDE PARK RD STE 210	NEW HYDE PARK	NY	CEO	261
@@ -11355,7 +10513,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 525	Sanz, Geminiano Mrs	I	10014	168 West 4th St	New York	NY	Manger	264
 526	RAMADAN, ZEAD	I	10471	5900 Arlington Ave	BRONX	NY	resauranter	49
 527	TOPPER, LEWIS E	I	11361	4240 Bell Boulevard Ste 200	BAYSIDE	NY	Executive	6
-528	ROSENSTEIN, BRAD	I	12207	42 State St 44	ALBANY	NY	President/CEO	265
 529	TOPPER, LEWIS E MR	I	11361	4240 BELL BLVD Ste 200	BAYSIDE	NY	EXECUTIVE	6
 530	LINEHAN, MICHAEL P	I	14607	176 Edgerton St	ROCHESTER	NY	President	235
 531	MARKOU, PARASKEVI	I	10601	199 Main St Fl 8	WHITE PLAINS	NY	Accountant	266
@@ -11378,7 +10535,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 548	NEDERLANDER, JAMES L MR	I	10018	1450 Broadway 6th Floor	NEW YORK	NY	Entertainment/Presid	195
 549	NEDERLANDER, ROBERT	I	10018	1450 Broadway Fl 20	NEW YORK	NY	President	195
 550	STILLMAN, ALAN	I	10022	\N	NEW YORK	NY	RESTAURANTER	256
-551	FRIEDMAN, J ROGER	I	10022	425 Park Ave	NEW YORK	NY	Owner	274
 552	GRANATO, FABIO P	I	10022	319 E 50th St Apt 2H	NEW YORK	NY	Restauranteur	69
 553	MEI, WANG WEN	I	10029	2107 3rd Ave	NEW YORK	NY	Chef	275
 554	HANSON, STEPHEN	I	10023	2109 Broadway 15-18	NEW YORK	NY	Restauranteur	31
@@ -11406,7 +10562,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 576	CHENG, SHIN K	I	10002	62 E Broadway	NEW YORK	NY	IR	289
 577	STAUNTON, KIERAN B MR	I	11104	3936 46th St	SUNNYSIDE	NY	Restauranteur	19
 578	ZHOU, DIAN CAI	I	11373	8914 Queens Blvd	ELMHURST	NY	Owner	290
-579	KAUFMAN, MICHAEL	I	10514	41 Pond Hill Rd	CHAPPAQUA	NY	Chairman of the Board	291
 580	ZHENG, CHENG QIANG	I	11214	8651 25th Ave FL 2	BROOKLYN	NY	Restaurant Owner	292
 581	MUDGE, DAMIEN	I	10019	1 W 54th St	NEW YORK	NY	Head Squash Professi	293
 582	XIE, JENNY	I	11377	4061 62nd St 1ST FLOOR	WOODSIDE	NY	Restaurant	294
@@ -11456,20 +10611,16 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 626	MORFOGEN, STRATIS	I	10021	930 5th Ave 12E	NEW YORK	NY	Restauranteur	313
 627	BOZZI, BRUCE SR	I	10017	837 2nd Ave	NEW YORK	NY	Restauranteur	207
 628	NEDERLANDER, JAMES M	I	10018	\N	NEW YORK	NY	PRESIDENT	195
-629	PERNA, CATHERINE P	I	10467	300 East 204th St	BRONX	NY	Licensee	111
 630	PISCOPO, JOHN	I	10304	22 Seven Gables Rd	STATEN ISLAND	NY	General Manager	314
 631	BAUM, NISHTHA	I	11432	84-43 164th St	JAMAICA	NY	Owner	315
 632	RUBENSTEIN, AMY MRS	I	10105	1345 Ave OF THE AMERICAS	NEW YORK	NY	RESTAURANT EXECUTIVE	23
 633	ZDYB, RICHARD MR	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	RESTAURATUER	34
 634	RESNICK, JEFFREY MR	I	11963	PO  3138	SIG HARBOUR	NY	RESTAURANT OWNER	34
-635	RUSITZKY, HARRIS H	I	14618	6 Woodbury Place	ROCHESTER	NY	President	124
-636	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	Owner	120
 637	KILLORAN, JOHN K MR	I	13066	202 W GENESEE St	FAYETTEVILLE	NY	RESTAURANT OWNER	34
 638	TANKEL, ZANE	I	10528	550 Mamaroneck Ave	HARRISON	NY	CHAIRMAN	316
 639	MAY, TONY MR	I	10019	210 CENTRAL PARK S	NEW YORK	NY	RESTAURANT EXECUTIVE	317
 640	RIESE, DENNIS	I	11560	587 Duck Pond Rd	LOCUST VALLEY	NY	Chariman & CEO	197
 641	ASSANTE, VICTOR MR	I	10010	320 EAST 25TH ST	NEW YORK	NY	INFORMATION REQUESTE	318
-642	O'NEILL, M DONALD	I	14544	4964 County Rd 11	RUSHVILLE	NY	Retired	319
 643	SCANDALIOS, NICK G MR	I	10011	65 W 13TH St #4F	NEW YORK	NY	THEATRE EXECUTIVE	195
 644	HICKEY, BRIAN MR	I	10002	25 Grove St	NEW YORK	NY	ACCOUNTANT	212
 645	MORELLET, FLORENT	I	10012	237 Lafayette St 11E	NEW YORK	NY	Restaurant	58
@@ -11486,7 +10637,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 656	MEYERS, DAVID	I	14760	\N	OLEAN	NY	RESTAURANT	322
 657	BOZZI, BRUCE B	I	10011	433 WEST 21ST St 8F	NEW YORK	NY	RESTAURANT VICE PRES	323
 658	SUAREZ, LUCY MS	I	10010	1 Lexington Ave Apt 1ab	NEW YORK	NY	Restaurateur	301
-659	O'NEILL, M DONALD	I	14544	4964 County Rd 11	RUSHVILLE	NY	Retired	324
 660	ROBINSON, KATIE L	I	14202	40 FOUNTAIN PLAZA	BUFFALO	NY	HOMEMAKER (SAME ADRS AS JEREMY JACOBS)	325
 661	NEW YORK STATE RESTAURANT ASSOCIATION	C	12205	40 NEW KARNER RD	ALBANY	NY		13
 662	REICHENBACH, MARGARET LYNN	I	14202	40 FOUNTAIN PLAZA	BUFFALO	NY	HOMEMAKER (SAME ADRS AS JEREMY JACOBS)	325
@@ -11497,9 +10647,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 667	NO, YUN HWA	I	11377	4309 68th St	WOODSIDE	NY	Restaurant Owner	69
 668	LEBOWITZ, JOSH	I	10010	5 East 22nd St Apt 20 R	NEW YORK	NY	Restaurant Owner	328
 669	NEDERLANDER, ROBERT	I	10022	\N	NEW YORK	NY	PRESIDENT	195
-670	LEVY, FRANK	I	10022	136 E 57ty Ave 1601	NY	NY	Executive	329
 671	MEAGHER, GERARD K MR	I	10017	320 E 49TH St	NEW YORK	NY	OWNER/MANAGER	267
-672	CISNEROS, RICHARD	I	10199	427 10th Ave and 34th	NEW YORK	NY	Licensee	330
 673	NEDERLANDER, JAMES	I	10018	\N	NEW YORK	NY	PRESIDENT	195
 674	WEINSTEIN, MICHAEL	I	10011	\N	NEW YORK	NY	EXECUTIVE	28
 675	ISAAK, ANNE	I	10128	337 E 87th St	NEW YORK	NY	Restaurant Owner	312
@@ -11510,37 +10658,24 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 680	NEW YORK STATE RESTAURANT ASSOCIATION	C	\N	409 NEW KARNER RD	ALBANY	NY		13
 681	WOODS, HERBERT K	I	10552	53 Winfield Ave	MOUNT VERNON	NY	Executive	74
 682	KLUGER, RISA	I	11764	PO 1409	MILLER PLACE	NY	RESTAURANTEUR	12
-683	JOHNSON, CHRISTOPHER	I	10003	23 East 10th St 3D	NEW YORK	NY	VP	333
 684	GRUNBERG, JUDITH B	I	12184	83 Silvernail Rd	VALATIE	NY	Restaurateur	98
 685	RUBENSTEIN, AMY	I	10021	\N	NEW YORK	NY	EXECUTIVE	23
 686	RUBENSTEIN, AMY	I	10028	993 Fifth Ave 9th Floor	NEW YORK	NY	Executive,	23
 687	DOYLE, TONY MR	I	11001	16 Depan Ave	FLORAL PARK	NY	manager	334
-688	MICHELL, ROBERT	I	10710	1753 Central Park Ave	YONKERS	NY	Licensee	335
 689	GROSS, SUSAN	I	11218	1108 Beverley Rd	BROOKLYN	NY	Restaurant Publicist	141
-690	MICHELL, ROBERT D	I	10605	142 Woodbrook Rd	WHITE PLAINS	NY	Licensee	134
-691	WILDER, ALBERT	I	12572	PO  271	RHINEBECK	NY	Licensee	336
 692	GONZALEZ, AMERICA	I	10583	12 Park Rd	SCARSDALE	NY	Chef	117
 693	MAY, TONY MR	I	10019	240 CENTRAL PARK S	NEW YORK	NY	RESTAURANT EXECUTIVE	317
 694	SHARMA, PAYAL	I	11746	8 Firelight Ct	DIX HILLS	NY	Manager	255
-695	RUSITZKY, HARRIS	I	14623	135 Calkins Rd Ste J	ROCHESTER	NY	President	337
 696	GOLDEN HOUSE CHINESE RESTAURANT	C	10535	PO BOX 369	JEFFERSON VALLEY	NY		338
 697	GIAMBELLI, MARY MS	I	10022	46 E 50TH St	NEW YORK	NY	OWNER	339
 698	SGARLATA, SKIP	I	12302	1437 Amsterdam Rd	SCHENECTADY	NY	Restaurateur	19
-699	JOHNSON, CHRISTOPHER	I	10003	23 East 10th St 3D	NEW YORK	NY	Franchisee	340
 700	LI, ZHEN	I	10027	3117 Broadway 22 Apt 22	NEW YORK	NY	President	257
 701	MADIKIANS, SERGE	I	10014	195 W 10th St Apt 1D	NEW YORK	NY	Chef	117
 702	TOPPER, LEWIS	I	11361	4240 Bell Blvd Ste 200	BAYSIDE	NY	EXECUTIVE	6
 703	NATIVES RESTAURANT	C	11372	8222 NORTHERN BLVD	JACKSON HEIGHTS	NY		341
-704	PRITCHETT, DONALD R	I	11514	95 Westbury Ave	CARLE PLACE	NY	Licensee	111
 705	IASILLI, LUIGI	I	10007	10 Barclay St 16H	NEW YORK	NY	Restaurant Owner	207
-706	WOODSIDE, KEVIN E	I	10977	27 Sherri Lane	WESLEY HILLS	NY	Vice President	342
-707	WOODSIDE, KEVIN E	I	10977	27 Sherri Lane	WESLEY HILLS	NY	Vice President	343
-708	WINDRAM, ARTHUR R	I	12570	83 Leo Lane	POUGHQUAG	NY	Owner/President	344
 709	MULTER, DANIEL	I	10065	200 E 64th St #23B	NEW YORK	NY	Restaurant Business Manager	345
-710	O'KEEFFE, MICHAEL	I	10016	500 E 30th St	NEW YORK	NY	Owner	346
-711	MCCARROLL, ROBERT	I	11755	PO  713	LAKE GROVE	NY	Owner	347
 712	PELLIZZI, ANTHONY	I	11721	7 Cotswold Dr	CENTERPORT	NY	Self Employed Restaurant Opera	348
-713	PENSABENE, JJ	I	13219	3380 Milton Ave	SYRACUSE	NY	Vice President	349
 714	TRIMBLE, ANNE M	I	12211	10 Loudon Heights S	LOUDONVILLE	NY	Owner	350
 715	ONUAGULUCHI, UCHENNA	I	11422	24419 136th Ave	ROSEDALE	NY	Franchisee Pizza	351
 716	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	12207	12 SHERIDAY AVE	ALBANY	NY		47
@@ -11567,13 +10702,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 737	CHIRICO, JOSEPH	I	11231	345 Court St	BROOKLYN	NY	Owner	279
 738	BERNSTEIN, JEFFREY MR	I	10021	301 E 69TH St Apt 4J	NEW YORK	NY	C.E.O.	364
 739	GIORGIANNI, DEBRA M MS	I	10128	1710 2nd Ave	NEW YORK	NY	Owner	365
-740	POTTER, ELMER	I	14618	\N	ROCHESTER	NY	LICENSEE	366
 741	Younge, Michael G	I	10019	\N	New York	NY	Druids Bar & Restaurant	353
-742	LONGO, PETER	I	14150	507 Cornwall Ave	TONAWANDA	NY	Restaurateur	367
 743	Charpentier, Laine	I	11102	\N	Astoria	NY	Irving Mill Restaurant	368
 744	Jeter, Glen	I	14559	\N	Spencerport	NY	Mcdonald's	134
 745	CORTESE, JOAN A MRS	I	13903	397 Conklin Ave	BINGHAMTON	NY	Food Service	143
-746	LARSEN JR, TOMMY	I	12485	408 windsor highway	TANNERSVILLE	NY	Manager	369
 747	CHEN, HARRY C	I	14850	134 Graham Rd Apt 4-C-1	ITHACA	NY	Resturant Owner	73
 748	MICHELSON, BARBARA	I	03458	9280 Nassau Point Rd PO  1277	PETERBOROUGH	NY	Chef	117
 749	CHARPENTIER, LAINE	I	11102	2610 25th Rd 2	ASTORIA	NY	Hostess	370
@@ -11609,20 +10741,14 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 779	BERNSTEIN, JEFFREY MR	I	10021	301 EAST 69TH St	NEW YORK	NY	PRESIDENT	364
 780	HALKIAS, ALICE	I	11209	240 76th St	BROOKLYN	NY	owner	379
 781	TRAUSSI, BRETT	I	10001	215 W 29th St Fl 5	NEW YORK	NY	Restaruant Manager	211
-782	CUADRA, ALBERT	I	11743	38 New St Ste 2	HUNTINGTON	NY	Licensee	78
 783	LORE, IRENE	I	11215	315 13th St	BROOKLYN	NY	Restauranteur	380
-784	GROUT, ROGER E	I	12065	PO  441	CLIFTON PARK	NY	Licensee	336
 785	SCOTTO, ANTHONY J MR JR	I	10075	511 E 80TH St 9J	NEW YORK	NY		311
 786	GOWDA, CHANDRASHEKHAR	I	10468	2333 Grand Ave Apt 2G	BRONX	NY	Service	381
 787	KONTOLIOS, BILL	I	11234	2310 East 74th St	BROOKLYN	NY	Information Requested	309
 788	PINA, MAXIMO	I	11563	532 Whitehall St	LYNBROOK	NY	Owner	382
 789	NEGRIN, LAYDA D	I	10034	247 Dyckman St	NEW YORK	NY	Restaruant Owner	383
 790	DONOVAN, JAMES	I	11215	708 8th Ave 1R	BROOKLYN	NY	Organizer	384
-791	BLACKBURN, RAY	I	13045	27 Central Ave	CORTLAND	NY	PRESIDENT	109
 792	SHTEYNBERG, ARKADY	I	11230	1865 Ocean Ave 3L	BROOKLYN	NY	Information Requested	385
-793	SULLIVAN, STEVEN C	I	12866	573 Route 9P	SARATOGA SPRINGS	NY	President	386
-794	TAN, MIN	I	10018	1065 Ave of the Americas	NEW YORK	NY	Account executive	387
-795	POLSINELLO, RICHARD J	I	12019	18 Legends Way	BALLSTON LAKE	NY	Consultant	110
 796	COHEN, ROBERT	I	10035	1944 Madison Ave Apt 4W	NEW YORK	NY	Manager	134
 797	TOPPER 113, LEWIS MR	I	11361	4240 BELL BLVD STE 200	BAYSIDE	NY		6
 798	DANIELE, MARIO MR	I	14534	2 HASTINGS CIRCLE	PITTSFORD	NY	RESTAURANT OWNER	34
@@ -11638,10 +10764,8 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 808	KARAYIANNIS, GUS MR	I	11030	256 BAYVIEW Ave	MANHASSET	NY	RESTAURANTEUR	363
 809	TOPPER, LEWIS E	I	11361	4240 Bell Boulevard Ste 200	BAYSIDE	NY	EXECUTIVE	6
 810	BELLAN, NAIM	I	11577	4 BELMONT Dr SOUTH	ROSLYN HEIGHTS	NY	RESTAURANTEUR	34
-811	GRIEBEL, DOUG	I	10019	846 7th Ave 4th Floor	NEW YORK	NY	President	395
 812	ANGELAKIS, GEORGE	I	11514	151 Old Country Rd	CARLE PLACE	NY	restaraunteur	396
 813	TOPPER, LEWIS MR	I	11361	4240 Bell Blvd Ste 200	BAYSIDE	NY	President	6
-814	MOHRMANN, WILLIAM	I	11934	626 Montauk Highway	CENTER MORICHES	NY	Licensee	330
 815	AHN, CHONNIE	I	11354	4011 149th Pl	FLUSHING	NY	Co-owner	397
 816	KOLAJ, PAUL	I	10601	199 Main St 8th Floor	WHITE PLAINS	NY	CEO	217
 817	AHN, KWANG HO	I	11358	19022 Crocheron Ave 1F	FLUSHING	NY	Co-owner	397
@@ -11650,7 +10774,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 820	CHO, JUN B	I	11354	15640 Northern Blvd	FLUSHING	NY	Restaraunt Owner	207
 821	CAHN, ALYA MS	I	10075	179 E 79th St	NEW YORK	NY	Chef	117
 822	BROMBERG, BRUCE	I	10012	117 Sullivan St	NEW YORK	NY	Co-Owner	297
-823	WATERS, SCOTT	I	11566	2005 Merrick Rd 321	MERRICK	NY	President	55
 824	MCNALLY, KEITH	I	10014	9 9th Ave	NEW YORK	NY	Restauranteur	19
 825	KARALEKAS, CONSTATINOS	I	11106	2116 33rd Ave	ASTORIA	NY	Owner	398
 826	KATSIHTIS, GEORGE	I	11357	141-32 South Dr	WHITESTONE	NY	Restaurant owner	73
@@ -11662,13 +10785,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 832	HADZIBRAHIMI, SALI	I	12550	Cena 2000 50 Front St	NEWBURGH	NY	Restauranteur	19
 833	VANATTA, JENNIFER	I	11217	54 S Elliott Pl 4	BROOKLYN	NY	Bartender	399
 834	GORTON, DAMON	I	11238	155 Lefferts Pl	BROOKLYN	NY	Restaurant Owner	207
-835	DIEKMANN, WILLIAM E	I	10570	PO  295	PLEASANTVILLE	NY	Licensee	78
-836	SOUCH, PETER	I	13601	715 Greensview Dr	WATERTOWN	NY	President	400
 837	Fox, Richard C Mr	I	14607	20 North Union St	Rochester	NY	Requested	222
 838	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	12207	40 SHERIDAN AVE	ALBANY	NY		47
-839	MAYNARD, QUINTON	I	11211	118 S 3rd St 30	BROOKLYN	NY	restaurateur	401
 840	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	12210	12 SHERIDAN AVE	ALBANY	NY		47
-841	KAUFMAN, MICHAEL	I	10514	41 Pond Hill Rd	CHAPPAQUA	NY	Chairman of the Boar	402
 842	DITRAPANO, VINCENT MR	I	12205	60 Belafield Dr	ALBANY	NY	Cafe Operator	403
 843	JOHNSON, CHRISTOPHER CHAD	I	10538	5 Highwood Ave	LARCHMONT	NY	ATTORN	404
 844	LOEWENGUTH, MARK	I	13326	2 Walnut St	COOPERSTOWN	NY	Restaurant	58
@@ -11677,9 +10796,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 847	VICHITLAKAKRAN, SAMMY MR	I	11705	753 Montauk Hwy	BAYPORT	NY	Partner	406
 848	DEDUSHI, JAHE	I	10463	3961 Orloff Ave Apt 3	BRONX	NY	Restauranteur	19
 849	NEDERLANDER, JAMES	I	10018	\N	NEW YORK	NY	PRESIDEN	195
-850	HUNT, CHUCK	I	10018	1001 Ave of the Americas Floor	NEW YORK	NY	Executive Vice Presi	407
 851	LARTIN, JAMES	I	10128	322 E 90th St ED APT D	NEW YORK	NY	Chef	117
-852	REARDON, RENEE	I	12804	31 Orchard Dr	QUEENSBURY	NY	Licensee	336
 853	MILLER, SCOTT	I	14850	912 Giles St	ITHACA	NY	restaurant owner Attorney	207
 854	GOLDEN KEY FOOD STORES	C	11103	3715 31ST AVE	ASTORIA	NY		408
 855	ANTIQUITY TAVERN CORP	C	11209	8910 5TH AVE	BROOKLYN	NY		409
@@ -11691,15 +10808,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 861	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION	C	12210	121 SHERIDAN AVE	ALBANY	NY		47
 862	PICKER, STEVEN	I	10025	\N	NEW YORK	NY	GOOD RESTAURANT/CHEF/OWNER	415
 863	FRIEDLAENDER, MIRA	I	11215	434 7th Ave	BROOKLYN	NY	Restauranteuse	412
-864	FLEISCHUT, MELISSA	I	12205	409 New Karner Rd	ALBANY	NY	Director of Governme	407
-865	O'NEAL, MIKE	I	10023	49 W 64th St	NEW YORK	NY	Restaurateur	416
-866	CALDER, JOHN	I	10280	375 S End Ave	NEW YORK	NY	Restaurateur	417
-867	HUNT, CHUCK	I	10018	1001 Ave of the Americas Floor	NEW YORK	NY	Executive Vice President, NYC Regional	407
-868	GRIEBEL, DOUG	I	10019	846 7th Ave Floor 4	NEW YORK	NY	President	395
-869	DUCKSTEIN, RON	I	10605	180 S Broadway Ste 203B	WHITE PLAINS	NY	President	418
-870	QUALTERS, HAROLD	I	12205	409 New Karner Rd	ALBANY	NY	Coordinator	407
-871	MAY, ANTHONY	I	10019	240 Central Park South	NEW YORK	NY	Owner	419
-872	FIREMAN, JOHN	I	10106	888 7th Ave Ste 203	NEW YORK	NY	Co-Owner	420
 873	JONES, JAMES M MR	I	11365	6524 Parsons Blvd Apt 2A	FRESH MEADOWS	NY	Director Of Security	197
 874	EVANS, KIMBERLY	I	10025	306 West 93rd St Apt 33	NEW YORK	NY	Owner	421
 875	WAYMAN, ALEXANDER	I	10016	115 E 34th St 14C	NEW YORK	NY	Real Estate	422
@@ -11718,13 +10826,11 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 888	Straehl, Andrew P Mr	I	10549	25 Carol Dr	Mt Kisco	NY	Applbee's Francise	316
 889	ROTUNDO, NICHOLAS	I	11568	10 Linden Ln	OLD WESTBURY	NY	Self employed	432
 890	STRAEHL, ANDREW P MR	I	10549	25 CAROL Dr	MT KISCO	NY	APPLEBEE'S FRANCHISE	316
-891	POGANSKI, DANIEL A	I	10921	1 Commercial Dr Area E	FLORIDA	NY	Owner	433
 892	BASUSTA, YUSUF	I	11235	2710 Emmons Ave	BROOKLYN	NY	Owner	254
 893	CALEY, PATRICK A MR	I	13204	319 whittier ave	SYRACUSE	NY	prep cook	434
 894	KALINOWSKI, DAVID	I	11377	5849 44th Ave 2	WOODSIDE	NY	Videographer	435
 895	DELAFIELD, ASTRID	I	10075	440 E 79th St	NEW YORK	NY	Chef	436
 896	KARALEKAS, CONSTATINOS	I	11106	2116 33rd Ave	ASTORIA	NY	OWNER	398
-897	VOGT, JOHN	I	11757	\N	LINDENHURST	NY	REG. DIRECTOR	118
 898	PARK, IN SOON	I	11354	35-17 154th St	FLUSHING	NY	restaurant owner	49
 899	RAOUL, SERGE	I	10960	\N	NYACK	NY	OWNER	437
 900	CONSTANTINIDES, MONIKA	I	11106	3290 36th St	LONG ISLAND CITY	NY	Owner of a Cafe bar	438
@@ -11757,7 +10863,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 927	SCOTTO, MARION	I	10021	350 E 72nd St	NEW YORK	NY	Restuartant Owner	207
 928	NYE, FRANCESCA STANFILL MS	I	10021	164 E 72ND St	NEW YORK	NY		430
 929	CHENG, YATKWAI	I	11577	138 STRATFORD N	ROSLYN HEIGHTS	NY	BUSINESS OWNER	452
-930	VOGT, JOHN	I	11757	\N	LINDENHURST	NY	REGIONAL DIR	118
 931	JENKINS, PAUL	I	14216	122 Crestwood Ave	BUFFALO	NY	GM	332
 932	APARICIO, ARIEL	I	11220	336 Senator St	BROOKLYN	NY	Restaurant Owner/Musician	207
 933	COFFEY, CONNOR	I	11201	128 Willow St 4E	BROOKLYN	NY	Manager	453
@@ -11768,7 +10873,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 938	SARDINHA, PAULO H MR	I	10566	422 Washington St	PEEKSKILL	NY	Manager	455
 939	LAVIANO, RITA M MRS	I	10570	70 Ashland Ave	PLEASANTVILLE	NY	Restauranteur	73
 940	KUSHNER, EVAN B MR	I	10025	910 WEST END Ave	NEW YORK	NY	RESTAURANT CONSULTAN	389
-941	FLIK, JULIE	I	10543	Bion Island	MAMARONECK	NY	Executive Vice Presi	456
 942	PARLIN, LAUREN	I	12836	9819 Graphite Mtn Rd	HAGUE	NY	Restauarant Owner	207
 943	COLANDREA, VINCENT MR	I	10304	116 Holly St	STATEN ISLAND	NY	Restauranteur/Owner	457
 944	CONTES BURGER HAVEN	C	11746	76 E PULASKI RD	HUNTINGTN STA	NY		458
@@ -11813,7 +10917,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 983	FALESTO, CHRISTOPHER MR	I	10950	41 FRANKLIN Ave	MONROE	NY	RESTAURANT	58
 984	CAVEGN, JOSEPH MR	I	10980	14 JOHN St	STONY POINT	NY	PRESIDEN	160
 985	LUCKETT, NEHEMIAH	I	10027	107 W 126th St 3	NEW YORK	NY	Retail Management	422
-986	BRUSH, ANDREW	I	13045	27 Central Ave	CORTLAND	NY	DIRECTOR	168
 987	FLYNN 113, EDWARD MR	I	11385	7511 MYRTLE AVE	GLENDALE	NY	MCDONALDS OWNER	475
 988	Falesto, Christopher Mr	I	10950	41 Franklin Ave	Monroe	NY	Restaurant	58
 989	LANDES, JOHN B	I	11963	21 Bluff Point Rd	SAG HARBOR	NY	Restrant Owner	207
@@ -11861,7 +10964,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1031	NEDERLANDER, JAMES	I	10018	\N	NEW YORK	NY		195
 1032	WILLIAMS, TRICIA	I	10282	\N	NEW YORK	NY		117
 1033	MAZZONE, ANGELO MR	I	12302	\N	SCOTIA	NY		36
-1034	LUCAS, CURT	I	12203	\N	ALBANY	NY		36
 1035	LU, HARRY	I	10005	\N	BRONX	NY		263
 1036	CHEN, JIN ZHUI	I	11220	\N	BROOKLYN	NY		281
 1037	WANG, HSIAO YEN	I	10002	\N	NEW YORK	NY		58
@@ -11896,16 +10998,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1066	VIENTE-SIETE/CHARLIES WINGS	C	12065	1471 RTE 9 STE 202	CLIFTON PARK	NY		502
 1067	KILLORAN, JOHN MR	I	13066	\N	FAYETTEVILLE	NY	RESTAURANT OWNER	34
 1068	KILLORAN, JOHN MR	I	13066	105 Barker Lane	FAYETTEVILLE	NY	Restaurant Owner	73
-1069	TOPPER, LEWIS	I	10021	220 E 6537 196	NEW YORK	NY	President	206
-1070	DUCKSTEIN, RONALD	I	10598	1134 GAMBELLI DR	YORKTOWN HTS	NY	JOINT VENTU	503
 1071	MAY, PETER W	I	10021	895 Park Ave	NEW YORK	NY	President/COO	2
 1072	MAY, PETER W	I	10021	\N	NEW YORK	NY	TRIARC COMPANIES/PRESIDENT/COO	2
-1073	FOX, JOANNE D	I	14610	1171 Clover St	ROCHESTER	NY	FRANC	163
 1074	RIESE, DENNIS	I	11560	587 DUCK POND RD	LOCUST VALLEY	NY		36
 1075	SUAREZ, PHILIP & LUCY	I	10022	850 3RD AVE	NEW YORK	NY	RESTAURANT OWNER	504
-1076	COGHLAN, JEFFREY J	I	13904	124 Crocker Hill Rd	BINGHAMPTON	NY	Franchisee	203
-1077	FOX, RICHARD C	I	14610	1171 CLOVER St	ROCHESTER	NY	WENDY'S RESTURANTS OF ROCHESTER INC	36
-1078	COGHLAN, SANDRA J	I	13904	124 Crocker Hill Rd	BINGHAMTON	NY	Franchisee	203
 1079	PELTZ, NELSON MR	I	10017	\N	NEW YORK	NY	CEO	2
 1080	PELTZ, CLAUDIA MS	I	10017	\N	NEW YORK	NY	HOMEMAKER	2
 1081	WILLIAMS, TRICIA L	I	10282	20 River Terrace 3E	NEW YORK	NY	None	117
@@ -11919,8 +11015,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1089	CHURRASQUIERA BAIRRADA RESTAURANT	C	11501	144 JERICHO TPKE	MINEOLA	NY		510
 1090	BREANDAN & CARRS RESTAURANT	C	11229	3432 NOSTRAND AV	BROOKLYN	NY		511
 1091	WADE, JOHN	I	13502	151 N Genesee St	UTICA	NY	Owner	512
-1092	COOPER, KELI J	I	13904	112 Crockerhill Rd	BINGHAMTON	NY	Franchisee Daughter	218
-1093	ROSENSTEIN, BRAD	I	12207	42 State St 44	ALBANY	NY	Restaurateur	513
+1173	ROMANZA RESTAURANT	C	12202	119-121 MADISON AVE	ALBANY	NY		542
 1094	WILLIAMS, TRICIA L	I	10282	\N	NEW YORK	NY	CHEF	117
 1095	Snowden, Richard	I	14216	175 Nottingham Terrace	Buffalo	NY	Business owner	514
 1096	RIESE, DENNIS	I	11560	\N	MATINECOCK	NY	CHIEF EXECUT	197
@@ -12000,7 +11095,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1170	DAMARO RESTAURANT GROUP	C	10701	59 MAIN ST	YONKERS	NY		541
 1171	CUTLER, ALICE	I	10024	215 W 90th St	NEW YORK	NY	Entrepeneur	11
 1172	CANTINE, PETER	I	12498	40 Sugarbear Lane	WOODSTOCK	NY	Restaurant	58
-1173	ROMANZA RESTAURANT	C	12202	119-121 MADISON AVE	ALBANY	NY		542
 1174	SINGH, PHUMAN	I	11373	\N	ELMHURST	NY	RESTAURATEUR	12
 1175	PARK, IN SOON	I	11354	\N	FLUSHING	NY	SELF/CATERER/RESTAURATEUR	260
 1176	GORUR, SALIM	I	11050	\N	SANDS POINT	NY	OWNER	543
@@ -12040,26 +11134,16 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1210	STILLMAN, ALAN N	I	10022	322 E 57th St	NEW YORK	NY	Management	256
 1211	KIRSH, PHILIP	I	10605	16 Cobblefield Ln	WHITE PLAINS	NY	Restauranteur	73
 1212	LIU, JOHNNY MR	I	10002	18 E Broadway	NYC	NY	President	561
-1213	FOX, TODD	I	12210	111 Washington Ave	ALBANY	NY	Restaurateur	562
-1214	O'NEILL, DONALD	I	14544	4964 East Lake Rd	RUSHVILLE	NY	Owner	324
-1215	ROSENSTEIN, HARRY	I	12084	2079 Western Ave	GUILDERLAND	NY	Restaurateur	265
-1216	RUSITZKY, HARRIS	I	14534	1 Grove St Ste 117	PITTSFORD	NY	Restaurateur	337
-1217	SARRIS, LEGRANDE	I	12110	10 British American Blvd	LATHAM	NY	Restaurateur	563
-1218	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	Restaurateur	564
 1219	WOODS, HERBERT K	I	10552	\N	MOUNT VERNON	NY	EXECUTIVE	74
 1220	BERNSTEIN, ALLEN J MR	I	11042	\N	NEW HYDE PARK	NY	ENDEAVOR RESTAURANT GROUP/CEO/CHAIR	59
-1221	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	HOOK LINE AND SINKER PUB INC.	36
 1222	WEINSTEIN, MICHAEL MR	I	10011	\N	NEW YORK	NY	EXECUTIVE	28
 1223	SNOWDEN, RICHARD	I	14216	\N	BUFFALO	NY	OWNER	514
-1224	CHRYS, MICHAEL	I	12309	1001 Morgan Ave	NISKAYUNA	NY	Director-Investments	565
 1225	CHENG, SZE K	I	11553	\N	UNIONDALE	NY	OWNER	566
-1226	BRONGO, ANTHONY	I	12205	10 Jupiter Lane	ALBANY	NY	President	567
 1227	ZURIFF, EUGENE I	I	10023	\N	NEW YORK	NY	SMITH AND WOLLENSKY RESTAURANT GROU	256
 1228	SCOTTA, MARION	I	10021	\N	NEW YORK	NY	RESTAURANT OWNER	34
 1229	LEBOWITZ, JOSH	I	10010	\N	NEW YORK	NY	RESTA	328
 1230	CHI, FUNG Y	I	11214	\N	BROOKLYN	NY	MANAGER	280
 1231	NEW YORK STATE RESTAURANT ASSOCIATION	C	12205	409 NEW KERNER RD	ALBANY	NY		13
-1232	FLIK, JULIE	I	10573	3 International Dr 2nd Floor	RYE BROOK	NY	Executive Vice Presi	456
 1233	NEW YORK STATE RESTAURANT ASSOCIATION	C	12205	400 NEW KARNER	ALBANY	NY		13
 1234	CLARE, JAMES P	I	11804	\N	OLD BETHPAGE	NY	RESTAURANTEUR	12
 1235	MAY, PETER MR	I	10017	\N	NEW YORK	NY	CEO	2
@@ -12101,7 +11185,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1271	SCHENECTADY SARATOGA & WARREN COUNTY RESTAURANT & TAVERN ASSOCIATION	C	12302	216 MOHAWK AVE	SCOTIA	NY		585
 1272	GRUNBERG, JUDITH B	I	12184	83 Silvernail Rd	VALATIE	NY	Owner	67
 1273	GOODFELLOS RESTAURANT	C	13685	W MAIN ST	SACKETS HARBOR	NY		586
-1274	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	Restaurateur	587
 1275	LU, HARRY	I	10462	\N	BRONX	NY	OWNER	263
 1276	WEI LONG, LI	I	11226	\N	BROOKLYN	NY	CHEF	588
 1277	LIU, XIU	I	10002	\N	NEW YORK	NY	MANAGER	589
@@ -12122,7 +11205,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1292	TSANIS, GREG MR	I	11373	8286 Broadway	ELMHURST	NY	Owner	602
 1293	BARTOLIS PIZZERIA & RESTAURANT	C	11209	7414 5 AV	BROOKLYN	NY		155
 1294	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION/URHT	C	12208	NEW SCOTLAND AVE	ALBANY	NY		527
-1295	TOBER, DONALD	I	10022	950 3rd Ave	NEW YORK	NY	Restaurateur	603
 1296	CHIRICO, JOSEPH	I	11231	345 Court St	BROOKLYN	NY	Owner	604
 1297	EDDIES RESTAURANT	C	12883	HC2 HAGUE RD	TICONDEROGA	NY		605
 1298	NINAS RESTAURANT CORP	C	11222	635 MEEKER AVE	BROOKLYN	NY		606
@@ -12152,7 +11234,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1322	EMPIRE STATE RESTAURANT & TAVERN ASSOCIATION/URHT	C	13492	56 COLLINS LN	WHITESBORO	NY		527
 1323	SAHARA RESTAURANT	C	11223	2337 CONEY ISLAND AVE	BROOKLYN	NY		624
 1324	431 3RD AVE RESTAURANT CORP	C	10016	431 3RD AVE	NEW YORK	NY		625
-1325	MAY, ANTHONY	I	10019	240 Central Park S	NEW YORK	NY	TONY MAY GROUP/SAN DOMENICO/RESTAUR	36
 1326	MORTONS RESTAURANT GROUP	C	11042	3333 NEW HYDE PARK RD STE 210	NEW HYDE PARK	NY		556
 1327	LEVY, SHAUL	I	10017	8 E 41ST ST 6TH FLR	NEW YORK	NY	BUSINESS OWNER	36
 1328	LEVY, SHAUL	I	10017	8 E 41ST ST 6TH FLR	NEW YORK	NY	RESTAURANT OWNER	36
@@ -12161,14 +11242,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1331	VLASSIS, MICHAEL	I	11365	193-11 50TH Ave	FRESH MEADOWS	NY	SELF-EMPLOYED	627
 1332	CORTEZ, JUAN M JR	I	10924	23 Gregory Dr	GOSHEN	NY	VICE PRESIDENT	540
 1333	NOLAN, NAOMI MS	I	10036	267 W 45th St	NEW YORK	NY	President	628
-1334	SCRAM, FLORENCE R	I	12059	40 Lakeview Rd	EAST BERNE	NY	RESTAURATEUR	629
-1335	FLIK, JULIE	I	10573	Bion Island	MAMARONECK	NY	RESTAURATE	630
-1336	DAWSON, LINDA	I	10247	1 Gateway Dr	COHOES	NY	SUPPLIER	631
 1337	KARALEKAS, CONSTANTINE	I	11106	\N	ASTORIA	NY	OWNER	632
-1338	SULLIVAN, STEVEN	I	12866	573 Route 9P	SARATOGA SPRINGS	NY	President	386
-1339	MARSH, KERRY	I	12210	111 Washington Ave	ALBANY	NY	Attorney	633
-1340	GENNETT, JACK	I	12025	4 North St Box 667	BROADALBIN	NY	General Sales Manage	634
-1341	BROWNSON, PETER	I	12203	18 King St	ALBANY	NY	Owner	635
 1342	GNERRE, ANGELO MR	I	11204	6514 18th Ave	BROOKLYN	NY	Manager	636
 1343	WADE, JOHN	I	13502	151 N Genesee St	UTICA	NY	Owner	17
 1344	WOOD, WILLIAM J	I	13045	26 Madison St	CORTLAND	NY	tavern owner	149
@@ -12193,23 +11267,17 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1363	MORIN, JOHN L	I	10591	26 New Broadway	SLEEPY HOLLOW	NY	Self	117
 1364	MANESSIS, TASSO	I	10128	1293 Lexington Ave	NEW YORK	NY	Businessman	139
 1365	CARVOTTA, RICHARD	I	14534	195 Garnsey Rd	PITTSFORD	NY	Manager	643
-1366	WINDRAM, ARTHUR R	I	12570	83 Leo Lane	POUGHQUAG	NY	Owner/President	644
 1367	RIAZ, ASIF	I	10312	54 Hills St	STATEN ISLAND	NY	Resturant	645
 1368	LAUER, JOHN	I	14224	\N	WEST SENECCA	NY	MANAGER	646
 1369	SUJAK, HASIM	I	10465	4038 E Tremont Ave	BRONX	NY	Owner	647
 1370	PISCOPO, DIANA MS	I	10304	22 Seven Gambles Rd	STATEN ISLAND	NY	General Manager	77
 1371	SNOWDEN, RICHARD	I	14216	\N	BUFFALO	NY	BUSINESS OWNER	514
 1372	SNOWDEN, RICHARD	I	14216	175 Nottingham Terrace	BUFFALO	NY	Business owner	514
-1373	RUSITZKY, HARRIS	I	14623	135 Calkins Rd Ste J	ROCHESTER	NY	Restaurateur	337
-1374	FELLIN, JOHN	I	11369	88 - 25 Astoria Boulevard	JACKSON HEIGHTS	NY	Restaurateur	648
-1375	BERLIND, JEFFREY	I	10576	80 Eastwoods Rd	POUND RIDGE	NY	Partner	649
 1376	SKLAR, JAMES	I	10024	340 W 87th St 7A	NEW YORK	NY	Restaurant Business	127
 1377	QUINTERO, CONSUELO MRS	I	11372	8222 Northern Blvd	FLUSHING	NY	Owner	650
-1378	GROUT, ROGER E	I	12065	23 Nadeau Rd	CLIFTON PARK	NY	Licensee	651
 1379	GLAZIER, MATHEW	I	10128	\N	NEW YORK	NY	RESTAURANTAUR	652
 1380	KOCIAN, ANDREE MS	I	12205	106 Wolf Rd	ALBANY	NY	Owner	653
 1381	MORELLET, FLORENT	I	10012	\N	NEW YORK	NY	OWNER	654
-1382	TART, JOHN L	I	27313	6310 Hunt Rd	PLEASANT GARDEN	NY	Licensee	78
 1383	TEBSHERANY, JOSEPH	I	13417	28 Elm St	NEW YORK MILLS	NY	OWNER	202
 1384	MARRAFFA, JOHN MR SR	I	13501	\N	UTICA	NY	OWNER	655
 1385	CONNELLY, BILL MR	I	13318	9603 Lacsou Rd	CASSVILLE	NY	Owner	656
@@ -12221,21 +11289,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1391	DELANEY, AUSTIN	I	10036	\N	NEW YORK	NY	OWNER	660
 1392	CROFTON, DESMOND	I	10022	\N	NEW YORK	NY	RESTAURANT OWNER	12
 1393	PAISLEY, STANFORD A MR	I	11203	841 Utica Ave	BROOKLYN	NY	President	661
-1394	SULLIVAN, STEVEN	I	12866	573 Route 9p	SARATOGA SPRINGS	NY	Consultant	386
-1395	GRIEBEL, DOUG	I	10024	2328 Broadway 3rd Fl	NEW YORK	NY	Restaurateur	395
 1396	LAWTON, HUBERT	I	11203	1344 UTICA Ave	BROOKLYN	NY	OWNER	662
 1397	MERCHANZ, IBRAHIM	I	10282	\N	NEW YORK	NY	RESTAURATEUR	34
-1398	BROWNSON, PETER	I	12206	18 King Ave	ALBANY	NY	RESTAURATEUR	663
 1399	MURPHY, MARC MR	I	10013	179 W Broadway	NEW YORK	NY	Owner	664
 1400	COSENTINO, JAMES A MR	I	14225	4225 Genesee St	BUFFALO	NY	President	665
-1401	ZDYB, RICHARD	I	13413	114 Gilbert Rd	NEW HARTFORD	NY	Owner	564
-1402	VALENTI, NICK	I	10036	120 W 45th St	NEW YORK	NY	CEO	666
-1403	SAMPSON, RICK	I	12205	455 New Karner Rd	ALBANY	NY	Association Executiv	407
-1404	ROSENSTEIN, BRAD	I	12207	42 State St 44	ALBANY	NY	President & Chief Ex	265
-1405	RICHMOND, CAROLYN	I	10128	\N	NEW YORK	NY	ATTORNEY	667
-1406	RICHMOND, CAROLYN	I	10128	201 E 87th St	NEW YORK	NY	Attorney	668
-1407	HUNT, CHUCK	I	10018	1001 Ave of The Americas 22nd Floor	NEW YORK	NY	Executive Vice Presi	407
-1408	STRANG, HARRY	I	12603	7 Homer Place	POUGHKEEPSIE	NY	President	369
 1409	KUO ZHENG, SHI	I	10002	\N	NEW YORK	NY	RESTAURANTEUR	12
 1410	CHI ZHENG, FUNG Y	I	11214	\N	BROOKLYN	NY	OWNER	280
 1411	CHUN ZHENG, DA	I	10002	\N	NEW YORK	NY	RESTAURANTEUR	12
@@ -12287,7 +11344,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1457	PALACE DINER & RESTAURANT	C	12601	194 WASHINGTON ST	POUGHKEEPSIE	NY		688
 1458	CHAUVIN, CORINNE MRS	I	12866	11 Cathedral Ct	SARATOGA SPGS	NY	Restauranteur	19
 1459	CHEN, YI BEI MR	I	11096	5 Pearl St	INWOOD	NY	Owner	561
-1460	CAMPION, JOHN	I	14701	367 Howard Ave 1	JAMESTOWN	NY	Restaurateur	689
 1461	HILDRETH, PATRICK A MR JR	I	12118	\N	MECHANICVILLE	NY	OWNER	690
 1462	SOLIMEO, LUIGI MR	I	11354	4018 Main St	FLUSHING	NY	Owner	134
 1463	TSOUPELIS, SYMEON	I	13501	16 Benton Circle	UTICA	NY	Owner	691
@@ -12305,8 +11361,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1475	ESCOBAR, MARINA	I	11371	24-24 83rd St	EAST ELMHURST	NY	General Manager	698
 1476	HADRI, LUMI	I	10021	188 East 76th St 5D	NEW YORK	NY	Restauranteur	69
 1477	DEDUSHI, JAHE	I	10463	3961 Orloff Ave 3	BRONX	NY	Restauranteur	19
-1478	GENEST, JOHN	I	12061	19 Delehunt Dr	EAST GREENBUSH	NY	President	699
-1479	MAZANY, JAMES	I	11558	100 Baker Ct 06	ISLAND PARK	NY	Restaurateur	700
 1480	MACDOUGAL RESTAURANT	C	10012	109 MACDOUGAL ST	NEW YORK	NY		701
 1481	BOWERS, CAROL L MS	I	12134	74 Northville Edinburg	NORTHVILLE	NY	Owner	642
 1482	DOCTOR, SEAN	I	14220	70 Hansen St	BUFFALO	NY	owner	702
@@ -12335,7 +11389,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1505	DELAFIELD, ASTRID	I	10021	440 East 79th St	NEW YORK	NY	Chef	436
 1506	CHEN, JIAN ZHI MR	I	11101	20-53 33rd St	ASTORIA	NY	Chef	716
 1507	TAK, YEUNG KUNG MR	I	10002	39 Bowery St PMB	NEW YORK	NY	Owner	717
-1508	BERNSTEIN, ALLEN J	I	11042	3333 New Hyde Park Rd Ste 210	NEW HYDE PARK	NY	MORTON'S OF CHICAGO NATIONAL HEADQU	36
 1509	LAVIANO, MARIO L MR	I	10570	70 Ashland Ave	PLEASANTVILLE	NY	Restauranteur	73
 1510	TEBSHERANY, JOSEPH	I	13417	28 Elm St 1	NEW YORK MILLS	NY	Owner	202
 1511	MALINOVSKY, MICHAEL F MR	I	13790	223 Reynolds Rd	JOHNSON CITY	NY	Manager	718
@@ -12343,9 +11396,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1513	326 RESTAURANT CORP DBA JOE ALLEN RESTAURANT	C	10036	326 W 46TH ST	NEW YORK	NY		719
 1514	PICCOLA VENEZIA RESTAURANT	C	11103	42-01 28TH AVE	ASTORIA	NY		720
 1515	PICCOLLA VENEZIA RESTAURANT	C	11103	42-01 28TH AVE	ASTORIA	NY		721
-1516	KELLNER, TED D	I	10012	5112 W Highland Rd	NEW YORK	NY	Analyst	722
 1517	DERAWAY, PATRICIA MS	I	13313	PO  306	BRIDGEWATER	NY	Owner	723
-1518	VOGT, JOHN	I	11757	\N	LINDENHURST	NY	REGIONAL DIRECTOR	118
 1519	CHENG, YAT K	I	11355	\N	FLUSHING	NY	RESTA	452
 1520	CHENG, YAT K	I	11355	\N	FLUSHING	NY	CHENG'S ORIENTAL EXPRESS, INC.	452
 1521	LAVIANO, MARIO	I	10570	\N	PLEASANTVILLE	NY		36
@@ -12369,7 +11420,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1539	BROOKLYN & QUEENS RESTAURANT & TAVERN OWNERS ASSOCIATION	C	11229	2088 FLATBUSH AV	BROOKLYN	NY		498
 1540	SUNLIGHT RESTAURANT	C	10451	553 WALTON AVE	BRONX	NY		730
 1541	JIM ROMAS BAKERY	C	13760	PO BOX 5542	ENDICOTT	NY		478
-1542	YIP, ESTHER	I	10016	39 East 31st St 4th Floor	NEW YORK	NY	Vice President	731
 1543	EDDIES RESTAURANT	C	12883	68 NYS RTE 9	TICONDEROGA	NY		605
 1544	SABROSURA RESTAURANT	C	10562	1200 CASTLE HILL AVE	BRONX	NY		732
 1545	LA FAMIGLIA PIZZERIA & RESTAURANT	C	11542	5 SCHOOL ST	GLEN COVE	NY		733
@@ -12483,39 +11533,25 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1653	RIESE, DENNIS MR	I	11560	587 Duck Pond Rd	LOCUST VALLEY	NY	Owner/CEO	802
 1654	NATIONWIDE RESTAURANT RESOURCES	C	11233	276 DECATUR ST	BROOKLYN	NY		803
 1655	Riese, Dennis Mr	I	11560	587 Duck Pond Rd	Locust Valley	NY	Owner/CEO	802
-1656	FOX, JOANNE D	I	14610	1171 CLOVER ST	ROCHESTER	NY	SHAREHOLDER/MGT.	804
 1657	MORTONS RESTAURANT	C	11042	3333 NEW HYDE PARK STE 210	NEW HYDE PARK	NY		805
-1658	COGHLAN, SANDRA J	I	13904	124 CROCKER HILL Rd	BINGHAMTON	NY	MANAGER	806
 1659	TRIPIFOODS	C	14206	1427 WILLIAM ST	BUFFALO	NY		807
-1660	FOX, RICHARD C	I	14610	1171 CLOVER St	ROCHESTER	NY	PRESIDENT	808
-1661	FOX, JOANNE D	I	14610	1171 CLOVER ST	ROCHESTER	NY	FRANCHISEE	804
 1662	RIVER WATCH RESTAURANT	C	10011	560 W 24TH ST	NEW YORK	NY		809
-1663	COGHLAN, JEFFREY J	I	13904	124 CROCKER HILL Rd	BINGHAMPTON	NY	MANAGER	8
 1664	BOZZI, BRUCE MR	I	10017	837 Second Ave	NEW YORK	NY	Owner	116
-1665	CRISTOU, EVAN	I	12110	10 British American Blvd	LATHAM	NY	Restaurateur	810
 1666	BOZZI, MARY A MS	I	10017	\N	NEW YORK	NY	N/A/HOMEMAKER	116
 1667	CHATWAL, VIKRAM MR	I	10019	Broadway Regency Restaurant LLC 210 West	NEW YORK	NY	Member	30
 1668	MAY, PETER W	I	10017	280 Park Ave	NEW YORK	NY	President and CEO	2
-1669	TOPPER, LEWIS	I	11432	181-18 TUDOR Rd	JAMAICIA	NY	PRESIDENT	5
 1670	NATIONAL RESTAURANTS MANAGEMENT	C	10001	162 W 34TH ST	NEW YORK	NY		811
 1671	LEMONIDES, ERIC N	I	11932	\N	BRIDGEHAMPTON	NY	ALMOND RESTAURANT	639
 1672	RIESE, DENNIS	I	11560	587 DUCK POND AVE	MATINECOCK	NY		36
 1673	RIESE, DENNIS	I	10036	560 5TH AVE 3RD FL	NEW YORK	NY		36
-1674	DUCKSTEIN, RONALD	I	10598	1134 GAMBELLI DR	YORKTOWN HTS	NY	Joint Venture Partner	209
-1675	COGHLAN, JEFFREY J	I	13904	124 CROCKER HILL Rd	BINGHAMPTON	NY	FRANCHISEE	8
-1676	COGHLAN, SANDRA J	I	13904	124 CROCKER HILL Rd	BINGHAMTON	NY	FRANCHISEE	8
-1677	TOPPER, LEWIS	I	10021	220 E 6537 196	NEW YORK	NY	PRESIDENT	5
 1678	CHENG, YAT KWAI	I	11355	\N	FLUSHING	NY	CHENG'S ORIENTAL EXPRESS INC	452
 1679	NEVES, JORGE	I	10013	\N	NEW YORK	NY	RESTAURANTUER	36
 1680	MEYER, DANIEL H MR	I	10010	1 Lexington Ave	NEW YORK	NY	Restauranteur	812
 1681	BALJIDEMAJ, RAMA	I	10573	1 Winding Wood Rd	RYE BROOK	NY	Owner	813
-1682	ROSENSTEIN, BRAD	I	12207	42 State St 44	ALBANY	NY	Restaurateur	265
-1683	LEAHY, WILLIAM	I	33308	28 TURTLE POND RD	SOUTHAMPTON	NY	Regional Venture Par	209
 1684	BARI RESTAURANT & PIZZERIA EQUIPMENT CORP	C	10012	240-244 BOWERY	NEW YORK	NY		814
 1685	EL JAOUHARI, RADOUANE MR	I	10017	315 E 46TH St 4C	NEW YORK	NY	RESTAURATEUR	34
 1686	KILLORAN, JOHN K MR	I	13066	105 Barker Ln	FAYETTEVILLE	NY	Owner	815
 1687	WILLIS SEAFOOD RESTAURANT	C	11596	700 WILLIS AVE	WILLISTON PARK	NY		816
-1688	COOPER, KELI J	I	13904	112 CROCKERHILL Rd	BINGHAMTON	NY	FRANCHISEE DAUGHTER	16
 1689	CHURRASQUEIRA BAIRRADA RESTAURANT	C	11501	144 JERICHO TPKE	MINEOLA	NY		817
 1690	RALPHS GROCERY CO	C	10461	2100 WILLIAMSBRIDGE RD	BRONX	NY		818
 1691	TATIANA RESTAURANT	C	11235	3152 BRIGHTON 6 ST	BROOKLYN	NY		819
@@ -12595,7 +11631,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1765	SHURE, TONY E	I	10021	\N	NEW YORK	NY	RESTAURANTEUR	36
 1766	725 COMMACK MEAT CORP	C	11717	725 COMMACK RD	BRETWOOD	NY		845
 1767	FLEISCHER, JODY	I	14534	7 Surrey Hill Ln	PITTSFORD	NY	OWNER	846
-1768	HANSON, STEPHEN	I	10012	206 Spring St	NEW YORK	NY	Restaurateur	847
 1769	MERRIN, JEREMY	I	10024	\N	NEW YORK	NY	RESTAURANTEUR	36
 1770	FIOTODITRAKIS, ANTHONY	I	11211	363 Metropolitan Ave	BROOKLYN	NY	Restaurant	58
 1771	ALPS MANAGEMENT DBA MCDONALDS	C	10504	\N	ARMONK	NY		848
@@ -12633,15 +11668,12 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1803	Layton, Barbara Ms	I	11937	11 Cross Hwy	East Hampton	NY	restaurant owner	508
 1804	BORENSTEIN, MERLE	I	12461	5092 Rt 213	OLIVEBRIDGE	NY	Restaurateur	19
 1805	MILITELLO, MICHAEL R MR	I	14226	17 Walton Dr	BUFFALO	NY	Business Owner	859
-1806	KAHN, ASHFAQUE A	I	11373	4242 Ithaca St; 3E	ELMHURST	NY	Regional Manager	860
 1807	ZHANG, ZI K	I	10002	\N	NEW YORK	NY		861
 1808	KUO, JOSEPH C MR	I	10583	56 Garth Rd	SCARSDALE	NY	Owner	858
 1809	REYNOLDS, DENIS	I	10019	351 West 57th St	NEW YORK	NY	Restaurant owner	19
 1810	ZIFF, DAVID	I	10128	\N	NEW YORK	NY	DAVID ZIFF COOKING	841
 1811	FLEISCHER, JODY M	I	14534	7 Surrey Hill Ln	PITTSFORD	NY	Owner	846
 1812	WARD, JOHN	I	07901	\N	SUMMIT	NY	ATTORNEY	862
-1813	FLIK, JULIE	I	10573	Bion Island	MAMARONECK	NY	Restaurateur	863
-1814	ROSENSTEIN, ARNOLD	I	12203	18 Davis Ave	ALBANY	NY	Restaurateur	265
 1815	KILLORAN, JOHN K MR	I	13066	105 Barker Ln	FAYETTEVILLE	NY	Restaurant Owner	98
 1816	COHEN, LAWRENCE M	I	10506	29 Smith Farm Rd	BEDFORD	NY	COO	864
 1817	MAY, JULIANA	I	10128	1075 Park Ave 8C	NEW YORK	NY	Homemaker	2
@@ -12659,7 +11691,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1829	BECKER, JAMEE	I	10019	27 W 55th St 31	NEW YORK	NY	Chef	117
 1830	WOODS, HERBERT K	I	10552	\N	MT VERNON	NY	EXECUTIVE	74
 1831	ROBINSON, GARY MR	I	13152	3930 JORDAN Rd	SKANEATELES	NY	RESTAURANT OWNER	34
-1832	ZDYB, RICHARD	I	13413	8428 Seneca Tpke	NEW HARTFORD	NY	Restaurateur	868
 1833	JOA, MAS CHAY	I	10013	28 Pell St	NEW YORK	NY	General Manager	869
 1834	PELTZ, NELSON	I	10017	280 Park Ave 41st floor	NEW YORK	NY	CEO & Chairman	2
 1835	MAY, JONATHAN	I	10128	1075 Park Ave 8C	NEW YORK	NY	CEO - Arby's	2
@@ -12724,15 +11755,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1894	RIESE, DENNIS	I	11560	587 DUCK POND RD	MATINECOCK	NY		36
 1895	KEY FOOD STORES COOPERATIVE	C	10314	1200 S AVE	STATEN ISLAND	NY		899
 1896	RIESE, DENNIS	I	11560	587 DUCK POND RD	MATINCOCK	NY		36
-1897	ROSE, TERRY	I	13090	620 Crown Rd	LIVERPOOL	NY	Supplier	900
-1898	ZEHNER, GUY	I	13748	101 Broome Corp Parkway	CONKLIN	NY	Supplier	901
-1899	DUFFY, THOMAS	I	13026	6072 Court St Rd	SYRACUSE	NY	Supplier	902
 1900	KRASDALE FOODS	C	10604	65 W RED OAK LN	WHITE PLAINS	NY		903
-1901	WOOD, JOE	I	13152	6497 County Line Rd	SKANEATELES	NY	Supplier	904
 1902	86TH STREET MEAT MARKET	C	11214	2229 86TH ST	BROOKLYN	NY		905
-1903	DELANEY, WILLIAM J	I	13152	111 East Lake Rd	SKANEATELES	NY	Supplier	904
 1904	COLANDREA NEW CORNER RESTAURANT	C	11209	\N	BROOKLYN	NY		95
-1905	ZEHNER, GUY	I	13748	101 Broome Corp Parkway	CONKLIN	NY	Supplier	906
 1906	VERNON VALLEY DELI	C	11731	143 VERNON VALLEY RD	EAST NORTHPORT	NY		907
 1907	ROCKLAND BAKERY	C	10954	94 DEMAREST MILL RD	NANUET	NY		908
 1908	MCBART RESTAURANT CORP	C	11209	9701 3RD AVE	BROOKLYN	NY		909
@@ -12759,18 +11784,11 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1929	MC PHILLIPS, MICHAEL MR	I	10465	2918 BRUCKNER BLVD	BRONX	NY	OWNER	923
 1930	FOOD CRAFT	C	11368	1 WORLDS FAIR MARINA	FLUSHING	NY		924
 1931	LAVIANO, MARIO &	I	10570	\N	PLEASANTVILLE	NY	RESTAURANTEUR	34
-1932	FELDMAN, STEVEN	I	12033	1 Celebration Way	CASTLETON ON HUDSO	NY	Restaurateur	925
-1933	ERMIDES, MICHAEL	I	12309	29 Glade Dr	NISKAYUNA	NY	Restaurateur	926
 1934	GAVIN, LILLIAN	I	11375	9411 69th Ave	FOREST HILLS	NY	President	582
 1935	DILLANE, PAUL	I	11377	60-02 Woodside Ave	WOODSIDE	NY	Bar Owner	159
-1936	DOUGLAS, PAUL	I	13037	207 Juneway Dr	CHITTENANGO	NY	Restaurateur	927
 1937	60 WEST 183RD FOOD CORP	C	10453	60 W 183RD ST	BRONX	NY		928
-1938	D'ORAZI, FRANCIS	I	11766	17 Heidi Ln	MOUNT SINAI	NY	Restaurateur	929
 1939	SELIMAJ, NINO MR	I	10021	1354 1st Ave	NEW YORK	NY	INFO REQUESTED	53
 1940	KAVALOS, NICK MR	I	10451	96 E 161st St	BRONX	NY	Owner	627
-1941	DESMOND, KEN	I	12211	660 Albany-Shaker Rd	ALBANY	NY	Restaurateur	930
-1942	DELUCA, WILLIAM A	I	14225	1500 Cleveland Dr	CHEEKTOWAGA	NY	Restaurateur	931
-1943	MAGLIULO, ANTHONY	I	10019	210 Central Park South No 19B	NEW YORK	NY	Information Requeste	38
 1944	TRAVERS, STEPHEN	I	10541	31 Lakeview Dr	MAHOPAC	NY	Manager	932
 1945	REILLY, PATRICK	I	11358	167-20 29th Ave	FLUSHING	NY	Restaurant Owner	19
 1946	MURPHY, PATRICIA	I	10470	53 East 235th St	BRONX	NY	Manager	932
@@ -12778,15 +11796,8 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1948	DOOHAN, DANIEL	I	10705	88 Devoe Ave	YONKERS	NY	Restaurant owner	19
 1949	CALIMANO, CECELIO	I	11373	54-78 82nd St	ELMHURST	NY	Chef	934
 1950	ARCARI, MARIO	I	10036	659 Ninth Ave	NEW YORK	NY	Owner	935
-1951	D'ARVES, DANIELLE	I	12211	594 New Loudon Rd	ALBANY	NY	Restaurateur	936
-1952	DANAHER, JOSEPH	I	12205	1273 Central Ave	ALBANY	NY	Restaurateur	937
-1953	CAMPBELL, GLENN	I	12866	120 Edie Rd	SARATOGA SPRINGS	NY	Manager	938
-1954	BROWN, DEREK	I	12065	5 Southside Dr	CLIFTON PARK	NY	Restaurateur	939
 1955	LONG, DAN	I	10011	161 W 15 St 6J	NEW YORK	NY	Restauranteur	73
 1956	LOBREGLIO, ROBERT	I	10994	PO  363	WEST NYACK	NY	V.P./Brewmaster	940
-1957	BRONGO, ANTHONY	I	12212	10 Jupiter Lane	ALBANY	NY	Restaurateur	567
-1958	O'NEILL, H DONALD	I	14618	3001 Monroe Ave	ROCHESTER	NY	Restaurateur	324
-1959	O'NEILL, H DONALD	I	14618	3001 Monroe Ave	ROCHESTER	NY	RESTAURATEUR	941
 1960	ZAMBETTI, FELICE	I	10471	710 West 246th St	BRONX	NY	RETIRED	932
 1961	PELLEGRINO, ANTHONY MR	I	11779	519 Hawkins Ave	LAKE RONKONKOMA	NY	Owner	942
 1962	TOPPER, LEWIS E MR	I	11432	18118 Tudor Rd	JAMAICA	NY	Executive	6
@@ -12804,51 +11815,35 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 1974	P HENDEL PRODUCTS PARTNERSHIP DBA MCDONALDS	C	11563	\N	LYNBROOK	NY		945
 1975	ANGEL 10TH AVENUE FOOD CORP DBA MCDONALDS 4489	C	10001	\N	NEW YORK	NY		946
 1976	GAVIN, LILY MS	I	11104	3941 Queens Blvd	LONG ISLAND CITY	NY	President	947
-1977	BARBER, KEVIN R	I	11787	7 Loft Rd	SMITHTOWN	NY	Information Requested	38
 1978	HIGHLAND PORK INC DBA HIGHLAND FOOD SALES	C	10474	A23 HUNTS POINT COOPERATIVE MARKET	BRONX	NY		948
 1979	MASTRANGELO, RALPH	I	10595	3 CLOVER RD	VALHALLA	NY	BUTCHER	12
 1980	DEVLIN, EUGENE	I	10021	542 E 79TH ST	NEW YORK	NY	RESTAURANT MANAGER	949
 1981	LAVIANO, MARIO L MR	I	10570	70 Ashland Ave	PLEASANTVILLE	NY	Restaurant Owner	98
 1982	DALY, BARBARA	I	13905	130 Helen St	BINGHAMTON	NY	Owner	950
 1983	MOKHIBER, AMIEL I MR JR	I	14607	\N	ROCHESTER	NY	BUSINESS OWNER	951
-1984	WOODSIDE, KEVIN E	I	10977	27 SHERRI LANE	WESLEY HILLS	NY	VICE PRESIDENT	952
 1985	FEROLETO, JOHN P JR	I	14209	27 Inwood Pl	BUFFALO	NY	College Student	953
 1986	ZIFF, DAVID	I	10128	\N	NEW YORK	NY		841
 1987	TOPPER, LEWIS E MR	I	11432	18118 TUDOR Rd	JAMAICA	NY	EXECUTIVE	6
 1988	MORELLET, FLORENT	I	10012	237 Lafayette St	NEW YORK	NY	Restaurant Owner	654
-1989	SCANLON, RICK	I	12210	111 Washington Ave	ALBANY	NY	Attorney	954
-1990	RUSITZKY, HARRIS H	I	14534	1 Grove St Ste 117	PITTSFORD	NY	Restaurateur	337
 1991	FLEISCHER, JODY	I	14534	7 Surrey Ln	PITTSFORD	NY	Manufacturer	846
-1992	ROSENSTEIN, HARRY E	I	12207	42 State St	ALBANY	NY	Restaurateur	265
 1993	CHIRICO, JOSEPH MR	I	11231	345 COURT ST	BROOKLYN	NY	INFO REQUESTED	604
-1994	ROSEN, MARK J	I	12159	75 Bittersweet Lane	SLINGERLANDS	NY	Owner	955
 1995	WOLF ROAD DINER	C	12205	219 WOLD RD	ALBANY	NY		693
 1996	KESSLER, LAURENCE	I	14623	410 White Spruce Blvd	ROCHESTER	NY	RESTAURANT OWNERS	36
 1997	KESSLER, DENNIS	I	14623	410 White Spruce Blvd	ROCHESTER	NY	RESTAURANT OWNER	36
-1998	PULEO, FRANK	I	10304	860 Bay St	STATEN ISLAND	NY	Restaurateur	956
 1999	SCOTTO, JOHN MR	I	10022	\N	NEW  YORK	NY	MANAGER	856
-2000	OHEARN, JAMES T	I	12211	5 Fenway Dr	LOUDONVILLE	NY	Restaurateur	957
-2001	MAZZONE, ANGELO	I	12302	1 Glen Ave	SCOTIA	NY	President	958
-2002	MATEO, JENNIFER	I	12084	2050 Western Ave	GUILDERLAND	NY	Sales Representative	959
 2003	COCOZZIELLO, CHRISTOPHER	I	10528	\N	HARRISON	NY	SAVANNAH STEAK	960
 2004	KIM, JUSTIN SONG HONG	I	10012	67 Spring St	NEW YORK	NY	Owner	961
 2005	CORTEZ, JUAN M JR	I	10924	23 Gregory Dr	GOSHEN	NY	Vice President	540
 2006	FEROLETO, JOHN P JR	I	14202	95 North St	BUFFALO	NY	Waiter	953
 2007	FEROLETO, JOEL	I	14216	95 North Dr	BUFFALO	NY	WAITER	953
 2008	BERNARD, SHANNON	I	14468	81 Craftwood Ln	HILTON	NY	Owner	962
-2009	MARSH, KERRY	I	12210	111 Washington Ave 405	ALBANY	NY	Attorney	633
-2010	LOPASIS, ANTHONY	I	12205	125 Wolf Rd	ALBANY	NY	Restaurateur	810
 2011	BSALIM RESTAURANT	C	13851	PO BOX 751	VESTAL	NY		963
 2012	SANTOS, JUAN MR	I	10923	1 MAIN ST	GARNERVILLE	NY	OWNER	964
 2013	LARIOS, TINO	I	10956	29 3RD ST	NEW CITY	NY	OWNER	965
-2014	KAUFMAN, MICHAEL S	I	10514	41 Pond Hill Rd	CHAPPAQUA	NY	Owner	966
 2015	MAZZARELLA, ANTHONY R MR	I	11101	203 BORDEN AVE	LONG ISLAND CITY	NY	INFO REQUESTED	967
 2016	CONNAUGHTON, TERRANCE MR	I	10471	437 WEST 259TH St	BRONX	NY	BAR OWNER	159
-2017	GINSBERG, DAVID M	I	12534	224 Stockport Rd	HUDSON	NY	Restaurateur	968
-2018	SPERO, TOM	I	11790	5 BARON COURT	STONY BROOK	NY	DVP	806
 2019	JFA FOOD CORP	C	10468	2358 UNIVERSITY AVE	BRONX	NY		969
 2020	FIOTOS, FRANK	I	11357	14-27 142nd St	WHITESTONE	NY	Restaurant	58
-2021	FELLIN, JOHN J	I	11369	8825 Astoria Blvd	EAST ELMHURST	NY	Restaurateur	648
 2022	QUINTERO, CONSUELO	I	11372	82-22 N Blvd	JACKSON HEIGHTS	NY	Rest owner	98
 2023	QUINTERO, CONSUELO	I	11372	82-22 N Blvd	JACKSON HEIGHTS	NY	REST OWNER	40
 2024	DARDEN, NORMA J	I	10069	220 Riverside Blvd 7M	NEW YORK	NY	Information Requeste	38
@@ -12887,12 +11882,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2057	FOOD CONSULTANTS	C	13209	3606 JOHN GLEEN BLVD	SYRACUSE	NY		83
 2058	PELTZ, NELSON	I	10017	\N	NEW YORK	NY	TRIARC CO	2
 2059	POLL, GILLIS J MR	I	11732	2 FARM HILL LANE	EAST NORWICH	NY	RESTAURATEUR	34
-2060	RUSITZKY, HARRIS H	I	14534	1 Grove St Ste 117	PITTSFORD	NY	Restaurateur	985
-2061	RYAN, TIM	I	12538	PO  53	HYDE PARK	NY	College President	986
 2062	HASANRAMAJ, UKA	I	11204	1641 - 65th St B4	BROOKLYN	NY	Restauranteur	19
 2063	DONMARK FOODS	C	11234	6203 MILL LN	BROOKLYN	NY		987
 2064	AUSTINS STEAK HOUSE	C	11209	8915 5TH AVE	BROOKLYN	NY		988
-2065	RUSITZKY, HARRIS H	I	14534	1 Grove St Ste 117	PITTSFORD	NY	Restaurateur	989
 2066	SHALA, LUAN	I	10467	334 East 205th St 35	BRONX	NY	Restauranteur	19
 2067	SCHORR, BRIAN	I	10128	21 E 87th St	NEW YORK	NY	Vice President/Gener	2
 2068	ROSS, TONI L	I	11975	PO  902	WAINSCOTT	NY	Restauranteur	73
@@ -12905,16 +11897,12 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2075	LIBERATOS, DENNIS MR	I	10004	32 BROADWAY	NEW YORK	NY	OWNER	992
 2076	JOE ALLEN RESTAURANT	C	10036	326 W 46TH ST	NEW YORK	NY		993
 2077	60TH ST RESTAURANT CORP	C	10022	206 E 60TH ST	NEW YORK	NY		994
-2078	WILLIAMS, ANNE	I	13760	2644 CLEARVIEW Dr	ENDWELL	NY	PRESIDENT	8
 2079	BOZZI, BRUCE	I	11937	\N	EAST HAMPTON	NY	PALM RESTAURANT	116
 2080	COOK, DANIEL S	I	14805	3650 CHAPMAN RD	ALPINE	NY	PIZZA DELIVERY	715
 2081	GAVIN, LILY MS	I	11104	3941 Queens Blvd	SUNNYSIDE	NY	President	947
 2082	AROMAR FOOD	C	11207	1781 BROADWAY	BROOKLYN	NY		995
 2083	CEMAR MEAT & PRODUCE CORP	C	11746	1662 NEW YORK AVE	HUNTINGTON STAT	NY		996
-2084	WEINSTEIN, JEANETTE	I	12208	35 Bancroft St	ALBANY	NY	Restaurateur	265
 2085	120 N MAIN STREET MEAT CORP	C	11520	120 N MAIN ST	FREEPORT	NY		997
-2086	STYTZER, RONALD	I	10523	35 Valley Ave	ELMSFORD	NY	Restaurateur	998
-2087	SCARAMELLINO, TOM	I	10566	845 Oakwood DR	PEEKSKILL	NY	President	999
 2088	GEORGAKIS, SPYRO	I	10019	161 W 54TH 1202	NEW YORK	NY	Mamanger	1000
 2089	ZIFF, DAVID	I	10128	\N	NEW YORK	NY	DAVID ZIFF COOKING INC	841
 2090	ZIFF, DAVID	I	10128	\N	NEW YORK	NY	DAVID ZIFF COOKING INCORPORATED	841
@@ -12924,16 +11912,13 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2094	FIAHBOX RESTAURANT CORP	C	10464	41 CITY ISLAND AVE	CITY ISLAND	NY		1003
 2095	FINGERLAKES FOODSERVICE	C	14425	RTE 96	FARMINGTON	NY		1004
 2096	LEWIS, CHRISTOPHER	I	10019	364 W 52nd St 3 E	NEW YORK	NY	GENERAL MANAGER	674
-2097	CARDARELLI, THOMAS J	I	10589	253D Heritage Hls	SOMERS	NY	Restaurateur	1005
 2098	LAYTON, BARBARA	I	11937	11 Cross Highway	EAST HAMPTON	NY	Owner	508
 2099	JAMMER ENTERPRISES DBA MCDONALDS	C	12110	\N	LATHAM	NY		1006
 2100	TRAINOR, ELOISE MS	I	12029	118 Dermody Rd	CANAAN	NY	Self	1007
 2101	TR MAC LLC DBA MCDONALDS	C	12804	\N	QUEENSBURY	NY		1008
 2102	MEYERS RESTAURANTS	C	14760	\N	OLEAN	NY		1009
 2103	MARIOS PIZZERIA OF COMMACK CORP	C	11725	17 VANDERBILT PKWY	COMMACK	NY		1010
-2104	HARRISON, KEITH A	I	12845	226 LAKE PARKWAY	LAKE GEORGE	NY	PRESIDENT	1011
 2105	FAMILY RESTAURANTS OF MERRICK	C	11566	33 W SUNRISE HWY	MERRICK	NY		1012
-2106	ZDYB, RICHARD	I	13413	8428 Seneca Tpke	NEW HARTFORD	NY	Restaurateur	1013
 2107	BERGENDORFF, ERIC P MR	I	12414	440 Main St	CATSKILL	NY	President/ceo	1014
 2108	COLELLO, MICHAEL MR	I	13601	1250 Arsenal St	WATERTOWN	NY	Owner	1015
 2109	NATHANI, MUNIR B MR	I	12508	145 Fishkill Ave	BEACON	NY	BEACON CENTRAL GAS AND DELI	880
@@ -12988,14 +11973,12 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2158	IASILLI, LUIGI MR	I	10282	400 Chambers St 18K	NEW YORK	NY		36
 2159	STAVROPOULOS, ATHANASIOS	I	13850	428 W STATE ST	ITHACA	NY	DINER OWNER	1053
 2160	TOPPER, LEWIS E	I	11432	\N	JAMAICA	NY	FAST FOOD SYSTEMS	6
-2161	TOBER, DONALD G	I	10022	950 3rd Ave	NEW YORK	NY	Restaurateur	603
 2162	BENIPAL, KARMJIT S	I	14850	77 OAKCREST RD	ITHACA	NY	RESTAURANT OWNER	34
 2163	BROWN, MONICA Y	I	11225	63 FENIMORE ST 3C	BROOKLYN	NY	COOK	281
 2164	KATSOULIS, GREGORY	I	13045	VILLAGE TERRACE C135	CORTLAND	NY	RESTAURANT MANAGER	1054
 2165	BECHAKAS, GEORGE MR	I	14225	4611 Genesee St	BUFFALO	NY	Owner	1041
 2166	CAHILL, LINDA MS	I	10306	289 New Dorp Ln	STATEN ISLAND	NY	Owner	1055
 2167	RUSITZKY, HARRIS	I	14618	\N	ROCHESTER	NY	THE RESTAURANT GROUP	106
-2168	POGANSKI, DANIEL A	I	10990	38813 COUNTY HWY RT 1	WARWICK	NY	OWNER	1056
 2169	PANOPOULOS, VAN MR	I	10803	316 Loring Ave	PELHAM	NY	Restaurant Owner	19
 2170	ATTIA, KHALED	I	14850	324 SPENCER RD 1	ITHACA	NY	RESTAURANT OWNER	34
 2171	REGAN, MICHAEL MR	I	11209	10007 - 4th Ave	BROOKLYN	NY	Information requeste	1057
@@ -13010,27 +11993,8 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2180	MITSIOS, DIMITRIOS	I	10461	13-18 Harbor Ave	NEW YORK	NY	Restaurant	58
 2181	LEISHMAN, THOMAS MR	I	10930	PO  718	HIGHLAND MILLS	NY	owner	1062
 2182	DAVIS, GARY A MR	I	10128	45 E 89th St 16B	NEW YORK	NY		879
-2183	ARTINIAN, CHRIS	I	11545	10 Post Rd	GLEN HEAD	NY	Regional Manager	1063
-2184	BALDWIN, THOMAS J	I	11042	3333 New Hyde Park Rd Ste 210	NEW HYDE PARK	NY	Sr. Vice President o	1063
-2185	BERLIND, JEFFREY	I	10576	80 Eastwoods Rd	POUND RIDGE	NY	Consultant	649
-2186	BERNS, H JEROME '	I	10021	14 E 75th St	NEW YORK	NY	RETIRED	36
-2187	BERNSTEIN, ALLEN J	I	11042	3333 New Hyde Park Rd Ste 210	NEW HYDE PARK	NY	Chief Executive Offi	1063
-2188	DRAKE, ROGER J	I	11747	12 Arden Ct	MELVILLE	NY	Director of Communic	1063
-2189	ELLIOT, ALICE	I	10591	104 S Broadway	TARRYTOWN	NY	Restaurateur	1064
-2190	HUNT, CHUCK	I	10018	1001 Ave of The Americas 22nd Floor	NEW YORK	NY	Executive Vice Presi	1065
-2191	SAMPSON, FREDERICK J	I	12020	521 Acland Blvd	BALLSTON SPA	NY	President	1066
-2192	SAMPSON, RICK	I	12205	455 New Karner Rd	ALBANY	NY	Association Executiv	1065
-2193	SCOTTO, ANTHONY	I	10022	34 E 52nd St	NEW YORK	NY	Restaurateur	1067
 2194	COLELLA, ANTHONY	I	12550	\N	NEWBURGH	NY	TAVERN OWNER	149
 2195	LAVIANO, MARIO L	I	10570	\N	PLEASANTVILLE	NY		36
-2196	BARBER, KEVIN	I	11430	Bldg 56; American Airlines JFK Internat	JAMAICA	NY	Restaurateur	1068
-2197	CERADINI, AUGUST J	I	10036	Pier 83 W 42nd St at the Hudson River	NEW YORK	NY	President	1069
-2198	GRIEBEL, DOUG	I	10024	2328 Broadway 3rd Fl	NEW YORK	NY	Restaurateur	1070
-2199	KAHN, ASHFAQUE A	I	11373	4242 Ithaca St; 3E	ELMHURST	NY	REGIONAL MANAGER	1071
-2200	MARCOTT, STEPHEN M	I	11430	JFK International Airport Bldg 55; Term	JAMAICA	NY	General Manager; Foo	1072
-2201	MAY, ANTHONY	I	10019	240 Central Park S	NEW YORK	NY	Restaurateur	419
-2202	O'NEAL, MICHAEL	I	10023	49 W 64th St	NEW YORK	NY	Restaurateur	1073
-2203	WOOD, KATHLEEN	I	10591	104 S Broadway	TARRYTOWN	NY	Restaurateur	1074
 2204	LENNARD, DONNA G MS	I	10012	47 Bond St Apt2	NEW YORK	NY	Resturanteur	19
 2205	GOTBETTER, MARION	I	10023	205 W End Ave	NEW YORK	NY	PERSONAL CHEF	1075
 2206	LOMONACO, MICHAEL	I	10021	515 E 79th St 5A	NEW YORK	NY	CHEF/DIRECTOR	1076
@@ -13041,7 +12005,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2211	Loup, Cathy E	I	10024	302 W 77th St	New York	NY	Management	1079
 2212	ZHANG, ZI K	I	10002	\N	NEW YORK	NY	COUNTER MAN	861
 2213	DARDEN, NORMA	I	10025	364 W110th St	NY	NY	Restaurateur	19
-2214	MURRAY, MICHAEL	I	10463	5655 Broadway	BRONX	NY	Restaurateur	1080
 2215	MARKMAN, GREG	I	11576	\N	ROSLYN	NY	RESTAURANTEUR	36
 2216	POLL, GILLIS J MR	I	11732	2 Farm Hill Lane	EAST NORWICH	NY	Restauranteur	73
 2217	MEHTA, JITENDRA K	I	11375	11225 69th Rd	FOREST HILLS	NY	Restaurant Owner	73
@@ -13053,9 +12016,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2223	COFFEY, CONNOR	I	11201	128 Willow St	BROOKLYN	NY	Manager	854
 2224	RUBENSTEIN, AMY MS	I	10028	993 5TH Ave	NEW YORK	NY	Exeo	321
 2225	TABOR, JERILYN	I	10010	35 west 23rd st	NYC	NY	chef	117
-2226	FRIEDMAN, JASON	I	12866	18 Sundance Dr	SARATOGA SPRINGS	NY	Restaurateur	1084
-2227	TAKES, FAITH A	I	12084	6139 Nott Rd	GUILDERLAND	NY	Restaurateur	1085
-2228	KOLAJ, PAUL	I	10019	1650 Broadway 12th Floor	NEW YORK	NY	Restaurateur	1086
 2229	LAYTON, BARBARA	I	11937	\N	EAST HAMPTON	NY	BABETTE'S FEAST	508
 2230	CELANO, JOSEPH MR	I	11949	7 Barbara Anne Court	MANORVILLE	NY	Restaurant Owner	40
 2231	KRASNIQI, BAJRAM	I	10467	3288 Reservoir Oval East 207	BRONX	NY	Chef	1087
@@ -13063,7 +12023,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2233	GUEST, STEPHANIE	I	10003	17 E 16th St Fl 9	NEW YORK	NY	Information Requested	38
 2234	HASANGJEKAJ, MARTIN MR	I	10003	21 E 9th St	NEW YORK	NY	Owner	1088
 2235	AMON, JIMMY MR	I	10022	882 1st Ave	NEW YORK	NY	Owner	1089
-2236	SCHRIER, SCOTT	I	10475	4340 Boston Post Rd	BRONX	NY	Restaurateur	1090
 2237	LOUPESSIS, ANTONY MR	I	12110	722 NEW LOUDON RD	LATHAM	NY	RESTAURANT OWNER	1091
 2238	LAYTON, BARBARA MS	I	11937	11 Cross Hwy	EAST HAMPTON	NY	restaurant owner	508
 2239	CHAHALIS, TOM G MR	I	10023	279 AMSTERDAM AVE	NEW YORK	NY	BUSINESS OWNER	1092
@@ -13103,12 +12062,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2273	M & L FOOD STORES	C	10950	51 FOREST RD	MONROE	NY		1114
 2274	2427 RESTAURANT CORP	C	10010	27 W 24 ST	NEW YORK	NY		1115
 2275	CARMENS FOODS DBA MCDONALDS STORE 27855	C	10035	145 E 125ST	NEW YORK	NY		1116
-2276	WALDRON, WALT	I	14580	1930 Empire Blvd	WEBSTER	NY	Restaurateur	1117
-2277	PATTERSON, TOM	I	12205	25 Walker Way	ALBANY	NY	Supplier	1118
-2278	SAMPSON, FREDERICK J	I	12020	521 Acland Blvd	BALLSTON SPA	NY	Restaurateur	38
-2279	BURNS, FRANK	I	12305	434 State St	SCHENECTADY	NY	Restaurateur	1119
 2280	DE FRANCO, ANTHONY T MR	I	11568	26 BACON Rd	OLD WESTBURY	NY	BUSINESSMAN	533
-2281	WAYNE, STEVE	I	14469	General Delivery Box 26	BLOOMFIELD	NY	Restaurateur	1120
 2282	BANG, VU MR	I	10029	405 E 105th St 9B	NEW YORK	NY	Owner	1121
 2283	AJD (MCDONALDS 14106)	C	10570	\N	PLEASANTVILLE	NY		1122
 2284	GAVIGAN, TIMOTHY M	I	14051	\N	E AMHERST	NY	OWNER	1123
@@ -13276,7 +12230,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2446	SFC DELI INCDBA ZAMBONIS	C	11561	250 W PARK AVE	LONG BEACH	NY		1258
 2447	BARRE CENTER DELI PLUS	C	14411	4661 OAK ORCHARD RD	ALBION	NY		1259
 2448	JIM ROMAS BAKERY	C	13760	PO BOX 542	ENDICOTT	NY		478
-2449	LEAHY, WILLIAM	I	11968	\N	SOUTHAMPTON	NY		36
 2450	HILDRETH, PATRICK A MR JR	I	12118	\N	MECHANICVILLE	NY		1059
 2451	SCALI, STEVEN A MR	I	11779	\N	RONKONKOMA	NY		1061
 2452	COMPARE FOODS	C	11520	120 N MAIN ST	FREEPORT	NY		1260
@@ -13298,17 +12251,8 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2468	TRIPIFOODS INC	C	14206	1427 WILLIAM ST	BUFFALO	NY		1265
 2469	MR NURETTIN CALISKAN	I	10020	\N	NEW YORK	NY	OWNER	1266
 2470	MORTONS RESTAURANT GROUP	C	11042	3333 NEW HYDE PARK RD	NEW HYDE PARK	NY		556
-2471	COTTIER, ROBERT L	I	14610	\N	ROCHESTER	NY	WENDY'S RESTAURANTS OF ROCHESTER IN	36
 2472	Outback Steakhouse	C	12866	\N	Saratoga Springs	NY		418
-2473	COGHLAN, SANDRA J	I	13904	\N	BINGHAMTON	NY	MANAGER	806
-2474	FOX, RICHARD C	I	14610	\N	ROCHESTER	NY	PRESIDEN	806
-2475	FOX, JOANNE D	I	14610	\N	ROCHESTER	NY	WENDY'S RESTAURANTS OF ROCHESTER IN	36
-2476	TOPPER, LESLIE J	I	11432	\N	JAMICA ESTATES	NY	EXECUTIV	806
-2477	FOX, ROBERT A	I	14618	\N	ROCHESTER	NY	VICE PRE	806
-2478	TOPPER, LEWIS	I	11432	\N	JAMAICA ESTATES	NY	EXECUTIV	806
 2479	PELTZ, NELSON	I	10017	\N	NEW YORK	NY	CEO & CHAIRMAN	2
-2480	COGHLAN, JEFFREY J	I	13904	\N	BINGHAMPTON	NY	MANAGER	806
-2481	DUCKSTEIN, RONALD	I	10598	\N	YORKTOWN HTS	NY	JOINT VENTU	503
 2482	MAY, PETER W	I	10021	\N	NEW YORK	NY	TRIARC COMPANIES INC	2
 2483	VILLAGE MEAT MARKET	C	12996	RTE 22 LAKESHORE RD	WILLSBORO	NY		694
 2484	COMPARE FOODS	C	11717	725 COMMACK RD	BRENTWOOD	NY		1260
@@ -13324,11 +12268,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2494	NEARYS 358 RESTAURANT	C	10022	358 E 57TH ST	NEW YORK	NY		1275
 2495	RIVERVIEW RESTAURANT	C	11769	3 CONSUELO PL	OAKDALE	NY		1276
 2496	MORTON'S RESTAURANT GROUP	I	11042	\N	NEW HYDE PARK	NY		261
-2497	O'NEILL, H DONALD	I	14618	\N	ROCHESTER	NY	RESTAURATEUR	941
 2498	10001 RESTAURANT CORP	C	11209	10001 4TH AVE	BROOKLYN	NY		537
 2499	GOLDEN KRUST CARIBBEAN BAKERY	C	10457	3958 PARK AVE	BRONX	NY		1277
 2500	MICHELANGELO RESTAURANT & PIZZERIA	C	11949	PO BOX 477	MANORVILLE	NY		1278
-2501	O'NEILL, H DONALD	I	14618	\N	ROCHESTER	NY	RESTAURATEU	1279
 2502	2207 7TH AVE RESTAURANT CORP	C	10468	281 W FORDHAM RD	BRONX	NY		1280
 2503	MIDWAY RESTAURANT	C	13204	130 WHIHIER AVE	SYRACUSE	NY		885
 2504	ARK RESTAURANTS CORP	C	10003	85 5TH AVE	NEW YORK	NY		1281
@@ -13381,7 +12323,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2551	BERNSTEIN, ALLEN J	I	11042	\N	NEW HYDE PARK	NY	MORTONS RESTRAUNT GROUP INC	261
 2552	MAY, PETER	I	10022	\N	NEW YORK	NY	TRIARC COMPANIES INC	2
 2553	FOX, RICHARD	I	14607	\N	ROCHESTER	NY	CEO	222
-2554	RUSITZKY, HARRIS H	I	14534	\N	PITTSFORD	NY	RESTAURATEUR	1307
 2555	PELTZ, NELSON	I	10017	\N	NEW YORK	NY	TRIARC COMPANIES	2
 2556	KAUFMAN, MICHAEL	I	10504	\N	CHAPPAQUA	NY	RESTAUR	873
 2557	KILLORAN, JOHN K	I	13066	\N	FAYETTEVILLE	NY	RESTAURANT OWNER	36
@@ -13390,8 +12331,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2560	BRESLIN, JOHN	I	11104	\N	SUNNYSIDE	NY	RESTAURANTEUR	40
 2561	AIELLO, MICHAEL	I	10301	\N	STATEN ISLE	NY	GOURMET DINING SERVICES	1308
 2562	CHUANG, HSING HSUNG	I	10013	\N	NEW YORK	NY	FULL HOUSE RESTURANT/MANAGER/OWNER	1309
-2563	FLIK, JULIE	I	10573	Bion Island	MAMARONECK	NY	COMPASS GROUP NORTH AMERICAN DIVISI	36
-2564	FLIK, JULIE	I	10573	\N	MAMARONECK	NY	RESTAURATEUR	1310
 2565	BURKE, THOMAS J	I	12054	\N	DELMAR	NY	EXEC.	1015
 2566	CHANG, AH-FONG	I	10025	\N	NEW YORK	NY	MANAGER	1311
 2567	MURRAY, JOHN MR	I	11793	\N	WANTAGH	NY	RESTAURANT OWNER	1312
@@ -13435,17 +12374,12 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2605	MARKU, BEQIR	I	11229	\N	BROOKLYN	NY	94 BELLEVILE RESTAURANT INC	1330
 2606	LEE, SOONA	I	11354	\N	FLUSHING	NY	RESTAURANT OWNER	36
 2607	COLANDREA NEW CORNER RESTAURANT	C	11201	7201 8TH AVE	BROOKLYN	NY		95
-2608	DUFFY, THOMAS	I	13026	\N	SYRACUSE	NY	SUPPLIER	1331
 2609	CAFE IN LOVE CORP	C	11354	38-14 PRINCE ST	FLUSHING	NY		1332
-2610	SAMPSON, RICK	I	12205	\N	ALBANY	NY	ASSO	1333
-2611	WOOD, JOE	I	13164	\N	WARNERS	NY	SUPPLIER	1334
 2612	GJOKAJ, ZEF	I	10458	\N	BRONX	NY	BUSINESS OWN	1335
-2613	GROUT, ROGER	I	12065	\N	CLIFTON PARK	NY	LICENSEE	1336
 2614	LEVY, STEVEN	I	10021	\N	NEW YORK	NY	RESTAURANTUER	1337
 2615	WENDYS	C	13904	112 CROCKER HILL RD	BINGHAMTON	NY		96
 2616	PERSAUD TEEK	I	12721	\N	BLOOMINGBURG	NY	OWNER	1338
 2617	JOE & JOES RESTAURANT	C	10472	1001 CASTLE HILL AVE	BRONX	NY		1339
-2618	PENSABENE, JJ	I	13219	\N	SYRACUSE	NY	RE	1340
 2619	KINGS STEAK CORP	C	10469	1616 ALLERTON AVE	BRONX	NY		1341
 2620	PERSAUD, TEEK	I	12721	\N	BLOOMINGBURG	NY	OWNER	1338
 2621	COLANDREA NEW CORNER RESTAURANT	C	11228	7201 8TH AVENYE	BROOKLYN	NY		95
@@ -13457,7 +12391,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2627	CHEUNG, LI KAM	I	10002	\N	NEW YORK	NY	MANAGER	452
 2628	ROSS, TONI L MS	I	11975	\N	WAINSCOTT	NY	RESTAURANTEUR	12
 2629	CHENG, YAT KWAI	I	11355	\N	FLUSHING	NY	CHEF	452
-2630	LEANESS, CHARLES G	I	10003	\N	NEW YORK	NY	EXECUTIVE VIC	1343
 2631	DWYER, FRANK MR	I	10036	\N	NEW YORK	NY	RESTAURANT OWNER	12
 2632	GAVRITSAS, FOTIOS	I	11795	\N	WEST ISLIP	NY	MANAGER	1344
 2633	CORR, PATRICK	I	11104	\N	LONG ISLAND CITY	NY	RESTAURANTEUR	1345
@@ -13470,11 +12403,8 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2640	COGHLAN, JEFFREYJ MR	I	13904	\N	BINGHAMTON	NY	RESTAURANT MANAGEMEN	219
 2641	PRICE, JORDAN MISS	I	10021	\N	NEW YORK	NY	CHEF	117
 2642	KILLORAN, JOHN	I	13066	\N	FAYETTEVILLE	NY		36
-2643	KORNBLITH, DOROTHY	I	10021	\N	NEW YORK	NY	LICENSEE	706
 2644	SNYDER, TRACY MAXWELL	I	10036	592 5TH AVE 6TH FL	NEW YORK	NY	INVESTOR RESTAURANTEUR	1349
-2645	HENDEL, PAUL	I	11580	\N	VALLEY STREAM	NY	LICENSEE	706
 2646	BALJIDEMAJ, RAMA	I	10573	\N	RYE BROOK	NY	ALBA'S RESTAURANTE	813
-2647	GROUT, ROGER	I	12065	\N	CLIFTON PARK	NY	LICENSEE	706
 2648	DWYER, FRANK	I	10704	\N	YONKERS	NY		36
 2649	SNYDER, JAY	I	10036	592 5TH AVE	NEW YORK	NY	INVESTOR RESTAURANTEUR	1349
 2650	OREILLY, JAMES	I	11415	\N	KEW GARDENS	NY	RESTAURANTEUR	40
@@ -13482,7 +12412,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2652	O'LEARY, JAMES	I	11530	\N	GARDEN CITY	NY	RESTAURANTEUR	12
 2653	HANLEY, DANIEL J MR	I	14221	\N	WILLIAMSVILLE	NY	RESTAURANT OWNER	1350
 2654	BOZZI, BRUCE	I	10021	\N	NEW YORK	NY	PALM MANAGEMENT	611
-2655	ZDYB, RICHARD	I	13413	8428 Seneca Tpke	NEW HARTFORD	NY	RESTAURATE	1351
 2656	DANIELS RESTAURANT	C	10707	296 COLUMBUS AVE	YONKERS	NY		1352
 2657	MARIA LOUISA RESTAURANT CORP	C	11209	10018 4TH AVE	BROOKLYN	NY		1353
 2658	MONA LISA BAKERY	C	11228	1476 86TH ST	BROOKLYN	NY		1157
@@ -13490,24 +12419,20 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2660	CUKAJ, ADEM	I	10314	\N	STATEN ISLAND	NY	RESTAURANTEUR	12
 2661	PANZARELLA, JOSEPH R	I	11580	\N	VALLEY STREAM	NY	FRANCHISEE	1355
 2662	V & R BETHPAGE PIZZERIA	C	11714	554 STEWART AVE	BETHPAGE	NY		1356
-2663	LEVY, FRANK	I	10022	\N	NY	NY	EXECUTIVE	1357
 2664	CONLLON, RONAN	I	11373	\N	ELMHURST	NY	RESTARUANTER	1358
 2665	ISAAK, ANNE P	I	10128	\N	NEW YORK	NY	OWNER	312
 2666	SANDIS FAMILY RESTAURANT	C	14304	2065 RIVER RD	NIAGARA FALLS	NY		1359
 2667	XL RESTAURANT	C	10011	357 W 16TH ST	NEW YORK	NY		1360
 2668	KRISPY KREME OF SOUTH FLORIDA LLC	C	14225	4225 GENESEE ST	BUFFALO	NY		1361
 2669	MR RICHARD C FOX	I	14607	\N	ROCHESTER	NY	PRES.	1328
-2670	ZDYB, RICHARD	I	13413	\N	NEW HARTFORD	NY	RESTAURATE	1351
 2671	STAUNTON, KIERAN	I	11104	\N	SUNNYSIDE	NY	RESTAURANTEUR	40
 2672	CUCKOVIC, GANIJA	I	10305	\N	STATEN ISLAND	NY	RESTAURANT OWNER	1362
 2673	BARRICELLI, LOUIS	I	11375	\N	FOREST HILLS	NY	RESTAURANT OWNER	12
 2674	CHIAZZO, ROMANO MR	I	10019	\N	NEW YORK	NY	RESTAUR	1363
-2675	WOODSIDE, KEVIN E	I	10977	\N	WESLEY HILLS	NY	VICE PRE	952
 2676	GUIDO, FRANK	I	12571	60 W Market St	RED HOOK	NY	RESTAURANT OWNER	12
 2677	ROSS, TONY LYNN	I	11975	\N	WAINSCOTT	NY	RESTAURANTEUR	36
 2678	DEMARCO, DONALD	I	10021	240 E 79TH ST	NEW YORK	NY	RESTAURANT	36
 2679	COGAN, MARSHALL & MAUREEN	I	10021	810 5TH AVE	NEW YORK	NY	RESTAURANT OWNER	34
-2680	LEANESS, CHARLES G	I	10003	740 Broadway 12th Fl	NEW YORK	NY	EXECUTIVE VIC	1343
 2681	CHENG, YAT KWAI	I	11355	\N	FLUSHING	NY		452
 2682	CONO & SONS OPESCATORE RESTAURANT	C	11211	301 GRAHAM AVE	BROOKLYN	NY		1364
 2683	ANTONACCI, LOUIS	I	14092	\N	LEWISTON	NY	COMO RESTAURANT	1365
@@ -13529,13 +12454,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2699	CANIONES PIZZA	I	11768	\N	NORTHPORT	NY		1378
 2700	FELIDIA RESTAURANTS	C	10022	243 E 58TH ST	NEW YORK	NY		1379
 2701	CHEFS RESTAURANT OF BUFFALO	I	14204	\N	BUFFALO	NY		1380
-2702	FLIK, JULIE	I	10573	\N	MAMARONECK	NY	RESTAURATE	630
 2703	NEW YORK STATE TAVERN & RESTAURANT ASSOCIATION	C	12210	NY TAVERN & RESTURANT ASSOCIATION 40 SH	ALBANY	NY		1381
-2704	HARRISON, KEITH A	I	12845	\N	LAKE GEORGE	NY	PRESIDENT	1382
 2705	MORTON'S RESTANRANT GROUP	I	11042	\N	NEW HYDE PARK	NY		261
 2706	MORTON'S RESTANRANT GROUP	I	11042	\N	NEW HYDE PARK	NY		1383
 2707	GOLDEN CORRAL	C	12205	1901 CENTRAL AVE	ALBANY	NY		1384
-2708	KOLAJ, PAUL	I	10019	\N	NEW YORK	NY	RESTAU	1385
 2709	ILLINOIS BOSCHETTO FINEST ITALIAN RESTARUANT	C	10469	1660 E GUN HILL RD	BRONX	NY		1386
 2710	BILBOA RESTAURANT CORP	C	10011	159 W 23RD ST	NEW YORK	NY		1387
 2711	PORTOFINO RESTAURANT	C	10464	555 CITY ISLAND AVE	BRONX	NY		1388
@@ -13565,12 +12487,8 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2735	TEMPLEBOY TAVERN	C	10036	701 8TH AVE	NEW YORK	NY		1401
 2736	73RD ST RESTAURANT CORP	C	11372	37-07 73 ST	JACKSON HEIGHTS	NY		1402
 2737	KIM, YU N	I	10001	\N	NEW YORK	NY	RESTAURANT OWNER	1403
-2738	DIEKMANN, WILLIAM MR	I	10595	\N	VALHALLA	NY	LICENSEE	706
 2739	CRESCENT, DEBORAH MS	I	13601	\N	WATERTOWN	NY	FOOD &	1404
 2740	PJP TAVERN CORP	C	11572	239-41 MERRICK RD	OCEANSIDE	NY		1405
-2741	MAGLIOCCA, MARK	I	12414	\N	CATSKILL	NY	LICENSEE	706
-2742	PERNA, CATHERINE	I	10465	\N	NEW YORK	NY	LICENSEE	706
-2743	PRITCHETT, DONALD	I	11514	\N	CARLE PLACE	NY	LICENSEE	706
 2744	ATRHUR AVENUE DELI	C	10458	2344 ARTHUR AVE	BRONX	NY		1406
 2745	ITGEN, WALTER	I	11565	\N	MALVERNE	NY	RESTAURANT OWNER	36
 2746	CHOWDHURY, SHAMEEM	I	11216	\N	BROOKLYN	NY	INFO REQUESTED	36
@@ -13593,7 +12511,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2763	BILLITTIER, ANN	I	14204	\N	BUFFALO	NY	OWNER	1082
 2764	KEREKES BAKERY EQUIPMENT	C	11219	6103 15TH AVE	BROOKLYN	NY		1419
 2765	KDMC RESTAURANT COPR	C	11795	425 MONTAUK HWY	WEST ISLIP	NY		1420
-2766	KOLAJ, PAUL	I	10019	1650 Broadway 12th Floor	NEW YORK	NY	RESTAU	1385
 2767	CHOWDHURY, SHAMEEM A	I	11216	\N	BROOKLYN	NY	RESTAURANT OWNER	40
 2768	LAFLUER BILL	I	13212	\N	NORTH SYRACUSE	NY	CATERER	1421
 2769	PICOLLA VENNIZIA RESTAURANT	C	11103	42-01 28 TH AVE	ASTORIA	NY		1422
@@ -13642,8 +12559,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2812	BELLA CUCINA	C	10128	1293 LEXINGTON AVE	NEW YORK	NY		1449
 2813	KEANE, DENIS	I	11030	\N	MANHASSET	NY	RESTAURANTEUR	1450
 2814	CRISCI, JERRY	I	11372	\N	JACKSON HEIGHTS	NY	ARMONDO'S ITALIAN RESTAURANT	1451
-2815	TOBER, DONALD G	I	10022	\N	NEW YORK	NY	RESTAURATEU	1452
-2816	ROSENSTEIN, BRAD	I	12207	\N	ALBANY	NY	RESTAURATEU	1453
 2817	TOPPER, LEWIS	I	11432	\N	JAMAICA ESTATES	NY	EXECUTIVE	6
 2818	KOUTSOVASILIS, DIMITRA MRS	I	10314	\N	STATEN ISLAND	NY	KING'S ARMS DINER/HOSTESS/CASHIER	1454
 2819	SKUSE, FRANK MR	I	11358	\N	ASTORIA	NY	RESTUARANTEUR	1455
@@ -13675,7 +12590,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 2845	JIM ROMAS BAKERY	C	13760	200 & 2002 N NANTICOKE AVE	ENDICOTT	NY		478
 2846	BOAT RESTAURANT	C	13476	ROUTES STATE ROUTES 5 & 31	VERNON	NY		1477
 2847	NEW YORK STATE RESTAURANT ASSOCIATION	C	\N	455 NEW KARNERS RD	ALBANY	NY		13
-2848	ZDYB, RICHARD	I	13413	\N	NEW HARTFORD	NY	ZEBB'S DE	1351
 2849	LIBERATOS, DENNIS	I	\N	28 BELL BLVD	BAYSIDE	NY		1478
 2850	BKLYN QUEENS RESTAURANT	C	11234	FLATBUSH AVE	BROOKLYN	NY		1479
 2851	DEVMAN RESTAURANT	C	10956	189 S MAIN ST	NEW CITY	NY		1480
@@ -13880,7 +12794,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3050	RUBENSTEIN, AMY	I	10028	\N	NEW YORK	NY	PETER LUGER STEAK HOUSE	1613
 3051	PELTZ, NELSON	I	10549	\N	MOUNT KISCO	NY	TRIARC COMPANIES	2
 3052	BARBETTA RESTAURANT	I	10036	\N	NEW YORK	NY		231
-3053	MCCOY, RICHARD	I	03087	\N	WINDHAM	NY	MCDONALD'S	36
 3054	KANSAS FRIED CHICKEN	C	10463	3333 HENRY HUDSON PKWY	RIVERDALE	NY		1273
 3055	CHHIKARA, MAHENDRA	I	11746	\N	HUNTINGTON STATION	NY	DIWAN RESTAURANT	1614
 3056	MAY, JONATHAN P MR	I	10128	\N	NEW YORK	NY	CEO	1287
@@ -13906,7 +12819,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3076	CHANG, AH-FONG	I	10025	\N	NEW YORK	NY	EMPIRE SZECHUAN	1311
 3077	STILLMAN, ALAN N	I	10021	\N	NEW YORK	NY	SMITH & WOLLENSKY REST GROUP	1626
 3078	ZURIFF, EUGENE I	I	1024G	\N	NEW YORK	NY	ELF-EMPLOYED	1627
-3079	O'NEILL, M DONALD	I	14618	\N	ROCHESTER	NY	SPRING HOUSE RESTAURANT	36
 3080	FOX, RICHARD	I	14607	\N	ROCHESTER	NY	WENDY'S INT RESTAURANT	18
 3081	KOLAJ, PAUL MR	I	10552	\N	MOUNT VERNON	NY	FAMIGLIA PIZZARIA	1628
 3082	STENZLER, ANDREW	I	10018	\N	NEW YORK	NY	XANDI COSI INC	1397
@@ -13944,7 +12856,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3114	RIESE, RANDI STEMPEL	I	11577	\N	ROSLYN HTS	NY	THE REISE ORGANIZATION	1604
 3115	HOROWYTZ, BRUCE	I	10036	\N	NEW YORK	NY		36
 3116	WONG, TONY	I	10514	\N	CHAPPAQUA	NY	DONG SHENG INC	853
-3117	BARRETT, MICHAEL	I	14128	\N	AMHERST	NY	BARRETT T B INC	36
 3118	FOX, RICHARD	I	14607	\N	ROCHESTER	NY	WENDY'S RESTAURANTS OF ROCHEST	1635
 3119	GIAMBELLI, FRANK	I	10022	\N	NEW YORK	NY	GIAMBELLI RESTAURANT	1636
 3120	FOX, RICHARD C	I	14607	\N	ROCHESTER	NY	WENDYS	1599
@@ -13956,7 +12867,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3126	MEYER, IRA MR	I	11373	\N	ELMHURST	NY	RESTAURANTUER	7
 3127	SALTER, NANCY	I	11030	\N	MANHASSET	NY	N/A/CHEF	117
 3128	BERNSTEIN, ALLEN J MR	I	11030	\N	MANHASSET	NY	MORTON'S RESTAURANT GROUP	261
-3129	FLIK, JULIE	I	10573	\N	RYE BROOK	NY	NORTH AMERICAN DIVISI	1310
 3130	KOGAN, ERIC D MR	I	10003	\N	NEW YORK	NY	TRIARC COMPANIES	2
 3131	FIOTOS, FRANK MR	I	11357	\N	WHITESTONE	NY	EXECUTIVE	1640
 3132	CHERPELIS, STEPHEN MR	I	10005	\N	NEW YORK	NY	RESTAURATEUR	12
@@ -14006,7 +12916,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3176	ARFA, DENNIS	I	10185	\N	NEW YORK	NY	QBQ ENTERTAINMENT INC	1632
 3177	RIESE, DINIS	I	10001	\N	NEW YORK	NY	THE REISE ORGANIZATION	197
 3178	LAUB, PHOEBE SNOW	I	10019	\N	NEW YORK	NY	PERFORMER	1654
-3179	FLIK, JULIE FMP	I	10573	\N	RYE BROOK	NY	NORTH AMERICAN DIVISI	1310
 3180	ZHERKA, SERGIO N	I	10013	\N	NEW YORK	NY	ACAPPELLA	1655
 3181	WONG, PHILIP	I	11362	\N	LITTLE NECK	NY	VEGETARIAN'S PARADISE 2	1656
 3182	VARE, SUSAN	I	10560	\N	NORTH SALEM	NY	RESTAURANTEURS	36
@@ -14115,13 +13024,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3285	PLEVRITIS, JOHN	I	11757	\N	LINDENHURST	NY	SEAHAVEN RESTAURANT	1690
 3286	COLANDREA, VINCENT	I	11228	\N	BROOKLYN	NY	COLANDREA NEW CORNER RESTAURANT	457
 3287	CIRELLA, SALVATORE	I	11747	\N	MELVILLE	NY	CIRELLA'S RESTAURANT	1691
-3288	REEHER, J JOHN	I	12110	\N	LATHAM	NY	MCDONALD'S	36
-3289	CUADRA, ALBERT	I	11743	\N	HUNTINGTON	NY	MCDONALD'S	36
 3290	FERREIRA, ALIDA	I	10033	\N	NEW YORK	NY	CARIDAD RESTAURANT	1692
 3291	GAVIN, LILLIAN	I	11104	\N	SUNNYSIDE	NY	RESTAURANTEUR	36
 3292	PIERCE, LEE B	I	14903	\N	ELMIRA	NY	PIERCE'S RESTAURANT	1693
 3293	ITHAKA RESTAURANT	C	10014	48 BARROW ST	NEW YORK	NY		1694
-3294	FLIK, JULIE	I	10543	\N	MAMARONECK	NY	COMPASS GROUP NORTH AMERICAN DIVISI	36
 3295	CROWE, DAVID	I	11751	\N	ISLIP	NY	RESTAURANTEUR	36
 3296	BONVISSUTO, JOSEPH	I	14622	\N	ROCHESTER	NY	RESTAURANTEUR	36
 3297	HIRSCH, CAROLINE P	I	10017	\N	NEW YORK	NY	CAROLINE'S COMEDY CLUB	1649
@@ -14129,7 +13035,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3299	MACEDA, JAMES E	I	11375	\N	FLUSHING	NY	RESTAURANT OWNER	36
 3300	ROBERTS, SAM	I	09007	\N	NEW YORK	NY	RESTAURANT OWNER	36
 3301	GASBY, CLARENCE AD MR	I	10017	\N	NEW YORK	NY	B SMITH'S RESTAURANT	1695
-3302	DIEKMANN, WILLIAM	I	10570	\N	PLEASANTVILLE	NY	MCDONALDS	36
 3303	FOOD CONSULTANTS	C	13057	6250 E MOLLOY RD	EAST SYRACUSE	NY		83
 3304	GAVIN, LILLIAN	I	11375	\N	FOREST HILLS	NY	DAZIE'S RESTAURANT	36
 3305	HAMMOND, SAMUEL	I	10007	\N	NEW YORK	NY	RESTAURANTEUR	36
@@ -14146,7 +13051,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3316	LERNER, JULIE M	I	10014	666 GREENWICH ST 628	NEW YORK CITY	NY	NEW YORK STATE RESTAURANT ASSN	36
 3317	GUIDO, FRANK J	I	12571	\N	RED HOOK	NY	RESTAURANT OWNER	36
 3318	RUBINSTEIN, JONATHAN	I	10036	\N	NEW YORK	NY	HOWARD JOHNSON'S RESTAURANT	1698
-3319	MAY, TONY	I	10019	\N	NEW YORK	NY	SAN DOMENICO	1699
 3320	RUBINSTEIN, KEITH	I	10036	\N	NEW YORK	NY	HOWARD JOHNSON'S RESTAURANT	1698
 3321	BRUCE, CARLA	I	13905	\N	BINGHAMTON	NY	TYLER CAFE	1625
 3322	LEBEWOHL, SHARON	I	11552	\N	WEST HEMPSTEAD	NY	2ND AVE DELI	1700
@@ -14179,22 +13083,17 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3349	BERNSTEIN, ALLEN J	I	11042	\N	NEW HYDE PARK	NY	MORTON RESTAURANT GROUP	1631
 3350	BERISHA, ELMI	I	12508	\N	BEACON	NY	CALABRIA RESTAURANT	1714
 3351	FANIZZA, GIANVITO	I	10314	\N	STATEN ISLAND	NY	RESTAURANTEUR	36
-3352	FOX, RICHARD	I	14607	\N	ROCHESTER	NY	WESTERN RESERVE RESTAURANT MGT	36
 3353	BRESLIN, JOHN	I	11378	\N	MASPETH	NY		36
 3354	KOLAJ, JOHN MR	I	10504	\N	ARMONK	NY	FAMIGLIA PIZZARIA	1628
 3355	CHIRICO, JOE	I	11201	\N	BROOKLYN	NY	GAGE & TOLLNER REST	1715
 3356	CAMPOS, JUAN	I	10025	\N	NEW YORK	NY	RESTAURATEUR	36
 3357	CF TONEW YORK STATE PIZZA RESTAURANT	C	13760	527 ENDICOTT PLAZA	ENDICOTT	NY		1716
 3358	ZURIFF, EUGENE	I	10021	\N	NEW YORK	NY	NEW YORK RESTAURANT	1627
-3359	DIEKMANN, WILLIAM	I	10570	\N	PLEASANTVILLE	NY	MCDONALD'S	36
 3360	COLANDREA, STEVEN	I	11228	\N	BROOKLYN	NY	COLANDREA NEW CORNER RESTAURAN	457
-3361	LEANESS, CHARLES	I	10003	\N	NEW YORK	NY	BLIMPIE INTERNATIONAL INC	36
 3362	SHAU, JAMES	I	10025	\N	NEW YORK	NY	EMPIRE SZECHUAN	1311
-3363	RUSITZKY, HARRIS H	I	14534	\N	PITTSFORD	NY	GREENING GROUP	36
 3364	CEPIEL, DONALD M	I	12198	\N	WYNANTSKILL	NY		1641
 3365	LAPPIN, PATRICK	I	10019	\N	NEW YORK	NY	THE HAMPSHIRE HOUSE	1717
 3366	SCHORR, BRIAN	I	10017	\N	NEW YORK	NY	TRIARC COMPANIES	2
-3367	RUSITZKY, HARRIS H	I	14534	\N	PITTSFORD	NY	THE GREENING GROUP	36
 3368	LEBEWOHL, SHARON MS	I	11552	\N	WEST HEMPSTEAD	NY	2ND AVENUE DELI	1700
 3369	GRIMALDI, FRED	I	13104	\N	MANLIUS	NY	GRIMALDI'S RESTAURANT	1718
 3370	GLAZIER, PENNY	I	10022	\N	NEW YORK	NY	RESTAURANT OWNER	36
@@ -14206,19 +13105,11 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3376	CRNOBORI, CHRISTOPHER MR	I	10025	\N	NEW YORK	NY	OWNER	1723
 3377	VICARI, THOMAS MR	I	10011	\N	NEW YORK	NY	RESTAURANT OWNER	34
 3378	LEONARD, SUSAN MS	I	10002	\N	NEW YORK	NY	CHIEF	1724
-3379	HAEFNER, SANDRA	I	14224	\N	BUFFALO	NY	MCDONALDS	36
 3380	MAY, ANTHONY MRS	I	10019	\N	NEW YORK	NY	RESTAURATEUR	12
 3381	PRADOL RESTAURANT CORP	C	10566	RTE 6 & 202 W BOX 310	PEEKSKILL	NY		1725
-3382	STOLTZ, CLYDE	I	13760	\N	ENDICOTT	NY	MCDONALD'S	36
 3383	PERSAUD, TEEKARAM	I	12721	\N	BLOOMINGBURG	NY	QUICKWAY DINER	1338
-3384	MOHRMANN, WILLIAM	I	11934	\N	CENTER MORICHES	NY	MCDONALD'S	36
-3385	KENDALL, JOHN F	I	14624	\N	ROCHESTER	NY	PERK DEVELOPMENT CORPORATION	36
-3386	MICHELL, ROBERT	I	10504	\N	ARMONK	NY	MCDONALDS	36
-3387	GROUT, ROGER	I	12065	\N	CLIFTON PARK	NY	MCDONALD'S	36
-3388	STOLTZ, CLYDE	I	13760	\N	ENDICOTT	NY	MCDONALDS	36
 3389	DASKALIS, JOHN	I	10940	\N	MIDDLETOWN	NY	JOHNNY D'S	1726
 3390	FOOD TOWN PSK SUPERMARKETS INC 2	C	10553	444 S FULTON AVE	MOUNT VERNON	NY		1727
-3391	GROUT, ROGER	I	12065	\N	CLIFTON PARK	NY	MCDONALDS	36
 3392	LUCIANO RISTORANTE/ENZOS RESTAURANT	C	10543	451 MAMARONECK AVE	MAMARONECK	NY		1728
 3393	CHOW, MELISSA Y MRS	I	11725	\N	COMMACK	NY	RESTAURANT MANAGER	1729
 3394	ROMEO, DEGOBBI	I	10019	\N	NEW YORK	NY	LIMONCELLO RESTAURANT	1730
@@ -14228,7 +13119,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3398	S & F CAVALLI RESTAURANT	C	10461	210509 WILLIAMSBRIDGE RD	BRONX	NY		1734
 3399	GENOVAS, FRANK	I	11702	\N	BABYLON	NY	FRANCESE'S RESTAURANT	1735
 3400	1601 RESTAURANT CORP	C	10462	1601 BRONXDALE AVE	BRONX	NY		1736
-3401	REARDON, RENEE J	I	12804	\N	QUEENSBURY	NY	MCDONALD'S	36
 3402	FULL HO SEAFOOD RESTAURANT	C	11354	13511 40TH ST	FLUSHING	NY		1737
 3403	MCDONALDS OF SAUGERTIES	C	12477	350 RTE 212	SAUGERTIES	NY		1738
 3404	GRUNBERG, JUDITH	I	12184	\N	VALATIE	NY	RESTAURANTEU	1739
@@ -14236,7 +13126,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3406	LAZARAKIS, ANASTASLOS	I	10710	\N	YONKERS	NY	RESTAURANT OWNER	36
 3407	KALAMARAS, ELIAS G	I	11235	\N	BROOKLYN	NY	SHEEPSLORD BAY DINER	1741
 3408	KUSTRA, JOSIP	I	10805	\N	NEW ROCHELLE	NY	RESTAURANT OWNER	36
-3409	PERNA, CATHERINE	I	10467	\N	BRONX	NY	MCDONALD'S	36
 3410	KING STEAKS CORP	C	10469	1616 ALLERTON AVE	BX	NY		1432
 3411	MAY, ANTHONY	I	10019	\N	NEW YORK	NY	RESTAURANT EXEC	36
 3412	REILLY, PHILIP J	I	11377	\N	WOODSIDE	NY	BAR OWNER	159
@@ -14248,7 +13137,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3418	SOFER, KEN	I	12493	\N	WEST PARK	NY	RESTAURANT OWNER	36
 3419	NEW YORK STATE RESTAURANT ASSOCIATION	C	12205	455 NEW KAMER RD	ALBANY	NY		13
 3420	CRISPI, LOUIS	I	10304	\N	STATEN ISLAND	NY	LILLY'S RESTAURANT INC	1746
-3421	REARDON, RENEE	I	12804	\N	QUEENSBURY	NY	MCDONALDS	36
 3422	KOUMBIS, THEODORE	I	\N	\N	HUNTINGTON	NY	SALSORRENTINO'S RESTAURANT	1747
 3423	KILFEATHER, RORY	I	10803	\N	PELHAM	NY	BAR OWNER	159
 3424	BRESLIN, ANDREW	I	10022	\N	NEW YORK	NY		36
@@ -14282,13 +13170,11 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3452	PIERCE, LEE	I	14903	\N	ELMIRA HEIGHTS	NY	PIERCE'S RESTAURANT	1693
 3453	SEIBERT, CHARLES	I	10940	\N	MIDDLETOWN	NY	MC DONAL	1761
 3454	BECKER, JULIA	I	10012	\N	NEW YORK	NY	MCDONALD'S CORPORATION	134
-3455	TOBER, DONALD	I	10022	\N	NEW YORK	NY	SUGAR FOODS CORP	36
 3456	ZWICK, HAL	I	11937	\N	EAST HAMPTON	NY	BROOKHAMPTON INC SNOWFLAKE CAFE INC	1762
 3457	WISHING WELL RESTAURANT	C	12831	744 SARATOGA RD	GANSEVOORT	NY		1763
 3458	ALESSI, SAL MR	I	10309	\N	STATEN ISLAND	NY	FRANK'S PIZZERIA	1764
 3459	ALESSI, ROSETTA	I	10309	\N	STATEN ISLAND	NY	FRANK'S PIZZARIA	1764
 3460	STENZLER, ANDREW MR	I	10010	\N	NEW YORK	NY	CEO	1697
-3461	BERNSTEIN, ALLEN	I	11042	\N	NEW HYDE PARK	NY	MORTON'S RESTAURANT GROUP INC	36
 3462	FERGUSON, WILLIAM	I	11510	\N	BALDWIN	NY	RESTAURANTEUR	1765
 3463	CHOW, MELISSA Y MRS	I	11746	\N	DIX HILLS	NY	RESTAURANT MANAGER	1729
 3464	HUNT, CHUCK	I	10605	\N	WHITE PLAINS	NY	NEW YORK STATE RESTAURANT	1766
@@ -14299,7 +13185,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3469	BERNSTEIN, ALLEN J	I	11040	\N	NEW HYDE PARK	NY	MORTON'S RESTAURANT GROUP	261
 3470	MILEVOJ, FRANK	I	11714	\N	BETHPAGE	NY	LA GONDOLA RESTAURANT	1769
 3471	GECAJ, TAHIR MR	I	12508	\N	BEACON	NY	TUTI QUANTI PIZZA	1770
-3472	RAPILLO, CHRISTOPHER	I	10307	\N	STATEN ISLAND	NY	MCDONALD'S	36
 3473	MCCARTHY, PATRICK	I	10003	\N	NEW YORK	NY	RESTAURANTEUR	36
 3474	BRANCHINELLI, LOUIS	I	11414	\N	HOWARD BEACH	NY	SELF-EMPLOYED	1755
 3475	BRAUN, ANDREA	I	13438	\N	REMSEN	NY	PACKY'S PUB	1771
@@ -14359,7 +13244,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3529	MARINAKIS, MARKOS	I	11209	\N	BROOKLYN	NY	RESTAURANT OWNER	36
 3530	MALLOZZI, JOSEPH	I	12303	\N	SCHENECTADY	NY	MALLOZZI'S RESTAURANT	1795
 3531	WOOD, WILLIAM	I	13045	\N	CORTLAND	NY	TAVERN OWNER	149
-3532	DEEB, ANDREA	I	11471	\N	HOLBROOK	NY	BRINKER INTERNATIONAL INC.	36
 3533	ALBBERTO SECONDO RESTAURANT CORP	I	11375	\N	FOREST HILLS	NY		1796
 3534	REILLY, ANGELA	I	11358	\N	FLUSHING	NY	RESTAURANTEUR	36
 3535	TOPPER, LEWIS E MR	I	11432	\N	JAMAICA ESTATES	NY	EXECUTIVE	6
@@ -14544,20 +13428,17 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3714	UNITED RESTAURANT & LIQUOR DEALERS ASSOCIATION OF M	C	10165	60 E 42ND ST STE 2508	NEW YORK	NY		1890
 3715	MAY, PETER W	I	10017	\N	NEW YORK	NY	AUTHOR	2
 3716	HARRYS HARBOUR PLACE GRILLE	C	14207	2192 NIAGARA ST	BUFFALO	NY		592
-3717	MEYERS, JEROME G	I	14750	\N	LAKEWOOD	NY	MCDONALD'S	36
 3718	FERTITTA PAZA PIZZA INC	C	11105	629 DITMARS BLVD	ASTORIA	NY		1891
 3719	FREEDMAN, GRACIE F	I	11976	\N	WATERMILL	NY	IHOP	533
 3720	BECKER, JULIE	I	21201	\N	BALTIMORE	NY	MCDONALDS	134
 3721	BERNSTEIN, ALLEN J	I	11042	\N	NEW HYDE PARK	NY	MORTONS REST GROUP	261
 3722	BALJIDEMAJ, SELVIJE	I	10461	\N	BRONX	NY	RESTAURANTEUR	36
 3723	BALJIDEMAJ, RAMA	I	10461	\N	BRONX	NY	RESTAURANTEUR	36
-3724	KORNBLITH, DOROTHY	I	10021	\N	NEW YORK	NY	MCDONALD'S	36
 3725	RICE, JAMES	I	14206	\N	ANGOLA	NY	MCDONALD'S	134
 3726	FALK, JAMES P	I	11530	\N	GARDEN CITY	NY	LEO'S RESTAURANT	1892
 3727	VLACICH, GIULIANA MRS	I	11030	\N	MANHASSET	NY	PICCOLA VENEZIA RESTAURANT	1893
 3728	FOX, RICHARD	I	14607	\N	ROCHESTER	NY	WENDY'S	857
 3729	FOX, ROBERT	I	14618	\N	ROCHESTER	NY	WENDY'S	857
-3730	KATOS, NICHOLAS	I	11746	\N	\N	NY	KS APPLE INC	36
 3731	MEYER, DANIEL	I	10003	\N	NEW YORK	NY	GRAMERCY TAVERN	1874
 3732	EGGERT, CHRISTOPHER	I	11930	\N	AMAGANSETT	NY	RESTAURANT OPERATOR	1644
 3733	WEINSTEIN, NANCY MAH	I	10024	\N	NEW YORK	NY		28
@@ -14578,7 +13459,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3748	GECAJ, TAHIR MR	I	12508	\N	BEACON	NY	CHEF	117
 3749	POULAKAKOS, HARRY	I	11209	\N	BROOKLYN	NY	HARRY'S AT HANOVER SQ	1899
 3750	TONG, MICHAEL	I	10021	\N	NEW YORK	NY	SHUN LEE PALACE	1900
-3751	HYDE, WILLIAM	I	11042	\N	NEW HYDE PARK	NY	MORTON'S RESTAURANT GROUP INC	36
 3752	COLLEY, EUGENE	I	10519	\N	CROTON FALLS	NY	COLLEY MCCOY INC	1901
 3753	PHILIPPIS, MYRSINA	I	11746	\N	SOUTH HUNTINGTON	NY	PICCOLO RESTAURANT	1902
 3754	MEYER, DANNY	I	10003	\N	NEW YORK	NY	UNION SQUARE CAFE CORP	1302
@@ -14594,7 +13474,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3764	KRUGER, IRWIN S	I	10128	\N	NEW YORK	NY	ISK MANHATTAN INC	1905
 3765	TSE, MUI KO	I	11378	\N	MASPETH	NY	RESTAURANTEUR	36
 3766	UKAJ, BRAHIM	I	10461	\N	BRONX	NY	RESTAURANT BUSINESS	1291
-3767	FLIK, JULIE FMP	I	10573	\N	RYE BROOK	NY	FLIK INTERNATIONAL CORPORATION	36
 3768	CRETELLA, FRANK	I	10310	\N	STATEN ISLAND	NY	TAM RESTAURANT GROUP	1906
 3769	NIEPORENT, DREW A	I	10013	\N	NEW YORK	NY	TRIBECA GRILL	1907
 3770	KRUGER, IRWIN S	I	10128	\N	NEW YORK	NY	MCDONALDS	134
@@ -14616,8 +13495,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3786	FORS, RICHARD	I	14226	\N	EGGERTSVILLE	NY	RESSER MANAGEMENT	1671
 3787	FOX, RICHARD	I	14610	\N	ROCHESTER	NY	WENDY'S	857
 3788	RICCARDI, MILENA	I	10306	\N	STATEN ISLAND	NY	BRADLEY SUPERETTE	1909
-3789	KORNBLITH, DOROTHY R	I	10021	\N	NEW YORK	NY	MCDONALD'S REST	36
-3790	FLIK, JULIE	I	10543	\N	MAMARONECK	NY	FLIK INTERNATIONAL CORPORATION	36
 3791	UKAJ, SELMON MRS	I	10021	\N	NEW YORK	NY	HOMEMAKER	1884
 3792	UKAJ, SELMAN	I	10021	\N	NEW YORK	NY	PIZA PIZZA	1884
 3793	UKAJ, SHEFQET	I	10461	\N	BRONX	NY	PISA PIZZA	1291
@@ -14648,7 +13525,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3818	OYSTER BAR & RESTAURANT	C	10017	GRAND CENTRAL STATION	NEW YORK	NY		1926
 3819	KRETCHMER, JEROME	I	\N	\N	NY	NY	GOTHAM BAR & GRILL	1660
 3820	NICOTRA, RICHARD	I	10314	\N	STATEN ISLAND	NY	THE NICOTRA GROUP	1624
-3821	FLIK, JULIE FMP	I	10573	\N	RYE BROOK	NY	NORTH AMERICAN DIV	1310
 3822	COGAN, MARSHALL S	I	10152	375 PARK AVE 11TH FL	NEW YORK	NY	RESTAURANT OWNER	36
 3823	DE DUONG, CAMBAO	I	10013	\N	NEW YORK	NY	NEW SILVER PACE RESTAURANT	1927
 3824	TUBRIDY, DANIEL	I	11693	\N	FAR ROCKAWAY	NY	PIER 92 RESTAURANT	1928
@@ -14666,7 +13542,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3836	COLANDREN, MARTIN	I	10977	\N	SPRING VALLEY	NY	RESTAURANT BUS	127
 3837	RUSITZKY, BUD	I	14534	\N	PITTSFORD	NY	THE RIO RESTAURANT	1937
 3838	SBARRO INC	C	11725	763 LARKFIELD RD	COMMACK	NY		1938
-3839	KRUGER, IRWIN	I	10128	\N	NEW YORK	NY	MCDONALD'S REST	36
 3840	MEHTA, JITU MR	I	10016	\N	NEW YORK	NY	VATAN RESTAURANT	1939
 3841	RUBENSTEIN, AMY	I	10028	\N	NEW YORK	NY	PETER LUGER RESTAURANT	1940
 3842	FARBER, GEORGE	I	11040	\N	MANHASSET HILLS	NY	IDEAL RESTAURANT SUPPLY CO	1941
@@ -14734,7 +13609,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3904	SYED, HAMIM MR	I	10310	\N	STATEN ISLAND	NY	DELI OWNER	1970
 3905	NY RESTAURANT INDUSTRY PAC	C	12205	455 NEW KARNER RD	ALBANY	NY		1920
 3906	UKAJ, SHEFQET	I	10461	\N	BRONX	NY	RESTAURANT	58
-3907	RUSITZKY, HARRIS	I	14534	\N	PITTSFORD	NY	BLIMPIE OF CENTRAL NEW YORK	36
 3908	ZORBE DINER INC	C	10541	RT 6 & MILLER RD BOX 930	MAHOPAC	NY		1971
 3909	ZORBA DINER INC	C	10541	RT 6 & MILLER RD BOX 930	MAHOPAC	NY		1972
 3910	BLOOM, LOIS	I	10028	\N	NEW YORK	NY	RESTAURANT CONS	389
@@ -14743,7 +13617,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3913	LIRIA RESTAURANT	C	11104	3941 QUEENS BLVD	LONG ISLAND CITY	NY		1975
 3914	MANDUCATIS RESTAURANT	C	11101	1327 JACKSON AVE	LONG ISLAND CITY	NY		1976
 3915	MESA DE ESPANA RESTAURANT	C	10016	45 E 28TH ST	NEW YORK	NY		1977
-3916	RUSITZKY, HARRIS	I	14534	\N	PITTSFORD	NY	SERV-RITE CORPORATION	36
 3917	PREPIS, GEORGE	I	10029	\N	NEW YORK	NY	HANRATTY'S RESTAURANT	576
 3918	CRETELLA, JEANNE	I	10310	\N	STATEN ISLAND	NY	TAM RESTAURANT GROUP	1906
 3919	BLVD QUEENS RESTAURANT CORP	C	11104	4508 QUEENS BLVD	LONG ISLAND CITY	NY		1978
@@ -14764,9 +13637,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3934	MOY, TIMMY	I	10002	\N	NEW YORK	NY	ORIENTAL PEARL RESTAURANT	1986
 3935	TEDDYS RESTAURANT	C	13440	851 BLACK RIVER BLVD	ROME	NY		1987
 3936	CAFE KOLONAKI INC	C	11106	3302 BROADWAY	ASTORIA	NY		1988
-3937	MOHRMANN, WILLIAM A	I	11934	\N	CENTER MORICHES	NY	MCDONALD'S	36
 3938	ZACHARIA, YIANNAKIS	I	12401	\N	EAST KINGSTON	NY	LEXUS DINER	1989
-3939	MICHELL, ROBERT D	I	10504	\N	ARMONK	NY	MCDONALD'S REST	36
 3940	RUSITZKY, BUD	I	14618	\N	ROCHESTER	NY	THE RIO RESTAURANT	1937
 3941	GEE WHIZ DELI & RESTAURANT	C	10014	295 GREENWICH ST	NEW YORK	NY		1990
 3942	KING, JOSEPH	I	11590	\N	WESTBURY	NY	ANTUN'S CATERING	1991
@@ -14776,29 +13647,21 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 3946	SMITH, JAMES M	I	12303	\N	SCHENECTADY	NY	HIGH BRIDGE PIZZA	1995
 3947	DIBENEDETTO, EGIDIO MR	I	10801	\N	NEW ROCHELLE	NY	CATERINA PIZZERIA	1996
 3948	NEW YORK RESTAURANT INDUSTRY PAC	C	12205	455 KARNER RD	ALBANY	NY		1992
-3949	HAEFNER, SANDRA J	I	14224	\N	W SENECA	NY	MCDONALD'S	36
 3950	YAU, SHEUNG K	I	11354	\N	FLUSHING	NY	CHEF	117
 3951	NEW YORK RESTAURANT INDUSTRY PAC	C	12210	455 NEW KARNER	ALBANY	NY		1992
 3952	RESTAURANT INDUSTRY PAC	C	12205	455 NEW KARNER RD	ALBANY	NY		1997
 3953	CHING, JIMMY	I	11229	\N	BROOKLYN	NY	OCEAN PALACE RESTAURANT	1998
-3954	KENDALL, JOHN F FMP	I	14624	\N	ROCHESTER	NY	PERK DEVELOPMENT CORPORATION	36
-3955	SAMAHA, AMEEN L	I	10504	\N	ARMONK	NY	MCDONALD'S	36
 3956	LETTS TAVERN INC	C	10017	5441  BELAIR RD	BALTO	NY		1999
 3957	TSIORVAS, PETER	I	11793	\N	WANTAGH	NY	RESTAURANTEUR	36
 3958	PRADOL RESTAURANT CORP	C	10566	RT 6 & 202 W BOX 310	PEEKSKILL	NY		1725
-3959	GROUT, ROGER E	I	12188	\N	WATERFORD	NY	MCDONALD'S REST	36
 3960	KEN-HAR RESTAURANTS INC	I	14043	\N	DEPEW	NY		2000
 3961	MEHTANI, SATISH	I	10304	\N	STATEN ISLAND	NY	MOGHUL RESTAURANT	2001
 3962	CLARE, JAMES P	I	11804	\N	OLD BETHPAGE	NY	TREL RESTAURANT INC	2002
 3963	NEW YORK RESTAURANT INDUSTRY PAC	C	12205	455 NEW KENNER RD	ALBANY	NY		1992
-3964	MADELONE, FRANK	I	10314	\N	STATEN ISLAND	NY	MCDONALD'S REST	36
-3965	PRITCHETT, DONALD R	I	11514	\N	CARLE PLACE	NY	MCDONALD'S REST	36
-3966	MITCHELL, ROBERT D	I	10603	\N	WHITE PLAINS	NY	MCDONALD'S REST	36
 3967	BAY LANDING RESTAURANT CORP	C	10310	1163 FOREST AVE	STATEN ISLAND	NY		2003
 3968	SERAFIS, NIKOLAS	I	\N	73-20 31ST AVE	JACKSON HEIGHTS	NY	RESTAURANT OWNER	34
 3969	DI COCCOS LUNCHEONETTE	C	12305	511 S AVE	SCHENECTADY	NY		2004
 3970	CALISI, ANIELLO	I	10452	\N	BRONX	NY	YOLANDA'S RESTARAUNT	2005
-3971	FLYNN, EDWARD L	I	11385	\N	GLENDALE	NY	MCDONALD'S	36
 3972	CASTELLI, JOSEPH	I	11214	\N	BROOKLYN	NY	FRANCESCO'S PIZZA	2006
 3973	LE ROY, WARNER	I	10023	\N	NEW YORK	NY	LE ROY VENTURE	505
 3974	MCDONALDS	I	12110	\N	LATHAM	NY		134
@@ -14877,9 +13740,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4047	SERROUKAS, CONSTANTINE	I	12603	\N	POUGHKEEPSIE	NY		36
 4048	MANESSIS, TASOS	I	10583	\N	SCARSDALE	NY	RESTAURANT OWNER	1669
 4049	BILLITTIER, LOUIS	I	14204	\N	BUFFALO	NY		2026
-4050	PERNA, CATHERINE	I	10465	\N	NEW YORK	NY	MCDONALD'S REST	36
 4051	ROSSINIS RESTAURANT	C	10016	108 E 38TH ST	NEW YORK	NY		2051
-4052	PERNA, RICH	I	10465	\N	NEW YORK	NY	MCDONALD'S REST	36
 4053	TOULON, CECIL JR	I	11430	\N	JAMAICA	NY		2052
 4054	BAMONTES RESTAURANT	C	11211	32 WITHERS ST	BROOKLYN	NY		2053
 4055	NEW YORK RESTAURANT INDUSTRY PAC	C	12205	J55 NEW KARNER RD	ALBANY	NY		1992
@@ -15036,7 +13897,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4206	UNITED BRODY CORP	I	10019	\N	NEW YORK	NY		2143
 4207	HYDE, WILLIAM L JR	I	11560	\N	LOCUST VALLEY	NY	QUANTUM RESTAURANT GROUP	2144
 4208	MAY, PETER	I	10022	\N	NEW YORK	NY	THE TRIAN GROUP	2
-4293	PELTZ, CLAUDIA	I	10022	\N	NEW YORK	NY	HOMEMAKER	2
 4209	HYDE, WILLIAM L JR	I	11042	\N	NEW HYDE PARK	NY	QUANTUM RESTAURANT GROUP INC	2144
 4210	PELTZ, NELSON	I	10022	\N	NEW YORK	NY	TRIARC COMPANIES IN	2
 4211	BERNSTEIN, ALLEN J	I	11042	\N	NEW HYDE PARK	NY	QUANTUM RESTAURANT GROUP INC	2144
@@ -15044,7 +13904,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4213	SCHUPAK, CYNTHIA	I	10019	\N	NEW YORK	NY	HOMEMAKER	835
 4214	PELTZ, NELSON	I	10549	\N	BEDFORD CORNERS	NY	TRIARE COMPANIES INC	2
 4215	PELTZ, NELSON	I	10022	\N	NEW YORK	NY	TRIARC COMPANY	2
-4216	MEYERS, JEROME	I	14750	\N	LAKEWOOD	NY	MCDONALD'S REST	36
 4217	MAY, LENI MS	I	10021	\N	NEW YORK	NY	HOMEMAKER	2
 4218	SELIMAJ, BRUNO	I	10022	\N	NEW YORK	NY	BRUNO RESTAURANT	2146
 4219	O'DONOGHUE, JOHN P	I	11001	\N	BELLROSE VILLAGE	NY	OWNER BLOSSOM'S RESTURANT	2147
@@ -15121,6 +13980,7 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4290	BOZZI, BRUCE	I	10017	\N	NEW YORK	NY	THE PALM RESTAURANT	116
 4291	ENG, JAMES	I	11366	\N	FLUSHING	NY	KING YUM	2165
 4292	DUNHAM, ROBERT	I	07024	\N	FORT LEE	NY	TCB MANAGEMENT CORP	2166
+4293	PELTZ, CLAUDIA	I	10022	\N	NEW YORK	NY	HOMEMAKER	2
 4294	CORTESE, NATHAN N	I	13903	\N	BINGHAMTON	NY	RESTAURANT OWNER	36
 4295	KALOIDIS, DEMETRIOS	I	11771	\N	OYSTER BAY	NY	GEORGIO DINER	2167
 4296	KALOIDIS, GEORGIA	I	11771	\N	OYSTER BAY	NY	HOMEMAKER	2167
@@ -15139,8 +13999,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4309	BALIDEMIC, JULIA	I	11228	\N	BROOKLYN	NY	DEBAL RESTAURANT	2172
 4310	BAUTA, MEL	I	11234	\N	BROOKLYN	NY	RESTAURATEUR	1358
 4311	MAY, PETER W	I	10021	\N	NEW YORK	NY	TRIAN GROUP	2
-4312	FLIK, JULIE	I	10580	\N	RYE	NY	FLIK INTERNATIONAL CORP	36
-4313	SAVERIN, RONALD	I	10504	\N	ARMONK	NY	MIDLAND FOODS INC	36
 4314	FOX, RICHARD	I	14607	\N	ROCHESTER	NY		857
 4315	WU, PETER	I	11542	\N	GLEN COVE	NY	UNCLE DAI AT GLEN COVE	2173
 4316	PELTZ, CLAUDIA	I	10549	\N	MOUNT KISCO	NY	TRIARC COMPANIES INL	2
@@ -15167,7 +14025,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4337	ASANGEKAJ, VESEL	I	10002	\N	NEW YORK	NY	OSSO BUCO RISTORANTE	2182
 4338	ALBICOCCO, STEVEN	I	11791	\N	LAUREL HOLLOW	NY	COCO'S WATER CAFE	2183
 4339	ALBICOCCO, JOHN ANTHONY	I	11702	\N	BABYLON	NY		2183
-4340	LACKMANN, THOMAS	I	11797	\N	WOODBURY	NY	LACKMANN FOOD SERVICE	36
 4341	SECCI, PETER	I	10024	\N	NEW YORK CITY	NY	RESTAURANT PROP	832
 4342	CORTESC, JOAN	I	13903	\N	BINGAMTON	NY	CORTESE RESTAURANT	143
 4343	PIOZZA, JOSEPH	I	10595	\N	VALHALLA	NY	VILLA BARONE RESTAURANT	2184
@@ -15177,12 +14034,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4347	ROMANELLO, JAMES	I	14216	\N	BUFFALO	NY	ROMANELLO'S RESTAURANTS	2185
 4348	PASHALIS, GEORGE	I	11804	\N	OLD BETHPAGE	NY	GEORGE RESTAURANT	2186
 4349	FREIDMAN, ROGER	I	10022	425 PARK AVE	NY	NY	RESTAURANTEUR	36
-4350	MEYERS, LAVERNE	I	14750	\N	LAKEWOOD	NY		36
-4351	MEYER, IRA	I	11373	\N	ELMHURST	NY	MCDONALD'S REST	36
 4352	GUIDO, FRANK	I	12401	\N	KINGSTON	NY	MARINER'S HARBOR RESTAURANT	2187
 4353	TZIVELAKIS, COSTAS	I	11105	\N	ASTORIA	NY	KARYATIS RESTAURANT	2188
 4354	BERNSTEIN, ALLEN J	I	11040	\N	NORTH NEW HYDE PAR	NY	QUANTUM RESTAURANT GROUP INC	2144
-4355	KRUEGER, IRWIN S	I	10128	\N	NEW YORK	NY	MCDONALD'S REST	36
 4356	LAMBOS, IGNATIOS	I	10464	\N	BRONX	NY	LOBSTER BOX RESTAURANT	2189
 4357	LURENTZATOS, ELIAS	I	11001	\N	WEST HARRISON	NY	MT OLYMPUS RESTAURANT	2190
 4358	PELTZ, NELSON	I	10022	\N	NEW YORK	NY	TRIARC COM	2
@@ -15213,12 +14067,10 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4383	MEYERS, DANIEL	I	10003	\N	NY	NY	UNION SQUARE CAFE	446
 4384	VOURLIOTIS, E	I	10566	\N	PEEKSKILL	NY	REEF N BEEF INC	2206
 4385	MURRAY, JOHN	I	11793	\N	WANTAGH	NY	MULCAHY'S TAVERN	2207
-4386	FAIRBAIRN, MATTHEW	I	14450	\N	FAIRPORT	NY	APPLEBEE'S	36
 4387	CROWE, DAVID M	I	11751	\N	ISLIP	NY	RESTAURANTER	36
 4388	CLARK, HAROLD T JR	I	13066	\N	FAYETTEVILLE	NY	MAC-CLARK RESTAURANTS INC	2178
 4389	SELIMAJ, KUMRIJE	I	10022	\N	NEW YORK	NY		2146
 4390	TRIGONIS, ANTHONY	I	12524	\N	FISHKILL	NY	RESTAURANTEUR	36
-4391	KRUGER, IRWIN S	I	10128	\N	NEW YORK	NY	MCDONALD'S REST	36
 4392	MENEZES, JILL A	I	14617	\N	ROCHESTER	NY	MENEGES PIZZA LTD	2208
 4393	CORSO, LOUIS	I	10013	\N	NEW YORK	NY	RESTAURANTER	36
 4394	TSAGARAKIS, PETER	I	10520	\N	CROTON ON HUDSON	NY	CROTON COLONIAL DINER	2209
@@ -15227,7 +14079,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4397	SCHUPAK, DONALD	I	10028	\N	NEW YORK	NY	FINANCIAL CONSULTANT	835
 4398	KHALID, SHAHEEN	I	10010	\N	NEW YORK	NY	RESTAURANTEUR	36
 4399	PELTZ, CLAUDIA	I	10549	\N	BEDFORD CORNERS	NY		2
-4400	O'DONNELL, JIM	I	13601	\N	WATERTOWN	NY	MCDONALD'S REST	36
 4401	LOUNTZIS, FOTIOS	I	11432	\N	JAMAICA	NY	FLAGSHIP DINER	2210
 4402	CHENG, CHUNG KO	I	10280	\N	NEW YORK	NY	JING FONG RESTAURANT	2177
 4403	LEE, E FONG	I	10010	\N	NEW YORK	NY	TSUMANI RESTAURANT	2211
@@ -15240,24 +14091,16 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4410	KESSLER, BILLY PAUL	I	11558	\N	ISLAND PARK	NY	MARTIN'S RESTAURANT	2215
 4411	GJONBALAJ, ZYMER	I	11204	\N	BROOKLYN	NY	SETTECOLLI RESTAURANT	2196
 4412	ALBICOCCO, JOHN ANTHONY	I	11702	\N	BABYLON	NY	COCO'S WATER CAFE	2183
-4413	STOLTZ, CLYDE	I	13760	\N	ENDICOTT	NY	MCDONALDS REST	36
-4414	STOLTZ, CLYDE E	I	13760	\N	ENDICOTT	NY	MCDONALD'S REST	36
-4415	SANTORO, JOSEPH	I	11768	\N	NORTH PORT	NY	MCDONALD'S REST	36
 4416	LEUNG, MICHAEL	I	11423	\N	JAMAICA	NY	RESTAURANT OWNER	36
 4417	TRUJILO, JOSE FRANCISCO	I	11222	\N	BROOKLYN	NY	WATER'S EDGE RESTAURANT	1720
 4418	HUNTZE, DAVID	I	12466	\N	PORT EWEN	NY	K F C	1776
 4419	KATSIHTIS, GEORGE	I	11102	\N	ASTORIA	NY	NEPTUNE DINER	2216
-4420	PRICHETT, DONALD R	I	11530	\N	GARDEN CITY	NY	MCDONALD'S REST	36
-4421	MOHRMANN, BILL	I	11786	\N	SHOREHAM	NY	MCDONALD'S REST	36
-4422	SAMAHA, SAM	I	10504	\N	ARMONK	NY	MCDONALD'S REST	36
 4423	LIBERATOS, DENIS	I	11360	\N	FLUSHING	NY	RESTAURANT OWNER	36
 4424	KILLORAN, JOHN	I	13066	\N	FAYETTEVILLE	NY	J P MULLIGAN'S RESTAURANT IN	1470
 4425	PREPIS, GEORGE	I	11102	\N	LONG ISLAND CITY	NY	RESTAURANT OWNER	36
 4426	DASKALIS, HARULA	I	10940	\N	MIDDLETOWN	NY	JACK & JILLS DINER	2217
 4427	GIAMBELLI, MARY	I	10022	\N	NEW YORK	NY	RESTAURATEUR	36
 4428	MORMANDO, FRANK JR	I	11771	\N	OYSTER BAY	NY	CHRISTO'S STEAK HOUSE	2218
-4429	SIMMONS, ROBERT	I	11216	\N	BROOKLYN	NY	MCDONALD'S REST	36
-4430	DIEKMANN, BILL	I	10017	\N	NEW YORK	NY	MCDONALDS REST	36
 4431	BITICI, VIOLETTA	I	10022	\N	NEW YORK	NY	TOSCANA RESTAURANT	1968
 4432	QUANTUM RESTAURANT GROUP	I	11042	\N	NEW HYDE PARK	NY		247
 4433	QUANTUM RESTAURANT GROUP INC	I	11042	\N	NEW HYDE PARK	NY		247
@@ -15306,22 +14149,18 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4476	CHAN, RICHARD	I	\N	\N	NEW YORK	NY	RESTAURANT OWNER	36
 4477	NATORI, KENNETH & JOSIE	I	10016	\N	NEW YORK	NY		2242
 4478	WOOD, WILLIAM	I	13045	\N	CORTLAND	NY	BAR OWNER	159
-4479	WEISS, LAWRENCE J	I	10016	\N	NEW YORK	NY	WEISS FOODSERVICE VISIONS INC	36
 4480	MANATOKIS, ANTONIOS	I	10019	\N	NY	NY	UNCLE NICK'S RESTAURANT	2243
 4481	PREPIS, GEORGE	I	11102	\N	LONG IS CITY	NY		36
 4482	COSTALAS, ANN	I	11558	\N	ISLAND PARK	NY	PETERS CLAM BAR	2244
 4483	BISENI, ENZO	I	10543	\N	MAMARONECK	NY	RESTAURANT OWNER	36
 4484	CAVEGAN, JOSEPH	I	10980	\N	STONY POINT	NY	FAST FOODS	2245
 4485	WECHSLER, ROBERT	I	11937	\N	EAST HAMPTON	NY	GRILL CONCEPTS INC	1930
-4486	EVANGELISTA, FORTUNALDO	I	14301	\N	NIAGARA FALLS	NY	LA HACIENDA OF NEW YORK RISTORANTE	36
 4487	BRANCHINELLI, LOUIS	I	11561	\N	LONG BEACH	NY	GINO'S PIZZERIA	2246
 4488	LAFASAKIS, GEORGE	I	11361	\N	BAYSIDE	NY	RED OAK DINER	2247
 4489	MORTON'S RESTAURANT GROUP INC	I	11042	\N	NEW HYDE PARK	NY		2248
 4490	ANGELAKIS, GEORGE	I	11358	\N	FLUSHING	NY	ATHEN RESTAURANT	2249
 4491	FAUSTINI, MARIO	I	10709	\N	EASTCHESTER	NY	ALEX & HENRY'S RESTAURANT INC	2032
 4492	KOKISRAKOS, PETER	I	11209	\N	BROOKLYN	NY	KOKISRAKOS RESTAURANT	2250
-4493	DIEKMANN, ELAINE	I	10570	\N	PLEASANTVILLE	NY	MCDONALD'S REST	36
-4494	DIEKMANN, WILLIAM	I	10570	\N	PLEASANTVILLE	NY	MCDONALD'S REST	36
 4495	LEE, JAMES	I	10002	\N	NEW YORK	NY	CHINESE REST ASSOC	2191
 4496	DELAFIELD, ASTRID	I	10021	\N	NEW YORK	NY	RETIRED	436
 4497	KANTOLIS, ANGELO	I	11361	\N	BAYSIDE	NY	FAME RESTAURANT	2251
@@ -15336,7 +14175,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4506	CA ONE SERVICES INC	I	14202	\N	BUFFALO	NY		2254
 4507	BERGREEN, THOMAS K	I	10028	\N	NEW YORK	NY	BLU RESTAURANT	2255
 4508	STAMATIADES, GEORGE	I	11103	\N	ASTORIA	NY	RESTAURANT OWNER	36
-4509	MEYERS, JEROME G	I	14750	\N	LAKEWOOD	NY	MCDONALD'S REST	36
 4510	SCHUPAK, CYNTHIA	I	10028	\N	NEW YORK	NY	HOMEMAKER	835
 4511	ZAHID, NASIR	I	\N	\N	BROOKLYN	NY	WILLOWBEE PIZZA	2256
 4512	KHUU, JONATHAN	I	\N	\N	NEW YORK	NY	SAIGON REST	2257
@@ -15381,7 +14219,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4551	PARK, JUM SOON	I	11106	\N	LONG ISLAND CITY	NY	RESTAURANT OWNER	36
 4552	BONILLA, ANTONIO	I	\N	\N	NEW YORK	NY	RESTAURANTEUR	36
 4553	DORAN, THOMAS EAMONN	I	10022	\N	NEW YORK	NY	EAMONN DORAN RESTAURANT	2267
-4554	O'NEILL, M DONALD D	I	14618	\N	ROCHESTER	NY	SPRING HOUSE RESTAURANT	36
 4555	ROSE, MARSHALL	I	10021	\N	NEW YORK	NY	THE GEORGETOWN GROUP	2268
 4556	SANTO, BERGINO J	I	10021	\N	NEW YORK	NY	SIGN OF THE DOVE	2258
 4557	CORSO, LUBA MRS	I	10013	\N	NEW YORK	NY	RESTAURANTER	36
@@ -15413,39 +14250,27 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4583	MARTIN, DOUGLAS	I	\N	\N	NEW YORK	NY	RESTAURANT	58
 4584	CHOI, HYUNG KEE	I	10001	\N	NY	NY	KAM MI OAK RESTAURANT	2278
 4585	KRIENDLER, H PETER	I	10019	\N	NEW YORK	NY	21 CLUB	2266
-4586	ABDALLAH, AHMAD	I	14094	\N	LOCKPORT	NY	MCDONALD'S REST	36
 4587	BERNS, JEROME	I	10019	\N	NEW YORK	NY	21 CLUB	2266
-4588	PRODUCTS, P HENDEL	I	11422	\N	ROSEDALE	NY	MCDONALD'S REST	36
-4589	WEICHBRODT, ROBERT E	I	14489	\N	LYONS	NY	MCDONALD'S REST	36
 4590	CHRISTOU, EVA	I	12303	\N	SCHENECTADY	NY	FATEWAY DINER	2279
 4591	KEANE, DENIS JR	I	11385	\N	GLENDALE	NY	DUROW'S RESTAURANT	2179
 4592	BRESLIN, ANDREW K	I	11104	\N	SUNNYSIDE	NY	SIDETRACKS RESTAURANT	2198
 4593	LIMBERATOS, DENNIS	I	10006	\N	NEW YORK	NY	RESTAURANTEUR	36
 4594	DEMARCO, DONALD E	I	10021	\N	NEW YORK	NY	RESTAURANT	58
 4595	KEANE, DENIS	I	11374	\N	REGO PARK	NY	DUROW'S RESTAURANT	2179
-4596	POMPA, WILLIAM	I	12047	\N	COHOES	NY	MR SUBB INC	36
 4597	MEYER, IRA A	I	11373	\N	ELMHURST	NY	MAYER MAC MCDONALD'S	2280
 4598	BERNSTEIN, ALLEN J	I	11040	\N	NEW HYDE PARK	NY	QUANTUM RESTAURANT GROUP INC	247
 4599	REILLY, PATRICK J	I	11358	\N	FLUSHING	NY	RESTAURANT OWNER	36
 4600	MONE, EILEEN	I	10987	\N	TUXEDO	NY	DUCK CEDAR INN	2281
 4601	KAUFMAN, JONAH	I	11743	\N	HUNTINGTON	NY	RESTAURANTEUR	36
-4602	MOLAGHAN, GARY F	I	11545	\N	OLD BROOKVILLE	NY	BANFI VINTNERS	36
 4603	SCARAMELLINO, PAT	I	10566	\N	PEEKSKILL	NY	CRYSTAL BAY SEAFOOD	2282
 4604	MAVRIKIS, JOHN	I	11530	\N	GARDEN CITY	NY	JONATHAN'S RESTAURANT	157
 4605	FAUSTINI, MARIO	I	10709	\N	EASTCHESTER	NY	ALEX & HENRY'S	2032
 4606	DEMARCO, DONALD E	I	10021	\N	NEW YORK	NY	RESTAURATEUR	1358
 4607	CAMAJ, PASKO	I	11415	\N	KEW GARDENS	NY	PALM TOO RESTAURANT	2283
 4608	DOLAN, PEADAR R	I	10704	\N	YONKERS	NY	J M R RESTAURANT CORP	2284
-4609	GOMEZ, EDWARD V	I	10306	\N	STATEN ISLAND	NY	MCDONALD'S REST	36
 4610	PANAGOPOULOS, STEVE	I	12061	\N	EAST GREENBUSH	NY	EAST GREENBUSH DINER	2285
-4611	SANTORO, JOSEPH J	I	11731	\N	EAST NORTH	NY	MCDONALD'S REST	36
 4612	BUCKLEY, JOSEPH	I	11758	\N	MASSAPEQUA	NY	RESTAURANTEUR	36
 4613	DEMETRIOS, JIM	I	12205	\N	ALBANY	NY	RESTAURANT	58
-4614	DIEKMANN, WILLIAM	I	10475	\N	BRONX	NY	MCDONALD'S REST	36
-4615	FLYNN, EDWARD L	I	11385	\N	GLENDALE	NY	MCDONALD'S REST	36
-4616	PRITCHETT, RAY/EUNICE M	I	11514	\N	CARLE PLACE	NY	MCDONALD'S REST	36
-4617	PRITCHETT, DONALD R	I	11590	\N	WESTBURG	NY	MCDONALD'S REST	36
-4618	SANTORO, JOSEPH J	I	11731	\N	E NORTHPORT	NY	MCDONALD'S REST	36
 4619	POULAKAKOS, ADRIENNE	I	11209	\N	BROOKLYN	NY	RESTAURANT ON THE SQUARE	2286
 4620	SPIERA, MARILYN	I	11230	\N	BROOKLYN	NY	PETER LUGER'S RESTAURANT	2287
 4621	WASSERMAN, STEVEN M	I	11797	\N	WOODBURY	NY	PUDGIES FAMOUS CHICKEN LTD	2270
@@ -15481,7 +14306,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4651	ROSEN, MARVIN	I	10021	\N	NEW YORK	NY	JUNIORS RESTAURANT	2300
 4652	BELLO, GREGORY C	I	10023	\N	NEW YORK	NY	RESTAURANTEUR	36
 4653	BARBER, EDWARD	I	12058	\N	EARLTON	NY	RED'S SEAFOOD	1800
-4654	MCCARROLL, ROBERT L	I	11755	\N	LAKE GROVE	NY	GOOD STEER	36
 4655	DEAN, EDWARD	I	11209	\N	BROOKLYN	NY	FACES RESTAURANT	2301
 4656	LAU, EMMY	I	11703	\N	N BABYLON	NY	ORIENTAL PALACC RESTAURANT	2302
 4657	WU, PETER	I	11542	\N	GLEN COVE	NY	UNCLE DAI'S RESTAURANTS	1299
@@ -15491,14 +14315,11 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4661	TRISTINO, JOHN	I	11228	\N	BROOKLYN	NY	RESTAURANT	58
 4662	SULLIVAN, THOMAS O	I	11209	\N	BROOKLYN	NY	BENTLEYS RESTAURANT	2305
 4663	PETRONE, NATALE	I	11577	\N	ROSLYN HEIGHTS	NY	IL SAPORE REST	2306
-4664	BROWN, RICHARD	I	11545	\N	OLD BROOKVILLE	NY	BANFI VINTNERS	36
-4665	EVANGELISTA, FORTUNALDO	I	14301	\N	NIAGARA FALLS	NY	LA HACIENDA OF NEW YORK	36
 4666	DELANEY, AUSTIN	I	10038	\N	NEW YORK	NY	HARBOUR LIGHTS RESTURANT	660
 4667	O'DONNELL, JAMES L	I	13601	\N	WATERTOWN	NY	MCDONALD'S	134
 4668	MEYER, IRA A	I	11373	\N	ELMHURAT	NY	MCDONALD'S	134
 4669	RUSSO, NUNZIO	I	10012	\N	NEW YORK	NY	RESTAURANT OWNER	36
 4670	MILLER, PETER	I	\N	\N	BAYSIDE	NY	RESTAURANT OWNER	2307
-4671	MOHRMANN, WILLIAM	I	11934	\N	CENTER MORICHES	NY		36
 4672	OYSTER BAR & RESTAURANT	I	10017	\N	NEW YORK	NY		2308
 4673	SCHWARTZ, FRED	I	11024	\N	GREAT NECK	NY		2309
 4674	ROSE, MARSHALL	I	10106	\N	NEW YORK	NY	GEORGETOWN COMPANY	2268
@@ -15512,7 +14333,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4682	WADE, RORY J	I	10023	\N	NEW YORK	NY	CANARD & COMPANY	2313
 4683	GUY, JOHN C	I	11412	\N	HOLLIS	NY	NY BAR-B-QUE	2314
 4684	VITALE, JOHN	I	11509	\N	EAST ATLANTIC BEAC	NY	PADDY MCGEES	2315
-4685	O'NEILL, MARTIN D	I	14618	\N	ROCHESTER	NY	SPRING HOUSE	36
 4686	BILLITTIER, LOUIS J	I	14204	\N	BUFFALO	NY	CHEF'S RESTAURANT	1082
 4687	MURRAY, JOHN JR	I	11793	\N	WANTAGH	NY	RESTAURANTEUR	36
 4688	DERDI, DIN	I	14437	\N	DANSVILLE	NY	COFFEE CUP RESTAURANT	2316
@@ -15623,7 +14443,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4793	FAUSTINI, MARIO E	I	10709	\N	EASTCHESTER	NY	ALEX & HENRY'S RESTAURANT	2032
 4794	CHAN, RICHARD	I	10038	\N	NEW YORK	NY	SILVER PALACE RESTAURANT	2334
 4795	STAUB, RUSTY	I	10017	\N	NEW YORK	NY	RUSTY STAUB'S ON FIFTH	2355
-4796	RUSITZKY, HARRIS H	I	14534	\N	PITTSFORD	NY	SERV-RITE CORPORATION	36
 4797	WHITE, WILLIAM B	I	11569	\N	POINT LOOKOUT	NY		1942
 4798	HO, WING LOI	I	10028	\N	NEW YORK	NY	CHEF HO'S HUNAN HOUS	2356
 4799	MEHTANI, SATISH C	I	10304	\N	STATEN ISLAND	NY	THE MOGHUL ROOM	2357
@@ -15637,7 +14456,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4807	STRAUSBERG, NORMAN	I	11209	\N	BKLYN	NY	EMERALD BAR AND GRILL	2362
 4808	PREPIS, GEORGE	I	10029	\N	NEW YORK	NY	HARATTY'S RESTAURANT	2363
 4809	CHAN, LEUNG SUN	I	11212	\N	BROOKLYN	NY	CHAN'S FAMILY RESTAURANT	2364
-4810	MAY, ANTHONY	I	10019	\N	NEW YORK	NY	TONY MAY GROUP	36
 4811	ARETSKY, KENNETH M	I	10019	\N	NEW YORK	NY	"21" CLUB	2266
 4812	KATSIHTIS, PETER	I	10021	\N	NEW YORK	NY	RESTAURANTEUR	36
 4813	ROSE, MARSHALL	I	10018	\N	NEW YORK	NY	NY PUBLIC LIBRARY	2268
@@ -15680,7 +14498,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4850	KEANS, DENIS	I	11374	\N	REGO PARK	NY	DUROW'S RESTAURANT	2179
 4851	ANTONAKOS, SOPHIA	I	11566	\N	MERRICK	NY	RESTAURANT OWNER	36
 4852	TAYLOR, LOUIS W MRS	I	14072	\N	GRAND ISLAND	NY	RESTAURANTEUR	36
-4853	DANAHER, JOSEPH	I	12205	\N	ALBANY	NY	GRANDMAS RESTAURANT	36
 4854	BERNSTEIN, ALLEN	I	11802	\N	HICKSVILLE	NY	QUANTUM RESTAURANT GROUP INC	247
 4855	KATSIKOUMBAS, DIMITRIOS	I	10463	\N	BRONX	NY	DALE RESTAURANT	2376
 4856	BEGITIS, NICK	I	10580	\N	RYE	NY	COSMOS FAMILY RESTAURANT	2377
@@ -15701,7 +14518,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4871	CHAN, SPENCER	I	10002	\N	NEW YORK	NY	GOLDEN UNICORN RESTAURANT	561
 4872	PITTAS, GISIS	I	14225	\N	CHEEKROWAGA	NY	ARKEN'S FAMILY RESTAURANT	2382
 4873	VERDILLO, MARIO	I	11702	\N	BABYLON	NY	MARIO'S RESTAURANT	2277
-4874	SMITH, ALLEN T	I	11710	\N	BELLMORE	NY	MCCLUSKEYS STEAK HOUSE INC	36
 4875	KLOBUCISTA, AZIR	I	10305	\N	STATEN ISLAND	NY		36
 4876	SAVVA, SAVVAS S	I	11758	\N	MASSAPEQUA	NY	HARVEST DINER	2383
 4877	OMARY, JOAN MANZIONE	I	10011	\N	NEW YORK	NY	SALAM RESTAURANT	2384
@@ -15713,13 +14529,9 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4883	MEHTANI, SNEH MRS	I	10304	\N	STATEN ISLAND	NY	SELF-EMPLOYED	2357
 4884	HONORE, GERARD P	I	\N	\N	JACKSON HEIGHTS	NY	LA DETENTO RESTAURANT	2386
 4885	PERDARIS, DIMITRI J	I	12208	\N	ALBANY	NY	MAYFLOWER RESTAURANT	2387
-4886	HUNT, PETER	I	11560	\N	LATTINGTON	NY	MCDONALD'S REST	36
-4887	HUNT, VERONICA	I	11560	\N	LATTINGTON	NY		36
 4888	SBARRO, JOSEPH	I	11050	\N	SANDS POINT	NY	SBARRO INC	2348
 4889	CORTESE, NATHAN	I	13903	\N	BINGHAMTON	NY	CORTESE RESTAURANT	143
 4890	STEIN, ARNOLD R	I	10023	\N	NEW YORK	NY	CAMEGIE HILL CAFE INC	2388
-4891	KORNBLITH, JOHN H	I	07631	\N	ENGLEWOOD	NY	MCDONALD'S REST	36
-4892	HUNT, E	I	10601	\N	WHITE PLAINS	NY	OLLIVER'S RESTAURANT CORP	36
 4893	RODAK, JOSEPH G	I	13126	\N	OSWEGO	NY	RESTAURANT OWNER	36
 4894	SUAREZ, PHILIP	I	\N	\N	NEW YORK	NY	RESTAURARIEUR	2389
 4895	LAROCCA, DON	I	11003	\N	ELMONT	NY	DUNKIN DONUTS	1015
@@ -15728,7 +14540,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4898	MAVROUDIS, THOMAS	I	11791	\N	SYOSSET	NY	PANTRY DINER	2390
 4899	KLEIN, PETER ALAN	I	10280	\N	NEW YORK	NY	TRIBECA GRILL	1907
 4900	FAUSTINI, MARIO	I	10707	\N	TUCKAHOE	NY	ALEX & HENRY'S RESTAURANT	2032
-4901	MARGITTAI, TOM	I	10022	\N	NEW YORK	NY	FOUR SEASONS	36
 4902	MEHTANI, SATISH	I	10304	\N	STATEN ISLAND	NY	RESTAURANTEUR	2357
 4903	MURRAY, JOHN JR	I	11793	\N	WANTAGH	NY	SELF-EMPLOYED	36
 4904	KOHILAKIS, JOHN	I	11788	\N	NAUPPEUGE	NY	RESTAURANT OWNER	36
@@ -15744,26 +14555,16 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4914	VLAHOS, SPIROS	I	10462	\N	BRONX	NY	METRO OVAL RESTAURANT	2393
 4915	GOUSSIS, THEOTOKIS	I	11743	\N	HUNTINGTON	NY	SKORPIOS RESTAURANT	2394
 4916	MARRA, LOUIS L MRS	I	14760	\N	OLEAN	NY	OLD LIBRARY RESTAURANT	2395
-4917	COLANDREA, JOSEPH	I	11228	\N	BROOKLYN	NY	COLANDREA NEW CORNER	36
 4918	BILLITTIER, LOUIS J	I	14204	\N	BUFFALO	NY		1082
 4919	BERNSTEIN, ALLEN	I	11577	\N	ROSLYN HEIGHTS	NY	QUANTUM RESTAURANT GROUP	247
 4920	RIESE, MURRAY	I	10001	\N	NEW YORK	NY	RIESE ORGANIZATION	874
-4921	LEROY, WARNER	I	10021	\N	NEW YORK	NY	MAXWELL'S PLUM	36
-4922	EVANGELISTA, FORTUNALDO	I	14301	\N	NIAGARA FALLS	NY	LA HACIENDA/NY RISTORANTE/PIZZERIA	36
-4923	COLANDREA, JOSEPH A	I	11228	\N	BROOKLYN	NY	COLANDREA NEW CORNER RESTAURANT INC	36
-4924	IAMARINO, BERNARD	I	10930	\N	HIGHLAND MILLS	NY		36
-4925	GONZALEZ, MARTIN	I	11415	\N	KEWGARDENS	NY		36
 4926	GLAZIER, PENNY	I	10028	\N	NEW YORK	NY		2323
 4927	CASTELLI, JOSEPH	I	\N	\N	BROOKLYN	NY		2359
 4928	CHOPRA, KEWIL	I	10029	\N	NEW YORK	NY		2317
 4929	HODIWALA, DIRIYAR B	I	10036	\N	NEW YORK	NY		2317
-4930	FERGUSON, WILLIAM J	I	11510	\N	BALDWIN	NY	CORAL HOUSE REST & CATERERS	36
-4931	HUNT, E CHARLES	I	10601	\N	WHITE PLAINS	NY	OLLIVER'S RESTAURANT CORP	36
 4932	FENTRESS, JAMES MR	I	13027	\N	BALDWINSVILLE	NY	WENDYS FRANCHISEE	2396
 4933	NEZAJ, GANI MR	I	10462	\N	BRONX	NY	RAY'S PIZZA	2397
 4934	ANTUN, FRANK	I	11429	\N	QUEENS VILLAGE	NY	ANTUN'S RESTAURANT	2398
-4935	O'NEILL, MARTIN	I	14618	\N	ROCHESTER	NY	THE SPRING HOUSE	36
-4936	HUNT, E CHARLES	I	10601	\N	WHITE PLAINS	NY	OLLIVERS RESTAURANT CORP	36
 4937	LEUNG, FRANCIS	I	11366	\N	FLUSHING	NY	HOUSEWIFE	2369
 4938	SCHWARTZ, SCHLOMO	I	11581	\N	N WOODMERE	NY	UNCLE STEVE'S	2330
 4939	SCHWARTZ, LEAH	I	11581	\N	N WOODMERE	NY	HOMEMAKER	2330
@@ -15772,7 +14573,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4942	MARCUS, FREDERICK	I	10019	\N	NEW YORK	NY	21 CLUB	2266
 4943	DERTI, DIN MR	I	14437	\N	DANSVILLE	NY	RESTAURATEUR	1358
 4944	GING, DIANE	I	11572	\N	OCEANSIDE	NY	RESTAURANT OWNER	36
-4945	O'NEILL, M DON	I	14618	\N	ROCHESTER	NY	THE SPRING HOUSE	36
 4946	MCMULLEN, J	I	10021	\N	NYC	NY	RESTAURANT OWNER	36
 4947	MERLO, PETER	I	10309	\N	SI	NY	M J'S SUPPER CLUB	2400
 4948	CHIU, SAMMY	I	10021	\N	NYC	NY	LUM-CHIN RESTAURANTS	2401
@@ -15786,7 +14586,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4956	PAPOZIS, JAMES	I	11566	\N	CENTEL	NY	LIBERTY DINER	2403
 4957	KUKIEL, JOHN	I	11236	\N	BROOKLYN	NY	RESTARAUTER	1358
 4958	BERNSTEIN, ALLEN J MR	I	11050	\N	PORT WASHINGTON	NY	QUANTUM RESTAURANT GROUP	247
-4959	HUNT, CHUCK	I	10601	\N	WHITE PLAINS	NY	OLLIVERS RESTAURANT CORP	36
 4960	FOX, RICHARD C	I	14607	\N	ROCHESTER	NY	WENDYS RESTAURANT OF ROCHESTER	2145
 4961	GASHI, S	I	10030	\N	NEW YORK	NY	RESTAURANTEUR	36
 4962	BERNSTEIN, ALLEN	I	11050	\N	PORT WASHINGTON	NY	QUANTUM RESTAURANT GROUP INC	247
@@ -15797,7 +14596,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4967	HAZIR, D	I	10460	\N	BRONX	NY	REAL ESTATE	2399
 4968	DERTI, D	I	14437	\N	DANSVILLE	NY	RESTAURANT OWNER	36
 4969	KATSIOTAS, NIKOLAOS	I	11788	\N	HAUPPAUGE	NY	EXPRESSWAY DINER	2380
-4970	MAY, TONY	I	10019	\N	NEW YORK	NY	TONY MAY GROUP INC	36
 4971	KATSIOTAS, NIKOLAOS	I	11788	\N	HAUPPAUGE	NY		2380
 4972	GOUVIS, DEMETRIOS I	I	11779	\N	LAKE RONKONKOMA	NY	SEA PORT DINER	2404
 4973	PANGARELLA, JOSEPH R	I	11414	\N	HOWARD BEACH	NY	KENTUCKY FRIED CHICKEN	1355
@@ -15810,7 +14608,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4980	GIANNOPAPAS, ANDREAS	I	11358	\N	FLUSHING	NY	KATRAS RESTAURANT IN	2406
 4981	SCHWARTZ, SCHLOMO MRS	I	11581	\N	NORTH WOODMERE	NY	UNCLE STEVES	2330
 4982	SCHWARTZ, SCHLOMO MR	I	11581	\N	NORTH WOODMERE	NY	UNCLE STEVES	2330
-4983	RUSITZKY, HARRIS H	I	14534	\N	PITTSFORD	NY	SERV-RITE CORP	36
 4984	DORAN, CLARE MRS	I	10022	\N	NEW YORK	NY	RESTAURANTEUR	36
 4985	MANESSIS, ANASTASIOS	I	10583	\N	SCARSDALE	NY	RESTAURATEUR	1358
 4986	FERGUSON, WILLIAM H JR	I	11510	\N	BALDWIN	NY	CORAL HOUSE RESTAURANT AND CATERERS	2407
@@ -15819,42 +14616,25 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 4989	DUFFY, DELIA MRS	I	10465	\N	BRONX	NY		1673
 4990	KEANE, DENIS	I	11385	\N	GLENDALE	NY	DUROW'S RESTAURANT	2179
 4991	DUFFEY, DEHA	I	10465	\N	BRONX	NY	WAITRESS	1673
-4992	BENSON, KENNETH	I	10601	\N	WHITE PLAINS	NY	OLLIVER'S RESTAURANT CORP	36
 4993	BELSON, JEROME MR	I	10012	\N	NEW YORK	NY	JEROME BEDSON ASSOCIATES	2408
 4994	ZINNER, BURKHARD	I	12771	\N	PORT JERVIS	NY	HOMER'S RESTAURANT	2409
 4995	CHAN, JIMMY	I	10013	\N	NEW YORK	NY	RESTAURANTEUR	36
 4996	STATHAKOS, BILL	I	\N	\N	BROOKLYN	NY	RESTARUTER	1358
-4997	SAMAHA, A L	I	10504	\N	ARMONK	NY	MCDONALDS RESTAURANT	36
-4998	MCCARROLL, ROBERT	I	11755	\N	LAKE GROVE	NY	THE GOOD STEER	36
-4999	FERGUSON, BILL	I	11510	\N	BALDWIN	NY	CORAL HOUSE RESTAURANT	36
 5000	DEL CORRAL, VICTOR MR	I	10019	\N	NY	NY	VICTORS CAFE	2410
 5001	DAVENPORT, GARY MR	I	10011	\N	NEW YORK	NY	NIGHTCLUB OWNER	51
 5002	FEELINGS, LARRY	I	11233	\N	BROOKLYN	NY	RESTAURENTEUR	36
 5003	KELLY, NORMAN P	I	14075	\N	HAMBURG	NY	MY ANGEL PIZZA INC	2411
-5004	CAMINITI, ANITA	I	\N	\N	STATEN ISLAND	NY	RUSTIC INN INC	36
 5005	CLARK, HAROLD JR MR	I	13066	\N	FAYETTEVILLE	NY	MCDONALD CORPORATION	134
 5006	LOO, YEE-TSAI	I	11580	\N	VALLEY STREAM	NY	RESTAURANT OWNER	36
 5007	CLARK, HAROLD JR MRS	I	13066	\N	FAYETTEVILLE	NY	MCDONALD CORPORATION	134
-5008	MITCHELL, JAN	I	10022	\N	NEW YORK	NY	MCDONALD'S REST	36
 5009	SEJDIU, BESIM	I	10458	\N	BRONX	NY	RESTAURANT OWNER	36
 5010	LIANIDES, LEON	I	10463	\N	RIVERDALE	NY	RESTAURANT OWNER	36
-5011	SKEETE, ORMOND	I	11212	\N	BROOKLYN	NY	MCDONALD'S REST	36
-5012	MADALONE, THOMAS	I	10989	\N	VALLEY COTTAGE	NY	MCDONALD'S REST	36
-5013	MCCARROL, ROBERT	I	11755	\N	VILLAGE OF LAKE GR	NY	THE GOOD STEER	36
 5014	ANTUN, FRANK	I	11424	\N	QUEENS VILLAGE	NY	ANTUN'S RESTAURANT	2398
-5015	FONDU, HENRY	I	10601	\N	WHITE PLAINS	NY	OLLIVERS RESTAURANT CORP	36
-5016	MITCHELL, JAN	I	10022	\N	NEW YORK	NY	MCDONALDS REST	36
-5017	GIAMBELLI, FRANK	I	10022	\N	NEW YORK	NY	RESTAURATEUR	36
 5018	DELANEY, AUSTIN MR	I	10021	\N	NEW YORK	NY	HARBOUR LIGHTS RESTURANT	660
 5019	BRINKWORTH, DENNIS J III MR	I	14216	\N	BUFFALO	NY	COLTER BAY GRILL INC	2412
-5020	FISHER, CARL	I	10606	\N	WHITE PLAINS	NY	FISHER AND MILLER	36
 5021	MAHON, JOHN	I	10017	\N	NEW YORK	NY	P J MORANS PUB	2413
-5022	WILDER, ALBERT	I	12572	\N	RHINEBECK	NY	MCDONALDS REST	36
-5023	ZDYB, RICHARD	I	13413	\N	NEW HARTFORD	NY	Z FOODSERVICE INC	36
 5024	SAYEGH, FRED	I	10512	\N	CARMEL	NY	RESTAURANT OWNER	36
 5025	FINEO, FRANK	I	11552	\N	WEST HEMPSTEAD	NY		2414
-5026	BENSON, KENNETH	I	10601	\N	WHITE PLAINS	NY	OLLIVERS RESTAURANT CORP	36
-5027	WARD, CANDISS	I	10603	\N	N WHITE PLAINS	NY	RESTAURATEUR	36
 5028	DUFFY, DEHLIA MRS	I	10465	\N	BRONX	NY	WAITRESS	1673
 5029	ROGERS, SAMUEL	I	10536	\N	KATONAH	NY	SBR RESTAURANT	2415
 5030	WEINSTEIN, MICHAEL	I	10023	\N	NEW YORK	NY	RESTAURATEUR	1358
@@ -15862,7 +14642,6 @@ COPY contributors (id, name, type, zipcode, address, city, state, occupation, bu
 5032	PARKER, JAY	I	11374	\N	REGO PARK	NY	BENS BEST DELI	2237
 5033	CAMPTULLO, GERARDO	I	10306	\N	SI	NY	CHEF	117
 5034	FINEO, FRANK	I	11580	\N	FREEPORT	NY	SCHOONER RESTAURANT	2414
-5035	FONDU, HENRY	I	10601	\N	WHITE PLAINS	NY	OLLIVER'S RESTAURANT CORP	36
 5036	LASK, THEODORE	I	\N	\N	NEW	NY	BARTENDER, ARTUROS	2417
 \.
 
