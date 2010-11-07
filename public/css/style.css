@@ -1,10 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    color: #444;
 }
 
 div#container {
     margin: 0 auto;
-    width: 1000px;
+    width: 750px;
 }
 
 div#header {
@@ -16,32 +18,126 @@ div#search-bar-outer {
     text-align: center;
 }
 
+li
+{
+    list-style-image: url("/images/plus.png");
+}
+
+ul li
+{
+    padding-left: 6px;
+}
+
+ul li ul,
+ul li ul li
+{
+    padding-left: 0;
+}
+
+li.shown
+{
+    list-style-image: url("/images/minus.png");
+    /*background-color: #cff;*/
+}
+
+li.shown li
+{
+    background-color: #f9f9f9;
+}
+
+li ul li
+{
+    list-style-image: url("/images/tree_line.gif");
+}
+
+div,
+h3
+{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
 /*** Sidebar ***/
 div#sidebar {
     width: 250px;
     float: left;
+    /*
     border: 1px solid black;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    */
     min-height: 600px;
 }
+    div#sidebar li
+    {
+        cursor: pointer;
+    }
 
 div#sidebar h3 {
-    margin: 0.25em;
+    margin: 0em;
+    padding: 10px 0;
     text-align: center;
+    background-color: #dfdfd7;
+    font-weight: normal;
+    cursor: default;
 }
 
 /*** Content ***/
 div#content {
-    width: 740px;
-    float: right;
+    margin-left: 10px;
+    width: 450px;
+    float: left;
     min-height: 600px;
+    /*
     border: 1px solid black;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    */
 }
+
 .sub {
     display: none;
+}
+
+div#sidebar a.close_all
+{
+    margin-left: 15px;
+}
+
+div#sidebar,
+div#map,
+div#chart,
+div#table
+{
+    background-color: #f9f9f9;
+    shadow:1px 1px 1px #aaa;
+    -webkit-box-shadow:1px 1px 1px #aaa;
+    -moz-box-shadow:1px 1px 1px #aaa;
+}
+
+div#map,
+div#chart,
+div#table
+{
+    width: 430px;
+    height: 200px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div#chart
+{
+    padding-top: 20px;
+    height: 180px;
+}
+
+div#map
+{
+    height: 400px;
+    padding-top: 10px;
+}
+
+div#map img
+{
+    border: #aaa 1px solid;
+    
 }

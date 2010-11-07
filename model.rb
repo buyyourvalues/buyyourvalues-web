@@ -23,12 +23,13 @@ class Contributor
   property :name, String
   property :type, String
   property :zipcode, String
+  property :occupation, String
 end
 
 class Contribution
   include DataMapper::Resource
   belongs_to :contributor
-  has 1, :recipient
+  belongs_to :recipient
 
   property :id, Serial
   property :amount, Float
@@ -44,6 +45,9 @@ class Recipient
   property :address, Text
   property :state, String
   property :party, String
+  property :election_type, String
+  property :seat, String
+  property :district, String
 end
 
 DataMapper.finalize

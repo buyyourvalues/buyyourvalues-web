@@ -1,3 +1,9 @@
+var closeTree = function () {
+    $('.shown').each(function () {
+        $(this).find('ul').slideUp();
+        $(this).removeClass('shown');
+    });
+}
 $(function() {
     $('#search-bar').submit(function() {
         $.get('/data-load', $(this).serialize(), function(resp) {
@@ -5,39 +11,22 @@ $(function() {
         }, 'json');
         return false;
     });
-    $("#food-li").click(function(){
-	    if($("#food-ul").is(":hidden")){
-		$("#food-ul").slideDown();
-	    }else{
-		$("#food-ul").slideUp();
-	    }
-	});
-    $("#entertainment-li").click(function(){
-	    if($("#entertainment-ul").is(":hidden")){
-		$("#entertainment-ul").slideDown();
-	    }else{
-		$("#entertainment-ul").slideUp();
-	    }
-	});
-    $("#fashion-li").click(function(){
-	    if($("#fashion-ul").is(":hidden")){
-		$("#fashion-ul").slideDown();
-	    }else{
-		$("#fashion-ul").slideUp();
-	    }
-	});
-    $("#professional-li").click(function(){
-	    if($("#professional-ul").is(":hidden")){
-		$("#professional-ul").slideDown();
-	    }else{
-		$("#professional-ul").slideUp();
-	    }
-	});
-    $("#non-profits").click(function(){
-	    if($("#non-profits-ul").is(":hidden")){
-		$("#non-profits-ul").slideDown();
-	    }else{
-		$("#non-profits-ul").slideUp();
-	    }
-	});
+    $(".category-li").click(function() {
+        var child_ul = $(this).find('ul').eq(0);
+
+        if ($(this).hasClass('shown'))
+        {
+            $(this).removeClass('shown');
+            child_ul.slideUp();
+        }
+        else
+        {
+            $(this).addClass('shown');
+            child_ul.slideDown();
+        }
+
+        child_ul.find('li').click(function (e) {
+            e.stopPropagation();
+        });
+    });
 });
