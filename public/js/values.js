@@ -1,3 +1,5 @@
+var BYV = {};
+
 var closeTree = function() {
     $('.shown').each(function () {
         $(this).find('ul').slideUp();
@@ -22,7 +24,7 @@ var update_chart = function(data) {
     });
 
     var url =
-        "http://chart.apis.google.com/chart?cht=p&chs=300x160&chd=t:" +
+        "http://chart.apis.google.com/chart?cht=p3&chs=400x160&chd=t:" +
         values.join() + "&chl=" + labels.join('|') + '&chf=bg,s,F0F0F000&chco=' + colors.join();
     $('img#chart-img').attr('src', url);
 }
