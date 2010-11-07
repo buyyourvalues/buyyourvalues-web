@@ -24,8 +24,6 @@ var update_chart = function(data) {
     var url =
         "http://chart.apis.google.com/chart?cht=p&chs=300x160&chd=t:" +
         values.join() + "&chl=" + labels.join('|') + '&chf=bg,s,F0F0F000&chco=' + colors.join();
-
-        debugger;
     $('img#chart-img').attr('src', url);
 }
 

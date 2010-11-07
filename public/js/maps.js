@@ -3,6 +3,10 @@
  */
 
 var map;
+var boundaries;
+var points = new Array();
+var max_contr = 0;
+var min_contr = 9999999;
 
 var initialize_map = function ()
 {
@@ -69,8 +73,10 @@ var processBusinesses = function (response)
         left_lng = -73.9962255,
         right_lng = -73.9962255;
 
+    var totals = [0, 0, 0];
+
     $.each(response, function () {
-        processBusiness(this);
+        var business_totals = processBusiness(this);
 
         if (top_lat < this.latitude)
             top_lat = this.latitude;
@@ -83,14 +89,61 @@ var processBusinesses = function (response)
 
         if (right_lng > this.longitude)
             right_lng = this.longitude;
+
+        totals[0] += business_totals[0];
+        totals[1] += business_totals[1];
+        totals[2] += business_totals[2];
     });
 
-    console.log(
-        'Top:', top_lat,
-        'Bot:', bottom_lat,
-        'Left:', left_lng,
-        'Right:', right_lng
+    update_chart([
+        {
+            'amount': totals[0],
+            'party': 'Democrat',
+            'color': '0000FF'
+        },
+        {
+            'amount': totals[1],
+            'party': 'Republican',
+            'color': 'FF0000'
+        },
+        {
+            'amount': totals[2],
+            'party': 'Independent',
+            'color': '00FF00'
+        }
+    ]);
+
+    boundaries = new google.maps.LatLngBounds(
+        new google.maps.LatLng(bottom_lat, left_lng),
+        new google.maps.LatLng(top_lat, right_lng)
     );
+
+    var range = max_contr - min_contr;
+
+    console.log('max=', max_contr, 'min=', min_contr, 'range=', range);
+
+    // There is a problem with this next block:
+    // We need to accumulate all the contributions by a particular location. This only graphs one
+    // of the contributions.
+    $.each(points, function () {
+        console.log(this.total);
+        var t = this.total[0] + this.total[1] + this.total[2];
+
+        var w = t - min_contr;
+        var weighed = w / range * 100 + 100;
+
+        console.log('t=', t, 'w=', w, 'weighed=', weighed);
+
+        this.point.setRadius(Math.floor(weighed));
+        console.log('Setting ', this.point, 'to', Math.floor(weighed));
+    });
+
+    map.fitBounds(boundaries);
+}
+
+var reset_boundaries = function ()
+{
+    map.fitBounds(boundaries);
 }
 
 var processBusiness = function (business)
@@ -103,6 +156,14 @@ var processBusiness = function (business)
         party = this.party;
         total += this.amount;
 
+        if (this.amount > max_contr)
+            max_contr = this.amount
+
+        if (this.amount < min_contr)
+            min_contr = this.amount;
+        if (min_contr < 0)
+            min_contr = 0;
+
         if (party != 'D' && party != 'R')
             party = 'I';
 
@@ -110,6 +171,12 @@ var processBusiness = function (business)
             parties[party] = 0;
 
         parties[party] += this.amount;
+
+        $('table#contributions').append(
+            '<tr><td>' + business.business_name + '</td>' +
+            '<td>' + party + '</td>' +
+            '<td>' + this.amount + '</td></tr>'
+        );
     });
 
     var p_d = Math.floor(255 * (parties['D'] || 0) / total);
@@ -131,13 +198,26 @@ var processBusiness = function (business)
 
     if (!isNaN(p_d) && !isNaN(p_r) && !isNaN(p_i))
     {
-        new google.maps.Circle({
+        var point = new google.maps.Circle({
             center: latLng,
             map: map,
-            radius: 50,
+            radius: 100,
             strokeOpacity: 0,
             fillColor: "#" + p_r_h + p_i_h + p_d_h,
-            fillOpacity: 1.0
+            fillOpacity: 0.9
         });
+
+        points.push(
+            {
+                'point': point,
+                'total': [
+                    (parties['D'] || 0),
+                    (parties['R'] || 0),
+                    (parties['I'] || 0)
+                ]
+            }
+        );
     }
+
+    return [p_d, p_r, p_i];
 }
