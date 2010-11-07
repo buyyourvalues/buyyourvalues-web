@@ -120,22 +120,22 @@ var processBusinesses = function (response)
 
     var range = max_contr - min_contr;
 
-    console.log('max=', max_contr, 'min=', min_contr, 'range=', range);
+    //console.log('max=', max_contr, 'min=', min_contr, 'range=', range);
 
     // There is a problem with this next block:
     // We need to accumulate all the contributions by a particular location. This only graphs one
     // of the contributions.
     $.each(points, function () {
-        console.log(this.total);
+        //console.log(this.total);
         var t = this.total[0] + this.total[1] + this.total[2];
 
         var w = t - min_contr;
         var weighed = w / range * 100 + 100;
 
-        console.log('t=', t, 'w=', w, 'weighed=', weighed);
+        //console.log('t=', t, 'w=', w, 'weighed=', weighed);
 
         this.point.setRadius(Math.floor(weighed));
-        console.log('Setting ', this.point, 'to', Math.floor(weighed));
+        //console.log('Setting ', this.point, 'to', Math.floor(weighed));
     });
 
     map.fitBounds(boundaries);
@@ -153,7 +153,7 @@ var processBusiness = function (business)
     var total = 0;
 
     $.each(business.contributions, function () {
-        party = this.party;
+        var party = this.party;
         total += this.amount;
 
         if (this.amount > max_contr)
@@ -173,7 +173,7 @@ var processBusiness = function (business)
         parties[party] += this.amount;
 
         $('table#contributions').append(
-            '<tr><td>' + business.business_name + '</td>' +
+            '<tr class="' + business.business_id + '"><td>' + business.business_name + '</td>' +
             '<td>' + party + '</td>' +
             '<td>' + this.amount + '</td></tr>'
         );
@@ -194,17 +194,56 @@ var processBusiness = function (business)
     if (p_i_h.length == 1)
         p_i_h = '0' + p_i_h;
 
+    var amount = parties['D'] || 0;
+    var party = 'D';
+
+    if (amount < parties['R'])
+    {
+        amount = parties['R'];
+        party = 'R';
+    }
+
+    if (amount < parties['I'])
+    {
+        amount = parties['I'];
+        party = 'I';
+    }
+
     var latLng = new google.maps.LatLng(business.latitude, business.longitude);
 
     if (!isNaN(p_d) && !isNaN(p_r) && !isNaN(p_i))
     {
+        var tooltip = _.template($('#google_map_tooltip_tmp').html(), business);
+
         var point = new google.maps.Circle({
             center: latLng,
             map: map,
             radius: 100,
             strokeOpacity: 0,
             fillColor: "#" + p_r_h + p_i_h + p_d_h,
-            fillOpacity: 0.9
+            fillOpacity: 0.9,
+            infoWindow: new google.maps.InfoWindow({
+                position: latLng,
+                content: tooltip
+            })
+        });
+
+        //google.maps.event.addListener(point, 'mouseover', function() {
+        //});
+
+        google.maps.event.addListener(point, 'click', function() {
+            console.log(this);
+
+            $.each(points, function () {
+                if (this.point)
+                    this.point.infoWindow.close();
+            });
+            point.infoWindow.open(map);
+
+            $('.highlight').removeClass('highlight');
+            $('tr.' + business.business_id).each(function () {
+                $(this).find('td').addClass('highlight');
+            });
         });
 
         points.push(
