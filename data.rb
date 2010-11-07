@@ -23,6 +23,7 @@ get '/businesses' do
   businesses = Business.all(:latitude.not => '', :longitude.not => '')
   businesses.each do |b|
     new_data = {
+      :business_id => b.id,
       :business_name => b.name,
       :latitude => b.latitude,
       :longitude => b.longitude,
@@ -34,7 +35,7 @@ get '/businesses' do
         new_data[:contributions] << {:amount => c.amount, :party => c.recipient.party}
       end
     end
- 
+
     data << new_data
   end
 
