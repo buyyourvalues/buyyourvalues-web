@@ -16,3 +16,8 @@ gem install --no-rdoc --no-ri \
         thin \
         transparency_data \
 
+Install postgresql, start the server and then:
+    sudo -u postgres createuser -P -d -l -s buyyourvalues
+    # Password is buyyourvalues
+    sudo -u postgres createdb buyyourvalues
+
