@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="stylesheet" href="css/style.css?v=1">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.1&sensor=false"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+        <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore.js"></script>
         <script type="text/javascript" src="/js/maps.js"></script>
         <script type="text/javascript" src="/js/values.js"></script>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -75,7 +76,7 @@
                         <a class="close_all" href="javascript:reset_boundaries()">Center</a>
                     </div>
                     <div id="chart">
-                        <img id="chart-img" src="http://chart.apis.google.com/chart?cht=p&chs=300x160&chd=t:60,40&chl=Democrat|Republican&chf=bg,s,F0F0F000&chco=0000FF,FF0000" alt="Some chart" />
+                        <img id="chart-img" src="http://chart.apis.google.com/chart?cht=p3&chs=300x160&chd=t:60&chl=&chf=bg,s,F0F0F000&chco=CCCCCC" alt="Some chart" />
                     </div>
                     <div id="table">
                         <table id="contributions">
@@ -91,15 +92,15 @@
         </div>
 
         <script type="text/jst" id="google_map_tooltip_tmp">
-        <% BYV.tooltip_iter = 0; %>
-        <h2 id="tooltip_title"><%= BYV.current_biz.business_name  %></h2>
-          <ul id="tooltip_contributions">
-            <% _.each(BYV.current_biz.contributions,function(c){  %>
-              <li class="tooltip_item <%= BYV.tooltip_iter % 2 === 0 ? 'even' : 'odd'  %>"><%= c.amount  %> | <%= c.party  %></li>
-              <% tooltip_iter ++; %>
-            <% }); %>
-          <ul>
-          </script>
+            <%% BYV.tooltip_iter = 0; %>
+            <h2 id="tooltip_title"><%%= business_name %></h2>
+            <ul id="tooltip_contributions">
+                <%% _.each(contributions, function(c) {  %>
+                    <li class="tooltip_item <%%= BYV.tooltip_iter % 2 === 0 ? 'even' : 'odd'  %>"><%%= c.amount  %> | <%%= c.party  %></li>
+                    <%% BYV.tooltip_iter = BYV.tooltip_iter + 1; %>
+                <%% }); %>
+            </ul>
+        </script>
 
     </body>
 </html>
