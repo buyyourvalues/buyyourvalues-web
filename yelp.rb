@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require "curb"
 require "yaml"
 require "cgi"
